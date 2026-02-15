@@ -702,5 +702,29 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const p = new URLSearchParams(window.location.search);
+
+  const source = p.get("source") || p.get("src");
+  const sub = p.get("sub") || p.get("aff_sub");
+
+  if (!source && !sub) return;
+
+  document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
+    try {
+      const u = new URL(a.href);
+
+      if (source) u.searchParams.set("source", source);
+      if (sub) u.searchParams.set("aff_sub", sub);
+
+      a.href = u.toString();
+      if (a.getAttribute("target") === "_blank") a.removeAttribute("target");
+      a.setAttribute("rel", "noopener");
+    } catch (e) {}
+  });
+});
+</script>
+
 </body>
 </html>
