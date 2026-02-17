@@ -1,7 +1,8 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,704 +11,136 @@
 
   gtag('config', 'G-CN7KGLW2HZ');
 </script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anxiety Test</title>
-  <meta name="description" content="Anxiety Test. A clean, private way to understand your anxiety level, your pattern, and a next step you can actually use." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover Your Anxiety Level</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <style>
-    :root{
-      --bg:#ffffff;
-      --ink:#0b1220;
-      --muted:#42526b;
-      --muted2:#66748a;
-      --line:#e7ecf3;
-      --soft:#f7f9ff;
-      --soft2:#f3f6ff;
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.container{width:90%;max-width:1120px;margin:auto;}
+section{padding:90px 0;}
 
-      --accent:#3b82f6;
-      --accent2:#6366f1;
-      --accentSoft:rgba(59,130,246,.14);
+/* HERO */
+.hero{padding-top:120px;padding-bottom:100px;text-align:center;background:linear-gradient(180deg,#ffffff,#eef3fb);}
+.hero-title{font-size:54px;font-weight:900;letter-spacing:-1px;margin-bottom:18px;color:#0b1f4a;}
+.hero p{font-size:19px;color:#334155;max-width:760px;margin:auto;}
 
-      --shadow:0 28px 80px rgba(11,18,32,.10);
-      --shadow2:0 16px 40px rgba(11,18,32,.08);
+/* CTA */
+.cta{display:inline-block;margin-top:34px;padding:20px 54px;background:#2563ff;color:#fff;font-weight:700;font-size:18px;border-radius:14px;text-decoration:none;transition:0.25s;box-shadow:0 12px 30px rgba(37,99,255,0.30);}
+.cta:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(37,99,255,0.40);}
 
-      --max:1120px;
-      --r:22px;
-      --r2:28px;
-    }
+/* DARK FEATURE */
+.dark-feature{background:linear-gradient(180deg,#0b1f4a,#163c8f);border-radius:22px;color:#fff;text-align:center;padding:70px 50px;max-width:940px;margin:0 auto;box-shadow:0 30px 70px rgba(0,0,0,0.25);}
+.dark-feature h2{font-size:42px;font-weight:800;margin-bottom:18px;}
+.dark-feature p{color:#e8f0ff;font-size:19px;max-width:720px;margin:auto;}
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      color:var(--ink);
-      background:var(--bg);
-      line-height:1.6;
-      -webkit-font-smoothing:antialiased;
-    }
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-    .section{padding:92px 0}
-    .section.tight{padding:68px 0}
-    .divider{border-top:1px solid var(--line)}
+/* RED LINES */
+.red-line{height:3px;background:#ef4444;width:100%;margin:40px 0;border-radius:3px;}
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      border-radius:16px;
-      font-weight:900;
-      letter-spacing:-.15px;
-      transition:transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease;
-      white-space:nowrap;
-      user-select:none;
-    }
-    .btnPrimary{
-      color:#fff;
-      padding:14px 18px;
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-      box-shadow:0 18px 44px rgba(59,130,246,.22);
-    }
-    .btnPrimary:hover{transform:translateY(-1px);box-shadow:0 24px 56px rgba(59,130,246,.26)}
-    .btnGhost{
-      color:var(--ink);
-      padding:13px 16px;
-      background:#fff;
-      border:1px solid var(--line);
-      box-shadow:0 10px 26px rgba(11,18,32,.06);
-    }
-    .btnGhost:hover{background:rgba(11,18,32,.015)}
-    .btnWide{width:100%}
+/* HIGHLIGHT */
+.highlight{background:#ffe600;padding:3px 6px;border-radius:4px;font-weight:700;}
 
-    .hero{
-      padding:72px 0 58px;
-      overflow:hidden;
-      background:
-        radial-gradient(circle at 12% 18%, rgba(99,102,241,.14), transparent 48%),
-        radial-gradient(circle at 86% 12%, rgba(59,130,246,.12), transparent 50%),
-        linear-gradient(180deg,#ffffff 0%, #f7f9ff 100%);
-      border-bottom:1px solid var(--line);
-    }
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap:30px;
-      align-items:start;
-    }
-    @media (max-width:980px){
-      .heroGrid{grid-template-columns:1fr;gap:18px}
-    }
+/* IMAGE BLOCK */
+.image-row{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:40px;}
+.image-box img{width:100%;border-radius:16px;box-shadow:0 18px 40px rgba(0,0,0,0.12);}
 
-    .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.78);
-      font-weight:900;
-      font-size:13px;
-      color:#1f2a44;
-    }
-    .dot{
-      width:10px;height:10px;border-radius:999px;
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-      box-shadow:0 0 0 6px var(--accentSoft);
-    }
-    h1{
-      margin:16px 0 12px;
-      font-weight:900;
-      letter-spacing:-1.15px;
-      line-height:1.03;
-      font-size:clamp(36px,4.6vw,62px);
-    }
-    .lead{
-      margin:0 0 12px;
-      color:var(--muted);
-      font-size:clamp(16px,1.35vw,19px);
-      max-width:68ch;
-    }
-    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;align-items:center}
-    .micro{
-      margin-top:12px;
-      color:var(--muted2);
-      font-size:13px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:14px;
-      align-items:center;
-    }
-    .micro span{display:inline-flex;align-items:center;gap:8px}
-    .tick{
-      width:14px;height:14px;border-radius:5px;
-      background:rgba(59,130,246,.12);
-      border:1px solid rgba(59,130,246,.18);
-    }
+/* BENEFITS */
+.benefits{background:linear-gradient(180deg,#ffffff,#f1f5ff);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:50px;}
+.card{background:#fff;padding:34px;border-radius:18px;box-shadow:0 14px 35px rgba(0,0,0,0.06);transition:0.3s;}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 45px rgba(0,0,0,0.10);}
+.card h3{margin-bottom:10px;font-size:18px;}
+.card p{color:#334155;}
 
-    .stage{
-      border:1px solid var(--line);
-      border-radius:var(--r2);
-      background:#fff;
-      box-shadow:var(--shadow);
-      overflow:hidden;
-    }
-    .stageTop{
-      padding:16px 16px 0;
-    }
-    .stageTitle{
-      margin:0;
-      font-weight:900;
-      letter-spacing:-.25px;
-      font-size:14px;
-      color:#0f172a;
-    }
-    .stageHint{
-      margin:8px 0 0;
-      color:var(--muted);
-      font-size:14.6px;
-      line-height:1.55;
-    }
-    .progressWrap{
-      margin-top:14px;
-      padding:0 16px 12px;
-    }
-    .progressBar{
-      height:10px;
-      border-radius:999px;
-      background:rgba(11,18,32,.06);
-      overflow:hidden;
-    }
-    .progressFill{
-      height:100%;
-      width:38%;
-      border-radius:999px;
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-      box-shadow:0 12px 26px rgba(59,130,246,.18);
-    }
+/* FINAL CTA */
+.final{background:linear-gradient(180deg,#0b1f4a,#163c8f);color:#fff;text-align:center;}
+.final h2{font-size:40px;font-weight:800;margin-bottom:14px;}
+.final p{color:#dbeafe;font-size:19px;max-width:760px;margin:auto;}
 
-    .qArea{
-      padding:14px 16px 16px;
-      border-top:1px solid var(--line);
-      background:linear-gradient(180deg,#ffffff 0%, #fbfcff 100%);
-    }
-    .qCard{
-      border:1px solid var(--line);
-      border-radius:22px;
-      background:#fff;
-      box-shadow:var(--shadow2);
-      padding:16px;
-    }
-    .qKicker{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
-      color:var(--muted2);
-      font-weight:800;
-      font-size:12px;
-      margin-bottom:10px;
-    }
-    .qText{
-      font-weight:900;
-      letter-spacing:-.3px;
-      font-size:18px;
-      line-height:1.25;
-      margin:0;
-      color:#0b1220;
-    }
-    .choices{
-      margin-top:14px;
-      display:grid;
-      gap:10px;
-    }
-    .choice{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:12px 14px;
-      border-radius:16px;
-      border:1px solid var(--line);
-      background:#fff;
-      color:#0b1220;
-      font-weight:800;
-      font-size:14px;
-    }
-    .choice:hover{background:rgba(11,18,32,.012)}
-    .radio{
-      width:16px;height:16px;border-radius:999px;
-      border:1.5px solid rgba(11,18,32,.26);
-      background:#fff;
-      flex:none;
-    }
-    .radio.on{
-      border-color:rgba(59,130,246,.75);
-      box-shadow:0 0 0 6px rgba(59,130,246,.14);
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-    }
+/* FOOTER */
+.footer{text-align:center;padding:50px 0;color:#64748b;font-size:14px;}
 
-    .pillRow{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:12px;
-    }
-    .pill{
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(99,102,241,.18);
-      background:rgba(99,102,241,.08);
-      color:#1f2a44;
-      font-weight:900;
-      font-size:12px;
-      letter-spacing:.2px;
-    }
-
-    .blockTitle{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:#fff;
-      font-weight:900;
-      font-size:12px;
-      letter-spacing:.25px;
-      color:#0f172a;
-    }
-    .blockTitle .dot{width:9px;height:9px;box-shadow:0 0 0 6px rgba(59,130,246,.10)}
-    h2{
-      margin:12px 0 10px;
-      font-weight:900;
-      letter-spacing:-.9px;
-      line-height:1.14;
-      font-size:clamp(26px,2.8vw,42px);
-    }
-    .copy{
-      margin:0;
-      color:var(--muted);
-      font-size:16.8px;
-      max-width:80ch;
-    }
-    .copy + .copy{margin-top:10px}
-
-    .grid3{
-      margin-top:18px;
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px;
-    }
-    @media (max-width:980px){.grid3{grid-template-columns:1fr}}
-
-    .card{
-      border:1px solid var(--line);
-      border-radius:22px;
-      background:#fff;
-      box-shadow:0 16px 48px rgba(11,18,32,.06);
-      padding:16px;
-    }
-    .card b{
-      display:block;
-      font-weight:900;
-      letter-spacing:-.2px;
-      color:#0f172a;
-    }
-    .card p{
-      margin:8px 0 0;
-      color:var(--muted);
-      font-size:14.8px;
-      line-height:1.55;
-    }
-
-    .steps{
-      margin-top:18px;
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:14px;
-    }
-    @media (max-width:980px){.steps{grid-template-columns:1fr}}
-    .step{
-      border:1px solid var(--line);
-      border-radius:22px;
-      background:linear-gradient(180deg,#ffffff 0%, #fbfcff 100%);
-      box-shadow:0 16px 48px rgba(11,18,32,.06);
-      padding:16px;
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-    }
-    .num{
-      width:36px;height:36px;border-radius:14px;
-      background:rgba(59,130,246,.12);
-      border:1px solid rgba(59,130,246,.18);
-      display:grid;place-items:center;
-      font-weight:900;
-      color:#0f172a;
-      flex:none;
-    }
-    .step b{display:block;font-weight:900;letter-spacing:-.2px}
-    .step span{display:block;margin-top:6px;color:var(--muted);font-size:14.8px;line-height:1.55}
-
-    .ctaBand{
-      background:
-        radial-gradient(circle at 20% 30%, rgba(59,130,246,.12), transparent 52%),
-        radial-gradient(circle at 80% 12%, rgba(99,102,241,.12), transparent 52%),
-        var(--soft);
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
-    }
-    .ctaInner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-      flex-wrap:wrap;
-    }
-
-    .faq{
-      margin-top:18px;
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:14px;
-    }
-    @media (max-width:980px){.faq{grid-template-columns:1fr}}
-    details{
-      border:1px solid var(--line);
-      border-radius:20px;
-      background:#fff;
-      box-shadow:0 16px 48px rgba(11,18,32,.06);
-      padding:14px 16px;
-    }
-    summary{
-      cursor:pointer;
-      font-weight:900;
-      letter-spacing:-.2px;
-      color:#0f172a;
-      list-style:none;
-    }
-    summary::-webkit-details-marker{display:none}
-    details p{
-      margin:10px 0 0;
-      color:var(--muted);
-      font-size:14.8px;
-      line-height:1.6;
-    }
-
-    .footer{
-      padding:40px 0 70px;
-      color:var(--muted2);
-      font-size:12.8px;
-    }
-    .footerRow{
-      border-top:1px solid var(--line);
-      padding-top:18px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-    .links{display:flex;gap:12px;flex-wrap:wrap}
-    .links a{color:var(--muted2);font-weight:800}
-    .links a:hover{color:#0f172a}
-  </style>
+@media(max-width:768px){
+.hero-title{font-size:38px;}
+.image-row{grid-template-columns:1fr;}
+.dark-feature h2{font-size:28px;}
+.final h2{font-size:28px;}
+}
+</style>
 </head>
-
 <body>
 
-  <main class="hero" id="top">
-    <div class="wrap">
-      <div class="heroGrid">
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<h1 class="hero-title">Discover Your Anxiety Level</h1>
+<p>Get clear insight into your emotional state, understand your anxiety intensity, and discover what your mind is really experiencing right now.</p>
+<a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23" class="cta">Start The Test</a>
+</div>
+</section>
 
-        <div>
-          <div class="eyebrow"><span class="dot" aria-hidden="true"></span>Anxiety Test</div>
+<!-- DARK FEATURE -->
+<section>
+<div class="container">
+<div class="dark-feature">
+<h2>Clear Psychological Insight</h2>
+<p>Understand your anxiety intensity, hidden emotional triggers, and how your mind responds to stress. Clarity replaces confusion.</p>
+</div>
+</div>
+</section>
 
-          <h1>Get a clear anxiety level in minutes, so your mind stops guessing.</h1>
+<!-- SCIENCE STYLE -->
+<section>
+<div class="container">
 
-          <p class="lead">
-            If anxiety is living in your body, it is not subtle.
-            It is the tight chest.
-            The stomach drop.
-            The restless scanning.
-            The feeling that something is wrong even when nothing is happening.
-          </p>
+<div class="red-line"></div>
+<p style="text-align:center;font-style:italic;font-size:22px;">
+"It’s like finally understanding what your mind has been trying to tell you."
+</p>
+<div class="red-line"></div>
 
-          <p class="lead" style="max-width:62ch">
-            This test is built around how anxiety actually shows up.
-            Thoughts, physical sensations, daily impact.
-            You answer simple statements, then you get a readable result and a next step that fits.
-          </p>
+<div class="image-row">
+<div>
+<p>Many people experience anxiety without understanding its real cause. The <span class="highlight">true signals are often hidden</span> beneath emotional pressure and internal tension.</p>
+<p style="margin-top:15px;">This test translates psychological patterns into clear insight so you can understand your anxiety level and what it means.</p>
+</div>
 
-          <div class="ctaRow">
-            <a class="btn btnPrimary" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23&source=LPanxtest">Start the test</a>
-            <a class="btn btnGhost" href="#what">See what you get</a>
-          </div>
+<div class="image-box">
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80" alt="Calm peaceful mind">
+</div>
+</div>
 
-          <div class="micro" aria-label="trust notes">
-            <span><span class="tick" aria-hidden="true"></span>Private</span>
-            <span><span class="tick" aria-hidden="true"></span>Clear result</span>
-            <span><span class="tick" aria-hidden="true"></span>Next step included</span>
-          </div>
+</div>
+</section>
 
-          <div class="pillRow" aria-label="quick reassurance">
-            <span class="pill">No long signup</span>
-            <span class="pill">No confusing sliders</span>
-            <span class="pill">Made for real symptoms</span>
-          </div>
-        </div>
+<!-- BENEFITS -->
+<section class="benefits">
+<div class="container">
+<h2 style="text-align:center;font-size:34px;font-weight:800;">What You Will Discover</h2>
 
-        <aside class="stage" aria-label="test style preview">
-          <div class="stageTop">
-            <p class="stageTitle">Preview of the test style</p>
-            <p class="stageHint">
-              One statement at a time.
-              Clear choices.
-              No clutter.
-              You move through it calmly, even if your mind has been loud.
-            </p>
-          </div>
+<div class="grid">
+<div class="card"><h3>Your Anxiety Level</h3><p>Understand whether your anxiety is mild, moderate, or intense.</p></div>
+<div class="card"><h3>Emotional Triggers</h3><p>Identify hidden emotional pressure behind stress and overthinking.</p></div>
+<div class="card"><h3>Your Mind Pattern</h3><p>See how your brain reacts under stress and uncertainty.</p></div>
+<div class="card"><h3>Clear Direction</h3><p>Know what your mind needs next instead of staying in confusion.</p></div>
+</div>
 
-          <div class="progressWrap" aria-hidden="true">
-            <div class="progressBar"><div class="progressFill"></div></div>
-          </div>
+</div>
+</section>
 
-          <div class="qArea">
-            <div class="qCard">
-              <div class="qKicker">
-                <span>Example question</span>
-                <span>1 of 12</span>
-              </div>
+<!-- FINAL CTA -->
+<section class="final">
+<div class="container">
+<h2>Fast. Private. Insightful.</h2>
+<p>The test takes less than two minutes. No registration required. Discover your anxiety level and understand what it means.</p>
+<a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23" class="cta">Start The Test</a>
+</div>
+</section>
 
-              <p class="qText">I often feel on edge and unable to relax.</p>
-
-              <div class="choices" aria-label="choices">
-                <div class="choice">
-                  <span>Not at all</span>
-                  <span class="radio" aria-hidden="true"></span>
-                </div>
-                <div class="choice">
-                  <span>Sometimes</span>
-                  <span class="radio on" aria-hidden="true"></span>
-                </div>
-                <div class="choice">
-                  <span>Often</span>
-                  <span class="radio" aria-hidden="true"></span>
-                </div>
-                <div class="choice">
-                  <span>Almost always</span>
-                  <span class="radio" aria-hidden="true"></span>
-                </div>
-              </div>
-
-              <div style="margin-top:14px">
-                <a class="btn btnPrimary btnWide" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23&source=LPanxtest">Start the test</a>
-              </div>
-            </div>
-          </div>
-        </aside>
-
-      </div>
-    </div>
-  </main>
-
-  <section class="section" id="what">
-    <div class="wrap">
-      <div class="blockTitle"><span class="dot" aria-hidden="true"></span>What you get</div>
-      <h2>A result that turns vague fear into a map you can use.</h2>
-
-      <p class="copy">
-        When anxiety is unnamed, your brain tries to solve it anyway.
-        It watches your body.
-        It watches the room.
-        It watches the future.
-        Then it builds the most convincing worst case story it can.
-      </p>
-
-      <p class="copy">
-        A clear level breaks that cycle.
-        It gives your experience a shape.
-        It gives you language.
-        It gives you a next step that fits your pattern, not a generic checklist.
-      </p>
-
-      <div class="grid3" aria-label="deliverables">
-        <div class="card">
-          <b>Your anxiety level</b>
-          <p>A simple result you can recognize, track, and compare over time.</p>
-        </div>
-        <div class="card">
-          <b>Your dominant pattern</b>
-          <p>Thought loop, body alarm, panic surges, avoidance, or a mix that explains the way it feels.</p>
-        </div>
-        <div class="card">
-          <b>Your next step</b>
-          <p>A direction that matches the pattern so you stop trying random fixes and burning out.</p>
-        </div>
-      </div>
-
-      <div class="ctaRow" style="margin-top:18px">
-        <a class="btn btnPrimary" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23&source=LPanxtest">Start the test</a>
-        <a class="btn btnGhost" href="#how">How it works</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <section class="section tight" id="how">
-    <div class="wrap">
-      <div class="blockTitle"><span class="dot" aria-hidden="true"></span>How it works</div>
-      <h2>Simple questions, clear result, no overthinking.</h2>
-
-      <p class="copy">
-        You answer statements about your thoughts, your body signals, and how anxiety affects your day.
-        Then the result reflects what you said in plain language.
-      </p>
-
-      <div class="steps" aria-label="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <div>
-            <b>Answer honestly</b>
-            <span>Not how you wish you felt. How it is on a normal week when anxiety is present.</span>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="num">2</div>
-          <div>
-            <b>Get your level and pattern</b>
-            <span>You see what is driving the anxiety so it stops feeling random.</span>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="num">3</div>
-          <div>
-            <b>Choose a next step</b>
-            <span>You get direction based on your result so you can act without spiraling.</span>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="num">4</div>
-          <div>
-            <b>Track change</b>
-            <span>Repeat later and see progress clearly, instead of guessing by mood.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="ctaRow" style="margin-top:18px">
-        <a class="btn btnPrimary" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23&source=LPanxtest">Start the test</a>
-        <a class="btn btnGhost" href="#faq">Questions</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section ctaBand" id="start">
-    <div class="wrap">
-      <div class="ctaInner">
-        <div>
-          <div class="blockTitle"><span class="dot" aria-hidden="true"></span>Start now</div>
-          <h2 style="margin:10px 0 10px">If you have been doubting yourself, start with clarity.</h2>
-          <p class="copy">
-            You do not need a perfect plan to begin.
-            You need a clean read on what is happening.
-            Take the test, get the level, then take one next step that makes sense.
-          </p>
-        </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btnPrimary" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23&source=LPanxtest">Start the test</a>
-          <a class="btn btnGhost" href="#top">Back to top</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="faq">
-    <div class="wrap">
-      <div class="blockTitle"><span class="dot" aria-hidden="true"></span>FAQ</div>
-      <h2>Quick answers before you start</h2>
-      <p class="copy">
-        No pressure.
-        No drama.
-        Just a result you can use.
-      </p>
-
-      <div class="faq" aria-label="frequently asked questions">
-        <details>
-          <summary>Is this a diagnosis</summary>
-          <p>
-            No. A test can not diagnose.
-            It helps you understand intensity and pattern so you can choose a next step that fits.
-          </p>
-        </details>
-
-        <details>
-          <summary>What if my anxiety feels mostly physical</summary>
-          <p>
-            That is common.
-            Anxiety often shows up through breath, chest, stomach, throat, dizziness, and tension.
-            The questions include those signals.
-          </p>
-        </details>
-
-        <details>
-          <summary>Will this tell me if I have panic attacks</summary>
-          <p>
-            It can highlight a panic style pattern, meaning sudden surges that feel dangerous.
-            The value is naming the pattern so you can respond differently and reduce fear of the next surge.
-          </p>
-        </details>
-
-        <details>
-          <summary>How long does it take</summary>
-          <p>
-            Most people finish in a few minutes.
-            It is designed to be fast, clean, and readable.
-          </p>
-        </details>
-
-        <details>
-          <summary>Is my information private</summary>
-          <p>
-            This page is designed to feel respectful.
-            Your answers are intended to be used for your result and your next step.
-          </p>
-        </details>
-
-        <details>
-          <summary>What should I do after I get my result</summary>
-          <p>
-            Follow the next step suggested for your level.
-            If your result is higher and your life has been shrinking, structured support can speed up progress.
-          </p>
-        </details>
-      </div>
-
-      <div class="footer">
-        <div class="footerRow">
-          <div>© <span id="year"></span> Anxiety Test</div>
-          <div class="links">
-            <a href="#what">What you get</a>
-            <a href="#how">How it works</a>
-            <a href="#faq">FAQ</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+<div class="footer">© Anxiety Support</div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const p = new URLSearchParams(window.location.search);
@@ -726,7 +159,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
-
-
 </body>
 </html>
