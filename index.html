@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,137 +11,157 @@
 
   gtag('config', 'G-CN7KGLW2HZ');
 </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Discover Your Anxiety Level</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;line-height:1.6;-webkit-font-smoothing:antialiased;}
-.container{width:90%;max-width:1120px;margin:auto;}
-section{padding:90px 0;}
-
-/* HERO */
-.hero{padding-top:120px;padding-bottom:100px;text-align:center;background:linear-gradient(180deg,#ffffff,#eef3fb);}
-.hero-title{font-size:54px;font-weight:900;letter-spacing:-1px;margin-bottom:18px;color:#0b1f4a;}
-.hero p{font-size:19px;color:#334155;max-width:760px;margin:auto;}
-
-/* CTA */
-.cta{display:inline-block;margin-top:34px;padding:20px 54px;background:#2563ff;color:#fff;font-weight:700;font-size:18px;border-radius:14px;text-decoration:none;transition:0.25s;box-shadow:0 12px 30px rgba(37,99,255,0.30);}
-.cta:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(37,99,255,0.40);}
-
-/* DARK FEATURE */
-.dark-feature{background:linear-gradient(180deg,#0b1f4a,#163c8f);border-radius:22px;color:#fff;text-align:center;padding:70px 50px;max-width:940px;margin:0 auto;box-shadow:0 30px 70px rgba(0,0,0,0.25);}
-.dark-feature h2{font-size:42px;font-weight:800;margin-bottom:18px;}
-.dark-feature p{color:#e8f0ff;font-size:19px;max-width:720px;margin:auto;}
-
-/* RED LINES */
-.red-line{height:3px;background:#ef4444;width:100%;margin:40px 0;border-radius:3px;}
-
-/* HIGHLIGHT */
-.highlight{background:#ffe600;padding:3px 6px;border-radius:4px;font-weight:700;}
-
-/* IMAGE BLOCK */
-.image-row{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:40px;}
-.image-box img{width:100%;border-radius:16px;box-shadow:0 18px 40px rgba(0,0,0,0.12);}
-
-/* BENEFITS */
-.benefits{background:linear-gradient(180deg,#ffffff,#f1f5ff);}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:50px;}
-.card{background:#fff;padding:34px;border-radius:18px;box-shadow:0 14px 35px rgba(0,0,0,0.06);transition:0.3s;}
-.card:hover{transform:translateY(-4px);box-shadow:0 20px 45px rgba(0,0,0,0.10);}
-.card h3{margin-bottom:10px;font-size:18px;}
-.card p{color:#334155;}
-
-/* FINAL CTA */
-.final{background:linear-gradient(180deg,#0b1f4a,#163c8f);color:#fff;text-align:center;}
-.final h2{font-size:40px;font-weight:800;margin-bottom:14px;}
-.final p{color:#dbeafe;font-size:19px;max-width:760px;margin:auto;}
-
-/* FOOTER */
-.footer{text-align:center;padding:50px 0;color:#64748b;font-size:14px;}
-
-@media(max-width:768px){
-.hero-title{font-size:38px;}
-.image-row{grid-template-columns:1fr;}
-.dark-feature h2{font-size:28px;}
-.final h2{font-size:28px;}
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',sans-serif;background:linear-gradient(180deg,#eef2ff,#f8fafc);color:#0f172a;min-height:100vh;display:flex;align-items:center;justify-content:center}
+.wrapper{width:100%;max-width:820px;padding:20px}
+.card{background:white;border-radius:22px;padding:40px;box-shadow:0 20px 55px rgba(15,23,42,0.08)}
+h1{text-align:center;margin-bottom:6px}
+.subtitle{text-align:center;color:#64748b;margin-bottom:26px}
+.progress{height:8px;background:#e2e8f0;border-radius:20px;overflow:hidden;margin-bottom:30px}
+.progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#6366f1,#38bdf8);transition:0.35s}
+.slide{display:none}
+.slide.active{display:block;animation:fade 0.35s ease}
+.question{font-size:22px;font-weight:500;margin-bottom:12px;text-align:center}
+.desc{text-align:center;color:#64748b;font-size:14px;margin-bottom:16px}
+.answers button{width:100%;padding:15px;margin:7px 0;border-radius:12px;border:1px solid #e2e8f0;background:#f8fafc;font-size:15px;cursor:pointer;transition:0.2s}
+.answers button:hover{background:#eef2ff;border-color:#6366f1}
+.result{text-align:center}
+.level{font-size:40px;font-weight:700;margin:10px 0}
+.meter{height:18px;background:#e2e8f0;border-radius:30px;overflow:hidden;margin:18px 0}
+.meter-fill{height:100%;width:0%;border-radius:30px;transition:0.6s ease}
+.low{background:linear-gradient(90deg,#22c55e,#16a34a)}
+.moderate{background:linear-gradient(90deg,#facc15,#eab308)}
+.high{background:linear-gradient(90deg,#ef4444,#dc2626)}
+.help{background:#f1f5f9;border-radius:14px;padding:18px;margin-top:18px;color:#334155}
+.cta{margin-top:24px;padding:16px 30px;border:none;border-radius:14px;background:linear-gradient(90deg,#6366f1,#38bdf8);color:white;font-size:17px;font-weight:600;cursor:pointer;box-shadow:0 10px 25px rgba(99,102,241,0.3);transition:0.2s}
+.cta:hover{transform:translateY(-1px)}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
 <body>
-
-<!-- HERO -->
-<section class="hero">
-<div class="container">
-<h1 class="hero-title">Discover Your Anxiety Level</h1>
-<p>Get clear insight into your emotional state, understand your anxiety intensity, and discover what your mind is really experiencing right now.</p>
-<a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23" class="cta">Start The Test</a>
-</div>
-</section>
-
-<!-- DARK FEATURE -->
-<section>
-<div class="container">
-<div class="dark-feature">
-<h2>Clear Psychological Insight</h2>
-<p>Understand your anxiety intensity, hidden emotional triggers, and how your mind responds to stress. Clarity replaces confusion.</p>
-</div>
-</div>
-</section>
-
-<!-- SCIENCE STYLE -->
-<section>
-<div class="container">
-
-<div class="red-line"></div>
-<p style="text-align:center;font-style:italic;font-size:22px;">
-"It’s like finally understanding what your mind has been trying to tell you."
-</p>
-<div class="red-line"></div>
-
-<div class="image-row">
-<div>
-<p>Many people experience anxiety without understanding its real cause. The <span class="highlight">true signals are often hidden</span> beneath emotional pressure and internal tension.</p>
-<p style="margin-top:15px;">This test translates psychological patterns into clear insight so you can understand your anxiety level and what it means.</p>
-</div>
-
-<div class="image-box">
-<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80" alt="Calm peaceful mind">
+<div class="wrapper">
+<div class="card">
+<h1>Discover Your Anxiety Level</h1>
+<div class="subtitle">Answer honestly. This deeper assessment helps reveal how anxiety truly affects your mind and body.</div>
+<div class="progress"><div class="progress-bar" id="progress"></div></div>
+<div id="slides"></div>
 </div>
 </div>
 
-</div>
-</section>
-
-<!-- BENEFITS -->
-<section class="benefits">
-<div class="container">
-<h2 style="text-align:center;font-size:34px;font-weight:800;">What You Will Discover</h2>
-
-<div class="grid">
-<div class="card"><h3>Your Anxiety Level</h3><p>Understand whether your anxiety is mild, moderate, or intense.</p></div>
-<div class="card"><h3>Emotional Triggers</h3><p>Identify hidden emotional pressure behind stress and overthinking.</p></div>
-<div class="card"><h3>Your Mind Pattern</h3><p>See how your brain reacts under stress and uncertainty.</p></div>
-<div class="card"><h3>Clear Direction</h3><p>Know what your mind needs next instead of staying in confusion.</p></div>
-</div>
-
-</div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final">
-<div class="container">
-<h2>Fast. Private. Insightful.</h2>
-<p>The test takes less than two minutes. No registration required. Discover your anxiety level and understand what it means.</p>
-<a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&url_id=23" class="cta">Start The Test</a>
-</div>
-</section>
-
-<div class="footer">© Anxiety Support</div>
 <script>
+const questions=[
+"Do you often feel tension without clear reason?",
+"Do your thoughts spiral into worst case scenarios?",
+"Do you replay conversations or mistakes repeatedly?",
+"Do you feel restless or unable to relax?",
+"Does anxiety interfere with your sleep?",
+"Do you feel sudden waves of fear or discomfort?",
+"Do you feel mentally exhausted from constant thinking?",
+"Does anxiety make you doubt your decisions?",
+"Do you avoid situations due to inner discomfort?",
+"Do you feel pressure in chest stomach or breathing?",
+"Do small situations feel overwhelming?",
+"Does anxiety reduce your focus or productivity?",
+"Do you feel emotionally drained often?",
+"Does anxiety affect your confidence?",
+"Do you feel your mind rarely becomes quiet?",
+"Does anxiety affect relationships or communication?",
+"Do you feel inner fear without clear danger?",
+"Do you feel anxiety growing over time?",
+"Do you struggle to stay present in the moment?",
+"Do you feel easily irritated or on edge?",
+"Do you overanalyze your health or body sensations?",
+"Do you feel difficulty enjoying things you once liked?",
+"Do you worry about the future excessively?",
+"Do you feel tension in shoulders neck or jaw?",
+"Do you feel pressure to control everything?",
+"Do you feel unsafe even in normal situations?",
+"Do you feel your energy drained by anxiety?",
+"Do you wake up feeling tense or worried?",
+"Do you feel trapped in repetitive thoughts?",
+"Do you fear losing control or stability?",
+"Do you feel difficulty making decisions?",
+"Do you avoid uncertainty strongly?",
+"Do you feel disconnected or mentally foggy?",
+"Do you feel your body reacts strongly to stress?",
+"Do you feel overwhelmed by responsibilities?",
+"Do you feel fear of something going wrong?",
+"Do you struggle to calm your mind at night?",
+"Do you feel anxiety affects your daily life?",
+"Do you feel inner pressure most days?",
+"Overall how much does anxiety control your life?"
+];
+
+const answers=[
+{text:"Rarely",score:0},
+{text:"Sometimes",score:1},
+{text:"Often",score:2},
+{text:"Almost Always",score:3}
+];
+
+let current=0,total=0;
+const container=document.getElementById('slides');
+
+function build(){
+questions.forEach((q,i)=>{
+const s=document.createElement('div');
+s.className='slide'+(i===0?' active':'');
+s.innerHTML=`<div class='question'>${q}</div>
+<div class='desc'>Answer based on your recent experience</div>
+<div class='answers'>${answers.map(a=>`<button onclick='answer(${a.score})'>${a.text}</button>`).join('')}</div>`;
+container.appendChild(s);
+});
+}
+
+function answer(score){
+total+=score;
+document.querySelectorAll('.slide')[current].classList.remove('active');
+current++;
+document.getElementById('progress').style.width=((current/questions.length)*100)+'%';
+if(current<questions.length){document.querySelectorAll('.slide')[current].classList.add('active');}
+else showResult();
+}
+
+function showResult(){
+container.innerHTML='';
+const maxScore=questions.length*3;
+const percent=Math.round((total/maxScore)*100);
+
+let level='Low',colorClass='low',text='Your answers suggest low anxiety. Your current emotional state appears stable and manageable.';
+
+if(percent>=40 && percent<70){
+level='Moderate';colorClass='moderate';
+text='Your answers indicate moderate anxiety. It may already affect your thoughts sleep and emotional balance. Many people at this stage improve significantly with proper guidance.';
+}
+
+if(percent>=70){
+level='High';colorClass='high';
+text='Your results suggest high anxiety. This level often impacts clarity sleep confidence and overall wellbeing. With structured support many people regain control and feel mentally lighter.';
+}
+
+let ctaHTML='';
+if(level!=='Low'){
+ctaHTML=`<button class='cta' onclick="window.location.href='https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116'">Get Personalized Support And Guidance</button>`;
+}
+
+container.innerHTML=`
+<div class='result'>
+<h2>Your Anxiety Level</h2>
+<div class='level'>${level} • ${percent}%</div>
+<div class='meter'><div class='meter-fill ${colorClass}' style='width:${percent}%'></div></div>
+<p>${text}</p>
+${ctaHTML}
+</div>`;
+}
+
+build();
+</script>
+    <script>
 document.addEventListener("DOMContentLoaded", function () {
   const p = new URLSearchParams(window.location.search);
   const source = p.get("source");
