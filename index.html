@@ -161,23 +161,28 @@ ${ctaHTML}
 
 build();
 </script>
-    <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
   const p = new URLSearchParams(window.location.search);
   const source = p.get("source");
   if (!source) return;
 
-  document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
-    try {
-      const u = new URL(a.href);
-      u.searchParams.set("source", source);
-      a.href = u.toString();
+  const btns = document.querySelectorAll("button.cta");
 
-      if (a.getAttribute("target") === "_blank") a.removeAttribute("target");
-      a.setAttribute("rel", "noopener");
-    } catch (e) {}
+  btns.forEach(btn => {
+    const original = btn.getAttribute("onclick");
+    if (!original) return;
+
+    const match = original.match(/'(https?:\/\/[^']+)'/);
+    if (!match) return;
+
+    const url = new URL(match[1]);
+    url.searchParams.set("source", source);
+
+    btn.setAttribute("onclick", `window.location.href='${url.toString()}'`);
   });
 });
 </script>
+
 </body>
 </html>
