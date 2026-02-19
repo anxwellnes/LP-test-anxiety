@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CN7KGLW2HZ');
-</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Discover Your Anxiety Level</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-CN7KGLW2HZ');
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
@@ -36,7 +37,6 @@ h1{text-align:center;margin-bottom:6px}
 .low{background:linear-gradient(90deg,#22c55e,#16a34a)}
 .moderate{background:linear-gradient(90deg,#facc15,#eab308)}
 .high{background:linear-gradient(90deg,#ef4444,#dc2626)}
-.help{background:#f1f5f9;border-radius:14px;padding:18px;margin-top:18px;color:#334155}
 .cta{margin-top:24px;padding:16px 30px;border:none;border-radius:14px;background:linear-gradient(90deg,#6366f1,#38bdf8);color:white;font-size:17px;font-weight:600;cursor:pointer;box-shadow:0 10px 25px rgba(99,102,241,0.3);transition:0.2s}
 .cta:hover{transform:translateY(-1px)}
 @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
@@ -145,7 +145,7 @@ text='Your results suggest high anxiety. This level often impacts clarity sleep 
 
 let ctaHTML='';
 if(level!=='Low'){
-ctaHTML=`<button class='cta' onclick="window.location.href='https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116'">Get Personalized Support And Guidance</button>`;
+ctaHTML=`<button class='cta' id='ctaBtn'>Get Personalized Support And Guidance</button>`;
 }
 
 container.innerHTML=`
@@ -156,27 +156,26 @@ container.innerHTML=`
 <p>${text}</p>
 ${ctaHTML}
 </div>`;
+
+applySourceToCTA();
+}
+
+function applySourceToCTA(){
+const p=new URLSearchParams(window.location.search);
+const source=p.get('source');
+const btn=document.getElementById('ctaBtn');
+if(!btn)return;
+
+let url='https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116';
+if(source){url+='&source='+encodeURIComponent(source);} 
+
+btn.onclick=function(){
+  gtag('event','cta_click',{source:source||'direct'});
+  window.location.href=url;
+};
 }
 
 build();
-</script>
-      <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const p = new URLSearchParams(window.location.search);
-  const source = p.get("source");
-  if (!source) return;
-
-  document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
-    try {
-      const u = new URL(a.href);
-      u.searchParams.set("source", source);
-      a.href = u.toString();
-
-      if (a.getAttribute("target") === "_blank") a.removeAttribute("target");
-      a.setAttribute("rel", "noopener");
-    } catch (e) {}
-  });
-});
 </script>
 </body>
 </html>
