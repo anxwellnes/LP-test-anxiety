@@ -1,19 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CN7KGLW2HZ');
+</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Discover Your Anxiety Level</title>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);} 
-gtag('js', new Date());
-gtag('config', 'G-CN7KGLW2HZ');
-</script>
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
@@ -25,26 +25,29 @@ h1{text-align:center;margin-bottom:6px}
 .progress{height:8px;background:#e2e8f0;border-radius:20px;overflow:hidden;margin-bottom:30px}
 .progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#6366f1,#38bdf8);transition:0.35s}
 .slide{display:none}
-.slide.active{display:block}
+.slide.active{display:block;animation:fade 0.35s ease}
 .question{font-size:22px;font-weight:500;margin-bottom:12px;text-align:center}
 .desc{text-align:center;color:#64748b;font-size:14px;margin-bottom:16px}
-.answers button{width:100%;padding:15px;margin:7px 0;border-radius:12px;border:1px solid #e2e8f0;background:#f8fafc;font-size:15px;cursor:pointer}
+.answers button{width:100%;padding:15px;margin:7px 0;border-radius:12px;border:1px solid #e2e8f0;background:#f8fafc;font-size:15px;cursor:pointer;transition:0.2s}
 .answers button:hover{background:#eef2ff;border-color:#6366f1}
 .result{text-align:center}
 .level{font-size:40px;font-weight:700;margin:10px 0}
 .meter{height:18px;background:#e2e8f0;border-radius:30px;overflow:hidden;margin:18px 0}
-.meter-fill{height:100%;border-radius:30px;transition:0.6s ease}
+.meter-fill{height:100%;width:0%;border-radius:30px;transition:0.6s ease}
 .low{background:linear-gradient(90deg,#22c55e,#16a34a)}
 .moderate{background:linear-gradient(90deg,#facc15,#eab308)}
 .high{background:linear-gradient(90deg,#ef4444,#dc2626)}
-.cta{margin-top:24px;padding:16px 30px;border:none;border-radius:14px;background:linear-gradient(90deg,#6366f1,#38bdf8);color:white;font-size:17px;font-weight:600;cursor:pointer}
+.help{background:#f1f5f9;border-radius:14px;padding:18px;margin-top:18px;color:#334155}
+.cta{margin-top:24px;padding:16px 30px;border:none;border-radius:14px;background:linear-gradient(90deg,#6366f1,#38bdf8);color:white;font-size:17px;font-weight:600;cursor:pointer;box-shadow:0 10px 25px rgba(99,102,241,0.3);transition:0.2s}
+.cta:hover{transform:translateY(-1px)}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
 <body>
 <div class="wrapper">
 <div class="card">
 <h1>Discover Your Anxiety Level</h1>
-<div class="subtitle">Answer honestly based on your recent experience</div>
+<div class="subtitle">Answer honestly. This deeper assessment helps reveal how anxiety truly affects your mind and body.</div>
 <div class="progress"><div class="progress-bar" id="progress"></div></div>
 <div id="slides"></div>
 </div>
@@ -71,6 +74,26 @@ const questions=[
 "Do you feel inner fear without clear danger?",
 "Do you feel anxiety growing over time?",
 "Do you struggle to stay present in the moment?",
+"Do you feel easily irritated or on edge?",
+"Do you overanalyze your health or body sensations?",
+"Do you feel difficulty enjoying things you once liked?",
+"Do you worry about the future excessively?",
+"Do you feel tension in shoulders neck or jaw?",
+"Do you feel pressure to control everything?",
+"Do you feel unsafe even in normal situations?",
+"Do you feel your energy drained by anxiety?",
+"Do you wake up feeling tense or worried?",
+"Do you feel trapped in repetitive thoughts?",
+"Do you fear losing control or stability?",
+"Do you feel difficulty making decisions?",
+"Do you avoid uncertainty strongly?",
+"Do you feel disconnected or mentally foggy?",
+"Do you feel your body reacts strongly to stress?",
+"Do you feel overwhelmed by responsibilities?",
+"Do you feel fear of something going wrong?",
+"Do you struggle to calm your mind at night?",
+"Do you feel anxiety affects your daily life?",
+"Do you feel inner pressure most days?",
 "Overall how much does anxiety control your life?"
 ];
 
@@ -89,7 +112,7 @@ questions.forEach((q,i)=>{
 const s=document.createElement('div');
 s.className='slide'+(i===0?' active':'');
 s.innerHTML=`<div class='question'>${q}</div>
-<div class='desc'>Choose the option that best describes you</div>
+<div class='desc'>Answer based on your recent experience</div>
 <div class='answers'>${answers.map(a=>`<button onclick='answer(${a.score})'>${a.text}</button>`).join('')}</div>`;
 container.appendChild(s);
 });
@@ -102,6 +125,26 @@ current++;
 document.getElementById('progress').style.width=((current/questions.length)*100)+'%';
 if(current<questions.length){document.querySelectorAll('.slide')[current].classList.add('active');}
 else showResult();
+  function addSourceToCTA(){
+  const p = new URLSearchParams(window.location.search);
+  const source = p.get("source");
+  if (!source) return;
+
+  const btn = document.querySelector(".cta");
+  if (!btn) return;
+
+  const onclick = btn.getAttribute("onclick");
+  if (!onclick) return;
+
+  const match = onclick.match(/'(https?:\/\/[^']+)'/);
+  if (!match) return;
+
+  const u = new URL(match[1]);
+  u.searchParams.set("source", source);
+
+  btn.setAttribute("onclick", `window.location.href='${u.toString()}'`);
+}
+
 }
 
 function showResult(){
@@ -109,24 +152,24 @@ container.innerHTML='';
 const maxScore=questions.length*3;
 const percent=Math.round((total/maxScore)*100);
 
-let level='Low',colorClass='low',text='Your answers suggest low anxiety. Your current state appears stable.';
+let level='Low',colorClass='low',text='Your answers suggest low anxiety. Your current emotional state appears stable and manageable.';
 
 if(percent>=40 && percent<70){
 level='Moderate';colorClass='moderate';
-text='Your answers indicate moderate anxiety. Many people at this stage improve significantly with the right guidance.';
+text='Your answers indicate moderate anxiety. It may already affect your thoughts sleep and emotional balance. Many people at this stage improve significantly with proper guidance.';
 }
 
 if(percent>=70){
 level='High';colorClass='high';
-text='Your results suggest high anxiety. Structured support can help you regain control and feel mentally lighter.';
+text='Your results suggest high anxiety. This level often impacts clarity sleep confidence and overall wellbeing. With structured support many people regain control and feel mentally lighter.';
 }
 
 let ctaHTML='';
 if(level!=='Low'){
-ctaHTML=`<button class='cta' id='ctaBtn'>Get Personalized Support And Guidance</button>`;
+ctaHTML = `<button class='cta' onclick="window.location.href='https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116'">Get Personalized Support And Guidance</button>`;
 }
 
-container.innerHTML=`
+container.innerHTML=addSourceToCTA();
 <div class='result'>
 <h2>Your Anxiety Level</h2>
 <div class='level'>${level} • ${percent}%</div>
@@ -134,30 +177,27 @@ container.innerHTML=`
 <p>${text}</p>
 ${ctaHTML}
 </div>`;
-
-// GA event
-if(level==='Moderate' || level==='High'){
-  gtag('event','quiz_result',{level:level,percent:percent});
-}
-
-attachSourceToCTA();
-}
-
-function attachSourceToCTA(){
-const params=new URLSearchParams(window.location.search);
-const source=params.get('source');
-const btn=document.getElementById('ctaBtn');
-if(!btn)return;
-
-let url='https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116';
-if(source){url+='&source='+encodeURIComponent(source);} 
-btn.onclick=function(){
-  gtag('event','cta_click',{source:source||'direct'});
-  window.location.href=url;
-};
 }
 
 build();
+</script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const p = new URLSearchParams(window.location.search);
+  const source = p.get("source");
+  if (!source) return;
+
+  document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
+    try {
+      const u = new URL(a.href);
+      u.searchParams.set("source", source);
+      a.href = u.toString();
+
+      if (a.getAttribute("target") === "_blank") a.removeAttribute("target");
+      a.setAttribute("rel", "noopener");
+    } catch (e) {}
+  });
+});
 </script>
 </body>
 </html>
