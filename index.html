@@ -1,16 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);} 
-gtag('js', new Date());
-gtag('config', 'G-CN7KGLW2HZ');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover Your Anxiety Level</title>
@@ -18,6 +19,7 @@ gtag('config', 'G-CN7KGLW2HZ');
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #f5f8ff;
@@ -1012,7 +1014,7 @@ gtag('config', 'G-CN7KGLW2HZ');
             <div class="therapy-benefits" id="therapyBenefits"></div>
 
             <div class="therapy-actions">
-              <a class="btn btn-primary" id="ctaLink" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=defaultAnxietyLevel">Get Professional Support</a>
+              <a class="btn btn-primary" id="ctaLink" href="#">Get Professional Support</a>
               <button type="button" class="btn btn-secondary" id="retakeBtn">Retake quiz</button>
             </div>
 
@@ -1236,18 +1238,50 @@ gtag('config', 'G-CN7KGLW2HZ');
     const levelIndicatorLabel = document.getElementById('levelIndicatorLabel');
     const therapyCard = document.getElementById('therapyCard');
     const footerRetakeWrap = document.getElementById('footerRetakeWrap');
+    const ctaLink = document.getElementById('ctaLink');
 
     let currentIndex = 0;
     let answers = new Array(questions.length).fill(null);
 
+    // =========================
+    // SOURCE PARAM SUPPORT
+    // =========================
+    const DEFAULT_SOURCE = 'defaultAnxietyLevel';
+
+    function getSourceFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const rawSource = params.get('source');
+
+      if (!rawSource) return DEFAULT_SOURCE;
+
+      const cleanedSource = rawSource.trim();
+      return cleanedSource ? cleanedSource : DEFAULT_SOURCE;
+    }
+
+    function buildCtaUrl() {
+      const source = getSourceFromUrl();
+      const url = new URL('https://go.online-therapy.com/aff_c');
+      url.searchParams.set('offer_id', '2');
+      url.searchParams.set('aff_id', '1116');
+      url.searchParams.set('source', source);
+      return url.toString();
+    }
+
+    function applySourceToCta() {
+      ctaLink.href = buildCtaUrl();
+    }
+
     function updateProgress() {
       const questionNum = currentIndex + 1;
       const percent = Math.round((currentIndex / questions.length) * 100);
+
       currentQuestionNumber.textContent = questionNum;
       progressPercent.textContent = percent;
       progressFill.style.width = `${percent}%`;
+
       backBtn.disabled = currentIndex === 0;
       backBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+
       helperText.textContent = currentIndex === questions.length - 1
         ? 'Select one answer to see your result automatically.'
         : 'Select one answer to move to the next question automatically.';
@@ -1256,6 +1290,7 @@ gtag('config', 'G-CN7KGLW2HZ');
     function renderQuestion() {
       questionNumberBadge.textContent = currentIndex + 1;
       questionText.textContent = questions[currentIndex];
+
       answersWrap.innerHTML = options.map(option => {
         const isSelected = answers[currentIndex] === option.value;
         return `
@@ -1372,6 +1407,9 @@ gtag('config', 'G-CN7KGLW2HZ');
         document.getElementById('ctaLink').textContent = data.ctaLabel;
         document.getElementById('therapyNote').textContent = data.therapyNote;
         renderBenefits(data.ctaBenefits);
+
+        // aplică source-ul exact înainte de afișarea CTA-ului
+        applySourceToCta();
       }
 
       quizCard.style.display = 'none';
@@ -1386,8 +1424,10 @@ gtag('config', 'G-CN7KGLW2HZ');
       quizCard.style.display = 'block';
       therapyCard.classList.remove('hidden');
       footerRetakeWrap.style.display = 'none';
+
       renderQuestion();
       updateProgress();
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -1402,6 +1442,9 @@ gtag('config', 'G-CN7KGLW2HZ');
     restartBtn.addEventListener('click', resetQuiz);
     retakeBtn.addEventListener('click', resetQuiz);
     retakeBtnLow.addEventListener('click', resetQuiz);
+
+    // setează CTA-ul și la încărcare, ca fallback
+    applySourceToCta();
 
     renderQuestion();
     updateProgress();
