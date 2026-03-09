@@ -1,11 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Discover Your Anxiety Level</title>
-
-<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -13,150 +10,1400 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-CN7KGLW2HZ');
 </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Your Anxiety Level</title>
+  <meta name="description" content="A modern 21-question quiz to discover your anxiety level with one-question flow, percentage results and a structured premium result experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f8ff;
+      --surface: #ffffff;
+      --surface-soft: #f7faff;
+      --text: #102033;
+      --muted: #63758e;
+      --line: #dbe6f4;
+      --primary: #1f6dff;
+      --primary-dark: #1458d8;
+      --primary-soft: #edf4ff;
+      --success: #0f9d7a;
+      --success-soft: #ebfaf5;
+      --warning: #f0a229;
+      --warning-soft: #fff7ea;
+      --danger: #e35d6a;
+      --danger-soft: #fff1f3;
+      --shadow-lg: 0 24px 60px rgba(22, 52, 96, 0.10);
+      --shadow-md: 0 16px 34px rgba(22, 52, 96, 0.07);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 18px;
+      --radius-sm: 14px;
+      --max: 980px;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:'Inter',sans-serif;background:linear-gradient(180deg,#eef2ff,#f8fafc);color:#0f172a;min-height:100vh;display:flex;align-items:center;justify-content:center}
-.wrapper{width:100%;max-width:820px;padding:20px}
-.card{background:white;border-radius:22px;padding:40px;box-shadow:0 20px 55px rgba(15,23,42,0.08)}
-h1{text-align:center;margin-bottom:6px}
-.subtitle{text-align:center;color:#64748b;margin-bottom:26px}
-.progress{height:8px;background:#e2e8f0;border-radius:20px;overflow:hidden;margin-bottom:30px}
-.progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#6366f1,#38bdf8);transition:0.35s}
-.slide{display:none}
-.slide.active{display:block;animation:fade 0.35s ease}
-.question{font-size:22px;font-weight:500;margin-bottom:12px;text-align:center}
-.desc{text-align:center;color:#64748b;font-size:14px;margin-bottom:16px}
-.answers button{width:100%;padding:15px;margin:7px 0;border-radius:12px;border:1px solid #e2e8f0;background:#f8fafc;font-size:15px;cursor:pointer;transition:0.2s}
-.answers button:hover{background:#eef2ff;border-color:#6366f1}
-.result{text-align:center}
-.level{font-size:40px;font-weight:700;margin:10px 0}
-.meter{height:18px;background:#e2e8f0;border-radius:30px;overflow:hidden;margin:18px 0}
-.meter-fill{height:100%;width:0%;border-radius:30px;transition:0.6s ease}
-.low{background:linear-gradient(90deg,#22c55e,#16a34a)}
-.moderate{background:linear-gradient(90deg,#facc15,#eab308)}
-.high{background:linear-gradient(90deg,#ef4444,#dc2626)}
-.cta{margin-top:24px;padding:16px 30px;border:none;border-radius:14px;background:linear-gradient(90deg,#6366f1,#38bdf8);color:white;font-size:17px;font-weight:600;cursor:pointer;box-shadow:0 10px 25px rgba(99,102,241,0.3);transition:0.2s}
-.cta:hover{transform:translateY(-1px)}
-@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-</style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(31,109,255,0.05), transparent 28%),
+        linear-gradient(180deg, #fbfdff 0%, #f5f8ff 100%);
+      line-height: 1.6;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 42px 0 22px;
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f6faff 100%);
+      border: 1px solid #dce7f5;
+      border-radius: var(--radius-xl);
+      padding: 34px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #edf4ff;
+      border: 1px solid #d9e7ff;
+      color: #1a61de;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.2rem, 4vw, 4rem);
+      line-height: 1.04;
+      letter-spacing: -0.05em;
+      max-width: 760px;
+    }
+
+    .hero-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.06rem;
+      max-width: 760px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .hero-point {
+      background: rgba(255,255,255,0.88);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .hero-point strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .hero-point span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .quiz-wrap {
+      padding: 18px 0 56px;
+    }
+
+    .quiz-card,
+    .result-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+    }
+
+    .quiz-card {
+      padding: 28px;
+    }
+
+    .quiz-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .quiz-head h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      letter-spacing: -0.03em;
+    }
+
+    .quiz-head p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .progress-meta {
+      min-width: 200px;
+      width: min(100%, 260px);
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      border-radius: 999px;
+      background: #ebf1fa;
+      overflow: hidden;
+      border: 1px solid #dde7f4;
+    }
+
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #1f6dff 0%, #73a7ff 100%);
+      transition: width 0.25s ease;
+    }
+
+    .legend {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 22px;
+      padding: 16px;
+      border-radius: 18px;
+      background: #f8fbff;
+      border: 1px solid #e3ebf6;
+    }
+
+    .legend-title {
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .legend-text {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .question-stage {
+      min-height: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .question-card {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+
+    .question-top {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 22px;
+    }
+
+    .question-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: #edf4ff;
+      color: #1b61df;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      flex: 0 0 auto;
+      font-size: 0.95rem;
+    }
+
+    .question-text {
+      margin: 0;
+      font-size: clamp(1.15rem, 2.1vw, 1.5rem);
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+    }
+
+    .answers {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .answer-option button {
+      width: 100%;
+      min-height: 60px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid #dde7f4;
+      background: #f9fbff;
+      color: #47607d;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: left;
+      transition: 0.18s ease;
+    }
+
+    .answer-option button:hover {
+      border-color: #bfd3ef;
+      background: #f3f8ff;
+      transform: translateY(-1px);
+    }
+
+    .answer-option button.selected {
+      background: #1f6dff;
+      color: #ffffff;
+      border-color: #1f6dff;
+      box-shadow: 0 12px 28px rgba(31, 109, 255, 0.18);
+    }
+
+    .stage-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .helper-text {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: none;
+      min-height: 54px;
+      padding: 0 22px;
+      border-radius: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 16px 30px rgba(31, 109, 255, 0.20);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .btn-secondary:hover {
+      border-color: #cad8ea;
+      transform: translateY(-1px);
+    }
+
+    .result-card {
+      display: none;
+      overflow: hidden;
+    }
+
+    .result-top {
+      padding: 32px;
+      background: linear-gradient(135deg, #f7fbff 0%, #eef5ff 100%);
+      border-bottom: 1px solid #e2ebf7;
+    }
+
+    .result-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .result-badge.low {
+      background: var(--success-soft);
+      color: var(--success);
+      border: 1px solid #d1f0e4;
+    }
+
+    .result-badge.moderate {
+      background: var(--warning-soft);
+      color: var(--warning);
+      border: 1px solid #f5e0b6;
+    }
+
+    .result-badge.high {
+      background: var(--danger-soft);
+      color: var(--danger);
+      border: 1px solid #f3d0d7;
+    }
+
+    .result-header-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .result-title {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+    }
+
+    .result-text {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      max-width: 680px;
+    }
+
+    .result-summary {
+      background: #ffffff;
+      border: 1px solid #dbe6f4;
+      border-radius: 24px;
+      padding: 20px;
+      box-shadow: 0 16px 36px rgba(20, 52, 98, 0.08);
+    }
+
+    .summary-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .summary-top strong {
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .summary-pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #edf4ff;
+      color: #1b61df;
+      border: 1px solid #d7e6ff;
+      font-weight: 800;
+      font-size: 0.94rem;
+    }
+
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .score-box {
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: #f8fbff;
+      padding: 16px;
+    }
+
+    .score-box strong {
+      display: block;
+      font-size: 1.55rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 4px;
+    }
+
+    .score-box span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .level-indicator-card {
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      padding: 16px;
+    }
+
+    .level-indicator-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .level-indicator-head strong {
+      font-size: 0.98rem;
+      letter-spacing: -0.02em;
+    }
+
+    .level-indicator-head span {
+      font-weight: 800;
+      font-size: 0.92rem;
+      color: #365b85;
+    }
+
+    .level-scale {
+      position: relative;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+
+    .level-scale-bar {
+      position: absolute;
+      inset: 4px 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #13a87f 0%, #f0a229 50%, #e35d6a 100%);
+      box-shadow: inset 0 0 0 1px rgba(16, 32, 51, 0.06);
+    }
+
+    .level-scale-marker {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 3px solid #1f6dff;
+      box-shadow: 0 8px 18px rgba(31, 109, 255, 0.18);
+      transform: translate(-50%, -50%);
+      transition: left 0.35s ease;
+    }
+
+    .level-scale-labels {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .results-body {
+      padding: 28px 32px 32px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .insight-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
+      border: 1px solid #dce7f4;
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 16px 34px rgba(20, 52, 98, 0.05);
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: #edf4ff;
+      color: #1b61df;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .insight-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+      letter-spacing: -0.03em;
+    }
+
+    .insight-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .structured-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .structured-card {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 22px;
+      background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+    }
+
+    .structured-card h3 {
+      margin: 0 0 6px;
+      font-size: 1.12rem;
+      letter-spacing: -0.02em;
+    }
+
+    .structured-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .structured-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .structured-card li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--muted);
+    }
+
+    .dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      margin-top: 1px;
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .dot.blue {
+      background: #edf4ff;
+      color: #1b61df;
+      border: 1px solid #d7e6ff;
+    }
+
+    .dot.green {
+      background: var(--success-soft);
+      color: var(--success);
+      border: 1px solid #d1f0e4;
+    }
+
+    .plan-card {
+      border-radius: 24px;
+      padding: 22px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      border: 1px solid #dce7f4;
+    }
+
+    .plan-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.18rem;
+      letter-spacing: -0.02em;
+    }
+
+    .plan-card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .plan-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .plan-step {
+      background: #ffffff;
+      border: 1px solid #dce7f4;
+      border-radius: 20px;
+      padding: 16px;
+    }
+
+    .plan-step .step-no {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: #edf4ff;
+      color: #1b61df;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .plan-step strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .plan-step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.55;
+    }
+
+    .therapy-card {
+      margin-top: 2px;
+      padding: 24px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #1c63ee 0%, #3f87ff 100%);
+      color: white;
+      box-shadow: 0 24px 55px rgba(28, 99, 238, 0.20);
+    }
+
+    .therapy-card.hidden {
+      display: none;
+    }
+
+    .therapy-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+    }
+
+    .therapy-card p {
+      margin: 0 0 18px;
+      color: rgba(255,255,255,0.92);
+      font-size: 1rem;
+    }
+
+    .therapy-benefits {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0 20px;
+    }
+
+    .therapy-benefit {
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .therapy-benefit strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.98rem;
+    }
+
+    .therapy-benefit span {
+      display: block;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.86);
+      line-height: 1.45;
+    }
+
+    .therapy-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .therapy-card .btn-primary {
+      background: #ffffff;
+      color: #1458d8;
+      box-shadow: none;
+    }
+
+    .therapy-card .btn-primary:hover {
+      background: #f7faff;
+    }
+
+    .therapy-note {
+      margin-top: 12px;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.82);
+    }
+
+    .footer-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 4px;
+    }
+
+    .disclaimer {
+      margin-top: 0;
+      padding: 18px 32px 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      border-top: 1px solid #e7eef8;
+      background: #fbfdff;
+    }
+
+    @media (max-width: 900px) {
+      .hero-points,
+      .structured-grid,
+      .plan-grid,
+      .therapy-benefits,
+      .result-header-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-card,
+      .quiz-card {
+        padding: 22px;
+        border-radius: 24px;
+      }
+
+      .result-top,
+      .results-body,
+      .disclaimer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .hero-points,
+      .score-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .question-card {
+        padding: 20px;
+      }
+
+      .question-stage {
+        min-height: 320px;
+      }
+
+      .stage-actions {
+        align-items: flex-start;
+      }
+
+      .btn-group,
+      .therapy-actions,
+      .footer-actions {
+        width: 100%;
+      }
+
+      .btn-group .btn,
+      .therapy-actions .btn,
+      .footer-actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="wrapper">
-<div class="card">
-<h1>Discover Your Anxiety Level</h1>
-<div class="subtitle">Answer honestly. This deeper assessment helps reveal how anxiety truly affects your mind and body.</div>
-<div class="progress"><div class="progress-bar" id="progress"></div></div>
-<div id="slides"></div>
-</div>
-</div>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="eyebrow">21-question anxiety level quiz</div>
+        <h1>Discover Your Anxiety Level</h1>
+        <p>
+          Answer 21 simple questions about worry, panic, overthinking, physical symptoms and how anxiety may be affecting your sleep, focus and daily life.
+        </p>
+        <p>
+          This quiz is designed to feel simple, clear and easy to complete, one question at a time, with an instant result, a percentage score and a visual level indicator at the end.
+        </p>
+        <div class="hero-points">
+          <div class="hero-point">
+            <strong>Takes about 3 minutes</strong>
+            <span>Quick, simple and easy to complete.</span>
+          </div>
+          <div class="hero-point">
+            <strong>One question at a time</strong>
+            <span>Cleaner flow with less overwhelm.</span>
+          </div>
+          <div class="hero-point">
+            <strong>Instant result</strong>
+            <span>See your percentage and level instantly.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
-const questions=[
-"Do you often feel tension without clear reason?",
-"Do you feel restless or unable to relax?",
-"Does anxiety interfere with your sleep?",
-"Do you feel sudden waves of fear or discomfort?",
-"Do you feel pressure in chest stomach or breathing?",
-"Do you feel tension in shoulders neck or jaw?",
-"Do you feel your body reacts strongly to stress?",
-"Do your thoughts spiral into worst case scenarios?",
-"Do you replay conversations or mistakes repeatedly?",
-"Do you feel mentally exhausted from constant thinking?",
-"Do you feel your mind rarely becomes quiet?",
-"Do you worry about the future excessively?",
-"Do you feel pressure to control everything?",
-"Do you feel trapped in repetitive thoughts?",
-"Do you avoid situations due to inner discomfort?",
-"Does anxiety reduce your focus or productivity?",
-"Does anxiety affect relationships or communication?",
-"Do you struggle to stay present in the moment?",
-"Do you feel difficulty enjoying things you once liked?",
-"Do you feel anxiety affects your daily life?",
-"Overall how much does anxiety control your life?",
-];
+  <section class="quiz-wrap">
+    <div class="container">
+      <div class="quiz-card" id="quizCard">
+        <div class="quiz-head">
+          <div>
+            <h2>Discover Your Anxiety Level</h2>
+            <p>Choose the answer that best reflects how often each statement feels true for you.</p>
+          </div>
+          <div class="progress-meta">
+            <div class="progress-label">
+              <span>Question <span id="currentQuestionNumber">1</span> of 21</span>
+              <span><span id="progressPercent">0</span>%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+        </div>
 
-const answers=[
-{text:"Rarely",score:0},
-{text:"Sometimes",score:1},
-{text:"Often",score:2},
-{text:"Almost Always",score:3}
-];
+        <div class="legend">
+          <div class="legend-title">Answer scale</div>
+          <div class="legend-text">Never, Rarely, Sometimes, Often, Almost always</div>
+        </div>
 
-let current=0,total=0;
-const container=document.getElementById('slides');
+        <div class="question-stage">
+          <div class="question-card">
+            <div class="question-top">
+              <div class="question-number" id="questionNumberBadge">1</div>
+              <p class="question-text" id="questionText"></p>
+            </div>
+            <div class="answers" id="answersWrap"></div>
+          </div>
 
-function build(){
-questions.forEach((q,i)=>{
-const s=document.createElement('div');
-s.className='slide'+(i===0?' active':'');
-s.innerHTML=`<div class='question'>${q}</div>
-<div class='desc'>Answer based on your recent experience</div>
-<div class='answers'>${answers.map(a=>`<button onclick='answer(${a.score})'>${a.text}</button>`).join('')}</div>`;
-container.appendChild(s);
-});
-}
+          <div class="stage-actions">
+            <div class="helper-text" id="helperText">Select one answer to move to the next question automatically.</div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary" id="backBtn">Back</button>
+              <button type="button" class="btn btn-secondary" id="restartBtn">Restart</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-function answer(score){
-total+=score;
-document.querySelectorAll('.slide')[current].classList.remove('active');
-current++;
-document.getElementById('progress').style.width=((current/questions.length)*100)+'%';
-if(current<questions.length){document.querySelectorAll('.slide')[current].classList.add('active');}
-else showResult();
-}
+      <div class="result-card" id="resultCard">
+        <div class="result-top">
+          <div id="resultBadge" class="result-badge">Result</div>
 
-function showResult(){
-container.innerHTML='';
-const maxScore=questions.length*3;
-const percent=Math.round((total/maxScore)*100);
+          <div class="result-header-grid">
+            <div>
+              <h2 class="result-title" id="resultTitle">Your result</h2>
+              <p class="result-text" id="resultText"></p>
+            </div>
 
-let level='Low',colorClass='low',text='Your answers suggest low anxiety. Your current emotional state appears stable and manageable.';
+            <div class="result-summary">
+              <div class="summary-top">
+                <strong>Your anxiety snapshot</strong>
+                <span class="summary-pill" id="levelIndicatorLabel">Moderate · 0%</span>
+              </div>
 
-if(percent>=40 && percent<70){
-level='Moderate';colorClass='moderate';
-text='Your answers indicate moderate anxiety. At this stage anxiety may already be influencing your thoughts, your sleep, and your emotional balance, sometimes more than you realize. Many people here begin to notice increased overthinking, inner tension, and moments where calm feels harder to maintain. Without proper attention, moderate anxiety can gradually grow and start affecting more areas of daily life. The positive part is that at this stage improvement is often faster and easier with the right guidance, helping you regain clarity, emotional balance, and a stronger sense of control before anxiety becomes overwhelming.';
-}
+              <div class="score-grid">
+                <div class="score-box">
+                  <strong id="scorePercent">0%</strong>
+                  <span>Your anxiety level</span>
+                </div>
+                <div class="score-box">
+                  <strong id="scoreLevel">Low</strong>
+                  <span>Current result</span>
+                </div>
+              </div>
 
-if(percent>=70){
-level='High';colorClass='high';
-text='Your results show a high level of anxiety. At this stage anxiety often begins to quietly take control, affecting your sleep, your focus, your emotional balance, and your ability to truly feel at ease. Many people here feel mentally exhausted, trapped in constant worry, unable to relax, as if their mind never truly switches off and peace feels out of reach. If left unaddressed, anxiety can slowly grow stronger, taking more energy, more clarity, and more joy from everyday life. But this is not where your story has to stay. With the right guidance and support, many people begin to feel the weight lift, their mind becomes calmer, their thoughts clearer, and step by step they regain control, confidence, and the sense of living their life fully again.';
-}
+              <div class="level-indicator-card">
+                <div class="level-indicator-head">
+                  <strong>Result indicator</strong>
+                  <span id="levelTinyText">Low range</span>
+                </div>
 
-let ctaHTML='';
-if(level!=='Low'){
-ctaHTML=`<button class='cta' id='ctaBtn'>Begin Your Recovery Now</button>`;
-}
+                <div class="level-scale">
+                  <div class="level-scale-bar"></div>
+                  <div class="level-scale-marker" id="levelScaleMarker"></div>
+                </div>
 
-container.innerHTML=`
-<div class='result'>
-<h2>Your Anxiety Level</h2>
-<div class='level'>${level} • ${percent}%</div>
-<div class='meter'><div class='meter-fill ${colorClass}' style='width:${percent}%'></div></div>
-<p>${text}</p>
-${ctaHTML}
-</div>`;
+                <div class="level-scale-labels">
+                  <span>Low</span>
+                  <span>Moderate</span>
+                  <span>High</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-applySourceToCTA();
-}
+        <div class="results-body">
+          <div class="insight-card">
+            <div class="section-label">Meaning</div>
+            <h3 id="insightTitle">What this result really means</h3>
+            <p id="insightText"></p>
+          </div>
 
-function applySourceToCTA(){
-const p=new URLSearchParams(window.location.search);
-const source=p.get('source');
-const btn=document.getElementById('ctaBtn');
-if(!btn)return;
+          <div class="structured-grid">
+            <div class="structured-card">
+              <div class="section-label">Pattern</div>
+              <h3>What this result suggests</h3>
+              <p id="suggestIntro">A clearer explanation of what your answers may be pointing to right now.</p>
+              <ul id="suggestList"></ul>
+            </div>
 
-let url='https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=defaultAnxietyLevel';
-if(source){url+='&source='+encodeURIComponent(source);} 
+            <div class="structured-card">
+              <div class="section-label">Action</div>
+              <h3>What would help most now</h3>
+              <p id="actionIntro">The next moves that are likely to create the most relief and stability.</p>
+              <ul id="actionList"></ul>
+            </div>
+          </div>
 
-btn.onclick=function(){
-  gtag('event','cta_click',{source:source||'direct'});
-  window.location.href=url;
-};
-}
+          <div class="plan-card">
+            <div class="section-label">Next steps</div>
+            <h3>Your 3 step plan from here</h3>
+            <p id="planIntro">A simple, focused path based on your current level.</p>
+            <div class="plan-grid" id="planGrid"></div>
+          </div>
 
-build();
-</script>
+          <div class="therapy-card" id="therapyCard">
+            <div class="section-label" style="background: rgba(255,255,255,0.18); color: #ffffff; border: 1px solid rgba(255,255,255,0.22);">Support</div>
+            <h3 id="ctaTitle">Next step</h3>
+            <p id="ctaText"></p>
+
+            <div class="therapy-benefits" id="therapyBenefits"></div>
+
+            <div class="therapy-actions">
+              <a class="btn btn-primary" id="ctaLink" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=defaultAnxietyLevel">Get Professional Support</a>
+              <button type="button" class="btn btn-secondary" id="retakeBtn">Retake quiz</button>
+            </div>
+
+            <div class="therapy-note" id="therapyNote"></div>
+          </div>
+
+          <div class="footer-actions" id="footerRetakeWrap" style="display:none;">
+            <button type="button" class="btn btn-secondary" id="retakeBtnLow">Retake quiz</button>
+          </div>
+        </div>
+
+        <div class="disclaimer">
+          This quiz is an informational self assessment and not a diagnosis. If anxiety, panic or distress is significantly affecting your life, a licensed professional can help you better understand what is happening and what kind of support may help.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const questions = [
+      "Do you often feel nervous or on edge without a clear reason?",
+      "Do your thoughts tend to spiral into worst-case scenarios?",
+      "Do you find it difficult to stop worrying once your mind starts?",
+      "Do you feel physical symptoms like a racing heart, tight chest, or dizziness when anxious?",
+      "Do you avoid certain situations because they might trigger anxiety?",
+      "Do you feel mentally exhausted from constant overthinking?",
+      "Do you have trouble relaxing even when nothing stressful is happening?",
+      "Do small problems sometimes feel overwhelming?",
+      "Do you replay conversations or events in your mind for hours afterward?",
+      "Do you experience sudden waves of intense fear or panic?",
+      "Do you worry about things that have not happened yet?",
+      "Do you struggle to fall asleep because your mind will not slow down?",
+      "Do you often feel like you are stuck in survival mode?",
+      "Do you find yourself expecting something bad to happen?",
+      "Do you feel tense in your body most of the time?",
+      "Do you feel like anxiety is holding you back from living the life you want?",
+      "Do you find it hard to concentrate because your mind is constantly worrying?",
+      "Do you worry a lot about how other people may perceive you?",
+      "Do you feel relief only temporarily before anxiety returns?",
+      "Do you feel like you have tried many ways to manage anxiety but nothing works long-term?",
+      "Do you sometimes feel like anxiety is controlling your life?"
+    ];
+
+    const options = [
+      { label: "Never", value: 0 },
+      { label: "Rarely", value: 1 },
+      { label: "Sometimes", value: 2 },
+      { label: "Often", value: 3 },
+      { label: "Almost always", value: 4 }
+    ];
+
+    const resultMap = {
+      low: {
+        badge: "Low level",
+        badgeClass: "low",
+        title: "Your answers suggest a lower current anxiety level.",
+        text: "Your responses suggest that anxiety may appear in certain moments, but it does not seem to be strongly disrupting daily life right now. This usually means your focus should be on protecting stability and preventing stress from building into a heavier pattern later.",
+        insightTitle: "This looks more like early stress management than ongoing disruption.",
+        insightText: "At this level, the biggest opportunity is not crisis response. It is prevention. When people strengthen their routines, catch early warning signs and stay consistent with basic regulation habits, they often keep mild anxiety from becoming something more persistent.",
+        suggestIntro: "Here is what your answers may point to at the moment.",
+        suggest: [
+          "Stress may rise around specific situations rather than being present all day.",
+          "Your nervous system appears to recover more easily after pressure or uncertainty.",
+          "You likely still have room to stay ahead of anxiety before it starts shaping your routine."
+        ],
+        actionIntro: "These are the most useful areas to focus on now.",
+        actions: [
+          "Keep sleep, movement and stimulation balanced so tension does not quietly accumulate.",
+          "Notice early patterns like overthinking, muscle tension or reassurance seeking when stress rises.",
+          "Stay proactive with calming habits instead of waiting until symptoms feel stronger."
+        ],
+        planIntro: "A simple prevention focused path usually works best here.",
+        plan: [
+          {
+            title: "Protect your baseline",
+            text: "Keep the routines that already help you feel mentally steady, especially sleep quality, movement and downtime."
+          },
+          {
+            title: "Catch early signs",
+            text: "Pay attention to the first moments of spiraling thoughts or body tension before they turn into a longer stress cycle."
+          },
+          {
+            title: "Stay intentional",
+            text: "Use this stage to build resilience now so anxiety has less chance to grow later."
+          }
+        ],
+        ctaTitle: "",
+        ctaText: "",
+        ctaLabel: "",
+        ctaBenefits: [],
+        therapyNote: "",
+        levelLabel: "Low",
+        tinyLabel: "Low range"
+      },
+      moderate: {
+        badge: "Moderate level",
+        badgeClass: "moderate",
+        title: "Your answers suggest anxiety may be affecting your life more than it should.",
+        text: "Your responses suggest that anxiety may be showing up in a noticeable and draining way across your thoughts, body and routine. This often feels like mental noise that never fully switches off, trouble relaxing, reduced focus and a constant sense that your system is carrying more pressure than it should.",
+        insightTitle: "This level often means anxiety is costing you energy even on normal days.",
+        insightText: "People in this range are often still functioning, but everything starts taking more effort than it should. The outside may look fine while the inside feels crowded, tense or mentally tired. That is why structure matters here. This is often the point where the right support creates relief much faster than trying to figure everything out alone.",
+        suggestIntro: "These patterns are commonly linked to a moderate result.",
+        suggest: [
+          "Anxiety may be reducing your sense of calm, clarity and emotional breathing room.",
+          "Your mind may be spending too much time scanning, replaying or preparing for problems.",
+          "Without a better system, this pattern can slowly become more exhausting over time."
+        ],
+        actionIntro: "These are the areas most likely to improve your day to day experience.",
+        actions: [
+          "Identify what keeps the cycle alive, such as avoidance, overchecking, spiraling or overload.",
+          "Shift from temporary coping to a more consistent approach that regulates anxiety earlier.",
+          "Use support that combines understanding, practical tools and accountability."
+        ],
+        planIntro: "This kind of result responds best to a more intentional strategy.",
+        plan: [
+          {
+            title: "Remove fuel",
+            text: "Look at the habits, triggers and routines that repeatedly keep your mind and body activated."
+          },
+          {
+            title: "Create structure",
+            text: "Instead of random tips, build a repeatable system that helps you calm the pattern before it grows."
+          },
+          {
+            title: "Use guided help",
+            text: "Therapy can help you understand the cycle and replace it with better responses step by step."
+          }
+        ],
+        ctaTitle: "You do not have to keep carrying this by yourself.",
+        ctaText: "Therapy can do more than help you survive difficult moments. It can help you understand why anxiety keeps showing up, reduce the mental spiral, respond differently to triggers and feel more stable in everyday life. For many people, this becomes the point where things finally start getting lighter.",
+        ctaLabel: "See How Therapy Can Help",
+        ctaBenefits: [
+          {
+            title: "Clarity",
+            text: "Understand the deeper pattern behind your anxiety instead of staying stuck in guesswork."
+          },
+          {
+            title: "Practical tools",
+            text: "Use strategies that help in real life, especially when your mind starts accelerating."
+          },
+          {
+            title: "Real relief",
+            text: "Build more steadiness, more emotional space and less daily pressure over time."
+          }
+        ],
+        therapyNote: "You do not need to wait until anxiety becomes overwhelming before using real support.",
+        levelLabel: "Moderate",
+        tinyLabel: "Moderate range"
+      },
+      high: {
+        badge: "High level",
+        badgeClass: "high",
+        title: "Your answers suggest anxiety may be having a strong impact on your daily life.",
+        text: "Your responses suggest that anxiety may be affecting you frequently and across multiple parts of life. When worry, panic, physical tension and constant mental pressure start shaping sleep, concentration, decisions and your sense of control, it usually becomes too heavy to keep treating as something you should manage alone.",
+        insightTitle: "This level often feels less like stress and more like staying in survival mode.",
+        insightText: "Many people in this range look functional on the outside while privately carrying relentless pressure, fear, tension or exhaustion. The important thing to understand is that this does not mean weakness. It usually means your system has been under too much strain for too long and needs more than self management to truly settle.",
+        suggestIntro: "These are common signs associated with a higher impact result.",
+        suggest: [
+          "Anxiety may be affecting both your mental state and your body in a recurring way.",
+          "You may feel trapped in a loop of fear, tension, avoidance or constant internal urgency.",
+          "The longer this stays unaddressed, the more it can interfere with peace, confidence and daily functioning."
+        ],
+        actionIntro: "These are the most important priorities from here.",
+        actions: [
+          "Recognize that what you are feeling is real and deserves support, not self blame.",
+          "Reduce immediate overload where you can, but also address the deeper pattern behind it.",
+          "Choose structured help that can guide you toward relief instead of leaving you to keep fighting alone."
+        ],
+        planIntro: "At this level, the goal is not only coping. It is recovery and regained control.",
+        plan: [
+          {
+            title: "Lower the pressure",
+            text: "Create as much space as possible from what is overstimulating your system right now."
+          },
+          {
+            title: "Stop doing this alone",
+            text: "When anxiety is this persistent, trying to outthink it by yourself usually keeps the loop alive."
+          },
+          {
+            title: "Get professional support",
+            text: "Therapy can help you break the cycle, feel safer in your own mind and move toward relief with guidance."
+          }
+        ],
+        ctaTitle: "You deserve real support, not just more survival.",
+        ctaText: "If anxiety has been taking too much from your life, therapy may help you understand what is happening, calm the cycle, feel safer in your own mind and rebuild a sense of control. Reaching out now can become the moment where things stop getting heavier and finally start getting better.",
+        ctaLabel: "Get Professional Support",
+        ctaBenefits: [
+          {
+            title: "Make sense of it",
+            text: "Understand what is driving the anxiety instead of blaming yourself for every bad day."
+          },
+          {
+            title: "Break the loop",
+            text: "Get support for panic, overthinking, avoidance and constant tension with a structured approach."
+          },
+          {
+            title: "Move toward relief",
+            text: "Start creating more calm, more clarity and more emotional stability over time."
+          }
+        ],
+        therapyNote: "Getting support now can prevent anxiety from taking even more energy, time and peace from your life.",
+        levelLabel: "High",
+        tinyLabel: "High range"
+      }
+    };
+
+    const questionText = document.getElementById('questionText');
+    const questionNumberBadge = document.getElementById('questionNumberBadge');
+    const answersWrap = document.getElementById('answersWrap');
+    const currentQuestionNumber = document.getElementById('currentQuestionNumber');
+    const progressPercent = document.getElementById('progressPercent');
+    const progressFill = document.getElementById('progressFill');
+    const helperText = document.getElementById('helperText');
+    const backBtn = document.getElementById('backBtn');
+    const restartBtn = document.getElementById('restartBtn');
+    const retakeBtn = document.getElementById('retakeBtn');
+    const retakeBtnLow = document.getElementById('retakeBtnLow');
+    const quizCard = document.getElementById('quizCard');
+    const resultCard = document.getElementById('resultCard');
+    const levelScaleMarker = document.getElementById('levelScaleMarker');
+    const levelIndicatorLabel = document.getElementById('levelIndicatorLabel');
+    const therapyCard = document.getElementById('therapyCard');
+    const footerRetakeWrap = document.getElementById('footerRetakeWrap');
+
+    let currentIndex = 0;
+    let answers = new Array(questions.length).fill(null);
+
+    function updateProgress() {
+      const questionNum = currentIndex + 1;
+      const percent = Math.round((currentIndex / questions.length) * 100);
+      currentQuestionNumber.textContent = questionNum;
+      progressPercent.textContent = percent;
+      progressFill.style.width = `${percent}%`;
+      backBtn.disabled = currentIndex === 0;
+      backBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+      helperText.textContent = currentIndex === questions.length - 1
+        ? 'Select one answer to see your result automatically.'
+        : 'Select one answer to move to the next question automatically.';
+    }
+
+    function renderQuestion() {
+      questionNumberBadge.textContent = currentIndex + 1;
+      questionText.textContent = questions[currentIndex];
+      answersWrap.innerHTML = options.map(option => {
+        const isSelected = answers[currentIndex] === option.value;
+        return `
+          <div class="answer-option">
+            <button type="button" class="${isSelected ? 'selected' : ''}" data-value="${option.value}">${option.label}</button>
+          </div>
+        `;
+      }).join('');
+
+      answersWrap.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+          const value = Number(button.dataset.value);
+          answers[currentIndex] = value;
+          renderQuestion();
+
+          setTimeout(() => {
+            if (currentIndex < questions.length - 1) {
+              currentIndex += 1;
+              renderQuestion();
+              updateProgress();
+            } else {
+              showResult();
+            }
+          }, 180);
+        });
+      });
+    }
+
+    function getTotalScore() {
+      return answers.reduce((sum, value) => sum + (value ?? 0), 0);
+    }
+
+    function getAnxietyPercent(score) {
+      return Math.round((score / 84) * 100);
+    }
+
+    function getLevel(score) {
+      if (score <= 21) return 'low';
+      if (score <= 49) return 'moderate';
+      return 'high';
+    }
+
+    function getMarkerPosition(score) {
+      const min = 0;
+      const max = 84;
+      const percent = ((score - min) / (max - min)) * 100;
+      return Math.max(2, Math.min(98, percent));
+    }
+
+    function renderList(containerId, items, dotClass) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = items.map(item => `
+        <li>
+          <span class="dot ${dotClass}">✓</span>
+          <div>${item}</div>
+        </li>
+      `).join('');
+    }
+
+    function renderPlan(items) {
+      const planGrid = document.getElementById('planGrid');
+      planGrid.innerHTML = items.map((item, index) => `
+        <div class="plan-step">
+          <div class="step-no">${index + 1}</div>
+          <strong>${item.title}</strong>
+          <p>${item.text}</p>
+        </div>
+      `).join('');
+    }
+
+    function renderBenefits(items) {
+      const wrap = document.getElementById('therapyBenefits');
+      wrap.innerHTML = items.map(item => `
+        <div class="therapy-benefit">
+          <strong>${item.title}</strong>
+          <span>${item.text}</span>
+        </div>
+      `).join('');
+    }
+
+    function showResult() {
+      const score = getTotalScore();
+      const percent = getAnxietyPercent(score);
+      const level = getLevel(score);
+      const data = resultMap[level];
+
+      document.getElementById('resultBadge').className = `result-badge ${data.badgeClass}`;
+      document.getElementById('resultBadge').textContent = data.badge;
+      document.getElementById('resultTitle').textContent = data.title;
+      document.getElementById('resultText').textContent = data.text;
+      document.getElementById('scorePercent').textContent = `${percent}%`;
+      document.getElementById('scoreLevel').textContent = data.levelLabel;
+      document.getElementById('levelIndicatorLabel').textContent = `${data.levelLabel} · ${percent}%`;
+      document.getElementById('levelTinyText').textContent = data.tinyLabel;
+      document.getElementById('levelScaleMarker').style.left = `${getMarkerPosition(score)}%`;
+      document.getElementById('insightTitle').textContent = data.insightTitle;
+      document.getElementById('insightText').textContent = data.insightText;
+      document.getElementById('suggestIntro').textContent = data.suggestIntro;
+      document.getElementById('actionIntro').textContent = data.actionIntro;
+      document.getElementById('planIntro').textContent = data.planIntro;
+
+      renderList('suggestList', data.suggest, 'blue');
+      renderList('actionList', data.actions, 'green');
+      renderPlan(data.plan);
+
+      if (level === 'low') {
+        therapyCard.classList.add('hidden');
+        footerRetakeWrap.style.display = 'flex';
+      } else {
+        therapyCard.classList.remove('hidden');
+        footerRetakeWrap.style.display = 'none';
+        document.getElementById('ctaTitle').textContent = data.ctaTitle;
+        document.getElementById('ctaText').textContent = data.ctaText;
+        document.getElementById('ctaLink').textContent = data.ctaLabel;
+        document.getElementById('therapyNote').textContent = data.therapyNote;
+        renderBenefits(data.ctaBenefits);
+      }
+
+      quizCard.style.display = 'none';
+      resultCard.style.display = 'block';
+      resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function resetQuiz() {
+      answers = new Array(questions.length).fill(null);
+      currentIndex = 0;
+      resultCard.style.display = 'none';
+      quizCard.style.display = 'block';
+      therapyCard.classList.remove('hidden');
+      footerRetakeWrap.style.display = 'none';
+      renderQuestion();
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    backBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex -= 1;
+        renderQuestion();
+        updateProgress();
+      }
+    });
+
+    restartBtn.addEventListener('click', resetQuiz);
+    retakeBtn.addEventListener('click', resetQuiz);
+    retakeBtnLow.addEventListener('click', resetQuiz);
+
+    renderQuestion();
+    updateProgress();
+  </script>
 </body>
 </html>
