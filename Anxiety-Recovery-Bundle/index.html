@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overcome Anxiety & Reclaim Your Life</title>
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    <style>
+        :root {
+            --text-main: #1d1d1f;
+            --text-light: #515154;
+            --bg-body: #ffffff;
+            --bg-section: #f5f5f7;
+            --accent-blue: #005bb5;
+            --btn-blue-light: #0080f5; 
+            --price-red: #d93025;
+            --price-green: #27ae60;
+            --border-color: #d2d2d7;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 { font-size: 2.8rem; line-height: 1.2; text-align: center; margin: 60px 0 30px; letter-spacing: -0.03em; }
+        h2 { font-size: 2rem; margin-top: 50px; border-bottom: 2px solid var(--accent-blue); padding-bottom: 10px; display: inline-block;}
+        h3 { font-size: 1.5rem; color: var(--accent-blue); margin-top: 30px; margin-bottom: 15px; }
+        p { margin-bottom: 25px; color: var(--text-main); }
+        .lead-text { font-size: 1.3rem; font-weight: 500; text-align: center; color: var(--text-light); margin-bottom: 60px; }
+        .highlight { background-color: #fffbcc; padding: 2px 5px; font-weight: 600; }
+        
+        .story-section { padding: 40px 0; }
+        .product-section { background-color: var(--bg-section); padding: 60px 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); margin: 60px 0; }
+        
+        .product-box { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 60px; text-align: left; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .product-box img { max-width: 100%; height: auto; border-radius: 8px; margin: 0 auto 30px; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        
+        @media(min-width: 768px) {
+            .product-box img { max-width: 350px; }
+        }
+
+        ul.custom-list { list-style: none; padding: 0; margin-bottom: 20px; }
+        ul.custom-list li { margin-bottom: 12px; padding-left: 30px; position: relative; font-size: 1rem; line-height: 1.5; }
+        ul.custom-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--accent-blue); font-weight: bold; }
+
+        .discovery-card { background: #fff; padding: 30px; border-radius: 10px; border-left: 5px solid var(--btn-blue-light); margin: 40px 0; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+
+        .offer-section { padding: 80px 0; text-align: center; background-color: #fff; }
+        .value-stack { max-width: 500px; margin: 0 auto 40px; text-align: left; background: var(--bg-section); padding: 30px; border-radius: 8px; }
+        .value-item { display: flex; justify-content: space-between; border-bottom: 1px dashed #ccc; padding: 10px 0; font-weight: 500; }
+        .value-item:last-child { border-bottom: none; font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+
+        .timer-container { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
+        .timer-box { background: #fff; border: 2px solid var(--btn-blue-light); border-radius: 8px; padding: 10px; min-width: 80px; text-align: center; }
+        .timer-box span { display: block; font-size: 2rem; font-weight: 800; color: var(--text-main); line-height: 1; }
+        .timer-box label { font-size: 0.7rem; color: var(--text-light); text-transform: uppercase; font-weight: 600; display: block; }
+
+        .price-box { margin: 20px 0 40px; }
+        .strike-price { color: var(--price-red); text-decoration: line-through; font-size: 2.2rem; font-weight: bold; display: block; margin-bottom: 5px; }
+        .final-price { color: var(--price-green); font-size: 3.8rem; font-weight: 800; line-height: 1; display: block; }
+
+        .btn-custom {
+            display: inline-block;
+            background-color: var(--btn-blue-light);
+            color: #ffffff !important;
+            text-decoration: none !important;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 18px 50px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 128, 245, 0.25);
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-custom:hover { background-color: #0066cc; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 128, 245, 0.35); }
+
+        footer { text-align: center; padding: 40px; background: #fff; color: #999; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>How to Finally Silence the Anxious Noise in Your Head... and Reclaim Control of Your Life.</h1>
+        <p class="lead-text">If you are tired of the constant worry, the racing heart, and the paralyzing fear of "what if," then this might be the most important page you ever read.</p>
+    </header>
+
+    <section class="story-section">
+        <p><strong>Dear Friend,</strong></p>
+        <p>Let's be brutally honest for a moment.</p>
+        <p>Living with anxiety is exhausting. It’s not just feeling a little "nervous" before a big meeting. It’s a constant, heavy weight on your chest. It's lying awake at 2 AM replaying a conversation from three years ago. It’s watching opportunities pass you by because the inner voice telling you "you can't handle this" is simply too loud.</p>
+        <p>In today's fast-paced world, many people struggle silently. You try to push through it. You try to tell yourself to "just relax." But you and I both know that <span class="highlight">telling an anxious mind to "just relax" is like telling a drowning person to "just swim."</span> It doesn't work.</p>
+        <p>You need a real strategy. You need a way to rearrange your mental and emotional furniture.</p>
+        <p>That is exactly why this comprehensive, two-part system was created. We have combined the two most effective programs into one complete roadmap to help you combat anxiety naturally, without relying on medication or expensive therapy sessions.</p>
+    </section>
+</div>
+
+<section class="product-section">
+    <div class="container">
+        
+        <div class="product-box">
+            <img src="https://imgur.com/hmEvvRw.png" alt="Overcoming Anxiety System">
+            <h3>Phase 1: Overcoming Anxiety Mastery</h3>
+            <p>This comprehensive course is designed to help you manage and overcome anxiety at its root. In today's fast-paced world, many people struggle with anxiety disorders that significantly impact their daily lives. This system offers practical strategies to help you rearrange your 'mental and emotional furniture,' providing you with effective tools to combat anxiety naturally.</p>
+            
+            <p><strong>Key topics covered to take control of your thoughts:</strong></p>
+            <ul class="custom-list">
+                <li><strong>Conducting a Self-Audit:</strong> Learn exactly how to identify your specific anxiety triggers.</li>
+                <li><strong>Prioritizing and Categorizing:</strong> Tackle your most intense anxiety challenges first using a proven method.</li>
+                <li><strong>Taking Hold of the Past:</strong> How to overcome exaggerated memories that keep you trapped in fear.</li>
+                <li><strong>The Future Begins With Me:</strong> Take control of your future and past experiences to build a balanced life.</li>
+                <li><strong>Mindfulness & Habits:</strong> Develop effective daily habits and practice mindfulness to ground yourself.</li>
+                <li><strong>All-Natural Solutions:</strong> Implementing self-directed anxiety solutions without medication.</li>
+            </ul>
+        </div>
+
+        <div class="product-box">
+            <img src="https://imgur.com/D3hWllZ.png" alt="The Anti-Anxiety Formula">
+            <h3>Phase 2: The Anti-Anxiety Formula</h3>
+            <p>A comprehensive resource offering proven strategies to conquer fears, depression, and the inner obstacles that hinder your personal and professional success. You'll discover practical techniques to act on your fears and reach your full potential without being held back by anxiety.</p>
+            
+            <p><strong>Inside this formula, you will master:</strong></p>
+            <ul class="custom-list">
+                <li><strong>Facing Inner Demons:</strong> Learn to overcome stuck points and silence the voice that says "you can't."</li>
+                <li><strong>Overcoming Resistance to Change:</strong> Understand why your brain fights progress and how to break through.</li>
+                <li><strong>Reflection & Acceptance:</strong> How to arrive at true acceptance and move forward from your past.</li>
+                <li><strong>Action Against Angst:</strong> A step-by-step action plan to act on your fears and achieve your goals.</li>
+                <li><strong>Navigating Self-Imposed Obstacles:</strong> Learn how to stop being a hard taskmaster to yourself.</li>
+                <li><strong>Preventing Burnout:</strong> Overcome anxiety without getting tied-down by the toxic idea of perfectionism.</li>
+                <li><strong>Banish Worry:</strong> The ultimate guide to living panic-free and reclaiming your mental well-being.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<div class="container">
+    <section class="story-section">
+        <h2>What Exactly Will You Discover?</h2>
+        <div class="discovery-card">
+            <ul class="custom-list" style="margin-bottom:0;">
+                <li><strong>The MUST-TAKE First Step:</strong> The most critical step you must take to ensure your journey is successful.</li>
+                <li><strong>The Mindset Shift:</strong> How to pave the way to success that lasts forever, not just for a few days.</li>
+                <li><strong>The Progress Killer:</strong> The ONE thing that holds most people back and how to change it.</li>
+                <li><strong>Memory Eradication:</strong> Why you must eradicate exaggerated memories and exactly how to do it.</li>
+                <li><strong>The 4 Essential Best Practices:</strong> Strategies that have helped many remain free of anxiety attacks for the rest of their lives.</li>
+                <li><strong>Categorization Mastery:</strong> Why categorizing your anxieties makes overcoming them a whole lot easier.</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<section class="offer-section">
+    <div class="container">
+        <h2>Are You Ready to Take Your Life Back?</h2>
+        <div class="value-stack">
+            <div class="value-item"><span>Overcoming Anxiety Mastery</span><span>$37.00</span></div>
+            <div class="value-item"><span>The Anti-Anxiety Formula</span><span>$27.00</span></div>
+            <div class="value-item"><span><strong>Total Real Value:</strong></span><span><strong>$64.00</strong></span></div>
+        </div>
+
+        <p style="color:var(--price-red); font-weight:bold; letter-spacing:1px;">70% DISCOUNT EXPIRES IN:</p>
+        <div class="timer-container">
+            <div class="timer-box"><span id="h">01</span><label>Hours</label></div>
+            <div class="timer-box"><span id="m">57</span><label>Minutes</label></div>
+            <div class="timer-box"><span id="s">00</span><label>Seconds</label></div>
+        </div>
+
+        <div class="price-box">
+            <span class="strike-price">$64.00</span>
+            <span class="final-price">$19.00</span>
+        </div>
+
+        <a class="btn-custom" href="https://anxwell.gumroad.com/l/Anxiety-Recovery-Bundle/DIS45" data-gumroad-overlay-checkout="true">YES! I WANT THE COMPLETE BUNDLE NOW</a>
+        
+        <p style="font-size: 0.9rem; color: #666; margin-top: 20px;">One-time payment. Instant access. Secure checkout via Gumroad.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Anxiety Support. All rights reserved.</p>
+</footer>
+
+<script>
+    let totalSeconds = 7020;
+    setInterval(() => {
+        if (totalSeconds <= 0) return;
+        totalSeconds--;
+        document.getElementById('h').textContent = Math.floor(totalSeconds / 3600).toString().padStart(2, '0');
+        document.getElementById('m').textContent = Math.floor((totalSeconds % 3600) / 60).toString().padStart(2, '0');
+        document.getElementById('s').textContent = (totalSeconds % 60).toString().padStart(2, '0');
+    }, 1000);
+</script>
+
+</body>
+</html>
