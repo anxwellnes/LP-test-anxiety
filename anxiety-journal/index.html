@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Anxiety Journal — Guided Daily Check-In</title>
+  <meta name="description" content="A free guided anxiety journal with daily prompts. Track your anxiety patterns, identify triggers and watch your progress over time. Saved privately in your browser." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="anxiety journal, anxiety diary, guided anxiety journal, daily anxiety check-in, anxiety tracker free" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-journal/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Free Anxiety Journal — Guided Daily Check-In" />
+  <meta property="og:description" content="A free guided anxiety journal. Track your patterns, identify triggers and watch your progress. Saved privately in your browser." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-journal/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:       #0064FA;
+      --blue-dark:  #0050CC;
+      --blue-mid:   #1a74fb;
+      --blue-soft:  #E8F1FF;
+      --blue-bdr:   #C0D8FF;
+      --bg:         #F2F5FA;
+      --surface:    #FFFFFF;
+      --border:     #DDE4EF;
+      --text:       #0D1B2A;
+      --muted:      #5C6F85;
+      --muted-lt:   #97A8BA;
+      --green:      #15803D;
+      --green-soft: #F0FDF4;
+      --amber:      #B45309;
+      --amber-soft: #FFFBEB;
+      --red:        #B91C1C;
+      --red-soft:   #FEF2F2;
+      --shadow-sm:  0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md:  0 4px 20px rgba(0,100,250,0.10);
+      --shadow-lg:  0 12px 48px rgba(0,100,250,0.13);
+      --r:          12px;
+      --r-lg:       18px;
+      --r-xl:       24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { text-decoration: none; color: inherit; }
+
+    /* TOPBAR */
+    .topbar { background: var(--blue); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,100,250,0.25); }
+    .topbar-inner { max-width: 1040px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; color: white; letter-spacing: -0.01em; }
+    .topbar-right { display: flex; align-items: center; gap: 14px; }
+    .topbar-link { font-size: 0.81rem; font-weight: 600; color: rgba(255,255,255,0.7); transition: color 0.15s; }
+    .topbar-link:hover { color: white; }
+    .topbar-tag { font-size: 0.76rem; font-weight: 700; color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(160deg, var(--blue-dark) 0%, var(--blue) 60%, var(--blue-mid) 100%); padding: clamp(40px,6vw,72px) clamp(16px,4vw,40px) clamp(28px,4vw,48px); text-align: center; position: relative; overflow: hidden; }
+    .hero::after { content: ''; position: absolute; right: -80px; top: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 65%); pointer-events: none; }
+    .hero-inner { max-width: 620px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 7px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 16px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(1.9rem,4.5vw,3rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 12px; }
+    .hero h1 span { color: #93c5fd; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 500px; margin: 0 auto 18px; line-height: 1.7; }
+    .hero-trust { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+    .ht-item { display: flex; align-items: center; gap: 6px; font-size: 0.79rem; color: rgba(255,255,255,0.5); font-weight: 600; }
+    .ht-dot { width: 17px; height: 17px; border-radius: 50%; background: rgba(255,255,255,0.12); color: #86efac; display: grid; place-items: center; font-size: 0.52rem; font-weight: 700; flex-shrink: 0; }
+
+    /* PAGE */
+    .page { max-width: 1040px; margin: 0 auto; padding: 28px clamp(16px,4vw,40px) 60px; display: grid; grid-template-columns: 1fr 300px; gap: 20px; align-items: start; }
+
+    /* ── JOURNAL CARD ── */
+    .journal-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+
+    .journal-header { background: var(--blue); padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .jh-date { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; letter-spacing: -0.01em; }
+    .jh-sub { font-size: 0.78rem; color: rgba(255,255,255,0.65); margin-top: 2px; }
+    .jh-streak { display: flex; align-items: center; gap: 7px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--r); padding: 6px 12px; }
+    .jh-streak-icon { font-size: 1rem; }
+    .jh-streak-num { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; }
+    .jh-streak-label { font-size: 0.72rem; color: rgba(255,255,255,0.65); font-weight: 600; }
+
+    /* Anxiety level selector */
+    .level-section { padding: 22px 24px 0; }
+    .section-label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
+    .section-q { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.01em; }
+
+    .level-slider-wrap { margin-bottom: 8px; }
+    .level-dots { display: flex; gap: 8px; justify-content: space-between; margin-bottom: 8px; }
+    .level-dot {
+      flex: 1; height: 44px; border-radius: var(--r);
+      border: 2px solid var(--border); background: var(--bg);
+      cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+      transition: all 0.16s; font-family: 'Nunito', sans-serif;
+    }
+    .level-dot:hover { border-color: var(--blue); background: var(--blue-soft); }
+    .level-dot.active { border-color: var(--blue); background: var(--blue); }
+    .level-dot-num { font-size: 0.85rem; font-weight: 900; color: var(--muted); line-height: 1; }
+    .level-dot.active .level-dot-num { color: white; }
+    .level-dot-label { font-size: 0.58rem; font-weight: 700; color: var(--muted-lt); text-transform: uppercase; letter-spacing: 0.04em; }
+    .level-dot.active .level-dot-label { color: rgba(255,255,255,0.7); }
+
+    .level-description { font-size: 0.82rem; color: var(--muted); font-style: italic; min-height: 20px; text-align: center; margin-top: 4px; }
+
+    /* Prompts */
+    .prompts-section { padding: 18px 24px 0; }
+    .prompt-item { margin-bottom: 16px; }
+    .prompt-label { font-size: 0.82rem; font-weight: 700; color: var(--text); margin-bottom: 6px; display: flex; align-items: center; gap: 7px; }
+    .prompt-label-icon { font-size: 0.9rem; }
+    .prompt-textarea {
+      width: 100%; min-height: 72px; padding: 10px 13px;
+      border-radius: var(--r); border: 1.5px solid var(--border);
+      background: var(--bg); font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.88rem; color: var(--text); line-height: 1.55;
+      resize: vertical; transition: border-color 0.15s; outline: none;
+    }
+    .prompt-textarea:focus { border-color: var(--blue); background: var(--blue-soft); }
+    .prompt-textarea::placeholder { color: var(--muted-lt); }
+
+    /* Mood tags */
+    .tags-section { padding: 0 24px; }
+    .tags-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+    .mood-tag {
+      padding: 6px 13px; border-radius: 999px;
+      border: 1.5px solid var(--border); background: var(--bg);
+      font-size: 0.8rem; font-weight: 700; color: var(--muted);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .mood-tag:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-soft); }
+    .mood-tag.active { border-color: var(--blue); background: var(--blue); color: white; }
+
+    /* Journal footer */
+    .journal-footer { padding: 18px 24px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+    .jf-privacy { font-size: 0.76rem; color: var(--muted-lt); display: flex; align-items: center; gap: 6px; }
+    .btn-save { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 22px; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(0,100,250,0.28); transition: all 0.2s; }
+    .btn-save:hover { background: var(--blue-dark); transform: translateY(-1px); }
+
+    /* Save confirmation */
+    .save-confirm { display: none; align-items: center; gap: 8px; padding: 10px 16px; background: var(--green-soft); border: 1px solid rgba(21,128,61,0.2); border-radius: var(--r); font-size: 0.84rem; font-weight: 700; color: var(--green); }
+
+    /* ── SIDEBAR ── */
+    .sidebar { display: flex; flex-direction: column; gap: 16px; }
+
+    /* Stats card */
+    .stats-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-md); overflow: hidden; }
+    .stats-header { background: var(--blue); padding: 14px 18px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; color: white; letter-spacing: -0.01em; }
+    .stats-body { padding: 14px 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stat-box { text-align: center; }
+    .stat-box-num { font-family: 'Nunito', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--blue); letter-spacing: -0.04em; line-height: 1; }
+    .stat-box-label { font-size: 0.72rem; font-weight: 600; color: var(--muted-lt); margin-top: 3px; }
+    .avg-bar-wrap { padding: 0 18px 14px; }
+    .avg-bar-label { font-size: 0.72rem; font-weight: 700; color: var(--muted); margin-bottom: 6px; display: flex; justify-content: space-between; }
+    .avg-bar-track { height: 8px; background: var(--border); border-radius: 999px; overflow: hidden; }
+    .avg-bar-fill { height: 100%; border-radius: 999px; background: var(--blue); transition: width 0.6s ease; }
+
+    /* Calendar card */
+    .calendar-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-md); overflow: hidden; }
+    .cal-header { background: var(--blue); padding: 12px 18px; display: flex; align-items: center; justify-content: space-between; }
+    .cal-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; color: white; }
+    .cal-nav { display: flex; gap: 6px; }
+    .cal-btn { width: 26px; height: 26px; border-radius: 7px; border: none; background: rgba(255,255,255,0.15); color: white; cursor: pointer; font-size: 0.8rem; display: grid; place-items: center; transition: background 0.15s; }
+    .cal-btn:hover { background: rgba(255,255,255,0.3); }
+    .cal-body { padding: 12px; }
+    .cal-days-header { display: grid; grid-template-columns: repeat(7,1fr); gap: 2px; margin-bottom: 4px; }
+    .cal-day-name { text-align: center; font-size: 0.62rem; font-weight: 700; color: var(--muted-lt); text-transform: uppercase; }
+    .cal-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 3px; }
+    .cal-day {
+      aspect-ratio: 1; border-radius: 7px; display: grid; place-items: center;
+      font-size: 0.72rem; font-weight: 600; color: var(--muted-lt);
+      cursor: default;
+    }
+    .cal-day.has-entry { cursor: pointer; background: var(--blue-soft); color: var(--blue); font-weight: 800; }
+    .cal-day.has-entry:hover { background: var(--blue-bdr); }
+    .cal-day.today { border: 2px solid var(--blue); color: var(--blue); font-weight: 900; }
+    .cal-day.today.has-entry { background: var(--blue); color: white; }
+    .cal-day.other-month { opacity: 0.3; }
+
+    /* Level color dots on calendar */
+    .cal-day.level-1 { background: #dcfce7; color: var(--green); }
+    .cal-day.level-2 { background: #d1fae5; color: var(--green); }
+    .cal-day.level-3 { background: #fef3c7; color: var(--amber); }
+    .cal-day.level-4 { background: #fed7aa; color: #c2410c; }
+    .cal-day.level-5 { background: #fee2e2; color: var(--red); }
+
+    /* Past entries */
+    .entries-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-md); overflow: hidden; }
+    .entries-header { background: var(--blue); padding: 12px 18px; display: flex; align-items: center; justify-content: space-between; }
+    .entries-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; color: white; }
+    .btn-export { height: 28px; padding: 0 10px; border: 1px solid rgba(255,255,255,0.25); background: transparent; color: rgba(255,255,255,0.8); font-family: 'Nunito', sans-serif; font-size: 0.72rem; font-weight: 700; border-radius: 7px; cursor: pointer; transition: all 0.15s; }
+    .btn-export:hover { background: rgba(255,255,255,0.15); color: white; }
+    .entries-list { max-height: 280px; overflow-y: auto; }
+    .entry-item { padding: 10px 14px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.12s; }
+    .entry-item:hover { background: var(--bg); }
+    .entry-item:last-child { border-bottom: none; }
+    .entry-item-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 3px; }
+    .entry-item-date { font-size: 0.78rem; font-weight: 700; color: var(--text); }
+    .entry-item-level { font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 999px; }
+    .entry-item-preview { font-size: 0.77rem; color: var(--muted-lt); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 220px; }
+    .entries-empty { padding: 20px; text-align: center; font-size: 0.84rem; color: var(--muted-lt); }
+
+    /* Entry detail modal */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 200; align-items: center; justify-content: center; padding: 20px; }
+    .modal-overlay.open { display: flex; }
+    .modal { background: var(--surface); border-radius: var(--r-xl); max-width: 560px; width: 100%; max-height: 80vh; overflow-y: auto; box-shadow: 0 24px 64px rgba(0,0,0,0.2); }
+    .modal-header { background: var(--blue); padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; border-radius: var(--r-xl) var(--r-xl) 0 0; }
+    .modal-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.95rem; color: white; }
+    .modal-close { width: 28px; height: 28px; border-radius: 8px; border: none; background: rgba(255,255,255,0.15); color: white; cursor: pointer; font-size: 1rem; display: grid; place-items: center; }
+    .modal-body { padding: 20px; }
+    .modal-field { margin-bottom: 14px; }
+    .modal-field-label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 5px; }
+    .modal-field-text { font-size: 0.88rem; color: var(--text); line-height: 1.65; background: var(--bg); border-radius: var(--r); padding: 10px 13px; border: 1px solid var(--border); }
+    .modal-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .modal-tag { padding: 4px 11px; border-radius: 999px; background: var(--blue-soft); border: 1px solid var(--blue-bdr); font-size: 0.76rem; font-weight: 700; color: var(--blue); }
+
+    /* Therapy nudge */
+    .therapy-nudge { background: var(--blue); border-radius: var(--r-xl); padding: 18px; }
+    .tn-label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 7px; }
+    .tn-title { font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 900; color: white; letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 6px; }
+    .tn-text { font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-bottom: 12px; line-height: 1.55; }
+    .btn-tn { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 18px; background: white; color: var(--blue-dark); font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; transition: all 0.2s; text-decoration: none; }
+    .btn-tn:hover { background: #f0f6ff; }
+
+    /* FOOTER */
+    .footer { background: var(--blue-dark); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.38); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+    .footer-copy { max-width: 1040px; margin: 0 auto; padding-top: 16px; font-size: 0.76rem; color: rgba(255,255,255,0.22); text-align: center; }
+
+    @media (max-width: 780px) {
+      .page { grid-template-columns: 1fr; }
+      .sidebar { order: -1; }
+      .stats-body { grid-template-columns: repeat(4,1fr); }
+    }
+    @media (max-width: 480px) {
+      .level-dots { gap: 5px; }
+      .level-dot { height: 38px; }
+      .stats-body { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-right">
+      <a href="https://myanxietytest.com/" class="topbar-link">All tools</a>
+      <div class="topbar-tag">Free · Private</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">✦ Free guided anxiety journal</div>
+    <h1>Your daily <span>anxiety</span><br>check-in</h1>
+    <p class="hero-desc">A simple guided journal that helps you track patterns, understand triggers and see your progress. Saved privately in your browser — never sent anywhere.</p>
+    <div class="hero-trust">
+      <div class="ht-item"><div class="ht-dot">🔒</div>Saved in your browser only</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Never sent anywhere</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Export anytime</div>
+    </div>
+  </div>
+</section>
+
+<div class="page">
+
+  <!-- JOURNAL -->
+  <div class="journal-card">
+    <div class="journal-header">
+      <div>
+        <div class="jh-date" id="jhDate">Today</div>
+        <div class="jh-sub">Daily anxiety check-in</div>
+      </div>
+      <div class="jh-streak">
+        <div class="jh-streak-icon">🔥</div>
+        <div>
+          <div class="jh-streak-num" id="streakNum">0</div>
+          <div class="jh-streak-label">day streak</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Level -->
+    <div class="level-section">
+      <div class="section-label">Step 1 — Anxiety level</div>
+      <div class="section-q">How is your anxiety today?</div>
+      <div class="level-dots" id="levelDots">
+        <div class="level-dot" data-level="1"><div class="level-dot-num">1</div><div class="level-dot-label">None</div></div>
+        <div class="level-dot" data-level="2"><div class="level-dot-num">2</div><div class="level-dot-label">Mild</div></div>
+        <div class="level-dot" data-level="3"><div class="level-dot-num">3</div><div class="level-dot-label">Moderate</div></div>
+        <div class="level-dot" data-level="4"><div class="level-dot-num">4</div><div class="level-dot-label">High</div></div>
+        <div class="level-dot" data-level="5"><div class="level-dot-num">5</div><div class="level-dot-label">Very high</div></div>
+      </div>
+      <div class="level-description" id="levelDesc">Select a level above</div>
+    </div>
+
+    <!-- Mood tags -->
+    <div class="tags-section" style="padding:16px 24px 0;">
+      <div class="section-label">Step 2 — How you feel</div>
+      <div class="section-q" style="font-size:0.9rem;margin-bottom:10px;">Select all that apply right now</div>
+      <div class="tags-wrap" id="moodTags">
+        <div class="mood-tag" data-tag="Worried">😟 Worried</div>
+        <div class="mood-tag" data-tag="Tense">😤 Tense</div>
+        <div class="mood-tag" data-tag="Restless">🦋 Restless</div>
+        <div class="mood-tag" data-tag="Overwhelmed">🌊 Overwhelmed</div>
+        <div class="mood-tag" data-tag="Panicky">😰 Panicky</div>
+        <div class="mood-tag" data-tag="Exhausted">😴 Exhausted</div>
+        <div class="mood-tag" data-tag="Irritable">😠 Irritable</div>
+        <div class="mood-tag" data-tag="Numb">😶 Numb</div>
+        <div class="mood-tag" data-tag="Sad">😢 Sad</div>
+        <div class="mood-tag" data-tag="Calm">😌 Calm</div>
+        <div class="mood-tag" data-tag="Hopeful">🌱 Hopeful</div>
+        <div class="mood-tag" data-tag="Grateful">🙏 Grateful</div>
+      </div>
+    </div>
+
+    <!-- Prompts -->
+    <div class="prompts-section">
+      <div class="section-label">Step 3 — Guided prompts</div>
+
+      <div class="prompt-item">
+        <div class="prompt-label"><span class="prompt-label-icon">⚡</span>What triggered your anxiety today?</div>
+        <textarea class="prompt-textarea" id="promptTrigger" placeholder="A situation, thought, person or place that raised your anxiety..."></textarea>
+      </div>
+
+      <div class="prompt-item">
+        <div class="prompt-label"><span class="prompt-label-icon">💭</span>What thoughts are running in your mind?</div>
+        <textarea class="prompt-textarea" id="promptThoughts" placeholder="What is your mind saying? What are you worried about?"></textarea>
+      </div>
+
+      <div class="prompt-item">
+        <div class="prompt-label"><span class="prompt-label-icon">🌿</span>What helped, even a little?</div>
+        <textarea class="prompt-textarea" id="promptHelped" placeholder="Something that calmed you, even briefly. Or what you wish had helped."></textarea>
+      </div>
+
+      <div class="prompt-item">
+        <div class="prompt-label"><span class="prompt-label-icon">✨</span>One small thing you are doing for yourself today</div>
+        <textarea class="prompt-textarea" id="promptSelf" placeholder="Even the smallest act of self-care counts..." style="min-height:54px;"></textarea>
+      </div>
+    </div>
+
+    <!-- Free writing section -->
+    <div style="padding:0 24px 0; border-top:1px solid var(--border); margin-top:8px; padding-top:20px;">
+      <div class="section-label">Step 4 — Free writing</div>
+      <div class="section-q" style="font-size:0.9rem; margin-bottom:6px;">Write whatever is on your mind</div>
+      <p style="font-size:0.82rem;color:var(--muted-lt);margin-bottom:12px;font-weight:500;">No prompts. No structure. Just write. This space is yours.</p>
+      <textarea
+        id="promptFreeWrite"
+        class="prompt-textarea"
+        placeholder="Start writing here. Your thoughts, your feelings, what happened today, what you are afraid of, what you are hoping for. Nothing is too small or too big. This is just for you..."
+        style="min-height:200px; font-size:0.9rem; line-height:1.7;"
+      ></textarea>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;">
+        <div style="font-size:0.76rem;color:var(--muted-lt);">
+          <span id="wordCount">0</span> words
+        </div>
+        <div style="font-size:0.76rem;color:var(--muted-lt);">Saved automatically with your entry</div>
+      </div>
+    </div>
+
+    <div class="journal-footer">
+      <div class="jf-privacy">🔒 Saved locally in your browser only</div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="save-confirm" id="saveConfirm">✓ Entry saved</div>
+        <button class="btn-save" id="btnSave">Save today's entry →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- Stats -->
+    <div class="stats-card">
+      <div class="stats-header">Your progress</div>
+      <div class="stats-body">
+        <div class="stat-box">
+          <div class="stat-box-num" id="statTotal">0</div>
+          <div class="stat-box-label">Total entries</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num" id="statStreak">0</div>
+          <div class="stat-box-label">Day streak</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num" id="statAvg">—</div>
+          <div class="stat-box-label">Avg level</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num" id="statWeek">—</div>
+          <div class="stat-box-label">This week avg</div>
+        </div>
+      </div>
+      <div class="avg-bar-wrap">
+        <div class="avg-bar-label"><span>Average anxiety level</span><span id="avgBarLabel">—</span></div>
+        <div class="avg-bar-track"><div class="avg-bar-fill" id="avgBarFill" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="calendar-card">
+      <div class="cal-header">
+        <div class="cal-title" id="calTitle">March 2026</div>
+        <div class="cal-nav">
+          <button class="cal-btn" id="calPrev">‹</button>
+          <button class="cal-btn" id="calNext">›</button>
+        </div>
+      </div>
+      <div class="cal-body">
+        <div class="cal-days-header">
+          <div class="cal-day-name">Su</div>
+          <div class="cal-day-name">Mo</div>
+          <div class="cal-day-name">Tu</div>
+          <div class="cal-day-name">We</div>
+          <div class="cal-day-name">Th</div>
+          <div class="cal-day-name">Fr</div>
+          <div class="cal-day-name">Sa</div>
+        </div>
+        <div class="cal-grid" id="calGrid"></div>
+      </div>
+    </div>
+
+    <!-- Past entries -->
+    <div class="entries-card">
+      <div class="entries-header">
+        <div class="entries-title">Past entries</div>
+        <button class="btn-export" id="btnExport">Export ↓</button>
+      </div>
+      <div class="entries-list" id="entriesList"></div>
+    </div>
+
+    <!-- Therapy nudge -->
+    <div class="therapy-nudge" id="therapyNudge" style="display:none;">
+      <div class="tn-label">When journaling is not enough</div>
+      <div class="tn-title" id="tnTitle">Your anxiety has been elevated for several days.</div>
+      <div class="tn-text">Journaling helps with pattern awareness. But when anxiety is consistently high, speaking with a therapist can help you address the patterns, not just document them.</div>
+      <a class="btn-tn" id="therapyLink" href="#">Speak with a therapist — 20% Off</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Entry detail modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modalTitle">Entry</div>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/anxiety-triggers/">Anxiety Triggers</a>
+      <a href="https://myanxietytest.com/anxiety-body-scan/">Body Scan</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Your journal entries are stored only in your browser and never sent to any server</div>
+</footer>
+
+<script>
+const STORAGE_KEY = 'myanxietytest_journal';
+const urlParams = new URLSearchParams(window.location.search);
+const trafficSource = urlParams.get('source') || 'defaultAnxietyJournal';
+
+// ── STATE ──
+let selectedLevel = 0;
+let selectedTags = new Set();
+let calendarDate = new Date();
+let entries = loadEntries();
+
+// ── HELPERS ──
+function loadEntries() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch { return {}; }
+}
+
+function saveEntries() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); }
+  catch { console.error('Storage full or unavailable'); }
+}
+
+function todayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function formatDate(key) {
+  const [y, m, d] = key.split('-').map(Number);
+  const date = new Date(y, m-1, d);
+  return date.toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric' });
+}
+
+function getLevelLabel(l) {
+  return ['', 'None', 'Mild', 'Moderate', 'High', 'Very high'][l] || '';
+}
+
+function getLevelColor(l) {
+  return ['', '#15803D', '#4ade80', '#D97706', '#ef4444', '#B91C1C'][l] || '#97A8BA';
+}
+
+function getLevelBg(l) {
+  return ['', '#F0FDF4', '#dcfce7', '#FFFBEB', '#fee2e2', '#FEF2F2'][l] || '#F2F5FA';
+}
+
+const LEVEL_DESCS = [
+  '',
+  'Feeling calm and at ease today.',
+  'Some mild background anxiety but manageable.',
+  'Noticeable anxiety affecting my focus or mood.',
+  'High anxiety making things difficult today.',
+  'Very intense anxiety — one of my harder days.'
+];
+
+// ── INIT ──
+function init() {
+  const today = new Date();
+  document.getElementById('jhDate').textContent = today.toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric' });
+
+  // Pre-fill if today already has entry
+  const tk = todayKey();
+  if (entries[tk]) {
+    const e = entries[tk];
+    setLevel(e.level);
+    e.tags.forEach(t => { selectedTags.add(t); document.querySelector(`.mood-tag[data-tag="${t}"]`)?.classList.add('active'); });
+    document.getElementById('promptTrigger').value = e.trigger || '';
+    document.getElementById('promptThoughts').value = e.thoughts || '';
+    document.getElementById('promptHelped').value = e.helped || '';
+    document.getElementById('promptSelf').value = e.self || '';
+    document.getElementById('promptFreeWrite').value = e.freeWrite || '';
+    updateWordCount();
+  }
+
+  updateStats();
+  renderCalendar();
+  renderEntries();
+  checkTherapyNudge();
+}
+
+// ── LEVEL ──
+function setLevel(l) {
+  selectedLevel = l;
+  document.querySelectorAll('.level-dot').forEach(d => {
+    d.classList.toggle('active', Number(d.dataset.level) === l);
+  });
+  document.getElementById('levelDesc').textContent = LEVEL_DESCS[l] || 'Select a level above';
+}
+
+document.querySelectorAll('.level-dot').forEach(dot => {
+  dot.addEventListener('click', () => setLevel(Number(dot.dataset.level)));
+});
+
+// ── TAGS ──
+document.querySelectorAll('.mood-tag').forEach(tag => {
+  tag.addEventListener('click', () => {
+    const t = tag.dataset.tag;
+    if (selectedTags.has(t)) { selectedTags.delete(t); tag.classList.remove('active'); }
+    else { selectedTags.add(t); tag.classList.add('active'); }
+  });
+});
+
+// ── SAVE ──
+document.getElementById('btnSave').addEventListener('click', () => {
+  if (!selectedLevel) { alert('Please select your anxiety level first.'); return; }
+
+  const tk = todayKey();
+  entries[tk] = {
+    date: tk,
+    level: selectedLevel,
+    tags: [...selectedTags],
+    trigger: document.getElementById('promptTrigger').value.trim(),
+    thoughts: document.getElementById('promptThoughts').value.trim(),
+    helped: document.getElementById('promptHelped').value.trim(),
+    self: document.getElementById('promptSelf').value.trim(),
+    freeWrite: document.getElementById('promptFreeWrite').value.trim(),
+    savedAt: new Date().toISOString()
+  };
+
+  saveEntries();
+  updateStats();
+  renderCalendar();
+  renderEntries();
+  checkTherapyNudge();
+
+  const confirm = document.getElementById('saveConfirm');
+  confirm.style.display = 'flex';
+  setTimeout(() => { confirm.style.display = 'none'; }, 2500);
+});
+
+// ── STATS ──
+function calcStreak() {
+  let streak = 0;
+  const today = new Date();
+  for (let i = 0; i < 365; i++) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (entries[key]) streak++;
+    else if (i > 0) break;
+  }
+  return streak;
+}
+
+function updateStats() {
+  const allEntries = Object.values(entries);
+  const total = allEntries.length;
+  const streak = calcStreak();
+  const avg = total > 0 ? (allEntries.reduce((s, e) => s + e.level, 0) / total).toFixed(1) : '—';
+
+  // This week
+  const weekEntries = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const k = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (entries[k]) weekEntries.push(entries[k].level);
+  }
+  const weekAvg = weekEntries.length > 0 ? (weekEntries.reduce((s,v)=>s+v,0)/weekEntries.length).toFixed(1) : '—';
+
+  document.getElementById('statTotal').textContent = total;
+  document.getElementById('statStreak').textContent = streak;
+  document.getElementById('streakNum').textContent = streak;
+  document.getElementById('statAvg').textContent = avg;
+  document.getElementById('statWeek').textContent = weekAvg;
+
+  if (avg !== '—') {
+    const pct = ((Number(avg) - 1) / 4) * 100;
+    document.getElementById('avgBarFill').style.width = pct + '%';
+    document.getElementById('avgBarFill').style.background = getLevelColor(Math.round(Number(avg)));
+    document.getElementById('avgBarLabel').textContent = avg + '/5';
+  }
+}
+
+// ── CALENDAR ──
+function renderCalendar() {
+  const y = calendarDate.getFullYear();
+  const m = calendarDate.getMonth();
+  const today = new Date();
+
+  document.getElementById('calTitle').textContent = new Date(y, m).toLocaleDateString('en-US', { month:'long', year:'numeric' });
+
+  const firstDay = new Date(y, m, 1).getDay();
+  const daysInMonth = new Date(y, m+1, 0).getDate();
+  const daysInPrev = new Date(y, m, 0).getDate();
+
+  let html = '';
+
+  // Prev month days
+  for (let i = firstDay - 1; i >= 0; i--) {
+    html += `<div class="cal-day other-month">${daysInPrev - i}</div>`;
+  }
+
+  // Current month days
+  for (let d = 1; d <= daysInMonth; d++) {
+    const key = `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const isToday = d === today.getDate() && m === today.getMonth() && y === today.getFullYear();
+    const entry = entries[key];
+    let cls = 'cal-day';
+    if (isToday) cls += ' today';
+    if (entry) { cls += ` has-entry level-${entry.level}`; }
+    const onclick = entry ? `onclick="openEntry('${key}')"` : '';
+    html += `<div class="${cls}" ${onclick}>${d}</div>`;
+  }
+
+  // Next month padding
+  const totalCells = firstDay + daysInMonth;
+  const remaining = totalCells % 7 === 0 ? 0 : 7 - (totalCells % 7);
+  for (let i = 1; i <= remaining; i++) {
+    html += `<div class="cal-day other-month">${i}</div>`;
+  }
+
+  document.getElementById('calGrid').innerHTML = html;
+}
+
+document.getElementById('calPrev').addEventListener('click', () => {
+  calendarDate.setMonth(calendarDate.getMonth() - 1);
+  renderCalendar();
+});
+document.getElementById('calNext').addEventListener('click', () => {
+  calendarDate.setMonth(calendarDate.getMonth() + 1);
+  renderCalendar();
+});
+
+// ── ENTRIES LIST ──
+function renderEntries() {
+  const list = document.getElementById('entriesList');
+  const sorted = Object.values(entries).sort((a,b) => b.date.localeCompare(a.date));
+
+  if (sorted.length === 0) {
+    list.innerHTML = '<div class="entries-empty">No entries yet. Save your first check-in above.</div>';
+    return;
+  }
+
+  list.innerHTML = sorted.slice(0, 20).map(e => `
+    <div class="entry-item" onclick="openEntry('${e.date}')">
+      <div class="entry-item-top">
+        <div class="entry-item-date">${formatDate(e.date)}</div>
+        <div class="entry-item-level" style="background:${getLevelBg(e.level)};color:${getLevelColor(e.level)}">${getLevelLabel(e.level)}</div>
+      </div>
+      <div class="entry-item-preview">${e.trigger || e.thoughts || e.tags.join(', ') || 'No notes'}</div>
+    </div>`).join('');
+}
+
+// ── MODAL ──
+function openEntry(key) {
+  const e = entries[key];
+  if (!e) return;
+
+  document.getElementById('modalTitle').textContent = formatDate(key);
+  document.getElementById('modalBody').innerHTML = `
+    <div class="modal-field">
+      <div class="modal-field-label">Anxiety level</div>
+      <div class="modal-field-text" style="color:${getLevelColor(e.level)};font-weight:700;">${e.level}/5 — ${getLevelLabel(e.level)}</div>
+    </div>
+    ${e.tags.length > 0 ? `<div class="modal-field">
+      <div class="modal-field-label">How you felt</div>
+      <div class="modal-tags">${e.tags.map(t=>`<div class="modal-tag">${t}</div>`).join('')}</div>
+    </div>` : ''}
+    ${e.trigger ? `<div class="modal-field"><div class="modal-field-label">What triggered it</div><div class="modal-field-text">${e.trigger}</div></div>` : ''}
+    ${e.thoughts ? `<div class="modal-field"><div class="modal-field-label">Your thoughts</div><div class="modal-field-text">${e.thoughts}</div></div>` : ''}
+    ${e.helped ? `<div class="modal-field"><div class="modal-field-label">What helped</div><div class="modal-field-text">${e.helped}</div></div>` : ''}
+    ${e.self ? `<div class="modal-field"><div class="modal-field-label">Self-care</div><div class="modal-field-text">${e.self}</div></div>` : ''}
+    ${e.freeWrite ? `<div class="modal-field"><div class="modal-field-label">Free writing</div><div class="modal-field-text" style="white-space:pre-wrap;max-height:200px;overflow-y:auto;">${e.freeWrite}</div></div>` : ''}`;
+
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('modalOverlay').classList.remove('open');
+});
+document.getElementById('modalOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('modalOverlay')) {
+    document.getElementById('modalOverlay').classList.remove('open');
+  }
+});
+
+// ── EXPORT ──
+document.getElementById('btnExport').addEventListener('click', () => {
+  const sorted = Object.values(entries).sort((a,b) => a.date.localeCompare(b.date));
+  if (sorted.length === 0) { alert('No entries to export yet.'); return; }
+
+  let text = 'MY ANXIETY JOURNAL — myanxietytest.com\n';
+  text += '=' .repeat(50) + '\n\n';
+
+  sorted.forEach(e => {
+    text += `DATE: ${formatDate(e.date)}\n`;
+    text += `ANXIETY LEVEL: ${e.level}/5 — ${getLevelLabel(e.level)}\n`;
+    if (e.tags.length) text += `FEELINGS: ${e.tags.join(', ')}\n`;
+    if (e.trigger) text += `TRIGGER: ${e.trigger}\n`;
+    if (e.thoughts) text += `THOUGHTS: ${e.thoughts}\n`;
+    if (e.helped) text += `WHAT HELPED: ${e.helped}\n`;
+    if (e.self) text += `SELF-CARE: ${e.self}\n`;
+    if (e.freeWrite) text += `FREE WRITING:\n${e.freeWrite}\n`;
+    text += '-'.repeat(40) + '\n\n';
+  });
+
+  const blob = new Blob([text], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'my-anxiety-journal.txt';
+  a.click(); URL.revokeObjectURL(url);
+});
+
+// ── THERAPY NUDGE ──
+function checkTherapyNudge() {
+  const last7 = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const k = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (entries[k]) last7.push(entries[k].level);
+  }
+
+  if (last7.length >= 3) {
+    const avg = last7.reduce((s,v)=>s+v,0) / last7.length;
+    const nudge = document.getElementById('therapyNudge');
+    if (avg >= 3.5) {
+      nudge.style.display = 'block';
+      document.getElementById('tnTitle').textContent = avg >= 4
+        ? 'Your anxiety has been high for several days in a row.'
+        : 'Your anxiety has been elevated for several days.';
+      const url = new URL('https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116');
+      url.searchParams.set('source', trafficSource);
+      document.getElementById('therapyLink').href = url.toString();
+    } else {
+      nudge.style.display = 'none';
+    }
+  }
+}
+
+// ── WORD COUNTER ──
+function updateWordCount() {
+  const text = document.getElementById('promptFreeWrite').value.trim();
+  const count = text === '' ? 0 : text.split(/\s+/).length;
+  document.getElementById('wordCount').textContent = count;
+}
+
+document.getElementById('promptFreeWrite').addEventListener('input', updateWordCount);
+
+init();
+</script>
+</body>
+</html>
