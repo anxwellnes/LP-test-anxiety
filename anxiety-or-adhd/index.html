@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Is It Anxiety or ADHD? Free Self-Assessment</title>
+  <meta name="description" content="Anxiety and ADHD share many symptoms but are driven by different patterns. Take this free test to understand which may be more dominant for you. Instant results, no sign-up." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="anxiety or ADHD test, do I have anxiety or ADHD, ADHD anxiety quiz, anxiety ADHD symptoms, is it anxiety or ADHD" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-or-adhd/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Is It Anxiety or ADHD? Free Self-Assessment" />
+  <meta property="og:description" content="Anxiety and ADHD feel similar from the inside but are driven by very different patterns. This free test helps you understand which may be more dominant." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-or-adhd/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between anxiety and ADHD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both anxiety and ADHD can cause difficulty concentrating, restlessness, sleep problems and emotional overwhelm. The key difference is the driver. Anxiety is driven by fear and worry that pulls attention toward potential threats. ADHD is driven by dysregulation of attention and impulse control regardless of fear or worry. In anxiety, concentration problems come from the mind being preoccupied with worry. In ADHD, concentration problems come from the brain struggling to regulate attention even when not anxious."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you have both anxiety and ADHD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Anxiety and ADHD co-occur very frequently. Studies suggest that around 50 percent of adults with ADHD also have an anxiety disorder. Having both makes diagnosis more complex because each condition can mask or amplify the other."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is ADHD treated differently from anxiety?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anxiety typically responds to CBT, exposure therapy and nervous system regulation. ADHD typically responds to behavioural strategies, structure, and in many cases medication. When both are present, treatment needs to address both, often starting with the condition causing the most functional impairment."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Anxiety or ADHD Test",
+    "url": "https://myanxietytest.com/anxiety-or-adhd/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Any",
+    "description": "A free self-assessment that helps identify whether anxiety or ADHD patterns are more dominant.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "MyAnxietyTest", "url": "https://myanxietytest.com/" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:        #0064FA;
+      --blue-dark:   #0050CC;
+      --blue-soft:   #E8F1FF;
+      --blue-bdr:    #C0D8FF;
+      --orange:      #EA580C;
+      --orange-dark: #C2410C;
+      --orange-soft: #FFF7ED;
+      --orange-bdr:  #FED7AA;
+      --bg:          #F2F5FA;
+      --surface:     #FFFFFF;
+      --border:      #DDE4EF;
+      --text:        #0D1B2A;
+      --muted:       #5C6F85;
+      --muted-lt:    #97A8BA;
+      --green:       #15803D;
+      --green-soft:  #F0FDF4;
+      --amber:       #B45309;
+      --amber-soft:  #FFFBEB;
+      --red:         #B91C1C;
+      --red-soft:    #FEF2F2;
+      --shadow-sm:   0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md:   0 4px 20px rgba(0,0,0,0.08);
+      --shadow-lg:   0 12px 48px rgba(0,0,0,0.10);
+      --r:           12px;
+      --r-lg:        18px;
+      --r-xl:        24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { text-decoration: none; color: inherit; }
+
+    .topbar { background: var(--blue); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,100,250,0.25); }
+    .topbar-inner { max-width: 900px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; color: white; letter-spacing: -0.01em; }
+    .topbar-right { display: flex; align-items: center; gap: 14px; }
+    .topbar-link { font-size: 0.81rem; font-weight: 600; color: rgba(255,255,255,0.7); transition: color 0.15s; }
+    .topbar-link:hover { color: white; }
+    .topbar-tag { font-size: 0.76rem; font-weight: 700; color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    /* HERO — warm gradient */
+    .hero { background: linear-gradient(160deg, #1C1917 0%, #292524 50%, #44403C 100%); padding: clamp(44px,7vw,84px) clamp(16px,4vw,40px) clamp(32px,5vw,56px); text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; left: -80px; bottom: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(234,88,12,0.15) 0%, transparent 65%); pointer-events: none; }
+    .hero::after  { content: ''; position: absolute; right: -60px; top: -60px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(0,100,250,0.12) 0%, transparent 65%); pointer-events: none; }
+    .hero-inner { max-width: 660px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+    .hero-pill { padding: 4px 13px; border-radius: 999px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+    .hero-pill.anx { background: rgba(0,100,250,0.25); color: #93C5FD; border: 1px solid rgba(0,100,250,0.3); }
+    .hero-pill.adhd { background: rgba(234,88,12,0.25); color: #FED7AA; border: 1px solid rgba(234,88,12,0.3); }
+    .hero-pill-sep { color: rgba(255,255,255,0.3); }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(2rem,5vw,3.4rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 14px; }
+    .hero h1 span { color: #FED7AA; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.6); max-width: 520px; margin: 0 auto 28px; line-height: 1.7; }
+    .btn-hero { display: inline-flex; align-items: center; gap: 9px; height: 52px; padding: 0 30px; background: white; color: var(--orange-dark); font-family: 'Nunito', sans-serif; font-size: 0.97rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 8px 28px rgba(0,0,0,0.25); transition: all 0.2s; text-decoration: none; }
+    .btn-hero:hover { background: var(--orange-soft); transform: translateY(-2px); }
+    .hero-trust { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+    .ht-item { display: flex; align-items: center; gap: 6px; font-size: 0.79rem; color: rgba(255,255,255,0.42); font-weight: 600; }
+    .ht-dot { width: 17px; height: 17px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #86efac; display: grid; place-items: center; font-size: 0.52rem; font-weight: 700; flex-shrink: 0; }
+
+    .page { max-width: 900px; margin: 0 auto; padding: 28px clamp(16px,4vw,40px) 60px; }
+
+    .quiz-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .quiz-strip { background: #292524; padding: 16px 24px; }
+    .qs-meta { display: flex; justify-content: space-between; font-size: 0.79rem; font-weight: 700; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
+    .qs-meta strong { color: #FED7AA; }
+    .qs-bar { height: 6px; background: rgba(255,255,255,0.12); border-radius: 999px; overflow: hidden; }
+    .qs-fill { height: 100%; background: var(--orange); border-radius: 999px; transition: width 0.3s ease; width: 0%; }
+    .quiz-body { padding: 32px 28px 0; }
+    .q-chip { display: inline-flex; align-items: center; gap: 7px; padding: 4px 12px 4px 4px; border-radius: 999px; background: var(--orange-soft); border: 1px solid var(--orange-bdr); font-size: 0.74rem; font-weight: 800; color: var(--orange-dark); margin-bottom: 16px; }
+    .q-chip-n { width: 22px; height: 22px; background: var(--orange); color: white; border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; font-weight: 900; }
+    .q-text { font-family: 'Nunito', sans-serif; font-size: clamp(1.15rem,2.4vw,1.6rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; margin-bottom: 26px; }
+    .answers-list { display: flex; flex-direction: column; gap: 10px; }
+    .ans-btn { display: flex; align-items: center; gap: 16px; width: 100%; padding: 14px 18px; border-radius: var(--r); border: 2px solid var(--border); background: var(--bg); cursor: pointer; font-family: 'Nunito Sans', sans-serif; text-align: left; transition: all 0.16s; }
+    .ans-circle { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--border); background: white; flex-shrink: 0; display: grid; place-items: center; transition: all 0.16s; }
+    .ans-circle-dot { width: 10px; height: 10px; border-radius: 50%; background: transparent; transition: all 0.16s; }
+    .ans-text { font-size: 0.93rem; font-weight: 700; color: var(--muted); flex: 1; transition: color 0.16s; }
+    .ans-btn:hover { border-color: var(--orange); background: var(--orange-soft); transform: translateX(4px); }
+    .ans-btn:hover .ans-circle { border-color: var(--orange); }
+    .ans-btn:hover .ans-text { color: var(--orange-dark); }
+    .ans-btn.selected { border-color: var(--orange); background: var(--orange-soft); box-shadow: 0 4px 16px rgba(234,88,12,0.12); }
+    .ans-btn.selected .ans-circle { border-color: var(--orange); background: var(--orange); }
+    .ans-btn.selected .ans-circle-dot { background: white; }
+    .ans-btn.selected .ans-text { color: var(--orange-dark); font-weight: 800; }
+    .quiz-footer { display: flex; justify-content: space-between; align-items: center; padding: 18px 28px 24px; margin-top: 8px; }
+    .q-hint { font-size: 0.8rem; color: var(--muted-lt); font-weight: 600; }
+    .ctrl-row { display: flex; gap: 8px; }
+    .btn-ctrl { height: 38px; padding: 0 16px; border-radius: var(--r); border: 1.5px solid var(--border); background: white; font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--muted); cursor: pointer; transition: all 0.15s; }
+    .btn-ctrl:hover:not(:disabled) { border-color: var(--orange); color: var(--orange); }
+    .btn-ctrl:disabled { opacity: 0.28; cursor: not-allowed; }
+
+    /* RESULT */
+    .result-card { display: none; }
+    .result-header { display: grid; grid-template-columns: 1fr 1fr; }
+    .rh-side { padding: 24px 22px; }
+    .rh-side.anx-side { background: var(--blue-soft); border-right: 1px solid var(--border); }
+    .rh-side.adhd-side { background: var(--orange-soft); }
+    .rh-label { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; }
+    .rh-label.anx-lbl  { color: var(--blue); }
+    .rh-label.adhd-lbl { color: var(--orange-dark); }
+    .rh-bar-track { height: 10px; background: rgba(0,0,0,0.07); border-radius: 999px; overflow: hidden; margin-bottom: 8px; }
+    .rh-bar-fill { height: 100%; border-radius: 999px; transition: width 0.8s cubic-bezier(0.4,0,0.2,1); width: 0%; }
+    .rh-bar-fill.anx-fill  { background: var(--blue); }
+    .rh-bar-fill.adhd-fill { background: var(--orange); }
+    .rh-score { font-family: 'Nunito', sans-serif; font-size: 3rem; font-weight: 900; letter-spacing: -0.04em; line-height: 1; }
+    .rh-score.anx-score  { color: var(--blue); }
+    .rh-score.adhd-score { color: var(--orange); }
+    .rh-score-label { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+
+    .dominant-banner { background: #1C1917; padding: 12px 22px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+    .dom-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+    .dom-label { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; color: white; }
+    .dom-badge { padding: 3px 12px; border-radius: 999px; font-size: 0.72rem; font-weight: 700; margin-left: auto; }
+    .dom-badge.anxiety { background: var(--blue); color: white; }
+    .dom-badge.adhd    { background: var(--orange); color: white; }
+    .dom-badge.both    { background: #7C3AED; color: white; }
+    .dom-badge.low     { background: var(--green); color: white; }
+
+    .result-body { background: var(--surface); border: 1px solid var(--border); border-top: none; border-radius: 0 0 var(--r-xl) var(--r-xl); box-shadow: var(--shadow-lg); overflow: hidden; padding: 20px; display: grid; gap: 14px; }
+
+    .rb-card { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 18px 18px 18px 22px; border-left: 4px solid var(--border); }
+    .rb-card.acc-blue   { border-left-color: var(--blue); }
+    .rb-card.acc-orange { border-left-color: var(--orange); }
+    .rb-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+    .rb-card.acc-orange .rb-label { color: var(--orange-dark); }
+    .rb-title { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 7px; }
+    .rb-text  { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
+    .rb-list  { list-style: none; display: grid; gap: 8px; margin-top: 10px; }
+    .rb-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+    .li-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--blue); flex-shrink: 0; margin-top: 6px; }
+    .steps-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 12px; }
+    .step { background: white; border-radius: var(--r); border: 1px solid var(--border); padding: 14px; }
+    .step-n { width: 28px; height: 28px; border-radius: 8px; background: var(--orange); color: white; display: grid; place-items: center; font-size: 0.82rem; font-weight: 900; margin-bottom: 9px; }
+    .step strong { display: block; font-size: 0.86rem; margin-bottom: 4px; font-weight: 800; }
+    .step p { font-size: 0.79rem; color: var(--muted); line-height: 1.5; }
+
+    .therapy-card { background: #1C1917; border-radius: var(--r-lg); padding: 22px; position: relative; overflow: hidden; }
+    .therapy-card::before { content: ''; position: absolute; right: -40px; bottom: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(234,88,12,0.1); pointer-events: none; }
+    .therapy-card.hidden { display: none; }
+    .tc-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.38); margin-bottom: 8px; }
+    .therapy-card h3 { font-family: 'Nunito', sans-serif; font-size: 1.2rem; font-weight: 900; color: white; letter-spacing: -0.02em; margin-bottom: 8px; position: relative; z-index: 1; }
+    .therapy-card p { font-size: 0.87rem; color: rgba(255,255,255,0.62); max-width: 500px; margin-bottom: 18px; line-height: 1.65; position: relative; z-index: 1; }
+    .tc-benefits { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; margin-bottom: 20px; position: relative; z-index: 1; }
+    .tc-ben { padding: 12px; border-radius: var(--r); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); }
+    .tc-ben strong { display: block; font-size: 0.8rem; color: white; font-weight: 800; margin-bottom: 3px; }
+    .tc-ben span { font-size: 0.75rem; color: rgba(255,255,255,0.52); line-height: 1.4; }
+    .tc-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; z-index: 1; }
+    .btn-tc { display: inline-flex; align-items: center; gap: 7px; height: 46px; padding: 0 22px; background: white; color: var(--orange-dark); font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(0,0,0,0.2); transition: all 0.2s; text-decoration: none; }
+    .btn-tc:hover { background: var(--orange-soft); transform: translateY(-1px); }
+    .btn-ghost { height: 46px; padding: 0 18px; border: 1.5px solid rgba(255,255,255,0.2); background: transparent; color: rgba(255,255,255,0.72); font-family: 'Nunito', sans-serif; font-size: 0.87rem; font-weight: 700; border-radius: var(--r-lg); cursor: pointer; transition: all 0.2s; }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.45); color: white; }
+    .tc-note { margin-top: 12px; font-size: 0.74rem; color: rgba(255,255,255,0.28); position: relative; z-index: 1; }
+
+    .footer-retake { display: none; justify-content: center; padding: 4px 0; }
+    .btn-retake-lo { height: 40px; padding: 0 18px; border: 1.5px solid var(--border); background: white; color: var(--muted); font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: var(--r); cursor: pointer; transition: all 0.2s; }
+    .btn-retake-lo:hover { border-color: var(--orange); color: var(--orange); }
+    .r-disclaimer { padding: 14px 22px 18px; border-top: 1px solid var(--border); font-size: 0.76rem; color: var(--muted-lt); text-align: center; }
+
+    .lower { max-width: 900px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px) 60px; }
+    .content-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-sm); padding: 26px; margin-bottom: 12px; }
+    .content-card h2 { font-family: 'Nunito', sans-serif; font-size: clamp(1.2rem,2.2vw,1.55rem); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .content-card h3 { font-size: 0.95rem; font-weight: 800; margin: 14px 0 5px; display: flex; align-items: center; gap: 7px; }
+    .content-card h3::before { content: ''; display: inline-block; width: 3px; height: 13px; background: var(--orange); border-radius: 2px; }
+    .content-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 9px; line-height: 1.7; }
+    .content-card ul { list-style: none; color: var(--muted); font-size: 0.9rem; display: grid; gap: 7px; }
+    .content-card li { display: flex; gap: 8px; align-items: flex-start; }
+    .content-card li::before { content: '›'; color: var(--orange); font-weight: 900; flex-shrink: 0; }
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+    .compare-col { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 16px; }
+    .compare-col h4 { font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .compare-col h4.anx  { color: var(--blue); }
+    .compare-col h4.adhd { color: var(--orange-dark); }
+    .faq-list { display: grid; gap: 10px; }
+    .faq-it { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 16px 18px; }
+    .faq-it h3 { font-size: 0.92rem; margin: 0 0 6px; display: flex; align-items: center; gap: 8px; }
+    .faq-it h3::before { content: 'Q'; width: 20px; height: 20px; background: var(--orange); color: white; border-radius: 6px; display: grid; place-items: center; font-size: 0.64rem; font-weight: 900; flex-shrink: 0; }
+    .faq-it p { margin: 0; font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+
+    .footer { background: #1C1917; padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.08); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.32); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.7); }
+    .footer-copy { max-width: 900px; margin: 0 auto; padding-top: 16px; font-size: 0.76rem; color: rgba(255,255,255,0.18); text-align: center; }
+
+    @media (max-width: 640px) {
+      .result-header { grid-template-columns: 1fr; }
+      .rh-side.anx-side { border-right: none; border-bottom: 1px solid var(--border); }
+      .steps-row, .tc-benefits, .compare-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-right">
+      <a href="https://myanxietytest.com/" class="topbar-link">All tools</a>
+      <div class="topbar-tag">Free · No sign-up</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <div class="hero-pill anx">Anxiety</div>
+      <div class="hero-pill-sep">vs</div>
+      <div class="hero-pill adhd">ADHD</div>
+    </div>
+    <h1>Is it anxiety<br>or is it <span>ADHD?</span></h1>
+    <p class="hero-desc">They share so many symptoms — distraction, restlessness, overwhelm, difficulty sleeping — that they are regularly confused. This free test helps you understand which pattern may be dominant.</p>
+    <a href="#quiz" class="btn-hero">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 4.5l4 2.5-4 2.5V4.5z" fill="currentColor"/></svg>
+      Take the Free Test
+    </a>
+    <div class="hero-trust">
+      <div class="ht-item"><div class="ht-dot">✓</div>20 questions</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Split result for both</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Instant results</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>100% anonymous</div>
+    </div>
+  </div>
+</section>
+
+<div class="page" id="quiz">
+  <div class="quiz-card" id="quizCard">
+    <div class="quiz-strip">
+      <div class="qs-meta">
+        <span>Question <strong id="curQ">1</strong> of 20</span>
+        <span><strong id="curPct">0</strong>% complete</span>
+      </div>
+      <div class="qs-bar"><div class="qs-fill" id="progressFill"></div></div>
+    </div>
+    <div class="quiz-body">
+      <div class="q-chip"><div class="q-chip-n" id="qChipN">1</div>Question</div>
+      <p class="q-text" id="qText"></p>
+      <div class="answers-list" id="answersList"></div>
+      <div class="quiz-footer">
+        <span class="q-hint" id="qHint">Select an answer to continue automatically.</span>
+        <div class="ctrl-row">
+          <button class="btn-ctrl" id="backBtn" disabled>← Back</button>
+          <button class="btn-ctrl" id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="result-card" id="resultCard">
+    <div class="result-header">
+      <div class="rh-side anx-side">
+        <div class="rh-label anx-lbl">Anxiety indicators</div>
+        <div class="rh-bar-track"><div class="rh-bar-fill anx-fill" id="anxBar"></div></div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-top:8px;">
+          <div class="rh-score anx-score" id="anxScore">0%</div>
+          <div class="rh-score-label">Anxiety patterns</div>
+        </div>
+      </div>
+      <div class="rh-side adhd-side">
+        <div class="rh-label adhd-lbl">ADHD indicators</div>
+        <div class="rh-bar-track"><div class="rh-bar-fill adhd-fill" id="adhdBar"></div></div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-top:8px;">
+          <div class="rh-score adhd-score" id="adhdScore">0%</div>
+          <div class="rh-score-label">ADHD patterns</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dominant-banner">
+      <div class="dom-tag">Dominant pattern</div>
+      <div class="dom-label" id="domLabel">—</div>
+      <div class="dom-badge" id="domBadge">—</div>
+    </div>
+
+    <div class="result-body">
+      <div class="rb-card acc-orange">
+        <div class="rb-label">What this means for you</div>
+        <div class="rb-title" id="insightTitle"></div>
+        <div class="rb-text" id="insightText"></div>
+      </div>
+      <div class="rb-card acc-blue">
+        <div class="rb-label">What would help most right now</div>
+        <div class="rb-text" id="actionIntro"></div>
+        <ul class="rb-list" id="actionList"></ul>
+      </div>
+      <div class="rb-card">
+        <div class="rb-label">Your 3-step path forward</div>
+        <div class="rb-text" id="planIntro"></div>
+        <div class="steps-row" id="stepsRow"></div>
+      </div>
+      <div class="rb-card acc-orange">
+        <div class="rb-label">Why this pattern keeps going</div>
+        <div class="rb-text" id="patternText"></div>
+      </div>
+
+      <div class="therapy-card" id="therapyCard">
+        <div class="tc-tag">Recommended next step</div>
+        <h3 id="tcTitle"></h3>
+        <p id="tcText"></p>
+        <div class="tc-benefits" id="tcBenefits"></div>
+        <div class="tc-actions">
+          <a class="btn-tc" id="therapyLink" href="#">Speak with a therapist — 20% Off</a>
+          <button class="btn-ghost" id="retakeBtn">Retake test</button>
+        </div>
+        <div class="tc-note">Get 20% off your first month. No commitment required.</div>
+      </div>
+
+      <div class="footer-retake" id="footerRetake">
+        <button class="btn-retake-lo" id="retakeBtnLow">← Take the test again</button>
+      </div>
+    </div>
+    <div class="r-disclaimer">This test is an informational self-assessment, not a medical diagnosis. ADHD and anxiety require professional evaluation for accurate diagnosis. Please consult a qualified professional if you are experiencing significant distress.</div>
+  </div>
+</div>
+
+<div class="lower">
+  <div class="content-card">
+    <h2>Anxiety vs ADHD — why they are so easily confused</h2>
+    <p>Both anxiety and ADHD can cause difficulty concentrating, restlessness, emotional overwhelm, sleep problems and a sense of being unable to manage what life demands. The symptoms overlap so significantly that misdiagnosis is very common in both directions.</p>
+    <p>The key distinction is the driver. Anxiety pulls attention toward potential threats and worst-case outcomes. ADHD involves dysregulation of attention and impulse control that occurs regardless of worry or fear. Someone with anxiety struggles to concentrate because their mind is occupied with worry. Someone with ADHD struggles to concentrate even when they want to and there is nothing to worry about. For a deeper look at anxiety severity, the <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--orange);font-weight:700;">free anxiety level test</a> gives you a full score.</p>
+    <div class="compare-grid">
+      <div class="compare-col">
+        <h4 class="anx">Anxiety tends to look like</h4>
+        <ul>
+          <li>Difficulty concentrating due to worry and rumination</li>
+          <li>Restlessness driven by fear and anticipation</li>
+          <li>Sleep problems caused by an overactive mind at night</li>
+          <li>Procrastination due to fear of failure or judgment</li>
+          <li>Emotional overwhelm linked to specific feared situations</li>
+        </ul>
+      </div>
+      <div class="compare-col">
+        <h4 class="adhd">ADHD tends to look like</h4>
+        <ul>
+          <li>Difficulty concentrating even on things you enjoy</li>
+          <li>Restlessness and fidgeting that is not fear-driven</li>
+          <li>Sleep problems due to a racing, active mind regardless of worry</li>
+          <li>Procrastination due to difficulty initiating tasks</li>
+          <li>Emotional overwhelm that is quick, intense and passes fast</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content-card">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+      <div class="faq-it">
+        <h3>Can you have both anxiety and ADHD?</h3>
+        <p>Yes. Around 50 percent of adults with ADHD also have an anxiety disorder. Having both makes diagnosis more complex because each condition can mask or amplify the other's symptoms.</p>
+      </div>
+      <div class="faq-it">
+        <h3>Is this test a diagnosis?</h3>
+        <p>No. This is a self-assessment only. Both ADHD and anxiety require professional evaluation for accurate diagnosis. If you are experiencing significant distress or impairment, speaking with a qualified professional is recommended.</p>
+      </div>
+      <div class="faq-it">
+        <h3>How is ADHD treated differently from anxiety?</h3>
+        <p>Anxiety typically responds to CBT and nervous system regulation. ADHD typically responds to behavioural strategies, structure and often medication. When both are present, a professional can help you sequence treatment to address both effectively.</p>
+      </div>
+      <div class="faq-it">
+        <h3>What other tools on this site might help?</h3>
+        <p>If anxiety is dominant, the <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--orange);font-weight:700;">anxiety level test</a> gives you a full severity score. If burnout is also a concern, the <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/" style="color:var(--orange);font-weight:700;">anxiety vs burnout quiz</a> can help clarify which pattern is driving your exhaustion.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/anxiety-or-depression/">Anxiety or Depression</a>
+      <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/">High-Functioning Anxiety</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+</footer>
+
+<script>
+const questions = [
+  // Anxiety (10)
+  { text: "Do you feel worried or on edge about situations, relationships or future events more than feels reasonable?", type: "anxiety" },
+  { text: "Does your mind spiral into worst-case scenarios even when the situation is not that serious?", type: "anxiety" },
+  { text: "Do you avoid situations because of fear of what might go wrong?", type: "anxiety" },
+  { text: "Do you feel physically tense, restless or unable to relax even when nothing threatening is happening?", type: "anxiety" },
+  { text: "Do you struggle to sleep because your mind keeps replaying worries or anticipating problems?", type: "anxiety" },
+  { text: "Do you find it hard to concentrate because your thoughts keep returning to things you are worried about?", type: "anxiety" },
+  { text: "Do you feel a persistent sense of dread or unease that something bad might happen?", type: "anxiety" },
+  { text: "Do you procrastinate because you are afraid of making mistakes or being judged?", type: "anxiety" },
+  { text: "Do you feel overwhelmed specifically in situations that feel uncertain, high-pressure or socially threatening?", type: "anxiety" },
+  { text: "Does reducing anxiety feel like the main reason you avoid things or seek reassurance?", type: "anxiety" },
+  // ADHD (10)
+  { text: "Do you find it difficult to sustain attention on tasks even when you are not worried or anxious?", type: "adhd" },
+  { text: "Do you often start tasks but find it difficult to follow through to completion?", type: "adhd" },
+  { text: "Do you struggle to organise tasks, manage time or prioritise effectively?", type: "adhd" },
+  { text: "Do you frequently lose things, forget appointments or miss details that others seem to remember easily?", type: "adhd" },
+  { text: "Do you feel physically restless or have a need to move, fidget or do multiple things at once?", type: "adhd" },
+  { text: "Do you find yourself easily distracted by unrelated thoughts or external stimuli even when you want to focus?", type: "adhd" },
+  { text: "Do you struggle with impulsive decisions, interrupting others or saying things without thinking them through?", type: "adhd" },
+  { text: "Do you find it very easy to hyperfocus on things that interest you but nearly impossible to focus on things that do not?", type: "adhd" },
+  { text: "Do you experience emotional reactions that feel more intense and faster than other people seem to, regardless of whether anxiety is involved?", type: "adhd" },
+  { text: "Do the concentration difficulties you experience happen even when you are calm and not anxious?", type: "adhd" }
+];
+
+const OPTIONS = [
+  { label: "Never",         value: 0 },
+  { label: "Rarely",        value: 1 },
+  { label: "Sometimes",     value: 2 },
+  { label: "Often",         value: 3 },
+  { label: "Almost always", value: 4 }
+];
+
+const RESULTS = {
+  anxiety: {
+    domLabel: "Anxiety patterns are more dominant",
+    domBadgeClass: "anxiety", domBadgeText: "Anxiety dominant",
+    insightTitle: "Anxiety rather than ADHD appears to be the stronger driver.",
+    insightText: "Your responses suggest the dominant pattern is anxiety-driven rather than ADHD. The concentration difficulties, restlessness and overwhelm you experience are most likely being generated by worry and the stress response rather than by dysregulation of attention itself. This distinction matters because the approaches that work for anxiety are different from those that work for ADHD.",
+    actionIntro: "Anxiety responds well to approaches that address the worry cycle directly.",
+    actions: ["The concentration and focus difficulties you experience are likely secondary to anxiety. Addressing the underlying worry and nervous system activation tends to improve focus naturally.", "Avoidance is one of the main ways anxiety maintains itself. Gradually moving toward situations that trigger anxiety, rather than managing around them, reduces anxiety over time.", "Consider speaking with a therapist who understands anxiety. The pattern is well understood and responds very well to structured support."],
+    planIntro: "Reducing anxiety tends to improve many of the symptoms that look like ADHD.",
+    plan: [{ title: "Address the anxiety first", text: "Many ADHD-like symptoms, difficulty focusing, restlessness, overwhelm, improve significantly when the underlying anxiety is addressed." }, { title: "Work on the worry cycle", text: "Map the situations that trigger most anxiety and begin to address the avoidance and anticipation patterns maintaining them." }, { title: "Get support", text: "A therapist who specialises in anxiety can help you understand the specific patterns maintaining your symptoms and how to break them." }],
+    patternText: "Anxiety-driven concentration problems differ from ADHD in an important way. In anxiety, the mind is occupied with worry, threat-scanning and worst-case thinking. When anxiety reduces, concentration typically improves. In ADHD, concentration difficulties persist even in the absence of anxiety. If your symptoms improve significantly in low-anxiety situations, anxiety is the more likely driver.",
+    therapy: { title: "Anxiety is very treatable and addressing it tends to improve many related symptoms.", text: "A therapist can help you understand the specific patterns driving your anxiety, break the worry and avoidance cycles, and reduce the secondary symptoms like concentration difficulties and emotional overwhelm.", benefits: [{ title: "Address the root", text: "Treat the anxiety driving concentration and overwhelm rather than managing symptoms in isolation." }, { title: "Break the worry cycle", text: "Understand exactly where anxiety is being maintained and how to interrupt it effectively." }, { title: "Improve daily functioning", text: "Reduce the impact of anxiety on your work, relationships and quality of life." }] }
+  },
+  adhd: {
+    domLabel: "ADHD patterns are more dominant",
+    domBadgeClass: "adhd", domBadgeText: "ADHD dominant",
+    insightTitle: "ADHD patterns appear to be the stronger driver.",
+    insightText: "Your responses suggest the dominant pattern involves dysregulation of attention, impulse control and executive function rather than anxiety-driven worry. The fact that concentration difficulties, restlessness and overwhelm appear to occur even outside of anxious situations is the key marker. This distinction matters enormously for what kind of support would actually help.",
+    actionIntro: "ADHD responds to very different approaches than anxiety.",
+    actions: ["Structure and systems tend to do for ADHD what awareness and regulation do for anxiety. Externalising organisation, using timers, breaking tasks into smaller units and removing distractions can be more effective than trying to concentrate harder.", "Getting a formal evaluation from a professional who understands ADHD is important. Many adults with ADHD have gone years without a diagnosis, which has significant impacts on self-perception and the strategies they have tried to use.", "If anxiety is also present, it often develops as a secondary response to years of struggling with ADHD symptoms. Addressing ADHD can reduce this secondary anxiety significantly."],
+    planIntro: "ADHD management starts with understanding how your specific pattern works.",
+    plan: [{ title: "Get a proper evaluation", text: "A professional evaluation is the most important step. ADHD in adults looks different from ADHD in children and is frequently missed or misdiagnosed." }, { title: "Build external structure", text: "ADHD responds to external organisation tools far better than to willpower. Systems, timers, reminders and structured environments reduce the burden on internal regulation." }, { title: "Address secondary anxiety", text: "If anxiety has developed alongside ADHD, addressing it as a secondary pattern often makes ADHD management significantly easier." }],
+    patternText: "ADHD in adults often goes unrecognised for decades because the person has developed sophisticated coping strategies that mask the underlying pattern. The persistent sense of trying harder than everyone else for the same results, the self-blame for disorganisation, the emotional exhaustion of constantly compensating for attention regulation difficulties, these are not character flaws. They are the experience of an unaddressed neurodevelopmental difference.",
+    therapy: { title: "A professional who understands ADHD can make a significant difference.", text: "Therapy for ADHD focuses on building the external structures and strategies that compensate for internal regulation difficulties, addressing the secondary anxiety and self-criticism that often develop, and helping you understand how your specific ADHD pattern works.", benefits: [{ title: "Get accurate understanding", text: "Work with someone who can help you understand your specific ADHD pattern and what would actually help." }, { title: "Build effective strategies", text: "Develop the external systems and approaches that work with ADHD rather than against it." }, { title: "Address secondary anxiety", text: "Reduce the anxiety and self-criticism that has often developed alongside years of unaddressed ADHD." }] }
+  },
+  both: {
+    domLabel: "Both anxiety and ADHD patterns are present",
+    domBadgeClass: "both", domBadgeText: "Both present",
+    insightTitle: "Both anxiety and ADHD patterns appear to be significantly active.",
+    insightText: "Anxiety and ADHD co-occur very frequently and can interact in complex ways. ADHD can generate anxiety as a secondary response to years of struggling with attention and organisation. Anxiety can amplify ADHD symptoms by adding worry-driven distraction on top of attention dysregulation. Together they create a particularly complex experience that benefits from professional support that understands both.",
+    actionIntro: "When both are present, sequence matters.",
+    actions: ["Identifying which is primary and which is secondary helps determine where to start. In many cases, ADHD is the underlying condition and anxiety has developed in response to it. In others, anxiety is primary and ADHD-like symptoms are secondary.", "Get a professional evaluation that considers both. Many practitioners focus on one or the other, which can lead to incomplete or ineffective treatment.", "Be patient with the process. When both patterns are active, recovery and management take longer, but the right support makes a significant difference."],
+    planIntro: "Both patterns can be addressed effectively with the right professional support.",
+    plan: [{ title: "Get a comprehensive evaluation", text: "A professional who understands both ADHD and anxiety can help you identify which is primary and where to start." }, { title: "Address the primary pattern first", text: "Treating the primary condition often reduces the secondary one significantly." }, { title: "Build integrated support", text: "Long-term management of both patterns requires strategies that address each without making the other worse." }],
+    patternText: "The overlap between anxiety and ADHD creates a situation where it is genuinely difficult to tell from the inside which is driving what. Both conditions make concentration difficult. Both create emotional overwhelm. Both disrupt sleep. A professional evaluation is particularly valuable here because the treatment approaches are sufficiently different that working on the wrong one first can make the other harder to address.",
+    therapy: { title: "Both patterns are very manageable with the right specialist support.", text: "A therapist who understands both ADHD and anxiety can help you untangle the patterns, address each appropriately, and build strategies that work for both rather than managing them in isolation.", benefits: [{ title: "Untangle the patterns", text: "Understand which symptoms belong to ADHD and which to anxiety." }, { title: "Right sequence", text: "Address the primary pattern in a way that makes the secondary one easier to manage." }, { title: "Integrated strategies", text: "Build an approach that addresses both patterns without making either worse." }] }
+  },
+  low: {
+    domLabel: "Low indicators for both patterns",
+    domBadgeClass: "low", domBadgeText: "Low indicators",
+    insightTitle: "Neither anxiety nor ADHD appears to be significantly dominant right now.",
+    insightText: "Your responses suggest neither anxiety nor ADHD patterns are significantly active at this time. Some difficulty with concentration, occasional restlessness and periodic worry are all normal human experiences that do not indicate a clinical condition.",
+    actionIntro: "A few things worth knowing.",
+    actions: ["Concentration difficulties are universal and do not in themselves indicate either anxiety or ADHD. Everyone's focus varies depending on interest, fatigue and context.", "If the patterns described in this test become more persistent or begin to significantly affect your daily functioning, these tools are here when you need them.", "For a broader assessment of your overall anxiety level, the full anxiety level test covers all anxiety patterns with a complete severity score."],
+    planIntro: "Staying aware is the main priority at this level.",
+    plan: [{ title: "Know the markers", text: "Both anxiety and ADHD become clinically significant when they are persistent, difficult to control and significantly impair daily functioning across multiple areas." }, { title: "Monitor changes", text: "If patterns shift and concentration, worry or impulsivity become more frequent or distressing, pay attention early." }, { title: "Use the right tools", text: "The anxiety level test gives you a complete anxiety severity picture if things change." }],
+    patternText: "Both anxiety and ADHD exist on a spectrum. Sub-clinical levels of both are common and do not necessarily require treatment. The important markers are persistence, lack of control and functional impairment across multiple areas of life.",
+    therapy: null
+  }
+};
+
+let idx = 0;
+let answers = new Array(questions.length).fill(null);
+const $ = id => document.getElementById(id);
+
+const urlParams = new URLSearchParams(window.location.search);
+const trafficSource = urlParams.get('source') || 'defaultAnxietyOrADHD';
+
+function buildTherapyUrl() {
+  const url = new URL('https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116');
+  url.searchParams.set('source', trafficSource);
+  return url.toString();
+}
+
+function updateProgress() {
+  $('curQ').textContent = idx + 1;
+  $('qChipN').textContent = idx + 1;
+  const pct = Math.round((idx / questions.length) * 100);
+  $('curPct').textContent = pct;
+  $('progressFill').style.width = pct + '%';
+  $('backBtn').disabled = idx === 0;
+  $('qHint').textContent = idx === questions.length - 1 ? 'Select an answer to see your result.' : 'Select an answer to continue automatically.';
+}
+
+function renderQuestion() {
+  $('qText').textContent = questions[idx].text;
+  const wrap = $('answersList');
+  wrap.innerHTML = OPTIONS.map(opt => {
+    const sel = answers[idx] === opt.value;
+    return `<button class="ans-btn${sel ? ' selected' : ''}" data-value="${opt.value}">
+      <div class="ans-circle"><div class="ans-circle-dot"></div></div>
+      <div class="ans-text">${opt.label}</div>
+    </button>`;
+  }).join('');
+  wrap.querySelectorAll('.ans-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      answers[idx] = Number(btn.dataset.value);
+      renderQuestion();
+      setTimeout(() => {
+        if (idx < questions.length - 1) { idx++; renderQuestion(); updateProgress(); }
+        else showResult();
+      }, 200);
+    });
+  });
+}
+
+function calcScores() {
+  let aScore = 0, aMax = 0, dScore = 0, dMax = 0;
+  questions.forEach((q, i) => {
+    const v = answers[i] ?? 0;
+    if (q.type === 'anxiety') { aScore += v; aMax += 4; }
+    else { dScore += v; dMax += 4; }
+  });
+  return { aPct: Math.round((aScore / aMax) * 100), dPct: Math.round((dScore / dMax) * 100) };
+}
+
+function getProfile(aPct, dPct) {
+  if (aPct < 25 && dPct < 25) return 'low';
+  const diff = Math.abs(aPct - dPct);
+  if (diff > 15) return aPct > dPct ? 'anxiety' : 'adhd';
+  if (aPct >= 45 && dPct >= 45) return 'both';
+  return aPct > dPct ? 'anxiety' : 'adhd';
+}
+
+function renderList(id, items) {
+  $(id).innerHTML = items.map(t => `<li><span class="li-dot"></span><span>${t}</span></li>`).join('');
+}
+
+function showResult() {
+  const { aPct, dPct } = calcScores();
+  const profile = getProfile(aPct, dPct);
+  const d = RESULTS[profile];
+
+  setTimeout(() => { $('anxBar').style.width = aPct + '%'; $('adhdBar').style.width = dPct + '%'; }, 80);
+  $('anxScore').textContent = aPct + '%';
+  $('adhdScore').textContent = dPct + '%';
+  $('domLabel').textContent = d.domLabel;
+  $('domBadge').textContent = d.domBadgeText;
+  $('domBadge').className = `dom-badge ${d.domBadgeClass}`;
+
+  $('insightTitle').textContent = d.insightTitle;
+  $('insightText').textContent = d.insightText;
+  $('actionIntro').textContent = d.actionIntro;
+  $('planIntro').textContent = d.planIntro;
+  $('patternText').textContent = d.patternText;
+  renderList('actionList', d.actions);
+
+  $('stepsRow').innerHTML = d.plan.map((p, i) => `
+    <div class="step">
+      <div class="step-n">${i + 1}</div>
+      <strong>${p.title}</strong>
+      <p>${p.text}</p>
+    </div>`).join('');
+
+  if (!d.therapy) {
+    $('therapyCard').classList.add('hidden');
+    $('footerRetake').style.display = 'flex';
+  } else {
+    $('therapyCard').classList.remove('hidden');
+    $('footerRetake').style.display = 'none';
+    $('tcTitle').textContent = d.therapy.title;
+    $('tcText').textContent = d.therapy.text;
+    $('therapyLink').href = buildTherapyUrl();
+    $('tcBenefits').innerHTML = d.therapy.benefits.map(b =>
+      `<div class="tc-ben"><strong>${b.title}</strong><span>${b.text}</span></div>`).join('');
+  }
+
+  $('progressFill').style.width = '100%';
+  $('curPct').textContent = '100';
+  $('curQ').textContent = '20';
+  $('quizCard').style.display = 'none';
+  $('resultCard').style.display = 'block';
+  $('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function resetQuiz() {
+  answers = new Array(questions.length).fill(null);
+  idx = 0;
+  $('resultCard').style.display = 'none';
+  $('quizCard').style.display = 'block';
+  $('footerRetake').style.display = 'none';
+  renderQuestion();
+  updateProgress();
+  document.getElementById('quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+$('backBtn').addEventListener('click', () => { if (idx > 0) { idx--; renderQuestion(); updateProgress(); } });
+$('restartBtn').addEventListener('click', resetQuiz);
+$('retakeBtn').addEventListener('click', resetQuiz);
+$('retakeBtnLow').addEventListener('click', resetQuiz);
+
+renderQuestion();
+updateProgress();
+</script>
+</body>
+</html>
