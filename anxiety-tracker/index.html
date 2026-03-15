@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anxiety Timeline Tracker — Track Your Progress Over Time</title>
+  <meta name="description" content="Track your anxiety levels over time and see your progress. Free anxiety timeline tracker saved privately in your browser. Log daily, see weekly and monthly trends." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="anxiety tracker, anxiety timeline, track anxiety levels, anxiety progress tracker, daily anxiety log" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-tracker/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anxiety Timeline Tracker — Track Your Progress Over Time" />
+  <meta property="og:description" content="Log your daily anxiety level and watch your progress over time. Free, private, saved in your browser." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-tracker/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:       #0064FA;
+      --blue-dark:  #0050CC;
+      --blue-mid:   #1a74fb;
+      --blue-soft:  #E8F1FF;
+      --blue-bdr:   #C0D8FF;
+      --bg:         #F2F5FA;
+      --surface:    #FFFFFF;
+      --border:     #DDE4EF;
+      --text:       #0D1B2A;
+      --muted:      #5C6F85;
+      --muted-lt:   #97A8BA;
+      --green:      #15803D;
+      --green-soft: #F0FDF4;
+      --amber:      #D97706;
+      --amber-soft: #FFFBEB;
+      --red:        #B91C1C;
+      --red-soft:   #FEF2F2;
+      --shadow-sm:  0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md:  0 4px 20px rgba(0,100,250,0.10);
+      --shadow-lg:  0 12px 48px rgba(0,100,250,0.13);
+      --r:          12px;
+      --r-lg:       18px;
+      --r-xl:       24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { text-decoration: none; color: inherit; }
+
+    /* TOPBAR */
+    .topbar { background: var(--blue); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,100,250,0.25); }
+    .topbar-inner { max-width: 1040px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; color: white; letter-spacing: -0.01em; }
+    .topbar-right { display: flex; align-items: center; gap: 14px; }
+    .topbar-link { font-size: 0.81rem; font-weight: 600; color: rgba(255,255,255,0.7); transition: color 0.15s; }
+    .topbar-link:hover { color: white; }
+    .topbar-tag { font-size: 0.76rem; font-weight: 700; color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(160deg, var(--blue-dark) 0%, var(--blue) 60%, var(--blue-mid) 100%); padding: clamp(40px,6vw,72px) clamp(16px,4vw,40px) clamp(28px,4vw,48px); text-align: center; position: relative; overflow: hidden; }
+    .hero::after { content: ''; position: absolute; right: -80px; top: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 65%); pointer-events: none; }
+    .hero-inner { max-width: 600px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 7px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 16px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(1.9rem,4.5vw,3rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 12px; }
+    .hero h1 span { color: #93c5fd; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 480px; margin: 0 auto 18px; line-height: 1.7; }
+    .hero-trust { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+    .ht-item { display: flex; align-items: center; gap: 6px; font-size: 0.79rem; color: rgba(255,255,255,0.5); font-weight: 600; }
+    .ht-dot { width: 17px; height: 17px; border-radius: 50%; background: rgba(255,255,255,0.12); color: #86efac; display: grid; place-items: center; font-size: 0.52rem; font-weight: 700; flex-shrink: 0; }
+
+    /* PAGE */
+    .page { max-width: 1040px; margin: 0 auto; padding: 28px clamp(16px,4vw,40px) 60px; display: grid; gap: 20px; }
+
+    /* LOG TODAY CARD */
+    .log-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .log-header { background: var(--blue); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .lh-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.98rem; color: white; }
+    .lh-date { font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-top: 2px; }
+    .lh-badge { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--r); padding: 5px 12px; font-size: 0.78rem; font-weight: 700; color: white; }
+
+    .log-body { padding: 20px 24px; }
+
+    /* Quick log — big level buttons */
+    .log-question { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 14px; }
+    .level-btns { display: grid; grid-template-columns: repeat(5,1fr); gap: 10px; margin-bottom: 14px; }
+    .level-btn {
+      border-radius: var(--r-lg); border: 2px solid var(--border);
+      background: var(--bg); cursor: pointer;
+      padding: 12px 6px; text-align: center;
+      transition: all 0.16s; font-family: 'Nunito', sans-serif;
+    }
+    .level-btn:hover { border-color: var(--blue); background: var(--blue-soft); transform: translateY(-2px); }
+    .level-btn.active { border-color: var(--blue); background: var(--blue); box-shadow: 0 6px 18px rgba(0,100,250,0.28); }
+    .lb-emoji { font-size: 1.6rem; line-height: 1; margin-bottom: 6px; }
+    .lb-num { font-size: 1.3rem; font-weight: 900; color: var(--muted); letter-spacing: -0.03em; line-height: 1; }
+    .level-btn.active .lb-num { color: white; }
+    .lb-label { font-size: 0.68rem; font-weight: 700; color: var(--muted-lt); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 3px; }
+    .level-btn.active .lb-label { color: rgba(255,255,255,0.75); }
+
+    /* Level colors */
+    .level-btn[data-level="1"]:hover,.level-btn[data-level="1"].active { border-color:#15803D;background:#15803D; }
+    .level-btn[data-level="2"]:hover,.level-btn[data-level="2"].active { border-color:#16a34a;background:#16a34a; }
+    .level-btn[data-level="3"]:hover,.level-btn[data-level="3"].active { border-color:var(--amber);background:var(--amber); }
+    .level-btn[data-level="4"]:hover,.level-btn[data-level="4"].active { border-color:#ef4444;background:#ef4444; }
+    .level-btn[data-level="5"]:hover,.level-btn[data-level="5"].active { border-color:var(--red);background:var(--red); }
+
+    .log-note-wrap { margin-top: 10px; }
+    .log-note-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 6px; }
+    .log-note { width: 100%; min-height: 60px; padding: 9px 12px; border-radius: var(--r); border: 1.5px solid var(--border); background: var(--bg); font-family: 'Nunito Sans', sans-serif; font-size: 0.87rem; color: var(--text); resize: vertical; outline: none; transition: border-color 0.15s; }
+    .log-note:focus { border-color: var(--blue); background: var(--blue-soft); }
+    .log-note::placeholder { color: var(--muted-lt); }
+
+    .log-footer { padding: 12px 24px 16px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+    .log-privacy { font-size: 0.74rem; color: var(--muted-lt); }
+    .log-actions { display: flex; align-items: center; gap: 10px; }
+    .log-confirm { display: none; align-items: center; gap: 7px; font-size: 0.82rem; font-weight: 700; color: var(--green); }
+    .btn-log { height: 42px; padding: 0 20px; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(0,100,250,0.28); transition: all 0.2s; }
+    .btn-log:hover { background: var(--blue-dark); transform: translateY(-1px); }
+    .btn-log:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+
+    /* CHART CARD */
+    .chart-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .chart-header { background: var(--blue); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .chart-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.98rem; color: white; }
+    .view-tabs { display: flex; gap: 4px; }
+    .view-tab { height: 30px; padding: 0 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.25); background: transparent; color: rgba(255,255,255,0.7); font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: all 0.15s; }
+    .view-tab.active { background: white; color: var(--blue-dark); border-color: white; }
+    .view-tab:hover:not(.active) { background: rgba(255,255,255,0.15); color: white; }
+
+    .chart-body { padding: 20px 24px 16px; }
+
+    /* Canvas chart */
+    .chart-canvas-wrap { position: relative; height: 220px; }
+    canvas#anxietyChart { width: 100%; height: 100%; }
+
+    /* Chart legend */
+    .chart-legend { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; font-weight: 600; color: var(--muted); }
+    .legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+
+    /* Empty chart */
+    .chart-empty { height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    .chart-empty-icon { font-size: 2.5rem; margin-bottom: 10px; opacity: 0.35; }
+    .chart-empty-text { font-size: 0.88rem; color: var(--muted-lt); font-weight: 500; }
+
+    /* STATS ROW */
+    .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+    .stat-card { background: var(--surface); border-radius: var(--r-lg); border: 1px solid var(--border); box-shadow: var(--shadow-sm); padding: 16px; text-align: center; }
+    .stat-num { font-family: 'Nunito', sans-serif; font-size: 2rem; font-weight: 900; color: var(--blue); letter-spacing: -0.04em; line-height: 1; margin-bottom: 4px; }
+    .stat-label { font-size: 0.75rem; font-weight: 600; color: var(--muted-lt); }
+    .stat-sub { font-size: 0.72rem; color: var(--muted-lt); margin-top: 3px; }
+
+    /* RECENT ENTRIES */
+    .entries-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-md); overflow: hidden; }
+    .entries-header { background: var(--blue); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .entries-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.98rem; color: white; }
+    .btn-export-sm { height: 28px; padding: 0 10px; border: 1px solid rgba(255,255,255,0.25); background: transparent; color: rgba(255,255,255,0.8); font-family: 'Nunito', sans-serif; font-size: 0.72rem; font-weight: 700; border-radius: 7px; cursor: pointer; transition: all 0.15s; }
+    .btn-export-sm:hover { background: rgba(255,255,255,0.15); color: white; }
+
+    .entries-table { width: 100%; border-collapse: collapse; }
+    .entries-table th { padding: 10px 16px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-lt); text-align: left; border-bottom: 1px solid var(--border); background: var(--bg); }
+    .entries-table td { padding: 10px 16px; font-size: 0.85rem; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    .entries-table tr:last-child td { border-bottom: none; }
+    .entries-table tr:hover td { background: var(--bg); }
+
+    .level-badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 999px; font-size: 0.74rem; font-weight: 800; }
+    .note-cell { color: var(--muted); max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .del-btn { width: 24px; height: 24px; border-radius: 6px; border: none; background: transparent; color: var(--muted-lt); cursor: pointer; font-size: 0.8rem; display: grid; place-items: center; transition: all 0.15s; }
+    .del-btn:hover { background: var(--red-soft); color: var(--red); }
+
+    .entries-empty-row td { text-align: center; color: var(--muted-lt); padding: 24px; font-size: 0.88rem; }
+
+    /* INSIGHT CARD */
+    .insight-card { background: var(--blue); border-radius: var(--r-xl); padding: 20px 24px; position: relative; overflow: hidden; display: none; }
+    .insight-card::before { content: ''; position: absolute; right: -40px; bottom: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255,255,255,0.06); pointer-events: none; }
+    .insight-card.visible { display: block; }
+    .ic-label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
+    .ic-title { font-family: 'Nunito', sans-serif; font-size: 1.05rem; font-weight: 900; color: white; letter-spacing: -0.02em; margin-bottom: 6px; position: relative; z-index: 1; }
+    .ic-text { font-size: 0.86rem; color: rgba(255,255,255,0.68); max-width: 560px; line-height: 1.65; margin-bottom: 14px; position: relative; z-index: 1; }
+    .ic-actions { display: flex; gap: 10px; align-items: center; position: relative; z-index: 1; }
+    .btn-ic { height: 40px; padding: 0 18px; background: white; color: var(--blue-dark); font-family: 'Nunito', sans-serif; font-size: 0.87rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; transition: all 0.2s; }
+    .btn-ic:hover { background: #f0f6ff; }
+    .btn-ic-ghost { height: 40px; padding: 0 16px; border: 1.5px solid rgba(255,255,255,0.22); background: transparent; color: rgba(255,255,255,0.75); font-family: 'Nunito', sans-serif; font-size: 0.85rem; font-weight: 700; border-radius: var(--r-lg); cursor: pointer; transition: all 0.2s; }
+    .btn-ic-ghost:hover { border-color: rgba(255,255,255,0.5); color: white; }
+
+    /* FOOTER */
+    .footer { background: var(--blue-dark); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.38); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+    .footer-copy { max-width: 1040px; margin: 0 auto; padding-top: 16px; font-size: 0.76rem; color: rgba(255,255,255,0.22); text-align: center; }
+
+    @media (max-width: 680px) {
+      .stats-row { grid-template-columns: 1fr 1fr; }
+      .level-btns { gap: 6px; }
+      .lb-emoji { font-size: 1.2rem; }
+    }
+    @media (max-width: 480px) {
+      .level-btns { grid-template-columns: repeat(5,1fr); gap: 4px; }
+      .lb-label { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-right">
+      <a href="https://myanxietytest.com/" class="topbar-link">All tools</a>
+      <div class="topbar-tag">Free · Private</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">✦ Free anxiety timeline tracker</div>
+    <h1>Watch your anxiety <span>change over time</span></h1>
+    <p class="hero-desc">Log your anxiety level daily. See patterns, track progress and understand what is actually changing. Saved privately in your browser.</p>
+    <div class="hero-trust">
+      <div class="ht-item"><div class="ht-dot">🔒</div>Saved in your browser only</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Visual timeline chart</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Weekly and monthly trends</div>
+    </div>
+  </div>
+</section>
+
+<div class="page">
+
+  <!-- LOG TODAY -->
+  <div class="log-card">
+    <div class="log-header">
+      <div>
+        <div class="lh-title">Log today's anxiety level</div>
+        <div class="lh-date" id="logDate">—</div>
+      </div>
+      <div class="lh-badge" id="todayBadge">Not logged yet</div>
+    </div>
+    <div class="log-body">
+      <div class="log-question">How is your anxiety today?</div>
+      <div class="level-btns" id="levelBtns">
+        <div class="level-btn" data-level="1"><div class="lb-emoji">😌</div><div class="lb-num">1</div><div class="lb-label">None</div></div>
+        <div class="level-btn" data-level="2"><div class="lb-emoji">🙂</div><div class="lb-num">2</div><div class="lb-label">Mild</div></div>
+        <div class="level-btn" data-level="3"><div class="lb-emoji">😐</div><div class="lb-num">3</div><div class="lb-label">Moderate</div></div>
+        <div class="level-btn" data-level="4"><div class="lb-emoji">😟</div><div class="lb-num">4</div><div class="lb-label">High</div></div>
+        <div class="level-btn" data-level="5"><div class="lb-emoji">😰</div><div class="lb-num">5</div><div class="lb-label">Very high</div></div>
+      </div>
+      <div class="log-note-wrap">
+        <div class="log-note-label">Optional note for today (what triggered it, what helped...)</div>
+        <textarea class="log-note" id="logNote" placeholder="A quick note about today..."></textarea>
+      </div>
+    </div>
+    <div class="log-footer">
+      <div class="log-privacy">🔒 Never sent anywhere — stays in your browser</div>
+      <div class="log-actions">
+        <div class="log-confirm" id="logConfirm">✓ Logged</div>
+        <button class="btn-log" id="btnLog" disabled>Log today →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS ROW -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-num" id="statDays">0</div>
+      <div class="stat-label">Days logged</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statStreak">0</div>
+      <div class="stat-label">Day streak 🔥</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statAvg">—</div>
+      <div class="stat-label">Overall average</div>
+      <div class="stat-sub" id="statAvgLabel"></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statTrend">—</div>
+      <div class="stat-label">Trend</div>
+      <div class="stat-sub" id="statTrendLabel"></div>
+    </div>
+  </div>
+
+  <!-- CHART -->
+  <div class="chart-card">
+    <div class="chart-header">
+      <div class="chart-title">Anxiety over time</div>
+      <div class="view-tabs">
+        <button class="view-tab active" data-view="7">7 days</button>
+        <button class="view-tab" data-view="30">30 days</button>
+        <button class="view-tab" data-view="90">90 days</button>
+        <button class="view-tab" data-view="all">All</button>
+      </div>
+    </div>
+    <div class="chart-body">
+      <div class="chart-canvas-wrap" id="chartWrap">
+        <div class="chart-empty" id="chartEmpty">
+          <div class="chart-empty-icon">📈</div>
+          <div class="chart-empty-text">Log at least 2 days to see your timeline chart</div>
+        </div>
+        <canvas id="anxietyChart" style="display:none;"></canvas>
+      </div>
+      <div class="chart-legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#15803D"></div>None (1)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#16a34a"></div>Mild (2)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>Moderate (3)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div>High (4)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div>Very high (5)</div>
+      </div>
+      <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+        <div style="font-size:0.84rem;color:var(--muted);">Tracking patterns is a great first step. When you are ready for more support, a therapist can help you act on what you are seeing.</div>
+        <a id="subtleTherapyLink" href="#" style="display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 16px;background:var(--blue-soft);color:var(--blue-dark);font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:800;border-radius:var(--r);border:1px solid var(--blue-bdr);text-decoration:none;white-space:nowrap;transition:all 0.2s;" onmouseover="this.style.background='var(--blue)';this.style.color='white'" onmouseout="this.style.background='var(--blue-soft)';this.style.color='var(--blue-dark)'">Speak with a therapist — 20% Off</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSIGHT -->
+  <div class="insight-card" id="insightCard">
+    <div class="ic-label">Pattern insight</div>
+    <div class="ic-title" id="icTitle"></div>
+    <div class="ic-text" id="icText"></div>
+    <div class="ic-actions">
+      <a class="btn-ic" id="therapyLink" href="#">Speak with a therapist — 20% Off</a>
+      <a class="btn-ic-ghost" href="https://myanxietytest.com/anxiety-level/">Take the full anxiety test →</a>
+    </div>
+  </div>
+
+  <!-- ENTRIES TABLE -->
+  <div class="entries-card">
+    <div class="entries-header">
+      <div class="entries-title">Your log history</div>
+      <button class="btn-export-sm" id="btnExport">Export ↓</button>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="entries-table" id="entriesTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Level</th>
+            <th>Note</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="entriesTbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/anxiety-journal/">Anxiety Journal</a>
+      <a href="https://myanxietytest.com/anxiety-triggers/">Anxiety Triggers</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Your data is stored only in your browser and never sent to any server</div>
+</footer>
+
+<script>
+const STORAGE_KEY = 'myanxietytest_tracker';
+const urlParams = new URLSearchParams(window.location.search);
+const trafficSource = urlParams.get('source') || 'defaultAnxietyTracker';
+
+const LEVEL_COLORS = ['','#15803D','#16a34a','#D97706','#ef4444','#B91C1C'];
+const LEVEL_BG     = ['','#F0FDF4','#dcfce7','#FFFBEB','#fee2e2','#FEF2F2'];
+const LEVEL_LABELS = ['','None','Mild','Moderate','High','Very high'];
+const EMOJIS       = ['','😌','🙂','😐','😟','😰'];
+
+let entries = loadEntries();
+let selectedLevel = 0;
+let currentView = 7;
+
+function loadEntries() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch { return {}; }
+}
+function saveEntries() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); }
+  catch {}
+}
+function todayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function keyToDate(k) {
+  const [y,m,d] = k.split('-').map(Number);
+  return new Date(y,m-1,d);
+}
+function formatKey(k) {
+  return keyToDate(k).toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+}
+
+// ── INIT ──
+function init() {
+  const today = new Date();
+  document.getElementById('logDate').textContent = today.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+
+  const tk = todayKey();
+  if (entries[tk]) {
+    setLevel(entries[tk].level);
+    document.getElementById('logNote').value = entries[tk].note || '';
+    document.getElementById('todayBadge').textContent = `${EMOJIS[entries[tk].level]} ${LEVEL_LABELS[entries[tk].level]} — logged`;
+    document.getElementById('todayBadge').style.background = LEVEL_BG[entries[tk].level];
+    document.getElementById('todayBadge').style.color = LEVEL_COLORS[entries[tk].level];
+    document.getElementById('todayBadge').style.border = `1px solid ${LEVEL_COLORS[entries[tk].level]}30`;
+  }
+
+  renderStats();
+  renderChart();
+  renderTable();
+  renderInsight();
+
+  // Subtle therapy link
+  const stl = document.getElementById('subtleTherapyLink');
+  if (stl) {
+    const u = new URL('https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116');
+    u.searchParams.set('source', trafficSource);
+    stl.href = u.toString();
+  }
+
+  // View tabs
+  document.querySelectorAll('.view-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentView = tab.dataset.view === 'all' ? 9999 : Number(tab.dataset.view);
+      renderChart();
+    });
+  });
+}
+
+// ── LEVEL SELECT ──
+function setLevel(l) {
+  selectedLevel = l;
+  document.querySelectorAll('.level-btn').forEach(b => {
+    b.classList.toggle('active', Number(b.dataset.level) === l);
+  });
+  document.getElementById('btnLog').disabled = l === 0;
+}
+
+document.querySelectorAll('.level-btn').forEach(btn => {
+  btn.addEventListener('click', () => setLevel(Number(btn.dataset.level)));
+});
+
+// ── LOG ──
+document.getElementById('btnLog').addEventListener('click', () => {
+  if (!selectedLevel) return;
+  const tk = todayKey();
+  entries[tk] = { date: tk, level: selectedLevel, note: document.getElementById('logNote').value.trim(), savedAt: new Date().toISOString() };
+  saveEntries();
+
+  document.getElementById('todayBadge').textContent = `${EMOJIS[selectedLevel]} ${LEVEL_LABELS[selectedLevel]} — logged`;
+  document.getElementById('todayBadge').style.background = LEVEL_BG[selectedLevel];
+  document.getElementById('todayBadge').style.color = LEVEL_COLORS[selectedLevel];
+
+  const conf = document.getElementById('logConfirm');
+  conf.style.display = 'flex';
+  setTimeout(() => { conf.style.display = 'none'; }, 2000);
+
+  renderStats();
+  renderChart();
+  renderTable();
+  renderInsight();
+});
+
+// ── STATS ──
+function calcStreak() {
+  let streak = 0;
+  const today = new Date();
+  for (let i = 0; i < 365; i++) {
+    const d = new Date(today); d.setDate(d.getDate() - i);
+    const k = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (entries[k]) streak++;
+    else if (i > 0) break;
+  }
+  return streak;
+}
+
+function renderStats() {
+  const all = Object.values(entries);
+  const total = all.length;
+  const streak = calcStreak();
+  const avg = total > 0 ? (all.reduce((s,e) => s + e.level, 0) / total) : 0;
+
+  document.getElementById('statDays').textContent = total;
+  document.getElementById('statStreak').textContent = streak;
+  document.getElementById('statAvg').textContent = avg > 0 ? avg.toFixed(1) : '—';
+  document.getElementById('statAvgLabel').textContent = avg > 0 ? LEVEL_LABELS[Math.round(avg)] : '';
+
+  // Trend: compare last 7 days avg vs previous 7 days avg
+  const recent = [];
+  const prev = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const k = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (entries[k]) recent.push(entries[k].level);
+  }
+  for (let i = 7; i < 14; i++) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const k = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (entries[k]) prev.push(entries[k].level);
+  }
+
+  if (recent.length >= 2 && prev.length >= 2) {
+    const rAvg = recent.reduce((s,v)=>s+v,0)/recent.length;
+    const pAvg = prev.reduce((s,v)=>s+v,0)/prev.length;
+    const diff = rAvg - pAvg;
+    if (Math.abs(diff) < 0.3) {
+      document.getElementById('statTrend').textContent = '→';
+      document.getElementById('statTrendLabel').textContent = 'Stable';
+    } else if (diff < 0) {
+      document.getElementById('statTrend').textContent = '↓';
+      document.getElementById('statTrendLabel').textContent = 'Improving';
+      document.getElementById('statTrend').style.color = '#15803D';
+    } else {
+      document.getElementById('statTrend').textContent = '↑';
+      document.getElementById('statTrendLabel').textContent = 'Increasing';
+      document.getElementById('statTrend').style.color = '#B91C1C';
+    }
+  } else {
+    document.getElementById('statTrend').textContent = '—';
+    document.getElementById('statTrendLabel').textContent = 'Need more data';
+  }
+}
+
+// ── CHART ──
+function renderChart() {
+  const sorted = Object.values(entries).sort((a,b) => a.date.localeCompare(b.date));
+  const days = currentView === 9999 ? sorted : sorted.slice(-currentView);
+
+  const canvas = document.getElementById('anxietyChart');
+  const empty = document.getElementById('chartEmpty');
+
+  if (days.length < 2) {
+    canvas.style.display = 'none';
+    empty.style.display = 'flex';
+    return;
+  }
+
+  empty.style.display = 'none';
+  canvas.style.display = 'block';
+
+  const wrap = document.getElementById('chartWrap');
+  canvas.width = wrap.offsetWidth || 700;
+  canvas.height = 220;
+
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const W = canvas.width;
+  const H = canvas.height;
+  const padL = 36, padR = 16, padT = 16, padB = 32;
+  const chartW = W - padL - padR;
+  const chartH = H - padT - padB;
+
+  // Grid lines
+  ctx.strokeStyle = '#DDE4EF';
+  ctx.lineWidth = 1;
+  for (let i = 1; i <= 5; i++) {
+    const y = padT + chartH - ((i - 1) / 4) * chartH;
+    ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(W - padR, y); ctx.stroke();
+    ctx.fillStyle = '#97A8BA';
+    ctx.font = '600 10px Nunito Sans, sans-serif';
+    ctx.textAlign = 'right';
+    ctx.fillText(i, padL - 6, y + 3);
+  }
+
+  // Area fill
+  const pts = days.map((e, i) => ({
+    x: padL + (i / (days.length - 1)) * chartW,
+    y: padT + chartH - ((e.level - 1) / 4) * chartH,
+    level: e.level
+  }));
+
+  // Gradient fill under line
+  const grad = ctx.createLinearGradient(0, padT, 0, padT + chartH);
+  grad.addColorStop(0, 'rgba(0,100,250,0.15)');
+  grad.addColorStop(1, 'rgba(0,100,250,0.01)');
+  ctx.beginPath();
+  ctx.moveTo(pts[0].x, padT + chartH);
+  pts.forEach(p => ctx.lineTo(p.x, p.y));
+  ctx.lineTo(pts[pts.length-1].x, padT + chartH);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Line
+  ctx.beginPath();
+  ctx.strokeStyle = '#0064FA';
+  ctx.lineWidth = 2.5;
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  pts.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+  ctx.stroke();
+
+  // Dots
+  pts.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
+    ctx.fillStyle = LEVEL_COLORS[p.level];
+    ctx.fill();
+    ctx.strokeStyle = 'white';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  });
+
+  // X labels — show every nth
+  const step = Math.max(1, Math.floor(days.length / 6));
+  ctx.fillStyle = '#97A8BA';
+  ctx.font = '600 9px Nunito Sans, sans-serif';
+  ctx.textAlign = 'center';
+  days.forEach((e, i) => {
+    if (i % step === 0 || i === days.length - 1) {
+      const x = padL + (i / (days.length - 1)) * chartW;
+      const d = keyToDate(e.date);
+      const label = d.toLocaleDateString('en-US', { month:'short', day:'numeric' });
+      ctx.fillText(label, x, H - 8);
+    }
+  });
+}
+
+// ── TABLE ──
+function renderTable() {
+  const sorted = Object.values(entries).sort((a,b) => b.date.localeCompare(a.date));
+  const tbody = document.getElementById('entriesTbody');
+
+  if (sorted.length === 0) {
+    tbody.innerHTML = '<tr class="entries-empty-row"><td colspan="4">No entries yet. Log your first day above.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = sorted.slice(0, 30).map(e => `
+    <tr>
+      <td style="font-weight:700;white-space:nowrap;">${formatKey(e.date)}</td>
+      <td>
+        <div class="level-badge" style="background:${LEVEL_BG[e.level]};color:${LEVEL_COLORS[e.level]}">
+          ${EMOJIS[e.level]} ${LEVEL_LABELS[e.level]}
+        </div>
+      </td>
+      <td class="note-cell">${e.note || '<span style="color:var(--muted-lt)">—</span>'}</td>
+      <td><button class="del-btn" onclick="deleteEntry('${e.date}')" title="Delete">✕</button></td>
+    </tr>`).join('');
+}
+
+function deleteEntry(key) {
+  if (!confirm('Delete this entry?')) return;
+  delete entries[key];
+  saveEntries();
+  renderStats();
+  renderChart();
+  renderTable();
+  renderInsight();
+  if (key === todayKey()) {
+    selectedLevel = 0;
+    document.querySelectorAll('.level-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('btnLog').disabled = true;
+    document.getElementById('todayBadge').textContent = 'Not logged yet';
+    document.getElementById('todayBadge').style = '';
+    document.getElementById('logNote').value = '';
+  }
+}
+
+// ── INSIGHT ──
+function renderInsight() {
+  const all = Object.values(entries);
+  const card = document.getElementById('insightCard');
+  if (all.length < 5) { card.classList.remove('visible'); return; }
+
+  const last7 = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const k = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (entries[k]) last7.push(entries[k].level);
+  }
+
+  if (last7.length < 3) { card.classList.remove('visible'); return; }
+
+  const avg7 = last7.reduce((s,v)=>s+v,0)/last7.length;
+  const title = document.getElementById('icTitle');
+  const text = document.getElementById('icText');
+  const therapyBtn = document.getElementById('therapyLink');
+
+  const url = new URL('https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116');
+  url.searchParams.set('source', trafficSource);
+  therapyBtn.href = url.toString();
+
+  if (avg7 >= 3.8) {
+    title.textContent = 'Your anxiety has been consistently high this week.';
+    text.textContent = 'Based on your log, anxiety has been elevated for several days in a row. Tracking is a good start. If the pattern persists, speaking with a therapist can help you understand what is driving it and build a more lasting strategy.';
+    card.classList.add('visible');
+  } else if (avg7 <= 2) {
+    title.textContent = 'Your anxiety has been lower this week. Keep going.';
+    text.textContent = 'Your log shows anxiety has been relatively low over the past several days. Whatever you have been doing, it appears to be working. Keep noticing what helps.';
+    // No therapy CTA for low levels — show just insight
+    therapyBtn.style.display = 'none';
+    card.classList.add('visible');
+  } else {
+    card.classList.remove('visible');
+  }
+}
+
+// ── EXPORT ──
+document.getElementById('btnExport').addEventListener('click', () => {
+  const sorted = Object.values(entries).sort((a,b) => a.date.localeCompare(b.date));
+  if (sorted.length === 0) { alert('No entries to export yet.'); return; }
+  let csv = 'Date,Level,Label,Note\n';
+  sorted.forEach(e => {
+    const note = (e.note || '').replace(/"/g, '""');
+    csv += `${e.date},${e.level},${LEVEL_LABELS[e.level]},"${note}"\n`;
+  });
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'anxiety-timeline.csv';
+  a.click(); URL.revokeObjectURL(url);
+});
+
+// Redraw chart on resize
+window.addEventListener('resize', () => renderChart());
+
+init();
+</script>
+</body>
+</html>
