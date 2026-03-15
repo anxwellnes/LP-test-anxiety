@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anxiety Body Scan — Where Do You Feel Anxiety in Your Body?</title>
+  <meta name="description" content="Click on the areas of your body where you feel anxiety. This free interactive body scan identifies your physical anxiety pattern and explains what it means." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="anxiety body scan, where do you feel anxiety, anxiety physical symptoms, anxiety in body, physical anxiety symptoms test" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-body-scan/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anxiety Body Scan — Where Do You Feel Anxiety in Your Body?" />
+  <meta property="og:description" content="Click on where you feel anxiety in your body. Get a personalised explanation of your physical anxiety pattern." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-body-scan/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Anxiety Body Scan",
+    "url": "https://myanxietytest.com/anxiety-body-scan/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Any",
+    "description": "An interactive body map that identifies where anxiety manifests physically and explains what each pattern means.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "MyAnxietyTest", "url": "https://myanxietytest.com/" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:       #0064FA;
+      --blue-dark:  #0050CC;
+      --blue-mid:   #1a74fb;
+      --blue-soft:  #E8F1FF;
+      --blue-bdr:   #C0D8FF;
+      --bg:         #F2F5FA;
+      --surface:    #FFFFFF;
+      --border:     #DDE4EF;
+      --text:       #0D1B2A;
+      --muted:      #5C6F85;
+      --muted-lt:   #97A8BA;
+      --green:      #15803D;
+      --green-soft: #F0FDF4;
+      --amber:      #B45309;
+      --amber-soft: #FFFBEB;
+      --red:        #B91C1C;
+      --red-soft:   #FEF2F2;
+      --selected:   #0064FA;
+      --shadow-sm:  0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md:  0 4px 20px rgba(0,100,250,0.10);
+      --shadow-lg:  0 12px 48px rgba(0,100,250,0.13);
+      --r:          12px;
+      --r-lg:       18px;
+      --r-xl:       24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { text-decoration: none; color: inherit; }
+
+    /* TOPBAR */
+    .topbar { background: var(--blue); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,100,250,0.25); }
+    .topbar-inner { max-width: 1040px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; color: white; letter-spacing: -0.01em; }
+    .topbar-right { display: flex; align-items: center; gap: 14px; }
+    .topbar-link { font-size: 0.81rem; font-weight: 600; color: rgba(255,255,255,0.7); transition: color 0.15s; }
+    .topbar-link:hover { color: white; }
+    .topbar-tag { font-size: 0.76rem; font-weight: 700; color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(160deg, var(--blue-dark) 0%, var(--blue) 60%, var(--blue-mid) 100%); padding: clamp(40px,6vw,72px) clamp(16px,4vw,40px) clamp(28px,4vw,48px); text-align: center; position: relative; overflow: hidden; }
+    .hero::after { content: ''; position: absolute; right: -80px; top: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 65%); pointer-events: none; }
+    .hero-inner { max-width: 640px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 7px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 16px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(1.9rem,4.5vw,3.2rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 12px; }
+    .hero h1 span { color: #93c5fd; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 500px; margin: 0 auto 16px; line-height: 1.7; }
+    .hero-trust { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+    .ht-item { display: flex; align-items: center; gap: 6px; font-size: 0.79rem; color: rgba(255,255,255,0.5); font-weight: 600; }
+    .ht-dot { width: 17px; height: 17px; border-radius: 50%; background: rgba(255,255,255,0.12); color: #86efac; display: grid; place-items: center; font-size: 0.52rem; font-weight: 700; flex-shrink: 0; }
+
+    /* PAGE */
+    .page { max-width: 1040px; margin: 0 auto; padding: 28px clamp(16px,4vw,40px) 60px; }
+
+    /* SCAN CARD */
+    .scan-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+
+    .scan-header { background: var(--blue); padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .scan-header-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; letter-spacing: -0.01em; }
+    .scan-header-sub { font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-top: 2px; }
+    .scan-counter { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--r); padding: 6px 14px; font-family: 'Nunito', sans-serif; font-size: 0.85rem; font-weight: 800; color: white; white-space: nowrap; }
+
+    .scan-body { display: grid; grid-template-columns: 1fr 320px; gap: 0; min-height: 520px; }
+
+    /* Body map */
+    .body-map-wrap {
+      padding: 24px 20px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      border-right: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .body-map-hint { font-size: 0.8rem; color: var(--muted); text-align: center; margin-bottom: 16px; font-weight: 500; }
+
+    /* SVG body zones */
+    .body-svg { width: 100%; max-width: 200px; cursor: default; }
+    .body-zone {
+      fill: #D4E3FF;
+      stroke: #A0BDF0;
+      stroke-width: 1.5;
+      cursor: pointer;
+      transition: fill 0.2s, stroke 0.2s;
+    }
+    .body-zone:hover { fill: #93c5fd; stroke: var(--blue); }
+    .body-zone.selected { fill: var(--blue); stroke: var(--blue-dark); }
+    .body-zone.selected:hover { fill: var(--blue-dark); }
+
+    /* Zone labels */
+    .zone-label { font-family: 'Nunito', sans-serif; font-size: 0.6rem; font-weight: 700; fill: var(--muted); pointer-events: none; }
+
+    /* Selected zones list */
+    .zones-panel {
+      padding: 20px 18px;
+      display: flex; flex-direction: column; gap: 0;
+      overflow-y: auto; max-height: 520px;
+    }
+    .zones-panel-title { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 800; color: var(--blue); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 12px; }
+
+    .zone-chip-list { display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .zone-chip {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px; border-radius: var(--r);
+      background: var(--blue-soft); border: 1px solid var(--blue-bdr);
+      animation: fadeIn 0.2s ease;
+    }
+    .zone-chip-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
+    .zone-chip-name { font-size: 0.84rem; font-weight: 700; color: var(--blue); flex: 1; }
+    .zone-chip-remove { width: 20px; height: 20px; border-radius: 50%; background: rgba(0,100,250,0.15); border: none; cursor: pointer; color: var(--blue); font-size: 0.75rem; display: grid; place-items: center; flex-shrink: 0; transition: background 0.15s; }
+    .zone-chip-remove:hover { background: rgba(0,100,250,0.3); }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+    .empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; text-align: center; padding: 20px; }
+    .empty-state-icon { font-size: 2.5rem; margin-bottom: 10px; opacity: 0.4; }
+    .empty-state-text { font-size: 0.84rem; color: var(--muted-lt); font-weight: 500; line-height: 1.5; }
+
+    .scan-footer { padding: 16px 28px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .scan-footer-hint { font-size: 0.8rem; color: var(--muted-lt); font-weight: 500; }
+    .btn-scan { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 22px; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(0,100,250,0.28); transition: all 0.2s; }
+    .btn-scan:hover { background: var(--blue-dark); transform: translateY(-1px); }
+    .btn-scan:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+    .btn-clear { height: 44px; padding: 0 16px; border: 1.5px solid var(--border); background: white; color: var(--muted); font-family: 'Nunito', sans-serif; font-size: 0.85rem; font-weight: 700; border-radius: var(--r-lg); cursor: pointer; transition: all 0.15s; }
+    .btn-clear:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* RESULT */
+    .result-wrap { display: none; }
+
+    /* Result header */
+    .result-header { background: var(--blue); padding: 26px 28px 22px; }
+    .rh-eyebrow { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
+    .rh-title { font-family: 'Nunito', sans-serif; font-size: clamp(1.3rem,2.6vw,1.9rem); font-weight: 900; color: white; letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 8px; }
+    .rh-desc { font-size: 0.88rem; color: rgba(255,255,255,0.65); max-width: 560px; line-height: 1.65; }
+
+    /* Selected zones summary */
+    .zones-summary { display: flex; gap: 8px; flex-wrap: wrap; padding: 16px 28px; border-bottom: 1px solid var(--border); background: var(--bg); }
+    .zs-tag { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; background: var(--blue-soft); border: 1px solid var(--blue-bdr); font-size: 0.78rem; font-weight: 700; color: var(--blue); }
+    .zs-tag-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
+
+    /* Zone cards */
+    .zone-cards { padding: 20px 28px; display: grid; gap: 14px; }
+
+    .zone-result-card { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); border-left: 4px solid var(--blue); overflow: hidden; }
+    .zrc-header { padding: 14px 18px 12px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--border); }
+    .zrc-icon { width: 32px; height: 32px; border-radius: 9px; background: var(--blue-soft); display: grid; place-items: center; font-size: 1rem; flex-shrink: 0; }
+    .zrc-name { font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 900; letter-spacing: -0.01em; }
+    .zrc-body { padding: 14px 18px; }
+    .zrc-label { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 5px; }
+    .zrc-text { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
+    .zrc-what { margin-top: 10px; }
+
+    /* Pattern summary */
+    .pattern-card { background: var(--surface); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 20px; }
+    .pc-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+    .pc-title { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 8px; }
+    .pc-text { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
+
+    /* Therapy CTA */
+    .therapy-card { background: var(--blue); border-radius: var(--r-lg); padding: 22px; position: relative; overflow: hidden; }
+    .therapy-card::before { content: ''; position: absolute; right: -40px; bottom: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255,255,255,0.06); pointer-events: none; }
+    .tc-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
+    .tc-title { font-family: 'Nunito', sans-serif; font-size: 1.2rem; font-weight: 900; color: white; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 8px; position: relative; z-index: 1; }
+    .tc-text { font-size: 0.87rem; color: rgba(255,255,255,0.65); max-width: 500px; margin-bottom: 18px; line-height: 1.65; position: relative; z-index: 1; }
+    .tc-benefits { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; margin-bottom: 18px; position: relative; z-index: 1; }
+    .tc-ben { padding: 11px; border-radius: var(--r); background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.12); }
+    .tc-ben strong { display: block; font-size: 0.79rem; color: white; font-weight: 800; margin-bottom: 3px; }
+    .tc-ben span { font-size: 0.74rem; color: rgba(255,255,255,0.55); line-height: 1.4; }
+    .tc-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; z-index: 1; }
+    .btn-tc { display: inline-flex; align-items: center; gap: 7px; height: 46px; padding: 0 22px; background: white; color: var(--blue-dark); font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(0,0,0,0.18); transition: all 0.2s; text-decoration: none; }
+    .btn-tc:hover { background: #f0f6ff; transform: translateY(-1px); }
+    .btn-tc-ghost { height: 46px; padding: 0 18px; border: 1.5px solid rgba(255,255,255,0.22); background: transparent; color: rgba(255,255,255,0.75); font-family: 'Nunito', sans-serif; font-size: 0.87rem; font-weight: 700; border-radius: var(--r-lg); cursor: pointer; transition: all 0.2s; }
+    .btn-tc-ghost:hover { border-color: rgba(255,255,255,0.5); color: white; }
+    .tc-note { margin-top: 11px; font-size: 0.74rem; color: rgba(255,255,255,0.3); position: relative; z-index: 1; }
+
+    .result-retake { display: flex; justify-content: center; padding: 18px; border-top: 1px solid var(--border); }
+    .btn-retake { height: 40px; padding: 0 18px; border: 1.5px solid var(--border); background: white; color: var(--muted); font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: var(--r); cursor: pointer; transition: all 0.2s; }
+    .btn-retake:hover { border-color: var(--blue); color: var(--blue); }
+    .result-disclaimer { padding: 12px 28px 16px; font-size: 0.75rem; color: var(--muted-lt); text-align: center; border-top: 1px solid var(--border); }
+
+    /* LOWER */
+    .lower { max-width: 1040px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px) 60px; }
+    .content-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-sm); padding: 26px; margin-bottom: 12px; }
+    .content-card h2 { font-family: 'Nunito', sans-serif; font-size: clamp(1.2rem,2.2vw,1.55rem); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .content-card h3 { font-size: 0.95rem; font-weight: 800; margin: 14px 0 5px; display: flex; align-items: center; gap: 7px; }
+    .content-card h3::before { content: ''; display: inline-block; width: 3px; height: 13px; background: var(--blue); border-radius: 2px; }
+    .content-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 9px; line-height: 1.7; }
+    .content-card ul { list-style: none; color: var(--muted); font-size: 0.9rem; display: grid; gap: 7px; }
+    .content-card li { display: flex; gap: 8px; align-items: flex-start; }
+    .content-card li::before { content: '›'; color: var(--blue); font-weight: 900; flex-shrink: 0; }
+
+    .footer { background: var(--blue-dark); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.38); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+    .footer-copy { max-width: 1040px; margin: 0 auto; padding-top: 16px; font-size: 0.76rem; color: rgba(255,255,255,0.22); text-align: center; }
+
+    @media (max-width: 720px) {
+      .scan-body { grid-template-columns: 1fr; }
+      .body-map-wrap { border-right: none; border-bottom: 1px solid var(--border); padding: 20px; }
+      .zones-panel { max-height: 240px; }
+      .tc-benefits { grid-template-columns: 1fr; }
+      .zone-cards { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-right">
+      <a href="https://myanxietytest.com/" class="topbar-link">All tools</a>
+      <div class="topbar-tag">Free · No sign-up</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">✦ Interactive anxiety body scan</div>
+    <h1>Where do you feel<br><span>anxiety in your body?</span></h1>
+    <p class="hero-desc">Click on the areas where you feel it. Your body is telling you something specific about your anxiety pattern. This tool helps you understand what.</p>
+    <div class="hero-trust">
+      <div class="ht-item"><div class="ht-dot">✓</div>Interactive body map</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Personalised to your zones</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Instant explanation</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>100% anonymous</div>
+    </div>
+  </div>
+</section>
+
+<div class="page" id="scan">
+
+  <!-- SCAN TOOL -->
+  <div class="scan-card" id="scanCard">
+    <div class="scan-header">
+      <div>
+        <div class="scan-header-title">Anxiety Body Map</div>
+        <div class="scan-header-sub">Tap or click on each area where you feel anxiety</div>
+      </div>
+      <div class="scan-counter" id="scanCounter">0 areas selected</div>
+    </div>
+
+    <div class="scan-body">
+      <!-- Body SVG -->
+      <div class="body-map-wrap">
+        <div class="body-map-hint">Tap the areas where anxiety shows up for you</div>
+        <svg class="body-svg" viewBox="0 0 200 460" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Head -->
+          <ellipse class="body-zone" id="zone-head" cx="100" cy="38" rx="28" ry="32" />
+          <text class="zone-label" x="100" y="42" text-anchor="middle">Head</text>
+
+          <!-- Neck/Throat -->
+          <rect class="body-zone" id="zone-throat" x="88" y="72" width="24" height="20" rx="6" />
+          <text class="zone-label" x="100" y="86" text-anchor="middle">Throat</text>
+
+          <!-- Chest -->
+          <rect class="body-zone" id="zone-chest" x="62" y="96" width="76" height="60" rx="10" />
+          <text class="zone-label" x="100" y="130" text-anchor="middle">Chest</text>
+
+          <!-- Shoulders -->
+          <ellipse class="body-zone" id="zone-shoulders" cx="45" cy="108" rx="22" ry="14" />
+          <ellipse class="body-zone" id="zone-shoulders-r" cx="155" cy="108" rx="22" ry="14" />
+          <text class="zone-label" x="100" y="112" text-anchor="middle" style="font-size:0.52rem;fill:transparent;">—</text>
+
+          <!-- Stomach -->
+          <rect class="body-zone" id="zone-stomach" x="68" y="162" width="64" height="44" rx="10" />
+          <text class="zone-label" x="100" y="188" text-anchor="middle">Stomach</text>
+
+          <!-- Lower abdomen -->
+          <rect class="body-zone" id="zone-abdomen" x="72" y="212" width="56" height="36" rx="8" />
+          <text class="zone-label" x="100" y="234" text-anchor="middle">Abdomen</text>
+
+          <!-- Left arm -->
+          <rect class="body-zone" id="zone-arms" x="22" y="125" width="20" height="80" rx="8" />
+          <rect class="body-zone" id="zone-arms-r" x="158" y="125" width="20" height="80" rx="8" />
+
+          <!-- Hands -->
+          <ellipse class="body-zone" id="zone-hands" cx="32" cy="222" rx="14" ry="12" />
+          <ellipse class="body-zone" id="zone-hands-r" cx="168" cy="222" rx="14" ry="12" />
+
+          <!-- Upper legs -->
+          <rect class="body-zone" id="zone-legs" x="72" y="252" width="22" height="76" rx="8" />
+          <rect class="body-zone" id="zone-legs-r" x="106" y="252" width="22" height="76" rx="8" />
+
+          <!-- Lower legs -->
+          <rect class="body-zone" id="zone-calves" x="74" y="334" width="18" height="60" rx="7" />
+          <rect class="body-zone" id="zone-calves-r" x="108" y="334" width="18" height="60" rx="7" />
+
+          <!-- Feet -->
+          <ellipse class="body-zone" id="zone-feet" cx="83" cy="408" rx="16" ry="10" />
+          <ellipse class="body-zone" id="zone-feet-r" cx="117" cy="408" rx="16" ry="10" />
+
+          <!-- Back of head label hint -->
+          <text class="zone-label" x="45" y="116" text-anchor="middle" style="font-size:0.52rem;">Shoulder</text>
+          <text class="zone-label" x="155" y="116" text-anchor="middle" style="font-size:0.52rem;">Shoulder</text>
+          <text class="zone-label" x="32" y="178" text-anchor="middle" style="font-size:0.52rem;">Arm</text>
+          <text class="zone-label" x="168" y="178" text-anchor="middle" style="font-size:0.52rem;">Arm</text>
+          <text class="zone-label" x="32" y="228" text-anchor="middle" style="font-size:0.52rem;">Hand</text>
+          <text class="zone-label" x="168" y="228" text-anchor="middle" style="font-size:0.52rem;">Hand</text>
+          <text class="zone-label" x="83" y="295" text-anchor="middle" style="font-size:0.52rem;">Leg</text>
+          <text class="zone-label" x="117" y="295" text-anchor="middle" style="font-size:0.52rem;">Leg</text>
+          <text class="zone-label" x="83" y="367" text-anchor="middle" style="font-size:0.52rem;">Calf</text>
+          <text class="zone-label" x="117" y="367" text-anchor="middle" style="font-size:0.52rem;">Calf</text>
+          <text class="zone-label" x="83" y="412" text-anchor="middle" style="font-size:0.52rem;">Foot</text>
+          <text class="zone-label" x="117" y="412" text-anchor="middle" style="font-size:0.52rem;">Foot</text>
+        </svg>
+      </div>
+
+      <!-- Selected zones panel -->
+      <div class="zones-panel">
+        <div class="zones-panel-title">Selected areas</div>
+        <div class="zone-chip-list" id="zoneChipList">
+          <div class="empty-state" id="emptyState">
+            <div class="empty-state-icon">👆</div>
+            <div class="empty-state-text">Tap any area on the body map to select it</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scan-footer">
+      <div class="scan-footer-hint" id="scanFooterHint">Select at least one area to see your body scan results.</div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn-clear" id="btnClear">Clear all</button>
+        <button class="btn-scan" id="btnScan" disabled>See my results →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="result-wrap" id="resultWrap">
+    <div class="result-header">
+      <div class="rh-eyebrow">Your anxiety body scan results</div>
+      <div class="rh-title" id="rhTitle">Your anxiety lives in these areas.</div>
+      <div class="rh-desc" id="rhDesc"></div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--border);border-top:none;border-radius:0 0 var(--r-xl) var(--r-xl);box-shadow:var(--shadow-lg);overflow:hidden;">
+      <div class="zones-summary" id="zonesSummary"></div>
+      <div class="zone-cards" id="zoneCards"></div>
+
+      <div style="padding:0 28px 20px;">
+        <div class="pattern-card" id="patternCard">
+          <div class="pc-label">Your overall pattern</div>
+          <div class="pc-title" id="pcTitle"></div>
+          <div class="pc-text" id="pcText"></div>
+        </div>
+      </div>
+
+      <div style="padding:0 28px 20px;">
+        <div class="therapy-card" id="therapyCard">
+          <div class="tc-label">Recommended next step</div>
+          <div class="tc-title" id="tcTitle"></div>
+          <div class="tc-text" id="tcText"></div>
+          <div class="tc-benefits" id="tcBenefits"></div>
+          <div class="tc-actions">
+            <a class="btn-tc" id="therapyLink" href="#">Speak with a therapist — 20% Off</a>
+            <button class="btn-tc-ghost" id="retakeBtn">Scan again</button>
+          </div>
+          <div class="tc-note">Get 20% off your first month. No commitment required.</div>
+        </div>
+      </div>
+
+      <div class="result-retake">
+        <button class="btn-retake" id="retakeBtnLow">← Scan again</button>
+      </div>
+      <div class="result-disclaimer">This tool is for self-awareness only and does not constitute medical advice. Physical symptoms should always be evaluated by a qualified healthcare professional.</div>
+    </div>
+  </div>
+</div>
+
+<div class="lower">
+  <div class="content-card">
+    <h2>Why anxiety shows up in your body</h2>
+    <p>Anxiety is not just a mental experience. It is a full-body physiological response. When the brain perceives a threat, real or imagined, it activates the stress response, releasing adrenaline and cortisol that prepare the body for danger. Different people feel this activation in different parts of the body, and the pattern of where you feel it can tell you something meaningful about the type and intensity of your anxiety.</p>
+    <p>Understanding where anxiety lives in your body is the first step to developing more precise strategies for managing it. For a full assessment of how severely anxiety may be affecting your life overall, the <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--blue);font-weight:700;">free anxiety level test</a> gives you a complete severity score.</p>
+    <h3>The most common physical anxiety zones</h3>
+    <ul>
+      <li><strong>Chest and heart</strong> — racing or pounding heart, tightness or pressure in the chest, difficulty taking a full breath</li>
+      <li><strong>Stomach and abdomen</strong> — nausea, knots, butterflies, cramping or digestive disruption</li>
+      <li><strong>Head</strong> — tension headaches, brain fog, dizziness or a feeling of pressure behind the eyes</li>
+      <li><strong>Throat</strong> — tightness, difficulty swallowing or a lump-like sensation</li>
+      <li><strong>Shoulders and neck</strong> — chronic tension, aching or stiffness that does not resolve with rest</li>
+      <li><strong>Arms and hands</strong> — trembling, tingling, numbness or restless hands</li>
+    </ul>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/anxiety-triggers/">Anxiety Triggers</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+      <a href="https://myanxietytest.com/social-anxiety-test/">Social Anxiety Test</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional medical or mental health care</div>
+</footer>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const trafficSource = urlParams.get('source') || 'defaultAnxietyBodyScan';
+
+function buildTherapyUrl() {
+  const url = new URL('https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116');
+  url.searchParams.set('source', trafficSource);
+  return url.toString();
+}
+
+// Zone definitions — id maps to SVG element ids (some share a zone)
+const ZONES = [
+  {
+    id: 'head',
+    elements: ['zone-head'],
+    name: 'Head',
+    icon: '🧠',
+    what: 'Anxiety in the head often manifests as tension headaches, a feeling of pressure or tightness across the forehead, brain fog, racing thoughts or dizziness. The head is where the anxiety originates neurologically, and for some people the physical experience stays concentrated there.',
+    means: 'Head-based anxiety often indicates a high level of mental rumination and overthinking. The anxiety is primarily cognitive, running as a background process of worry, planning and scanning for potential threats. If you feel anxiety here, your nervous system may be particularly activated at the thought level rather than the physical level.'
+  },
+  {
+    id: 'throat',
+    elements: ['zone-throat'],
+    name: 'Throat',
+    icon: '🗣️',
+    what: 'A tight throat, difficulty swallowing, a lump-like sensation or feeling unable to speak freely are common physical manifestations of anxiety. The throat is physically connected to the vagus nerve, which plays a central role in the stress response.',
+    means: 'Throat anxiety is often associated with suppressed expression, fear of speaking up, saying the wrong thing or being judged. It frequently appears in social anxiety and situations where the person feels unable to fully express themselves. It can also appear as a physical panic symptom.'
+  },
+  {
+    id: 'chest',
+    elements: ['zone-chest'],
+    name: 'Chest',
+    icon: '❤️',
+    what: 'Racing or pounding heart, chest tightness, shortness of breath and a sensation of pressure are among the most common physical anxiety symptoms. The chest area is particularly activated during the stress response as the heart rate increases and breathing changes.',
+    means: 'Chest anxiety is one of the most alarming physical manifestations because it can mimic cardiac symptoms. It is frequently associated with panic attacks, high-intensity anxiety and a hyperactive threat response. If anxiety lives here, the stress response is activating strongly and the body is physically preparing for perceived danger.'
+  },
+  {
+    id: 'shoulders',
+    elements: ['zone-shoulders', 'zone-shoulders-r'],
+    name: 'Shoulders',
+    icon: '💪',
+    what: 'Chronic tension, aching, stiffness or a feeling of carrying a heavy weight in the shoulders and neck is extremely common with anxiety. Many people hold their tension here without realising it, often noticing the tightness only when someone points it out.',
+    means: 'Shoulder tension often relates to carrying perceived responsibility and burden. It is common in people with high-functioning anxiety, perfectionism and a chronic sense of having to hold everything together. The phrase carrying the weight of the world is physically embodied in shoulder anxiety.'
+  },
+  {
+    id: 'stomach',
+    elements: ['zone-stomach'],
+    name: 'Stomach',
+    icon: '🫃',
+    what: 'Nausea, a knotted or churning sensation, butterflies, loss of appetite or digestive disruption before anxiety-provoking situations is extremely common. The gut has its own nervous system, the enteric nervous system, which is directly connected to the brain via the vagus nerve.',
+    means: 'Stomach anxiety often appears before anticipated situations, performance contexts, social events or uncertainty. It is the body\'s way of preparing for an event it perceives as a threat. People who feel anxiety strongly in the stomach tend to have significant anticipatory anxiety, worrying about future situations before they happen.'
+  },
+  {
+    id: 'abdomen',
+    elements: ['zone-abdomen'],
+    name: 'Abdomen',
+    icon: '🫁',
+    what: 'Lower abdominal tension, cramping, urgency or digestive disturbance in the lower gut is a very common anxiety manifestation. The gut-brain axis means that anxiety reliably produces physical gut responses.',
+    means: 'Lower abdominal anxiety often indicates a deeper, more chronic level of stress response activation. It is associated with generalised anxiety and situations of prolonged uncertainty or conflict. For some people it is particularly triggered by interpersonal stress.'
+  },
+  {
+    id: 'arms',
+    elements: ['zone-arms', 'zone-arms-r'],
+    name: 'Arms',
+    icon: '🦾',
+    what: 'Trembling, shaking, tingling, numbness or a feeling of weakness in the arms during anxiety is caused by the adrenaline surge of the stress response, which redirects blood flow and creates muscle tension in preparation for action.',
+    means: 'Arm anxiety is often associated with acute anxiety spikes and panic rather than chronic background anxiety. It appears when the stress response is activated strongly and the body is physically preparing for a fight-or-flight response. Trembling arms are a very normal part of a panic attack.'
+  },
+  {
+    id: 'hands',
+    elements: ['zone-hands', 'zone-hands-r'],
+    name: 'Hands',
+    icon: '🤲',
+    what: 'Sweaty palms, trembling, tingling or cold hands are very common anxiety symptoms. The hands are rich in sweat glands and nerve endings, making them particularly responsive to the stress response.',
+    means: 'Hand anxiety is often triggered by performance situations, social scrutiny or anticipation of an evaluative context. Sweaty palms before a presentation, trembling hands when nervous, tingling fingers during high anxiety, these are very normal manifestations of the stress response activating in the periphery.'
+  },
+  {
+    id: 'legs',
+    elements: ['zone-legs', 'zone-legs-r'],
+    name: 'Legs',
+    icon: '🦵',
+    what: 'Restless legs, shaking, weakness, a feeling of wanting to flee or difficulty staying still are common leg manifestations of anxiety. The legs are the primary flight mechanism, so the stress response activates them when it detects threat.',
+    means: 'Leg anxiety is closely associated with avoidance urges and the impulse to escape from situations that feel threatening. It may appear in social anxiety, agoraphobia or situations where leaving feels necessary but impossible. The restlessness and urgency in the legs is the body preparing to run.'
+  },
+  {
+    id: 'calves',
+    elements: ['zone-calves', 'zone-calves-r'],
+    name: 'Calves',
+    icon: '🦵',
+    what: 'Tension, cramping or restlessness in the calves often accompanies generalised muscle tension during anxiety. The calves tighten as part of the full-body stress response preparation.',
+    means: 'Calf tension is often a sign of chronic low-level anxiety rather than acute panic. When the body is in a sustained state of low-level threat readiness, the muscles remain partially contracted. Calf cramps or tension that persists even at rest can be a physical marker of prolonged anxiety.'
+  },
+  {
+    id: 'feet',
+    elements: ['zone-feet', 'zone-feet-r'],
+    name: 'Feet',
+    icon: '🦶',
+    what: 'Tingling, numbness, restlessness or a need to move the feet is a common grounding-related anxiety manifestation. Some people experience significant foot tension or the urge to pace during high anxiety.',
+    means: 'Foot anxiety often appears in situations of confinement, helplessness or inability to take action. The need to move, to leave, to pace, is channelled into foot movement. It can also appear as a grounding signal, with some people naturally pressing their feet into the floor to regulate anxiety.'
+  }
+];
+
+// Deduplicate zones (shoulders, arms etc have two elements)
+const selectedZoneIds = new Set();
+
+function getZoneById(id) {
+  // Find zone that covers this element
+  return ZONES.find(z => z.elements.includes(id));
+}
+
+function updateCounter() {
+  const count = selectedZoneIds.size;
+  const el = document.getElementById('scanCounter');
+  el.textContent = count === 0 ? '0 areas selected' : `${count} area${count > 1 ? 's' : ''} selected`;
+  document.getElementById('btnScan').disabled = count === 0;
+  document.getElementById('scanFooterHint').textContent = count === 0
+    ? 'Select at least one area to see your body scan results.'
+    : `${count} area${count > 1 ? 's' : ''} selected. Click "See my results" when ready.`;
+}
+
+function updateChipList() {
+  const list = document.getElementById('zoneChipList');
+
+  if (selectedZoneIds.size === 0) {
+    list.innerHTML = '<div class="empty-state" id="emptyState"><div class="empty-state-icon">👆</div><div class="empty-state-text">Tap any area on the body map to select it</div></div>';
+    return;
+  }
+
+  const selectedZones = ZONES.filter(z => selectedZoneIds.has(z.id));
+  list.innerHTML = selectedZones.map(z => `
+    <div class="zone-chip" id="chip-${z.id}">
+      <div class="zone-chip-dot"></div>
+      <div class="zone-chip-name">${z.icon} ${z.name}</div>
+      <button class="zone-chip-remove" onclick="removeZone('${z.id}')">✕</button>
+    </div>`).join('');
+}
+
+function removeZone(zoneId) {
+  selectedZoneIds.delete(zoneId);
+  // Deselect all elements of this zone
+  const zone = ZONES.find(z => z.id === zoneId);
+  if (zone) zone.elements.forEach(eid => {
+    const el = document.getElementById(eid);
+    if (el) el.classList.remove('selected');
+  });
+  updateCounter();
+  updateChipList();
+}
+
+// Attach click handlers to all body zones
+document.querySelectorAll('.body-zone').forEach(el => {
+  el.addEventListener('click', () => {
+    const zone = getZoneById(el.id);
+    if (!zone) return;
+
+    if (selectedZoneIds.has(zone.id)) {
+      // Deselect
+      selectedZoneIds.delete(zone.id);
+      zone.elements.forEach(eid => {
+        const e = document.getElementById(eid);
+        if (e) e.classList.remove('selected');
+      });
+    } else {
+      // Select
+      selectedZoneIds.add(zone.id);
+      zone.elements.forEach(eid => {
+        const e = document.getElementById(eid);
+        if (e) e.classList.add('selected');
+      });
+    }
+    updateCounter();
+    updateChipList();
+  });
+});
+
+document.getElementById('btnClear').addEventListener('click', () => {
+  selectedZoneIds.clear();
+  document.querySelectorAll('.body-zone').forEach(el => el.classList.remove('selected'));
+  updateCounter();
+  updateChipList();
+});
+
+document.getElementById('btnScan').addEventListener('click', showResult);
+
+function getPattern(zones) {
+  const ids = zones.map(z => z.id);
+  const hasChest = ids.includes('chest');
+  const hasStomach = ids.includes('stomach') || ids.includes('abdomen');
+  const hasHead = ids.includes('head');
+  const hasShoulders = ids.includes('shoulders');
+  const hasThroat = ids.includes('throat');
+  const hasLegs = ids.includes('legs') || ids.includes('calves') || ids.includes('feet');
+  const count = zones.length;
+
+  if (count >= 5) return {
+    title: 'Whole-body anxiety activation.',
+    text: 'Your anxiety is activating across multiple body systems simultaneously. This suggests a strong, well-established stress response that has become a consistent physical pattern. When anxiety is felt this broadly, it indicates the nervous system has been in a sustained state of activation, and the physical experience of anxiety has become deeply embedded. This level of physical activation is very real and very treatable with the right support.'
+  };
+
+  if (hasChest && hasStomach) return {
+    title: 'Core activation pattern — chest and gut.',
+    text: 'Anxiety concentrated in the chest and stomach is one of the most common patterns and one of the most physically intense. The combination of racing heart, chest tightness and stomach churning creates a powerful physical experience that can feel overwhelming. This pattern is strongly associated with anticipatory anxiety and acute stress responses.'
+  };
+
+  if (hasChest && !hasStomach) return {
+    title: 'Cardiovascular anxiety pattern.',
+    text: 'Your anxiety lives primarily in your chest and cardiovascular system. This is one of the most alarming physical patterns because the symptoms, racing heart, chest tightness, shortness of breath, can feel dangerous even though they are not. This pattern is particularly common in panic disorder and high-intensity acute anxiety.'
+  };
+
+  if (hasStomach && !hasChest) return {
+    title: 'Gut-based anxiety pattern.',
+    text: 'Your anxiety is primarily expressed through your digestive system. This is an extremely common pattern and reflects the powerful gut-brain connection. People with gut-based anxiety often experience their worst symptoms before anticipated situations, making anticipatory anxiety a key driver.'
+  };
+
+  if (hasHead && hasShoulders) return {
+    title: 'Cognitive and tension pattern.',
+    text: 'Your anxiety is concentrated in the head and shoulders, suggesting a predominantly cognitive anxiety pattern driven by overthinking and the physical burden of carrying responsibility. This is very common in high-functioning anxiety and perfectionism.'
+  };
+
+  if (hasThroat) return {
+    title: 'Expressive anxiety pattern.',
+    text: 'Throat anxiety often points to unexpressed thoughts, fears about speaking, or difficulty asserting yourself. This pattern is common in social anxiety and situations where the person feels unable to fully express themselves or fears the consequences of doing so.'
+  };
+
+  if (hasLegs) return {
+    title: 'Flight-response pattern.',
+    text: 'Anxiety concentrated in the legs suggests a strong avoidance component. The body is preparing to flee, even when fleeing is not possible. This pattern is common in situations of confinement, social anxiety and agoraphobia.'
+  };
+
+  return {
+    title: 'A specific and identifiable physical pattern.',
+    text: 'Your anxiety has a clear physical signature. Understanding where it lives in your body helps you develop more targeted strategies for managing it, rather than relying on generic approaches that may not address your specific pattern.'
+  };
+}
+
+function showResult() {
+  const selectedZones = ZONES.filter(z => selectedZoneIds.has(z.id));
+  const pattern = getPattern(selectedZones);
+  const count = selectedZones.length;
+  const showTherapy = count >= 3 || selectedZones.some(z => ['chest', 'stomach', 'abdomen'].includes(z.id));
+
+  // Header
+  document.getElementById('rhTitle').textContent = count === 1
+    ? `Your anxiety lives in your ${selectedZones[0].name.toLowerCase()}.`
+    : `Your anxiety is concentrated in ${count} areas of your body.`;
+  document.getElementById('rhDesc').textContent = 'Here is what each area is telling you and what your overall pattern may mean.';
+
+  // Zones summary tags
+  document.getElementById('zonesSummary').innerHTML = selectedZones.map(z =>
+    `<div class="zs-tag"><span class="zs-tag-dot"></span>${z.icon} ${z.name}</div>`).join('');
+
+  // Zone cards
+  document.getElementById('zoneCards').innerHTML = selectedZones.map(z => `
+    <div class="zone-result-card">
+      <div class="zrc-header">
+        <div class="zrc-icon">${z.icon}</div>
+        <div class="zrc-name">${z.name}</div>
+      </div>
+      <div class="zrc-body">
+        <div class="zrc-label">What you are feeling</div>
+        <div class="zrc-text">${z.what}</div>
+        <div class="zrc-what">
+          <div class="zrc-label" style="margin-top:10px;">What this may mean</div>
+          <div class="zrc-text">${z.means}</div>
+        </div>
+      </div>
+    </div>`).join('');
+
+  // Pattern
+  document.getElementById('pcTitle').textContent = pattern.title;
+  document.getElementById('pcText').textContent = pattern.text;
+
+  // Therapy or retake
+  if (showTherapy) {
+    document.getElementById('therapyCard').style.display = 'block';
+    document.getElementById('retakeBtnLow').style.display = 'none';
+    document.getElementById('tcTitle').textContent = 'Your body is telling you something. A therapist can help you listen to it.';
+    document.getElementById('tcText').textContent = 'Physical anxiety symptoms are real and they are also treatable. A therapist who understands the body-anxiety connection can help you regulate your nervous system, reduce the intensity of physical symptoms, and address the patterns driving them.';
+    document.getElementById('therapyLink').href = buildTherapyUrl();
+    document.getElementById('tcBenefits').innerHTML = [
+      { title: 'Regulate your nervous system', text: 'Learn specific techniques for calming the physical anxiety response in the areas where you feel it most.' },
+      { title: 'Understand the pattern', text: 'See what is driving the physical activation and why your body responds the way it does.' },
+      { title: 'Reduce the intensity', text: 'Build a practice that lowers the baseline physical anxiety over time, not just in-the-moment coping.' }
+    ].map(b => `<div class="tc-ben"><strong>${b.title}</strong><span>${b.text}</span></div>`).join('');
+  } else {
+    document.getElementById('therapyCard').style.display = 'none';
+    document.getElementById('retakeBtnLow').style.display = 'flex';
+  }
+
+  document.getElementById('scanCard').style.display = 'none';
+  document.getElementById('resultWrap').style.display = 'block';
+  document.getElementById('resultWrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function resetScan() {
+  selectedZoneIds.clear();
+  document.querySelectorAll('.body-zone').forEach(el => el.classList.remove('selected'));
+
+  // Restore empty state in chip list
+  const list = document.getElementById('zoneChipList');
+  list.innerHTML = '<div class="empty-state" id="emptyState"><div class="empty-state-icon">👆</div><div class="empty-state-text">Tap any area on the body map to select it</div></div>';
+
+  updateCounter();
+
+  // Reset therapy/retake visibility
+  document.getElementById('therapyCard').style.display = 'block';
+  document.getElementById('retakeBtnLow').style.display = 'flex';
+
+  document.getElementById('resultWrap').style.display = 'none';
+  document.getElementById('scanCard').style.display = 'block';
+  document.getElementById('scan').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.getElementById('retakeBtn').addEventListener('click', resetScan);
+document.getElementById('retakeBtnLow').addEventListener('click', resetScan);
+</script>
+</body>
+</html>
