@@ -13,22 +13,17 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Free Anxiety Tools Online | MyAnxietyTest.com</title>
-  <meta name="description" content="Free anxiety tools built to actually help. Take the anxiety level test to discover your score, or build your personalized Panic Attack SOS Card. Instant results, no sign-up needed." />
+  <title>Free Anxiety Tools: Tests, Trackers and Crisis Support | MyAnxietyTest.com</title>
+  <meta name="description" content="18 free anxiety tools — anxiety level test, body scan, sleep quiz, OCD test, journal, tracker, panic SOS card and more. Instant results, no sign-up, completely private." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="keywords" content="anxiety test, panic attack sos card, free anxiety tools, anxiety level test, panic attack help, anxiety self assessment" />
+  <meta name="keywords" content="free anxiety test, anxiety level test, panic attack SOS card, anxiety body scan, OCD test, relationship anxiety, anxiety journal, anxiety tracker" />
   <link rel="canonical" href="https://myanxietytest.com/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Free Anxiety Tools Online | MyAnxietyTest.com" />
-  <meta property="og:description" content="Free anxiety tools built to actually help. Take the anxiety level test or build your personalized Panic Attack SOS Card. Instant, free, no sign-up." />
+  <meta property="og:title" content="Free Anxiety Tools | MyAnxietyTest.com" />
+  <meta property="og:description" content="18 free anxiety tools. Tests, trackers, body scan, crisis support and more. Instant, free, no sign-up." />
   <meta property="og:url" content="https://myanxietytest.com/" />
   <meta property="og:site_name" content="MyAnxietyTest" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Free Anxiety Tools Online | MyAnxietyTest.com" />
-  <meta name="twitter:description" content="Free anxiety tools built to actually help. Instant results, no sign-up needed." />
 
   <script type="application/ld+json">
   {
@@ -36,7 +31,7 @@
     "@type": "WebSite",
     "name": "MyAnxietyTest",
     "url": "https://myanxietytest.com/",
-    "description": "Free anxiety tools including an anxiety level test and personalized panic attack SOS card.",
+    "description": "Free anxiety tools including tests, trackers, body scan and crisis support. Instant results, no sign-up.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://myanxietytest.com/?q={search_term_string}",
@@ -51,699 +46,472 @@
 
   <style>
     :root {
-      --blue:       #0064FA;
-      --blue-dark:  #0050CC;
-      --blue-mid:   #1a74fb;
-      --blue-soft:  #E8F1FF;
-      --blue-bdr:   #C0D8FF;
-      --green:      #1B7F3A;
-      --green-soft: #E6F4EC;
-      --bg:         #F2F5FA;
-      --surface:    #FFFFFF;
-      --border:     #DDE4EF;
-      --text:       #0D1B2A;
-      --muted:      #536278;
-      --muted-lt:   #8FA3BC;
-      --shadow-sm:  0 1px 4px rgba(0,100,250,0.07);
-      --shadow-md:  0 6px 24px rgba(0,100,250,0.10);
-      --shadow-lg:  0 16px 52px rgba(0,100,250,0.14);
-      --r:          12px;
-      --r-lg:       18px;
-      --r-xl:       24px;
+      --blue:      #0064FA;
+      --blue-dark: #0050CC;
+      --blue-mid:  #1a74fb;
+      --blue-soft: #E8F1FF;
+      --blue-bdr:  #C0D8FF;
+      --bg:        #F2F5FA;
+      --surface:   #FFFFFF;
+      --border:    #DDE4EF;
+      --text:      #0D1B2A;
+      --muted:     #5C6F85;
+      --muted-lt:  #97A8BA;
+      --shadow-sm: 0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md: 0 4px 20px rgba(0,100,250,0.09);
+      --shadow-lg: 0 12px 48px rgba(0,100,250,0.12);
+      --r:         12px;
+      --r-lg:      18px;
+      --r-xl:      24px;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Nunito Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
     a { color: inherit; text-decoration: none; }
 
-    /* ── TOPBAR ── */
-    .topbar {
-      background: var(--blue);
-      box-shadow: 0 2px 12px rgba(0,100,250,0.25);
-      position: sticky; top: 0; z-index: 100;
-    }
-    .topbar-inner {
-      max-width: 1060px; margin: 0 auto;
-      padding: 0 clamp(16px,4vw,40px);
-      height: 58px; display: flex; align-items: center; justify-content: space-between;
-    }
-    .logo {
-      display: flex; align-items: center; gap: 9px; text-decoration: none;
-    }
-    .logo-mark {
-      width: 32px; height: 32px; background: white;
-      border-radius: 8px; display: grid; place-items: center; font-size: 0.95rem;
-    }
-    .logo-name {
-      font-family: 'Nunito', sans-serif; font-weight: 900;
-      font-size: 1rem; color: white; letter-spacing: -0.01em;
-    }
-    .topbar-tag {
-      font-size: 0.77rem; font-weight: 700;
-      color: rgba(255,255,255,0.72);
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.18);
-      padding: 4px 12px; border-radius: 999px;
-    }
+    /* TOPBAR */
+    .topbar { background: var(--blue); box-shadow: 0 2px 12px rgba(0,100,250,0.25); position: sticky; top: 0; z-index: 100; }
+    .topbar-inner { max-width: 1080px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 9px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 0.95rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; letter-spacing: -0.01em; }
+    .topbar-tag { font-size: 0.77rem; font-weight: 700; color: rgba(255,255,255,0.72); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
 
-    /* ── HERO ── */
-    .hero {
-      background: linear-gradient(160deg, #0050CC 0%, var(--blue) 60%, var(--blue-mid) 100%);
-      padding: clamp(52px,8vw,96px) clamp(16px,4vw,40px) clamp(44px,6vw,80px);
-      position: relative; overflow: hidden;
-      text-align: center;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute; left: 50%; top: -80px;
-      width: 600px; height: 600px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 65%);
-      transform: translateX(-50%);
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      max-width: 720px; margin: 0 auto;
-      position: relative; z-index: 1;
-    }
-
-    .hero-kicker {
-      display: inline-flex; align-items: center; gap: 7px;
-      padding: 6px 14px; border-radius: 999px;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.2);
-      font-size: 0.73rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-      color: rgba(255,255,255,0.85); margin-bottom: 20px;
-    }
-
-    .hero h1 {
-      font-family: 'Nunito', sans-serif;
-      font-size: clamp(2rem,5vw,3.8rem);
-      font-weight: 900; color: white;
-      line-height: 1.08; letter-spacing: -0.025em;
-      margin-bottom: 16px;
-    }
-
+    /* HERO */
+    .hero { background: linear-gradient(160deg, #0050CC 0%, var(--blue) 60%, var(--blue-mid) 100%); padding: clamp(52px,8vw,96px) clamp(16px,4vw,40px) clamp(44px,6vw,80px); text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; left: 50%; top: -80px; transform: translateX(-50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 65%); pointer-events: none; }
+    .hero-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); font-size: 0.73rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 20px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(2rem,5vw,3.8rem); font-weight: 900; color: white; line-height: 1.08; letter-spacing: -0.025em; margin-bottom: 16px; }
     .hero h1 span { color: #93c5fd; }
+    .hero-desc { font-size: 1.05rem; color: rgba(255,255,255,0.7); max-width: 560px; margin: 0 auto 24px; line-height: 1.7; }
+    .hero-count { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18); border-radius: 999px; padding: 7px 18px; margin-bottom: 22px; font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.8); }
+    .hero-count-num { font-family: 'Nunito', sans-serif; font-size: 1.1rem; font-weight: 900; color: white; }
+    .hero-trust { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .ht-item { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.6); }
+    .ht-dot { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.12); color: #86efac; display: grid; place-items: center; font-size: 0.6rem; font-weight: 900; flex-shrink: 0; }
+    .btn-hero-main { display: inline-flex; align-items: center; gap: 9px; height: 52px; padding: 0 30px; background: white; color: #0050CC; font-family: 'Nunito', sans-serif; font-size: 0.97rem; font-weight: 900; border-radius: 18px; box-shadow: 0 8px 28px rgba(0,0,0,0.18); transition: all 0.2s; margin-bottom: 22px; text-decoration: none; }
+    .btn-hero-main:hover { background: #f0f6ff; transform: translateY(-2px); }
 
-    .hero-desc {
-      font-size: 1.08rem; color: rgba(255,255,255,0.72);
-      max-width: 560px; margin: 0 auto 32px;
-      line-height: 1.7;
-    }
+    /* PAGE WRAP */
+    .tools-wrap { max-width: 1080px; margin: 0 auto; padding: clamp(36px,5vw,64px) clamp(16px,4vw,40px); }
+    .section-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+    .section-h2 { font-family: 'Nunito', sans-serif; font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 900; letter-spacing: -0.025em; margin-bottom: 8px; }
+    .section-h2 span { color: var(--blue); }
+    .section-sub { font-size: 0.95rem; color: var(--muted); max-width: 600px; margin-bottom: 24px; line-height: 1.65; }
 
-    .hero-trust {
-      display: flex; align-items: center; justify-content: center;
-      gap: 20px; flex-wrap: wrap;
-    }
+    /* FEATURED TOOL */
+    .featured-tool { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; margin-bottom: 14px; display: grid; grid-template-columns: 1fr 1fr; }
+    .ft-left { background: linear-gradient(160deg, var(--blue-dark), var(--blue)); padding: 32px; display: flex; flex-direction: column; justify-content: space-between; }
+    .ft-badge { display: inline-flex; align-items: center; gap: 7px; padding: 4px 12px; border-radius: 999px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: white; margin-bottom: 16px; width: fit-content; }
+    .ft-title { font-family: 'Nunito', sans-serif; font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 900; color: white; letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 12px; }
+    .ft-desc { font-size: 0.92rem; color: rgba(255,255,255,0.7); line-height: 1.65; margin-bottom: 20px; }
+    .ft-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+    .ft-pill { padding: 4px 11px; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.8); }
+    .btn-ft { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 24px; background: white; color: var(--blue-dark); font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; border-radius: var(--r-lg); transition: all 0.2s; width: fit-content; }
+    .btn-ft:hover { background: #f0f6ff; transform: translateY(-1px); }
+    .ft-right { padding: 32px; display: flex; flex-direction: column; gap: 16px; }
+    .ft-what { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+    .ft-feature { display: flex; align-items: flex-start; gap: 10px; }
+    .ft-feat-icon { width: 28px; height: 28px; border-radius: 8px; background: var(--blue-soft); display: grid; place-items: center; font-size: 0.85rem; flex-shrink: 0; }
+    .ft-feat-title { font-size: 0.88rem; font-weight: 800; margin-bottom: 2px; }
+    .ft-feat-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.45; }
 
-    .ht-item {
-      display: flex; align-items: center; gap: 6px;
-      font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.65);
-    }
+    /* TOOL GRID */
+    .tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
+    .tool-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column; transition: all 0.2s; }
+    .tool-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--blue-bdr); }
+    .tc-top { padding: 18px 18px 14px; border-bottom: 1px solid var(--border); }
+    .tc-top-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+    .tc-icon { font-size: 1.5rem; line-height: 1; }
+    .tc-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); background: var(--blue-soft); border: 1px solid var(--blue-bdr); padding: 3px 9px; border-radius: 999px; }
+    .tc-name { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 5px; }
+    .tc-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+    .tc-body { padding: 14px 18px 16px; flex: 1; display: flex; flex-direction: column; }
+    .tc-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; flex: 1; align-items: flex-start; padding-top: 2px; }
+    .tc-pill { padding: 3px 9px; border-radius: 999px; background: var(--bg); border: 1px solid var(--border); font-size: 0.72rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
+    .btn-tool { display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 14px; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: var(--r); transition: all 0.18s; }
+    .btn-tool:hover { background: var(--blue-dark); }
+    .btn-tool-arrow { font-size: 0.9rem; opacity: 0.8; }
 
-    .ht-dot {
-      width: 20px; height: 20px; border-radius: 50%;
-      background: rgba(255,255,255,0.15); color: #86efac;
-      display: grid; place-items: center; font-size: 0.6rem; font-weight: 900; flex-shrink: 0;
-    }
+    /* Colour variants */
+    .tc-rose   .tc-tag { background:#FFF1F2;color:#BE123C;border-color:#FECDD3; }
+    .tc-rose   .btn-tool { background:#BE123C; } .tc-rose .btn-tool:hover { background:#9F1239; }
+    .tc-purple .tc-tag { background:#F5F3FF;color:#6D28D9;border-color:#DDD6FE; }
+    .tc-purple .btn-tool { background:#6D28D9; } .tc-purple .btn-tool:hover { background:#5B21B6; }
+    .tc-orange .tc-tag { background:#FFF7ED;color:#C2410C;border-color:#FED7AA; }
+    .tc-orange .btn-tool { background:#EA580C; } .tc-orange .btn-tool:hover { background:#C2410C; }
+    .tc-indigo .tc-tag { background:#EEF2FF;color:#4338CA;border-color:#C7D2FE; }
+    .tc-indigo .btn-tool { background:#4338CA; } .tc-indigo .btn-tool:hover { background:#3730A3; }
+    .tc-teal   .tc-tag { background:#F0FDF4;color:#15803D;border-color:#BBF7D0; }
+    .tc-teal   .btn-tool { background:#15803D; } .tc-teal .btn-tool:hover { background:#166534; }
 
-    /* ── TOOLS SECTION ── */
-    .tools-section {
-      max-width: 1060px; margin: 0 auto;
-      padding: clamp(36px,5vw,64px) clamp(16px,4vw,40px);
-    }
+    /* INTERACTIVE 2-col */
+    .interactive-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 32px; }
+    .interactive-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column; transition: all 0.2s; }
+    .interactive-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--blue-bdr); }
+    .ic-header { background: linear-gradient(135deg, var(--blue-dark), var(--blue)); padding: 20px 20px 16px; }
+    .ic-header-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .ic-icon { font-size: 1.6rem; }
+    .ic-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 3px 9px; border-radius: 999px; }
+    .ic-name { font-family: 'Nunito', sans-serif; font-size: 1.05rem; font-weight: 900; color: white; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .ic-desc { font-size: 0.82rem; color: rgba(255,255,255,0.65); line-height: 1.5; }
+    .ic-body { padding: 16px 18px; flex: 1; display: flex; flex-direction: column; }
+    .ic-features { list-style: none; display: grid; gap: 7px; flex: 1; margin-bottom: 14px; }
+    .ic-features li { display: flex; align-items: flex-start; gap: 7px; font-size: 0.82rem; color: var(--muted); line-height: 1.4; }
+    .ic-features li::before { content: '✓'; color: var(--blue); font-weight: 900; flex-shrink: 0; font-size: 0.8rem; }
+    .btn-ic { display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 14px; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: var(--r); transition: all 0.18s; }
+    .btn-ic:hover { background: var(--blue-dark); }
 
-    .tools-label {
-      text-align: center;
-      font-size: 0.71rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--blue); margin-bottom: 10px;
-    }
-
-    .tools-h2 {
-      font-family: 'Nunito', sans-serif;
-      font-size: clamp(1.6rem,3vw,2.4rem);
-      font-weight: 900; letter-spacing: -0.025em; line-height: 1.1;
-      color: var(--text); text-align: center; margin-bottom: 10px;
-    }
-
-    .tools-h2 span { color: var(--blue); }
-
-    .tools-sub {
-      text-align: center; font-size: 0.97rem; color: var(--muted);
-      max-width: 520px; margin: 0 auto 40px; line-height: 1.7;
-    }
-
-    /* ── TOOL CARDS ── */
-    .tools-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
-    }
-
-    .tool-card {
-      background: var(--surface);
-      border-radius: var(--r-xl);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-lg);
-      overflow: hidden;
-      display: flex; flex-direction: column;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .tool-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 24px 64px rgba(0,100,250,0.18);
-    }
-
-    .tool-card-top {
-      background: var(--blue);
-      padding: 28px 28px 24px;
-      position: relative; overflow: hidden;
-    }
-
-    .tool-card-top::before {
-      content: '';
-      position: absolute; right: -30px; top: -30px;
-      width: 150px; height: 150px; border-radius: 50%;
-      background: rgba(255,255,255,0.07); pointer-events: none;
-    }
-
-    .tool-card-top.alt {
-      background: #0050CC;
-    }
-
-    .tc-icon {
-      width: 52px; height: 52px; border-radius: 14px;
-      background: rgba(255,255,255,0.15);
-      display: grid; place-items: center;
-      font-size: 1.5rem; margin-bottom: 16px;
-      position: relative; z-index: 1;
-    }
-
-    .tc-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 4px 11px; border-radius: 999px;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.2);
-      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
-      color: rgba(255,255,255,0.8); margin-bottom: 12px;
-      position: relative; z-index: 1;
-    }
-
-    .tc-title {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.35rem; font-weight: 900;
-      color: white; letter-spacing: -0.02em; line-height: 1.2;
-      margin-bottom: 8px; position: relative; z-index: 1;
-    }
-
-    .tc-desc {
-      font-size: 0.88rem; color: rgba(255,255,255,0.7);
-      line-height: 1.6; position: relative; z-index: 1;
-    }
-
-    .tool-card-body {
-      padding: 22px 28px 28px;
-      flex: 1; display: flex; flex-direction: column;
-    }
-
-    .tc-features {
-      list-style: none; display: grid; gap: 10px;
-      margin-bottom: 24px; flex: 1;
-    }
-
-    .tc-features li {
-      display: flex; align-items: flex-start; gap: 9px;
-      font-size: 0.89rem; color: var(--muted); line-height: 1.5;
-    }
-
-    .tc-feat-dot {
-      width: 20px; height: 20px; border-radius: 6px;
-      background: var(--blue-soft); color: var(--blue);
-      display: grid; place-items: center;
-      font-size: 0.58rem; font-weight: 900; flex-shrink: 0; margin-top: 1px;
-    }
-
-    .tc-meta {
-      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px;
-    }
-
-    .tc-pill {
-      padding: 4px 12px; border-radius: 999px;
-      background: var(--bg); border: 1px solid var(--border);
-      font-size: 0.75rem; font-weight: 700; color: var(--muted);
-    }
-
-    .btn-tool {
-      display: flex; align-items: center; justify-content: center; gap: 8px;
-      width: 100%; height: 50px;
-      background: var(--blue); color: white;
-      font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 800;
-      border-radius: var(--r-lg); border: none; cursor: pointer;
-      box-shadow: 0 6px 20px rgba(0,100,250,0.28);
-      transition: all 0.2s; text-decoration: none;
-    }
-
-    .btn-tool:hover {
-      background: var(--blue-dark); transform: translateY(-1px);
-      box-shadow: 0 10px 28px rgba(0,100,250,0.36);
-    }
-
-    /* ── STATS STRIP ── */
-    .stats-strip {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 22px clamp(16px,4vw,40px);
-    }
-
-    .stats-inner {
-      max-width: 1060px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-around;
-      gap: 20px; flex-wrap: wrap;
-    }
-
-    .stat-item { text-align: center; }
-
-    .stat-num {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.9rem; font-weight: 900;
-      color: var(--blue); letter-spacing: -0.04em; line-height: 1; margin-bottom: 3px;
-    }
-
-    .stat-lbl { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
-    .stat-sep { width: 1px; height: 36px; background: var(--border); }
-
-    /* ── HOW TO USE ── */
-    .how-section {
-      max-width: 1060px; margin: 0 auto;
-      padding: clamp(40px,6vw,72px) clamp(16px,4vw,40px);
-    }
-
-    .how-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
-    .how-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--r-xl); padding: 24px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .how-card-head {
-      display: flex; align-items: center; gap: 12px; margin-bottom: 18px;
-    }
-
-    .how-card-icon {
-      width: 44px; height: 44px; border-radius: 12px;
-      background: var(--blue); color: white;
-      display: grid; place-items: center; font-size: 1.1rem; flex-shrink: 0;
-    }
-
-    .how-card-title {
-      font-family: 'Nunito', sans-serif; font-size: 1.05rem;
-      font-weight: 900; letter-spacing: -0.01em;
-    }
-
-    .how-card-sub { font-size: 0.8rem; color: var(--muted-lt); font-weight: 600; }
-
-    .how-steps { display: grid; gap: 12px; }
-
-    .how-step {
-      display: flex; align-items: flex-start; gap: 10px;
-      font-size: 0.88rem; color: var(--muted); line-height: 1.55;
-    }
-
-    .how-step-n {
-      width: 24px; height: 24px; border-radius: 7px;
-      background: var(--blue-soft); color: var(--blue);
-      display: grid; place-items: center;
-      font-family: 'Nunito', sans-serif; font-size: 0.75rem; font-weight: 900;
-      flex-shrink: 0; margin-top: 1px;
-    }
-
-    .how-step strong { color: var(--text); font-weight: 700; display: block; margin-bottom: 2px; }
-
-    .how-card-cta {
-      margin-top: 18px;
-      display: flex; align-items: center; gap: 10px;
-    }
-
-    .btn-how {
-      display: inline-flex; align-items: center; gap: 7px;
-      height: 40px; padding: 0 18px;
-      background: var(--blue); color: white;
-      font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800;
-      border-radius: var(--r); border: none; cursor: pointer;
-      box-shadow: 0 4px 14px rgba(0,100,250,0.24);
-      transition: all 0.2s; text-decoration: none;
-    }
-
-    .btn-how:hover { background: var(--blue-dark); transform: translateY(-1px); }
-
-    /* ── SEO CONTENT ── */
-    .seo-section {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      padding: clamp(40px,6vw,72px) clamp(16px,4vw,40px);
-    }
-
-    .seo-inner {
-      max-width: 1060px; margin: 0 auto;
-    }
-
+    /* SEO */
+    .seo-section { background: var(--surface); border-top: 1px solid var(--border); padding: clamp(36px,5vw,60px) clamp(16px,4vw,40px); }
+    .seo-inner { max-width: 1080px; margin: 0 auto; }
     .seo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+    .seo-card,.seo-card-full { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 22px; }
+    .seo-card h2,.seo-card-full h2 { font-family: 'Nunito', sans-serif; font-size: 1.05rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 10px; }
+    .seo-card p,.seo-card-full p { color: var(--muted); font-size: 0.88rem; line-height: 1.7; margin-bottom: 8px; }
+    .seo-card p:last-child { margin-bottom: 0; }
 
-    .seo-card {
-      background: var(--bg); border: 1px solid var(--border);
-      border-radius: var(--r-xl); padding: 26px;
+    /* CTA BAND */
+    .cta-band { background: linear-gradient(135deg, var(--blue-dark), var(--blue)); padding: clamp(32px,5vw,56px) clamp(16px,4vw,40px); text-align: center; }
+    .cta-band-inner { max-width: 680px; margin: 0 auto; }
+    .cta-band h2 { font-family: 'Nunito', sans-serif; font-size: clamp(1.4rem,3vw,2rem); font-weight: 900; color: white; letter-spacing: -0.025em; margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.65); font-size: 0.95rem; margin-bottom: 24px; line-height: 1.65; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; height: 50px; padding: 0 28px; background: white; color: var(--blue-dark); font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 900; border-radius: var(--r-lg); transition: all 0.2s; }
+    .cta-btn:hover { background: #f0f6ff; transform: translateY(-2px); }
+
+    /* FOOTER */
+    .footer { background: var(--blue-dark); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.38); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+    .footer-copy { max-width: 1080px; margin: 0 auto; padding-top: 16px; font-size: 0.75rem; color: rgba(255,255,255,0.22); text-align: center; }
+
+    @media (max-width: 860px) {
+      .tools-grid { grid-template-columns: 1fr 1fr; }
+      .featured-tool { grid-template-columns: 1fr; }
+      .ft-right { display: none; }
     }
-
-    .seo-card h2 {
-      font-family: 'Nunito', sans-serif;
-      font-size: clamp(1.3rem,2vw,1.7rem);
-      font-weight: 900; letter-spacing: -0.02em; margin-bottom: 12px;
-    }
-
-    .seo-card h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem; font-weight: 800;
-      margin: 16px 0 6px; display: flex; align-items: center; gap: 8px;
-    }
-
-    .seo-card h3::before {
-      content: ''; width: 3px; height: 14px;
-      background: var(--blue); border-radius: 2px; flex-shrink: 0;
-    }
-
-    .seo-card p { font-size: 0.92rem; color: var(--muted); line-height: 1.7; margin-bottom: 10px; }
-    .seo-card ul { list-style: none; display: grid; gap: 7px; }
-    .seo-card li { display: flex; gap: 8px; align-items: flex-start; font-size: 0.91rem; color: var(--muted); }
-    .seo-card li::before { content: '›'; color: var(--blue); font-weight: 900; flex-shrink: 0; }
-
-    .seo-card-full {
-      background: var(--bg); border: 1px solid var(--border);
-      border-radius: var(--r-xl); padding: 26px;
-    }
-
-    .seo-card-full h2 {
-      font-family: 'Nunito', sans-serif;
-      font-size: clamp(1.3rem,2vw,1.7rem);
-      font-weight: 900; letter-spacing: -0.02em; margin-bottom: 14px;
-    }
-
-    .seo-card-full p { font-size: 0.92rem; color: var(--muted); line-height: 1.7; margin-bottom: 10px; }
-
-    /* ── CTA BAND ── */
-    .cta-band {
-      background: var(--blue);
-      padding: clamp(36px,5vw,56px) clamp(16px,4vw,40px);
-    }
-
-    .cta-band-inner {
-      max-width: 1060px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 28px; flex-wrap: wrap;
-    }
-
-    .cta-band-tag {
-      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-      color: rgba(255,255,255,0.45); margin-bottom: 9px;
-    }
-
-    .cta-band h2 {
-      font-family: 'Nunito', sans-serif;
-      font-size: clamp(1.5rem,2.8vw,2.2rem);
-      font-weight: 900; color: white;
-      letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 8px;
-    }
-
-    .cta-band p { font-size: 0.95rem; color: rgba(255,255,255,0.65); max-width: 480px; }
-
-    .cta-band-btns {
-      display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;
-    }
-
-    .btn-cta-white {
-      display: inline-flex; align-items: center; gap: 8px;
-      height: 50px; padding: 0 26px;
-      background: white; color: var(--blue);
-      font-family: 'Nunito', sans-serif; font-size: 0.93rem; font-weight: 900;
-      border-radius: var(--r-lg); border: none; cursor: pointer;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
-      transition: all 0.2s; text-decoration: none; white-space: nowrap;
-    }
-
-    .btn-cta-white:hover { background: #f0f6ff; transform: translateY(-1px); }
-
-    .btn-cta-outline {
-      display: inline-flex; align-items: center; gap: 8px;
-      height: 50px; padding: 0 26px;
-      background: transparent; color: rgba(255,255,255,0.85);
-      font-family: 'Nunito', sans-serif; font-size: 0.93rem; font-weight: 800;
-      border-radius: var(--r-lg); border: 1.5px solid rgba(255,255,255,0.3);
-      cursor: pointer; transition: all 0.2s; text-decoration: none; white-space: nowrap;
-    }
-
-    .btn-cta-outline:hover { border-color: rgba(255,255,255,0.6); color: white; }
-
-    /* ── FOOTER ── */
-    .footer {
-      background: #0050CC;
-      padding: 28px clamp(16px,4vw,40px) 36px;
-    }
-
-    .footer-inner {
-      max-width: 1060px; margin: 0 auto;
-      display: flex; justify-content: space-between; align-items: center;
-      gap: 16px; flex-wrap: wrap;
-      padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .footer-brand {
-      display: flex; align-items: center; gap: 9px;
-      font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.95rem; color: white;
-    }
-
-    .footer-mark {
-      width: 30px; height: 30px; border-radius: 8px;
-      background: rgba(255,255,255,0.15);
-      display: grid; place-items: center; font-size: 0.9rem;
-    }
-
-    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
-
-    .footer-links a {
-      font-size: 0.82rem; color: rgba(255,255,255,0.45);
-      font-weight: 600; transition: color 0.15s;
-    }
-
-    .footer-links a:hover { color: rgba(255,255,255,0.8); }
-
-    .footer-copy {
-      max-width: 1060px; margin: 0 auto;
-      padding-top: 18px; font-size: 0.78rem;
-      color: rgba(255,255,255,0.25); text-align: center;
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 760px) {
-      .tools-grid, .how-grid, .seo-grid { grid-template-columns: 1fr; }
-      .cta-band-inner { flex-direction: column; align-items: flex-start; }
-      .stats-inner { gap: 12px; }
-      .stat-sep { display: none; }
+    @media (max-width: 600px) {
+      .tools-grid { grid-template-columns: 1fr; }
+      .interactive-grid { grid-template-columns: 1fr; }
+      .seo-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-<!-- TOPBAR -->
 <header class="topbar">
   <div class="topbar-inner">
-    <a href="/" class="logo">
+    <a href="https://myanxietytest.com/" class="logo">
       <div class="logo-mark">🧠</div>
       <div class="logo-name">MyAnxietyTest</div>
     </a>
-    <div class="topbar-tag">Free anxiety tools</div>
+    <div class="topbar-tag">18 free tools · No sign-up</div>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-kicker">✦ Free tools for anxiety</div>
-    <h1>Stop guessing.<br><span>Start understanding</span><br>your anxiety.</h1>
-    <p class="hero-desc">Two free tools built for people who are done with generic advice and ready to actually understand what is happening with their anxiety.</p>
-    <div class="hero-trust">
-      <div class="ht-item"><div class="ht-dot">✓</div>No sign-up needed</div>
-      <div class="ht-item"><div class="ht-dot">✓</div>100% free</div>
-      <div class="ht-item"><div class="ht-dot">✓</div>Instant results</div>
-      <div class="ht-item"><div class="ht-dot">✓</div>Fully personalized</div>
+    <div class="hero-kicker">✦ Free anxiety tools</div>
+    <h1>Understand your anxiety.<br><span>Take action today.</span></h1>
+    <p class="hero-desc">Tests, trackers, a body scan and crisis support. All free, all instant, all built around your specific experience. Not generic advice.</p>
+    <div class="hero-count">
+      <span class="hero-count-num">18</span> free tools available right now
     </div>
-    <div style="margin-top:28px;">
-      <a href="#tools" style="display:inline-flex;align-items:center;gap:8px;height:52px;padding:0 28px;background:white;color:var(--blue);font-family:'Nunito',sans-serif;font-size:0.97rem;font-weight:900;border-radius:12px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,0.18);transition:all 0.2s;">
-        See the free tools
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2v10M2 7l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+    <a href="#tools" class="btn-hero-main">
+      Explore all tools ↓
+    </a>
+    <div class="hero-trust">
+      <div class="ht-item"><div class="ht-dot">✓</div>No account needed</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Instant results</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>100% anonymous</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Built for real people</div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<div class="stats-strip">
-  <div class="stats-inner">
-    <div class="stat-item">
-      <div class="stat-num">2</div>
-      <div class="stat-lbl">Free tools available</div>
+<div class="tools-wrap" id="tools">
+
+  <!-- ── 1. START HERE ── -->
+  <div style="margin-bottom:8px;">
+    <div class="section-eyebrow">Start here</div>
+    <h2 class="section-h2">Find the right <span>tool for you</span></h2>
+    <p class="section-sub">If you are not sure where to start, the anxiety level test gives you the clearest picture of where you are right now.</p>
+  </div>
+
+  <!-- FEATURED -->
+  <div class="featured-tool">
+    <div class="ft-left">
+      <div>
+        <div class="ft-badge">⭐ Most popular</div>
+        <div class="ft-title">Anxiety Level Test</div>
+        <div class="ft-desc">21 questions about worry, panic, sleep, physical symptoms and daily functioning. Get a precise percentage score plus a full personalised action plan.</div>
+        <div class="ft-pills">
+          <div class="ft-pill">📋 21 questions</div>
+          <div class="ft-pill">⚡ 3 minutes</div>
+          <div class="ft-pill">🎯 Low / Moderate / High</div>
+          <div class="ft-pill">📝 Personalised plan</div>
+        </div>
+      </div>
+      <a href="https://myanxietytest.com/anxiety-level/" class="btn-ft">Take the Anxiety Test →</a>
     </div>
-    <div class="stat-sep"></div>
-    <div class="stat-item">
-      <div class="stat-num">21</div>
-      <div class="stat-lbl">Questions in the anxiety level test</div>
-    </div>
-    <div class="stat-sep"></div>
-    <div class="stat-item">
-      <div class="stat-num">8</div>
-      <div class="stat-lbl">Questions in the panic SOS card</div>
-    </div>
-    <div class="stat-sep"></div>
-    <div class="stat-item">
-      <div class="stat-num">100%</div>
-      <div class="stat-lbl">Free, no account needed</div>
+    <div class="ft-right">
+      <div class="ft-what">What you get</div>
+      <div class="ft-feature">
+        <div class="ft-feat-icon">📊</div>
+        <div>
+          <div class="ft-feat-title">Your anxiety percentage score</div>
+          <div class="ft-feat-desc">A precise score showing exactly where you land across low, moderate and high anxiety.</div>
+        </div>
+      </div>
+      <div class="ft-feature">
+        <div class="ft-feat-icon">💡</div>
+        <div>
+          <div class="ft-feat-title">What your result means</div>
+          <div class="ft-feat-desc">A clear explanation of the pattern driving your score, specific to your level.</div>
+        </div>
+      </div>
+      <div class="ft-feature">
+        <div class="ft-feat-icon">🗺️</div>
+        <div>
+          <div class="ft-feat-title">Personalised 3-step plan</div>
+          <div class="ft-feat-desc">Concrete next steps based on your specific result, not generic advice.</div>
+        </div>
+      </div>
+      <div class="ft-feature">
+        <div class="ft-feat-icon">❤️</div>
+        <div>
+          <div class="ft-feat-title">Why this pattern keeps going</div>
+          <div class="ft-feat-desc">A clear explanation of what is maintaining your anxiety and what would actually change it.</div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- TOOLS -->
-<div class="tools-section" id="tools">
-  <div class="tools-label">Choose your tool</div>
-  <h2 class="tools-h2">Two tools. <span>Real results.</span></h2>
-  <p class="tools-sub">Whether you want to understand your anxiety level or get a personalized plan for your next panic attack, start here.</p>
+  <!-- TOP 3 -->
+  <div class="tools-grid" style="margin-bottom:36px;">
+    <div class="tool-card tc-rose">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🆘</div><div class="tc-tag">Crisis tool</div></div>
+        <div class="tc-name">Panic Attack SOS Card</div>
+        <div class="tc-desc">A personalised crisis card for your next panic attack, built around exactly how it feels for you. Download and save on your phone.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">8 questions</div><div class="tc-pill">Your name on it</div><div class="tc-pill">Download as image</div></div>
+        <a href="https://myanxietytest.com/panic-sos-card/" class="btn-tool">Build My SOS Card <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🔍</div><div class="tc-tag">Triggers</div></div>
+        <div class="tc-name">Anxiety Triggers Identifier</div>
+        <div class="tc-desc">Identifies your dominant anxiety trigger across 6 categories. Most people are surprised by which one comes out on top.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">6 categories</div><div class="tc-pill">Bar chart result</div></div>
+        <a href="https://myanxietytest.com/anxiety-triggers/" class="btn-tool">Find My Triggers <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🫀</div><div class="tc-tag">Interactive</div></div>
+        <div class="tc-name">Anxiety Body Scan</div>
+        <div class="tc-desc">Click on where you feel anxiety in your body. Get a personalised explanation of your physical anxiety pattern.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">Interactive map</div><div class="tc-pill">11 body zones</div><div class="tc-pill">Pattern detection</div></div>
+        <a href="https://myanxietytest.com/anxiety-body-scan/" class="btn-tool">Start Body Scan <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 2. IS IT ANXIETY OR SOMETHING ELSE? ── -->
+  <div style="margin-bottom:16px;">
+    <div class="section-eyebrow">Understand your specific pattern</div>
+    <h2 class="section-h2">Is it anxiety or <span>something else?</span></h2>
+    <p class="section-sub">These tests help you understand which specific pattern is present and whether something else might be at play alongside anxiety.</p>
+  </div>
 
   <div class="tools-grid">
-
-    <!-- Tool 1: Anxiety Level Test -->
     <div class="tool-card">
-      <div class="tool-card-top">
-        <div class="tc-icon">📊</div>
-        <div class="tc-badge">Free anxiety test</div>
-        <div class="tc-title">Anxiety Level Test</div>
-        <div class="tc-desc">Find out exactly how anxiety is affecting your life right now with a percentage score and a full explanation.</div>
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">😔</div><div class="tc-tag">Assessment</div></div>
+        <div class="tc-name">Anxiety or Depression?</div>
+        <div class="tc-desc">Split scores for both. Understand which pattern is dominant and what it means for getting the right help.</div>
       </div>
-      <div class="tool-card-body">
-        <ul class="tc-features">
-          <li><div class="tc-feat-dot">✓</div>21 questions covering all anxiety patterns</li>
-          <li><div class="tc-feat-dot">✓</div>Instant percentage score and level result</li>
-          <li><div class="tc-feat-dot">✓</div>Low, moderate or high impact explained</li>
-          <li><div class="tc-feat-dot">✓</div>Personalized action plan based on your result</li>
-        </ul>
-        <div class="tc-meta">
-          <div class="tc-pill">⚡ 3 minutes</div>
-          <div class="tc-pill">📋 21 questions</div>
-          <div class="tc-pill">🎯 Instant result</div>
-        </div>
-        <a href="https://myanxietytest.com/anxiety-level" class="btn-tool">
-          Take the Anxiety Test →
-        </a>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">20 questions</div><div class="tc-pill">Split scoring</div><div class="tc-pill">5 profiles</div></div>
+        <a href="https://myanxietytest.com/anxiety-or-depression/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
 
-    <!-- Tool 2: Panic SOS Card -->
+    <div class="tool-card tc-purple">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🔄</div><div class="tc-tag">Assessment</div></div>
+        <div class="tc-name">OCD vs Anxiety Test</div>
+        <div class="tc-desc">OCD and anxiety feel similar but are driven by very different patterns. This test helps you see which is more dominant.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">Split scoring</div><div class="tc-pill">4 profiles</div></div>
+        <a href="https://myanxietytest.com/ocd-vs-anxiety-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="tool-card tc-orange">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">⚡</div><div class="tc-tag">Assessment</div></div>
+        <div class="tc-name">Anxiety or ADHD?</div>
+        <div class="tc-desc">Concentration problems and restlessness could be anxiety, ADHD or both. Find out which is the stronger driver.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">20 questions</div><div class="tc-pill">Split scoring</div><div class="tc-pill">4 profiles</div></div>
+        <a href="https://myanxietytest.com/anxiety-or-adhd/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
     <div class="tool-card">
-      <div class="tool-card-top alt">
-        <div class="tc-icon">🆘</div>
-        <div class="tc-badge">Free crisis tool</div>
-        <div class="tc-title">Panic Attack SOS Card</div>
-        <div class="tc-desc">Build a personalized step-by-step card with your name on it, made for exactly how panic feels for you.</div>
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🔥</div><div class="tc-tag">Assessment</div></div>
+        <div class="tc-name">Anxiety vs Burnout Quiz</div>
+        <div class="tc-desc">Are you burnt out, anxious or both? These overlap significantly and respond to different approaches.</div>
       </div>
-      <div class="tool-card-body">
-        <ul class="tc-features">
-          <li><div class="tc-feat-dot">✓</div>8 questions about your specific panic symptoms</li>
-          <li><div class="tc-feat-dot">✓</div>Personalized with your name on the card</li>
-          <li><div class="tc-feat-dot">✓</div>Steps built around your exact triggers</li>
-          <li><div class="tc-feat-dot">✓</div>Download as an image to save on your phone</li>
-        </ul>
-        <div class="tc-meta">
-          <div class="tc-pill">⚡ 2 minutes</div>
-          <div class="tc-pill">📋 8 questions</div>
-          <div class="tc-pill">📱 Save to phone</div>
-        </div>
-        <a href="https://myanxietytest.com/panic-sos-card" class="btn-tool">
-          Build My SOS Card →
-        </a>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Split scoring</div><div class="tc-pill">3 profiles</div></div>
+        <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
 
-  </div>
-</div>
-
-<!-- HOW IT WORKS -->
-<div class="how-section">
-  <div class="tools-label">How it works</div>
-  <h2 class="tools-h2" style="margin-bottom:10px;">Simple. <span>Fast. Useful.</span></h2>
-  <p class="tools-sub">Both tools take under 3 minutes and give you something concrete to take away, not just generic information.</p>
-
-  <div class="how-grid">
-    <div class="how-card">
-      <div class="how-card-head">
-        <div class="how-card-icon">📊</div>
-        <div>
-          <div class="how-card-title">Anxiety Level Test</div>
-          <div class="how-card-sub">myanxietytest.com/anxiety-level</div>
-        </div>
+    <div class="tool-card tc-indigo">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🌙</div><div class="tc-tag">Assessment</div></div>
+        <div class="tc-name">Anxiety and Sleep Quiz</div>
+        <div class="tc-desc">Is anxiety ruining your sleep, or is poor sleep making your anxiety worse? Identifies which direction the cycle runs.</div>
       </div>
-      <div class="how-steps">
-        <div class="how-step">
-          <div class="how-step-n">1</div>
-          <div><strong>Answer 21 questions</strong>About worry, panic, sleep, overthinking and physical symptoms.</div>
-        </div>
-        <div class="how-step">
-          <div class="how-step-n">2</div>
-          <div><strong>Get your percentage score</strong>See exactly where you land, low, moderate or high anxiety impact.</div>
-        </div>
-        <div class="how-step">
-          <div class="how-step-n">3</div>
-          <div><strong>Read your personalized plan</strong>Understand what your result means and what to do next.</div>
-        </div>
-      </div>
-      <div class="how-card-cta">
-        <a href="https://myanxietytest.com/anxiety-level" class="btn-how">Start the test →</a>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">5 profiles</div><div class="tc-pill">Bidirectional</div></div>
+        <a href="https://myanxietytest.com/anxiety-sleep-quiz/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
 
-    <div class="how-card">
-      <div class="how-card-head">
-        <div class="how-card-icon">🆘</div>
-        <div>
-          <div class="how-card-title">Panic Attack SOS Card</div>
-          <div class="how-card-sub">myanxietytest.com/panic-sos-card</div>
-        </div>
+    <div class="tool-card tc-rose">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">💔</div><div class="tc-tag">Assessment</div></div>
+        <div class="tc-name">Relationship Anxiety Test</div>
+        <div class="tc-desc">Constant worry about your partner, fear of abandonment, need for reassurance. Find out if relationship anxiety is present.</div>
       </div>
-      <div class="how-steps">
-        <div class="how-step">
-          <div class="how-step-n">1</div>
-          <div><strong>Enter your name and answer 8 questions</strong>About how panic attacks feel for you specifically.</div>
-        </div>
-        <div class="how-step">
-          <div class="how-step-n">2</div>
-          <div><strong>Get your personalized card</strong>A step-by-step plan built around your exact symptoms and triggers.</div>
-        </div>
-        <div class="how-step">
-          <div class="how-step-n">3</div>
-          <div><strong>Download and save it</strong>Keep it on your phone so it is there the next time panic hits.</div>
-        </div>
-      </div>
-      <div class="how-card-cta">
-        <a href="https://myanxietytest.com/panic-sos-card" class="btn-how">Build my card →</a>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">3 levels</div><div class="tc-pill">Attachment patterns</div></div>
+        <a href="https://myanxietytest.com/relationship-anxiety/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
   </div>
+
+  <!-- ── 3. SPECIFIC TYPES ── -->
+  <div style="margin-bottom:16px;">
+    <div class="section-eyebrow">Specific anxiety types</div>
+    <h2 class="section-h2">Go <span>deeper</span> into your pattern</h2>
+    <p class="section-sub">Each of these tests focuses on a specific type of anxiety with targeted questions and detailed results.</p>
+  </div>
+
+  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">👥</div><div class="tc-tag">Social anxiety</div></div>
+        <div class="tc-name">Social Anxiety Test</div>
+        <div class="tc-desc">Fear of judgment, post-event replay, avoiding social situations. 18 questions specific to social anxiety.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">3 levels</div></div>
+        <a href="https://myanxietytest.com/social-anxiety-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">✨</div><div class="tc-tag">High-functioning</div></div>
+        <div class="tc-name">High-Functioning Anxiety Quiz</div>
+        <div class="tc-desc">You look fine. You deliver. But inside the anxiety never stops. Identifies the hidden anxiety driving high performance.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Dark editorial design</div></div>
+        <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🏥</div><div class="tc-tag">Health anxiety</div></div>
+        <div class="tc-name">Health Anxiety Test</div>
+        <div class="tc-desc">Worry about symptoms, illness and physical sensations. 16 questions with a unique severity block indicator.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Severity blocks</div></div>
+        <a href="https://myanxietytest.com/health-anxiety-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="tool-card tc-rose">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">💓</div><div class="tc-tag">Panic</div></div>
+        <div class="tc-name">Panic Disorder Test</div>
+        <div class="tc-desc">The difference between having panic attacks and having panic disorder. This test helps you understand which is present.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Anticipatory anxiety</div></div>
+        <a href="https://myanxietytest.com/panic-disorder-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 4. DAILY TOOLS ── -->
+  <div style="margin-bottom:16px;">
+    <div class="section-eyebrow">Daily tools</div>
+    <h2 class="section-h2">Track, <span>journal</span> and reflect</h2>
+    <p class="section-sub">These tools are designed to be used regularly. They save privately in your browser and help you see patterns over time.</p>
+  </div>
+
+  <div class="interactive-grid">
+    <div class="interactive-card">
+      <div class="ic-header">
+        <div class="ic-header-row"><div class="ic-icon">📓</div><div class="ic-tag">Daily journaling</div></div>
+        <div class="ic-name">Anxiety Journal</div>
+        <div class="ic-desc">A guided daily check-in with prompts, mood tags, free writing and a calendar showing your history.</div>
+      </div>
+      <div class="ic-body">
+        <ul class="ic-features">
+          <li>5 anxiety levels + 12 mood tags per entry</li>
+          <li>4 guided prompts + unlimited free writing</li>
+          <li>Calendar with colour-coded history</li>
+          <li>Export as .txt, saved in your browser only</li>
+        </ul>
+        <a href="https://myanxietytest.com/anxiety-journal/" class="btn-ic">Open Journal <span>→</span></a>
+      </div>
+    </div>
+
+    <div class="interactive-card">
+      <div class="ic-header">
+        <div class="ic-header-row"><div class="ic-icon">📈</div><div class="ic-tag">Progress tracking</div></div>
+        <div class="ic-name">Anxiety Timeline Tracker</div>
+        <div class="ic-desc">Log your daily anxiety level and watch it change over time with a visual timeline chart.</div>
+      </div>
+      <div class="ic-body">
+        <ul class="ic-features">
+          <li>5 emoji level buttons per day</li>
+          <li>Visual chart: 7, 30, 90 days or all time</li>
+          <li>Streak counter, trend indicator, averages</li>
+          <li>Export as .csv, saved in your browser only</li>
+        </ul>
+        <a href="https://myanxietytest.com/anxiety-tracker/" class="btn-ic">Open Tracker <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- SEO CONTENT -->
@@ -751,21 +519,19 @@
   <div class="seo-inner">
     <div class="seo-grid">
       <div class="seo-card">
-        <h2>What is an anxiety level test?</h2>
-        <p>An anxiety level test is a self-assessment that helps you understand how strongly anxiety may be affecting your thoughts, body, sleep, focus and daily life right now. Unlike a clinical diagnosis, a free anxiety test gives you an immediate snapshot so you can make better decisions about what kind of support or action would actually help.</p>
-        <p>This anxiety test online uses 21 questions and takes about 3 minutes. Your result is shown as a percentage and grouped into a low, moderate or high anxiety level, each with a clear explanation of what it means for you.</p>
+        <h2>Why 18 tools instead of one?</h2>
+        <p>Anxiety is not one thing. Social anxiety is different from health anxiety, which is different from high-functioning anxiety, which is different from relationship anxiety. Generic anxiety advice treats all of these as the same. These tools do not.</p>
+        <p>Each tool is built for a specific pattern. The anxiety level test tells you how severe it is. The triggers identifier tells you what is causing it. The body scan tells you where you feel it. Together they give you a much clearer picture than any single tool can.</p>
       </div>
       <div class="seo-card">
-        <h2>What is a Panic Attack SOS Card?</h2>
-        <p>A Panic Attack SOS Card is a personalized step-by-step plan you can look at during a panic attack when your mind goes blank and you cannot remember what to do. Unlike generic advice, this card is built around your specific symptoms, your first thoughts during panic, and where you feel it most in your body.</p>
-        <p>The card is generated based on 8 questions and saved as an image you can keep on your phone. When panic hits, you open it and follow the steps, no thinking required.</p>
+        <h2>Who are these tools for?</h2>
+        <p>Anyone who wants to understand their anxiety better — whether it is mild background worry or something that significantly affects daily life. These tools are useful if you want to understand your experience before seeking professional support, or to track whether things are improving over time.</p>
+        <p>None of these tools are a substitute for professional mental health care. But they help you arrive at that conversation with a much clearer understanding of what is happening and what would actually help.</p>
       </div>
     </div>
     <div class="seo-card-full">
-      <h2>Why these tools are different from generic anxiety advice</h2>
-      <p>Most anxiety resources online give the same advice to everyone: breathe deeply, try mindfulness, talk to someone. That advice is not wrong but it is not personalized, and when you are in the middle of a panic attack or trying to understand a score, generic advice does not help.</p>
-      <p>These tools are built around one idea: <strong>your anxiety is not the same as everyone else's anxiety.</strong> The anxiety level test gives you a result based on your specific answers, not a one-size-fits-all score. The panic attack SOS card gives you steps based on your exact symptoms, your typical first thought, where you feel panic in your body, and what has helped you before.</p>
-      <p>Both tools are completely free, require no account, and give you something useful in under 3 minutes.</p>
+      <h2>All tools are free, private and instant</h2>
+      <p>Every tool on this site is completely free with no account required. Journal and tracker data is saved only in your browser and never sent to any server. Quiz results are instant and anonymous. There is no email collection, no sign-up and no advertising. The only monetisation is an honest recommendation for online therapy at the end of results where it is genuinely relevant — based on your result, not shown to everyone.</p>
     </div>
   </div>
 </section>
@@ -773,19 +539,12 @@
 <!-- CTA BAND -->
 <section class="cta-band">
   <div class="cta-band-inner">
-    <div>
-      <div class="cta-band-tag">Start now</div>
-      <h2>Pick the tool that fits where you are right now.</h2>
-      <p>Both are free, instant and built around your specific experience, not generic advice.</p>
-    </div>
-    <div class="cta-band-btns">
-      <a href="https://myanxietytest.com/anxiety-level" class="btn-cta-white">Take the Anxiety Test →</a>
-      <a href="https://myanxietytest.com/panic-sos-card" class="btn-cta-outline">Build My SOS Card →</a>
-    </div>
+    <h2>Not sure where to start?</h2>
+    <p>The anxiety level test gives you the clearest picture of where you are right now. 21 questions, 3 minutes, instant result.</p>
+    <a href="https://myanxietytest.com/anxiety-level/" class="cta-btn">Take the Free Anxiety Test →</a>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
@@ -793,13 +552,19 @@
       MyAnxietyTest.com
     </div>
     <div class="footer-links">
-      <a href="https://myanxietytest.com/anxiety-level">Anxiety Level Test</a>
-      <a href="https://myanxietytest.com/panic-sos-card">Panic SOS Card</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+      <a href="https://myanxietytest.com/anxiety-triggers/">Triggers</a>
+      <a href="https://myanxietytest.com/anxiety-body-scan/">Body Scan</a>
+      <a href="https://myanxietytest.com/ocd-vs-anxiety-test/">OCD vs Anxiety</a>
+      <a href="https://myanxietytest.com/anxiety-or-adhd/">Anxiety or ADHD</a>
+      <a href="https://myanxietytest.com/relationship-anxiety/">Relationship Anxiety</a>
+      <a href="https://myanxietytest.com/anxiety-sleep-quiz/">Sleep Quiz</a>
+      <a href="https://myanxietytest.com/anxiety-journal/">Journal</a>
+      <a href="https://myanxietytest.com/anxiety-tracker/">Tracker</a>
     </div>
   </div>
-  <div class="footer-copy">
-    © 2026 MyAnxietyTest.com · Free anxiety tools for self-assessment and crisis support · Not a substitute for professional mental health care
-  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · 18 free anxiety tools · Not a substitute for professional mental health care</div>
 </footer>
 
 <script>
