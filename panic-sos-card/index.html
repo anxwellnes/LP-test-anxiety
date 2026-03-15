@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panic Attack SOS Card | Free Personalized Crisis Tool</title>
+  <meta name="description" content="Create your free personalized Panic Attack SOS Card. Answer 8 questions about your symptoms and get a step-by-step plan to save on your phone for your next panic attack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <style>
+    :root {
+      --blue:       #0064FA;
+      --blue-dark:  #0050CC;
+      --blue-mid:   #1a74fb;
+      --blue-soft:  #E8F1FF;
+      --blue-bdr:   #C0D8FF;
+      --teal:       #0d9e7e;
+      --teal-soft:  #e6f7f2;
+      --green:      #1B7F3A;
+      --green-soft: #E6F4EC;
+      --amber:      #D97706;
+      --amber-soft: #FEF3C7;
+      --red:        #C0392B;
+      --red-soft:   #FDEDEC;
+      --bg:         #F2F5FA;
+      --surface:    #FFFFFF;
+      --border:     #DDE4EF;
+      --text:       #0D1B2A;
+      --muted:      #536278;
+      --muted-lt:   #8FA3BC;
+      --shadow-sm:  0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md:  0 6px 24px rgba(0,100,250,0.10);
+      --shadow-lg:  0 16px 52px rgba(0,100,250,0.14);
+      --r:          12px;
+      --r-lg:       18px;
+      --r-xl:       24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      background: var(--blue);
+      box-shadow: 0 2px 12px rgba(0,100,250,0.25);
+    }
+    .topbar-inner {
+      max-width: 860px; margin: 0 auto;
+      padding: 0 clamp(16px,4vw,32px);
+      height: 58px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 9px; text-decoration: none;
+    }
+    .logo-mark {
+      width: 32px; height: 32px; background: white; border-radius: 8px;
+      display: grid; place-items: center; font-size: 0.95rem;
+    }
+    .logo-name {
+      font-family: 'Nunito', sans-serif; font-weight: 900;
+      font-size: 1rem; color: white;
+    }
+    .topbar-tag {
+      font-size: 0.77rem; font-weight: 700;
+      color: rgba(255,255,255,0.72);
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 4px 12px; border-radius: 999px;
+    }
+
+    /* ── PAGE ── */
+    .page {
+      max-width: 860px; margin: 0 auto;
+      padding: clamp(28px,5vw,52px) clamp(16px,4vw,32px) 60px;
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      text-align: center; margin-bottom: 36px;
+    }
+    .intro-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 6px 14px; border-radius: 999px;
+      background: var(--blue-soft); border: 1px solid var(--blue-bdr);
+      font-size: 0.73rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 16px;
+    }
+    .intro h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(1.8rem,4vw,2.8rem);
+      font-weight: 900; letter-spacing: -0.025em; line-height: 1.1;
+      color: var(--text); margin-bottom: 12px;
+    }
+    .intro h1 span { color: var(--blue); }
+    .intro p {
+      font-size: 1rem; color: var(--muted); max-width: 520px;
+      margin: 0 auto; line-height: 1.7;
+    }
+
+    /* ── BUILDER CARD ── */
+    .builder-card {
+      background: var(--surface);
+      border-radius: var(--r-xl);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    /* Progress strip */
+    .progress-strip {
+      background: var(--blue); padding: 16px 24px;
+    }
+    .ps-meta {
+      display: flex; justify-content: space-between;
+      font-size: 0.79rem; font-weight: 700;
+      color: rgba(255,255,255,0.65); margin-bottom: 8px;
+    }
+    .ps-meta strong { color: white; }
+    .ps-bar { height: 6px; background: rgba(255,255,255,0.18); border-radius: 999px; overflow: hidden; }
+    .ps-fill {
+      height: 100%; background: white; border-radius: 999px;
+      transition: width 0.3s ease; width: 0%;
+    }
+
+    /* Question body */
+    .q-body { padding: 32px 28px 0; }
+
+    .q-chip {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 4px 12px 4px 4px; border-radius: 999px;
+      background: var(--blue-soft); border: 1px solid var(--blue-bdr);
+      font-size: 0.75rem; font-weight: 800; color: var(--blue);
+      margin-bottom: 16px;
+    }
+    .q-chip-n {
+      width: 22px; height: 22px; background: var(--blue); color: white;
+      border-radius: 50%; display: grid; place-items: center;
+      font-size: 0.7rem; font-weight: 900;
+    }
+
+    .q-text {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(1.15rem,2.4vw,1.55rem);
+      font-weight: 800; line-height: 1.25; letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .q-subtext {
+      font-size: 0.88rem; color: var(--muted); margin-bottom: 26px; line-height: 1.55;
+    }
+
+    /* Options */
+    .options-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .opt-btn {
+      display: flex; align-items: center; gap: 14px;
+      width: 100%; padding: 14px 18px;
+      border-radius: var(--r); border: 2px solid var(--border);
+      background: var(--bg); cursor: pointer;
+      font-family: 'Nunito Sans', sans-serif;
+      transition: all 0.16s; text-align: left;
+    }
+    .opt-circle {
+      width: 22px; height: 22px; border-radius: 50%;
+      border: 2px solid var(--border); background: white;
+      flex-shrink: 0; display: grid; place-items: center;
+      transition: all 0.16s;
+    }
+    .opt-circle-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: transparent; transition: all 0.16s;
+    }
+    .opt-label { font-size: 0.93rem; font-weight: 700; color: var(--muted); transition: color 0.16s; flex: 1; }
+    .opt-emoji { font-size: 1.1rem; flex-shrink: 0; }
+
+    .opt-btn:hover {
+      border-color: var(--blue); background: var(--blue-soft);
+      transform: translateX(4px);
+    }
+    .opt-btn:hover .opt-circle { border-color: var(--blue); }
+    .opt-btn:hover .opt-label  { color: var(--blue); }
+
+    .opt-btn.selected {
+      border-color: var(--blue); background: var(--blue-soft);
+      box-shadow: 0 4px 14px rgba(0,100,250,0.14);
+    }
+    .opt-btn.selected .opt-circle { border-color: var(--blue); background: var(--blue); }
+    .opt-btn.selected .opt-circle-dot { background: white; }
+    .opt-btn.selected .opt-label { color: var(--blue); font-weight: 800; }
+
+    /* Multi-select note */
+    .multi-note {
+      font-size: 0.78rem; color: var(--muted-lt); font-weight: 600;
+      margin-bottom: 14px; display: flex; align-items: center; gap: 6px;
+    }
+    .multi-note::before {
+      content: '';
+      width: 16px; height: 2px; background: var(--muted-lt); border-radius: 1px;
+    }
+
+    /* For multi-select checkboxes */
+    .opt-btn.multi .opt-circle { border-radius: 6px; }
+    .opt-btn.multi.selected .opt-circle {
+      border-color: var(--blue); background: var(--blue); border-radius: 6px;
+    }
+    .opt-btn.multi.selected .opt-circle-dot {
+      background: transparent;
+      width: 11px; height: 7px;
+      border-left: 2.5px solid white; border-bottom: 2.5px solid white;
+      border-radius: 0;
+      transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+    /* Footer */
+    .q-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 28px 24px; margin-top: 8px;
+    }
+    .q-hint { font-size: 0.79rem; color: var(--muted-lt); font-weight: 600; }
+    .q-btns { display: flex; gap: 8px; }
+    .btn-ctrl {
+      height: 38px; padding: 0 16px; border-radius: var(--r);
+      border: 1.5px solid var(--border); background: white;
+      font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800;
+      color: var(--muted); cursor: pointer; transition: all 0.15s;
+    }
+    .btn-ctrl:hover:not(:disabled) { border-color: var(--blue); color: var(--blue); }
+    .btn-ctrl:disabled { opacity: 0.28; cursor: not-allowed; }
+    .btn-next {
+      height: 38px; padding: 0 20px; border-radius: var(--r);
+      background: var(--blue); color: white;
+      font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800;
+      border: none; cursor: pointer; transition: all 0.15s;
+      display: none;
+    }
+    .btn-next:hover { background: var(--blue-dark); }
+    .btn-next.show { display: inline-flex; align-items: center; gap: 6px; }
+
+    /* ── SOS CARD RESULT ── */
+    .result-wrap { display: none; padding: 28px; }
+    .result-wrap.show { display: block; }
+
+    .result-header {
+      text-align: center; margin-bottom: 24px;
+    }
+    .result-header .rh-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 6px 16px; border-radius: 999px;
+      background: var(--blue-soft); border: 1px solid var(--blue-bdr);
+      font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 14px;
+    }
+    .result-header h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(1.4rem,3vw,2rem);
+      font-weight: 900; letter-spacing: -0.025em; color: var(--text);
+      margin-bottom: 8px;
+    }
+    .result-header p { font-size: 0.93rem; color: var(--muted); max-width: 480px; margin: 0 auto; }
+
+    /* The actual SOS card */
+    .sos-card {
+      background: var(--blue-soft);
+      border: 2px solid var(--blue-bdr);
+      border-radius: var(--r-xl);
+      padding: 28px;
+      margin: 24px 0;
+      position: relative; overflow: hidden;
+      box-shadow: 0 16px 48px rgba(0,100,250,0.14);
+    }
+    .sos-card::before {
+      content: ''; position: absolute; right: -40px; top: -40px;
+      width: 200px; height: 200px; border-radius: 50%;
+      background: rgba(0,100,250,0.06); pointer-events: none;
+    }
+    .sos-card::after {
+      content: ''; position: absolute; left: -30px; bottom: -30px;
+      width: 150px; height: 150px; border-radius: 50%;
+      background: rgba(0,100,250,0.04); pointer-events: none;
+    }
+
+    .sos-top {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px; position: relative; z-index: 1;
+    }
+    .sos-title {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.1rem; font-weight: 900; color: var(--blue);
+      letter-spacing: -0.01em;
+    }
+    .sos-subtitle { font-size: 0.88rem; color: var(--muted); margin-top: 2px; }
+    .sos-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: var(--blue); color: white;
+      display: grid; place-items: center; font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .sos-reminder {
+      background: white;
+      border: 1.5px solid var(--blue-bdr);
+      border-radius: var(--r); padding: 14px 18px;
+      font-size: 1rem; color: var(--text);
+      font-weight: 600; margin-bottom: 20px;
+      position: relative; z-index: 1;
+      font-style: italic; line-height: 1.6;
+    }
+
+    .sos-steps { display: grid; gap: 12px; position: relative; z-index: 1; }
+
+    .sos-step {
+      background: white;
+      border: 1.5px solid var(--blue-bdr);
+      border-radius: var(--r); padding: 16px 18px;
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .sos-step-n {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: var(--blue); color: white;
+      display: grid; place-items: center;
+      font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 900;
+      flex-shrink: 0;
+    }
+    .sos-step-content { flex: 1; }
+    .sos-step-title {
+      font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 800;
+      color: var(--text); margin-bottom: 5px;
+    }
+    .sos-step-desc {
+      font-size: 0.92rem; color: var(--muted); line-height: 1.6;
+    }
+
+    .sos-footer {
+      margin-top: 18px; padding-top: 16px;
+      border-top: 1.5px solid var(--blue-bdr);
+      display: flex; align-items: center; justify-content: space-between;
+      position: relative; z-index: 1; flex-wrap: wrap; gap: 8px;
+    }
+    .sos-footer-note {
+      font-size: 0.82rem; color: var(--muted-lt);
+      font-style: italic;
+    }
+    .sos-brand {
+      font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800;
+      color: var(--blue);
+    }
+
+    /* Save actions */
+    .save-actions {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px;
+    }
+    .btn-save {
+      display: inline-flex; align-items: center; gap: 8px;
+      height: 46px; padding: 0 22px;
+      background: var(--blue); color: white;
+      font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 800;
+      border-radius: var(--r-lg); border: none; cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0,100,250,0.28);
+      transition: all 0.2s;
+    }
+    .btn-save:hover { background: var(--blue-dark); transform: translateY(-1px); }
+    .btn-save-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      height: 46px; padding: 0 20px;
+      background: white; color: var(--text);
+      font-family: 'Nunito', sans-serif; font-size: 0.88rem; font-weight: 700;
+      border-radius: var(--r-lg); border: 1.5px solid var(--border);
+      cursor: pointer; transition: all 0.2s;
+    }
+    .btn-save-ghost:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* Therapy nudge */
+    .therapy-nudge {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 22px;
+      display: flex; align-items: flex-start; gap: 16px;
+    }
+    .tn-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: var(--blue-soft); color: var(--blue);
+      display: grid; place-items: center; font-size: 1.1rem; flex-shrink: 0;
+    }
+    .tn-title {
+      font-family: 'Nunito', sans-serif; font-size: 0.97rem;
+      font-weight: 800; margin-bottom: 5px; letter-spacing: -0.01em;
+    }
+    .tn-desc { font-size: 0.86rem; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
+    .btn-therapy {
+      display: inline-flex; align-items: center; gap: 7px;
+      height: 40px; padding: 0 18px;
+      background: var(--blue); color: white;
+      font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800;
+      border-radius: var(--r); border: none; cursor: pointer;
+      box-shadow: 0 4px 14px rgba(0,100,250,0.28);
+      transition: all 0.2s; text-decoration: none;
+    }
+    .btn-therapy:hover { background: var(--blue-dark); transform: translateY(-1px); }
+
+    /* Restart */
+    .restart-row {
+      text-align: center; margin-top: 18px;
+    }
+    .btn-restart {
+      font-size: 0.84rem; font-weight: 700; color: var(--muted-lt);
+      background: none; border: none; cursor: pointer;
+      text-decoration: underline; text-underline-offset: 3px;
+      transition: color 0.15s;
+    }
+    .btn-restart:hover { color: var(--muted); }
+
+    /* Print styles */
+    @media print {
+      .topbar, .intro, .progress-strip, .q-footer,
+      .save-actions, .therapy-nudge, .restart-row, .result-header { display: none !important; }
+      .page { padding: 0; }
+      .builder-card { box-shadow: none; border: none; }
+      .result-wrap { padding: 0; }
+      .sos-card { box-shadow: none; }
+    }
+
+    @media (max-width: 560px) {
+      .q-body { padding: 22px 18px 0; }
+      .q-footer { padding: 14px 18px 20px; }
+      .result-wrap { padding: 20px; }
+      .therapy-nudge { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/panic-sos-card" class="logo">
+      <div class="logo-mark">🆘</div>
+      <div class="logo-name">Panic SOS Card</div>
+    </a>
+    <div class="topbar-tag">Free tool</div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="intro">
+    <div class="intro-badge">Personalized crisis plan</div>
+    <h1>Your <span>Panic Attack</span> SOS Card</h1>
+    <p>Answer 8 quick questions about how panic attacks feel for you. We will build a personalized step-by-step card you can save on your phone and use next time panic hits.</p>
+  </div>
+
+  <div class="builder-card" id="builderCard">
+
+    <!-- Progress -->
+    <div class="progress-strip">
+      <div class="ps-meta">
+        <span>Question <strong id="curQ">1</strong> of 9</span>
+        <span><strong id="curPct">0</strong>% complete</span>
+      </div>
+      <div class="ps-bar"><div class="ps-fill" id="psFill"></div></div>
+    </div>
+
+    <!-- Name screen -->
+    <div class="q-body" id="nameScreen">
+      <div class="q-chip">
+        <div class="q-chip-n">✦</div>
+        Let's start
+      </div>
+      <div class="q-text">What is your first name?</div>
+      <div class="q-subtext">Your card will be made specifically for you, with your name on it.</div>
+      <div style="margin: 8px 0 24px;">
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Your first name..."
+          autocomplete="given-name"
+          style="
+            width: 100%; height: 54px; padding: 0 18px;
+            border-radius: 12px; border: 2px solid var(--border);
+            background: var(--bg); font-family: 'Nunito', sans-serif;
+            font-size: 1.05rem; font-weight: 700; color: var(--text);
+            outline: none; transition: border-color 0.15s;
+          "
+        />
+      </div>
+      <div class="q-footer" style="padding: 0 0 24px;">
+        <span class="q-hint">Press Enter or click Next to continue.</span>
+        <div class="q-btns">
+          <button class="btn-next show" id="nameNextBtn">Next →</button>
+        </div>
+      </div>
+    </div>
+    <!-- Question -->
+    <div class="q-body" id="qBody" style="display:none;">
+      <div class="q-chip">
+        <div class="q-chip-n" id="qChipN">1</div>
+        Question
+      </div>
+      <div class="q-text" id="qText"></div>
+      <div class="q-subtext" id="qSubtext"></div>
+      <div id="multiNote" class="multi-note" style="display:none">Select all that apply</div>
+      <div class="options-list" id="optionsList"></div>
+      <div class="q-footer">
+        <span class="q-hint" id="qHint">Select an answer to continue.</span>
+        <div class="q-btns">
+          <button class="btn-ctrl" id="backBtn" disabled>← Back</button>
+          <button class="btn-ctrl" id="restartBtn">Restart</button>
+          <button class="btn-next" id="nextBtn">Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div class="result-wrap" id="resultWrap">
+      <div class="result-header">
+        <div class="rh-badge">Your personalized SOS card is ready</div>
+        <h2 id="resultHeaderTitle">Your Panic Attack SOS Card</h2>
+        <p>Based on your answers, here are the exact steps that work best for how panic attacks feel for you. Save this card on your phone.</p>
+      </div>
+
+      <div class="sos-card" id="sosCard">
+        <div class="sos-top">
+          <div>
+            <div class="sos-title" id="sosTitle">My Panic Attack SOS Card</div>
+            <div class="sos-subtitle" id="sosSubtitle">Personalized for your symptoms</div>
+          </div>
+          <div class="sos-icon">🆘</div>
+        </div>
+
+        <div class="sos-reminder" id="sosReminder">
+          Remember: this feeling is temporary. Your body is safe. Panic always passes.
+        </div>
+
+        <div class="sos-steps" id="sosSteps"></div>
+
+        <div class="sos-footer">
+          <div class="sos-footer-note">Built for your symptoms. Keep this somewhere easy to find.</div>
+          <div class="sos-brand">myanxietytest.com</div>
+        </div>
+      </div>
+
+      <div class="save-actions">
+        <button class="btn-save" id="downloadBtn" onclick="downloadCard()">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1v9M4 7l3.5 3.5L11 7M2 13h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span id="downloadBtnText">Download as Image</span>
+        </button>
+        <button class="btn-save-ghost" onclick="copyCard()">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="4" y="4" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M10 4V3a1 1 0 00-1-1H3a1 1 0 00-1 1v6a1 1 0 001 1h1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <span id="copyBtnText">Copy text</span>
+        </button>
+      </div>
+
+      <div class="therapy-nudge">
+        <div class="tn-icon">💬</div>
+        <div>
+          <div class="tn-title">This card helps in the moment. Therapy changes the pattern long term.</div>
+          <div class="tn-desc">SOS cards are powerful for getting through panic. But if attacks are happening regularly, a licensed therapist can help you reduce how often they happen and how intense they feel. Get 20% off your first month.</div>
+          <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=defaultPanicSOScard" class="btn-therapy" id="therapyBtn">
+            Speak With a Therapist — 20% Off
+          </a>
+        </div>
+      </div>
+
+      <div class="restart-row">
+        <button class="btn-restart" id="restartBtnResult">Create a new card</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // ── QUESTIONS ──
+  const questions = [
+    {
+      text: "Where do you feel panic most in your body?",
+      subtext: "This helps us put the right grounding technique first on your card.",
+      type: "single",
+      options: [
+        { label: "Chest tightness or racing heart", emoji: "💓", value: "chest" },
+        { label: "Dizziness or feeling faint", emoji: "😵", value: "dizzy" },
+        { label: "Shortness of breath", emoji: "🫁", value: "breath" },
+        { label: "Shaking or trembling all over", emoji: "😰", value: "shaking" },
+        { label: "Nausea or stomach knots", emoji: "🤢", value: "nausea" },
+      ]
+    },
+    {
+      text: "What thought usually hits first when panic starts?",
+      subtext: "Knowing your first thought helps us write the right reminder for your card.",
+      type: "single",
+      options: [
+        { label: "Something is seriously wrong with me physically", emoji: "😱", value: "physical" },
+        { label: "I am going to lose control", emoji: "🌀", value: "control" },
+        { label: "I need to get out of here right now", emoji: "🚪", value: "escape" },
+        { label: "Everyone can see something is wrong", emoji: "👁️", value: "social" },
+        { label: "I am going crazy", emoji: "🧠", value: "crazy" },
+      ]
+    },
+    {
+      text: "How long do your panic attacks usually last?",
+      subtext: "This helps us set realistic expectations on your card so you know it will pass.",
+      type: "single",
+      options: [
+        { label: "Under 5 minutes", emoji: "⚡", value: "short" },
+        { label: "5 to 15 minutes", emoji: "⏱️", value: "medium" },
+        { label: "15 to 30 minutes", emoji: "⏳", value: "long" },
+        { label: "Over 30 minutes", emoji: "😓", value: "very_long" },
+        { label: "I am not sure", emoji: "🤔", value: "unsure" },
+      ]
+    },
+    {
+      text: "What makes things worse when panic hits?",
+      subtext: "We will add a step to your card specifically to avoid or counter this.",
+      type: "single",
+      options: [
+        { label: "Focusing on the physical symptoms", emoji: "🔍", value: "focus_symptoms" },
+        { label: "Being in a crowded or public place", emoji: "👥", value: "crowds" },
+        { label: "Trying to fight or push it away", emoji: "🥊", value: "fight" },
+        { label: "Googling symptoms during the attack", emoji: "📱", value: "googling" },
+        { label: "Being alone with no distraction", emoji: "🏠", value: "alone" },
+      ]
+    },
+    {
+      text: "Has anything ever helped even a little during panic?",
+      subtext: "We will put the things that work for you at the top of your card.",
+      type: "multi",
+      options: [
+        { label: "Slow deep breathing", emoji: "🌬️", value: "breathing" },
+        { label: "Counting or focusing on objects around me", emoji: "🔢", value: "grounding" },
+        { label: "Splashing cold water on my face", emoji: "💧", value: "cold_water" },
+        { label: "Walking or moving my body", emoji: "🚶", value: "movement" },
+        { label: "Talking to someone", emoji: "📞", value: "talking" },
+        { label: "Reminding myself it will pass", emoji: "💭", value: "reminder" },
+        { label: "Nothing has helped yet", emoji: "😞", value: "nothing" },
+      ]
+    },
+    {
+      text: "Where do you most often have panic attacks?",
+      subtext: "Your card will include steps you can actually do in that environment.",
+      type: "single",
+      options: [
+        { label: "At home alone", emoji: "🏠", value: "home" },
+        { label: "At work or school", emoji: "🏢", value: "work" },
+        { label: "In public places or crowds", emoji: "🏙️", value: "public" },
+        { label: "In the car or on transport", emoji: "🚗", value: "transport" },
+        { label: "Everywhere equally", emoji: "🌍", value: "everywhere" },
+      ]
+    },
+    {
+      text: "How do you feel immediately after a panic attack ends?",
+      subtext: "Recovery steps matter too. We will add a post-panic routine to your card.",
+      type: "single",
+      options: [
+        { label: "Completely exhausted and drained", emoji: "😴", value: "exhausted" },
+        { label: "Embarrassed or ashamed", emoji: "😔", value: "ashamed" },
+        { label: "Relieved but still shaky", emoji: "😮‍💨", value: "shaky" },
+        { label: "Worried about the next one", emoji: "😟", value: "worried_next" },
+        { label: "Mostly back to normal quickly", emoji: "✅", value: "quick_recovery" },
+      ]
+    },
+    {
+      text: "What is your main goal for panic attacks right now?",
+      subtext: "This helps us write the right motivational reminder at the top of your card.",
+      type: "single",
+      options: [
+        { label: "Get through the next one without it getting worse", emoji: "🛡️", value: "survive" },
+        { label: "Reduce how scary they feel", emoji: "😌", value: "less_scary" },
+        { label: "Have them less often", emoji: "📉", value: "less_frequent" },
+        { label: "Stop letting them control where I go", emoji: "🗺️", value: "freedom" },
+        { label: "Understand what is causing them", emoji: "🔎", value: "understand" },
+      ]
+    }
+  ];
+
+  // ── SOURCE PARAM HANDLING ──
+  const urlParams = new URLSearchParams(window.location.search);
+  const trafficSource = urlParams.get('source');
+
+  if (trafficSource) {
+    const therapyBtn = document.getElementById('therapyBtn');
+    try {
+      const url = new URL(therapyBtn.href);
+      url.searchParams.set('source', trafficSource);
+      therapyBtn.href = url.toString();
+    } catch(e) {}
+  }
+
+  // ── STATE ──
+  let currentQ = 0;
+  let answers = new Array(questions.length).fill(null);
+  let userName = '';
+  const $ = id => document.getElementById(id);
+
+  // ── NAME SCREEN ──
+  const nameInput = document.getElementById('nameInput');
+
+  nameInput.addEventListener('focus', () => { nameInput.style.borderColor = 'var(--blue)'; });
+  nameInput.addEventListener('blur',  () => { nameInput.style.borderColor = 'var(--border)'; });
+  nameInput.addEventListener('keydown', e => { if (e.key === 'Enter') startQuiz(); });
+
+  document.getElementById('nameNextBtn').addEventListener('click', startQuiz);
+
+  function startQuiz() {
+    const raw = nameInput.value.trim();
+    userName = raw.length > 0 ? raw.charAt(0).toUpperCase() + raw.slice(1) : '';
+    $('nameScreen').style.display = 'none';
+    $('qBody').style.display = 'block';
+    renderQuestion();
+    updateProgress();
+  }
+
+  // ── PROGRESS ──
+  function updateProgress() {
+    const n = currentQ + 1;
+    $('curQ').textContent = n;
+    $('qChipN').textContent = n;
+    const pct = Math.round((currentQ / questions.length) * 100);
+    $('curPct').textContent = pct;
+    $('psFill').style.width = pct + '%';
+    $('backBtn').disabled = currentQ === 0;
+    const isLast = currentQ === questions.length - 1;
+    $('qHint').textContent = questions[currentQ].type === 'multi'
+      ? 'Select all that apply, then click Next.'
+      : isLast ? 'Select an answer to build your card.' : 'Select an answer to continue.';
+  }
+
+  $('restartBtn').addEventListener('click', restart);
+  $('restartBtnResult').addEventListener('click', restart);
+
+  // ── RENDER QUESTION ──
+  function renderQuestion() {
+    const q = questions[currentQ];
+    $('qText').textContent = q.text;
+    $('qSubtext').textContent = q.subtext;
+
+    const multiNote = $('multiNote');
+    const nextBtn = $('nextBtn');
+    multiNote.style.display = q.type === 'multi' ? 'flex' : 'none';
+
+    const list = $('optionsList');
+    list.innerHTML = q.options.map(opt => {
+      const isMulti = q.type === 'multi';
+      const savedAnswer = answers[currentQ];
+      let isSelected = false;
+      if (isMulti && Array.isArray(savedAnswer)) {
+        isSelected = savedAnswer.includes(opt.value);
+      } else if (!isMulti) {
+        isSelected = savedAnswer === opt.value;
+      }
+      return `<button class="opt-btn${isMulti ? ' multi' : ''}${isSelected ? ' selected' : ''}" data-value="${opt.value}">
+        <div class="opt-circle"><div class="opt-circle-dot"></div></div>
+        <div class="opt-label">${opt.label}</div>
+        <div class="opt-emoji">${opt.emoji}</div>
+      </button>`;
+    }).join('');
+
+    // Show/hide next button for multi
+    if (q.type === 'multi') {
+      const hasSelection = Array.isArray(answers[currentQ]) && answers[currentQ].length > 0;
+      nextBtn.className = hasSelection ? 'btn-next show' : 'btn-next';
+    } else {
+      nextBtn.className = 'btn-next';
+    }
+
+    list.querySelectorAll('.opt-btn').forEach(btn => {
+      btn.addEventListener('click', () => handleAnswer(btn.dataset.value));
+    });
+  }
+
+  function handleAnswer(value) {
+    const q = questions[currentQ];
+    if (q.type === 'multi') {
+      if (!Array.isArray(answers[currentQ])) answers[currentQ] = [];
+      const idx = answers[currentQ].indexOf(value);
+      if (idx > -1) answers[currentQ].splice(idx, 1);
+      else answers[currentQ].push(value);
+      renderQuestion();
+    } else {
+      answers[currentQ] = value;
+      renderQuestion();
+      setTimeout(() => {
+        if (currentQ < questions.length - 1) { currentQ++; renderQuestion(); updateProgress(); }
+        else buildCard();
+      }, 200);
+    }
+  }
+
+  $('nextBtn').addEventListener('click', () => {
+    if (currentQ < questions.length - 1) { currentQ++; renderQuestion(); updateProgress(); }
+    else buildCard();
+  });
+
+  $('backBtn').addEventListener('click', () => {
+    if (currentQ > 0) { currentQ--; renderQuestion(); updateProgress(); }
+  });
+
+  // ── BUILD CARD ──
+  function buildCard() {
+    // Set progress to 100%
+    document.getElementById('psFill').style.width = '100%';
+    document.getElementById('curPct').textContent = '100';
+    document.getElementById('curQ').textContent = '9';
+    const a = answers;
+    const name = userName || 'You';
+
+    // Body symptom answer
+    const bodySymptom = a[0];
+    // First thought
+    const firstThought = a[1];
+    // Duration
+    const duration = a[2];
+    // Makes worse
+    const worseTrigger = a[3];
+    // Helps (multi)
+    const helpers = Array.isArray(a[4]) ? a[4] : [];
+    // Location
+    const location = a[5];
+    // After feeling
+    const afterFeeling = a[6];
+    // Goal
+    const goal = a[7];
+
+    // ── Build reminder text based on first thought ──
+    const reminders = {
+      physical:  `${name}, panic cannot hurt you. Your body is doing exactly what it is designed to do under stress. This is uncomfortable, not dangerous.`,
+      control:   `${name}, you cannot lose control from panic. The feeling of losing control IS the panic, not the reality. You are safe.`,
+      escape:    `${name}, staying where you are is the safest thing you can do right now. Moving away teaches your brain there was danger. There was not.`,
+      social:    `${name}, panic is invisible to most people around you. You look far calmer than you feel right now.`,
+      crazy:     `${name}, panic is a physical stress response, not a sign of mental illness. Millions of people experience exactly this.`
+    };
+    $('sosReminder').textContent = reminders[firstThought] || reminders.physical;
+
+    // ── Title and subtitle ──
+    $('sosTitle').textContent = userName ? `${userName}'s Panic Attack SOS Card` : 'My Panic Attack SOS Card';
+    $('sosSubtitle').textContent = userName ? `Built specifically for ${userName}` : 'Personalized for your symptoms';
+    $('resultHeaderTitle').textContent = userName ? `${userName}'s Panic Attack SOS Card is ready` : 'Your Panic Attack SOS Card is ready';
+    const durationTexts = {
+      short: "under 5 minutes",
+      medium: "5 to 15 minutes",
+      long: "15 to 30 minutes",
+      very_long: "20 to 45 minutes",
+      unsure: "a limited amount of time"
+    };
+    const durationText = durationTexts[duration] || "a limited amount of time";
+
+    // ── Subtitle ──
+    $('sosSubtitle').textContent = `Built for your symptoms · Keep this with you`;
+
+    // ── Build steps ──
+    const steps = [];
+
+    // Step 1: Acknowledge (always)
+    steps.push({
+      title: "Say this out loud or in your head",
+      desc: `"This is a panic attack. It is not dangerous. It will pass in ${durationText}. I have survived this before."`
+    });
+
+    // Step 2: Body-specific grounding
+    const bodySteps = {
+      chest: { title: "Put your hand on your chest", desc: "Feel your heartbeat. Count 4 beats. Your heart is working correctly, just faster. Say: my heart is strong." },
+      dizzy: { title: "Sit or lean against something solid", desc: "Press your feet flat into the floor. Feel the ground. You are not falling. Look at one fixed point and keep your eyes on it." },
+      breath: { title: "Reset your breathing right now", desc: "Breathe out fully first, emptying your lungs completely. Then breathe in for 4 counts, out for 6 counts. Do not breathe into a bag." },
+      shaking: { title: "Tense and release your muscles", desc: "Squeeze your hands into fists as tight as you can for 5 seconds. Release completely. Repeat 3 times. This burns off the adrenaline." },
+      nausea: { title: "Slow everything down", desc: "Sit upright, not hunched. Take slow sips of cold water if available. Focus on something visual that is completely still." }
+    };
+    steps.push(bodySteps[bodySymptom] || bodySteps.breath);
+
+    // Step 3: Breathing or grounding based on what helped
+    if (helpers.includes('grounding') || worseTrigger === 'focus_symptoms') {
+      steps.push({
+        title: "5-4-3-2-1 Grounding",
+        desc: "Name 5 things you can see. 4 you can touch. 3 you can hear. 2 you can smell. 1 you can taste. Say them out loud if possible."
+      });
+    } else {
+      steps.push({
+        title: "Box breathing",
+        desc: "Breathe in for 4 counts. Hold for 4. Out for 4. Hold for 4. Repeat 4 times. Keep your focus only on counting."
+      });
+    }
+
+    // Step 4: Location-specific action
+    const locationSteps = {
+      home: { title: "Move to your safe spot", desc: "Go to the room or corner you feel calmest in. Sit on the floor if needed. Hold something cold or textured in your hands." },
+      work: { title: "Step away for 2 minutes", desc: "Excuse yourself to the bathroom or a quiet space. Splash cold water on your wrists. No one needs to know what is happening." },
+      public: { title: "Find a wall or seat", desc: "Move to the edge of the space and put your back against something solid. You do not need to leave. Just get off the open floor." },
+      transport: { title: "Ground yourself in the seat", desc: "Press your back into the seat. Feel the pressure. Put both feet flat on the floor. Focus on the texture of the seat under your hands." },
+      everywhere: { title: "Create a boundary right now", desc: "Find something to hold, a bag, a rail, a chair. Press your feet into the floor. You have a physical presence and you are stable." }
+    };
+    steps.push(locationSteps[location] || locationSteps.everywhere);
+
+    // Step 5: Cold water if it helped, or anti-fighting step if fighting makes it worse
+    if (helpers.includes('cold_water')) {
+      steps.push({
+        title: "Cold water on your wrists and face",
+        desc: "This triggers the dive reflex and slows your heart rate within 30 seconds. Run cold water over the inside of both wrists for 20 seconds."
+      });
+    } else if (worseTrigger === 'fight') {
+      steps.push({
+        title: "Stop fighting. Allow it instead.",
+        desc: "Say: I allow this feeling to be here. Fighting panic adds fuel to it. Allowing it removes the fuel. It sounds wrong but it works."
+      });
+    } else if (helpers.includes('movement')) {
+      steps.push({
+        title: "Move your body slowly",
+        desc: "Walk slowly if you can. Shake your hands out gently. Roll your shoulders. Physical movement burns off adrenaline and grounds your nervous system."
+      });
+    } else {
+      steps.push({
+        title: "Ride the wave, do not run from it",
+        desc: "Panic peaks and then drops. Every minute that passes, the intensity is reducing. Your only job right now is to let time pass."
+      });
+    }
+
+    // Step 6: Recovery step based on after-feeling
+    const recoverySteps = {
+      exhausted:      { title: "Recovery: rest without guilt", desc: "Your body just went through something intense. Rest for 10 to 20 minutes. Drink water. This is not weakness. This is recovery." },
+      ashamed:        { title: "Recovery: be kind to yourself", desc: "You did not choose this and it is not your fault. Say: I got through that. That was hard and I handled it." },
+      shaky:          { title: "Recovery: gentle decompression", desc: "Drink something warm or cold. Sit quietly for 10 minutes. Let your nervous system downshift before you go back to whatever you were doing." },
+      worried_next:   { title: "Recovery: break the anticipation loop", desc: "Write down one normal thing you will do in the next hour. Focus only on that. Do not plan for the next attack. Deal with now." },
+      quick_recovery: { title: "Recovery: note what worked", desc: "You recovered quickly. Take 2 minutes to write down what helped most during this attack so you remember it next time." }
+    };
+    steps.push(recoverySteps[afterFeeling] || recoverySteps.shaky);
+
+    // ── Render steps ──
+    $('sosSteps').innerHTML = steps.map((step, i) => `
+      <div class="sos-step">
+        <div class="sos-step-n">${i + 1}</div>
+        <div class="sos-step-content">
+          <div class="sos-step-title">${step.title}</div>
+          <div class="sos-step-desc">${step.desc}</div>
+        </div>
+      </div>`).join('');
+
+    // ── Show result ──
+    $('qBody').style.display = 'none';
+    $('resultWrap').classList.add('show');
+    $('builderCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Therapy link with source context
+    const baseSource = trafficSource || 'defaultPanicSOScard';
+    $('therapyBtn').href = `https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=${baseSource}`;
+  }
+
+  // ── DOWNLOAD AS PNG ──
+  function downloadCard() {
+    const card = document.getElementById('sosCard');
+    const btn  = document.getElementById('downloadBtn');
+    const btnText = document.getElementById('downloadBtnText');
+
+    btnText.textContent = 'Generating image...';
+    btn.disabled = true;
+
+    html2canvas(card, {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: null,
+      logging: false,
+      allowTaint: true
+    }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'my-panic-sos-card.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+      btnText.textContent = 'Downloaded!';
+      btn.disabled = false;
+      setTimeout(() => { btnText.textContent = 'Download as Image'; }, 2500);
+    }).catch(() => {
+      btnText.textContent = 'Download as Image';
+      btn.disabled = false;
+    });
+  }
+
+  // ── COPY CARD TEXT ──
+  function copyCard() {
+    const steps = document.querySelectorAll('.sos-step');
+    const reminder = $('sosReminder').textContent;
+    let text = `MY PANIC ATTACK SOS CARD\n\nRemember: ${reminder}\n\n`;
+    steps.forEach((step, i) => {
+      const title = step.querySelector('.sos-step-title').textContent;
+      const desc  = step.querySelector('.sos-step-desc').textContent;
+      text += `${i + 1}. ${title}\n${desc}\n\n`;
+    });
+    text += `Built at myanxietytest.com`;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.querySelector('.btn-save-ghost');
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="4" y="4" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M10 4V3a1 1 0 00-1-1H3a1 1 0 00-1 1v6a1 1 0 001 1h1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> Copy text`; }, 2000);
+    });
+  }
+
+  // ── RESTART ──
+  function restart() {
+    answers = new Array(questions.length).fill(null);
+    currentQ = 0;
+    userName = '';
+    nameInput.value = '';
+    $('resultWrap').classList.remove('show');
+    $('qBody').style.display = 'none';
+    $('nameScreen').style.display = 'block';
+    $('psFill').style.width = '0%';
+    $('curPct').textContent = '0';
+    $('curQ').textContent = '1';
+    $('builderCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  $('restartBtn').addEventListener('click', restart);
+  $('restartBtnResult').addEventListener('click', restart);
+
+  // Name input is shown by default, no init needed
+</script>
+
+</body>
+</html>
