@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Is It Anxiety or Depression? Free Self-Assessment</title>
+  <meta name="description" content="Not sure if you have anxiety, depression, or both? Take this free self-assessment and get a clear picture of which patterns are present and what they may mean for you." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="is it anxiety or depression, anxiety or depression test, anxiety vs depression quiz, do I have anxiety or depression, anxiety depression self assessment" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-or-depression/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Is It Anxiety or Depression? Free Self-Assessment" />
+  <meta property="og:description" content="Anxiety and depression share many symptoms. This free assessment helps you understand which patterns are present and what they may mean." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-or-depression/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between anxiety and depression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anxiety is primarily driven by fear and worry, creating a hyperactive state of alertness. Depression is primarily driven by low mood, loss of motivation and a sense of emptiness or hopelessness. They overlap significantly and frequently occur together, but they have different core experiences and respond to different aspects of treatment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you have both anxiety and depression at the same time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Anxiety and depression co-occur in a large proportion of people who experience either condition. Chronic anxiety can lead to depression over time, and depression frequently involves significant anxiety. Having both does not mean your situation is more serious than either alone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if I have anxiety or depression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A self-assessment like this one can help you understand which patterns are present. However, only a qualified professional can provide a clinical diagnosis. If you are experiencing significant distress, speaking with a doctor or therapist is the most reliable way to understand what is happening and what would help most."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Is It Anxiety or Depression Assessment",
+    "url": "https://myanxietytest.com/anxiety-or-depression/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Any",
+    "description": "A free self-assessment to help identify whether anxiety, depression or both may be present.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "MyAnxietyTest", "url": "https://myanxietytest.com/" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:       #0064FA;
+      --blue-dark:  #0050CC;
+      --blue-mid:   #1a74fb;
+      --blue-soft:  #E8F1FF;
+      --blue-bdr:   #C0D8FF;
+      --violet:     #7C3AED;
+      --violet-soft:#F5F3FF;
+      --bg:         #F2F5FA;
+      --surface:    #FFFFFF;
+      --border:     #DDE4EF;
+      --text:       #0D1B2A;
+      --muted:      #5C6F85;
+      --muted-lt:   #97A8BA;
+      --green:      #15803D;
+      --green-soft: #F0FDF4;
+      --amber:      #B45309;
+      --amber-soft: #FFFBEB;
+      --red:        #B91C1C;
+      --red-soft:   #FEF2F2;
+      --shadow-sm:  0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md:  0 4px 20px rgba(0,100,250,0.10);
+      --shadow-lg:  0 12px 48px rgba(0,100,250,0.12);
+      --r:          12px;
+      --r-lg:       18px;
+      --r-xl:       24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { text-decoration: none; color: inherit; }
+
+    /* TOPBAR */
+    .topbar { background: var(--blue); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,100,250,0.25); }
+    .topbar-inner { max-width: 960px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; color: white; letter-spacing: -0.01em; }
+    .topbar-right { display: flex; align-items: center; gap: 14px; }
+    .topbar-link { font-size: 0.81rem; font-weight: 600; color: rgba(255,255,255,0.7); transition: color 0.15s; }
+    .topbar-link:hover { color: white; }
+    .topbar-tag { font-size: 0.76rem; font-weight: 700; color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(160deg, var(--blue-dark) 0%, var(--blue) 55%, #3b5fc0 100%); padding: clamp(44px,7vw,84px) clamp(16px,4vw,40px) clamp(32px,5vw,56px); text-align: center; position: relative; overflow: hidden; }
+    .hero::after { content: ''; position: absolute; right: -60px; top: -60px; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 65%); pointer-events: none; }
+    .hero-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 18px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(2rem,5vw,3.6rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 14px; }
+    .hero h1 span { color: #93c5fd; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 28px; line-height: 1.7; }
+    .btn-hero { display: inline-flex; align-items: center; gap: 9px; height: 52px; padding: 0 30px; background: white; color: var(--blue); font-family: 'Nunito', sans-serif; font-size: 0.97rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 8px 28px rgba(0,0,0,0.18); transition: all 0.2s; text-decoration: none; }
+    .btn-hero:hover { background: #f0f6ff; transform: translateY(-2px); }
+    .hero-trust { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+    .ht-item { display: flex; align-items: center; gap: 6px; font-size: 0.79rem; color: rgba(255,255,255,0.5); font-weight: 600; }
+    .ht-dot { width: 17px; height: 17px; border-radius: 50%; background: rgba(255,255,255,0.12); color: #86efac; display: grid; place-items: center; font-size: 0.52rem; font-weight: 700; flex-shrink: 0; }
+
+    /* PAGE */
+    .page { max-width: 760px; margin: 0 auto; padding: 28px clamp(16px,4vw,40px) 60px; }
+
+    /* QUIZ */
+    .quiz-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .quiz-strip { background: var(--blue); padding: 16px 24px; }
+    .qs-meta { display: flex; justify-content: space-between; font-size: 0.79rem; font-weight: 700; color: rgba(255,255,255,0.65); margin-bottom: 8px; }
+    .qs-meta strong { color: white; }
+    .qs-bar { height: 6px; background: rgba(255,255,255,0.22); border-radius: 999px; overflow: hidden; }
+    .qs-fill { height: 100%; background: white; border-radius: 999px; transition: width 0.3s ease; width: 0%; }
+    .quiz-body { padding: 32px 28px 0; }
+    .q-chip { display: inline-flex; align-items: center; gap: 7px; padding: 4px 12px 4px 4px; border-radius: 999px; background: var(--blue-soft); border: 1px solid var(--blue-bdr); font-size: 0.74rem; font-weight: 800; color: var(--blue); margin-bottom: 16px; }
+    .q-chip-n { width: 22px; height: 22px; background: var(--blue); color: white; border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; font-weight: 900; }
+    .q-text { font-family: 'Nunito', sans-serif; font-size: clamp(1.2rem,2.4vw,1.6rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; margin-bottom: 26px; }
+    .answers-list { display: flex; flex-direction: column; gap: 10px; }
+    .ans-btn { display: flex; align-items: center; gap: 16px; width: 100%; padding: 14px 18px; border-radius: var(--r); border: 2px solid var(--border); background: var(--bg); cursor: pointer; font-family: 'Nunito Sans', sans-serif; text-align: left; transition: all 0.16s; }
+    .ans-circle { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--border); background: white; flex-shrink: 0; display: grid; place-items: center; transition: all 0.16s; }
+    .ans-circle-dot { width: 10px; height: 10px; border-radius: 50%; background: transparent; transition: all 0.16s; }
+    .ans-text { font-size: 0.93rem; font-weight: 700; color: var(--muted); flex: 1; transition: color 0.16s; }
+    .ans-btn:hover { border-color: var(--blue); background: var(--blue-soft); transform: translateX(4px); }
+    .ans-btn:hover .ans-circle { border-color: var(--blue); }
+    .ans-btn:hover .ans-text { color: var(--blue); }
+    .ans-btn.selected { border-color: var(--blue); background: var(--blue-soft); box-shadow: 0 4px 16px rgba(0,100,250,0.12); }
+    .ans-btn.selected .ans-circle { border-color: var(--blue); background: var(--blue); }
+    .ans-btn.selected .ans-circle-dot { background: white; }
+    .ans-btn.selected .ans-text { color: var(--blue); font-weight: 800; }
+    .quiz-footer { display: flex; justify-content: space-between; align-items: center; padding: 18px 28px 24px; margin-top: 8px; }
+    .q-hint { font-size: 0.8rem; color: var(--muted-lt); font-weight: 600; }
+    .ctrl-row { display: flex; gap: 8px; }
+    .btn-ctrl { height: 38px; padding: 0 16px; border-radius: var(--r); border: 1.5px solid var(--border); background: white; font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--muted); cursor: pointer; transition: all 0.15s; }
+    .btn-ctrl:hover:not(:disabled) { border-color: var(--blue); color: var(--blue); }
+    .btn-ctrl:disabled { opacity: 0.28; cursor: not-allowed; }
+
+    /* ── RESULT — REPORT STYLE ── */
+    .result-card { display: none; }
+
+    /* Report header — full bleed colored band */
+    .report-band {
+      border-radius: var(--r-xl) var(--r-xl) 0 0;
+      padding: 32px 32px 28px;
+      position: relative; overflow: hidden;
+    }
+    .report-band.anxiety-only  { background: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%); }
+    .report-band.depression-only { background: linear-gradient(135deg, #6D28D9 0%, #7C3AED 100%); }
+    .report-band.both          { background: linear-gradient(135deg, #1D4ED8 0%, #6D28D9 100%); }
+    .report-band.low           { background: linear-gradient(135deg, #166534 0%, #15803D 100%); }
+    .report-band::after { content: ''; position: absolute; right: -50px; bottom: -50px; width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,0.07); pointer-events: none; }
+
+    .report-eyebrow { font-size: 0.69rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 10px; }
+    .report-headline { font-family: 'Nunito', sans-serif; font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 10px; position: relative; z-index: 1; }
+    .report-sub { font-size: 0.91rem; color: rgba(255,255,255,0.68); max-width: 520px; line-height: 1.65; position: relative; z-index: 1; }
+
+    /* Score pills row */
+    .score-pills { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; position: relative; z-index: 1; }
+    .score-pill {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--r-lg); padding: 10px 16px;
+    }
+    .sp-num { font-family: 'Nunito', sans-serif; font-size: 1.6rem; font-weight: 900; color: white; letter-spacing: -0.04em; line-height: 1; }
+    .sp-label { font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.6); line-height: 1.3; }
+
+    /* Report body — editorial sections */
+    .report-body {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 var(--r-xl) var(--r-xl);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    /* Section */
+    .report-section {
+      padding: 28px 32px;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .report-section:last-of-type { border-bottom: none; }
+
+    .rs-num {
+      font-family: 'Nunito', sans-serif;
+      font-size: 2.2rem; font-weight: 900;
+      color: var(--blue-bdr); letter-spacing: -0.05em;
+      line-height: 1; margin-top: 2px;
+    }
+
+    .rs-label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 5px; }
+    .rs-title { font-family: 'Nunito', sans-serif; font-size: 1.05rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 8px; }
+    .rs-text { font-size: 0.89rem; color: var(--muted); line-height: 1.7; }
+
+    /* Action list */
+    .rs-list { list-style: none; display: grid; gap: 9px; margin-top: 10px; }
+    .rs-list li { display: flex; gap: 10px; font-size: 0.88rem; color: var(--muted); line-height: 1.55; align-items: flex-start; }
+    .rs-list li::before { content: '›'; color: var(--blue); font-weight: 900; flex-shrink: 0; font-size: 1rem; line-height: 1.4; }
+
+    /* Step grid */
+    .step-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 12px; }
+    .step-box { background: var(--bg); border-radius: var(--r); border: 1px solid var(--border); padding: 14px; }
+    .step-box-n { font-family: 'Nunito', sans-serif; font-size: 1.4rem; font-weight: 900; color: var(--blue-bdr); letter-spacing: -0.04em; line-height: 1; margin-bottom: 7px; }
+    .step-box strong { display: block; font-size: 0.86rem; font-weight: 800; margin-bottom: 4px; color: var(--text); }
+    .step-box p { font-size: 0.79rem; color: var(--muted); line-height: 1.5; }
+
+    /* Therapy section — full bleed blue */
+    .therapy-section {
+      background: var(--blue);
+      padding: 28px 32px;
+      position: relative; overflow: hidden;
+    }
+    .therapy-section::before { content: ''; position: absolute; left: -40px; bottom: -40px; width: 200px; height: 200px; border-radius: 50%; background: rgba(255,255,255,0.06); pointer-events: none; }
+    .therapy-section.hidden { display: none; }
+    .ts-label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
+    .ts-title { font-family: 'Nunito', sans-serif; font-size: clamp(1.1rem,2.2vw,1.5rem); font-weight: 900; color: white; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 10px; position: relative; z-index: 1; }
+    .ts-text { font-size: 0.88rem; color: rgba(255,255,255,0.65); max-width: 520px; line-height: 1.65; margin-bottom: 18px; position: relative; z-index: 1; }
+    .ts-benefits { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; margin-bottom: 20px; position: relative; z-index: 1; }
+    .ts-ben { padding: 11px; border-radius: var(--r); background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.12); }
+    .ts-ben strong { display: block; font-size: 0.8rem; color: white; font-weight: 800; margin-bottom: 3px; }
+    .ts-ben span { font-size: 0.75rem; color: rgba(255,255,255,0.55); line-height: 1.4; }
+    .ts-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; z-index: 1; }
+    .btn-ts { display: inline-flex; align-items: center; gap: 7px; height: 46px; padding: 0 22px; background: white; color: var(--blue-dark); font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(0,0,0,0.2); transition: all 0.2s; text-decoration: none; }
+    .btn-ts:hover { background: #f0f6ff; transform: translateY(-1px); }
+    .btn-ts-ghost { height: 46px; padding: 0 18px; border: 1.5px solid rgba(255,255,255,0.22); background: transparent; color: rgba(255,255,255,0.75); font-family: 'Nunito', sans-serif; font-size: 0.87rem; font-weight: 700; border-radius: var(--r-lg); cursor: pointer; transition: all 0.2s; }
+    .btn-ts-ghost:hover { border-color: rgba(255,255,255,0.5); color: white; }
+    .ts-note { margin-top: 12px; font-size: 0.74rem; color: rgba(255,255,255,0.3); position: relative; z-index: 1; }
+
+    .report-disclaimer { padding: 14px 32px 18px; border-top: 1px solid var(--border); font-size: 0.76rem; color: var(--muted-lt); text-align: center; background: var(--surface); }
+
+    .footer-retake { display: none; justify-content: center; padding: 20px; }
+    .btn-retake-lo { height: 40px; padding: 0 18px; border: 1.5px solid var(--border); background: white; color: var(--muted); font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: var(--r); cursor: pointer; transition: all 0.2s; }
+    .btn-retake-lo:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* LOWER */
+    .lower { max-width: 760px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px) 60px; }
+    .content-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-sm); padding: 26px; margin-bottom: 12px; }
+    .content-card h2 { font-family: 'Nunito', sans-serif; font-size: clamp(1.2rem,2.2vw,1.55rem); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .content-card h3 { font-size: 0.95rem; font-weight: 800; margin: 14px 0 5px; display: flex; align-items: center; gap: 7px; }
+    .content-card h3::before { content: ''; display: inline-block; width: 3px; height: 13px; background: var(--blue); border-radius: 2px; }
+    .content-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 9px; line-height: 1.7; }
+    .content-card ul { list-style: none; color: var(--muted); font-size: 0.9rem; display: grid; gap: 7px; }
+    .content-card li { display: flex; gap: 8px; align-items: flex-start; }
+    .content-card li::before { content: '›'; color: var(--blue); font-weight: 900; flex-shrink: 0; }
+    .faq-list { display: grid; gap: 10px; }
+    .faq-it { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 16px 18px; }
+    .faq-it h3 { font-size: 0.92rem; margin: 0 0 6px; display: flex; align-items: center; gap: 8px; }
+    .faq-it h3::before { content: 'Q'; width: 20px; height: 20px; background: var(--blue); color: white; border-radius: 6px; display: grid; place-items: center; font-size: 0.64rem; font-weight: 900; flex-shrink: 0; }
+    .faq-it p { margin: 0; font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+
+    .footer { background: var(--blue-dark); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 760px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-weight: 900; font-size: 0.92rem; color: white; font-family: 'Nunito', sans-serif; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.38); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+    .footer-copy { max-width: 760px; margin: 0 auto; padding-top: 16px; font-size: 0.76rem; color: rgba(255,255,255,0.22); text-align: center; }
+
+    @media (max-width: 600px) {
+      .report-section { grid-template-columns: 1fr; gap: 6px; }
+      .rs-num { font-size: 1.4rem; }
+      .step-grid, .ts-benefits { grid-template-columns: 1fr; }
+      .score-pills { flex-direction: column; }
+      .report-band, .report-section, .therapy-section { padding-left: 20px; padding-right: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-right">
+      <a href="https://myanxietytest.com/" class="topbar-link">All tools</a>
+      <div class="topbar-tag">Free · No sign-up</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">✦ Free self-assessment</div>
+    <h1>Is it <span>anxiety,</span><br>depression, or both?</h1>
+    <p class="hero-desc">Anxiety and depression share many symptoms, which makes them easy to confuse. This assessment helps you understand which patterns are present and what they may mean for you.</p>
+    <a href="#quiz" class="btn-hero">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 4.5l4 2.5-4 2.5V4.5z" fill="currentColor"/></svg>
+      Start the Assessment
+    </a>
+    <div class="hero-trust">
+      <div class="ht-item"><div class="ht-dot">✓</div>20 questions</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>About 4 minutes</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Separate scores for each</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>100% anonymous</div>
+    </div>
+  </div>
+</section>
+
+<div class="page" id="quiz">
+  <div class="quiz-card" id="quizCard">
+    <div class="quiz-strip">
+      <div class="qs-meta">
+        <span>Question <strong id="curQ">1</strong> of 20</span>
+        <span><strong id="curPct">0</strong>% complete</span>
+      </div>
+      <div class="qs-bar"><div class="qs-fill" id="progressFill"></div></div>
+    </div>
+    <div class="quiz-body">
+      <div class="q-chip"><div class="q-chip-n" id="qChipN">1</div>Question</div>
+      <p class="q-text" id="qText"></p>
+      <div class="answers-list" id="answersList"></div>
+      <div class="quiz-footer">
+        <span class="q-hint" id="qHint">Select an answer to continue automatically.</span>
+        <div class="ctrl-row">
+          <button class="btn-ctrl" id="backBtn" disabled>← Back</button>
+          <button class="btn-ctrl" id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REPORT RESULT -->
+  <div class="result-card" id="resultCard">
+    <div class="report-band" id="reportBand">
+      <div class="report-eyebrow" id="reportEyebrow">Your personal assessment report</div>
+      <div class="report-headline" id="reportHeadline">Result</div>
+      <div class="report-sub" id="reportSub"></div>
+      <div class="score-pills" id="scorePills"></div>
+    </div>
+
+    <div class="report-body">
+
+      <div class="report-section" id="sec1">
+        <div class="rs-num">01</div>
+        <div>
+          <div class="rs-label">What this means for you</div>
+          <div class="rs-title" id="sec1Title"></div>
+          <div class="rs-text" id="sec1Text"></div>
+        </div>
+      </div>
+
+      <div class="report-section" id="sec2">
+        <div class="rs-num">02</div>
+        <div>
+          <div class="rs-label">What would help most right now</div>
+          <div class="rs-title" id="sec2Title"></div>
+          <div class="rs-text" id="sec2Intro"></div>
+          <ul class="rs-list" id="sec2List"></ul>
+        </div>
+      </div>
+
+      <div class="report-section" id="sec3">
+        <div class="rs-num">03</div>
+        <div>
+          <div class="rs-label">Your path forward</div>
+          <div class="rs-title" id="sec3Title"></div>
+          <div class="rs-text" id="sec3Intro"></div>
+          <div class="step-grid" id="sec3Steps"></div>
+        </div>
+      </div>
+
+      <div class="report-section" id="sec4">
+        <div class="rs-num">04</div>
+        <div>
+          <div class="rs-label">Why this pattern keeps going</div>
+          <div class="rs-title" id="sec4Title"></div>
+          <div class="rs-text" id="sec4Text"></div>
+        </div>
+      </div>
+
+      <div class="therapy-section" id="therapySection">
+        <div class="ts-label">Recommended next step</div>
+        <div class="ts-title" id="tsTitle"></div>
+        <div class="ts-text" id="tsText"></div>
+        <div class="ts-benefits" id="tsBenefits"></div>
+        <div class="ts-actions">
+          <a class="btn-ts" id="therapyLink" href="#">Speak with a therapist — 20% Off</a>
+          <button class="btn-ts-ghost" id="retakeBtn">Retake assessment</button>
+        </div>
+        <div class="ts-note" id="tsNote"></div>
+      </div>
+
+      <div class="footer-retake" id="footerRetake">
+        <button class="btn-retake-lo" id="retakeBtnLow">← Take the assessment again</button>
+      </div>
+
+      <div class="report-disclaimer">This assessment is for informational self-reflection only and does not constitute a medical or psychiatric diagnosis. Please consult a qualified professional if you are experiencing significant distress.</div>
+    </div>
+  </div>
+</div>
+
+<div class="lower">
+  <div class="content-card">
+    <h2>Anxiety vs depression — understanding the overlap</h2>
+    <p>Anxiety and depression are two of the most common mental health conditions, and they share many symptoms: difficulty concentrating, sleep problems, fatigue, irritability and withdrawal from activities. This overlap makes them genuinely difficult to distinguish from the inside.</p>
+    <p>The core difference is in the direction of the emotional experience. Anxiety looks forward with fear, towards what might happen. Depression looks inward or backward with emptiness, towards what is lost or hopeless. But because the two frequently co-occur, many people experience both at the same time.</p>
+    <p>For a deeper look at your overall anxiety level, the <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--blue);font-weight:700;">free anxiety level test</a> gives you a full score across all anxiety patterns. If panic attacks are part of what you are experiencing, the <a href="https://myanxietytest.com/panic-sos-card/" style="color:var(--blue);font-weight:700;">Panic Attack SOS Card</a> builds a personalised crisis plan.</p>
+    <h3>Signs that lean toward anxiety</h3>
+    <ul>
+      <li>Persistent worry and anticipation of bad outcomes</li>
+      <li>Physical tension, racing heart, restlessness</li>
+      <li>Avoidance of situations that trigger fear</li>
+      <li>Difficulty relaxing even when nothing is wrong</li>
+    </ul>
+    <h3>Signs that lean toward depression</h3>
+    <ul>
+      <li>Persistent low mood or emotional numbness</li>
+      <li>Loss of interest in things that used to bring pleasure</li>
+      <li>Fatigue and slowed thinking or movement</li>
+      <li>Feelings of worthlessness or hopelessness</li>
+    </ul>
+  </div>
+  <div class="content-card">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+      <div class="faq-it">
+        <h3>Can you have both anxiety and depression?</h3>
+        <p>Yes. They co-occur very frequently. Chronic anxiety can lead to depression over time and depression often involves significant anxiety. This assessment scores both separately so you can see which patterns are present and how strongly.</p>
+      </div>
+      <div class="faq-it">
+        <h3>Is this a diagnosis?</h3>
+        <p>No. This is a self-assessment for informational purposes. Only a qualified professional can provide a clinical diagnosis. If you are experiencing significant distress, speaking with a doctor or therapist is recommended.</p>
+      </div>
+      <div class="faq-it">
+        <h3>What should I do with my result?</h3>
+        <p>Use it as a starting point for understanding your experience. If anxiety appears dominant, the <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--blue);font-weight:700;">anxiety level test</a> provides more detail. If both patterns are present and causing significant distress, speaking with a therapist is the most effective next step.</p>
+      </div>
+      <div class="faq-it">
+        <h3>How is anxiety treated differently from depression?</h3>
+        <p>Both respond well to therapy, particularly cognitive behavioural approaches. The specific techniques differ, but the most important thing is working with someone who understands both conditions, since they so often co-occur.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/social-anxiety-test/">Social Anxiety Test</a>
+      <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/">Anxiety vs Burnout</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+</footer>
+
+<script>
+// Each question tagged: 'anxiety', 'depression', or 'shared'
+// Shared questions count toward both scores
+const questions = [
+  { text: "Do you often feel worried or on edge without a clear reason?", type: "anxiety" },
+  { text: "Do you feel persistently sad, empty or hopeless?", type: "depression" },
+  { text: "Do you have difficulty concentrating or making decisions?", type: "shared" },
+  { text: "Do you anticipate the worst before things happen?", type: "anxiety" },
+  { text: "Have you lost interest in activities or people you used to enjoy?", type: "depression" },
+  { text: "Do you feel physically tense or restless even when nothing is wrong?", type: "anxiety" },
+  { text: "Do you feel unusually tired or low in energy most of the time?", type: "depression" },
+  { text: "Do you avoid situations because of fear of what might happen?", type: "anxiety" },
+  { text: "Do you feel worthless or like you are a burden to others?", type: "depression" },
+  { text: "Does your mind race or spiral into overthinking?", type: "anxiety" },
+  { text: "Do you have difficulty experiencing pleasure or positive emotions?", type: "depression" },
+  { text: "Do you struggle to sleep because your mind will not slow down?", type: "anxiety" },
+  { text: "Do you sleep too much or have no motivation to get up?", type: "depression" },
+  { text: "Do you feel like things will not get better no matter what you do?", type: "depression" },
+  { text: "Do you feel a persistent sense of dread or that something bad will happen?", type: "anxiety" },
+  { text: "Do you feel emotionally numb or disconnected from your life?", type: "depression" },
+  { text: "Do you experience sudden waves of fear or panic?", type: "anxiety" },
+  { text: "Do you feel irritable or short-tempered more than feels normal?", type: "shared" },
+  { text: "Do you withdraw from people or social situations more than you used to?", type: "shared" },
+  { text: "Do you feel like anxiety or low mood is significantly affecting your daily life?", type: "shared" }
+];
+
+const OPTIONS = [
+  { label: "Never",         value: 0 },
+  { label: "Rarely",        value: 1 },
+  { label: "Sometimes",     value: 2 },
+  { label: "Often",         value: 3 },
+  { label: "Almost always", value: 4 }
+];
+
+let idx = 0;
+let answers = new Array(questions.length).fill(null);
+const $ = id => document.getElementById(id);
+
+const urlParams = new URLSearchParams(window.location.search);
+const trafficSource = urlParams.get('source') || 'defaultAnxietyOrDepression';
+
+function buildTherapyUrl() {
+  const url = new URL('https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116');
+  url.searchParams.set('source', trafficSource);
+  return url.toString();
+}
+
+function updateProgress() {
+  $('curQ').textContent = idx + 1;
+  $('qChipN').textContent = idx + 1;
+  const pct = Math.round((idx / questions.length) * 100);
+  $('curPct').textContent = pct;
+  $('progressFill').style.width = pct + '%';
+  $('backBtn').disabled = idx === 0;
+  $('qHint').textContent = idx === questions.length - 1
+    ? 'Select an answer to see your result.'
+    : 'Select an answer to continue automatically.';
+}
+
+function renderQuestion() {
+  $('qText').textContent = questions[idx].text;
+  const wrap = $('answersList');
+  wrap.innerHTML = OPTIONS.map(opt => {
+    const sel = answers[idx] === opt.value;
+    return `<button class="ans-btn${sel ? ' selected' : ''}" data-value="${opt.value}">
+      <div class="ans-circle"><div class="ans-circle-dot"></div></div>
+      <div class="ans-text">${opt.label}</div>
+    </button>`;
+  }).join('');
+  wrap.querySelectorAll('.ans-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      answers[idx] = Number(btn.dataset.value);
+      renderQuestion();
+      setTimeout(() => {
+        if (idx < questions.length - 1) { idx++; renderQuestion(); updateProgress(); }
+        else showResult();
+      }, 200);
+    });
+  });
+}
+
+function calcScores() {
+  let aScore = 0, aMax = 0, dScore = 0, dMax = 0;
+  questions.forEach((q, i) => {
+    const v = answers[i] ?? 0;
+    if (q.type === 'anxiety') { aScore += v; aMax += 4; }
+    else if (q.type === 'depression') { dScore += v; dMax += 4; }
+    else if (q.type === 'shared') {
+      // shared split 50/50
+      aScore += v * 0.5; aMax += 2;
+      dScore += v * 0.5; dMax += 2;
+    }
+  });
+  return {
+    aPct: Math.round((aScore / aMax) * 100),
+    dPct: Math.round((dScore / dMax) * 100)
+  };
+}
+
+function getProfile(aPct, dPct) {
+  const bothLow = aPct < 30 && dPct < 30;
+  const bothMild = aPct < 50 && dPct < 50;
+  const diff = Math.abs(aPct - dPct);
+
+  if (bothLow) return 'low';
+  if (bothMild) return 'mild';
+
+  // If one clearly dominates (diff > 15) pick that one
+  if (diff > 15) return aPct > dPct ? 'anxiety_only' : 'depression_only';
+
+  // Both high and close together
+  if (aPct >= 50 && dPct >= 50) return 'both';
+
+  // One is above 50 but not by much — still pick the dominant
+  return aPct > dPct ? 'anxiety_only' : 'depression_only';
+}
+
+const CONTENT = {
+  low: {
+    bandClass: 'low',
+    eyebrow: 'Your personal assessment report',
+    headline: 'Low indicators for both anxiety and depression.',
+    sub: 'Neither anxiety nor depression appears to be significantly present in your responses right now. Some emotional difficulty is normal and does not indicate a clinical problem.',
+    pills: [],
+    sec1Title: 'This looks like normal emotional variation.',
+    sec1Text: 'Everyone experiences periods of worry, low mood or low motivation. At this level the patterns do not appear to be sustained or significantly affecting your daily life. The most useful focus is staying aware of any changes and building the habits that keep emotional wellbeing stable over time.',
+    sec2Title: 'Stay aware of what builds and what depletes you.',
+    sec2Intro: 'A few useful things to maintain at this level.',
+    sec2List: ['Notice the situations, relationships and activities that reliably build your energy and mood, and those that consistently drain it.', 'Keep sleep, movement and social connection consistent. These are the most reliable foundations of emotional stability.', 'If things shift and the patterns in this assessment start to feel more persistent, that is worth paying attention to early.'],
+    sec3Title: 'Prevention and awareness.',
+    sec3Intro: 'Staying here is about maintaining the basics.',
+    sec3Steps: [{ title: 'Know your patterns', text: 'Build self-awareness about what raises and lowers your mood and energy before patterns become more entrenched.' }, { title: 'Invest in your basics', text: 'Sleep, movement and connection are not extras. They are the foundation that everything else depends on.' }, { title: 'Check in regularly', text: 'A brief self-check every few weeks helps you catch changes early, before they become harder to address.' }],
+    sec4Title: 'Prevention is far easier than recovery.',
+    sec4Text: 'Both anxiety and depression tend to develop gradually through accumulating patterns rather than suddenly. Catching early signs while they are still mild gives you far more options than waiting until the patterns are well established.',
+    therapy: null
+  },
+  mild: {
+    bandClass: 'anxiety-only',
+    eyebrow: 'Your personal assessment report',
+    headline: 'Some indicators present, at a mild level.',
+    sub: 'Your responses suggest some anxiety or low mood may be present, but not at a level that appears to be significantly disrupting your daily life.',
+    pills: [],
+    sec1Title: 'Mild patterns are worth taking seriously early.',
+    sec1Text: 'Mild anxiety and low mood often feel manageable because they are. The risk is that without attention they tend to deepen slowly, in ways that are easy to miss until they are significantly more established. Addressing mild patterns early is far more effective than waiting.',
+    sec2Title: 'Small consistent changes make the biggest difference at this level.',
+    sec2Intro: 'The most useful things to focus on now.',
+    sec2List: ['Sleep is the single most powerful lever for both mood and anxiety. Even small improvements in sleep quality tend to have outsized effects.', 'Movement, even brief and moderate, has strong evidence for reducing both anxiety and low mood symptoms.', 'If worry is present, practise naming specific worries and giving each a brief fixed time rather than letting them run in the background continuously.'],
+    sec3Title: 'Build the habits that prevent deeper patterns.',
+    sec3Intro: 'At a mild level, consistent small changes tend to work better than intensive interventions.',
+    sec3Steps: [{ title: 'Prioritise sleep', text: 'Consistent sleep timing and a wind-down routine have strong effects on both anxiety and mood at this level.' }, { title: 'Add movement', text: 'Regular physical activity, even 20 minutes of walking, significantly reduces both anxiety and depressive symptoms.' }, { title: 'Address patterns early', text: 'If the patterns persist or deepen over the next few weeks, speaking with a professional is the most efficient path forward.' }],
+    sec4Title: 'Mild patterns can become significant ones without attention.',
+    sec4Text: 'Both anxiety and depression reinforce themselves through the behaviours they generate, avoidance for anxiety, withdrawal for depression. Catching these patterns while they are mild means addressing them before the reinforcement becomes entrenched.',
+    therapy: null
+  },
+  anxiety_only: {
+    bandClass: 'anxiety-only',
+    eyebrow: 'Your personal assessment report',
+    headline: 'Anxiety appears to be the dominant pattern.',
+    sub: 'Your responses suggest anxiety is significantly present while depression indicators are lower. The worry, tension and anticipatory fear associated with anxiety appear to be the main driver of what you are experiencing.',
+    pills: [{ label: 'Anxiety', pctId: 'aPct' }, { label: 'Depression', pctId: 'dPct' }],
+    sec1Title: 'Your system is stuck in alert mode.',
+    sec1Text: 'When anxiety is dominant, the mind and body are operating in a sustained state of threat detection. This is exhausting not because you have done too much but because the internal alarm is running continuously. The worry feels like it is doing something useful. It rarely is. Understanding this is the first step to reducing it.',
+    sec2Title: 'Anxiety responds best when you address the cycle, not just the symptoms.',
+    sec2Intro: 'The most important things to focus on right now.',
+    sec2List: ['Identify the specific worry patterns that show up most often. Naming the pattern gives you something concrete to interrupt.', 'Avoidance provides short-term relief but tells your brain the situation was genuinely dangerous. Gradually moving toward avoided situations is the most effective long-term strategy.', 'Physical regulation through slow breathing, movement and reducing stimulation helps lower the baseline activation level that keeps anxiety running.'],
+    sec3Title: 'Breaking the anxiety cycle takes targeted effort.',
+    sec3Intro: 'Reducing anxiety starts with the cycle, not the symptoms.',
+    sec3Steps: [{ title: 'Map your avoidance', text: 'List the situations you avoid or dread because of anxiety. This is where the recovery work happens.' }, { title: 'Regulate first', text: 'When anxiety spikes, physical regulation reduces activation before you try to think your way through it.' }, { title: 'Get support', text: 'Anxiety responds very well to therapy. A professional can show you exactly where the cycle breaks.' }],
+    sec4Title: 'Why anxiety keeps going even when nothing is actually wrong.',
+    sec4Text: 'Anxiety persists because the behaviours that feel protective, worrying in advance, avoiding, staying vigilant, reinforce the belief that the threat is real. Every avoided situation confirms to the brain that it was dangerous. Breaking this requires changing the response to anxiety, not just managing the feeling.',
+    therapy: {
+      title: 'You do not have to stay in the worry cycle.',
+      text: 'A therapist who specialises in anxiety can show you exactly where the pattern is being reinforced and help you dismantle it in a structured, evidence-based way. Most people see meaningful progress within the first few weeks of working with the right support.',
+      note: 'Get 20% off your first month. No commitment required.',
+      benefits: [{ title: 'Break the cycle', text: 'Understand why anxiety keeps coming back and how to interrupt it at the source.' }, { title: 'Reduce avoidance', text: 'Build confidence to move toward situations instead of organising your life around avoiding them.' }, { title: 'Regulate your nervous system', text: 'Learn practical techniques that lower the baseline anxiety level day to day.' }]
+    }
+  },
+  depression_only: {
+    bandClass: 'depression-only',
+    eyebrow: 'Your personal assessment report',
+    headline: 'Depression appears to be the dominant pattern.',
+    sub: 'Your responses suggest depression indicators are significantly present. The low mood, loss of motivation and emotional heaviness associated with depression appear to be the main driver of what you are experiencing.',
+    pills: [{ label: 'Anxiety', pctId: 'aPct' }, { label: 'Depression', pctId: 'dPct' }],
+    sec1Title: 'This is not weakness. It is a condition that responds very well to support.',
+    sec1Text: 'Depression creates a specific kind of difficulty because it affects the very resources needed to address it. Motivation, energy, the ability to believe things can change, all of these are reduced by depression. This is not a character failing. It is how the condition works. And it is well understood and very treatable.',
+    sec2Title: 'Recovery from depression starts with reducing the conditions maintaining it.',
+    sec2Intro: 'The most important things to prioritise.',
+    sec2List: ['Behavioural activation, doing small meaningful activities even without motivation, is one of the most evidence-based approaches to depression. Action tends to come before feeling better, not after.', 'Social withdrawal is both a symptom of depression and something that deepens it. Small consistent steps toward connection, even brief ones, help interrupt the isolation cycle.', 'Professional support is particularly valuable with depression because the condition itself makes self-help harder. A therapist can provide structure and guidance when your own resources are depleted.'],
+    sec3Title: 'Depression responds to consistent, structured steps.',
+    sec3Intro: 'Recovery is not linear but it follows a clear direction.',
+    sec3Steps: [{ title: 'Start small', text: 'Behavioural activation does not require motivation. It creates it. One small meaningful action per day is enough to begin shifting the pattern.' }, { title: 'Counter withdrawal', text: 'Depression thrives in isolation. Any small step toward connection, a message, a brief walk outside, interrupts the reinforcement cycle.' }, { title: 'Get professional support', text: 'Depression responds very well to therapy, particularly when the condition itself is making self-directed change difficult.' }],
+    sec4Title: 'Why depression persists even when you want things to be different.',
+    sec4Text: 'Depression maintains itself through withdrawal, inactivity and negative self-perception, all of which feel like natural responses to feeling bad but actually deepen the condition. The motivation to change comes after action, not before it. This is counterintuitive but central to recovery, and it is something a good therapist can help you work with directly.',
+    therapy: {
+      title: 'Depression is very treatable. You do not have to navigate this alone.',
+      text: 'A therapist can help you understand what is driving the low mood, provide structure when your own resources are depleted, and guide you through the specific steps that clinical evidence shows work best for depression.',
+      note: 'Get 20% off your first month. No commitment required.',
+      benefits: [{ title: 'Understand the pattern', text: 'See what is maintaining the depression and what would actually help change it.' }, { title: 'Build momentum', text: 'Get structured support for taking the small consistent steps that build toward recovery.' }, { title: 'Reconnect with your life', text: 'Work toward reclaiming the motivation, pleasure and engagement that depression has reduced.' }]
+    }
+  },
+  both: {
+    bandClass: 'both',
+    eyebrow: 'Your personal assessment report',
+    headline: 'Both anxiety and depression appear to be significantly present.',
+    sub: 'Your responses suggest both anxiety and depression patterns are active. This is very common — the two conditions frequently co-occur — and it is important to understand how they interact in your specific experience.',
+    pills: [{ label: 'Anxiety', pctId: 'aPct' }, { label: 'Depression', pctId: 'dPct' }],
+    sec1Title: 'When both are present, they tend to reinforce each other.',
+    sec1Text: 'Anxiety and burnout together create a difficult loop. Anxiety activates, keeps you on edge and drives avoidance. Depression depletes, creates withdrawal and removes the motivation to address either. Together they can produce a state that feels both exhausted and unable to rest, both numb and overwhelmed at the same time. This is not unusual, but it benefits significantly from professional support rather than self-managed approaches alone.',
+    sec2Title: 'When both are present, the order of priorities matters.',
+    sec2Intro: 'The most important approach when both are active.',
+    sec2List: ['Start by addressing whichever feels most dominant right now. Trying to treat both simultaneously with equal intensity tends to be overwhelming and less effective than a sequenced approach.', 'Movement and sleep are the highest-leverage interventions when both are present because they address the physiological foundations that underpin both conditions.', 'Get professional support as early as possible. The interaction between anxiety and depression is well understood in therapy and a good therapist will know how to sequence the work.'],
+    sec3Title: 'A sequenced, supported approach works best.',
+    sec3Intro: 'Address the right things in the right order.',
+    sec3Steps: [{ title: 'Identify the dominant pattern', text: 'Which feels stronger right now, the anxious activation or the depressive depletion? Starting with the dominant one gives you a clearer place to begin.' }, { title: 'Focus on the physical basics', text: 'Sleep, movement and nutrition are the platform that everything else depends on. These are particularly important when both conditions are present.' }, { title: 'Work with a professional', text: 'The overlap of anxiety and depression is well understood. A therapist can help you sequence the work so you are not making one worse while addressing the other.' }],
+    sec4Title: 'Why the combination is harder to address alone.',
+    sec4Text: 'Anxiety and depression create a reinforcing loop. The anxiety keeps the nervous system activated, which depletes the resources needed to manage anxiety, which allows depression to worsen, which reduces the motivation and energy needed to address either. Breaking this loop almost always works better with outside support than without it.',
+    therapy: {
+      title: 'When anxiety and depression overlap, the right support makes all the difference.',
+      text: 'A therapist can help you understand how the two patterns are interacting, address them in the right sequence, and build the recovery that both conditions need. Most people dealing with both feel significantly better within weeks of working with the right support.',
+      note: 'Get 20% off your first month. No commitment required.',
+      benefits: [{ title: 'Untangle the overlap', text: 'Understand how anxiety and depression are reinforcing each other in your specific situation.' }, { title: 'Sequenced recovery', text: 'Address the right pattern at the right time, so treatment for one does not worsen the other.' }, { title: 'Build lasting change', text: 'Develop the understanding and skills to keep both patterns from returning once you have recovered.' }]
+    }
+  }
+};
+
+function showResult() {
+  const { aPct, dPct } = calcScores();
+  const profile = getProfile(aPct, dPct);
+  const d = CONTENT[profile];
+
+  // Band
+  $('reportBand').className = `report-band ${d.bandClass}`;
+  $('reportEyebrow').textContent = d.eyebrow;
+  $('reportHeadline').textContent = d.headline;
+  $('reportSub').textContent = d.sub;
+
+  // Score pills
+  if (d.pills && d.pills.length > 0) {
+    $('scorePills').innerHTML = `
+      <div class="score-pill">
+        <div>
+          <div class="sp-num">${aPct}%</div>
+          <div class="sp-label">Anxiety<br>indicators</div>
+        </div>
+      </div>
+      <div class="score-pill">
+        <div>
+          <div class="sp-num">${dPct}%</div>
+          <div class="sp-label">Depression<br>indicators</div>
+        </div>
+      </div>`;
+  } else {
+    $('scorePills').innerHTML = '';
+  }
+
+  // Sections
+  $('sec1Title').textContent = d.sec1Title;
+  $('sec1Text').textContent = d.sec1Text;
+  $('sec2Title').textContent = d.sec2Title;
+  $('sec2Intro').textContent = d.sec2Intro;
+  $('sec2List').innerHTML = d.sec2List.map(t => `<li>${t}</li>`).join('');
+  $('sec3Title').textContent = d.sec3Title;
+  $('sec3Intro').textContent = d.sec3Intro;
+  $('sec3Steps').innerHTML = d.sec3Steps.map((s, i) => `
+    <div class="step-box">
+      <div class="step-box-n">0${i+1}</div>
+      <strong>${s.title}</strong>
+      <p>${s.text}</p>
+    </div>`).join('');
+  $('sec4Title').textContent = d.sec4Title;
+  $('sec4Text').textContent = d.sec4Text;
+
+  // Therapy
+  if (!d.therapy) {
+    $('therapySection').classList.add('hidden');
+    $('footerRetake').style.display = 'flex';
+  } else {
+    $('therapySection').classList.remove('hidden');
+    $('footerRetake').style.display = 'none';
+    $('tsTitle').textContent = d.therapy.title;
+    $('tsText').textContent = d.therapy.text;
+    $('tsNote').textContent = d.therapy.note;
+    $('therapyLink').href = buildTherapyUrl();
+    $('tsBenefits').innerHTML = d.therapy.benefits.map(b =>
+      `<div class="ts-ben"><strong>${b.title}</strong><span>${b.text}</span></div>`).join('');
+  }
+
+  $('progressFill').style.width = '100%';
+  $('curPct').textContent = '100';
+  $('curQ').textContent = '20';
+
+  $('quizCard').style.display = 'none';
+  $('resultCard').style.display = 'block';
+  $('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function resetQuiz() {
+  answers = new Array(questions.length).fill(null);
+  idx = 0;
+  $('resultCard').style.display = 'none';
+  $('quizCard').style.display = 'block';
+  $('footerRetake').style.display = 'none';
+  renderQuestion();
+  updateProgress();
+  document.getElementById('quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+$('backBtn').addEventListener('click', () => { if (idx > 0) { idx--; renderQuestion(); updateProgress(); } });
+$('restartBtn').addEventListener('click', resetQuiz);
+$('retakeBtn').addEventListener('click', resetQuiz);
+$('retakeBtnLow').addEventListener('click', resetQuiz);
+
+renderQuestion();
+updateProgress();
+</script>
+</body>
+</html>
