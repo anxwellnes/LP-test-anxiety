@@ -3,30 +3,110 @@
 
   <url>
     <loc>https://myanxietytest.com/</loc>
-    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://myanxietytest.com/anxiety-level/</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
   </url>
 
   <url>
     <loc>https://myanxietytest.com/panic-sos-card/</loc>
-    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/anxiety-triggers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/anxiety-body-scan/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.87</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/anxiety-or-depression/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/ocd-vs-anxiety-test/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/anxiety-or-adhd/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/anxiety-vs-burnout-quiz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/anxiety-sleep-quiz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/relationship-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.81</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/social-anxiety-test/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/high-functioning-anxiety-quiz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.79</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/health-anxiety-test/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/panic-disorder-test/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.77</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/anxiety-journal/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/anxiety-tracker/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
   </url>
 
   <url>
     <loc>https://myanxietytest.com/Anxiety-Recovery-Bundle/</loc>
-    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.60</priority>
   </url>
 
 </urlset>
