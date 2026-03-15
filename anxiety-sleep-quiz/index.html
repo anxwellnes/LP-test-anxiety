@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anxiety and Sleep Quiz — Is Anxiety Ruining Your Sleep?</title>
+  <meta name="description" content="Can't sleep because of anxiety? Or does poor sleep make your anxiety worse? Take this free quiz to understand the connection between your anxiety and sleep, and what to do about it." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="anxiety sleep quiz, anxiety insomnia test, does anxiety affect sleep, anxiety keeping me awake, anxiety sleep problems" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-sleep-quiz/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anxiety and Sleep Quiz — Is Anxiety Ruining Your Sleep?" />
+  <meta property="og:description" content="Understand how anxiety and sleep are affecting each other in your life. Free quiz, instant results." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-sleep-quiz/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can anxiety cause insomnia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Anxiety is one of the leading causes of sleep problems. An activated nervous system, racing thoughts and hypervigilance at bedtime make it genuinely difficult to fall or stay asleep. The anticipatory anxiety about not sleeping itself then becomes an additional source of stress that worsens the cycle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can poor sleep make anxiety worse?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The relationship between anxiety and sleep runs in both directions. Sleep deprivation activates the amygdala, the brain's threat detection centre, making anxious responses more intense. Poor sleep also reduces the prefrontal cortex's ability to regulate emotional responses. This is why even one night of poor sleep tends to make anxiety significantly worse the next day."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I break the anxiety-sleep cycle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breaking the anxiety-sleep cycle usually requires addressing both sides simultaneously. This typically involves reducing bedtime anxiety through nervous system regulation, addressing the worry content keeping you awake, and often temporarily restructuring sleep to break the conditioned wakefulness that develops with chronic insomnia. CBT for insomnia is the most evidence-based approach."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Anxiety and Sleep Quiz",
+    "url": "https://myanxietytest.com/anxiety-sleep-quiz/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Any",
+    "description": "A free quiz that identifies how anxiety and sleep are affecting each other and what the dominant pattern is.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "MyAnxietyTest", "url": "https://myanxietytest.com/" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:       #0064FA;
+      --blue-dark:  #0050CC;
+      --blue-soft:  #E8F1FF;
+      --blue-bdr:   #C0D8FF;
+      --navy:       #0F172A;
+      --navy-mid:   #1E293B;
+      --navy-soft:  #F1F5F9;
+      --indigo:     #4338CA;
+      --indigo-mid: #4F46E5;
+      --indigo-soft:#EEF2FF;
+      --indigo-bdr: #C7D2FE;
+      --bg:         #F2F5FA;
+      --surface:    #FFFFFF;
+      --border:     #DDE4EF;
+      --text:       #0D1B2A;
+      --muted:      #5C6F85;
+      --muted-lt:   #97A8BA;
+      --green:      #15803D;
+      --green-soft: #F0FDF4;
+      --amber:      #B45309;
+      --amber-soft: #FFFBEB;
+      --red:        #B91C1C;
+      --red-soft:   #FEF2F2;
+      --shadow-sm:  0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md:  0 4px 20px rgba(0,0,0,0.08);
+      --shadow-lg:  0 12px 48px rgba(0,0,0,0.10);
+      --r:          12px;
+      --r-lg:       18px;
+      --r-xl:       24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { text-decoration: none; color: inherit; }
+
+    .topbar { background: var(--blue); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,100,250,0.25); }
+    .topbar-inner { max-width: 900px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; color: white; letter-spacing: -0.01em; }
+    .topbar-right { display: flex; align-items: center; gap: 14px; }
+    .topbar-link { font-size: 0.81rem; font-weight: 600; color: rgba(255,255,255,0.7); transition: color 0.15s; }
+    .topbar-link:hover { color: white; }
+    .topbar-tag { font-size: 0.76rem; font-weight: 700; color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    /* HERO — deep night sky */
+    .hero { background: linear-gradient(160deg, #020617 0%, var(--navy) 45%, #1e1b4b 100%); padding: clamp(44px,7vw,84px) clamp(16px,4vw,40px) clamp(32px,5vw,56px); text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; left: 50%; top: -100px; transform: translateX(-50%); width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 65%); pointer-events: none; }
+    .star { position: absolute; border-radius: 50%; background: white; opacity: 0.6; pointer-events: none; }
+    .hero-inner { max-width: 640px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 7px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 18px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(2rem,5vw,3.4rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 14px; }
+    .hero h1 span { color: #A5B4FC; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.6); max-width: 520px; margin: 0 auto 28px; line-height: 1.7; }
+    .btn-hero { display: inline-flex; align-items: center; gap: 9px; height: 52px; padding: 0 30px; background: white; color: var(--indigo); font-family: 'Nunito', sans-serif; font-size: 0.97rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 8px 28px rgba(0,0,0,0.3); transition: all 0.2s; text-decoration: none; }
+    .btn-hero:hover { background: var(--indigo-soft); transform: translateY(-2px); }
+    .hero-trust { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+    .ht-item { display: flex; align-items: center; gap: 6px; font-size: 0.79rem; color: rgba(255,255,255,0.4); font-weight: 600; }
+    .ht-dot { width: 17px; height: 17px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #86efac; display: grid; place-items: center; font-size: 0.52rem; font-weight: 700; flex-shrink: 0; }
+
+    .page { max-width: 900px; margin: 0 auto; padding: 28px clamp(16px,4vw,40px) 60px; }
+
+    /* QUIZ */
+    .quiz-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .quiz-strip { background: var(--navy); padding: 16px 24px; }
+    .qs-meta { display: flex; justify-content: space-between; font-size: 0.79rem; font-weight: 700; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
+    .qs-meta strong { color: #A5B4FC; }
+    .qs-bar { height: 6px; background: rgba(255,255,255,0.12); border-radius: 999px; overflow: hidden; }
+    .qs-fill { height: 100%; background: var(--indigo-mid); border-radius: 999px; transition: width 0.3s ease; width: 0%; }
+    .quiz-body { padding: 32px 28px 0; }
+    .q-chip { display: inline-flex; align-items: center; gap: 7px; padding: 4px 12px 4px 4px; border-radius: 999px; background: var(--indigo-soft); border: 1px solid var(--indigo-bdr); font-size: 0.74rem; font-weight: 800; color: var(--indigo); margin-bottom: 16px; }
+    .q-chip-n { width: 22px; height: 22px; background: var(--indigo); color: white; border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; font-weight: 900; }
+    .q-text { font-family: 'Nunito', sans-serif; font-size: clamp(1.15rem,2.4vw,1.6rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; margin-bottom: 26px; }
+    .answers-list { display: flex; flex-direction: column; gap: 10px; }
+    .ans-btn { display: flex; align-items: center; gap: 16px; width: 100%; padding: 14px 18px; border-radius: var(--r); border: 2px solid var(--border); background: var(--bg); cursor: pointer; font-family: 'Nunito Sans', sans-serif; text-align: left; transition: all 0.16s; }
+    .ans-circle { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--border); background: white; flex-shrink: 0; display: grid; place-items: center; transition: all 0.16s; }
+    .ans-circle-dot { width: 10px; height: 10px; border-radius: 50%; background: transparent; transition: all 0.16s; }
+    .ans-text { font-size: 0.93rem; font-weight: 700; color: var(--muted); flex: 1; transition: color 0.16s; }
+    .ans-btn:hover { border-color: var(--indigo); background: var(--indigo-soft); transform: translateX(4px); }
+    .ans-btn:hover .ans-circle { border-color: var(--indigo); }
+    .ans-btn:hover .ans-text { color: var(--indigo); }
+    .ans-btn.selected { border-color: var(--indigo); background: var(--indigo-soft); box-shadow: 0 4px 16px rgba(67,56,202,0.10); }
+    .ans-btn.selected .ans-circle { border-color: var(--indigo); background: var(--indigo); }
+    .ans-btn.selected .ans-circle-dot { background: white; }
+    .ans-btn.selected .ans-text { color: var(--indigo); font-weight: 800; }
+    .quiz-footer { display: flex; justify-content: space-between; align-items: center; padding: 18px 28px 24px; margin-top: 8px; }
+    .q-hint { font-size: 0.8rem; color: var(--muted-lt); font-weight: 600; }
+    .ctrl-row { display: flex; gap: 8px; }
+    .btn-ctrl { height: 38px; padding: 0 16px; border-radius: var(--r); border: 1.5px solid var(--border); background: white; font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--muted); cursor: pointer; transition: all 0.15s; }
+    .btn-ctrl:hover:not(:disabled) { border-color: var(--indigo); color: var(--indigo); }
+    .btn-ctrl:disabled { opacity: 0.28; cursor: not-allowed; }
+
+    /* RESULT */
+    .result-card { display: none; background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+
+    /* Profile header */
+    .result-header { padding: 26px 28px 22px; border-bottom: 1px solid var(--border); }
+    .result-header.low    { background: linear-gradient(160deg, #f0fdf4, #dcfce7); }
+    .result-header.anx    { background: linear-gradient(160deg, var(--indigo-soft), #ddd6fe); }
+    .result-header.sleep  { background: linear-gradient(160deg, #eff6ff, #dbeafe); }
+    .result-header.both   { background: linear-gradient(160deg, var(--navy), var(--navy-mid)); }
+    .result-header.severe { background: linear-gradient(160deg, #020617, var(--navy)); border-top: 4px solid var(--red); }
+
+    .r-profile-tag { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px; border-radius: 999px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; }
+    .r-profile-tag.low    { background: var(--green-soft); color: var(--green); border: 1px solid rgba(21,128,61,0.2); }
+    .r-profile-tag.anx    { background: var(--indigo-soft); color: var(--indigo); border: 1px solid var(--indigo-bdr); }
+    .r-profile-tag.sleep  { background: var(--blue-soft); color: var(--blue-dark); border: 1px solid var(--blue-bdr); }
+    .r-profile-tag.both   { background: rgba(255,255,255,0.1); color: #A5B4FC; border: 1px solid rgba(165,180,252,0.3); }
+    .r-profile-tag.severe { background: var(--red-soft); color: var(--red); border: 1px solid rgba(185,28,28,0.2); }
+
+    .result-h1 { font-family: 'Nunito', sans-serif; font-size: clamp(1.25rem,2.5vw,1.9rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 8px; }
+    .result-header.both .result-h1   { color: white; }
+    .result-header.severe .result-h1 { color: white; }
+    .result-header:not(.both):not(.severe) .result-h1 { color: var(--text); }
+
+    .result-desc { font-size: 0.88rem; max-width: 560px; line-height: 1.65; }
+    .result-header.both .result-desc   { color: rgba(255,255,255,0.65); }
+    .result-header.severe .result-desc { color: rgba(255,255,255,0.65); }
+    .result-header:not(.both):not(.severe) .result-desc { color: var(--muted); }
+
+    /* Body */
+    .result-body { padding: 20px; display: grid; gap: 12px; }
+    .rb-card { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 18px 18px 18px 22px; border-left: 4px solid var(--border); }
+    .rb-card.acc { border-left-color: var(--indigo); }
+    .rb-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--indigo); margin-bottom: 6px; }
+    .rb-title { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 7px; }
+    .rb-text  { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
+    .rb-list  { list-style: none; display: grid; gap: 8px; margin-top: 10px; }
+    .rb-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+    .li-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--indigo); flex-shrink: 0; margin-top: 6px; }
+    .steps-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 12px; }
+    .step { background: white; border-radius: var(--r); border: 1px solid var(--border); padding: 14px; }
+    .step-n { width: 28px; height: 28px; border-radius: 8px; background: var(--indigo); color: white; display: grid; place-items: center; font-size: 0.82rem; font-weight: 900; margin-bottom: 9px; }
+    .step strong { display: block; font-size: 0.86rem; margin-bottom: 4px; font-weight: 800; }
+    .step p { font-size: 0.79rem; color: var(--muted); line-height: 1.5; }
+
+    .therapy-card { background: var(--navy); border-radius: var(--r-lg); padding: 22px; position: relative; overflow: hidden; }
+    .therapy-card::before { content: ''; position: absolute; right: -40px; bottom: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(99,102,241,0.12); pointer-events: none; }
+    .therapy-card.hidden { display: none; }
+    .tc-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 8px; }
+    .therapy-card h3 { font-family: 'Nunito', sans-serif; font-size: 1.2rem; font-weight: 900; color: white; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 8px; position: relative; z-index: 1; }
+    .therapy-card p { font-size: 0.87rem; color: rgba(255,255,255,0.62); max-width: 500px; margin-bottom: 18px; line-height: 1.65; position: relative; z-index: 1; }
+    .tc-benefits { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; margin-bottom: 18px; position: relative; z-index: 1; }
+    .tc-ben { padding: 11px; border-radius: var(--r); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); }
+    .tc-ben strong { display: block; font-size: 0.8rem; color: white; font-weight: 800; margin-bottom: 3px; }
+    .tc-ben span { font-size: 0.75rem; color: rgba(255,255,255,0.52); line-height: 1.4; }
+    .tc-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; z-index: 1; }
+    .btn-tc { display: inline-flex; align-items: center; gap: 7px; height: 46px; padding: 0 22px; background: white; color: var(--indigo); font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 900; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(0,0,0,0.2); transition: all 0.2s; text-decoration: none; }
+    .btn-tc:hover { background: var(--indigo-soft); transform: translateY(-1px); }
+    .btn-ghost { height: 46px; padding: 0 18px; border: 1.5px solid rgba(255,255,255,0.2); background: transparent; color: rgba(255,255,255,0.72); font-family: 'Nunito', sans-serif; font-size: 0.87rem; font-weight: 700; border-radius: var(--r-lg); cursor: pointer; transition: all 0.2s; }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.45); color: white; }
+    .tc-note { margin-top: 11px; font-size: 0.74rem; color: rgba(255,255,255,0.28); position: relative; z-index: 1; }
+
+    .footer-retake { display: none; justify-content: center; padding: 4px 0; }
+    .btn-retake-lo { height: 40px; padding: 0 18px; border: 1.5px solid var(--border); background: white; color: var(--muted); font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: var(--r); cursor: pointer; transition: all 0.2s; }
+    .btn-retake-lo:hover { border-color: var(--indigo); color: var(--indigo); }
+    .r-disclaimer { padding: 14px 22px 18px; border-top: 1px solid var(--border); font-size: 0.76rem; color: var(--muted-lt); text-align: center; }
+
+    .lower { max-width: 900px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px) 60px; }
+    .content-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-sm); padding: 26px; margin-bottom: 12px; }
+    .content-card h2 { font-family: 'Nunito', sans-serif; font-size: clamp(1.2rem,2.2vw,1.55rem); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .content-card h3 { font-size: 0.95rem; font-weight: 800; margin: 14px 0 5px; display: flex; align-items: center; gap: 7px; }
+    .content-card h3::before { content: ''; display: inline-block; width: 3px; height: 13px; background: var(--indigo); border-radius: 2px; }
+    .content-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 9px; line-height: 1.7; }
+    .content-card ul { list-style: none; color: var(--muted); font-size: 0.9rem; display: grid; gap: 7px; }
+    .content-card li { display: flex; gap: 8px; align-items: flex-start; }
+    .content-card li::before { content: '›'; color: var(--indigo); font-weight: 900; flex-shrink: 0; }
+    .faq-list { display: grid; gap: 10px; }
+    .faq-it { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 16px 18px; }
+    .faq-it h3 { font-size: 0.92rem; margin: 0 0 6px; display: flex; align-items: center; gap: 8px; }
+    .faq-it h3::before { content: 'Q'; width: 20px; height: 20px; background: var(--indigo); color: white; border-radius: 6px; display: grid; place-items: center; font-size: 0.64rem; font-weight: 900; flex-shrink: 0; }
+    .faq-it p { margin: 0; font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+
+    .footer { background: var(--navy); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.08); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.32); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.7); }
+    .footer-copy { max-width: 900px; margin: 0 auto; padding-top: 16px; font-size: 0.76rem; color: rgba(255,255,255,0.2); text-align: center; }
+
+    @media (max-width: 640px) {
+      .steps-row, .tc-benefits { grid-template-columns: 1fr; }
+      .quiz-body { padding: 22px 18px 0; }
+      .quiz-footer { padding: 14px 18px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-right">
+      <a href="https://myanxietytest.com/" class="topbar-link">All tools</a>
+      <div class="topbar-tag">Free · No sign-up</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <!-- Stars -->
+  <div class="star" style="width:2px;height:2px;left:10%;top:20%"></div>
+  <div class="star" style="width:3px;height:3px;left:22%;top:35%"></div>
+  <div class="star" style="width:2px;height:2px;left:78%;top:15%"></div>
+  <div class="star" style="width:2px;height:2px;left:88%;top:45%"></div>
+  <div class="star" style="width:3px;height:3px;left:5%;top:60%"></div>
+  <div class="star" style="width:2px;height:2px;left:65%;top:25%"></div>
+  <div class="star" style="width:2px;height:2px;left:45%;top:10%"></div>
+  <div class="star" style="width:3px;height:3px;left:95%;top:30%"></div>
+
+  <div class="hero-inner">
+    <div class="hero-kicker">🌙 Free anxiety and sleep quiz</div>
+    <h1>Why can't you<br><span>sleep at night?</span></h1>
+    <p class="hero-desc">Anxiety and sleep affect each other in both directions. This quiz identifies which pattern is driving your sleep problems and what would actually help.</p>
+    <a href="#quiz" class="btn-hero">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 4.5l4 2.5-4 2.5V4.5z" fill="currentColor"/></svg>
+      Take the Free Quiz
+    </a>
+    <div class="hero-trust">
+      <div class="ht-item"><div class="ht-dot">✓</div>16 questions</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Identifies your specific pattern</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>Instant results</div>
+      <div class="ht-item"><div class="ht-dot">✓</div>100% anonymous</div>
+    </div>
+  </div>
+</section>
+
+<div class="page" id="quiz">
+  <div class="quiz-card" id="quizCard">
+    <div class="quiz-strip">
+      <div class="qs-meta">
+        <span>Question <strong id="curQ">1</strong> of 16</span>
+        <span><strong id="curPct">0</strong>% complete</span>
+      </div>
+      <div class="qs-bar"><div class="qs-fill" id="progressFill"></div></div>
+    </div>
+    <div class="quiz-body">
+      <div class="q-chip"><div class="q-chip-n" id="qChipN">1</div>Question</div>
+      <p class="q-text" id="qText"></p>
+      <div class="answers-list" id="answersList"></div>
+      <div class="quiz-footer">
+        <span class="q-hint" id="qHint">Select an answer to continue automatically.</span>
+        <div class="ctrl-row">
+          <button class="btn-ctrl" id="backBtn" disabled>← Back</button>
+          <button class="btn-ctrl" id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="result-card" id="resultCard">
+    <div class="result-header" id="resultHeader">
+      <div class="r-profile-tag" id="rTag">Result</div>
+      <div class="result-h1" id="rTitle"></div>
+      <div class="result-desc" id="rDesc"></div>
+    </div>
+    <div class="result-body">
+      <div class="rb-card acc">
+        <div class="rb-label">What this means for you</div>
+        <div class="rb-title" id="insightTitle"></div>
+        <div class="rb-text" id="insightText"></div>
+      </div>
+      <div class="rb-card acc">
+        <div class="rb-label">What would help most right now</div>
+        <div class="rb-text" id="actionIntro"></div>
+        <ul class="rb-list" id="actionList"></ul>
+      </div>
+      <div class="rb-card">
+        <div class="rb-label">Your 3-step path forward</div>
+        <div class="steps-row" id="stepsRow"></div>
+      </div>
+      <div class="rb-card acc">
+        <div class="rb-label">Why this pattern keeps going</div>
+        <div class="rb-text" id="patternText"></div>
+      </div>
+
+      <div class="therapy-card" id="therapyCard">
+        <div class="tc-tag">Recommended next step</div>
+        <h3 id="tcTitle"></h3>
+        <p id="tcText"></p>
+        <div class="tc-benefits" id="tcBenefits"></div>
+        <div class="tc-actions">
+          <a class="btn-tc" id="therapyLink" href="#">Speak with a therapist — 20% Off</a>
+          <button class="btn-ghost" id="retakeBtn">Retake quiz</button>
+        </div>
+        <div class="tc-note">Get 20% off your first month. No commitment required.</div>
+      </div>
+
+      <div class="footer-retake" id="footerRetake">
+        <button class="btn-retake-lo" id="retakeBtnLow">← Take the quiz again</button>
+      </div>
+    </div>
+    <div class="r-disclaimer">This quiz is an informational self-assessment only. If sleep problems are significantly affecting your health or daily life, consulting a qualified professional is recommended.</div>
+  </div>
+</div>
+
+<div class="lower">
+  <div class="content-card">
+    <h2>The anxiety-sleep connection — how they affect each other</h2>
+    <p>The relationship between anxiety and sleep is bidirectional, which means each makes the other worse. Anxiety activates the nervous system, raises cortisol and keeps the brain in a state of alert that is the opposite of what sleep requires. Poor sleep, in turn, activates the amygdala and reduces the prefrontal cortex's ability to regulate emotional responses, making anxiety more intense and harder to manage the following day.</p>
+    <p>For many people this creates a cycle that is difficult to break from either end alone. Understanding whether anxiety is the primary driver of sleep problems, sleep deprivation is the primary driver of anxiety, or both are feeding each other equally, is the first step to breaking the cycle effectively. For a full picture of how anxiety is affecting your life overall, the <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--indigo);font-weight:700;">anxiety level test</a> gives you a complete severity score.</p>
+    <h3>Signs that anxiety is driving sleep problems</h3>
+    <ul>
+      <li>Racing thoughts at bedtime about worries, to-do lists or anticipated problems</li>
+      <li>Physical tension or restlessness that makes it hard to settle</li>
+      <li>Waking in the early hours with anxious thoughts that are hard to turn off</li>
+      <li>Dreading going to bed because of anticipatory anxiety about not sleeping</li>
+    </ul>
+    <h3>Signs that poor sleep is driving anxiety</h3>
+    <ul>
+      <li>Anxiety is noticeably worse after poor nights of sleep</li>
+      <li>Emotional reactions feel more intense and harder to manage when sleep-deprived</li>
+      <li>Small concerns become catastrophised more easily after poor sleep</li>
+      <li>The anxiety reduces significantly after good sleep</li>
+    </ul>
+  </div>
+  <div class="content-card">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+      <div class="faq-it">
+        <h3>Can anxiety cause insomnia?</h3>
+        <p>Yes. Anxiety is one of the leading causes of sleep problems. An activated nervous system, racing thoughts and hypervigilance make it genuinely difficult to fall or stay asleep. The anticipatory anxiety about not sleeping itself then becomes an additional source of stress.</p>
+      </div>
+      <div class="faq-it">
+        <h3>Can poor sleep make anxiety worse?</h3>
+        <p>Yes. Sleep deprivation activates the amygdala and reduces emotional regulation, making anxious responses more intense. Even one night of poor sleep tends to significantly worsen anxiety the following day.</p>
+      </div>
+      <div class="faq-it">
+        <h3>What is the most effective treatment for anxiety-related sleep problems?</h3>
+        <p>CBT for insomnia (CBT-I) combined with anxiety treatment has the strongest evidence base. It addresses both the sleep and anxiety components simultaneously rather than treating each in isolation.</p>
+      </div>
+      <div class="faq-it">
+        <h3>What other tools might help me?</h3>
+        <p>If anxiety is present broadly, the <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--indigo);font-weight:700;">anxiety level test</a> gives a full severity picture. If you experience panic attacks, the <a href="https://myanxietytest.com/panic-disorder-test/" style="color:var(--indigo);font-weight:700;">panic disorder test</a> can help clarify whether that pattern is present.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/anxiety-triggers/">Anxiety Triggers</a>
+      <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/">High-Functioning Anxiety</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional medical or mental health care</div>
+</footer>
+
+<script>
+// Questions tagged: anxiety-driven sleep problems (anx), sleep-driven anxiety (slp), or shared (both)
+const questions = [
+  { text: "When you get into bed, does your mind start racing with worries, to-do lists or anxious thoughts?", type: "anx" },
+  { text: "Do you wake up in the early hours of the morning with thoughts that are difficult to turn off?", type: "anx" },
+  { text: "Do you feel physically tense or restless at bedtime, even when you are tired?", type: "anx" },
+  { text: "Do you dread going to bed because of anxiety about whether you will be able to sleep?", type: "anx" },
+  { text: "Do you lie awake rehearsing upcoming situations or anticipating problems that may not happen?", type: "anx" },
+  { text: "Is your anxiety noticeably worse the day after a poor night of sleep?", type: "slp" },
+  { text: "Do small worries feel much larger and harder to manage when you are sleep-deprived?", type: "slp" },
+  { text: "Do emotional reactions feel more intense and harder to control after poor sleep?", type: "slp" },
+  { text: "Does your anxiety improve significantly on days after you have slept well?", type: "slp" },
+  { text: "Has the fatigue from poor sleep made it harder to use the coping strategies that usually help your anxiety?", type: "slp" },
+  { text: "Do you have difficulty sleeping even on nights when you do not feel particularly anxious at bedtime?", type: "both" },
+  { text: "Has your sleep been disrupted for long enough that you now feel anxious about sleep itself?", type: "both" },
+  { text: "Do you use your phone, TV or other screens to distract from anxious thoughts at bedtime?", type: "both" },
+  { text: "Does poor sleep affect your work, relationships or daily functioning significantly?", type: "both" },
+  { text: "Have you tried sleep hygiene changes but found they did not resolve the underlying problem?", type: "both" },
+  { text: "Is the combined impact of anxiety and poor sleep significantly affecting your quality of life?", type: "both" }
+];
+
+const OPTIONS = [
+  { label: "Never",         value: 0 },
+  { label: "Rarely",        value: 1 },
+  { label: "Sometimes",     value: 2 },
+  { label: "Often",         value: 3 },
+  { label: "Almost always", value: 4 }
+];
+
+const PROFILES = {
+  low: {
+    tag: 'low', tagText: '✓ Low impact',
+    title: 'Anxiety and sleep do not appear to be significantly affecting each other.',
+    desc: 'Some occasional sleep disruption and mild anxiety are completely normal. At this level the patterns do not appear to be significantly impacting your sleep quality or anxiety levels.',
+    insightTitle: 'Occasional sleep difficulty and mild anxiety are normal.',
+    insightText: 'Most people experience nights of poor sleep and periods of mild anxiety without these developing into a significant cycle. At this level the most useful focus is maintaining the habits that support both good sleep and manageable anxiety rather than addressing an established problem.',
+    actionIntro: 'A few things worth maintaining.',
+    actions: ['Consistent sleep timing, even on weekends, is the single most powerful sleep hygiene intervention. It anchors the body clock and makes sleep more reliable.', 'Regular physical activity has strong evidence for both improving sleep quality and reducing anxiety. Even moderate movement makes a meaningful difference.', 'If worry does come up at bedtime, having a brief structured worry time earlier in the evening, writing concerns down and setting them aside, can help separate the day from sleep time.'],
+    plan: [{ title: 'Keep consistent sleep timing', text: 'Going to bed and waking at the same time anchors the circadian rhythm and makes sleep more reliable.' }, { title: 'Move regularly', text: 'Physical activity improves both sleep quality and anxiety. Aim for at least 20 minutes most days.' }, { title: 'Separate worry from sleep', text: 'Schedule a brief worry time earlier in the evening to process concerns before bedtime.' }],
+    patternText: 'The anxiety-sleep cycle can develop gradually from occasional disruption. Staying aware of patterns early and maintaining the habits that support both gives you the best protection against a more established cycle developing.',
+    therapy: null
+  },
+  anx: {
+    tag: 'anx', tagText: '💭 Anxiety-driven sleep problems',
+    title: 'Anxiety appears to be the main driver of your sleep problems.',
+    desc: 'Your responses suggest the primary pattern is anxiety that activates at bedtime or during the night, making it difficult to fall or stay asleep rather than sleep deprivation driving anxiety.',
+    insightTitle: 'Your nervous system is not receiving the signal that it is safe to sleep.',
+    insightText: 'Anxiety-driven sleep problems follow a very specific pattern. The body prepares for sleep, but the anxious mind interprets the quiet and stillness of bedtime as an opportunity to process threats. Cortisol rises. The heart rate increases slightly. The mind becomes active. What should be a transition into rest becomes an activation state. Over time the bed itself can become associated with this activation, so anxiety begins before you even lie down.',
+    actionIntro: 'Addressing the anxiety is the most direct path to better sleep.',
+    actions: ['Bedtime is not the right time to process worries. Schedule 15-20 minutes of structured worry time in the early evening, write concerns down and genuinely set them aside. This trains the brain that worry time is over.', 'Physical relaxation techniques, progressive muscle relaxation, slow diaphragmatic breathing, work by giving the nervous system a direct signal to downregulate. Practise these before bed, not when the anxiety has already escalated.', 'Consider speaking with a therapist who understands both anxiety and sleep. CBT-I combined with anxiety treatment is the most evidence-based approach for this pattern.'],
+    plan: [{ title: 'Schedule worry time', text: 'Process concerns earlier in the evening and write them down. This separates anxious thinking from sleep time deliberately.' }, { title: 'Practise physical regulation', text: 'Use slow breathing or progressive muscle relaxation to give the nervous system a direct downregulation signal before bed.' }, { title: 'Address the anxiety', text: 'Better sleep follows from addressing the anxiety driving it. A therapist can help with both simultaneously.' }],
+    patternText: 'Anxiety-driven sleep problems often develop a secondary layer over time. The anxiety about not sleeping becomes its own source of stress, which adds to the activation at bedtime and makes sleep harder. This is called conditioned arousal. Breaking it requires addressing both the underlying anxiety and the associations that have formed around sleep itself.',
+    therapy: { title: 'Addressing the anxiety will improve the sleep.', text: 'A therapist who understands anxiety and sleep can help you work on both simultaneously — reducing the anxiety that activates at bedtime and breaking the conditioned arousal that has built up around sleep.', benefits: [{ title: 'Target the anxiety', text: 'Address the specific anxiety patterns that activate at bedtime rather than managing sleep symptoms in isolation.' }, { title: 'Break conditioned arousal', text: 'Rebuild a safe association with sleep using evidence-based CBT-I techniques.' }, { title: 'Regulate the nervous system', text: 'Develop pre-sleep regulation practices that give the nervous system a reliable signal to rest.' }] }
+  },
+  slp: {
+    tag: 'sleep', tagText: '😴 Sleep-driven anxiety',
+    title: 'Poor sleep appears to be significantly amplifying your anxiety.',
+    desc: 'Your responses suggest sleep deprivation is a significant driver of your anxiety levels — that poor sleep makes anxiety noticeably worse the following day, reduces your emotional regulation and makes normal concerns feel much harder to manage.',
+    insightTitle: 'Your brain is trying to manage anxiety on depleted resources.',
+    insightText: 'Sleep deprivation has a direct and measurable effect on anxiety. It activates the amygdala, the brain\'s threat detection centre, and reduces activity in the prefrontal cortex, which provides the regulation that keeps anxious responses proportionate. After poor sleep, the same situation that would feel manageable on a rested brain can feel genuinely threatening. Worries that would be put in perspective after good sleep become catastrophised. Emotional reactions are faster, more intense and harder to interrupt. Addressing the sleep quality directly can make a significant and relatively fast difference to anxiety levels.',
+    actionIntro: 'Improving sleep quality is the most direct lever for reducing anxiety at this level.',
+    actions: ['Sleep restriction therapy, counterintuitively, improves sleep quality by temporarily reducing time in bed to consolidate sleep drive. It sounds brutal but it is one of the most effective interventions for chronic sleep problems.', 'Caffeine after midday, alcohol in the evening and screens in the hour before bed all directly reduce sleep quality. Removing these has an outsized effect on sleep architecture.', 'If sleep problems have become chronic, working with a professional who knows CBT-I is significantly more effective than managing sleep hygiene alone.'],
+    plan: [{ title: 'Prioritise sleep quality', text: 'Address the specific factors reducing your sleep quality. The anxiety reduction that follows will be significant.' }, { title: 'Remove the main disruptors', text: 'Caffeine timing, alcohol, screen use and inconsistent sleep timing are the four most impactful levers.' }, { title: 'Consider CBT-I', text: 'Cognitive behavioural therapy for insomnia is the most evidence-based approach and works faster than sleep hygiene alone.' }],
+    patternText: 'Sleep-driven anxiety often creates its own cycle. Poor sleep amplifies anxiety, which creates more worry, which further disrupts sleep. What starts as a sleep problem generates secondary anxiety, which then begins to activate at bedtime, adding an anxiety-driven layer on top of the original sleep disruption. Addressing sleep quality early prevents this secondary layer from establishing.',
+    therapy: { title: 'Better sleep can make a significant difference to your anxiety relatively quickly.', text: 'A therapist who understands both sleep and anxiety can help you address the sleep quality that is amplifying your anxiety, using CBT-I techniques that have strong evidence for both conditions.', benefits: [{ title: 'Improve sleep quality', text: 'Use evidence-based CBT-I techniques to improve the sleep that is driving your anxiety.' }, { title: 'Break the cycle', text: 'Interrupt the sleep-anxiety loop before it becomes more entrenched.' }, { title: 'Regulate without depletion', text: 'Manage anxiety from a position of adequate sleep rather than from a depleted baseline.' }] }
+  },
+  both: {
+    tag: 'both', tagText: '🌀 Bidirectional cycle',
+    title: 'Anxiety and poor sleep are feeding each other in a cycle.',
+    desc: 'Both patterns appear to be active simultaneously. Anxiety is disrupting sleep, and poor sleep is amplifying anxiety. The two are reinforcing each other in a way that makes either difficult to address from one end alone.',
+    insightTitle: 'You are caught in one of the most exhausting cycles in mental health.',
+    insightText: 'The bidirectional anxiety-sleep cycle is particularly difficult to address because each intervention point feels blocked by the other. Addressing the anxiety is harder when sleep-deprived. Addressing the sleep is harder when anxiety is active at bedtime. People caught in this cycle often describe a pervasive exhaustion that goes beyond tiredness — a sense that neither rest nor calm is accessible. This is real and it is a consequence of the cycle, not a permanent state.',
+    actionIntro: 'Breaking the cycle requires addressing both sides, usually with professional support.',
+    actions: ['Start with whichever feels most accessible. Even small improvements in either sleep or anxiety tend to produce modest improvements in the other, which creates a positive feedback loop in the opposite direction.', 'CBT-I combined with anxiety treatment is the evidence-based approach for this specific pattern. It addresses both the sleep component and the anxiety component simultaneously.', 'Get professional support. The bidirectional cycle is well understood and very treatable, but it is significantly harder to break without guidance than with it.'],
+    plan: [{ title: 'Start with one side', text: 'Identify which end of the cycle feels most addressable right now and begin there. Even small improvements propagate.' }, { title: 'Address both together', text: 'CBT-I combined with anxiety treatment addresses both sides simultaneously, which is more effective than treating each in isolation.' }, { title: 'Get specialist support', text: 'The bidirectional cycle responds well to professional support. Working with someone who understands both conditions makes a significant difference.' }],
+    patternText: 'The anxiety-sleep cycle is self-reinforcing in a way that makes it particularly persistent. Anxiety activates the nervous system at bedtime. Poor sleep amplifies the anxiety the next day. The amplified anxiety makes the next night harder. The worse sleep creates more anxiety. Without an external intervention, the cycle tends to deepen rather than resolve on its own. The good news is that it responds very well to the right kind of support.',
+    therapy: { title: 'The anxiety-sleep cycle is very treatable with the right support.', text: 'A therapist who understands both anxiety and insomnia can help you break the cycle from both ends simultaneously — addressing the anxiety activating at night and the sleep deprivation amplifying it during the day.', benefits: [{ title: 'Break the cycle', text: 'Address both the anxiety and sleep components together rather than hoping one improves the other.' }, { title: 'CBT-I and anxiety treatment', text: 'The most evidence-based approach for this specific pattern, addressing both sides simultaneously.' }, { title: 'Restore rest and calm', text: 'Work toward sleep that is genuinely restorative and days where anxiety is manageable.' }] }
+  },
+  severe: {
+    tag: 'severe', tagText: '⚠ Significant impact',
+    title: 'Anxiety and sleep problems appear to be significantly affecting your daily life.',
+    desc: 'Your responses suggest both anxiety and sleep problems are present at a level that is substantially affecting your functioning, wellbeing and quality of life.',
+    insightTitle: 'This level of impact is real and it deserves real support.',
+    insightText: 'When anxiety and sleep problems are both severe and mutually reinforcing, the cumulative impact on daily functioning can be substantial. Concentration, emotional regulation, physical health, relationships and work performance are all affected by chronic sleep deprivation and high anxiety simultaneously. What makes this particularly difficult is that the very resources needed to address the problem — energy, clear thinking, emotional regulation — are depleted by the problem itself. This is not a failure of willpower or self-management. It is the natural consequence of a cycle that has been running long enough to significantly deplete the system.',
+    actionIntro: 'At this level the most important step is getting professional support.',
+    actions: ['Trying to address severe anxiety and chronic sleep problems simultaneously through self-management is very difficult. Professional support significantly shortens the path to recovery and reduces the risk of the cycle deepening further.', 'While accessing professional support, prioritise the absolute basics. Any improvement in sleep consistency, any reduction in caffeine, any brief physical activity, will help maintain a floor below which things do not worsen further.', 'The impact you are experiencing is real and it is treatable. Recovery from this level is common with the right support.'],
+    plan: [{ title: 'Seek professional support', text: 'This is the most important step at this level. CBT-I combined with anxiety treatment has strong evidence for this specific pattern.' }, { title: 'Maintain the basics', text: 'While accessing support, hold to whatever sleep consistency, movement and anxiety reduction practices are possible.' }, { title: 'Know recovery is possible', text: 'The anxiety-sleep cycle, even at this level, responds well to the right intervention.' }],
+    patternText: 'Anxiety and sleep problems at a severe and mutual level require a structured, professional approach to break. The cycle is too entrenched and the resource depletion too significant for self-management alone to be reliably effective. This is not a reflection of capability or effort. It is the nature of what the cycle does to the system over time. Recovery is fully achievable with the right support.',
+    therapy: { title: 'You deserve proper support for what you are carrying.', text: 'A therapist who understands both anxiety and insomnia can help you break the cycle systematically, using evidence-based approaches that address both conditions together. Recovery from this level is very possible with the right support.', benefits: [{ title: 'Structured professional support', text: 'Work with someone who understands both anxiety and insomnia and can address them simultaneously.' }, { title: 'CBT-I and anxiety treatment', text: 'The evidence-based combined approach for severe anxiety-sleep interaction.' }, { title: 'Restore functioning', text: 'Work toward recovery of the sleep, emotional regulation and daily functioning the cycle has depleted.' }] }
+  }
+};
+
+let idx = 0;
+let answers = new Array(questions.length).fill(null);
+const $ = id => document.getElementById(id);
+
+const urlParams = new URLSearchParams(window.location.search);
+const trafficSource = urlParams.get('source') || 'defaultAnxietySleepQuiz';
+
+function buildTherapyUrl() {
+  const url = new URL('https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116');
+  url.searchParams.set('source', trafficSource);
+  return url.toString();
+}
+
+function updateProgress() {
+  $('curQ').textContent = idx + 1;
+  $('qChipN').textContent = idx + 1;
+  const pct = Math.round((idx / questions.length) * 100);
+  $('curPct').textContent = pct;
+  $('progressFill').style.width = pct + '%';
+  $('backBtn').disabled = idx === 0;
+  $('qHint').textContent = idx === questions.length - 1 ? 'Select an answer to see your result.' : 'Select an answer to continue automatically.';
+}
+
+function renderQuestion() {
+  $('qText').textContent = questions[idx].text;
+  const wrap = $('answersList');
+  wrap.innerHTML = OPTIONS.map(opt => {
+    const sel = answers[idx] === opt.value;
+    return `<button class="ans-btn${sel ? ' selected' : ''}" data-value="${opt.value}">
+      <div class="ans-circle"><div class="ans-circle-dot"></div></div>
+      <div class="ans-text">${opt.label}</div>
+    </button>`;
+  }).join('');
+  wrap.querySelectorAll('.ans-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      answers[idx] = Number(btn.dataset.value);
+      renderQuestion();
+      setTimeout(() => {
+        if (idx < questions.length - 1) { idx++; renderQuestion(); updateProgress(); }
+        else showResult();
+      }, 200);
+    });
+  });
+}
+
+function calcScores() {
+  let anxScore = 0, anxMax = 0, slpScore = 0, slpMax = 0, bothScore = 0, bothMax = 0;
+  questions.forEach((q, i) => {
+    const v = answers[i] ?? 0;
+    if (q.type === 'anx')  { anxScore += v; anxMax += 4; }
+    if (q.type === 'slp')  { slpScore += v; slpMax += 4; }
+    if (q.type === 'both') { bothScore += v; bothMax += 4; }
+  });
+  return {
+    anxPct:  Math.round((anxScore  / anxMax)  * 100),
+    slpPct:  Math.round((slpScore  / slpMax)  * 100),
+    bothPct: Math.round((bothScore / bothMax) * 100)
+  };
+}
+
+function getProfile(anxPct, slpPct, bothPct) {
+  const totalScore = (anxPct + slpPct + bothPct) / 3;
+  if (totalScore < 22) return 'low';
+  if (bothPct >= 60 && totalScore >= 55) return 'severe';
+  const diff = Math.abs(anxPct - slpPct);
+  if (diff > 20) return anxPct > slpPct ? 'anx' : 'slp';
+  if (anxPct >= 40 && slpPct >= 40) return 'both';
+  return anxPct > slpPct ? 'anx' : 'slp';
+}
+
+function showResult() {
+  const { anxPct, slpPct, bothPct } = calcScores();
+  const profileKey = getProfile(anxPct, slpPct, bothPct);
+  const d = PROFILES[profileKey];
+
+  $('resultHeader').className = `result-header ${d.tag}`;
+  $('rTag').className = `r-profile-tag ${d.tag}`;
+  $('rTag').textContent = d.tagText;
+  $('rTitle').textContent = d.title;
+  $('rDesc').textContent = d.desc;
+  $('insightTitle').textContent = d.insightTitle;
+  $('insightText').textContent = d.insightText;
+  $('actionIntro').textContent = d.actionIntro;
+  $('patternText').textContent = d.patternText;
+
+  $('actionList').innerHTML = d.actions.map(t => `<li><span class="li-dot"></span><span>${t}</span></li>`).join('');
+  $('stepsRow').innerHTML = d.plan.map((p, i) => `
+    <div class="step">
+      <div class="step-n">${i + 1}</div>
+      <strong>${p.title}</strong>
+      <p>${p.text}</p>
+    </div>`).join('');
+
+  if (!d.therapy) {
+    $('therapyCard').classList.add('hidden');
+    $('footerRetake').style.display = 'flex';
+  } else {
+    $('therapyCard').classList.remove('hidden');
+    $('footerRetake').style.display = 'none';
+    $('tcTitle').textContent = d.therapy.title;
+    $('tcText').textContent = d.therapy.text;
+    $('therapyLink').href = buildTherapyUrl();
+    $('tcBenefits').innerHTML = d.therapy.benefits.map(b =>
+      `<div class="tc-ben"><strong>${b.title}</strong><span>${b.text}</span></div>`).join('');
+  }
+
+  $('progressFill').style.width = '100%';
+  $('curPct').textContent = '100';
+  $('curQ').textContent = '16';
+  $('quizCard').style.display = 'none';
+  $('resultCard').style.display = 'block';
+  $('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function resetQuiz() {
+  answers = new Array(questions.length).fill(null);
+  idx = 0;
+  $('resultCard').style.display = 'none';
+  $('quizCard').style.display = 'block';
+  $('footerRetake').style.display = 'none';
+  renderQuestion();
+  updateProgress();
+  document.getElementById('quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+$('backBtn').addEventListener('click', () => { if (idx > 0) { idx--; renderQuestion(); updateProgress(); } });
+$('restartBtn').addEventListener('click', resetQuiz);
+$('retakeBtn').addEventListener('click', resetQuiz);
+$('retakeBtnLow').addEventListener('click', resetQuiz);
+
+renderQuestion();
+updateProgress();
+</script>
+</body>
+</html>
