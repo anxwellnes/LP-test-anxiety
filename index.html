@@ -802,5 +802,17 @@
   </div>
 </footer>
 
+<script>
+  const urlSource = new URLSearchParams(window.location.search).get('source');
+  if (urlSource) {
+    document.querySelectorAll('a[href*="myanxietytest.com"]').forEach(link => {
+      try {
+        const url = new URL(link.href);
+        url.searchParams.set('source', urlSource);
+        link.href = url.toString();
+      } catch(e) {}
+    });
+  }
+</script>
 </body>
 </html>
