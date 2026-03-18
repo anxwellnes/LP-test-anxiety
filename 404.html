@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | MyAnxietyTest.com</title>
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:      #0064FA;
+      --blue-dark: #0050CC;
+      --blue-soft: #E8F1FF;
+      --blue-bdr:  #C0D8FF;
+      --bg:        #F2F5FA;
+      --surface:   #FFFFFF;
+      --border:    #DDE4EF;
+      --text:      #0D1B2A;
+      --muted:     #5C6F85;
+      --muted-lt:  #97A8BA;
+      --shadow-sm: 0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md: 0 4px 20px rgba(0,100,250,0.09);
+      --r:         12px;
+      --r-lg:      18px;
+      --r-xl:      24px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; min-height: 100vh; display: flex; flex-direction: column; }
+    a { text-decoration: none; color: inherit; }
+
+    .topbar { background: var(--blue); box-shadow: 0 2px 12px rgba(0,100,250,0.25); }
+    .topbar-inner { max-width: 1080px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; color: white; letter-spacing: -0.01em; }
+    .topbar-tag { font-size: 0.76rem; font-weight: 700; color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    .main { flex: 1; display: flex; align-items: center; justify-content: center; padding: clamp(40px,8vw,80px) clamp(16px,4vw,40px); }
+
+    .container { max-width: 640px; width: 100%; text-align: center; }
+
+    .error-num { font-family: 'Nunito', sans-serif; font-size: clamp(5rem,15vw,9rem); font-weight: 900; color: var(--blue); letter-spacing: -0.05em; line-height: 1; margin-bottom: 8px; opacity: 0.15; }
+
+    .error-emoji { font-size: 3rem; margin-bottom: 16px; display: block; }
+
+    .error-title { font-family: 'Nunito', sans-serif; font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 900; letter-spacing: -0.025em; margin-bottom: 12px; }
+
+    .error-desc { font-size: 0.97rem; color: var(--muted); max-width: 440px; margin: 0 auto 32px; line-height: 1.7; }
+
+    .btn-home { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 24px; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; border-radius: var(--r-lg); transition: all 0.2s; margin-bottom: 32px; }
+    .btn-home:hover { background: var(--blue-dark); transform: translateY(-1px); }
+
+    .divider { font-size: 0.78rem; font-weight: 700; color: var(--muted-lt); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+
+    .tools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; text-align: left; }
+
+    .tool-link { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: var(--r); border: 1px solid var(--border); background: var(--surface); box-shadow: var(--shadow-sm); transition: all 0.15s; }
+    .tool-link:hover { border-color: var(--blue-bdr); background: var(--blue-soft); transform: translateY(-2px); }
+    .tool-link-icon { font-size: 1.2rem; flex-shrink: 0; }
+    .tool-link-name { font-family: 'Nunito', sans-serif; font-size: 0.86rem; font-weight: 900; letter-spacing: -0.01em; }
+
+    .footer { background: var(--blue-dark); padding: 20px clamp(16px,4vw,40px); }
+    .footer-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; color: white; }
+    .footer-mark { width: 26px; height: 26px; border-radius: 6px; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-size: 0.8rem; }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+
+    @media (max-width: 480px) { .tools-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-tag">Free anxiety tools</div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+    <div class="error-num">404</div>
+    <span class="error-emoji">🧭</span>
+    <h1 class="error-title">This page does not exist</h1>
+    <p class="error-desc">The link you followed may be broken or the page may have been moved. Here are some places to start instead.</p>
+
+    <a href="https://myanxietytest.com/" class="btn-home">Go to homepage →</a>
+
+    <div class="divider">Or try one of these tools</div>
+
+    <div class="tools-grid">
+      <a href="https://myanxietytest.com/anxiety-level/" class="tool-link">
+        <div class="tool-link-icon">📊</div>
+        <div class="tool-link-name">Anxiety Level Test</div>
+      </a>
+      <a href="https://myanxietytest.com/panic-sos-card/" class="tool-link">
+        <div class="tool-link-icon">🆘</div>
+        <div class="tool-link-name">Panic Attack SOS Card</div>
+      </a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/" class="tool-link">
+        <div class="tool-link-icon">🛋️</div>
+        <div class="tool-link-name">Do I Need Therapy?</div>
+      </a>
+      <a href="https://myanxietytest.com/anxiety-triggers/" class="tool-link">
+        <div class="tool-link-icon">🔍</div>
+        <div class="tool-link-name">Anxiety Triggers Identifier</div>
+      </a>
+      <a href="https://myanxietytest.com/anxiety-body-scan/" class="tool-link">
+        <div class="tool-link-icon">🫀</div>
+        <div class="tool-link-name">Anxiety Body Scan</div>
+      </a>
+      <a href="https://myanxietytest.com/articles/" class="tool-link">
+        <div class="tool-link-icon">📖</div>
+        <div class="tool-link-name">Anxiety Articles</div>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="footer-copy">© 2026 MyAnxietyTest.com · Not a substitute for professional mental health care</div>
+  </div>
+</footer>
+
+</body>
+</html>
