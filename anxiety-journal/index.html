@@ -340,41 +340,16 @@
       </div>
     </div>
 
-    <!-- Prompts -->
-    <div class="prompts-section">
-      <div class="section-label">Step 3 — Guided prompts</div>
-
-      <div class="prompt-item">
-        <div class="prompt-label"><span class="prompt-label-icon">⚡</span>What triggered your anxiety today?</div>
-        <textarea class="prompt-textarea" id="promptTrigger" placeholder="A situation, thought, person or place that raised your anxiety..."></textarea>
-      </div>
-
-      <div class="prompt-item">
-        <div class="prompt-label"><span class="prompt-label-icon">💭</span>What thoughts are running in your mind?</div>
-        <textarea class="prompt-textarea" id="promptThoughts" placeholder="What is your mind saying? What are you worried about?"></textarea>
-      </div>
-
-      <div class="prompt-item">
-        <div class="prompt-label"><span class="prompt-label-icon">🌿</span>What helped, even a little?</div>
-        <textarea class="prompt-textarea" id="promptHelped" placeholder="Something that calmed you, even briefly. Or what you wish had helped."></textarea>
-      </div>
-
-      <div class="prompt-item">
-        <div class="prompt-label"><span class="prompt-label-icon">✨</span>One small thing you are doing for yourself today</div>
-        <textarea class="prompt-textarea" id="promptSelf" placeholder="Even the smallest act of self-care counts..." style="min-height:54px;"></textarea>
-      </div>
-    </div>
-
     <!-- Free writing section -->
-    <div style="padding:0 24px 0; border-top:1px solid var(--border); margin-top:8px; padding-top:20px;">
-      <div class="section-label">Step 4 — Free writing</div>
+    <div style="padding:0 24px 0; margin-top:8px;">
+      <div class="section-label">Step 3 — Write</div>
       <div class="section-q" style="font-size:0.9rem; margin-bottom:6px;">Write whatever is on your mind</div>
       <p style="font-size:0.82rem;color:var(--muted-lt);margin-bottom:12px;font-weight:500;">No prompts. No structure. Just write. This space is yours.</p>
       <textarea
         id="promptFreeWrite"
         class="prompt-textarea"
         placeholder="Start writing here. Your thoughts, your feelings, what happened today, what you are afraid of, what you are hoping for. Nothing is too small or too big. This is just for you..."
-        style="min-height:200px; font-size:0.9rem; line-height:1.7;"
+        style="min-height:240px; font-size:0.9rem; line-height:1.7;"
       ></textarea>
       <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;">
         <div style="font-size:0.76rem;color:var(--muted-lt);">
@@ -384,9 +359,9 @@
       </div>
     </div>
 
-    <div style="margin:0 24px 0;padding:16px;border-top:1px solid var(--border);border-radius:var(--r-lg);background:var(--bg);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
-      <div style="font-size:0.84rem;color:var(--muted);max-width:420px;">Journaling helps you see the patterns. A therapist can help you change them.</div>
-      <a id="journalTherapyLink" href="#" style="display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 16px;background:var(--blue-soft);color:var(--blue-dark);font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:800;border-radius:var(--r);border:1px solid var(--blue-bdr);text-decoration:none;white-space:nowrap;transition:all 0.2s;" onmouseover="this.style.background='var(--blue)';this.style.color='white'" onmouseout="this.style.background='var(--blue-soft)';this.style.color='var(--blue-dark)'">Speak with a therapist — 20% Off</a>
+    <div style="margin:18px 24px 0;padding:16px;border-top:1px solid var(--border);border-radius:var(--r-lg);background:var(--bg);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <div style="font-size:0.84rem;color:var(--muted);max-width:420px;font-weight:600;">Journaling helps you see the patterns. A therapist can help you change them.</div>
+      <a id="journalTherapyLink" href="#" style="display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 16px;background:var(--blue-soft);color:var(--blue-dark);font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:900;border-radius:var(--r);border:1px solid var(--blue-bdr);text-decoration:none;white-space:nowrap;transition:all 0.2s;" onmouseover="this.style.background='var(--blue)';this.style.color='white'" onmouseout="this.style.background='var(--blue-soft)';this.style.color='var(--blue-dark)'">Speak with a therapist — 20% Off</a>
     </div>
 
     <div class="journal-footer">
@@ -564,10 +539,7 @@ function init() {
     const e = entries[tk];
     setLevel(e.level);
     e.tags.forEach(t => { selectedTags.add(t); document.querySelector(`.mood-tag[data-tag="${t}"]`)?.classList.add('active'); });
-    document.getElementById('promptTrigger').value = e.trigger || '';
-    document.getElementById('promptThoughts').value = e.thoughts || '';
-    document.getElementById('promptHelped').value = e.helped || '';
-    document.getElementById('promptSelf').value = e.self || '';
+
     document.getElementById('promptFreeWrite').value = e.freeWrite || '';
     updateWordCount();
   }
@@ -616,10 +588,10 @@ document.getElementById('btnSave').addEventListener('click', () => {
     date: tk,
     level: selectedLevel,
     tags: [...selectedTags],
-    trigger: document.getElementById('promptTrigger').value.trim(),
-    thoughts: document.getElementById('promptThoughts').value.trim(),
-    helped: document.getElementById('promptHelped').value.trim(),
-    self: document.getElementById('promptSelf').value.trim(),
+    trigger: '',
+    thoughts: '',
+    helped: '',
+    self: '',
     freeWrite: document.getElementById('promptFreeWrite').value.trim(),
     savedAt: new Date().toISOString()
   };
