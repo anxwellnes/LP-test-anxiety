@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- HOMEPAGE -->
   <url>
     <loc>https://myanxietytest.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- TOOLS -->
   <url>
     <loc>https://myanxietytest.com/anxiety-level/</loc>
     <changefreq>monthly</changefreq>
@@ -119,6 +121,154 @@
     <loc>https://myanxietytest.com/Anxiety-Recovery-Bundle/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
+  </url>
+
+  <!-- ARTICLES HUB -->
+  <url>
+    <loc>https://myanxietytest.com/articles/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ARTICLES: Understanding anxiety -->
+  <url>
+    <loc>https://myanxietytest.com/articles/why-is-my-anxiety-worse-in-the-morning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/why-do-i-feel-anxious-for-no-reason/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/can-anxiety-cause-physical-symptoms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/what-triggers-anxiety-attacks/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-calm-anxiety-at-night/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-stop-anxiety-from-getting-worse/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <!-- ARTICLES: Telling them apart -->
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-vs-depression-how-to-tell-the-difference/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.71</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/ocd-vs-anxiety-how-to-tell-the-difference/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.71</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/what-does-high-functioning-anxiety-feel-like/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.71</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-tell-if-you-have-relationship-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.71</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/signs-anxiety-is-getting-worse/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.71</priority>
+  </url>
+
+  <!-- ARTICLES: Therapy -->
+  <url>
+    <loc>https://myanxietytest.com/articles/should-i-see-a-therapist-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/signs-you-need-professional-help-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-find-a-therapist-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/what-to-expect-from-first-therapy-session-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-talk-to-a-therapist-about-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-long-does-therapy-take-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/cbt-for-anxiety-what-it-is-and-how-it-works/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/what-type-of-therapy-is-best-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/online-therapy-for-anxiety-does-it-work/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/is-online-therapy-as-effective-as-in-person/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-much-does-therapy-for-anxiety-cost/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-know-when-therapy-is-working-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
   </url>
 
 </urlset>
