@@ -271,4 +271,71 @@
     <priority>0.73</priority>
   </url>
 
+  <!-- ARTICLES: High-volume batch -->
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-stop-overthinking/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/social-anxiety-how-to-overcome-it/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-attack-vs-panic-attack/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-and-sleep-how-to-break-the-cycle/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/health-anxiety-how-to-stop-worrying-about-your-health/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/generalised-anxiety-disorder-symptoms-and-treatment/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-in-relationships-how-to-manage-it/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-reduce-anxiety-naturally/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-vs-stress-how-to-tell-the-difference/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-at-work-how-to-manage-it/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-help-someone-with-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>
