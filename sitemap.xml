@@ -338,4 +338,72 @@
     <priority>0.75</priority>
   </url>
 
+
+  <!-- ARTICLES: Long-tail batch 3 -->
+  <url>
+    <loc>https://myanxietytest.com/articles/why-does-anxiety-make-you-feel-sick/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-calm-anxiety-fast-in-the-moment/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-after-drinking-alcohol-why-it-happens/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/intrusive-thoughts-and-anxiety-what-they-mean/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/separation-anxiety-in-adults-signs-and-causes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-and-adhd-how-they-overlap/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-to-stop-anxiety-spirals/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-burnout-difference-and-recovery/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/high-functioning-anxiety-hidden-signs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-and-depression-together-what-to-do/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/morning-anxiety-routine-how-to-start-your-day/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>
