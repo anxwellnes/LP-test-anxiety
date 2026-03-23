@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CN7KGLW2HZ');</script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>What Type of Anxiety Do I Have? Quiz | MyAnxietyTest.com</title>
+  <meta name="description" content="Take this free quiz to identify which type of anxiety fits your experience best. 15 questions map your pattern across GAD, social anxiety, health anxiety, panic disorder and OCD features."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="What Type of Anxiety Do I Have? Quiz | MyAnxietyTest.com"/>
+  <meta property="og:description" content="Take this free quiz to identify which type of anxiety fits your experience best. 15 questions map your pattern across GAD, social anxiety, health anxiety, panic disorder and OCD features."/>
+  <meta property="og:url" content="https://myanxietytest.com/what-type-of-anxiety-do-i-have/"/>
+  <meta property="og:site_name" content="MyAnxietyTest"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#0064FA;--blue-dark:#0050CC;--blue-soft:#E8F1FF;--blue-bdr:#C0D8FF;--bg:#F2F5FA;--surface:#FFFFFF;--border:#DDE4EF;--text:#0D1B2A;--muted:#5C6F85;--muted-lt:#97A8BA;--shadow-sm:0 1px 4px rgba(0,100,250,0.07);--shadow-md:0 4px 20px rgba(0,100,250,0.09);--r:12px;--r-lg:18px;--r-xl:24px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;min-height:100vh;}
+    a{text-decoration:none;color:inherit;}
+    .topbar{background:var(--blue);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,100,250,0.25);}
+    .topbar-inner{max-width:900px;margin:0 auto;padding:0 clamp(16px,4vw,32px);height:56px;display:flex;align-items:center;justify-content:space-between;}
+    .logo{display:flex;align-items:center;gap:9px;}
+    .logo-mark{width:30px;height:30px;background:white;border-radius:7px;display:grid;place-items:center;font-size:.95rem;}
+    .logo-name{font-family:'Nunito',sans-serif;font-weight:900;font-size:1rem;color:white;letter-spacing:-.01em;}
+    .topbar-tag{font-size:.73rem;font-weight:700;color:rgba(255,255,255,.75);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:3px 11px;border-radius:999px;}
+    .hero{background:linear-gradient(150deg,var(--blue-dark),var(--blue));padding:clamp(36px,6vw,64px) clamp(16px,4vw,32px) clamp(24px,4vw,40px);text-align:center;}
+    .hero-kicker{display:inline-flex;align-items:center;gap:6px;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:14px;}
+    .hero h1{font-family:'Nunito',sans-serif;font-size:clamp(1.7rem,4vw,2.8rem);font-weight:900;color:white;line-height:1.1;letter-spacing:-.025em;margin-bottom:12px;}
+    .hero h1 span{color:#93c5fd;}
+    .hero-desc{font-size:.97rem;color:rgba(255,255,255,.72);max-width:520px;margin:0 auto;line-height:1.65;}
+    .hero-meta{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px;flex-wrap:wrap;}
+    .hero-badge{font-size:.75rem;font-weight:700;color:rgba(255,255,255,.6);display:flex;align-items:center;gap:5px;}
+    .wrap{max-width:720px;margin:0 auto;padding:clamp(24px,4vw,40px) clamp(16px,4vw,32px);}
+    .quiz-card{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);box-shadow:var(--shadow-sm);overflow:hidden;}
+    .progress-bar{height:4px;background:var(--bg);}
+    .progress-fill{height:4px;background:var(--blue);transition:width .4s ease;border-radius:999px;}
+    .quiz-header{padding:20px 24px 0;display:flex;align-items:center;justify-content:space-between;}
+    .q-counter{font-size:.78rem;font-weight:700;color:var(--muted-lt);}
+    .q-section-tag{font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);background:var(--blue-soft);padding:3px 10px;border-radius:999px;}
+    .quiz-body{padding:24px;}
+    .q-text{font-family:'Nunito',sans-serif;font-size:clamp(1rem,2.2vw,1.25rem);font-weight:800;line-height:1.3;margin-bottom:20px;color:var(--text);}
+    .options{display:grid;gap:10px;}
+    .option{padding:14px 18px;border-radius:var(--r-lg);border:2px solid var(--border);background:var(--bg);cursor:pointer;font-size:.93rem;font-weight:600;color:var(--muted);transition:all .18s;display:flex;align-items:center;gap:12px;text-align:left;}
+    .option:hover{border-color:var(--blue);background:var(--blue-soft);color:var(--text);}
+    .option.selected{border-color:var(--blue);background:var(--blue-soft);color:var(--blue-dark);font-weight:700;}
+    .option.correct{border-color:#16a34a;background:#f0fdf4;color:#15803d;}
+    .option-dot{width:20px;height:20px;border-radius:50%;border:2px solid var(--border);flex-shrink:0;transition:all .18s;display:grid;place-items:center;}
+    .option.selected .option-dot{background:var(--blue);border-color:var(--blue);}
+    .option.selected .option-dot::after{content:'';width:8px;height:8px;border-radius:50%;background:white;}
+    .nav-row{padding:0 24px 24px;display:flex;align-items:center;justify-content:space-between;}
+    .btn-next{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 24px;background:var(--blue);color:white;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:900;border-radius:var(--r-lg);border:none;cursor:pointer;transition:all .2s;opacity:.5;pointer-events:none;}
+    .btn-next.active{opacity:1;pointer-events:auto;}
+    .btn-next.active:hover{background:var(--blue-dark);transform:translateY(-1px);}
+    .btn-back{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 14px;background:transparent;color:var(--muted);font-size:.84rem;font-weight:700;border-radius:var(--r);border:1px solid var(--border);cursor:pointer;transition:all .18s;}
+    .btn-back:hover{border-color:var(--blue);color:var(--blue);}
+    .result-card{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);box-shadow:var(--shadow-md);overflow:hidden;display:none;}
+    .result-header{padding:32px 28px 24px;text-align:center;}
+    .result-emoji{font-size:3rem;margin-bottom:12px;display:block;}
+    .result-level{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;}
+    .result-level.low{background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0;}
+    .result-level.moderate{background:#fffbeb;color:#d97706;border:1px solid #fde68a;}
+    .result-level.high{background:#fef2f2;color:#dc2626;border:1px solid #fecaca;}
+    .result-level.very-high{background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;}
+    .result-title{font-family:'Nunito',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:900;letter-spacing:-.025em;margin-bottom:10px;}
+    .result-desc{font-size:.95rem;color:var(--muted);line-height:1.75;max-width:540px;margin:0 auto;}
+    .result-breakdown{padding:0 28px 24px;}
+    .breakdown-title{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-lt);margin-bottom:12px;}
+    .breakdown-grid{display:grid;gap:10px;}
+    .breakdown-item{display:flex;align-items:center;gap:12px;}
+    .breakdown-label{font-size:.82rem;font-weight:700;color:var(--muted);min-width:160px;}
+    .breakdown-bar-wrap{flex:1;height:8px;background:var(--bg);border-radius:999px;overflow:hidden;}
+    .breakdown-bar{height:8px;border-radius:999px;transition:width 1s ease;}
+    .breakdown-pct{font-size:.78rem;font-weight:800;color:var(--muted-lt);min-width:32px;text-align:right;}
+    .result-body{padding:0 28px 28px;}
+    .insight-block{background:var(--bg);border-radius:var(--r-lg);padding:18px 20px;margin-bottom:14px;}
+    .insight-label{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
+    .insight-text{font-size:.9rem;color:var(--muted);line-height:1.7;}
+    .cta-block{background:linear-gradient(135deg,var(--blue-dark),var(--blue));border-radius:var(--r-lg);padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px;}
+    .cta-text{color:white;}
+    .cta-label{font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px;}
+    .cta-title{font-family:'Nunito',sans-serif;font-size:1rem;font-weight:900;color:white;margin-bottom:3px;}
+    .cta-desc{font-size:.8rem;color:rgba(255,255,255,.65);}
+    .btn-cta{display:inline-flex;align-items:center;gap:6px;height:42px;padding:0 20px;background:white;color:var(--blue-dark);font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:900;border-radius:var(--r);white-space:nowrap;transition:all .2s;text-decoration:none;}
+    .btn-cta:hover{background:var(--blue-soft);}
+    .retake-row{text-align:center;padding-top:8px;}
+    .btn-retake{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 18px;background:var(--bg);color:var(--muted);font-size:.84rem;font-weight:700;border-radius:var(--r);border:1px solid var(--border);cursor:pointer;transition:all .18s;}
+    .btn-retake:hover{border-color:var(--blue);color:var(--blue);}
+    .related-tools{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:20px 24px;margin-top:16px;}
+    .related-title{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-lt);margin-bottom:12px;}
+    .related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
+    .related-link{display:flex;align-items:center;gap:9px;padding:10px 12px;border-radius:var(--r);border:1px solid var(--border);background:var(--bg);transition:all .15s;}
+    .related-link:hover{border-color:var(--blue);background:var(--blue-soft);}
+    .related-icon{font-size:1.05rem;flex-shrink:0;}
+    .related-name{font-size:.8rem;font-weight:700;color:var(--text);}
+    .footer{background:var(--blue-dark);padding:22px clamp(16px,4vw,32px) 28px;margin-top:40px;}
+    .footer-inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.1);}
+    .footer-brand{display:flex;align-items:center;gap:8px;font-family:'Nunito',sans-serif;font-weight:900;font-size:.88rem;color:white;}
+    .footer-mark{width:26px;height:26px;border-radius:6px;background:rgba(255,255,255,.12);display:grid;place-items:center;font-size:.8rem;}
+    .footer-links{display:flex;gap:14px;flex-wrap:wrap;}
+    .footer-links a{font-size:.78rem;color:rgba(255,255,255,.35);font-weight:600;transition:color .15s;}
+    .footer-links a:hover{color:rgba(255,255,255,.75);}
+    .footer-copy{max-width:900px;margin:0 auto;padding-top:14px;font-size:.74rem;color:rgba(255,255,255,.2);text-align:center;}
+    @media(max-width:560px){.related-grid{grid-template-columns:1fr;}.hero-meta{gap:10px;}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-tag">Free anxiety tools</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div style="max-width:720px;margin:0 auto;">
+    <div class="hero-kicker">✦ Anxiety type quiz</div>
+    <h1>What Type of <span>Anxiety</span> Do I Have?</h1>
+    <p class="hero-desc">Different types of anxiety have different patterns and respond to different approaches. 15 questions to map which type fits your experience most closely.</p>
+    <div class="hero-meta">
+      <div class="hero-badge">📋 15 questions</div>
+      <div class="hero-badge">⏱ 4 min</div>
+      <div class="hero-badge">🔒 Anonymous · No sign-up</div>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+  <div class="quiz-card">
+    
+        <div class="question" id="q0" style="display:block">
+          <div class="progress-bar"><div class="progress-fill" id="pf0" style="width:7%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 1 of 15</span>
+            <span class="q-section-tag">Worry content</span>
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">What does your worry tend to focus on most?</div>
+            <div class="options" id="opts0">
+              <div class="option" onclick="selectOpt(0,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Many different things: work, relationships, health, finances, minor matters, often shifting</span>
+              </div>
+              <div class="option" onclick="selectOpt(0,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Primarily what people think of me, how I come across, social situations</span>
+              </div>
+              <div class="option" onclick="selectOpt(0,2,30,this)">
+                <div class="option-dot"></div>
+                <span>My health, symptoms I might have, illnesses I could develop</span>
+              </div>
+              <div class="option" onclick="selectOpt(0,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Specific thoughts or fears that feel intrusive, wrong or uncontrollable</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><div></div><button class="btn-next" id="next0" onclick="nextQ(0)">Next →</button></div></div>
+        <div class="question" id="q1" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf1" style="width:13%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 2 of 15</span>
+            <span class="q-section-tag">Social</span>
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">How do you feel in social situations?</div>
+            <div class="options" id="opts1">
+              <div class="option" onclick="selectOpt(1,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Generally okay, though I may feel generally anxious about other things</span>
+              </div>
+              <div class="option" onclick="selectOpt(1,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Significantly anxious, particularly about being judged, saying the wrong thing or being evaluated</span>
+              </div>
+              <div class="option" onclick="selectOpt(1,2,30,this)">
+                <div class="option-dot"></div>
+                <span>Variable, my health concerns sometimes affect how present I can be socially</span>
+              </div>
+              <div class="option" onclick="selectOpt(1,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Can be difficult if my anxiety spikes in social contexts</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(1)">← Back</button><button class="btn-next" id="next1" onclick="nextQ(1)">Next →</button></div></div>
+        <div class="question" id="q2" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf2" style="width:20%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 3 of 15</span>
+            <span class="q-section-tag">Panic features</span>
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">Do you experience sudden episodes of intense physical anxiety that peak quickly?</div>
+            <div class="options" id="opts2">
+              <div class="option" onclick="selectOpt(2,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Not typically, my anxiety is more sustained than episodic</span>
+              </div>
+              <div class="option" onclick="selectOpt(2,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Sometimes in social situations but not out of nowhere</span>
+              </div>
+              <div class="option" onclick="selectOpt(2,2,30,this)">
+                <div class="option-dot"></div>
+                <span>Sometimes when I encounter something health-related that frightens me</span>
+              </div>
+              <div class="option" onclick="selectOpt(2,3,50,this)">
+                <div class="option-dot"></div>
+                <span>Yes, I have episodes that come on suddenly with intense physical symptoms</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(2)">← Back</button><button class="btn-next" id="next2" onclick="nextQ(2)">Next →</button></div></div>
+        <div class="question" id="q3" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf3" style="width:27%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 4 of 15</span>
+            <span class="q-section-tag">Health</span>
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">How much of your mental time goes on health concerns?</div>
+            <div class="options" id="opts3">
+              <div class="option" onclick="selectOpt(3,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Not much more than average, health is one of many concerns</span>
+              </div>
+              <div class="option" onclick="selectOpt(3,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Some, but social situations take up more mental space</span>
+              </div>
+              <div class="option" onclick="selectOpt(3,2,30,this)">
+                <div class="option-dot"></div>
+                <span>A significant amount, health concerns occupy a lot of my thinking</span>
+              </div>
+              <div class="option" onclick="selectOpt(3,3,10,this)">
+                <div class="option-dot"></div>
+                <span>Variable, depends on what other anxiety themes are most active</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(3)">← Back</button><button class="btn-next" id="next3" onclick="nextQ(3)">Next →</button></div></div>
+        <div class="question" id="q4" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf4" style="width:33%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 5 of 15</span>
+            
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">Do you have thoughts that feel intrusive, unwanted or contrary to your values?</div>
+            <div class="options" id="opts4">
+              <div class="option" onclick="selectOpt(4,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Not particularly, my anxious thoughts are more worry-based than intrusive</span>
+              </div>
+              <div class="option" onclick="selectOpt(4,1,20,this)">
+                <div class="option-dot"></div>
+                <span>My intrusive thoughts tend to be about embarrassing myself socially</span>
+              </div>
+              <div class="option" onclick="selectOpt(4,2,30,this)">
+                <div class="option-dot"></div>
+                <span>Sometimes about health-related fears that I cannot stop thinking about</span>
+              </div>
+              <div class="option" onclick="selectOpt(4,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Yes, I have thoughts that feel unwanted, stuck or that I need to neutralise somehow</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(4)">← Back</button><button class="btn-next" id="next4" onclick="nextQ(4)">Next →</button></div></div>
+        <div class="question" id="q5" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf5" style="width:40%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 6 of 15</span>
+            <span class="q-section-tag">Avoidance</span>
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">Have you changed your behaviour significantly to avoid something anxiety-related?</div>
+            <div class="options" id="opts5">
+              <div class="option" onclick="selectOpt(5,0,10,this)">
+                <div class="option-dot"></div>
+                <span>I avoid some things but they tend to be across many domains</span>
+              </div>
+              <div class="option" onclick="selectOpt(5,1,20,this)">
+                <div class="option-dot"></div>
+                <span>I have avoided social situations, opportunities or contexts where I would be evaluated</span>
+              </div>
+              <div class="option" onclick="selectOpt(5,2,30,this)">
+                <div class="option-dot"></div>
+                <span>I avoid medical information, certain activities, or seeking health information</span>
+              </div>
+              <div class="option" onclick="selectOpt(5,3,40,this)">
+                <div class="option-dot"></div>
+                <span>I avoid situations, thoughts or objects related to specific fears, sometimes extensively</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(5)">← Back</button><button class="btn-next" id="next5" onclick="nextQ(5)">Next →</button></div></div>
+        <div class="question" id="q6" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf6" style="width:47%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 7 of 15</span>
+            
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">Do you perform any mental or physical rituals to reduce anxiety or feel safer?</div>
+            <div class="options" id="opts6">
+              <div class="option" onclick="selectOpt(6,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Not really, though I do reassure myself mentally sometimes</span>
+              </div>
+              <div class="option" onclick="selectOpt(6,1,20,this)">
+                <div class="option-dot"></div>
+                <span>I over-prepare for social situations and rehearse what to say</span>
+              </div>
+              <div class="option" onclick="selectOpt(6,2,30,this)">
+                <div class="option-dot"></div>
+                <span>I check things related to my health or seek reassurance from doctors or online</span>
+              </div>
+              <div class="option" onclick="selectOpt(6,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Yes, I have rituals or compulsions that provide temporary relief</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(6)">← Back</button><button class="btn-next" id="next6" onclick="nextQ(6)">Next →</button></div></div>
+        <div class="question" id="q7" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf7" style="width:53%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 8 of 15</span>
+            
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">How does uncertainty affect you?</div>
+            <div class="options" id="opts7">
+              <div class="option" onclick="selectOpt(7,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Very much, I worry across many domains when I do not know how things will turn out</span>
+              </div>
+              <div class="option" onclick="selectOpt(7,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Particularly in social contexts, uncertainty about how I am perceived is very difficult</span>
+              </div>
+              <div class="option" onclick="selectOpt(7,2,30,this)">
+                <div class="option-dot"></div>
+                <span>Particularly about health, not knowing if I am well creates significant anxiety</span>
+              </div>
+              <div class="option" onclick="selectOpt(7,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Uncertainty about whether I have done something to prevent harm is very difficult</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(7)">← Back</button><button class="btn-next" id="next7" onclick="nextQ(7)">Next →</button></div></div>
+        <div class="question" id="q8" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf8" style="width:60%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 9 of 15</span>
+            <span class="q-section-tag">Physical</span>
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">What physical symptoms are most prominent for you?</div>
+            <div class="options" id="opts8">
+              <div class="option" onclick="selectOpt(8,0,10,this)">
+                <div class="option-dot"></div>
+                <span>General tension, fatigue, stomach issues, difficulty concentrating, headaches</span>
+              </div>
+              <div class="option" onclick="selectOpt(8,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Blushing, sweating, trembling, dry mouth, particularly in social settings</span>
+              </div>
+              <div class="option" onclick="selectOpt(8,2,30,this)">
+                <div class="option-dot"></div>
+                <span>Physical sensations that I tend to monitor and interpret as potential symptoms of illness</span>
+              </div>
+              <div class="option" onclick="selectOpt(8,3,50,this)">
+                <div class="option-dot"></div>
+                <span>Intense acute symptoms: racing heart, chest tightness, shortness of breath, dizziness</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(8)">← Back</button><button class="btn-next" id="next8" onclick="nextQ(8)">Next →</button></div></div>
+        <div class="question" id="q9" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf9" style="width:67%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 10 of 15</span>
+            
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">How long does your anxiety typically last during an anxious episode?</div>
+            <div class="options" id="opts9">
+              <div class="option" onclick="selectOpt(9,0,10,this)">
+                <div class="option-dot"></div>
+                <span>It is fairly continuous rather than episodic, a persistent background state</span>
+              </div>
+              <div class="option" onclick="selectOpt(9,1,20,this)">
+                <div class="option-dot"></div>
+                <span>It builds in anticipation and during social situations, then gradually reduces afterwards</span>
+              </div>
+              <div class="option" onclick="selectOpt(9,2,30,this)">
+                <div class="option-dot"></div>
+                <span>It varies, health concerns can linger for extended periods</span>
+              </div>
+              <div class="option" onclick="selectOpt(9,3,50,this)">
+                <div class="option-dot"></div>
+                <span>Intense episodes that peak relatively quickly, sometimes out of nowhere</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(9)">← Back</button><button class="btn-next" id="next9" onclick="nextQ(9)">Next →</button></div></div>
+        <div class="question" id="q10" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf10" style="width:73%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 11 of 15</span>
+            
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">Does your anxiety tend to be about what might happen or what is currently happening?</div>
+            <div class="options" id="opts10">
+              <div class="option" onclick="selectOpt(10,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Mostly about what might happen across many future scenarios</span>
+              </div>
+              <div class="option" onclick="selectOpt(10,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Both: what might happen in upcoming social situations and how current ones are going</span>
+              </div>
+              <div class="option" onclick="selectOpt(10,2,30,this)">
+                <div class="option-dot"></div>
+                <span>About what might be currently wrong or what might develop in the future health-wise</span>
+              </div>
+              <div class="option" onclick="selectOpt(10,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Both types, often triggered by specific thoughts, situations or sensations</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(10)">← Back</button><button class="btn-next" id="next10" onclick="nextQ(10)">Next →</button></div></div>
+        <div class="question" id="q11" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf11" style="width:80%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 12 of 15</span>
+            <span class="q-section-tag">Reassurance</span>
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">Do you seek reassurance? If so, from where?</div>
+            <div class="options" id="opts11">
+              <div class="option" onclick="selectOpt(11,0,10,this)">
+                <div class="option-dot"></div>
+                <span>From multiple sources, particularly from people I trust about various concerns</span>
+              </div>
+              <div class="option" onclick="selectOpt(11,1,20,this)">
+                <div class="option-dot"></div>
+                <span>From people who matter to me about how I came across or whether they are okay with me</span>
+              </div>
+              <div class="option" onclick="selectOpt(11,2,30,this)">
+                <div class="option-dot"></div>
+                <span>From medical professionals, online research or trusted people about health concerns</span>
+              </div>
+              <div class="option" onclick="selectOpt(11,3,40,this)">
+                <div class="option-dot"></div>
+                <span>From myself through checking, counting or ritual, or from others about specific fears</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(11)">← Back</button><button class="btn-next" id="next11" onclick="nextQ(11)">Next →</button></div></div>
+        <div class="question" id="q12" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf12" style="width:87%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 13 of 15</span>
+            
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">How much does your anxiety affect your ability to work or study?</div>
+            <div class="options" id="opts12">
+              <div class="option" onclick="selectOpt(12,0,10,this)">
+                <div class="option-dot"></div>
+                <span>The general background worry affects concentration and efficiency across most tasks</span>
+              </div>
+              <div class="option" onclick="selectOpt(12,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Particularly in work that involves visibility, presentations, meetings or evaluation</span>
+              </div>
+              <div class="option" onclick="selectOpt(12,2,30,this)">
+                <div class="option-dot"></div>
+                <span>Health concerns can absorb significant cognitive resource and reduce productivity</span>
+              </div>
+              <div class="option" onclick="selectOpt(12,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Can be significantly affected, particularly during intense episodes or ritual cycles</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(12)">← Back</button><button class="btn-next" id="next12" onclick="nextQ(12)">Next →</button></div></div>
+        <div class="question" id="q13" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf13" style="width:93%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 14 of 15</span>
+            
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">If you were to describe your anxiety in one word, which would fit best?</div>
+            <div class="options" id="opts13">
+              <div class="option" onclick="selectOpt(13,0,10,this)">
+                <div class="option-dot"></div>
+                <span>Pervasive</span>
+              </div>
+              <div class="option" onclick="selectOpt(13,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Social</span>
+              </div>
+              <div class="option" onclick="selectOpt(13,2,30,this)">
+                <div class="option-dot"></div>
+                <span>Physical</span>
+              </div>
+              <div class="option" onclick="selectOpt(13,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Intrusive</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(13)">← Back</button><button class="btn-next" id="next13" onclick="nextQ(13)">Next →</button></div></div>
+        <div class="question" id="q14" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="pf14" style="width:100%"></div></div>
+          <div class="quiz-header">
+            <span class="q-counter">Question 15 of 15</span>
+            
+          </div>
+          <div class="quiz-body">
+            <div class="q-text">What does relief from anxiety look like for you?</div>
+            <div class="options" id="opts14">
+              <div class="option" onclick="selectOpt(14,0,10,this)">
+                <div class="option-dot"></div>
+                <span>A period of low demands and no foreseeable problems across the different worry areas</span>
+              </div>
+              <div class="option" onclick="selectOpt(14,1,20,this)">
+                <div class="option-dot"></div>
+                <span>Being in a comfortable, familiar social context with no upcoming evaluative situations</span>
+              </div>
+              <div class="option" onclick="selectOpt(14,2,30,this)">
+                <div class="option-dot"></div>
+                <span>Receiving medical reassurance or avoiding health-related information that triggers concern</span>
+              </div>
+              <div class="option" onclick="selectOpt(14,3,40,this)">
+                <div class="option-dot"></div>
+                <span>Completing a ritual, avoiding a trigger, or the intrusive thought losing its urgency temporarily</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-row"><button class="btn-back" onclick="goBack(14)">← Back</button><button class="btn-next" id="next14" onclick="nextQ(14)">See My Results →</button></div></div>
+    
+        <div class="result-card" id="r-gad">
+          <div class="result-header">
+            <span class="result-emoji">🌀</span>
+            <div class="result-level moderate">Pattern: Generalised anxiety</div>
+            <div class="result-title">Your anxiety looks most like GAD</div>
+            <div class="result-desc">Your responses suggest your anxiety is generalised rather than focused on a specific domain. Pervasive worry across multiple areas, intolerance of uncertainty and persistent background tension are the defining features. This is the most common anxiety pattern.</div>
+          </div>
+          
+          <div class="result-body">
+            
+            <div class="insight-block">
+              <div class="insight-label">What this means</div>
+              <div class="insight-text">Generalised anxiety disorder involves worry that shifts between topics and does not resolve even when immediate concerns are addressed. The anxiety is about uncertainty itself as much as any specific threat.</div>
+            </div>
+            <div class="insight-block">
+              <div class="insight-label">What helps most</div>
+              <div class="insight-text">CBT and ACT both have strong evidence for GAD. Intolerance of uncertainty training, scheduled worry time and reducing the reassurance-seeking that temporarily resolves but ultimately maintains the anxiety are the core targets.</div>
+            </div>
+            <div class="insight-block">
+              <div class="insight-label">Go deeper</div>
+              <div class="insight-text">The anxiety level test gives you a comprehensive severity assessment and the GAD article covers the pattern and treatment in detail.</div>
+            </div>
+            
+            <div class="cta-block">
+              <div class="cta-text">
+                <div class="cta-label">Next step</div>
+                <div class="cta-title">Anxiety Level Test</div>
+                <div class="cta-desc">21 questions for a comprehensive picture of your anxiety severity and pattern.</div>
+              </div>
+              <a href="https://myanxietytest.com/anxiety-level/" class="btn-cta">Take the Test →</a>
+            </div>
+            <div class="retake-row">
+              <button class="btn-retake" onclick="retake()">↺ Retake the quiz</button>
+            </div>
+          </div>
+        </div>
+        <div class="result-card" id="r-social">
+          <div class="result-header">
+            <span class="result-emoji">👥</span>
+            <div class="result-level moderate">Pattern: Social anxiety</div>
+            <div class="result-title">Your anxiety looks most like social anxiety</div>
+            <div class="result-desc">Your responses suggest your anxiety is primarily social, centred on evaluation, judgment and how you come across to others. Social situations, their anticipation and their aftermath occupy most of the anxious thinking.</div>
+          </div>
+          
+          <div class="result-body">
+            
+            <div class="insight-block">
+              <div class="insight-label">What this means</div>
+              <div class="insight-text">Social anxiety involves a specific and intense fear of negative evaluation that produces avoidance of social and performance situations. It is maintained by avoidance and safety behaviours that prevent the natural learning process from reducing the anxiety.</div>
+            </div>
+            <div class="insight-block">
+              <div class="insight-label">What helps most</div>
+              <div class="insight-text">CBT with an exposure component is the most effective treatment, particularly the reduction of safety behaviours and attention retraining from internal monitoring to external engagement. The social anxiety guide covers this in detail.</div>
+            </div>
+            
+            <div class="cta-block">
+              <div class="cta-text">
+                <div class="cta-label">Dig deeper</div>
+                <div class="cta-title">Social Anxiety Test</div>
+                <div class="cta-desc">18 questions for a detailed assessment of your social anxiety pattern.</div>
+              </div>
+              <a href="https://myanxietytest.com/social-anxiety-test/" class="btn-cta">Take the Test →</a>
+            </div>
+            <div class="retake-row">
+              <button class="btn-retake" onclick="retake()">↺ Retake the quiz</button>
+            </div>
+          </div>
+        </div>
+        <div class="result-card" id="r-health">
+          <div class="result-header">
+            <span class="result-emoji">🏥</span>
+            <div class="result-level moderate">Pattern: Health anxiety</div>
+            <div class="result-title">Your anxiety looks most like health anxiety</div>
+            <div class="result-desc">Your responses suggest health concerns are the primary focus of your anxiety. Whether symptom-focused or more general illness worry, the checking, reassurance-seeking and avoidance cycle maintains the anxiety rather than resolving it.</div>
+          </div>
+          
+          <div class="result-body">
+            
+            <div class="insight-block">
+              <div class="insight-label">What this means</div>
+              <div class="insight-text">Health anxiety involves interpreting normal bodily experience as threatening, seeking reassurance that temporarily resolves but ultimately maintains the anxiety, and avoidance of health-related triggers. CBT is highly effective.</div>
+            </div>
+            <div class="insight-block">
+              <div class="insight-label">What helps most</div>
+              <div class="insight-text">Reducing checking and reassurance-seeking, attention refocusing and cognitive restructuring around health threat probability are the core targets.</div>
+            </div>
+            
+            <div class="cta-block">
+              <div class="cta-text">
+                <div class="cta-label">Dig deeper</div>
+                <div class="cta-title">Health Anxiety Test</div>
+                <div class="cta-desc">16 questions for a detailed assessment of your health anxiety pattern.</div>
+              </div>
+              <a href="https://myanxietytest.com/health-anxiety-test/" class="btn-cta">Take the Test →</a>
+            </div>
+            <div class="retake-row">
+              <button class="btn-retake" onclick="retake()">↺ Retake the quiz</button>
+            </div>
+          </div>
+        </div>
+        <div class="result-card" id="r-panic">
+          <div class="result-header">
+            <span class="result-emoji">⚡</span>
+            <div class="result-level high">Pattern: Panic features</div>
+            <div class="result-title">Your anxiety includes significant panic features</div>
+            <div class="result-desc">Your responses suggest you experience acute panic episodes, either unexpected or in specific contexts. The intensity of the physical symptoms and the fear of the episodes themselves are the defining features.</div>
+          </div>
+          
+          <div class="result-body">
+            
+            <div class="insight-block">
+              <div class="insight-label">What this means</div>
+              <div class="insight-text">Panic disorder involves unexpected panic attacks combined with significant worry about future attacks or avoidance of situations associated with them. It responds very well to CBT, particularly interoceptive exposure.</div>
+            </div>
+            <div class="insight-block">
+              <div class="insight-label">What helps most</div>
+              <div class="insight-text">Understanding that panic attacks are not medically dangerous, reducing avoidance of triggers and sensations, and building tolerance of the physical sensations through interoceptive exposure are the most effective approaches.</div>
+            </div>
+            
+            <div class="cta-block">
+              <div class="cta-text">
+                <div class="cta-label">Dig deeper</div>
+                <div class="cta-title">Panic Disorder Test</div>
+                <div class="cta-desc">A detailed assessment of your panic pattern and severity.</div>
+              </div>
+              <a href="https://myanxietytest.com/panic-disorder-test/" class="btn-cta">Take the Test →</a>
+            </div>
+            <div class="retake-row">
+              <button class="btn-retake" onclick="retake()">↺ Retake the quiz</button>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="related-tools">
+    <div class="related-title">More free tools</div>
+    <div class="related-grid">
+      
+          <a href="https://myanxietytest.com/anxiety-level/" class="related-link">
+            <div class="related-icon">📊</div>
+            <div class="related-name">Anxiety Level Test</div>
+          </a>
+          <a href="https://myanxietytest.com/social-anxiety-test/" class="related-link">
+            <div class="related-icon">🗣️</div>
+            <div class="related-name">Social Anxiety Test</div>
+          </a>
+          <a href="https://myanxietytest.com/health-anxiety-test/" class="related-link">
+            <div class="related-icon">🏥</div>
+            <div class="related-name">Health Anxiety Test</div>
+          </a>
+          <a href="https://myanxietytest.com/panic-disorder-test/" class="related-link">
+            <div class="related-icon">🚨</div>
+            <div class="related-name">Panic Disorder Test</div>
+          </a>
+    </div>
+  </div>
+</div>
+<script>
+    var answers = {};
+    var total = 0;
+    
+    function selectOpt(qi, oi, score, el) {
+      document.querySelectorAll('#opts'+qi+' .option').forEach(o => o.classList.remove('selected'));
+      el.classList.add('selected');
+      answers[qi] = score;
+      document.getElementById('next'+qi).classList.add('active');
+    }
+    
+    function nextQ(qi) {
+      if (answers[qi] === undefined) return;
+      var nq = qi + 1;
+      if (nq >= 15) {
+        showResult();
+      } else {
+        document.getElementById('q'+qi).style.display = 'none';
+        document.getElementById('q'+nq).style.display = 'block';
+        window.scrollTo({top: document.querySelector('.quiz-card').offsetTop - 20, behavior: 'smooth'});
+      }
+    }
+    
+    function goBack(qi) {
+      document.getElementById('q'+qi).style.display = 'none';
+      document.getElementById('q'+(qi-1)).style.display = 'block';
+      window.scrollTo({top: document.querySelector('.quiz-card').offsetTop - 20, behavior: 'smooth'});
+    }
+    
+    function showResult() {
+      total = Object.values(answers).reduce((a,b) => a+b, 0);
+      var ranges = [{"id": "gad", "min": 0, "max": 999}, {"id": "social", "min": 0, "max": 999}, {"id": "health", "min": 0, "max": 999}, {"id": "panic", "min": 0, "max": 999}];
+      var rid = ranges[ranges.length-1].id;
+      for (var r of ranges) {
+        if (total >= r.min && total <= r.max) { rid = r.id; break; }
+      }
+      document.querySelectorAll('.question').forEach(q => q.style.display = 'none');
+      document.getElementById('r-'+rid).style.display = 'block';
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    
+    function retake() {
+      answers = {};
+      total = 0;
+      document.querySelectorAll('.result-card').forEach(r => r.style.display = 'none');
+      document.querySelectorAll('.question').forEach((q,i) => {
+        q.style.display = i===0 ? 'block' : 'none';
+        q.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+      });
+      document.querySelectorAll('.btn-next').forEach(b => b.classList.remove('active'));
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    </script>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Test</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy</a>
+      <a href="https://myanxietytest.com/articles/">Articles</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+</footer>
+</body></html>
