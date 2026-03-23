@@ -406,4 +406,18 @@
     <priority>0.75</priority>
   </url>
 
+
+  <!-- ARTICLES: Situational batch 4 -->
+  <url><loc>https://myanxietytest.com/articles/anxiety-before-job-interview-how-to-manage-it/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/anxiety-about-health-without-symptoms/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/anxiety-when-trying-to-sleep-what-helps/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/can-anxiety-cause-dizziness-and-lightheadedness/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/anxiety-after-breakup-how-to-cope/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/anxiety-driving-fear-of-motorways-and-highways/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/phone-call-anxiety-how-to-stop-dreading-calls/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/anxiety-and-anger-the-connection-most-people-miss/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/perfectionism-and-anxiety-how-they-fuel-each-other/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/social-media-and-anxiety-how-it-makes-things-worse/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://myanxietytest.com/articles/anxiety-about-the-future-uncertainty-and-worry/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
 </urlset>
