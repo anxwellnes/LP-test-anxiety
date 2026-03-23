@@ -14,14 +14,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Anxiety Tools: Tests, Trackers and Crisis Support | MyAnxietyTest.com</title>
-  <meta name="description" content="18 free anxiety tools — anxiety level test, body scan, sleep quiz, OCD test, journal, tracker, panic SOS card and more. Instant results, no sign-up, completely private." />
+  <meta name="description" content="Free anxiety tools — anxiety level test, body scan, sleep quiz, OCD test, journal, tracker, panic SOS card and more. Instant results, no sign-up, completely private." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="keywords" content="free anxiety test, anxiety level test, panic attack SOS card, anxiety body scan, OCD test, relationship anxiety, anxiety journal, anxiety tracker" />
   <link rel="canonical" href="https://myanxietytest.com/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Free Anxiety Tools | MyAnxietyTest.com" />
-  <meta property="og:description" content="18 free anxiety tools. Tests, trackers, body scan, crisis support and more. Instant, free, no sign-up." />
+  <meta property="og:description" content="Free anxiety tools. Tests, trackers, body scan, crisis support and more. Instant, free, no sign-up." />
   <meta property="og:url" content="https://myanxietytest.com/" />
   <meta property="og:site_name" content="MyAnxietyTest" />
 
@@ -200,6 +200,30 @@
       .interactive-grid { grid-template-columns: 1fr; }
       .seo-grid { grid-template-columns: 1fr; }
     }
+
+    .section-wrap { max-width: 1080px; margin: 0 auto; padding: clamp(32px,5vw,56px) clamp(16px,4vw,40px); }
+    .section-alt { background: var(--surface); max-width: 100%; }
+    .section-alt .section-wrap-inner { max-width: 1080px; margin: 0 auto; padding: clamp(32px,5vw,56px) clamp(16px,4vw,40px); }
+    .section-header { margin-bottom: 24px; }
+    .quick-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 20px; }
+    .tool-card { display: flex; align-items: center; gap: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 14px 16px; transition: all 0.18s; text-decoration: none; }
+    .tool-card:hover { border-color: var(--blue-bdr); transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+    .tool-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .tool-info { flex: 1; }
+    .tool-name { font-family: 'Nunito', sans-serif; font-size: 0.88rem; font-weight: 900; color: var(--text); }
+    .tool-desc { font-size: 0.76rem; color: var(--muted-lt); font-weight: 600; margin-top: 1px; }
+    .tool-arrow { font-size: 0.9rem; color: var(--muted-lt); flex-shrink: 0; }
+    .cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .quiz-tile { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 16px; transition: all 0.18s; text-decoration: none; display: block; }
+    .quiz-tile:hover { border-color: var(--blue-bdr); background: var(--blue-soft); transform: translateY(-2px); }
+    .quiz-tile-featured { background: var(--blue-soft); border-color: var(--blue-bdr); grid-column: span 2; }
+    .qt-icon { font-size: 1.3rem; margin-bottom: 8px; }
+    .qt-name { font-family: 'Nunito', sans-serif; font-size: 0.88rem; font-weight: 900; color: var(--text); margin-bottom: 3px; }
+    .qt-meta { font-size: 0.73rem; color: var(--muted-lt); font-weight: 600; }
+    .section-alt { background: var(--surface); }
+    .interactive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    @media(max-width: 768px) { .quick-grid { grid-template-columns: 1fr; } .cards-grid { grid-template-columns: repeat(2, 1fr); } .quiz-tile-featured { grid-column: span 2; } .interactive-grid { grid-template-columns: 1fr; } }
+    @media(max-width: 480px) { .cards-grid { grid-template-columns: 1fr; } .quiz-tile-featured { grid-column: span 1; } }
   </style>
 </head>
 <body>
@@ -210,412 +234,281 @@
       <div class="logo-mark">🧠</div>
       <div class="logo-name">MyAnxietyTest</div>
     </a>
-    <div class="topbar-tag">18 free tools · No sign-up</div>
+    <div class="topbar-tag">Free anxiety tools · No sign-up</div>
   </div>
 </header>
+
 
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-kicker">✦ Free anxiety tools</div>
-    <h1>Understand your anxiety.<br><span>Take action today.</span></h1>
-    <p class="hero-desc">Tests, trackers, a body scan and crisis support. All free, all instant, all built around your specific experience. Not generic advice.</p>
-    <div class="hero-count">
-      <span class="hero-count-num">18</span> free tools available right now
-    </div>
+    <h1>Understand your <span>anxiety</span> better</h1>
+    <p class="hero-desc">Tests, trackers, a body scan and crisis support. All free, instant and private. Built around your specific experience, not generic advice.</p>
     <a href="#tools" class="btn-hero-main">
-      Explore all tools ↓
+      Explore the tools ↓
     </a>
     <div class="hero-trust">
-      <div class="ht-item"><div class="ht-dot">✓</div>No account needed</div>
-      <div class="ht-item"><div class="ht-dot">✓</div>Instant results</div>
-      <div class="ht-item"><div class="ht-dot">✓</div>100% anonymous</div>
-      <div class="ht-item"><div class="ht-dot">✓</div>Built for real people</div>
+      <div class="hero-trust-item">🔒 Anonymous</div>
+      <div class="hero-trust-item">⚡ Instant results</div>
+      <div class="hero-trust-item">💙 Free forever</div>
     </div>
   </div>
 </section>
 
-<div class="tools-wrap" id="tools">
+<main id="tools">
 
-  <!-- ── 1. START HERE ── -->
-  <div style="margin-bottom:8px;">
+<!-- ── SECTION 1: Start Here ──────────────────────────────────────────── -->
+<div class="section-wrap">
+  <div class="section-header">
     <div class="section-eyebrow">Start here</div>
     <h2 class="section-h2">Find the right <span>tool for you</span></h2>
-    <p class="section-sub">If you are not sure where to start, the anxiety level test gives you the clearest picture of where you are right now.</p>
+    <p class="section-sub">Not sure where to start? The anxiety level test gives you the clearest picture of where you are right now.</p>
   </div>
 
-  <!-- FEATURED -->
+  <!-- Featured tool -->
   <div class="featured-tool">
     <div class="ft-left">
-      <div>
-        <div class="ft-badge">⭐ Most popular</div>
-        <div class="ft-title">Anxiety Level Test</div>
-        <div class="ft-desc">21 questions about worry, panic, sleep, physical symptoms and daily functioning. Get a precise percentage score plus a full personalised action plan.</div>
-        <div class="ft-pills">
-          <div class="ft-pill">📋 21 questions</div>
-          <div class="ft-pill">⚡ 3 minutes</div>
-          <div class="ft-pill">🎯 Low / Moderate / High</div>
-          <div class="ft-pill">📝 Personalised plan</div>
-        </div>
-      </div>
+      <div class="ft-badge">Most popular</div>
+      <div class="ft-title">Anxiety Level Test</div>
+      <p class="ft-desc">21 questions. Measures your anxiety across 7 dimensions — worry, physical symptoms, avoidance, sleep, concentration, social impact and function. The most complete picture of how significant your anxiety is right now.</p>
       <a href="https://myanxietytest.com/anxiety-level/" class="btn-ft">Take the Anxiety Test →</a>
     </div>
     <div class="ft-right">
-      <div class="ft-what">What you get</div>
-      <div class="ft-feature">
-        <div class="ft-feat-icon">📊</div>
-        <div>
-          <div class="ft-feat-title">Your anxiety percentage score</div>
-          <div class="ft-feat-desc">A precise score showing exactly where you land across low, moderate and high anxiety.</div>
-        </div>
-      </div>
-      <div class="ft-feature">
-        <div class="ft-feat-icon">💡</div>
-        <div>
-          <div class="ft-feat-title">What your result means</div>
-          <div class="ft-feat-desc">A clear explanation of the pattern driving your score, specific to your level.</div>
-        </div>
-      </div>
-      <div class="ft-feature">
-        <div class="ft-feat-icon">🗺️</div>
-        <div>
-          <div class="ft-feat-title">Personalised 3-step plan</div>
-          <div class="ft-feat-desc">Concrete next steps based on your specific result, not generic advice.</div>
-        </div>
-      </div>
-      <div class="ft-feature">
-        <div class="ft-feat-icon">❤️</div>
-        <div>
-          <div class="ft-feat-title">Why this pattern keeps going</div>
-          <div class="ft-feat-desc">A clear explanation of what is maintaining your anxiety and what would actually change it.</div>
-        </div>
-      </div>
+      <div class="ft-stat"><span>21</span>questions</div>
+      <div class="ft-stat"><span>3</span>min</div>
+      <div class="ft-stat"><span>7</span>dimensions</div>
     </div>
   </div>
 
-  <!-- TOP 3 + 2 new high-intent tools -->
-  <div class="tools-grid" style="margin-bottom:36px;">
-    <div class="tool-card tc-rose">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🆘</div><div class="tc-tag">Crisis tool</div></div>
-        <div class="tc-name">Panic Attack SOS Card</div>
-        <div class="tc-desc">A personalised crisis card for your next panic attack, built around exactly how it feels for you. Download and save on your phone.</div>
+  <!-- Quick tools row -->
+  <div class="quick-grid">
+    <a href="https://myanxietytest.com/panic-sos-card/" class="tool-card">
+      <div class="tool-icon">🆘</div>
+      <div class="tool-info">
+        <div class="tool-name">Panic SOS Card</div>
+        <div class="tool-desc">Step-by-step crisis card, always accessible</div>
       </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">8 questions</div><div class="tc-pill">Your name on it</div><div class="tc-pill">Download as image</div></div>
-        <a href="https://myanxietytest.com/panic-sos-card/" class="btn-tool">Build My SOS Card <span class="btn-tool-arrow">→</span></a>
+      <div class="tool-arrow">→</div>
+    </a>
+    <a href="https://myanxietytest.com/anxiety-triggers/" class="tool-card">
+      <div class="tool-icon">🔍</div>
+      <div class="tool-info">
+        <div class="tool-name">Anxiety Triggers</div>
+        <div class="tool-desc">Identify what is driving your anxiety</div>
       </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🔍</div><div class="tc-tag">Triggers</div></div>
-        <div class="tc-name">Anxiety Triggers Identifier</div>
-        <div class="tc-desc">Identifies your dominant anxiety trigger across 6 categories. Most people are surprised by which one comes out on top.</div>
+      <div class="tool-arrow">→</div>
+    </a>
+    <a href="https://myanxietytest.com/anxiety-body-scan/" class="tool-card">
+      <div class="tool-icon">🫀</div>
+      <div class="tool-info">
+        <div class="tool-name">Anxiety Body Scan</div>
+        <div class="tool-desc">Map where anxiety lives in your body</div>
       </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">6 categories</div><div class="tc-pill">Bar chart result</div></div>
-        <a href="https://myanxietytest.com/anxiety-triggers/" class="btn-tool">Find My Triggers <span class="btn-tool-arrow">→</span></a>
+      <div class="tool-arrow">→</div>
+    </a>
+    <a href="https://myanxietytest.com/do-i-need-therapy/" class="tool-card">
+      <div class="tool-icon">🛋️</div>
+      <div class="tool-info">
+        <div class="tool-name">Do I Need Therapy?</div>
+        <div class="tool-desc">Honest assessment of whether to seek help</div>
       </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🫀</div><div class="tc-tag">Interactive</div></div>
-        <div class="tc-name">Anxiety Body Scan</div>
-        <div class="tc-desc">Click on where you feel anxiety in your body. Get a personalised explanation of your physical anxiety pattern.</div>
+      <div class="tool-arrow">→</div>
+    </a>
+    <a href="https://myanxietytest.com/is-my-anxiety-getting-worse/" class="tool-card">
+      <div class="tool-icon">📈</div>
+      <div class="tool-info">
+        <div class="tool-name">Is My Anxiety Getting Worse?</div>
+        <div class="tool-desc">Track whether your pattern is escalating</div>
       </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">Interactive map</div><div class="tc-pill">11 body zones</div><div class="tc-pill">Pattern detection</div></div>
-        <a href="https://myanxietytest.com/anxiety-body-scan/" class="btn-tool">Start Body Scan <span class="btn-tool-arrow">→</span></a>
+      <div class="tool-arrow">→</div>
+    </a>
+    <a href="https://myanxietytest.com/anxiety-avoidance-profile/" class="tool-card">
+      <div class="tool-icon">🚧</div>
+      <div class="tool-info">
+        <div class="tool-name">Anxiety Avoidance Profile</div>
+        <div class="tool-desc">Map where avoidance is narrowing your life</div>
       </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🛋️</div><div class="tc-tag">High intent</div></div>
-        <div class="tc-name">Do I Need Therapy?</div>
-        <div class="tc-desc">Not sure if therapy is right for you? 10 questions that give you an honest answer based on your specific situation, not a generic yes or no.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">10 questions</div><div class="tc-pill">3 outcomes</div><div class="tc-pill">Honest result</div></div>
-        <a href="https://myanxietytest.com/do-i-need-therapy/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card tc-orange">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">📈</div><div class="tc-tag">Trajectory</div></div>
-        <div class="tc-name">Is My Anxiety Getting Worse?</div>
-        <div class="tc-desc">Hard to tell if anxiety is escalating or just a difficult period? This quiz identifies your trajectory with an animated gauge result.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">10 questions</div><div class="tc-pill">Gauge result</div><div class="tc-pill">Comparative scoring</div></div>
-        <a href="https://myanxietytest.com/is-my-anxiety-getting-worse/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
+      <div class="tool-arrow">→</div>
+    </a>
   </div>
+</div>
 
-  <!-- ── 2. IS IT ANXIETY OR SOMETHING ELSE? ── -->
-  <div style="margin-bottom:16px;">
-    <div class="section-eyebrow">Understand your specific pattern</div>
-    <h2 class="section-h2">Is it anxiety or <span>something else?</span></h2>
-    <p class="section-sub">These tests help you understand which specific pattern is present and whether something else might be at play alongside anxiety.</p>
+<!-- ── SECTION 2: What type ───────────────────────────────────────────── -->
+<div class="section-wrap section-alt">
+  <div class="section-header">
+    <div class="section-eyebrow">Understand your pattern</div>
+    <h2 class="section-h2">What type of anxiety <span>do you have?</span></h2>
+    <p class="section-sub">Is it anxiety, or something else? These tests identify your specific pattern with targeted questions and detailed results.</p>
   </div>
-
-  <div class="tools-grid">
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">😔</div><div class="tc-tag">Assessment</div></div>
-        <div class="tc-name">Anxiety or Depression?</div>
-        <div class="tc-desc">Split scores for both. Understand which pattern is dominant and what it means for getting the right help.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">20 questions</div><div class="tc-pill">Split scoring</div><div class="tc-pill">5 profiles</div></div>
-        <a href="https://myanxietytest.com/anxiety-or-depression/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card tc-purple">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🔄</div><div class="tc-tag">Assessment</div></div>
-        <div class="tc-name">OCD vs Anxiety Test</div>
-        <div class="tc-desc">OCD and anxiety feel similar but are driven by very different patterns. This test helps you see which is more dominant.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">Split scoring</div><div class="tc-pill">4 profiles</div></div>
-        <a href="https://myanxietytest.com/ocd-vs-anxiety-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card tc-orange">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">⚡</div><div class="tc-tag">Assessment</div></div>
-        <div class="tc-name">Anxiety or ADHD?</div>
-        <div class="tc-desc">Concentration problems and restlessness could be anxiety, ADHD or both. Find out which is the stronger driver.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">20 questions</div><div class="tc-pill">Split scoring</div><div class="tc-pill">4 profiles</div></div>
-        <a href="https://myanxietytest.com/anxiety-or-adhd/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🔥</div><div class="tc-tag">Assessment</div></div>
-        <div class="tc-name">Anxiety vs Burnout Quiz</div>
-        <div class="tc-desc">Are you burnt out, anxious or both? These overlap significantly and respond to different approaches.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Split scoring</div><div class="tc-pill">3 profiles</div></div>
-        <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card tc-indigo">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🌙</div><div class="tc-tag">Assessment</div></div>
-        <div class="tc-name">Anxiety and Sleep Quiz</div>
-        <div class="tc-desc">Is anxiety ruining your sleep, or is poor sleep making your anxiety worse? Identifies which direction the cycle runs.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">5 profiles</div><div class="tc-pill">Bidirectional</div></div>
-        <a href="https://myanxietytest.com/anxiety-sleep-quiz/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card tc-rose">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">💔</div><div class="tc-tag">Assessment</div></div>
-        <div class="tc-name">Relationship Anxiety Test</div>
-        <div class="tc-desc">Constant worry about your partner, fear of abandonment, need for reassurance. Find out if relationship anxiety is present.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">3 levels</div><div class="tc-pill">Attachment patterns</div></div>
-        <a href="https://myanxietytest.com/relationship-anxiety/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
+  <div class="cards-grid">
+    <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/" class="quiz-tile quiz-tile-featured">
+      <div class="qt-icon">🔍</div>
+      <div class="qt-name">What Type of Anxiety Do I Have?</div>
+      <div class="qt-meta">15 questions · Maps GAD, Social, Health, Panic</div>
+    </a>
+    <a href="https://myanxietytest.com/anxiety-or-depression/" class="quiz-tile">
+      <div class="qt-icon">🔄</div>
+      <div class="qt-name">Anxiety or Depression?</div>
+      <div class="qt-meta">Tells them apart clearly</div>
+    </a>
+    <a href="https://myanxietytest.com/ocd-vs-anxiety-test/" class="quiz-tile">
+      <div class="qt-icon">🔁</div>
+      <div class="qt-name">OCD vs Anxiety</div>
+      <div class="qt-meta">Intrusive thoughts explained</div>
+    </a>
+    <a href="https://myanxietytest.com/anxiety-or-adhd/" class="quiz-tile">
+      <div class="qt-icon">⚡</div>
+      <div class="qt-name">Anxiety or ADHD?</div>
+      <div class="qt-meta">Symptoms overlap unpacked</div>
+    </a>
+    <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/" class="quiz-tile">
+      <div class="qt-icon">🔥</div>
+      <div class="qt-name">Anxiety vs Burnout</div>
+      <div class="qt-meta">Different patterns, different help</div>
+    </a>
+    <a href="https://myanxietytest.com/anxiety-sleep-quiz/" class="quiz-tile">
+      <div class="qt-icon">😴</div>
+      <div class="qt-name">Anxiety and Sleep</div>
+      <div class="qt-meta">How anxiety is affecting your rest</div>
+    </a>
+    <a href="https://myanxietytest.com/relationship-anxiety/" class="quiz-tile">
+      <div class="qt-icon">💞</div>
+      <div class="qt-name">Relationship Anxiety</div>
+      <div class="qt-meta">Attachment patterns and triggers</div>
+    </a>
+    <a href="https://myanxietytest.com/emotional-exhaustion-anxiety-test/" class="quiz-tile">
+      <div class="qt-icon">🪫</div>
+      <div class="qt-name">Emotional Exhaustion</div>
+      <div class="qt-meta">How depleted is your anxiety making you?</div>
+    </a>
   </div>
+</div>
 
-  <!-- ── 3. SPECIFIC TYPES ── -->
-  <div style="margin-bottom:16px;">
+<!-- ── SECTION 3: Specific types ─────────────────────────────────────── -->
+<div class="section-wrap">
+  <div class="section-header">
     <div class="section-eyebrow">Specific anxiety types</div>
     <h2 class="section-h2">Go <span>deeper</span> into your pattern</h2>
-    <p class="section-sub">Each of these tests focuses on a specific type of anxiety with targeted questions and detailed results.</p>
+    <p class="section-sub">Each test focuses on a specific anxiety type with targeted questions and detailed insights.</p>
   </div>
-
-  <div class="tools-grid">
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">👥</div><div class="tc-tag">Social anxiety</div></div>
-        <div class="tc-name">Social Anxiety Test</div>
-        <div class="tc-desc">Fear of judgment, post-event replay, avoiding social situations. 18 questions specific to social anxiety.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">3 levels</div></div>
-        <a href="https://myanxietytest.com/social-anxiety-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">✨</div><div class="tc-tag">High-functioning</div></div>
-        <div class="tc-name">High-Functioning Anxiety Quiz</div>
-        <div class="tc-desc">You look fine. You deliver. But inside the anxiety never stops. Identifies the hidden anxiety driving high performance.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Dark editorial design</div></div>
-        <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🏥</div><div class="tc-tag">Health anxiety</div></div>
-        <div class="tc-name">Health Anxiety Test</div>
-        <div class="tc-desc">Worry about symptoms, illness and physical sensations. 16 questions with a unique severity block indicator.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Severity blocks</div></div>
-        <a href="https://myanxietytest.com/health-anxiety-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card tc-rose">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">💓</div><div class="tc-tag">Panic</div></div>
-        <div class="tc-name">Panic Disorder Test</div>
-        <div class="tc-desc">The difference between having panic attacks and having panic disorder. This test helps you understand which is present.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Anticipatory anxiety</div></div>
-        <a href="https://myanxietytest.com/panic-disorder-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
+  <div class="cards-grid">
+    <a href="https://myanxietytest.com/social-anxiety-test/" class="quiz-tile">
+      <div class="qt-icon">🗣️</div>
+      <div class="qt-name">Social Anxiety Test</div>
+      <div class="qt-meta">Attachment patterns and triggers</div>
+    </a>
+    <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/" class="quiz-tile">
+      <div class="qt-icon">🎭</div>
+      <div class="qt-name">High-Functioning Anxiety</div>
+      <div class="qt-meta">The hidden anxiety pattern</div>
+    </a>
+    <a href="https://myanxietytest.com/health-anxiety-test/" class="quiz-tile">
+      <div class="qt-icon">🏥</div>
+      <div class="qt-name">Health Anxiety Test</div>
+      <div class="qt-meta">16 questions</div>
+    </a>
+    <a href="https://myanxietytest.com/panic-disorder-test/" class="quiz-tile">
+      <div class="qt-icon">🚨</div>
+      <div class="qt-name">Panic Disorder Test</div>
+      <div class="qt-meta">Panic attacks and patterns</div>
+    </a>
+    <a href="https://myanxietytest.com/anticipatory-anxiety-test/" class="quiz-tile">
+      <div class="qt-icon">⏳</div>
+      <div class="qt-name">Anticipatory Anxiety</div>
+      <div class="qt-meta">Dreading events before they happen</div>
+    </a>
+    <a href="https://myanxietytest.com/anxiety-in-the-body-quiz/" class="quiz-tile">
+      <div class="qt-icon">🫀</div>
+      <div class="qt-name">Anxiety in the Body</div>
+      <div class="qt-meta">Somatic symptoms mapped</div>
+    </a>
   </div>
+</div>
 
-  <!-- ── 4. DAILY TOOLS ── -->
-  <div style="margin-bottom:16px;">
+<!-- ── SECTION 4: Know yourself better ───────────────────────────────── -->
+<div class="section-wrap section-alt">
+  <div class="section-header">
+    <div class="section-eyebrow">Know yourself better</div>
+    <h2 class="section-h2">Your <span>patterns</span> and tendencies</h2>
+    <p class="section-sub">Tests that reveal the specific behavioural and cognitive patterns that anxiety often works through.</p>
+  </div>
+  <div class="cards-grid">
+    <a href="https://myanxietytest.com/am-i-a-people-pleaser/" class="quiz-tile">
+      <div class="qt-icon">🙋</div>
+      <div class="qt-name">Am I a People Pleaser?</div>
+      <div class="qt-meta">14 questions</div>
+    </a>
+    <a href="https://myanxietytest.com/perfectionism-test/" class="quiz-tile">
+      <div class="qt-icon">🎯</div>
+      <div class="qt-name">Perfectionism Test</div>
+      <div class="qt-meta">Values vs fear-driven standards</div>
+    </a>
+    <a href="https://myanxietytest.com/am-i-an-overthinker/" class="quiz-tile">
+      <div class="qt-icon">🌀</div>
+      <div class="qt-name">Am I an Overthinker?</div>
+      <div class="qt-meta">10 questions</div>
+    </a>
+    <a href="https://myanxietytest.com/productive-vs-unproductive-worry-quiz/" class="quiz-tile">
+      <div class="qt-icon">⚖️</div>
+      <div class="qt-name">Productive vs Unproductive Worry</div>
+      <div class="qt-meta">Is your worry working for you?</div>
+    </a>
+  </div>
+</div>
+
+<!-- ── SECTION 5: Daily tools ────────────────────────────────────────── -->
+<div class="section-wrap">
+  <div class="section-header">
     <div class="section-eyebrow">Daily tools</div>
     <h2 class="section-h2">Track, <span>journal</span> and reflect</h2>
-    <p class="section-sub">These tools are designed to be used regularly. They save privately in your browser and help you see patterns over time.</p>
+    <p class="section-sub">Tools you return to regularly to track patterns, process your experience and build self-awareness over time.</p>
   </div>
-
   <div class="interactive-grid">
-    <div class="interactive-card">
+    <div class="ic-card">
       <div class="ic-header">
-        <div class="ic-header-row"><div class="ic-icon">📓</div><div class="ic-tag">Daily journaling</div></div>
-        <div class="ic-name">Anxiety Journal</div>
-        <div class="ic-desc">A guided daily check-in with prompts, mood tags, free writing and a calendar showing your history.</div>
+        <div class="ic-icon">📓</div>
+        <div class="ic-info">
+          <div class="ic-name">Anxiety Journal</div>
+          <div class="ic-sub">Free-write without prompts</div>
+        </div>
       </div>
-      <div class="ic-body">
-        <ul class="ic-features">
-          <li>5 anxiety levels + 12 mood tags per entry</li>
-          <li>4 guided prompts + unlimited free writing</li>
-          <li>Calendar with colour-coded history</li>
-          <li>Export as .txt, saved in your browser only</li>
-        </ul>
-        <a href="https://myanxietytest.com/anxiety-journal/" class="btn-ic">Open Journal <span>→</span></a>
-      </div>
+      <p class="ic-desc">A simple writing space for processing anxious thoughts. No prompts, no structure — just a clear space to put things down and see them differently.</p>
+      <a href="https://myanxietytest.com/anxiety-journal/" class="btn-ic">Open Journal <span>→</span></a>
     </div>
-
-    <div class="interactive-card">
+    <div class="ic-card">
       <div class="ic-header">
-        <div class="ic-header-row"><div class="ic-icon">📈</div><div class="ic-tag">Progress tracking</div></div>
-        <div class="ic-name">Anxiety Timeline Tracker</div>
-        <div class="ic-desc">Log your daily anxiety level and watch it change over time with a visual timeline chart.</div>
+        <div class="ic-icon">📊</div>
+        <div class="ic-info">
+          <div class="ic-name">Anxiety Tracker</div>
+          <div class="ic-sub">Daily log, visible trend</div>
+        </div>
       </div>
-      <div class="ic-body">
-        <ul class="ic-features">
-          <li>5 emoji level buttons per day</li>
-          <li>Visual chart: 7, 30, 90 days or all time</li>
-          <li>Streak counter, trend indicator, averages</li>
-          <li>Export as .csv, saved in your browser only</li>
-        </ul>
-        <a href="https://myanxietytest.com/anxiety-tracker/" class="btn-ic">Open Tracker <span>→</span></a>
-      </div>
+      <p class="ic-desc">Rate your anxiety daily on a 1–10 scale. The tracker shows you the actual pattern over time — whether it is improving, stable or escalating.</p>
+      <a href="https://myanxietytest.com/anxiety-tracker/" class="btn-ic">Open Tracker <span>→</span></a>
     </div>
   </div>
-
 </div>
+
+</main>
 
 <!-- ARTICLES STRIP -->
-<div style="max-width:1080px;margin:0 auto;padding:0 clamp(16px,4vw,40px) 48px;">
-  <div style="background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);box-shadow:var(--shadow-sm);padding:24px 28px;">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px;">
-      <div>
-        <div style="font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:4px;">From the guides</div>
-        <div style="font-family:'Nunito',sans-serif;font-size:1.1rem;font-weight:900;letter-spacing:-0.02em;">Read more about anxiety</div>
-      </div>
-      <a href="https://myanxietytest.com/articles/" style="font-size:0.82rem;font-weight:700;color:var(--blue);display:flex;align-items:center;gap:4px;white-space:nowrap;">All articles →</a>
+<div style="background:var(--blue-dark);padding:clamp(24px,4vw,40px) clamp(16px,4vw,40px);">
+  <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <div>
+      <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px;">New articles</div>
+      <div style="font-family:'Nunito',sans-serif;font-size:1.1rem;font-weight:900;color:white;">In-depth anxiety guides</div>
+      <div style="font-size:0.85rem;color:rgba(255,255,255,0.6);margin-top:3px;">Evidence-based articles on every anxiety pattern, therapy option and coping strategy</div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
-      <a href="https://myanxietytest.com/articles/why-is-my-anxiety-worse-in-the-morning/" style="display:block;padding:14px;border-radius:var(--r);border:1px solid var(--border);background:var(--bg);transition:all 0.15s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.background='var(--blue-soft)'" onmouseout="this.style.borderColor='var(--border)';this.style.background='var(--bg)'">
-        <div style="font-size:0.68rem;font-weight:700;color:var(--muted-lt);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:5px;">Morning anxiety</div>
-        <div style="font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:900;color:var(--text);line-height:1.3;">Why Is My Anxiety Worse in the Morning?</div>
-      </a>
-      <a href="https://myanxietytest.com/articles/should-i-see-a-therapist-for-anxiety/" style="display:block;padding:14px;border-radius:var(--r);border:1px solid var(--border);background:var(--bg);transition:all 0.15s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.background='var(--blue-soft)'" onmouseout="this.style.borderColor='var(--border)';this.style.background='var(--bg)'">
-        <div style="font-size:0.68rem;font-weight:700;color:var(--muted-lt);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:5px;">Getting help</div>
-        <div style="font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:900;color:var(--text);line-height:1.3;">Should I See a Therapist for Anxiety?</div>
-      </a>
-      <a href="https://myanxietytest.com/articles/signs-anxiety-is-getting-worse/" style="display:block;padding:14px;border-radius:var(--r);border:1px solid var(--border);background:var(--bg);transition:all 0.15s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.background='var(--blue-soft)'" onmouseout="this.style.borderColor='var(--border)';this.style.background='var(--bg)'">
-        <div style="font-size:0.68rem;font-weight:700;color:var(--muted-lt);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:5px;">Escalation</div>
-        <div style="font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:900;color:var(--text);line-height:1.3;">Signs Your Anxiety Is Getting Worse</div>
-      </a>
-    </div>
+    <a href="https://myanxietytest.com/articles/" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 22px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:white;font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:900;border-radius:12px;white-space:nowrap;transition:all 0.2s;text-decoration:none;">Browse all articles →</a>
   </div>
 </div>
 
-
-<!-- NEW QUIZZES SECTION -->
-<div style="max-width:1080px;margin:0 auto;padding:0 clamp(16px,4vw,40px) 40px;">
-  <div style="margin-bottom:18px;">
-    <div style="font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:5px;">New this week</div>
-    <div style="font-family:'Nunito',sans-serif;font-size:clamp(1.2rem,2.5vw,1.7rem);font-weight:900;letter-spacing:-0.02em;">More free tests</div>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
-    <a href="https://myanxietytest.com/am-i-a-people-pleaser/" style="background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:18px;display:block;transition:all 0.2s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
-      <div style="font-size:1.4rem;margin-bottom:8px;">🙋</div>
-      <div style="font-family:'Nunito',sans-serif;font-size:0.92rem;font-weight:900;color:var(--text);margin-bottom:4px;">Am I a People Pleaser?</div>
-      <div style="font-size:0.78rem;color:var(--muted-lt);font-weight:600;">14 questions</div>
-    </a>
-    <a href="https://myanxietytest.com/perfectionism-test/" style="background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:18px;display:block;transition:all 0.2s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
-      <div style="font-size:1.4rem;margin-bottom:8px;">🎯</div>
-      <div style="font-family:'Nunito',sans-serif;font-size:0.92rem;font-weight:900;color:var(--text);margin-bottom:4px;">Perfectionism Test</div>
-      <div style="font-size:0.78rem;color:var(--muted-lt);font-weight:600;">12 questions</div>
-    </a>
-    <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/" style="background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:18px;display:block;transition:all 0.2s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
-      <div style="font-size:1.4rem;margin-bottom:8px;">🔍</div>
-      <div style="font-family:'Nunito',sans-serif;font-size:0.92rem;font-weight:900;color:var(--text);margin-bottom:4px;">What Type of Anxiety Do I Have?</div>
-      <div style="font-size:0.78rem;color:var(--muted-lt);font-weight:600;">15 questions</div>
-    </a>
-    <a href="https://myanxietytest.com/am-i-an-overthinker/" style="background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:18px;display:block;transition:all 0.2s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
-      <div style="font-size:1.4rem;margin-bottom:8px;">🌀</div>
-      <div style="font-family:'Nunito',sans-serif;font-size:0.92rem;font-weight:900;color:var(--text);margin-bottom:4px;">Am I an Overthinker?</div>
-      <div style="font-size:0.78rem;color:var(--muted-lt);font-weight:600;">10 questions</div>
-    </a>
-    <a href="https://myanxietytest.com/anticipatory-anxiety-test/" style="background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:18px;display:block;transition:all 0.2s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
-      <div style="font-size:1.4rem;margin-bottom:8px;">⏳</div>
-      <div style="font-family:'Nunito',sans-serif;font-size:0.92rem;font-weight:900;color:var(--text);margin-bottom:4px;">Anticipatory Anxiety Test</div>
-      <div style="font-size:0.78rem;color:var(--muted-lt);font-weight:600;">11 questions</div>
-    </a>
-    <a href="https://myanxietytest.com/anxiety-avoidance-profile/" style="background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:18px;display:block;transition:all 0.2s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue-bdr)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
-      <div style="font-size:1.4rem;margin-bottom:8px;">🚧</div>
-      <div style="font-family:'Nunito',sans-serif;font-size:0.92rem;font-weight:900;color:var(--text);margin-bottom:4px;">Anxiety Avoidance Profile</div>
-      <div style="font-size:0.78rem;color:var(--muted-lt);font-weight:600;">13 questions</div>
-    </a>
-  </div>
-  <div style="text-align:right;margin-top:10px;">
-    <a href="https://myanxietytest.com/#all-tools" style="font-size:0.82rem;font-weight:700;color:var(--blue);">See all tools →</a>
-  </div>
-</div>
-
-<!-- SEO CONTENT -->
+<!-- SEO SECTION -->
 <section class="seo-section">
   <div class="seo-inner">
     <div class="seo-grid">
       <div class="seo-card">
-        <h2>Why 18 tools instead of one?</h2>
+        <h2>Why use multiple tools instead of just one?</h2>
         <p>Anxiety is not one thing. Social anxiety is different from health anxiety, which is different from high-functioning anxiety, which is different from relationship anxiety. Generic anxiety advice treats all of these as the same. These tools do not.</p>
         <p>Each tool is built for a specific pattern. The anxiety level test tells you how severe it is. The triggers identifier tells you what is causing it. The body scan tells you where you feel it. Together they give you a much clearer picture than any single tool can. If you want to go deeper, the <a href="https://myanxietytest.com/articles/" style="color:var(--blue);font-weight:700;">anxiety guides</a> explain the patterns in more detail.</p>
       </div>
@@ -661,7 +554,7 @@
       <a href="https://myanxietytest.com/articles/">Articles</a>
     </div>
   </div>
-  <div class="footer-copy">© 2026 MyAnxietyTest.com · 18 free anxiety tools · Not a substitute for professional mental health care</div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
 </footer>
 
 <script>
@@ -676,5 +569,4 @@
     });
   }
 </script>
-</body>
-</html>
+</body></html>
