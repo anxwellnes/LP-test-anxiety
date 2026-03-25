@@ -7,108 +7,138 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Perfectionism Test: How Perfectionist Are You? | MyAnxietyTest.com</title>
-  <meta name="description" content="Take the free perfectionism test. 12 questions measure whether your high standards are driven by values or by anxiety, and the cost perfectionism is having on your life."/>
+  <meta name="description" content="Free perfectionism test. 12 questions measure whether your high standards are driven by genuine values or by anxiety, and what perfectionism is costing you."/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://myanxietytest.com/perfectionism-test/"/>
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Perfectionism Test: How Perfectionist Are You? | MyAnxietyTest.com"/>
-  <meta property="og:description" content="Take the free perfectionism test. 12 questions measure whether your high standards are driven by values or by anxiety, and the cost perfectionism is having on your life."/>
+  <meta property="og:description" content="Free perfectionism test. 12 questions measure whether your high standards are driven by genuine values or by anxiety, and what perfectionism is costing you."/>
   <meta property="og:url" content="https://myanxietytest.com/perfectionism-test/"/>
-  <meta property="og:site_name" content="MyAnxietyTest"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--blue:#0064FA;--blue-dark:#0050CC;--blue-soft:#E8F1FF;--blue-bdr:#C0D8FF;--bg:#F2F5FA;--surface:#FFFFFF;--border:#DDE4EF;--text:#0D1B2A;--muted:#5C6F85;--muted-lt:#97A8BA;--shadow-sm:0 1px 4px rgba(0,100,250,0.07);--shadow-md:0 4px 20px rgba(0,100,250,0.09);--r:12px;--r-lg:18px;--r-xl:24px;}
+    :root {
+      --a: #7c3aed;
+      --soft: #f5f3ff;
+      --bdr: #ddd6fe;
+      --tag-bg: #ede9fe;
+      --tag-c: #5b21b6;
+      --bg: #F2F5FA;
+      --surface: #FFFFFF;
+      --border: #DDE4EF;
+      --text: #0D1B2A;
+      --muted: #5C6F85;
+      --muted-lt: #97A8BA;
+      --r: 12px;
+      --r-lg: 18px;
+      --r-xl: 22px;
+    }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     html{scroll-behavior:smooth;}
     body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;min-height:100vh;}
     a{text-decoration:none;color:inherit;}
-    .topbar{background:var(--blue);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,100,250,0.25);}
+
+    /* TOPBAR */
+    .topbar{background:var(--a);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15);}
     .topbar-inner{max-width:900px;margin:0 auto;padding:0 clamp(16px,4vw,32px);height:56px;display:flex;align-items:center;justify-content:space-between;}
-    .logo{display:flex;align-items:center;gap:9px;}
-    .logo-mark{width:30px;height:30px;background:white;border-radius:7px;display:grid;place-items:center;font-size:.95rem;}
-    .logo-name{font-family:'Nunito',sans-serif;font-weight:900;font-size:1rem;color:white;letter-spacing:-.01em;}
-    .topbar-tag{font-size:.73rem;font-weight:700;color:rgba(255,255,255,.75);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:3px 11px;border-radius:999px;}
-    .hero{background:linear-gradient(150deg,var(--blue-dark),var(--blue));padding:clamp(36px,6vw,64px) clamp(16px,4vw,32px) clamp(24px,4vw,40px);text-align:center;}
-    .hero-kicker{display:inline-flex;align-items:center;gap:6px;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:14px;}
-    .hero h1{font-family:'Nunito',sans-serif;font-size:clamp(1.7rem,4vw,2.8rem);font-weight:900;color:white;line-height:1.1;letter-spacing:-.025em;margin-bottom:12px;}
-    .hero h1 span{color:#93c5fd;}
-    .hero-desc{font-size:.97rem;color:rgba(255,255,255,.72);max-width:520px;margin:0 auto;line-height:1.65;}
-    .hero-meta{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px;flex-wrap:wrap;}
-    .hero-badge{font-size:.75rem;font-weight:700;color:rgba(255,255,255,.6);display:flex;align-items:center;gap:5px;}
-    .wrap{max-width:720px;margin:0 auto;padding:clamp(24px,4vw,40px) clamp(16px,4vw,32px);}
-    .quiz-card{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);box-shadow:var(--shadow-sm);overflow:hidden;}
-    .progress-bar{height:4px;background:var(--bg);}
-    .progress-fill{height:4px;background:var(--blue);transition:width .4s ease;border-radius:999px;}
-    .quiz-header{padding:20px 24px 0;display:flex;align-items:center;justify-content:space-between;}
-    .q-counter{font-size:.78rem;font-weight:700;color:var(--muted-lt);}
-    .q-section-tag{font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);background:var(--blue-soft);padding:3px 10px;border-radius:999px;}
-    .quiz-body{padding:24px;}
-    .q-text{font-family:'Nunito',sans-serif;font-size:clamp(1rem,2.2vw,1.25rem);font-weight:800;line-height:1.3;margin-bottom:20px;color:var(--text);}
-    .options{display:grid;gap:10px;}
-    .option{padding:14px 18px;border-radius:var(--r-lg);border:2px solid var(--border);background:var(--bg);cursor:pointer;font-size:.93rem;font-weight:600;color:var(--muted);transition:all .18s;display:flex;align-items:center;gap:12px;text-align:left;}
-    .option:hover{border-color:var(--blue);background:var(--blue-soft);color:var(--text);}
-    .option.selected{border-color:var(--blue);background:var(--blue-soft);color:var(--blue-dark);font-weight:700;}
-    .option.correct{border-color:#16a34a;background:#f0fdf4;color:#15803d;}
-    .option-dot{width:20px;height:20px;border-radius:50%;border:2px solid var(--border);flex-shrink:0;transition:all .18s;display:grid;place-items:center;}
-    .option.selected .option-dot{background:var(--blue);border-color:var(--blue);}
-    .option.selected .option-dot::after{content:'';width:8px;height:8px;border-radius:50%;background:white;}
-    .nav-row{padding:0 24px 24px;display:flex;align-items:center;justify-content:space-between;}
-    .btn-next{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 24px;background:var(--blue);color:white;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:900;border-radius:var(--r-lg);border:none;cursor:pointer;transition:all .2s;opacity:.5;pointer-events:none;}
-    .btn-next.active{opacity:1;pointer-events:auto;}
-    .btn-next.active:hover{background:var(--blue-dark);transform:translateY(-1px);}
-    .btn-back{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 14px;background:transparent;color:var(--muted);font-size:.84rem;font-weight:700;border-radius:var(--r);border:1px solid var(--border);cursor:pointer;transition:all .18s;}
-    .btn-back:hover{border-color:var(--blue);color:var(--blue);}
-    .result-card{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);box-shadow:var(--shadow-md);overflow:hidden;display:none;}
-    .result-header{padding:32px 28px 24px;text-align:center;}
-    .result-emoji{font-size:3rem;margin-bottom:12px;display:block;}
-    .result-level{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;}
-    .result-level.low{background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0;}
-    .result-level.moderate{background:#fffbeb;color:#d97706;border:1px solid #fde68a;}
-    .result-level.high{background:#fef2f2;color:#dc2626;border:1px solid #fecaca;}
-    .result-level.very-high{background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;}
-    .result-title{font-family:'Nunito',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:900;letter-spacing:-.025em;margin-bottom:10px;}
-    .result-desc{font-size:.95rem;color:var(--muted);line-height:1.75;max-width:540px;margin:0 auto;}
-    .result-breakdown{padding:0 28px 24px;}
-    .breakdown-title{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-lt);margin-bottom:12px;}
-    .breakdown-grid{display:grid;gap:10px;}
-    .breakdown-item{display:flex;align-items:center;gap:12px;}
-    .breakdown-label{font-size:.82rem;font-weight:700;color:var(--muted);min-width:160px;}
-    .breakdown-bar-wrap{flex:1;height:8px;background:var(--bg);border-radius:999px;overflow:hidden;}
-    .breakdown-bar{height:8px;border-radius:999px;transition:width 1s ease;}
-    .breakdown-pct{font-size:.78rem;font-weight:800;color:var(--muted-lt);min-width:32px;text-align:right;}
-    .result-body{padding:0 28px 28px;}
-    .insight-block{background:var(--bg);border-radius:var(--r-lg);padding:18px 20px;margin-bottom:14px;}
-    .insight-label{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
-    .insight-text{font-size:.9rem;color:var(--muted);line-height:1.7;}
-    .cta-block{background:linear-gradient(135deg,var(--blue-dark),var(--blue));border-radius:var(--r-lg);padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px;}
-    .cta-text{color:white;}
-    .cta-label{font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px;}
-    .cta-title{font-family:'Nunito',sans-serif;font-size:1rem;font-weight:900;color:white;margin-bottom:3px;}
-    .cta-desc{font-size:.8rem;color:rgba(255,255,255,.65);}
-    .btn-cta{display:inline-flex;align-items:center;gap:6px;height:42px;padding:0 20px;background:white;color:var(--blue-dark);font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:900;border-radius:var(--r);white-space:nowrap;transition:all .2s;text-decoration:none;}
-    .btn-cta:hover{background:var(--blue-soft);}
-    .retake-row{text-align:center;padding-top:8px;}
-    .btn-retake{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 18px;background:var(--bg);color:var(--muted);font-size:.84rem;font-weight:700;border-radius:var(--r);border:1px solid var(--border);cursor:pointer;transition:all .18s;}
-    .btn-retake:hover{border-color:var(--blue);color:var(--blue);}
-    .related-tools{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:20px 24px;margin-top:16px;}
-    .related-title{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-lt);margin-bottom:12px;}
-    .related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
-    .related-link{display:flex;align-items:center;gap:9px;padding:10px 12px;border-radius:var(--r);border:1px solid var(--border);background:var(--bg);transition:all .15s;}
-    .related-link:hover{border-color:var(--blue);background:var(--blue-soft);}
-    .related-icon{font-size:1.05rem;flex-shrink:0;}
-    .related-name{font-size:.8rem;font-weight:700;color:var(--text);}
-    .footer{background:var(--blue-dark);padding:22px clamp(16px,4vw,32px) 28px;margin-top:40px;}
-    .footer-inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.1);}
-    .footer-brand{display:flex;align-items:center;gap:8px;font-family:'Nunito',sans-serif;font-weight:900;font-size:.88rem;color:white;}
-    .footer-mark{width:26px;height:26px;border-radius:6px;background:rgba(255,255,255,.12);display:grid;place-items:center;font-size:.8rem;}
+    .logo{display:flex;align-items:center;gap:9px;text-decoration:none;}
+    .logo-mark{width:30px;height:30px;background:white;border-radius:7px;display:grid;place-items:center;font-size:0.95rem;}
+    .logo-name{font-family:'Nunito',sans-serif;font-weight:900;font-size:0.98rem;color:white;letter-spacing:-0.01em;}
+    .topbar-tag{font-size:0.72rem;font-weight:700;color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);padding:3px 11px;border-radius:999px;}
+
+    /* HERO */
+    .hero{background:linear-gradient(145deg,#4c1d95,#7c3aed);padding:clamp(40px,7vw,72px) clamp(16px,4vw,32px) clamp(28px,4vw,48px);text-align:center;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(255,255,255,0.07),transparent 70%);pointer-events:none;}
+    .hero-inner{max-width:600px;margin:0 auto;position:relative;z-index:1;}
+    .hero-kicker{display:inline-flex;align-items:center;gap:6px;padding:4px 13px;border-radius:999px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:16px;}
+    .hero h1{font-family:'Nunito',sans-serif;font-size:clamp(1.75rem,4.5vw,2.8rem);font-weight:900;color:white;line-height:1.1;letter-spacing:-0.025em;margin-bottom:12px;}
+    .hero h1 em{color:rgba(255,255,255,0.7);font-style:normal;}
+    .hero-desc{font-size:0.95rem;color:rgba(255,255,255,0.68);max-width:480px;margin:0 auto 20px;line-height:1.7;}
+    .hero-meta{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;}
+    .hero-badge{font-size:0.74rem;font-weight:700;color:rgba(255,255,255,0.55);display:flex;align-items:center;gap:5px;}
+
+    /* QUIZ WRAP */
+    .quiz-wrap{max-width:680px;margin:0 auto;padding:clamp(20px,4vw,36px) clamp(16px,4vw,24px);}
+
+    /* PROGRESS */
+    .progress-wrap{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.05);margin-bottom:12px;}
+    .progress-bar{height:3px;background:var(--bg);}
+    .progress-fill{height:3px;background:var(--a);border-radius:999px;transition:width 0.4s ease;}
+    .progress-header{padding:14px 20px 0;display:flex;align-items:center;justify-content:space-between;}
+    .p-counter{font-size:0.75rem;font-weight:700;color:var(--muted-lt);}
+    .p-section{font-size:0.65rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--a);background:var(--tag-bg);padding:2px 9px;border-radius:999px;}
+
+    /* QUESTION */
+    .q-body{padding:20px 20px 0;}
+    .q-text{font-family:'Nunito',sans-serif;font-size:clamp(1rem,2.2vw,1.2rem);font-weight:800;line-height:1.35;margin-bottom:18px;color:var(--text);}
+    .options{display:grid;gap:8px;padding-bottom:20px;}
+    .opt{padding:13px 16px;border-radius:var(--r-lg);border:2px solid var(--border);background:var(--bg);cursor:pointer;font-size:0.91rem;font-weight:600;color:var(--muted);transition:all 0.15s;display:flex;align-items:center;gap:11px;text-align:left;line-height:1.45;}
+    .opt:hover{border-color:var(--a);background:var(--soft);color:var(--text);}
+    .opt.selected{border-color:var(--a);background:var(--soft);color:var(--text);font-weight:700;}
+    .opt.selected .opt-dot{background:var(--a);border-color:var(--a);}
+    .opt.selected .opt-dot::after{content:'';width:7px;height:7px;border-radius:50%;background:white;display:block;margin:auto;}
+    .opt-dot{width:18px;height:18px;border-radius:50%;border:2px solid var(--border);flex-shrink:0;transition:all 0.15s;display:flex;align-items:center;justify-content:center;}
+    .opt.choosing{pointer-events:none;opacity:0.7;}
+    .opt.confirmed{border-color:var(--a);background:var(--soft);}
+
+    /* RESULT */
+    .result-panel{display:none;}
+    .result-hero{padding:clamp(28px,5vw,44px) clamp(20px,4vw,32px);text-align:center;}
+    .result-emoji{font-size:2.8rem;margin-bottom:12px;line-height:1;}
+    .result-badge{display:inline-block;padding:4px 14px;border-radius:999px;font-size:0.68rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;}
+    .result-title{font-family:'Nunito',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:white;letter-spacing:-0.02em;margin-bottom:8px;}
+    .result-subtitle{font-size:0.9rem;color:rgba(255,255,255,0.68);line-height:1.7;max-width:480px;margin:0 auto;}
+    .result-body{background:var(--surface);border-radius:0 0 var(--r-xl) var(--r-xl);padding:clamp(20px,4vw,32px);}
+
+    /* BARS */
+    .bars-block{background:var(--bg);border-radius:var(--r-lg);padding:18px 20px;margin-bottom:16px;}
+    .bars-title{font-size:0.67rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted-lt);margin-bottom:14px;}
+    .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+    .bar-row:last-child{margin-bottom:0;}
+    .bar-label{font-size:0.8rem;font-weight:700;color:var(--muted);width:150px;flex-shrink:0;}
+    .bar-track{flex:1;height:7px;background:var(--border);border-radius:999px;overflow:hidden;}
+    .bar-fill{height:7px;border-radius:999px;transition:width 1s ease;}
+    .bar-pct{font-size:0.75rem;font-weight:800;color:var(--muted-lt);width:32px;text-align:right;flex-shrink:0;}
+
+    /* INSIGHTS */
+    .insight{background:var(--bg);border-radius:var(--r-lg);padding:16px 18px;margin-bottom:10px;}
+    .insight-label{font-size:0.67rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--a);margin-bottom:5px;}
+    .insight p{font-size:0.88rem;color:var(--muted);line-height:1.72;}
+
+    /* CTA */
+    .cta-block{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--a);border-radius:var(--r-lg);padding:18px 20px;margin:14px 0;text-decoration:none;flex-wrap:wrap;transition:opacity 0.2s;}
+    .cta-block:hover{opacity:0.92;}
+    .cta-label{font-size:0.65rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:3px;}
+    .cta-title{font-family:'Nunito',sans-serif;font-size:0.98rem;font-weight:900;color:white;margin-bottom:2px;}
+    .cta-desc{font-size:0.78rem;color:rgba(255,255,255,0.62);}
+    .cta-btn{display:inline-flex;align-items:center;height:38px;padding:0 18px;background:white;color:var(--text);font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:900;border-radius:var(--r);white-space:nowrap;flex-shrink:0;}
+
+    /* RETAKE */
+    .retake-btn{display:block;width:100%;margin-top:14px;padding:11px;background:transparent;border:1.5px solid var(--border);border-radius:var(--r-lg);font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:800;color:var(--muted);cursor:pointer;transition:all 0.18s;text-align:center;}
+    .retake-btn:hover{border-color:var(--a);color:var(--a);}
+
+    /* RELATED */
+    .related-wrap{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);padding:18px 20px;margin-top:12px;}
+    .related-label{font-size:0.67rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted-lt);margin-bottom:12px;}
+    .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+    .rel-link{display:flex;align-items:center;gap:9px;padding:9px 11px;border-radius:var(--r);border:1px solid var(--border);background:var(--bg);transition:all 0.15s;text-decoration:none;}
+    .rel-link:hover{border-color:var(--a);background:var(--soft);}
+    .rel-icon{font-size:1rem;flex-shrink:0;}
+    .rel-name{font-size:0.79rem;font-weight:700;color:var(--text);}
+
+    /* FOOTER */
+    .footer{background:#0a1628;padding:clamp(20px,4vw,32px) clamp(16px,4vw,32px) 24px;margin-top:32px;}
+    .footer-inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,0.07);}
+    .footer-brand{display:flex;align-items:center;gap:8px;font-family:'Nunito',sans-serif;font-weight:900;font-size:0.88rem;color:white;}
+    .footer-mark{width:26px;height:26px;border-radius:6px;background:rgba(255,255,255,0.1);display:grid;place-items:center;font-size:0.8rem;}
     .footer-links{display:flex;gap:14px;flex-wrap:wrap;}
-    .footer-links a{font-size:.78rem;color:rgba(255,255,255,.35);font-weight:600;transition:color .15s;}
-    .footer-links a:hover{color:rgba(255,255,255,.75);}
-    .footer-copy{max-width:900px;margin:0 auto;padding-top:14px;font-size:.74rem;color:rgba(255,255,255,.2);text-align:center;}
-    @media(max-width:560px){.related-grid{grid-template-columns:1fr;}.hero-meta{gap:10px;}}
-</style>
+    .footer-links a{font-size:0.76rem;color:rgba(255,255,255,0.28);font-weight:600;transition:color 0.15s;}
+    .footer-links a:hover{color:rgba(255,255,255,0.65);}
+    .footer-copy{max-width:900px;margin:0 auto;padding-top:12px;font-size:0.72rem;color:rgba(255,255,255,0.18);text-align:center;}
+
+    @media(max-width:480px){.related-grid{grid-template-columns:1fr;}.bar-label{width:110px;}}
+  </style>
 </head>
 <body>
 <header class="topbar">
@@ -122,569 +152,93 @@
 </header>
 
 <section class="hero">
-  <div style="max-width:720px;margin:0 auto;">
+  <div class="hero-inner">
     <div class="hero-kicker">✦ Perfectionism test</div>
-    <h1>The <span>Perfectionism Test</span></h1>
-    <p class="hero-desc">Are your standards healthy or anxiety-driven? 12 questions to reveal how perfectionism is operating in your life and what it is costing you.</p>
+    <h1>The <em>Perfectionism Test</em></h1>
+    <p class="hero-desc">Are your standards driven by values or by fear? 12 questions to reveal how perfectionism is operating in your life.</p>
     <div class="hero-meta">
       <div class="hero-badge">📋 12 questions</div>
       <div class="hero-badge">⏱ 3 min</div>
-      <div class="hero-badge">🔒 Anonymous · No sign-up</div>
+      <div class="hero-badge">🔒 Anonymous</div>
     </div>
   </div>
 </section>
-<div class="wrap">
-  <div class="quiz-card">
-    
-        <div class="question" id="q0" style="display:block">
-          <div class="progress-bar"><div class="progress-fill" id="pf0" style="width:8%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 1 of 12</span>
-            <span class="q-section-tag">After finishing</span>
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">When you complete a task, what happens first?</div>
-            <div class="options" id="opts0">
-              <div class="option" onclick="selectOpt(0,0,3,this)">
-                <div class="option-dot"></div>
-                <span>I immediately start reviewing it for flaws, often finding reasons it was not good enough</span>
-              </div>
-              <div class="option" onclick="selectOpt(0,1,2,this)">
-                <div class="option-dot"></div>
-                <span>I feel some relief but then worry I missed something</span>
-              </div>
-              <div class="option" onclick="selectOpt(0,2,1,this)">
-                <div class="option-dot"></div>
-                <span>I generally feel okay about it with occasional second-guessing</span>
-              </div>
-              <div class="option" onclick="selectOpt(0,3,0,this)">
-                <div class="option-dot"></div>
-                <span>I feel genuinely satisfied when it meets the standard I set for it</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><div></div><button class="btn-next" id="next0" onclick="nextQ(0)">Next →</button></div></div>
-        <div class="question" id="q1" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf1" style="width:17%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 2 of 12</span>
-            <span class="q-section-tag">Mistakes</span>
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">How do you respond to your own mistakes?</div>
-            <div class="options" id="opts1">
-              <div class="option" onclick="selectOpt(1,0,3,this)">
-                <div class="option-dot"></div>
-                <span>I dwell on them significantly, the self-criticism is intense and lingers</span>
-              </div>
-              <div class="option" onclick="selectOpt(1,1,2,this)">
-                <div class="option-dot"></div>
-                <span>I am harder on myself than I would be on anyone else for the same mistake</span>
-              </div>
-              <div class="option" onclick="selectOpt(1,2,1,this)">
-                <div class="option-dot"></div>
-                <span>I feel some self-criticism but can move on reasonably quickly</span>
-              </div>
-              <div class="option" onclick="selectOpt(1,3,0,this)">
-                <div class="option-dot"></div>
-                <span>I note the mistake, correct it where possible and move on without excessive self-criticism</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(1)">← Back</button><button class="btn-next" id="next1" onclick="nextQ(1)">Next →</button></div></div>
-        <div class="question" id="q2" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf2" style="width:25%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 3 of 12</span>
-            
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">How do you approach tasks that you cannot do to a high standard?</div>
-            <div class="options" id="opts2">
-              <div class="option" onclick="selectOpt(2,0,3,this)">
-                <div class="option-dot"></div>
-                <span>I often avoid or delay them because the prospect of doing them imperfectly is deeply uncomfortable</span>
-              </div>
-              <div class="option" onclick="selectOpt(2,1,2,this)">
-                <div class="option-dot"></div>
-                <span>I put them off more than I would like to</span>
-              </div>
-              <div class="option" onclick="selectOpt(2,2,1,this)">
-                <div class="option-dot"></div>
-                <span>I can usually start even if the outcome will be imperfect</span>
-              </div>
-              <div class="option" onclick="selectOpt(2,3,0,this)">
-                <div class="option-dot"></div>
-                <span>I approach them practically without the standard becoming a barrier</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(2)">← Back</button><button class="btn-next" id="next2" onclick="nextQ(2)">Next →</button></div></div>
-        <div class="question" id="q3" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf3" style="width:33%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 4 of 12</span>
-            <span class="q-section-tag">Completing work</span>
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">How do you feel about submitting, publishing or sending work?</div>
-            <div class="options" id="opts3">
-              <div class="option" onclick="selectOpt(3,0,3,this)">
-                <div class="option-dot"></div>
-                <span>It is genuinely difficult, I always find reasons to revise more before releasing</span>
-              </div>
-              <div class="option" onclick="selectOpt(3,1,2,this)">
-                <div class="option-dot"></div>
-                <span>I tend to over-refine and hold back longer than is necessary</span>
-              </div>
-              <div class="option" onclick="selectOpt(3,2,1,this)">
-                <div class="option-dot"></div>
-                <span>I sometimes sit on things longer than needed but can submit</span>
-              </div>
-              <div class="option" onclick="selectOpt(3,3,0,this)">
-                <div class="option-dot"></div>
-                <span>I can submit when it is genuinely ready without excessive holding back</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(3)">← Back</button><button class="btn-next" id="next3" onclick="nextQ(3)">Next →</button></div></div>
-        <div class="question" id="q4" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf4" style="width:42%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 5 of 12</span>
-            
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">How much time do you spend on low-importance tasks versus their actual importance?</div>
-            <div class="options" id="opts4">
-              <div class="option" onclick="selectOpt(4,0,3,this)">
-                <div class="option-dot"></div>
-                <span>I apply similar standards to everything, which means disproportionate time on minor tasks</span>
-              </div>
-              <div class="option" onclick="selectOpt(4,1,2,this)">
-                <div class="option-dot"></div>
-                <span>I know certain tasks do not warrant the care I give them but I cannot easily reduce it</span>
-              </div>
-              <div class="option" onclick="selectOpt(4,2,1,this)">
-                <div class="option-dot"></div>
-                <span>Sometimes I over-invest in low-stakes tasks but generally okay</span>
-              </div>
-              <div class="option" onclick="selectOpt(4,3,0,this)">
-                <div class="option-dot"></div>
-                <span>I can roughly calibrate effort to importance</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(4)">← Back</button><button class="btn-next" id="next4" onclick="nextQ(4)">Next →</button></div></div>
-        <div class="question" id="q5" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf5" style="width:50%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 6 of 12</span>
-            
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">What does making an error in front of others feel like?</div>
-            <div class="options" id="opts5">
-              <div class="option" onclick="selectOpt(5,0,3,this)">
-                <div class="option-dot"></div>
-                <span>Acutely distressing, I will think about it for days and worry about what they think of me</span>
-              </div>
-              <div class="option" onclick="selectOpt(5,1,2,this)">
-                <div class="option-dot"></div>
-                <span>More distressing than I want it to be, particularly with people whose opinion matters to me</span>
-              </div>
-              <div class="option" onclick="selectOpt(5,2,1,this)">
-                <div class="option-dot"></div>
-                <span>Uncomfortable but I can recover reasonably quickly</span>
-              </div>
-              <div class="option" onclick="selectOpt(5,3,0,this)">
-                <div class="option-dot"></div>
-                <span>Mildly embarrassing but I can contextualise it without excessive distress</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(5)">← Back</button><button class="btn-next" id="next5" onclick="nextQ(5)">Next →</button></div></div>
-        <div class="question" id="q6" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf6" style="width:58%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 7 of 12</span>
-            
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">How do you feel when you achieve something significant?</div>
-            <div class="options" id="opts6">
-              <div class="option" onclick="selectOpt(6,0,3,this)">
-                <div class="option-dot"></div>
-                <span>Briefly pleased but quickly moving to the next concern, the satisfaction does not last</span>
-              </div>
-              <div class="option" onclick="selectOpt(6,1,2,this)">
-                <div class="option-dot"></div>
-                <span>I find it hard to rest in the achievement before the next anxiety arrives</span>
-              </div>
-              <div class="option" onclick="selectOpt(6,2,1,this)">
-                <div class="option-dot"></div>
-                <span>Generally satisfied, though I sometimes undervalue my achievements</span>
-              </div>
-              <div class="option" onclick="selectOpt(6,3,0,this)">
-                <div class="option-dot"></div>
-                <span>I can genuinely feel and hold the satisfaction before moving on</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(6)">← Back</button><button class="btn-next" id="next6" onclick="nextQ(6)">Next →</button></div></div>
-        <div class="question" id="q7" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf7" style="width:67%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 8 of 12</span>
-            
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">What is your relationship with rest?</div>
-            <div class="options" id="opts7">
-              <div class="option" onclick="selectOpt(7,0,3,this)">
-                <div class="option-dot"></div>
-                <span>Genuinely difficult, rest feels unearned or unsafe when there are still things to do</span>
-              </div>
-              <div class="option" onclick="selectOpt(7,1,2,this)">
-                <div class="option-dot"></div>
-                <span>I can rest but there is usually a background sense that I should be doing something</span>
-              </div>
-              <div class="option" onclick="selectOpt(7,2,1,this)">
-                <div class="option-dot"></div>
-                <span>I can rest reasonably well though sometimes feel restless</span>
-              </div>
-              <div class="option" onclick="selectOpt(7,3,0,this)">
-                <div class="option-dot"></div>
-                <span>I can rest when I need it without significant guilt or anxiety</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(7)">← Back</button><button class="btn-next" id="next7" onclick="nextQ(7)">Next →</button></div></div>
-        <div class="question" id="q8" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf8" style="width:75%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 9 of 12</span>
-            <span class="q-section-tag">Control</span>
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">How do you feel about delegating work to others?</div>
-            <div class="options" id="opts8">
-              <div class="option" onclick="selectOpt(8,0,3,this)">
-                <div class="option-dot"></div>
-                <span>Very difficult, I worry they will not do it to a sufficient standard and I will have to redo it</span>
-              </div>
-              <div class="option" onclick="selectOpt(8,1,2,this)">
-                <div class="option-dot"></div>
-                <span>Uncomfortable, I often re-check or redo work that others do for me</span>
-              </div>
-              <div class="option" onclick="selectOpt(8,2,1,this)">
-                <div class="option-dot"></div>
-                <span>I can delegate with some difficulty, particularly for high-stakes work</span>
-              </div>
-              <div class="option" onclick="selectOpt(8,3,0,this)">
-                <div class="option-dot"></div>
-                <span>Generally okay with delegation, I can tolerate some variation in how others approach things</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(8)">← Back</button><button class="btn-next" id="next8" onclick="nextQ(8)">Next →</button></div></div>
-        <div class="question" id="q9" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf9" style="width:83%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 10 of 12</span>
-            
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">When do you feel you are allowed to take a break from working?</div>
-            <div class="options" id="opts9">
-              <div class="option" onclick="selectOpt(9,0,3,this)">
-                <div class="option-dot"></div>
-                <span>Only when everything is fully done and I am certain I have not missed anything important</span>
-              </div>
-              <div class="option" onclick="selectOpt(9,1,2,this)">
-                <div class="option-dot"></div>
-                <span>When I have done enough that I can justify stopping, which moves constantly</span>
-              </div>
-              <div class="option" onclick="selectOpt(9,2,1,this)">
-                <div class="option-dot"></div>
-                <span>When the important things are done, though I sometimes push beyond that</span>
-              </div>
-              <div class="option" onclick="selectOpt(9,3,0,this)">
-                <div class="option-dot"></div>
-                <span>When I need rest, I do not require complete completion as a condition</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(9)">← Back</button><button class="btn-next" id="next9" onclick="nextQ(9)">Next →</button></div></div>
-        <div class="question" id="q10" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf10" style="width:92%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 11 of 12</span>
-            
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">How does criticism or negative feedback affect you?</div>
-            <div class="options" id="opts10">
-              <div class="option" onclick="selectOpt(10,0,3,this)">
-                <div class="option-dot"></div>
-                <span>Significantly, it can affect my sense of worth and stays with me far longer than positive feedback</span>
-              </div>
-              <div class="option" onclick="selectOpt(10,1,2,this)">
-                <div class="option-dot"></div>
-                <span>More than positive feedback, I know the balance is off but cannot easily adjust it</span>
-              </div>
-              <div class="option" onclick="selectOpt(10,2,1,this)">
-                <div class="option-dot"></div>
-                <span>It stings more than positive feedback but I generally recover reasonably</span>
-              </div>
-              <div class="option" onclick="selectOpt(10,3,0,this)">
-                <div class="option-dot"></div>
-                <span>I can take and use critical feedback without excessive distress</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(10)">← Back</button><button class="btn-next" id="next10" onclick="nextQ(10)">Next →</button></div></div>
-        <div class="question" id="q11" style="display:none">
-          <div class="progress-bar"><div class="progress-fill" id="pf11" style="width:100%"></div></div>
-          <div class="quiz-header">
-            <span class="q-counter">Question 12 of 12</span>
-            
-          </div>
-          <div class="quiz-body">
-            <div class="q-text">Overall, how would you describe your standards?</div>
-            <div class="options" id="opts11">
-              <div class="option" onclick="selectOpt(11,0,3,this)">
-                <div class="option-dot"></div>
-                <span>They are driven primarily by fear: fear of failure, of being seen as inadequate, of consequences</span>
-              </div>
-              <div class="option" onclick="selectOpt(11,1,2,this)">
-                <div class="option-dot"></div>
-                <span>They feel driven by a mix of genuine values and fear, with fear having more influence than I would like</span>
-              </div>
-              <div class="option" onclick="selectOpt(11,2,1,this)">
-                <div class="option-dot"></div>
-                <span>Mostly genuine but with some anxiety-driven elements</span>
-              </div>
-              <div class="option" onclick="selectOpt(11,3,0,this)">
-                <div class="option-dot"></div>
-                <span>Primarily driven by genuine care about quality and values I actually hold</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-row"><button class="btn-back" onclick="goBack(11)">← Back</button><button class="btn-next" id="next11" onclick="nextQ(11)">See My Results →</button></div></div>
-    
-        <div class="result-card" id="r-adaptive">
-          <div class="result-header">
-            <span class="result-emoji">🌱</span>
-            <div class="result-level low">Adaptive standards</div>
-            <div class="result-title">High standards, low anxiety</div>
-            <div class="result-desc">Your results suggest your standards are largely driven by genuine values rather than anxiety. You can rest, accept imperfection and recover from criticism without excessive distress. This is the healthy version of caring about quality.</div>
-          </div>
-          
-          <div class="result-body">
-            
-            <div class="insight-block">
-              <div class="insight-label">What this looks like</div>
-              <div class="insight-text">Adaptive perfectionism is associated with high performance, genuine satisfaction in achievement and resilience in the face of setbacks. Your high standards appear to be an asset rather than a burden.</div>
-            </div>
-            <div class="insight-block">
-              <div class="insight-label">Worth watching</div>
-              <div class="insight-text">Even adaptive standards can shift toward anxiety-driven perfectionism under high stress. Noticing if rest becomes more difficult or mistakes become more distressing is the early signal.</div>
-            </div>
-            
-            <div class="retake-row">
-              <button class="btn-retake" onclick="retake()">↺ Retake the quiz</button>
-            </div>
-          </div>
-        </div>
-        <div class="result-card" id="r-mixed">
-          <div class="result-header">
-            <span class="result-emoji">⚖️</span>
-            <div class="result-level moderate">Anxiety mixed in</div>
-            <div class="result-title">Standards and anxiety are both at play</div>
-            <div class="result-desc">Your results suggest your standards are a mix of genuine values and anxiety-driven perfectionism. The anxiety component is producing some real costs: difficulty resting, over-investment in low-stakes tasks and harder-than-necessary recovery from mistakes.</div>
-          </div>
-          
-            <div class="result-breakdown">
-              <div class="breakdown-title">Your pattern breakdown</div>
-              <div class="breakdown-grid">
-                <div class="breakdown-item">
-                  <div class="breakdown-label">Fear of failure</div>
-                  <div class="breakdown-bar-wrap"><div class="breakdown-bar" style="width:60%;background:#f59e0b;"></div></div>
-                  <div class="breakdown-pct">60%</div>
-                </div>
-                <div class="breakdown-item">
-                  <div class="breakdown-label">Post-completion anxiety</div>
-                  <div class="breakdown-bar-wrap"><div class="breakdown-bar" style="width:55%;background:#f59e0b;"></div></div>
-                  <div class="breakdown-pct">55%</div>
-                </div>
-                <div class="breakdown-item">
-                  <div class="breakdown-label">Rest difficulty</div>
-                  <div class="breakdown-bar-wrap"><div class="breakdown-bar" style="width:65%;background:#f59e0b;"></div></div>
-                  <div class="breakdown-pct">65%</div>
-                </div></div>
-            </div>
-          <div class="result-body">
-            
-            <div class="insight-block">
-              <div class="insight-label">The distinction that matters</div>
-              <div class="insight-text">The question is not whether you have high standards but whether they can be satisfied. Anxiety perfectionism has a movable goalpost: the standard is always just a bit higher than what you have achieved. Genuine standards can be met.</div>
-            </div>
-            <div class="insight-block">
-              <div class="insight-label">The highest leverage change</div>
-              <div class="insight-text">Practising deliberately finishing work that is good rather than perfect, and observing what actually happens, is the most direct way to start updating the beliefs that maintain anxiety-driven perfectionism.</div>
-            </div>
-            
-            <div class="cta-block">
-              <div class="cta-text">
-                <div class="cta-label">Related reading</div>
-                <div class="cta-title">Perfectionism and Anxiety</div>
-                <div class="cta-desc">How perfectionism and anxiety maintain each other and how to break the cycle.</div>
-              </div>
-              <a href="https://myanxietytest.com/articles/perfectionism-and-anxiety-how-they-fuel-each-other/" class="btn-cta">Read the Guide →</a>
-            </div>
-            <div class="retake-row">
-              <button class="btn-retake" onclick="retake()">↺ Retake the quiz</button>
-            </div>
-          </div>
-        </div>
-        <div class="result-card" id="r-anxious">
-          <div class="result-header">
-            <span class="result-emoji">🔴</span>
-            <div class="result-level high">Anxiety-driven perfectionism</div>
-            <div class="result-title">Fear is running your standards</div>
-            <div class="result-desc">Your results suggest your perfectionism is primarily anxiety-driven rather than value-driven. The standards are maintained by fear of failure, fear of judgment and a belief that imperfection has serious consequences. This is exhausting and ultimately impairs rather than improves performance.</div>
-          </div>
-          
-            <div class="result-breakdown">
-              <div class="breakdown-title">Your pattern breakdown</div>
-              <div class="breakdown-grid">
-                <div class="breakdown-item">
-                  <div class="breakdown-label">Fear of failure</div>
-                  <div class="breakdown-bar-wrap"><div class="breakdown-bar" style="width:85%;background:#dc2626;"></div></div>
-                  <div class="breakdown-pct">85%</div>
-                </div>
-                <div class="breakdown-item">
-                  <div class="breakdown-label">Completion anxiety</div>
-                  <div class="breakdown-bar-wrap"><div class="breakdown-bar" style="width:82%;background:#dc2626;"></div></div>
-                  <div class="breakdown-pct">82%</div>
-                </div>
-                <div class="breakdown-item">
-                  <div class="breakdown-label">Rest difficulty</div>
-                  <div class="breakdown-bar-wrap"><div class="breakdown-bar" style="width:90%;background:#dc2626;"></div></div>
-                  <div class="breakdown-pct">90%</div>
-                </div>
-                <div class="breakdown-item">
-                  <div class="breakdown-label">Mistake sensitivity</div>
-                  <div class="breakdown-bar-wrap"><div class="breakdown-bar" style="width:88%;background:#dc2626;"></div></div>
-                  <div class="breakdown-pct">88%</div>
-                </div></div>
-            </div>
-          <div class="result-body">
-            
-            <div class="insight-block">
-              <div class="insight-label">The cost at this level</div>
-              <div class="insight-text">At a high level, anxiety perfectionism produces procrastination through fear of starting, inability to complete because nothing is ever quite ready, exhaustion from the sustained effort, and the loss of genuine satisfaction from any achievement.</div>
-            </div>
-            <div class="insight-block">
-              <div class="insight-label">What actually changes things</div>
-              <div class="insight-text">CBT for perfectionism targets the beliefs that maintain it: the catastrophising about consequences of imperfection and the equation of performance with worth. Behavioural experiments, deliberately submitting or finishing something imperfect and observing the actual consequences, are the most directly effective intervention.</div>
-            </div>
-            <div class="insight-block">
-              <div class="insight-label">Self-compassion is not lowering standards</div>
-              <div class="insight-text">Research consistently shows that self-compassion is associated with better performance than self-criticism. The intuition that harsh self-criticism is what produces quality is wrong. It produces anxiety that impairs quality.</div>
-            </div>
-            
-            <div class="cta-block">
-              <div class="cta-text">
-                <div class="cta-label">Take the next step</div>
-                <div class="cta-title">CBT for Perfectionism Online</div>
-                <div class="cta-desc">Address anxiety-driven perfectionism with evidence-based therapy. 20% off your first month.</div>
-              </div>
-              <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=quizPerfectionism" class="btn-cta">Find a Therapist →</a>
-            </div>
-            <div class="retake-row">
-              <button class="btn-retake" onclick="retake()">↺ Retake the quiz</button>
-            </div>
-          </div>
-        </div>
+
+<div class="quiz-wrap">
+  <div class="progress-wrap" id="quiz-shell">
+    <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+    <div class="progress-header">
+      <span class="p-counter" id="pctr">Question 1 of 12</span>
+      <span class="p-section" id="psec">Completion</span>
+    </div>
+    <div class="q-body">
+      <div class="q-text" id="qtxt"></div>
+      <div class="options" id="opts"></div>
+    </div>
   </div>
-  <div class="related-tools">
-    <div class="related-title">More free tools</div>
+
+  <div class="result-panel" id="r-adaptive" style="display:none">
+        <div class="result-hero" style="background:linear-gradient(145deg,#4c1d95,#7c3aed)">
+          <div class="result-emoji">🌱</div>
+          <div class="result-badge" style="background:rgba(255,255,255,0.15);color:white;border:1px solid rgba(255,255,255,0.25)">Adaptive standards</div>
+          <div class="result-title">High standards, low anxiety</div>
+          <div class="result-subtitle">Your results suggest your standards are largely driven by genuine values rather than anxiety. You can rest, accept imperfection and recover from criticism without excessive distress.</div>
+        </div>
+        <div class="result-body">
+          
+          <div class="insight"><div class="insight-label">What this means</div><p>Adaptive perfectionism is associated with high performance, genuine satisfaction in achievement and resilience in the face of setbacks. Your high standards appear to be an asset rather than a burden.</p></div><div class="insight"><div class="insight-label">Worth watching</div><p>Even adaptive standards can shift toward anxiety-driven perfectionism under sustained high stress or when facing genuinely novel challenges. The early signals are rest becoming harder and mistakes becoming more distressing.</p></div>
+          
+          <button class="retake-btn" onclick="retake()">↺ Retake the quiz</button>
+        </div>
+      </div><div class="result-panel" id="r-mixed" style="display:none">
+        <div class="result-hero" style="background:linear-gradient(145deg,#4c1d95,#7c3aed)">
+          <div class="result-emoji">⚖️</div>
+          <div class="result-badge" style="background:rgba(255,255,255,0.15);color:white;border:1px solid rgba(255,255,255,0.25)">Anxiety mixed in</div>
+          <div class="result-title">Standards and anxiety both at play</div>
+          <div class="result-subtitle">Your results suggest a mix of genuine values and anxiety-driven perfectionism. The anxiety component is producing real costs: difficulty resting and harder recovery from mistakes.</div>
+        </div>
+        <div class="result-body">
+          <div class="bars-block"><div class="bars-title">Your pattern breakdown</div><div class="bar-row"><span class="bar-label">Fear of failure</span><div class="bar-track"><div class="bar-fill" style="width:62%;background:#7c3aed"></div></div><span class="bar-pct">62%</span></div><div class="bar-row"><span class="bar-label">Post-completion anxiety</span><div class="bar-track"><div class="bar-fill" style="width:58%;background:#7c3aed"></div></div><span class="bar-pct">58%</span></div><div class="bar-row"><span class="bar-label">Rest difficulty</span><div class="bar-track"><div class="bar-fill" style="width:65%;background:#7c3aed"></div></div><span class="bar-pct">65%</span></div></div>
+          <div class="insight"><div class="insight-label">The key distinction</div><p>The question is not whether you have high standards but whether they can be satisfied. Anxiety perfectionism has a movable goalpost. Genuine standards can actually be met and produce real satisfaction.</p></div><div class="insight"><div class="insight-label">The highest leverage change</div><p>Practising deliberately finishing work that is good rather than perfect, and observing what actually happens, is the most direct way to start updating the beliefs that maintain anxiety-driven perfectionism.</p></div>
+          <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=quizPerfectionism" class="cta-block" target="_blank" rel="noopener">
+            <div class="cta-inner">
+              <div class="cta-label">Take the next step</div>
+              <div class="cta-title">Work with a Therapist Online</div>
+              <div class="cta-desc">CBT for anxiety-driven perfectionism. 20% off your first month.</div>
+            </div>
+            <div class="cta-btn-wrap"><span class="cta-btn">Find a Therapist →</span></div>
+          </a>
+          <button class="retake-btn" onclick="retake()">↺ Retake the quiz</button>
+        </div>
+      </div><div class="result-panel" id="r-anxious" style="display:none">
+        <div class="result-hero" style="background:linear-gradient(145deg,#4c1d95,#7c3aed)">
+          <div class="result-emoji">🔴</div>
+          <div class="result-badge" style="background:rgba(255,255,255,0.15);color:white;border:1px solid rgba(255,255,255,0.25)">Anxiety-driven perfectionism</div>
+          <div class="result-title">Fear is running your standards</div>
+          <div class="result-subtitle">Your results suggest your perfectionism is primarily anxiety-driven. The standards are maintained by fear of failure and judgment. This is exhausting and ultimately impairs rather than improves performance.</div>
+        </div>
+        <div class="result-body">
+          <div class="bars-block"><div class="bars-title">Your pattern breakdown</div><div class="bar-row"><span class="bar-label">Fear of failure</span><div class="bar-track"><div class="bar-fill" style="width:88%;background:#6d28d9"></div></div><span class="bar-pct">88%</span></div><div class="bar-row"><span class="bar-label">Completion anxiety</span><div class="bar-track"><div class="bar-fill" style="width:84%;background:#6d28d9"></div></div><span class="bar-pct">84%</span></div><div class="bar-row"><span class="bar-label">Rest difficulty</span><div class="bar-track"><div class="bar-fill" style="width:92%;background:#6d28d9"></div></div><span class="bar-pct">92%</span></div><div class="bar-row"><span class="bar-label">Mistake sensitivity</span><div class="bar-track"><div class="bar-fill" style="width:90%;background:#6d28d9"></div></div><span class="bar-pct">90%</span></div></div>
+          <div class="insight"><div class="insight-label">The cost at this level</div><p>At a high level, anxiety perfectionism produces procrastination through fear of starting, inability to complete because nothing is ever quite ready, exhaustion from the sustained effort, and the loss of genuine satisfaction from any achievement.</p></div><div class="insight"><div class="insight-label">Self-compassion is not lowering standards</div><p>Research consistently shows self-compassion is associated with better performance than self-criticism. The intuition that harsh self-criticism produces quality is wrong. It produces anxiety that impairs quality.</p></div><div class="insight"><div class="insight-label">What changes this</div><p>CBT for perfectionism targets the beliefs that maintain it: the catastrophising about imperfection and the equation of performance with worth. Behavioural experiments, deliberately submitting imperfect work and observing actual consequences, are the most directly effective intervention.</p></div>
+          <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=quizPerfectionism" class="cta-block" target="_blank" rel="noopener">
+            <div class="cta-inner">
+              <div class="cta-label">Professional support</div>
+              <div class="cta-title">CBT for Perfectionism Online</div>
+              <div class="cta-desc">Address anxiety-driven perfectionism with evidence-based therapy. 20% off your first month.</div>
+            </div>
+            <div class="cta-btn-wrap"><span class="cta-btn">Find a Therapist →</span></div>
+          </a>
+          <button class="retake-btn" onclick="retake()">↺ Retake the quiz</button>
+        </div>
+      </div>
+
+  <div class="related-wrap" id="related-tools">
+    <div class="related-label">More free tools</div>
     <div class="related-grid">
-      
-          <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/" class="related-link">
-            <div class="related-icon">⚡</div>
-            <div class="related-name">High-Functioning Anxiety</div>
-          </a>
-          <a href="https://myanxietytest.com/anxiety-level/" class="related-link">
-            <div class="related-icon">📊</div>
-            <div class="related-name">Anxiety Level Test</div>
-          </a>
-          <a href="https://myanxietytest.com/do-i-need-therapy/" class="related-link">
-            <div class="related-icon">🛋️</div>
-            <div class="related-name">Do I Need Therapy?</div>
-          </a>
-          <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/" class="related-link">
-            <div class="related-icon">⚡</div>
-            <div class="related-name">Anxiety vs Burnout</div>
-          </a>
+      <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/" class="rel-link"><div class="rel-icon">⚡</div><div class="rel-name">High-Functioning Anxiety</div></a><a href="https://myanxietytest.com/anxiety-level/" class="rel-link"><div class="rel-icon">📊</div><div class="rel-name">Anxiety Level Test</div></a><a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/" class="rel-link"><div class="rel-icon">⚡</div><div class="rel-name">Anxiety vs Burnout</div></a><a href="https://myanxietytest.com/do-i-need-therapy/" class="rel-link"><div class="rel-icon">🛋️</div><div class="rel-name">Do I Need Therapy?</div></a>
     </div>
   </div>
 </div>
-<script>
-    var answers = {};
-    var total = 0;
-    
-    function selectOpt(qi, oi, score, el) {
-      document.querySelectorAll('#opts'+qi+' .option').forEach(o => o.classList.remove('selected'));
-      el.classList.add('selected');
-      answers[qi] = score;
-      document.getElementById('next'+qi).classList.add('active');
-    }
-    
-    function nextQ(qi) {
-      if (answers[qi] === undefined) return;
-      var nq = qi + 1;
-      if (nq >= 12) {
-        showResult();
-      } else {
-        document.getElementById('q'+qi).style.display = 'none';
-        document.getElementById('q'+nq).style.display = 'block';
-        window.scrollTo({top: document.querySelector('.quiz-card').offsetTop - 20, behavior: 'smooth'});
-      }
-    }
-    
-    function goBack(qi) {
-      document.getElementById('q'+qi).style.display = 'none';
-      document.getElementById('q'+(qi-1)).style.display = 'block';
-      window.scrollTo({top: document.querySelector('.quiz-card').offsetTop - 20, behavior: 'smooth'});
-    }
-    
-    function showResult() {
-      total = Object.values(answers).reduce((a,b) => a+b, 0);
-      var ranges = [{"id": "adaptive", "min": 0, "max": 8}, {"id": "mixed", "min": 9, "max": 18}, {"id": "anxious", "min": 19, "max": 36}];
-      var rid = ranges[ranges.length-1].id;
-      for (var r of ranges) {
-        if (total >= r.min && total <= r.max) { rid = r.id; break; }
-      }
-      document.querySelectorAll('.question').forEach(q => q.style.display = 'none');
-      document.getElementById('r-'+rid).style.display = 'block';
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-    
-    function retake() {
-      answers = {};
-      total = 0;
-      document.querySelectorAll('.result-card').forEach(r => r.style.display = 'none');
-      document.querySelectorAll('.question').forEach((q,i) => {
-        q.style.display = i===0 ? 'block' : 'none';
-        q.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
-      });
-      document.querySelectorAll('.btn-next').forEach(b => b.classList.remove('active'));
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-    </script>
 
 <footer class="footer">
   <div class="footer-inner">
@@ -695,10 +249,85 @@
     <div class="footer-links">
       <a href="https://myanxietytest.com/">Home</a>
       <a href="https://myanxietytest.com/anxiety-level/">Anxiety Test</a>
-      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy?</a>
       <a href="https://myanxietytest.com/articles/">Articles</a>
     </div>
   </div>
   <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
 </footer>
-</body></html>
+
+<script>
+const QS = [{"text": "When you finish a task, what happens first?", "section": "Completion", "opts": [{"t": "I immediately review it for flaws, finding reasons it was not good enough", "s": 3}, {"t": "I feel some relief but then worry I missed something", "s": 2}, {"t": "Generally feel okay with occasional second-guessing", "s": 1}, {"t": "I feel genuinely satisfied when it meets the standard I set", "s": 0}]}, {"text": "How do you respond to your own mistakes?", "section": "Mistakes", "opts": [{"t": "The self-criticism is intense and lingers for days", "s": 3}, {"t": "I am harder on myself than I would be on anyone else", "s": 2}, {"t": "I feel some self-criticism but can move on reasonably quickly", "s": 1}, {"t": "I note the mistake, correct it where possible and move on", "s": 0}]}, {"text": "How do you approach tasks you cannot do to a high standard?", "section": "", "opts": [{"t": "I often avoid or delay them because imperfection is deeply uncomfortable", "s": 3}, {"t": "I put them off more than I would like to", "s": 2}, {"t": "I can usually start even if the outcome will be imperfect", "s": 1}, {"t": "I approach them practically without it becoming a barrier", "s": 0}]}, {"text": "How do you feel about submitting, sending or publishing work?", "section": "Releasing work", "opts": [{"t": "Genuinely difficult, I always find reasons to revise more before releasing", "s": 3}, {"t": "I tend to over-refine and hold back longer than necessary", "s": 2}, {"t": "Sometimes I sit on things too long but can submit", "s": 1}, {"t": "I can submit when it is genuinely ready without excessive delay", "s": 0}]}, {"text": "How much time do you spend on low-importance tasks?", "section": "", "opts": [{"t": "I apply similar standards to everything regardless of importance", "s": 3}, {"t": "I know certain tasks do not warrant the care I give them but cannot reduce it", "s": 2}, {"t": "Sometimes I over-invest in low-stakes tasks", "s": 1}, {"t": "I can roughly calibrate effort to importance", "s": 0}]}, {"text": "What does making an error in front of others feel like?", "section": "", "opts": [{"t": "Acutely distressing, I will think about it for days", "s": 3}, {"t": "More distressing than I want it to be", "s": 2}, {"t": "Uncomfortable but I recover reasonably quickly", "s": 1}, {"t": "Mildly embarrassing, I can contextualise it quickly", "s": 0}]}, {"text": "How do you feel when you achieve something significant?", "section": "Achievement", "opts": [{"t": "Briefly pleased, but quickly moving to the next concern", "s": 3}, {"t": "Hard to rest in the achievement before the next anxiety arrives", "s": 2}, {"t": "Generally satisfied though I sometimes undervalue achievements", "s": 1}, {"t": "I can genuinely feel and hold the satisfaction", "s": 0}]}, {"text": "What is your relationship with rest?", "section": "", "opts": [{"t": "Genuinely difficult, rest feels unearned when there are still things to do", "s": 3}, {"t": "I can rest but there is usually a background sense I should be doing something", "s": 2}, {"t": "I can rest reasonably well though sometimes feel restless", "s": 1}, {"t": "I can rest when I need it without significant guilt", "s": 0}]}, {"text": "How do you feel about delegating work to others?", "section": "Control", "opts": [{"t": "Very difficult, I worry they will not do it to a sufficient standard", "s": 3}, {"t": "Uncomfortable, I often re-check or redo work that others do for me", "s": 2}, {"t": "I can delegate with some difficulty on high-stakes work", "s": 1}, {"t": "Generally okay, I can tolerate variation in how others approach things", "s": 0}]}, {"text": "How does criticism or negative feedback affect you?", "section": "", "opts": [{"t": "Significantly, it affects my sense of worth and stays with me far longer than praise", "s": 3}, {"t": "More than positive feedback, I know the imbalance is there", "s": 2}, {"t": "It stings more than positive feedback but I recover reasonably", "s": 1}, {"t": "I can take and use critical feedback without excessive distress", "s": 0}]}, {"text": "Do you feel allowed to take a break before everything is done?", "section": "", "opts": [{"t": "Only when everything is fully done and I am certain nothing is missed", "s": 3}, {"t": "When I have done enough to justify stopping, which bar moves constantly", "s": 2}, {"t": "When the important things are done, though I sometimes push beyond that", "s": 1}, {"t": "When I need rest, I do not require completion as a condition", "s": 0}]}, {"text": "Overall, what drives your high standards?", "section": "Core driver", "opts": [{"t": "Primarily fear: fear of failure, of being seen as inadequate, of consequences", "s": 3}, {"t": "A mix of genuine values and fear, with fear having more influence than I would like", "s": 2}, {"t": "Mostly genuine but with some anxiety-driven elements", "s": 1}, {"t": "Primarily driven by genuine care about quality", "s": 0}]}];
+const RANGES = [["adaptive", 0, 9], ["mixed", 10, 20], ["anxious", 21, 36]];
+let cur = 0, scores = {};
+
+function render(i) {
+  const q = QS[i];
+  const pct = Math.round((i / QS.length) * 100);
+  document.getElementById('prog').style.width = pct + '%';
+  document.getElementById('pctr').textContent = 'Question ' + (i+1) + ' of ' + QS.length;
+  const secEl = document.getElementById('psec');
+  secEl.textContent = q.section || '';
+  secEl.style.display = q.section ? 'inline-block' : 'none';
+  document.getElementById('qtxt').textContent = q.text;
+  const optsEl = document.getElementById('opts');
+  optsEl.innerHTML = '';
+  q.opts.forEach((o, oi) => {
+    const el = document.createElement('div');
+    el.className = 'opt';
+    el.innerHTML = '<div class="opt-dot"></div><span>' + o.t + '</span>';
+    el.onclick = () => pick(i, oi, o.s, el);
+    optsEl.appendChild(el);
+  });
+}
+
+function pick(qi, oi, score, el) {
+  // Mark chosen
+  document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  scores[qi] = score;
+  // Auto-advance after brief pause
+  const allOpts = document.querySelectorAll('.opt');
+  allOpts.forEach(o => o.classList.add('choosing'));
+  setTimeout(() => {
+    cur++;
+    if (cur < QS.length) {
+      render(cur);
+    } else {
+      showResult();
+    }
+  }, 420);
+}
+
+function showResult() {
+  const total = Object.values(scores).reduce((a,b)=>a+b, 0);
+  let rid = RANGES[RANGES.length-1][0];
+  for (const [id, mn, mx] of RANGES) {
+    if (total >= mn && total <= mx) { rid = id; break; }
+  }
+  document.getElementById('quiz-shell').style.display = 'none';
+  document.getElementById('r-' + rid).style.display = 'block';
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  // Animate bars
+  setTimeout(() => {
+    document.querySelectorAll('.bar-fill').forEach(b => {
+      const w = b.style.width;
+      b.style.width = '0%';
+      requestAnimationFrame(() => { b.style.width = w; });
+    });
+  }, 100);
+}
+
+function retake() {
+  scores = {};
+  cur = 0;
+  document.querySelectorAll('.result-panel').forEach(r => r.style.display = 'none');
+  document.getElementById('quiz-shell').style.display = 'block';
+  render(0);
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+render(0);
+</script>
+</body>
+</html>
