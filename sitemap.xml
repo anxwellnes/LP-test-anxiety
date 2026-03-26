@@ -271,7 +271,7 @@
     <priority>0.73</priority>
   </url>
 
-  <!-- ARTICLES: High-volume batch -->
+  <!-- ARTICLES: Managing anxiety -->
   <url>
     <loc>https://myanxietytest.com/articles/how-to-stop-overthinking/</loc>
     <changefreq>monthly</changefreq>
@@ -338,8 +338,7 @@
     <priority>0.75</priority>
   </url>
 
-
-  <!-- ARTICLES: Long-tail batch 3 -->
+  <!-- ARTICLES: Deep dives -->
   <url>
     <loc>https://myanxietytest.com/articles/why-does-anxiety-make-you-feel-sick/</loc>
     <changefreq>monthly</changefreq>
@@ -406,8 +405,7 @@
     <priority>0.75</priority>
   </url>
 
-
-  <!-- ARTICLES: Situational batch 4 -->
+  <!-- ARTICLES: Situational -->
   <url><loc>https://myanxietytest.com/articles/anxiety-before-job-interview-how-to-manage-it/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/anxiety-about-health-without-symptoms/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/anxiety-when-trying-to-sleep-what-helps/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -420,7 +418,6 @@
   <url><loc>https://myanxietytest.com/articles/social-media-and-anxiety-how-it-makes-things-worse/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/anxiety-about-the-future-uncertainty-and-worry/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
 
-
   <!-- QUIZZES: New batch -->
   <url><loc>https://myanxietytest.com/am-i-a-people-pleaser/</loc><changefreq>monthly</changefreq><priority>0.88</priority></url>
   <url><loc>https://myanxietytest.com/perfectionism-test/</loc><changefreq>monthly</changefreq><priority>0.88</priority></url>
@@ -431,5 +428,72 @@
   <url><loc>https://myanxietytest.com/anxiety-in-the-body-quiz/</loc><changefreq>monthly</changefreq><priority>0.86</priority></url>
   <url><loc>https://myanxietytest.com/productive-vs-unproductive-worry-quiz/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://myanxietytest.com/anxiety-avoidance-profile/</loc><changefreq>monthly</changefreq><priority>0.87</priority></url>
+
+  <!-- ARTICLES: New batch 5 - High-intent therapy funnel -->
+  <url>
+    <loc>https://myanxietytest.com/articles/online-therapy-com-review-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/betterhelp-vs-online-therapy-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/i-tried-therapy-for-anxiety-what-happened/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-about-making-mistakes-at-work/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/why-do-i-get-anxious-around-family/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/when-anxiety-stops-you-leaving-the-house/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-after-eating-why-it-happens/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/therapy-vs-medication-for-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-about-being-a-burden-to-others/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/anxiety-on-public-transport-how-to-cope/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://myanxietytest.com/articles/how-i-knew-i-needed-therapy-for-my-anxiety/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
 
 </urlset>
