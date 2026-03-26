@@ -1,190 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Therapy vs Medication for Anxiety: What the Evidence Actually Shows</title>
-  <meta name="description" content="An honest, evidence-based comparison of therapy and medication for anxiety. Which works better, for whom, and what the research says about combining them.">
-  <link rel="canonical" href="https://myanxietytest.com/articles/therapy-vs-medication-for-anxiety/">
-  <link rel="icon" href="https://myanxietytest.com/favicon.png" type="image/png">
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CN7KGLW2HZ');</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Therapy vs Medication for Anxiety: What the Evidence Actually Shows</title>
+  <meta name="description" content="An honest, evidence-based comparison of therapy and medication for anxiety. Which works better, for whom, what the research says about combining them, and how to decide." />
+  <meta name="keywords" content="therapy vs medication anxiety, CBT vs antidepressants anxiety, should I take medication for anxiety, anxiety treatment options, SSRIs vs therapy anxiety" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://myanxietytest.com/articles/therapy-vs-medication-for-anxiety/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Therapy vs Medication for Anxiety: What the Evidence Actually Shows" />
+  <meta property="og:description" content="An honest, evidence-based comparison of therapy and medication for anxiety. Which works better, for whom, and what the research says about combining them." />
+  <meta property="og:url" content="https://myanxietytest.com/articles/therapy-vs-medication-for-anxiety/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is therapy or medication better for anxiety?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For most anxiety disorders, CBT produces outcomes comparable to medication in the short term and significantly better outcomes in the long term. CBT changes the underlying thought patterns and avoidance behaviours that maintain anxiety, while medication primarily manages symptoms while it is being taken. For severe anxiety, a combination of both often produces the best results." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does therapy take to work for anxiety compared to medication?",
+        "acceptedAnswer": { "@type": "Answer", "text": "SSRIs and SNRIs typically take 4 to 6 weeks to reach full therapeutic effect. CBT usually shows meaningful improvement after 6 to 16 sessions, spanning roughly 2 to 4 months. CBT effects tend to persist after treatment ends, while anxiety often returns when medication is stopped." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I take medication and do therapy at the same time?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, and for moderate to severe anxiety, combination treatment consistently outperforms either approach alone in the short term. Medication can reduce symptom intensity enough to make engaging with therapy easier, while therapy changes the underlying patterns." }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of anxiety respond best to therapy alone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "CBT has particularly strong evidence for phobias, panic disorder, social anxiety disorder, and health anxiety. For specific phobias, exposure-based CBT can produce substantial improvement in as few as 4 to 6 sessions." }
+      },
+      {
+        "@type": "Question",
+        "name": "When is medication the right choice for anxiety?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Medication is often appropriate when anxiety is severe enough to significantly impair daily functioning, when it is so intense that engaging with therapy feels difficult, or when anxiety has not responded adequately to therapy alone." }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --blue:      #0064FA;
+      --blue-dark: #0050CC;
+      --blue-mid:  #1a74fb;
+      --blue-soft: #E8F1FF;
+      --blue-bdr:  #C0D8FF;
+      --bg:        #F2F5FA;
+      --surface:   #FFFFFF;
+      --border:    #DDE4EF;
+      --text:      #0D1B2A;
+      --muted:     #5C6F85;
+      --muted-lt:  #97A8BA;
+      --shadow-sm: 0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md: 0 4px 20px rgba(0,100,250,0.09);
+      --r:         12px;
+      --r-lg:      18px;
+      --r-xl:      24px;
+    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Nunito Sans', sans-serif; background: #F2F5FA; color: #1a1a2e; line-height: 1.75; font-size: 17px; }
-    a { color: #0064FA; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    nav { background: #0064FA; padding: 0 24px; height: 56px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
-    .nav-logo { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 18px; color: #fff; text-decoration: none; }
-    .nav-links { display: flex; gap: 24px; }
-    .nav-links a { color: rgba(255,255,255,0.85); font-size: 14px; font-weight: 600; text-decoration: none; }
-    .nav-links a:hover { color: #fff; }
-    .page-wrap { max-width: 740px; margin: 0 auto; padding: 48px 24px 80px; }
-    .breadcrumb { font-size: 13px; color: #7a8599; margin-bottom: 24px; }
-    .breadcrumb a { color: #7a8599; }
-    .breadcrumb span { margin: 0 6px; }
-    .article-tag { display: inline-block; background: #e8f0ff; color: #0064FA; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
-    h1 { font-family: 'Nunito', sans-serif; font-size: clamp(26px, 4vw, 36px); font-weight: 800; line-height: 1.25; color: #0f1a2e; margin-bottom: 16px; }
-    .article-meta { font-size: 14px; color: #7a8599; margin-bottom: 32px; }
-    .article-meta strong { color: #444; }
-    .article-body h2 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; color: #0f1a2e; margin: 40px 0 14px; }
-    .article-body h3 { font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 18px; color: #0f1a2e; margin: 28px 0 10px; }
-    .article-body p { margin-bottom: 18px; color: #2d3748; }
-    .compare-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
-    @media (max-width: 540px) { .compare-row { grid-template-columns: 1fr; } }
-    .compare-card { background: #fff; border-radius: 18px; padding: 22px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
-    .compare-card h3 { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; margin-bottom: 12px; color: #0f1a2e; }
-    .compare-card.therapy { border-top: 3px solid #0064FA; }
-    .compare-card.meds { border-top: 3px solid #9b59b6; }
-    .compare-card ul { padding-left: 0; list-style: none; }
-    .compare-card li { font-size: 14px; color: #444; margin-bottom: 8px; padding-left: 18px; position: relative; line-height: 1.5; }
-    .compare-card li::before { content: "•"; position: absolute; left: 0; color: #0064FA; }
-    .compare-card.meds li::before { color: #9b59b6; }
-    .highlight-box { background: #eef4ff; border-radius: 18px; padding: 22px 26px; margin: 28px 0; border-left: 4px solid #0064FA; }
-    .highlight-box p { color: #1a2a4a; margin: 0; font-size: 15px; }
-    .cta-block { background: linear-gradient(135deg, #0064FA 0%, #1a7fff 100%); border-radius: 22px; padding: 36px 32px; text-align: center; margin: 40px 0; color: #fff; }
-    .cta-block h3 { font-family: 'Nunito', sans-serif; font-size: 22px; font-weight: 800; margin-bottom: 10px; }
-    .cta-block p { font-size: 15px; opacity: 0.9; margin-bottom: 22px; }
-    .cta-btn { display: inline-block; background: #fff; color: #0064FA; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px; padding: 14px 32px; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
-    .cta-btn:hover { transform: translateY(-2px); text-decoration: none; }
-    .cta-note { font-size: 12px; opacity: 0.75; margin-top: 12px; }
-    .related-tools { margin: 40px 0; }
-    .related-tools h3 { font-family: 'Nunito', sans-serif; font-size: 17px; font-weight: 700; margin-bottom: 14px; color: #0f1a2e; }
-    .tools-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-    .tool-chip { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 50px; padding: 8px 16px; font-size: 14px; font-weight: 600; color: #0064FA; }
-    .tool-chip:hover { background: #eef4ff; border-color: #0064FA; text-decoration: none; }
-    footer { text-align: center; padding: 32px 24px; font-size: 13px; color: #aab; }
-    footer a { color: #aab; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { text-decoration: none; color: inherit; }
+
+    /* TOPBAR */
+    .topbar { background: var(--blue); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,100,250,0.25); }
+    .topbar-inner { max-width: 1080px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; color: white; letter-spacing: -0.01em; }
+    .topbar-right { display: flex; align-items: center; gap: 14px; }
+    .topbar-link { font-size: 0.81rem; font-weight: 600; color: rgba(255,255,255,0.75); transition: color 0.15s; }
+    .topbar-link:hover { color: white; }
+    .topbar-tag { font-size: 0.76rem; font-weight: 700; color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    /* ARTICLE HEADER (white/grey bg like production) */
+    .article-header { background: var(--bg); padding: clamp(28px,4vw,48px) clamp(16px,4vw,40px) 0; }
+    .article-header-inner { max-width: 740px; margin: 0 auto; }
+    .breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 600; color: var(--muted-lt); margin-bottom: 22px; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--muted-lt); transition: color 0.15s; }
+    .breadcrumb a:hover { color: var(--blue); }
+    .breadcrumb-sep { opacity: 0.5; }
+    .article-kicker { display: inline-flex; align-items: center; gap: 6px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); background: var(--blue-soft); border: 1px solid var(--blue-bdr); padding: 4px 12px; border-radius: 999px; margin-bottom: 18px; }
+    .article-header h1 { font-family: 'Nunito', sans-serif; font-size: clamp(1.9rem,5vw,2.9rem); font-weight: 900; color: var(--text); line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 18px; }
+    .article-meta { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding-bottom: clamp(24px,3vw,36px); }
+    .article-meta-item { font-size: 0.82rem; font-weight: 600; color: var(--muted); display: flex; align-items: center; gap: 5px; }
+
+    /* ARTICLE LAYOUT */
+    .article-wrap { max-width: 740px; margin: 0 auto; padding: clamp(28px,4vw,44px) clamp(16px,4vw,40px) 80px; }
+
+    /* BODY TEXT */
+    .prose h2 { font-family: 'Nunito', sans-serif; font-size: clamp(1.2rem,2.5vw,1.5rem); font-weight: 900; color: var(--text); letter-spacing: -0.02em; margin: 44px 0 14px; }
+    .prose h3 { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 800; color: var(--text); margin: 28px 0 10px; }
+    .prose p { font-size: 0.95rem; color: var(--muted); line-height: 1.75; margin-bottom: 18px; }
+    .prose a { color: var(--blue); font-weight: 600; }
+    .prose a:hover { text-decoration: underline; }
+
+    /* PULL QUOTE */
+    .pull-quote { border-left: 4px solid var(--blue); background: var(--blue-soft); border-radius: 0 var(--r-lg) var(--r-lg) 0; padding: 20px 24px; margin: 32px 0; }
+    .pull-quote p { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 800; color: var(--text); font-style: italic; margin: 0; line-height: 1.55; }
+
+    /* KEY TAKEAWAYS */
+    .takeaways { background: var(--surface); border: 1px solid var(--blue-bdr); border-radius: var(--r-xl); padding: 24px 28px; margin: 28px 0; box-shadow: var(--shadow-sm); }
+    .takeaways-label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
+    .takeaways ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .takeaways li { font-size: 0.9rem; color: var(--text); line-height: 1.55; display: flex; gap: 10px; align-items: flex-start; }
+    .takeaways li::before { content: "✓"; color: #16a34a; font-weight: 900; font-size: 0.85rem; flex-shrink: 0; margin-top: 1px; }
+
+    /* COMPARISON CARDS */
+    .compare-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
+    @media (max-width: 580px) { .compare-row { grid-template-columns: 1fr; } }
+    .compare-card { background: var(--surface); border-radius: var(--r-xl); padding: 24px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+    .compare-card.therapy-card { border-top: 3px solid var(--blue); }
+    .compare-card.meds-card { border-top: 3px solid #9b59b6; }
+    .compare-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+    .compare-card-head span { font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 900; color: var(--text); }
+    .compare-card ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .compare-card li { font-size: 0.85rem; color: var(--muted); line-height: 1.5; display: flex; gap: 8px; align-items: flex-start; }
+    .compare-card.therapy-card li::before { content: "•"; color: var(--blue); font-weight: 900; flex-shrink: 0; }
+    .compare-card.meds-card li::before { content: "•"; color: #9b59b6; font-weight: 900; flex-shrink: 0; }
+
+    /* COMPARISON TABLE */
+    .compare-table-wrap { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); overflow: hidden; margin: 28px 0; box-shadow: var(--shadow-sm); }
+    .compare-table { width: 100%; border-collapse: collapse; }
+    .compare-table thead tr th { padding: 14px 18px; font-family: 'Nunito', sans-serif; font-size: 0.88rem; font-weight: 900; text-align: center; }
+    .compare-table thead tr th:first-child { text-align: left; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-lt); background: var(--bg); }
+    .compare-table thead tr th.th-winner { background: var(--blue); color: white; }
+    .compare-table thead tr th.th-other { background: #f0f0f5; color: var(--text); }
+    .compare-table tbody tr td { padding: 13px 18px; font-size: 0.875rem; border-top: 1px solid var(--border); color: var(--muted); }
+    .compare-table tbody tr td:not(:first-child) { text-align: center; }
+    .compare-table tbody tr:hover td { background: #fafbff; }
+    .win { color: #16a34a; font-weight: 700; }
+    .neutral { color: var(--muted); }
+    .lose { color: var(--muted-lt); }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box { background: var(--blue-soft); border-left: 4px solid var(--blue); border-radius: 0 var(--r-lg) var(--r-lg) 0; padding: 18px 22px; margin: 28px 0; }
+    .highlight-box p { font-size: 0.9rem; color: var(--text); margin: 0; line-height: 1.65; }
+    .highlight-box a { color: var(--blue); font-weight: 600; }
+    .highlight-box a:hover { text-decoration: underline; }
+
+    /* INLINE CTA */
+    .inline-cta { background: var(--surface); border: 1px solid var(--blue-bdr); border-radius: var(--r-xl); padding: 20px 24px; margin: 32px 0; display: flex; align-items: center; gap: 18px; box-shadow: var(--shadow-sm); }
+    .inline-cta-text { flex: 1; }
+    .inline-cta-label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+    .inline-cta-title { font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 900; color: var(--text); margin-bottom: 3px; }
+    .inline-cta-desc { font-size: 0.8rem; color: var(--muted); }
+    .inline-cta-btn { flex-shrink: 0; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.82rem; padding: 10px 18px; border-radius: 999px; white-space: nowrap; transition: background 0.15s; }
+    .inline-cta-btn:hover { background: var(--blue-dark); }
+    @media (max-width: 520px) { .inline-cta { flex-direction: column; align-items: flex-start; } }
+
+    /* MAIN CTA BLOCK */
+    .cta-block { background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 60%, var(--blue-mid) 100%); border-radius: var(--r-xl); padding: 36px 32px; margin: 48px 0 40px; }
+    .cta-block-label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 10px; }
+    .cta-block h3 { font-family: 'Nunito', sans-serif; font-size: clamp(1.2rem,3vw,1.55rem); font-weight: 900; color: white; margin-bottom: 10px; line-height: 1.2; }
+    .cta-block p { font-size: 0.9rem; color: rgba(255,255,255,0.8); margin-bottom: 22px; line-height: 1.65; }
+    .cta-block-btn { display: inline-block; background: white; color: var(--blue); font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.95rem; padding: 14px 28px; border-radius: 999px; transition: transform 0.15s, box-shadow 0.15s; box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+    .cta-block-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+    .cta-note { font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-top: 14px; }
+
+    /* FAQ */
+    .faq-section { margin: 44px 0 0; }
+    .faq-label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+    .faq-title { font-family: 'Nunito', sans-serif; font-size: clamp(1.1rem,2.5vw,1.4rem); font-weight: 900; color: var(--text); margin-bottom: 20px; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--r-lg); background: var(--surface); margin-bottom: 10px; overflow: hidden; }
+    .faq-q { width: 100%; background: none; border: none; padding: 18px 20px; text-align: left; font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 800; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .faq-q:hover { background: var(--bg); }
+    .faq-icon { font-size: 1.1rem; color: var(--blue); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-a { font-size: 0.88rem; color: var(--muted); line-height: 1.7; padding: 0 20px 18px; display: none; }
+    .faq-a a { color: var(--blue); font-weight: 600; }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    /* RELATED TOOLS */
+    .related-tools { margin: 40px 0 0; }
+    .related-tools-label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
+    .tools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    @media (min-width: 480px) { .tools-grid { grid-template-columns: repeat(4, 1fr); } }
+    .tool-chip { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: var(--r); border: 1px solid var(--border); background: var(--surface); transition: all 0.15s; }
+    .tool-chip:hover { border-color: var(--blue); background: var(--blue-soft); }
+    .tool-chip-icon { font-size: 1rem; flex-shrink: 0; }
+    .tool-chip-name { font-size: 0.78rem; font-weight: 700; color: var(--text); }
+
+    /* FOOTER */
+    .footer { background: var(--blue-dark); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .footer-links a { font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.55); transition: color 0.15s; }
+    .footer-links a:hover { color: white; }
+    .footer-copy { max-width: 1080px; margin: 16px auto 0; font-size: 0.75rem; color: rgba(255,255,255,0.3); }
   </style>
 </head>
 <body>
 
-<nav>
-  <a class="nav-logo" href="https://myanxietytest.com/">🧠 MyAnxietyTest</a>
-  <div class="nav-links">
-    <a href="https://myanxietytest.com/">All tools</a>
-    <a href="https://myanxietytest.com/articles/">Articles</a>
+<!-- TOPBAR -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-right">
+      <a href="https://myanxietytest.com/" class="topbar-link">All tools</a>
+      <span class="topbar-tag">Free anxiety tools</span>
+    </div>
   </div>
-</nav>
+</header>
 
-<div class="page-wrap">
-  <div class="breadcrumb">
-    <a href="https://myanxietytest.com/">Home</a>
-    <span>›</span>
-    <a href="https://myanxietytest.com/articles/">Articles</a>
-    <span>›</span>
-    Therapy vs Medication for Anxiety
+<!-- ARTICLE HEADER -->
+<div class="article-header">
+  <div class="article-header-inner">
+    <nav class="breadcrumb">
+      <a href="https://myanxietytest.com/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="https://myanxietytest.com/articles/">Articles</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Therapy vs Medication for Anxiety</span>
+    </nav>
+    <div class="article-kicker">✦ Treatment comparison</div>
+    <h1>Therapy vs Medication for Anxiety: What the Evidence Actually Shows</h1>
+    <div class="article-meta">
+      <span class="article-meta-item">📖 11 min read</span>
+      <span class="article-meta-item">🧠 MyAnxietyTest</span>
+    </div>
   </div>
+</div>
 
-  <span class="article-tag">Comparison</span>
-  <h1>Therapy vs Medication for Anxiety: What the Evidence Actually Shows</h1>
-  <div class="article-meta">Updated <strong>March 2026</strong> · 11 min read</div>
-
-  <div class="article-body">
+<!-- ARTICLE BODY -->
+<div class="article-wrap">
+  <div class="prose">
 
     <p>When someone decides to seek help for anxiety, one of the first questions they face is whether to pursue therapy, medication, or both. It is a question with a clear evidence base behind it, though the answer is more nuanced than most people expect.</p>
 
-    <p>This article summarises what the research shows, what the practical differences are, and how to think about the choice for your specific situation.</p>
+    <p>This article summarises what the research shows, what the practical differences are, and how to think about the choice for your specific situation. If you are still unsure whether professional support is the right step, the <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy quiz</a> gives you an honest read in about three minutes.</p>
 
+  </div>
+
+  <div class="takeaways">
+    <div class="takeaways-label">Key takeaways</div>
+    <ul>
+      <li>CBT produces outcomes comparable to medication short-term and significantly better long-term for most anxiety disorders.</li>
+      <li>Medication manages symptoms while taken. CBT changes the underlying patterns that drive anxiety.</li>
+      <li>For severe anxiety, combining both typically produces better results than either alone.</li>
+      <li>For phobias and panic disorder, exposure-based CBT often works in as few as 4 to 6 sessions.</li>
+      <li>Online CBT platforms have largely closed the access gap that once pushed people toward medication first.</li>
+    </ul>
+  </div>
+
+  <div class="prose">
     <h2>What the research says about effectiveness</h2>
 
-    <p>Both CBT and medication have been shown in numerous randomised controlled trials to be effective treatments for anxiety disorders. The short answer on which works better is: it depends on the type of anxiety, the severity, and the time frame you are looking at.</p>
+    <p>Both CBT and medication have been shown in numerous randomised controlled trials to be effective treatments for anxiety disorders. The short answer on which works better: it depends on the type of anxiety, the severity, and the time frame you are looking at.</p>
 
-    <p>For most anxiety disorders including generalised anxiety disorder, social anxiety disorder, panic disorder, and phobias, CBT produces outcomes that are comparable to medication in the short term and significantly better in the long term. The key reason for the long-term advantage is that CBT changes the underlying patterns that drive anxiety, while medication primarily manages the symptoms while it is being taken.</p>
+    <p>For most anxiety disorders including generalised anxiety disorder, social anxiety disorder, panic disorder, and phobias, CBT produces outcomes comparable to medication in the short term and significantly better in the long term. The key reason for the long-term advantage is that CBT changes the underlying patterns that drive anxiety, while medication primarily manages the symptoms while it is being taken.</p>
 
-    <p>This does not mean medication is ineffective. For severe anxiety, particularly when it is impairing daily function significantly, medication can reduce the intensity of symptoms enough to make therapy more accessible. For some people, medication is a bridge that allows them to engage with the therapeutic work that produces more lasting change.</p>
+    <p>This does not mean medication is ineffective. For severe anxiety, particularly when it is impairing daily function, medication can reduce symptom intensity enough to make therapy more accessible. For some people, medication is a bridge that allows them to engage with the therapeutic work that produces more lasting change.</p>
 
     <h2>The main differences in how they work</h2>
+  </div>
 
-    <div class="compare-row">
-      <div class="compare-card therapy">
-        <h3>🧠 Therapy (CBT)</h3>
-        <ul>
-          <li>Changes the thought patterns and avoidance behaviours driving anxiety</li>
-          <li>Effects tend to persist after treatment ends</li>
-          <li>Requires active engagement and practice between sessions</li>
-          <li>Can take 6 to 16 sessions before full effects are apparent</li>
-          <li>Skills learned are transferable to new anxiety situations</li>
-          <li>No physical side effects</li>
-        </ul>
-      </div>
-      <div class="compare-card meds">
-        <h3>💊 Medication (SSRIs/SNRIs)</h3>
-        <ul>
-          <li>Reduces symptom intensity by altering neurotransmitter levels</li>
-          <li>Effects typically reduce if medication is stopped</li>
-          <li>Passive treatment, no engagement required for effect</li>
-          <li>Takes 4 to 6 weeks to reach full therapeutic effect</li>
-          <li>Primarily effective for the specific period it is taken</li>
-          <li>Can have side effects including nausea, sleep changes, sexual side effects</li>
-        </ul>
-      </div>
+  <div class="compare-row">
+    <div class="compare-card therapy-card">
+      <div class="compare-card-head"><span>🧠 Therapy (CBT)</span></div>
+      <ul>
+        <li>Changes the thought patterns and avoidance behaviours driving anxiety</li>
+        <li>Effects tend to persist after treatment ends</li>
+        <li>Requires active engagement and practice between sessions</li>
+        <li>Can take 6 to 16 sessions before full effects are apparent</li>
+        <li>Skills learned are transferable to new anxiety situations</li>
+        <li>No physical side effects</li>
+      </ul>
     </div>
+    <div class="compare-card meds-card">
+      <div class="compare-card-head"><span>💊 Medication (SSRIs/SNRIs)</span></div>
+      <ul>
+        <li>Reduces symptom intensity by altering neurotransmitter levels</li>
+        <li>Effects typically reduce if medication is stopped</li>
+        <li>Passive treatment, no engagement required for effect</li>
+        <li>Takes 4 to 6 weeks to reach full therapeutic effect</li>
+        <li>Primarily effective for the specific period it is taken</li>
+        <li>Can have side effects including nausea, sleep changes, sexual side effects</li>
+      </ul>
+    </div>
+  </div>
 
-    <h2>Which types of anxiety respond better to therapy?</h2>
+  <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=therapy-vs-medication" class="inline-cta">
+    <div class="inline-cta-text">
+      <div class="inline-cta-label">Start therapy this week</div>
+      <div class="inline-cta-title">Structured CBT with a licensed therapist</div>
+      <div class="inline-cta-desc">Matched within 24 hours. Get 20% off your first month.</div>
+    </div>
+    <div class="inline-cta-btn">Get started →</div>
+  </a>
 
-    <p>CBT has particularly strong evidence for phobias, panic disorder, social anxiety disorder, and health anxiety. For phobias specifically, exposure-based CBT often produces substantial improvement in a small number of sessions, in some cases as few as four to six. This is an area where therapy clearly outperforms medication as a first-line treatment.</p>
+  <div class="prose">
+    <h2>Which types of anxiety respond best to therapy?</h2>
 
-    <p>For generalised anxiety disorder, both therapy and medication are recommended as first-line options, with combination treatment showing some advantage over either alone for more severe presentations.</p>
+    <p>CBT has particularly strong evidence for phobias, panic disorder, social anxiety disorder, and health anxiety. For phobias specifically, exposure-based CBT often produces substantial improvement in as few as four to six sessions. This is an area where therapy clearly outperforms medication as a first-line treatment.</p>
 
-    <h2>Which types of anxiety might benefit from medication?</h2>
+    <p>For generalised anxiety disorder, both therapy and medication are recommended as first-line options, with combination treatment showing some advantage for more severe presentations. If you are not sure what type of anxiety you are dealing with, the <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/">What Type of Anxiety quiz</a> can help clarify the picture before you decide on a treatment path.</p>
+
+    <h2>Head-to-head comparison</h2>
+  </div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="th-winner">Therapy (CBT)</th>
+          <th class="th-other">Medication</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Short-term effectiveness</td><td class="win">✓ Strong</td><td class="win">✓ Strong</td></tr>
+        <tr><td>Long-term effectiveness</td><td class="win">✓ Significantly better</td><td class="neutral">Reduces off medication</td></tr>
+        <tr><td>Works without ongoing use</td><td class="win">✓ Skills persist</td><td class="lose">✗ Needs continuation</td></tr>
+        <tr><td>Side effects</td><td class="win">✓ None physical</td><td class="neutral">Possible</td></tr>
+        <tr><td>Speed of effect</td><td class="neutral">6 to 16 sessions</td><td class="win">✓ 4 to 6 weeks</td></tr>
+        <tr><td>Severe anxiety</td><td class="neutral">Better with support</td><td class="win">✓ Faster relief</td></tr>
+        <tr><td>Phobias and panic</td><td class="win">✓ First-line</td><td class="neutral">Secondary option</td></tr>
+        <tr><td>Active effort required</td><td class="neutral">Yes, between sessions</td><td class="win">✓ No</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose">
+    <h2>When medication might be the right choice</h2>
 
     <p>Severe anxiety that significantly impairs daily functioning is often a situation where medication is appropriate as an initial support, either alone or alongside therapy. When anxiety is so intense that engaging with therapy is genuinely difficult, medication can create enough reduction in baseline arousal to make the therapeutic work possible.</p>
 
     <p>Anxiety that is strongly biologically driven and has not responded to therapy alone is also a reasonable indication for medication. Some people have a predominantly neurobiological component to their anxiety that responds well to pharmacological support.</p>
+  </div>
 
-    <h2>The case for combining them</h2>
+  <div class="pull-quote">
+    <p>"For most people with untreated anxiety, the real question is not whether therapy equals the best possible psychiatrist. It is whether structured support is better than what you are currently doing. For most people, the answer is clearly yes."</p>
+  </div>
 
-    <p>For moderate to severe anxiety, the research fairly consistently shows that combination treatment produces better outcomes than either alone, at least in the short term. The practical picture is that medication reduces the intensity of anxiety symptoms while CBT changes the underlying patterns, and these two mechanisms complement each other rather than competing.</p>
+  <div class="prose">
+    <h2>The case for combining both</h2>
 
-    <p>The combination also helps with a common pattern where people use medication long-term because stopping it causes anxiety to return. If therapy has been part of the picture, the skills developed mean that the person has something to work with when medication is eventually reduced or stopped.</p>
+    <p>For moderate to severe anxiety, the research fairly consistently shows that combination treatment produces better outcomes than either alone in the short term. Medication reduces symptom intensity while CBT changes the underlying patterns, and these two mechanisms complement rather than compete with each other.</p>
+
+    <p>The combination also helps with a common pattern where people use medication long-term because stopping it causes anxiety to return. If therapy has been part of the picture, the skills developed mean the person has something to work with when medication is eventually reduced or stopped.</p>
 
     <h2>The access problem</h2>
 
-    <p>One of the most practical arguments for trying therapy before medication is access. In many countries, getting a GP appointment and starting an SSRI is significantly faster than getting access to a qualified therapist through public health services. This has led to many people starting medication who might have responded well to therapy if it had been equally accessible.</p>
+    <p>One of the most practical arguments for trying therapy before medication is access. In many countries, getting a GP appointment and starting an SSRI is significantly faster than accessing a qualified therapist through public health services. This has historically pushed many people toward medication who might have responded well to therapy if it had been equally accessible.</p>
 
-    <p>Online therapy platforms have changed this picture considerably. A structured CBT program with a licensed therapist can be started within days, at a fraction of the cost of private in-person therapy, and without a waiting list. For someone deciding between a GP visit and online therapy as their first step, the access gap has largely closed.</p>
+    <p>Online therapy platforms have changed this considerably. A structured CBT program with a licensed therapist can be started within days, without a waiting list, at a fraction of private therapy costs. If you want to understand what CBT involves before starting, the guide on <a href="https://myanxietytest.com/articles/cbt-for-anxiety-what-it-is-and-how-it-works/">how CBT works for anxiety</a> covers the fundamentals.</p>
+  </div>
 
-    <div class="highlight-box">
-      <p>💡 <strong>If you are unsure where to start:</strong> The <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy quiz</a> can help you assess whether professional support is the right next step, and what kind of severity you are dealing with. For a broader look at what therapy involves, <a href="https://myanxietytest.com/articles/what-type-of-therapy-is-best-for-anxiety/">What Type of Therapy Is Best for Anxiety</a> covers the options in detail.</p>
-    </div>
+  <div class="highlight-box">
+    <p>💡 <strong>If you are unsure where to start:</strong> The <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy quiz</a> can help you assess whether professional support is the right next step and what severity you are dealing with. For a broader look at therapy options, <a href="https://myanxietytest.com/articles/what-type-of-therapy-is-best-for-anxiety/">What Type of Therapy Is Best for Anxiety</a> covers the options in detail.</p>
+  </div>
 
+  <div class="prose">
     <h2>What this means for you</h2>
 
-    <p>If your anxiety is mild to moderate: starting with structured CBT is the evidence-supported first choice. The effects are durable, there are no physical side effects, and the skills are transferable.</p>
+    <p>If your anxiety is mild to moderate, starting with structured CBT is the evidence-supported first choice. The effects are durable, there are no physical side effects, and the skills transfer to future situations.</p>
 
-    <p>If your anxiety is severe and significantly impairing: speaking to a doctor about medication alongside therapy is worth considering. The combination tends to produce faster initial improvement than therapy alone for high-severity presentations.</p>
+    <p>If your anxiety is severe and significantly impairing, speaking to a doctor about medication alongside therapy is worth considering. The combination tends to produce faster initial improvement than therapy alone for high-severity presentations.</p>
 
-    <p>If you have been on medication for anxiety for a long time without therapy: adding CBT has good evidence for improving outcomes and increasing the likelihood that medication can eventually be reduced successfully. This is not a reason to stop medication without medical guidance, but it is a reason to consider adding the therapeutic component if it is not already in place.</p>
-
-    <p>The decision is ultimately one to make with a qualified professional who knows your specific history. What this article can offer is a clear-eyed summary of the evidence so you go into that conversation informed.</p>
-
+    <p>If you have been on medication for anxiety for a long time without therapy, adding CBT has good evidence for improving outcomes and increasing the likelihood that medication can eventually be reduced successfully. This is not a reason to stop medication without medical guidance, but it is a reason to consider adding the therapeutic component if it is not already in place.</p>
   </div>
 
+  <!-- MAIN CTA -->
   <div class="cta-block">
-    <h3>Start with therapy, backed by evidence</h3>
-    <p>For most anxiety, structured CBT with a licensed therapist is the evidence-based first choice. Online-Therapy.com gives you both. New users get 20% off.</p>
-    <a href="https://www.online-therapy.com/?ref=myanxietytest" class="cta-btn" target="_blank" rel="noopener">Try Online-Therapy.com — 20% Off →</a>
-    <div class="cta-note">Affiliate link. We may earn a commission at no extra cost to you.</div>
+    <div class="cta-block-label">Start with therapy, backed by evidence</div>
+    <h3>Structured CBT with a licensed therapist, available this week</h3>
+    <p>For most anxiety, CBT is the evidence-based first choice. A full eight-section program with a therapist who reviews your progress between sessions. Get 20% off your first month.</p>
+    <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=therapy-vs-medication" class="cta-block-btn">Start CBT for anxiety →</a>
+    <div class="cta-note">Licensed therapists · Matched within 24 hours · Cancel anytime</div>
   </div>
 
-  <div class="related-tools">
-    <h3>Free tools on this site</h3>
+  <!-- FAQ -->
+  <div class="faq-section">
+    <div class="faq-label">Frequently asked questions</div>
+    <div class="faq-title">Common questions about therapy vs medication</div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Is therapy or medication better for anxiety?<span class="faq-icon">+</span></button>
+      <div class="faq-a">For most anxiety disorders, CBT produces outcomes comparable to medication in the short term and significantly better outcomes in the long term. CBT changes the underlying thought patterns and avoidance behaviours that maintain anxiety. Medication primarily manages symptoms while it is being taken. For severe anxiety, a combination of both often produces the best results.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How long does therapy take to work compared to medication?<span class="faq-icon">+</span></button>
+      <div class="faq-a">SSRIs and SNRIs typically take 4 to 6 weeks to reach full therapeutic effect. CBT usually shows meaningful improvement after 6 to 16 sessions, spanning roughly 2 to 4 months. CBT effects tend to persist after treatment ends, while anxiety often returns when medication is stopped.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can I take medication and do therapy at the same time?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Yes, and for moderate to severe anxiety, combination treatment consistently outperforms either approach alone in the short term. Medication can reduce symptom intensity enough to make engaging with therapy easier, while therapy changes the underlying patterns that medication alone does not address.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What types of anxiety respond best to therapy alone?<span class="faq-icon">+</span></button>
+      <div class="faq-a">CBT has particularly strong evidence for phobias, panic disorder, social anxiety disorder, and health anxiety. For specific phobias, exposure-based CBT can produce substantial improvement in as few as 4 to 6 sessions, often outperforming medication as a first-line treatment.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">When is medication the right choice for anxiety?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Medication is often appropriate when anxiety is severe enough to significantly impair daily functioning, when it is so intense that engaging with therapy feels difficult, or when anxiety has not responded adequately to therapy alone. In these cases, medication can reduce baseline arousal enough to make therapeutic work accessible.</div>
+    </div>
+  </div>
+
+  <!-- RELATED TOOLS -->
+  <div class="related-tools" style="margin-top:40px;">
+    <div class="related-tools-label">Related free tools</div>
     <div class="tools-grid">
-      <a href="https://myanxietytest.com/do-i-need-therapy/" class="tool-chip">🛋️ Do I Need Therapy?</a>
-      <a href="https://myanxietytest.com/anxiety-level/" class="tool-chip">📊 Anxiety Level Test</a>
-      <a href="https://myanxietytest.com/is-my-anxiety-getting-worse/" class="tool-chip">📈 Is My Anxiety Worse?</a>
-      <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/" class="tool-chip">🔍 Type of Anxiety Quiz</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/" class="tool-chip">
+        <div class="tool-chip-icon">🛋️</div><div class="tool-chip-name">Do I Need Therapy?</div>
+      </a>
+      <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/" class="tool-chip">
+        <div class="tool-chip-icon">🔍</div><div class="tool-chip-name">Type of Anxiety Quiz</div>
+      </a>
+      <a href="https://myanxietytest.com/anxiety-level/" class="tool-chip">
+        <div class="tool-chip-icon">📊</div><div class="tool-chip-name">Anxiety Level Test</div>
+      </a>
+      <a href="https://myanxietytest.com/is-my-anxiety-getting-worse/" class="tool-chip">
+        <div class="tool-chip-icon">📈</div><div class="tool-chip-name">Is My Anxiety Worse?</div>
+      </a>
     </div>
   </div>
 
 </div>
 
-<footer>
-  <p>© 2026 MyAnxietyTest.com · <a href="https://myanxietytest.com/">Free anxiety tools</a> · Not a substitute for professional mental health care</p>
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="https://myanxietytest.com/" class="footer-brand">🧠 MyAnxietyTest.com</a>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/articles/">Articles</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools and guides · Not a substitute for professional mental health care</div>
 </footer>
+
+<script>
+  function toggleFaq(btn) {
+    btn.closest('.faq-item').classList.toggle('open');
+  }
+</script>
+
 </body>
 </html>
