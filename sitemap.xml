@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- HOMEPAGE -->
+  
   <url>
     <loc>https://myanxietytest.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- TOOLS -->
+  
   <url>
     <loc>https://myanxietytest.com/anxiety-level/</loc>
     <changefreq>monthly</changefreq>
@@ -123,14 +123,14 @@
     <priority>0.60</priority>
   </url>
 
-  <!-- ARTICLES HUB -->
+  
   <url>
     <loc>https://myanxietytest.com/articles/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- ARTICLES: Understanding anxiety -->
+  
   <url>
     <loc>https://myanxietytest.com/articles/why-is-my-anxiety-worse-in-the-morning/</loc>
     <changefreq>monthly</changefreq>
@@ -167,7 +167,7 @@
     <priority>0.72</priority>
   </url>
 
-  <!-- ARTICLES: Telling them apart -->
+  
   <url>
     <loc>https://myanxietytest.com/articles/anxiety-vs-depression-how-to-tell-the-difference/</loc>
     <changefreq>monthly</changefreq>
@@ -198,7 +198,7 @@
     <priority>0.71</priority>
   </url>
 
-  <!-- ARTICLES: Therapy -->
+  
   <url>
     <loc>https://myanxietytest.com/articles/should-i-see-a-therapist-for-anxiety/</loc>
     <changefreq>monthly</changefreq>
@@ -271,7 +271,7 @@
     <priority>0.73</priority>
   </url>
 
-  <!-- ARTICLES: High-volume batch -->
+  
   <url>
     <loc>https://myanxietytest.com/articles/how-to-stop-overthinking/</loc>
     <changefreq>monthly</changefreq>
@@ -339,7 +339,7 @@
   </url>
 
 
-  <!-- ARTICLES: Long-tail batch 3 -->
+  
   <url>
     <loc>https://myanxietytest.com/articles/why-does-anxiety-make-you-feel-sick/</loc>
     <changefreq>monthly</changefreq>
@@ -407,7 +407,7 @@
   </url>
 
 
-  <!-- ARTICLES: Situational batch 4 -->
+  
   <url><loc>https://myanxietytest.com/articles/anxiety-before-job-interview-how-to-manage-it/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/anxiety-about-health-without-symptoms/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/anxiety-when-trying-to-sleep-what-helps/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -421,7 +421,7 @@
   <url><loc>https://myanxietytest.com/articles/anxiety-about-the-future-uncertainty-and-worry/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
 
 
-  <!-- QUIZZES: New batch -->
+  
   <url><loc>https://myanxietytest.com/am-i-a-people-pleaser/</loc><changefreq>monthly</changefreq><priority>0.88</priority></url>
   <url><loc>https://myanxietytest.com/perfectionism-test/</loc><changefreq>monthly</changefreq><priority>0.88</priority></url>
   <url><loc>https://myanxietytest.com/what-type-of-anxiety-do-i-have/</loc><changefreq>monthly</changefreq><priority>0.88</priority></url>
@@ -433,7 +433,7 @@
   <url><loc>https://myanxietytest.com/anxiety-avoidance-profile/</loc><changefreq>monthly</changefreq><priority>0.87</priority></url>
 
 
-  <!-- ARTICLES: Reviews and personal stories -->
+  
   <url><loc>https://myanxietytest.com/articles/online-therapy-com-review-for-anxiety/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://myanxietytest.com/articles/betterhelp-vs-online-therapy-for-anxiety/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://myanxietytest.com/articles/therapy-vs-medication-for-anxiety/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -441,14 +441,14 @@
   <url><loc>https://myanxietytest.com/articles/how-i-knew-i-needed-therapy-for-my-anxiety/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://myanxietytest.com/articles/when-anxiety-stops-you-leaving-the-house/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
 
-  <!-- ARTICLES: Everyday life batch -->
+  
   <url><loc>https://myanxietytest.com/articles/anxiety-about-making-mistakes-at-work/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://myanxietytest.com/articles/why-do-i-get-anxious-around-family/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://myanxietytest.com/articles/anxiety-after-eating-why-it-happens/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://myanxietytest.com/articles/anxiety-about-being-a-burden-to-others/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://myanxietytest.com/articles/anxiety-on-public-transport-how-to-cope/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
 
-  <!-- ARTICLES: Batch 6 -->
+  
   <url><loc>https://myanxietytest.com/articles/can-anxiety-cause-chest-pain/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/is-it-normal-to-feel-anxious-all-the-time/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/can-anxiety-cause-shortness-of-breath/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -462,7 +462,7 @@
   <url><loc>https://myanxietytest.com/articles/can-anxiety-cause-high-blood-pressure/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
 
 
-  <!-- ARTICLES: Batch 7 -->
+  
   <url><loc>https://myanxietytest.com/articles/why-do-i-feel-anxious-around-strangers/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/can-anxiety-cause-fatigue/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/why-do-i-always-catastrophise/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -475,4 +475,4 @@
   <url><loc>https://myanxietytest.com/articles/anxiety-when-making-decisions/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://myanxietytest.com/articles/can-anxiety-cause-heart-palpitations/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
 
-</urlset>
+<url><loc>https://myanxietytest.com/articles/anxiety-and-shame/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/can-anxiety-cause-stomach-pain/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/why-do-i-feel-anxious-in-crowds/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/anxiety-after-trauma/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/can-anxiety-cause-sweating/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/anxiety-and-procrastination/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/why-do-i-overthink-conversations/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/anxiety-when-eating-in-public/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/can-anxiety-cause-insomnia/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/anxiety-and-self-esteem/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://myanxietytest.com/articles/why-does-sugar-make-anxiety-worse/</loc><lastmod>2026-04-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url></urlset>
