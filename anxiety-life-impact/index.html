@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anxiety Life Impact Score: How Much Is Anxiety Costing You?</title>
+  <meta name="description" content="Find out exactly how much anxiety is affecting your work, relationships, sleep, body, decisions and joy. Free quiz with a personalised impact score across 6 life domains." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-life-impact/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anxiety Life Impact Score: How Much Is Anxiety Costing You?" />
+  <meta property="og:description" content="18 questions across 6 life domains. See a personalised radar chart of exactly where anxiety is taking the most from you." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-life-impact/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": "Anxiety Life Impact Score",
+    "description": "Find out exactly how much anxiety is affecting your work, relationships, sleep, body, decisions and joy across 6 life domains.",
+    "url": "https://myanxietytest.com/anxiety-life-impact/",
+    "educationalUse": "Self-assessment",
+    "provider": {
+      "@type": "Organization",
+      "name": "MyAnxietyTest",
+      "url": "https://myanxietytest.com"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:      #0064FA;
+      --blue-dark: #0050CC;
+      --blue-mid:  #1a74fb;
+      --blue-soft: #E8F1FF;
+      --blue-bdr:  #C0D8FF;
+      --bg:        #F2F5FA;
+      --surface:   #FFFFFF;
+      --border:    #DDE4EF;
+      --text:      #0D1B2A;
+      --muted:     #5C6F85;
+      --muted-lt:  #97A8BA;
+      --shadow-sm: 0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md: 0 4px 20px rgba(0,100,250,0.09);
+      --shadow-lg: 0 12px 48px rgba(0,100,250,0.12);
+      --r:         12px;
+      --r-lg:      18px;
+      --r-xl:      24px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { color: inherit; text-decoration: none; }
+
+    .topbar { background: var(--blue); box-shadow: 0 2px 12px rgba(0,100,250,0.25); position: sticky; top: 0; z-index: 100; }
+    .topbar-inner { max-width: 1080px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 9px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 0.95rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; letter-spacing: -0.01em; }
+    .topbar-tag { font-size: 0.77rem; font-weight: 700; color: rgba(255,255,255,0.72); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    .hero { background: linear-gradient(160deg, #0050CC 0%, var(--blue) 60%, var(--blue-mid) 100%); padding: clamp(44px,7vw,80px) clamp(16px,4vw,40px) clamp(36px,5vw,64px); text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; left: 50%; top: -80px; transform: translateX(-50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 65%); pointer-events: none; }
+    .hero-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); font-size: 0.73rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 18px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(1.8rem,4.5vw,3.2rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 14px; }
+    .hero h1 span { color: #93c5fd; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.72); max-width: 540px; margin: 0 auto 22px; line-height: 1.7; }
+    .hero-meta { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+    .hm-item { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.65); }
+    .hm-dot { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.12); color: #86efac; display: grid; place-items: center; font-size: 0.6rem; flex-shrink: 0; }
+
+    .main { max-width: 760px; margin: 0 auto; padding: clamp(24px,4vw,48px) clamp(16px,4vw,24px) 60px; }
+
+    .domain-preview { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 32px; }
+    .dp-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 14px 14px 12px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+    .dp-icon { font-size: 1.4rem; }
+    .dp-label { font-family: 'Nunito', sans-serif; font-size: 0.8rem; font-weight: 800; letter-spacing: -0.01em; }
+    .dp-sub { font-size: 0.72rem; color: var(--muted); line-height: 1.4; }
+
+    .progress-wrap { margin-bottom: 28px; }
+    .progress-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .progress-label { font-size: 0.8rem; font-weight: 700; color: var(--muted); }
+    .progress-domain { font-size: 0.8rem; font-weight: 700; color: var(--blue); }
+    .progress-bar-bg { height: 6px; background: var(--border); border-radius: 999px; overflow: hidden; }
+    .progress-bar-fill { height: 100%; background: var(--blue); border-radius: 999px; transition: width 0.4s ease; }
+
+    .quiz-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-md); overflow: hidden; }
+    .qc-domain-banner { padding: 10px 22px; display: flex; align-items: center; gap: 10px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; }
+    .qc-body { padding: clamp(20px,4vw,32px) clamp(20px,4vw,32px) 24px; }
+    .qc-q-num { font-size: 0.72rem; font-weight: 700; color: var(--muted-lt); letter-spacing: 0.05em; margin-bottom: 10px; }
+    .qc-question { font-family: 'Nunito', sans-serif; font-size: clamp(1.05rem,2.2vw,1.3rem); font-weight: 800; letter-spacing: -0.015em; line-height: 1.35; margin-bottom: 24px; }
+    .qc-options { display: flex; flex-direction: column; gap: 10px; }
+    .qc-option { display: flex; align-items: center; gap: 13px; padding: 13px 16px; border: 1.5px solid var(--border); border-radius: var(--r); cursor: pointer; transition: all 0.15s; background: var(--bg); user-select: none; }
+    .qc-option:hover { border-color: var(--blue-bdr); background: var(--blue-soft); }
+    .qc-option.selected { border-color: var(--blue); background: var(--blue-soft); }
+    .qc-opt-dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; transition: all 0.15s; display: grid; place-items: center; }
+    .qc-option.selected .qc-opt-dot { border-color: var(--blue); background: var(--blue); }
+    .qc-option.selected .qc-opt-dot::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: white; }
+    .qc-opt-text { font-size: 0.9rem; font-weight: 600; line-height: 1.4; }
+
+    .qc-nav { display: flex; align-items: center; padding: 0 clamp(20px,4vw,32px) 24px; }
+    .btn-back { height: 38px; padding: 0 16px; border: 1.5px solid var(--border); border-radius: var(--r); font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--muted); background: transparent; cursor: pointer; transition: all 0.15s; }
+    .btn-back:hover { border-color: var(--blue-bdr); color: var(--blue); }
+
+    #results { display: none; }
+    .result-header { text-align: center; margin-bottom: 36px; }
+    .result-score-wrap { display: inline-flex; flex-direction: column; align-items: center; gap: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xl); padding: 24px 36px; box-shadow: var(--shadow-md); margin-bottom: 12px; }
+    .result-score-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+    .result-score-num { font-family: 'Nunito', sans-serif; font-size: 3.2rem; font-weight: 900; letter-spacing: -0.04em; line-height: 1; }
+    .result-score-sub { font-size: 0.82rem; color: var(--muted); }
+    .result-level { display: inline-block; padding: 6px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+    .level-low { background: #DCFCE7; color: #15803D; }
+    .level-moderate { background: #FEF9C3; color: #92400E; }
+    .level-high { background: #FEE2E2; color: #BE123C; }
+    .result-h2 { font-family: 'Nunito', sans-serif; font-size: clamp(1.3rem,3vw,1.8rem); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .result-intro { font-size: 0.95rem; color: var(--muted); line-height: 1.7; max-width: 580px; margin: 0 auto; }
+
+    .radar-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xl); box-shadow: var(--shadow-md); padding: clamp(20px,4vw,32px); margin-bottom: 24px; }
+    .radar-title { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .radar-sub { font-size: 0.82rem; color: var(--muted); margin-bottom: 20px; }
+    .radar-wrap { display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; }
+    .radar-legend { display: flex; flex-direction: column; gap: 12px; min-width: 180px; }
+    .rl-item { display: flex; align-items: center; gap: 10px; }
+    .rl-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .rl-label { font-size: 0.82rem; font-weight: 700; flex: 1; }
+    .rl-bar-wrap { flex: 1; height: 6px; background: var(--bg); border-radius: 999px; overflow: hidden; min-width: 80px; }
+    .rl-bar { height: 100%; border-radius: 999px; }
+    .rl-pct { font-size: 0.78rem; font-weight: 700; color: var(--muted); min-width: 32px; text-align: right; }
+
+    .domains-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+    .domain-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 18px 18px 16px; }
+    .dc-top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .dc-icon { font-size: 1.3rem; }
+    .dc-label { font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 900; letter-spacing: -0.01em; flex: 1; }
+    .dc-pct { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; }
+    .dc-bar-bg { height: 5px; background: var(--bg); border-radius: 999px; overflow: hidden; margin-bottom: 10px; }
+    .dc-bar { height: 100%; border-radius: 999px; }
+    .dc-insight { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+
+    .meaning-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xl); padding: clamp(20px,4vw,28px); margin-bottom: 24px; box-shadow: var(--shadow-sm); }
+    .ms-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+    .ms-title { font-family: 'Nunito', sans-serif; font-size: 1.05rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 12px; }
+    .ms-body { font-size: 0.88rem; color: var(--muted); line-height: 1.75; }
+    .ms-body p { margin-bottom: 10px; }
+    .ms-body p:last-child { margin-bottom: 0; }
+
+    .steps-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xl); padding: clamp(20px,4vw,28px); margin-bottom: 24px; box-shadow: var(--shadow-sm); }
+    .step-list { display: flex; flex-direction: column; gap: 16px; margin-top: 12px; }
+    .step-item { display: flex; gap: 14px; }
+    .step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue-soft); color: var(--blue); display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.82rem; flex-shrink: 0; }
+    .step-content h4 { font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 3px; }
+    .step-content p { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+
+    .therapy-cta { background: linear-gradient(135deg, var(--blue-dark), var(--blue)); border-radius: var(--r-xl); padding: clamp(24px,4vw,32px); margin-bottom: 24px; }
+    .tc-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
+    .tc-title { font-family: 'Nunito', sans-serif; font-size: clamp(1.1rem,2.5vw,1.4rem); font-weight: 900; color: white; letter-spacing: -0.02em; margin-bottom: 10px; line-height: 1.2; }
+    .tc-body { font-size: 0.88rem; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 20px; }
+    .tc-features { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 22px; }
+    .tc-feat { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: rgba(255,255,255,0.75); font-weight: 600; }
+    .tc-feat::before { content: '✓'; color: #86efac; font-weight: 900; flex-shrink: 0; }
+    .tc-btn { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 24px; background: white; color: var(--blue-dark); font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; border-radius: var(--r-lg); transition: all 0.2s; }
+    .tc-btn:hover { background: #f0f6ff; transform: translateY(-1px); }
+
+    .related-section { margin-bottom: 48px; }
+    .related-title { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 14px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 14px 14px 12px; display: flex; flex-direction: column; gap: 6px; transition: all 0.18s; }
+    .related-card:hover { border-color: var(--blue-bdr); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+    .rc-icon { font-size: 1.2rem; }
+    .rc-name { font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; letter-spacing: -0.01em; }
+    .rc-desc { font-size: 0.74rem; color: var(--muted); line-height: 1.4; flex: 1; }
+    .rc-link { font-size: 0.75rem; font-weight: 700; color: var(--blue); }
+
+    .footer { background: var(--blue-dark); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.38); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+    .footer-copy { max-width: 1080px; margin: 0 auto; padding-top: 16px; font-size: 0.75rem; color: rgba(255,255,255,0.22); text-align: center; }
+
+    @media (max-width: 600px) {
+      .domain-preview { grid-template-columns: repeat(2,1fr); }
+      .domains-grid { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: 1fr 1fr; }
+      .radar-wrap { flex-direction: column; }
+      .tc-features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-tag">Free · No sign-up</div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">✦ Life Impact Assessment</div>
+    <h1>How much of your life is <span>anxiety taking?</span></h1>
+    <p class="hero-desc">Most people know they have anxiety. Few know exactly how much it is costing them across the different areas of their life. This tool measures that.</p>
+    <div class="hero-meta">
+      <div class="hm-item"><div class="hm-dot">✓</div>18 questions</div>
+      <div class="hm-item"><div class="hm-dot">✓</div>6 life domains</div>
+      <div class="hm-item"><div class="hm-dot">✓</div>Radar chart result</div>
+      <div class="hm-item"><div class="hm-dot">✓</div>100% anonymous</div>
+    </div>
+  </div>
+</section>
+
+<div class="main">
+
+  <div id="domain-preview-section">
+    <div class="domain-preview">
+      <div class="dp-item"><div class="dp-icon">💼</div><div class="dp-label">Work</div><div class="dp-sub">Focus, performance and career choices</div></div>
+      <div class="dp-item"><div class="dp-icon">👥</div><div class="dp-label">Relationships</div><div class="dp-sub">Closeness, trust and connection</div></div>
+      <div class="dp-item"><div class="dp-icon">🌙</div><div class="dp-label">Sleep</div><div class="dp-sub">Rest, recovery and night-time racing thoughts</div></div>
+      <div class="dp-item"><div class="dp-icon">🫀</div><div class="dp-label">Body</div><div class="dp-sub">Physical tension, symptoms and energy</div></div>
+      <div class="dp-item"><div class="dp-icon">🧭</div><div class="dp-label">Decisions</div><div class="dp-sub">Choices, avoidance and second-guessing</div></div>
+      <div class="dp-item"><div class="dp-icon">☀️</div><div class="dp-label">Joy</div><div class="dp-sub">Presence, pleasure and daily enjoyment</div></div>
+    </div>
+  </div>
+
+  <div id="quiz-section">
+    <div class="progress-wrap">
+      <div class="progress-top">
+        <span class="progress-label" id="progress-text">Question 1 of 18</span>
+        <span class="progress-domain" id="progress-domain">💼 Work</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-fill" style="width:5.5%"></div>
+      </div>
+    </div>
+
+    <div class="quiz-card">
+      <div class="qc-domain-banner" id="domain-banner" style="background:#E8F1FF;color:#0064FA;">
+        <span id="banner-icon">💼</span>
+        <span id="banner-label">Work and Performance</span>
+      </div>
+      <div class="qc-body">
+        <div class="qc-q-num" id="q-num">Question 1 of 18</div>
+        <div class="qc-question" id="q-text"></div>
+        <div class="qc-options" id="q-options"></div>
+      </div>
+      <div class="qc-nav">
+        <button class="btn-back" id="btn-back" onclick="goBack()">← Back</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="results">
+
+    <div class="result-header">
+      <div class="result-score-wrap">
+        <div class="result-score-label">Your Anxiety Life Impact Score</div>
+        <div class="result-score-num" id="total-score-display">0%</div>
+        <div class="result-score-sub">across 6 life domains</div>
+      </div>
+      <br>
+      <span class="result-level" id="result-level-badge">Moderate Impact</span>
+      <br><br>
+      <div class="result-h2" id="result-heading"></div>
+      <p class="result-intro" id="result-intro"></p>
+    </div>
+
+    <div class="radar-section">
+      <div class="radar-title">Your Impact Profile</div>
+      <div class="radar-sub">How anxiety is distributed across the six areas of your life</div>
+      <div class="radar-wrap">
+        <div><svg id="radar-svg" width="260" height="260" viewBox="0 0 260 260"></svg></div>
+        <div class="radar-legend" id="radar-legend"></div>
+      </div>
+    </div>
+
+    <div class="domains-grid" id="domains-grid"></div>
+
+    <div class="meaning-section">
+      <div class="ms-eyebrow">What this means</div>
+      <div class="ms-title" id="meaning-title"></div>
+      <div class="ms-body" id="meaning-body"></div>
+    </div>
+
+    <div class="steps-section">
+      <div class="ms-eyebrow">Your personalised next steps</div>
+      <div class="ms-title">A 3-step path forward</div>
+      <div class="step-list" id="step-list"></div>
+    </div>
+
+    <div class="therapy-cta" id="therapy-cta" style="display:none;">
+      <div class="tc-eyebrow">Professional support</div>
+      <div class="tc-title" id="cta-title"></div>
+      <div class="tc-body" id="cta-body"></div>
+      <div class="tc-features">
+        <div class="tc-feat">Licensed therapists online</div>
+        <div class="tc-feat">Start within days, not months</div>
+        <div class="tc-feat">Specialised in anxiety</div>
+        <div class="tc-feat">20% off your first month</div>
+      </div>
+      <a href="https://www.onlinetherapy.com?aff_id=1116&offer_id=2&source=quizLifeImpact" class="tc-btn" target="_blank" rel="noopener">Find a Therapist, 20% Off →</a>
+    </div>
+
+    <div class="related-section">
+      <div class="related-title">Explore your pattern deeper</div>
+      <div class="related-grid" id="related-grid"></div>
+    </div>
+
+    <button onclick="restartQuiz()" style="display:block;margin:0 auto 24px;height:40px;padding:0 20px;background:transparent;border:1.5px solid var(--border);border-radius:var(--r);font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:800;color:var(--muted);cursor:pointer;">← Retake the quiz</button>
+
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </div>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">All tools</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/anxiety-triggers/">Triggers</a>
+      <a href="https://myanxietytest.com/anxiety-body-scan/">Body Scan</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy?</a>
+      <a href="https://myanxietytest.com/articles/">Articles</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+</footer>
+
+<script>
+const DOMAINS = [
+  { id: 'work',  label: 'Work',          icon: '💼', color: '#0064FA', bg: '#E8F1FF', bannerLabel: 'Work and Performance' },
+  { id: 'rel',   label: 'Relationships', icon: '👥', color: '#BE123C', bg: '#FFF1F2', bannerLabel: 'Relationships' },
+  { id: 'sleep', label: 'Sleep',         icon: '🌙', color: '#6D28D9', bg: '#F5F3FF', bannerLabel: 'Sleep and Recovery' },
+  { id: 'body',  label: 'Body',          icon: '🫀', color: '#C2410C', bg: '#FFF7ED', bannerLabel: 'Body and Energy' },
+  { id: 'dec',   label: 'Decisions',     icon: '🧭', color: '#15803D', bg: '#F0FDF4', bannerLabel: 'Decisions and Avoidance' },
+  { id: 'joy',   label: 'Joy',           icon: '☀️', color: '#B45309', bg: '#FFFBEB', bannerLabel: 'Joy and Presence' },
+];
+
+const QUESTIONS = [
+  { domain: 0, text: "How often does anxiety affect your ability to focus or concentrate at work?", opts: ["Rarely or never", "Occasionally, but I push through", "Regularly, it costs me real output", "Almost every day, significantly"] },
+  { domain: 0, text: "Has anxiety led you to avoid opportunities, promotions or speaking up at work?", opts: ["No, not really", "A few times", "Yes, more than once", "Yes, it has clearly limited my career"] },
+  { domain: 0, text: "How much mental energy does anxiety take up during your working day?", opts: ["Very little", "Some, but manageable", "A significant amount", "It is the main thing running in the background"] },
+  { domain: 1, text: "How often does anxiety make you pull away from people or cancel plans?", opts: ["Rarely", "Occasionally", "Fairly often", "Very often, it affects most social plans"] },
+  { domain: 1, text: "Does anxiety affect the quality of your close relationships?", opts: ["Not noticeably", "Slightly, small friction sometimes", "Yes, they notice and it causes tension", "Significantly, it creates real distance"] },
+  { domain: 1, text: "How much does anxiety affect your ability to be present with people you care about?", opts: ["Not much", "Sometimes I am distracted", "Often, I struggle to be fully there", "Most of the time, I am mentally elsewhere"] },
+  { domain: 2, text: "How often does anxiety affect your ability to fall asleep?", opts: ["Rarely or never", "A few nights a month", "Most nights", "Almost every night"] },
+  { domain: 2, text: "How frequently do anxious thoughts wake you up or keep you awake?", opts: ["Never or almost never", "Sometimes", "Often", "Nearly every night"] },
+  { domain: 2, text: "How rested do you feel in the morning, taking anxiety into account?", opts: ["Usually well rested", "Fairly rested most days", "Often tired despite sleeping", "Rarely feel truly rested"] },
+  { domain: 3, text: "How often do you experience physical symptoms of anxiety such as tension, racing heart or nausea?", opts: ["Rarely", "Occasionally", "Often, several times a week", "Very often, most days"] },
+  { domain: 3, text: "How much do physical anxiety symptoms affect your energy levels through the day?", opts: ["Very little", "Some drain, but manageable", "Noticeably, I feel more fatigued because of it", "Significantly, it affects what I can do"] },
+  { domain: 3, text: "Have you avoided activities because of physical anxiety symptoms?", opts: ["No", "Occasionally", "Yes, more than a few times", "Yes, fairly regularly"] },
+  { domain: 4, text: "How much does anxiety cause you to overthink or delay decisions?", opts: ["Not much", "Sometimes", "Often, it adds real time and stress", "It significantly slows or stops decisions"] },
+  { domain: 4, text: "How often does anxiety lead you to choose the safer option rather than what you actually want?", opts: ["Rarely", "Occasionally", "Fairly often", "Very often, it shapes most of my choices"] },
+  { domain: 4, text: "After making a decision, how often does anxiety make you second-guess yourself?", opts: ["Rarely", "Sometimes", "Often", "Almost always"] },
+  { domain: 5, text: "How often are you able to fully enjoy things you used to love, without anxiety intruding?", opts: ["Most of the time", "Often, with occasional intrusions", "Sometimes, enjoyment feels harder than it used to", "Rarely, anxiety takes the edge off most things"] },
+  { domain: 5, text: "How often does anxiety stop you from looking forward to things?", opts: ["Rarely or never", "Occasionally", "Often", "Very often, anticipatory anxiety is a real problem"] },
+  { domain: 5, text: "Overall, how much would you say anxiety is reducing your daily sense of wellbeing?", opts: ["Not much", "Somewhat", "Quite a bit", "A lot, it is a significant daily cost"] },
+];
+
+let current = 0;
+let answers = new Array(18).fill(null);
+
+function renderQuestion() {
+  const q = QUESTIONS[current];
+  const d = DOMAINS[q.domain];
+
+  document.getElementById('progress-text').textContent = 'Question ' + (current + 1) + ' of 18';
+  document.getElementById('progress-domain').textContent = d.icon + ' ' + d.label;
+  document.getElementById('progress-fill').style.width = (((current + 1) / 18) * 100) + '%';
+  document.getElementById('q-num').textContent = 'Question ' + (current + 1) + ' of 18';
+  document.getElementById('q-text').textContent = q.text;
+
+  const banner = document.getElementById('domain-banner');
+  banner.style.background = d.bg;
+  banner.style.color = d.color;
+  document.getElementById('banner-icon').textContent = d.icon;
+  document.getElementById('banner-label').textContent = d.bannerLabel;
+
+  const opts = document.getElementById('q-options');
+  opts.innerHTML = '';
+  q.opts.forEach(function(opt, i) {
+    const div = document.createElement('div');
+    div.className = 'qc-option' + (answers[current] === i ? ' selected' : '');
+    div.innerHTML = '<div class="qc-opt-dot"></div><div class="qc-opt-text">' + opt + '</div>';
+    div.onclick = function() { selectOption(i); };
+    opts.appendChild(div);
+  });
+
+  document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
+}
+
+function selectOption(i) {
+  answers[current] = i;
+  document.querySelectorAll('.qc-option').forEach(function(el, idx) {
+    el.classList.toggle('selected', idx === i);
+  });
+  setTimeout(function() {
+    if (current === 17) {
+      showResults();
+    } else {
+      current++;
+      renderQuestion();
+    }
+  }, 320);
+}
+
+function goBack() {
+  if (current === 0) return;
+  current--;
+  renderQuestion();
+}
+
+function computeScores() {
+  var domainScores = DOMAINS.map(function(d, di) {
+    var raw = answers.slice(di * 3, di * 3 + 3).reduce(function(a, b) { return a + (b || 0); }, 0);
+    return Math.round((raw / 9) * 100);
+  });
+  var total = Math.round(domainScores.reduce(function(a, b) { return a + b; }, 0) / 6);
+  return { domainScores: domainScores, total: total };
+}
+
+function drawRadar(scores) {
+  var svg = document.getElementById('radar-svg');
+  var cx = 130, cy = 130, r = 100, n = 6;
+  var angles = Array.from({length: n}, function(_, i) { return (Math.PI * 2 * i / n) - Math.PI / 2; });
+  svg.innerHTML = '';
+
+  [0.25, 0.5, 0.75, 1].forEach(function(t) {
+    var poly = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+    poly.setAttribute('points', angles.map(function(a) { return (cx + r * t * Math.cos(a)) + ',' + (cy + r * t * Math.sin(a)); }).join(' '));
+    poly.setAttribute('fill', 'none');
+    poly.setAttribute('stroke', '#DDE4EF');
+    poly.setAttribute('stroke-width', '1');
+    svg.appendChild(poly);
+  });
+
+  angles.forEach(function(a) {
+    var line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', cx); line.setAttribute('y1', cy);
+    line.setAttribute('x2', cx + r * Math.cos(a)); line.setAttribute('y2', cy + r * Math.sin(a));
+    line.setAttribute('stroke', '#DDE4EF'); line.setAttribute('stroke-width', '1');
+    svg.appendChild(line);
+  });
+
+  var pts = scores.map(function(s, i) { return (cx + r * (s / 100) * Math.cos(angles[i])) + ',' + (cy + r * (s / 100) * Math.sin(angles[i])); });
+  var poly = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+  poly.setAttribute('points', pts.join(' '));
+  poly.setAttribute('fill', 'rgba(0,100,250,0.15)');
+  poly.setAttribute('stroke', '#0064FA');
+  poly.setAttribute('stroke-width', '2');
+  svg.appendChild(poly);
+
+  scores.forEach(function(s, i) {
+    var x = cx + r * (s / 100) * Math.cos(angles[i]);
+    var y = cy + r * (s / 100) * Math.sin(angles[i]);
+    var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    circle.setAttribute('cx', x); circle.setAttribute('cy', y);
+    circle.setAttribute('r', '4');
+    circle.setAttribute('fill', DOMAINS[i].color);
+    circle.setAttribute('stroke', 'white'); circle.setAttribute('stroke-width', '2');
+    svg.appendChild(circle);
+  });
+
+  angles.forEach(function(a, i) {
+    var lx = cx + (r + 18) * Math.cos(a);
+    var ly = cy + (r + 18) * Math.sin(a);
+    var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('x', lx); text.setAttribute('y', ly);
+    text.setAttribute('text-anchor', 'middle'); text.setAttribute('dominant-baseline', 'middle');
+    text.setAttribute('font-size', '13');
+    text.textContent = DOMAINS[i].icon;
+    svg.appendChild(text);
+  });
+}
+
+function buildLegend(scores) {
+  var legend = document.getElementById('radar-legend');
+  legend.innerHTML = '';
+  DOMAINS.forEach(function(d, i) {
+    legend.innerHTML += '<div class="rl-item"><div class="rl-dot" style="background:' + d.color + '"></div><div class="rl-label">' + d.icon + ' ' + d.label + '</div><div class="rl-bar-wrap"><div class="rl-bar" style="width:' + scores[i] + '%;background:' + d.color + '"></div></div><div class="rl-pct">' + scores[i] + '%</div></div>';
+  });
+}
+
+var DOMAIN_INSIGHTS = {
+  work:  { low: "Anxiety has a limited footprint in your working life. Your focus and performance are largely intact.", moderate: "Anxiety is creating some drag on your work. Focus, output or opportunities may be quietly affected.", high: "Anxiety is having a significant impact on your working life. Concentration, performance and career choices are likely affected more than you realise." },
+  rel:   { low: "Your relationships are largely protected from anxiety. You are able to be present and connected.", moderate: "Anxiety is creating some distance or friction in your relationships. The people closest to you may notice.", high: "Anxiety is significantly affecting your relationships. Withdrawal, unavailability or emotional reactivity may be creating real distance." },
+  sleep: { low: "Sleep is mostly unaffected by anxiety. You are getting reasonable rest and recovery.", moderate: "Anxiety is disrupting your sleep to a meaningful degree. The knock-on effects on daytime functioning are likely real.", high: "Anxiety is seriously affecting your sleep. The resulting tiredness and reduced capacity is likely compounding anxiety itself." },
+  body:  { low: "Physical anxiety symptoms have a limited impact on your daily life and energy.", moderate: "Physical anxiety symptoms are creating some daily cost, including energy drain, tension or occasional avoidance.", high: "Anxiety is showing up strongly in your body. Tension, fatigue and physical symptoms are having a significant daily impact." },
+  dec:   { low: "You are largely able to make decisions without anxiety dominating the process.", moderate: "Anxiety is adding friction to your decision making. Overthinking, second-guessing or safe choices may be limiting you.", high: "Anxiety is significantly affecting how you make decisions. Avoidance, overthinking and choosing safety over desire is narrowing your life." },
+  joy:   { low: "Anxiety is not significantly reducing your ability to enjoy daily life. You are largely present and able to take pleasure in things.", moderate: "Anxiety is reducing your capacity for joy and presence in a meaningful way. Things you used to enjoy fully may feel muted.", high: "Anxiety is significantly reducing your daily wellbeing and enjoyment of life. This is one of the most important costs anxiety can have." },
+};
+
+function domainLevel(s) { return s < 35 ? 'low' : s < 65 ? 'moderate' : 'high'; }
+
+function buildDomains(scores) {
+  var grid = document.getElementById('domains-grid');
+  grid.innerHTML = '';
+  DOMAINS.forEach(function(d, i) {
+    var insight = DOMAIN_INSIGHTS[d.id][domainLevel(scores[i])];
+    grid.innerHTML += '<div class="domain-card"><div class="dc-top"><div class="dc-icon">' + d.icon + '</div><div class="dc-label">' + d.label + '</div><div class="dc-pct" style="color:' + d.color + '">' + scores[i] + '%</div></div><div class="dc-bar-bg"><div class="dc-bar" style="width:' + scores[i] + '%;background:' + d.color + '"></div></div><div class="dc-insight">' + insight + '</div></div>';
+  });
+}
+
+function showResults() {
+  var computed = computeScores();
+  var domainScores = computed.domainScores;
+  var total = computed.total;
+  var level = total < 35 ? 'low' : total < 65 ? 'moderate' : 'high';
+  var sorted = DOMAINS.map(function(d, i) { return { id: d.id, label: d.label, icon: d.icon, color: d.color, score: domainScores[i] }; }).sort(function(a, b) { return b.score - a.score; });
+  var top = sorted[0];
+
+  document.getElementById('quiz-section').style.display = 'none';
+  document.getElementById('domain-preview-section').style.display = 'none';
+  document.getElementById('results').style.display = 'block';
+
+  document.getElementById('total-score-display').textContent = total + '%';
+
+  var badge = document.getElementById('result-level-badge');
+  var levelData = { low: ['Low Impact', 'level-low'], moderate: ['Moderate Impact', 'level-moderate'], high: ['High Impact', 'level-high'] };
+  badge.textContent = levelData[level][0];
+  badge.className = 'result-level ' + levelData[level][1];
+
+  var headings = {
+    low: "Anxiety is present but not dominating your life",
+    moderate: "Anxiety is taking a real, measurable toll",
+    high: "Anxiety is significantly costing you across multiple areas"
+  };
+  var intros = {
+    low: "Your overall impact score of " + total + "% suggests anxiety is affecting you, but it has not yet taken over the major areas of your life. The domains where impact is higher are worth paying attention to now, before they grow.",
+    moderate: "Your score of " + total + "% shows anxiety is having a real effect across your life. The areas highlighted above are not abstract. They represent focus lost, sleep missed, joy reduced and decisions avoided. This level of impact tends to be sustainable in the short term, but it compounds over time.",
+    high: "Your score of " + total + "% indicates anxiety is significantly affecting multiple areas of your life. The impact you are experiencing is real and cumulative. Most people at this level have been managing for a long time and have normalised a level of cost that they do not have to accept."
+  };
+  document.getElementById('result-heading').textContent = headings[level];
+  document.getElementById('result-intro').textContent = intros[level];
+
+  drawRadar(domainScores);
+  buildLegend(domainScores);
+  buildDomains(domainScores);
+
+  var meanings = {
+    low: {
+      title: "What a lower impact score still means",
+      body: "<p>A score in this range means anxiety is present but relatively contained. The areas of your life where impact is higher deserve focused attention. Left unchecked, contained anxiety tends to expand rather than shrink.</p><p>The domain where your score is highest is <strong>" + top.icon + " " + top.label + "</strong> at " + top.score + "%. This is the clearest starting point.</p>"
+    },
+    moderate: {
+      title: "The compounding cost of moderate impact",
+      body: "<p>A score in this range is the most common and, in some ways, the most insidious. It is enough to create real daily cost, but often not enough that people feel justified seeking support. The result is years of reduced capacity across multiple areas simultaneously.</p><p>Your highest impact area is <strong>" + top.icon + " " + top.label + "</strong> at " + top.score + "%. This is where anxiety is currently doing the most work on you.</p><p>At this level, the costs are rarely visible in a single day. They are visible across months and years, in the opportunities not taken, the relationships slightly more distant, the enjoyment slightly reduced.</p>"
+    },
+    high: {
+      title: "What high impact anxiety actually costs",
+      body: "<p>A score at this level is significant. The impact you are reporting across " + sorted.filter(function(d) { return d.score >= 60; }).length + " or more domains is not a personality trait or a phase. It is anxiety extracting a real and ongoing cost from your life.</p><p>Your highest impact area is <strong>" + top.icon + " " + top.label + "</strong> at " + top.score + "%. But the breadth of impact matters as much as the depth. When anxiety affects multiple domains simultaneously, the recovery is harder without structured support.</p><p>Most people at this level have developed sophisticated coping strategies that work just enough to keep things going. But coping is not the same as improving.</p>"
+    }
+  };
+  document.getElementById('meaning-title').textContent = meanings[level].title;
+  document.getElementById('meaning-body').innerHTML = meanings[level].body;
+
+  var steps = {
+    low: [
+      { title: "Address " + top.icon + " " + top.label + " first", body: "This is your highest-impact domain at " + top.score + "%. Small, targeted changes here will have the most leverage. Look at the specific questions you answered most strongly in this area." },
+      { title: "Use the Anxiety Triggers Identifier", body: "Understanding what is feeding the anxiety in your highest-impact areas gives you something concrete to work with rather than managing symptoms in the dark." },
+      { title: "Track whether it changes", body: "Use the Anxiety Timeline Tracker to log daily levels. Patterns that are invisible day to day become very clear over 30 or 90 days." }
+    ],
+    moderate: [
+      { title: "Prioritise " + top.icon + " " + top.label, body: "With the highest impact at " + top.score + "%, this is where anxiety is costing you most. Naming it clearly is the first step. Anxiety shrinks when examined directly rather than managed around." },
+      { title: "Understand your anxiety type", body: "The type of anxiety driving your impact profile matters. Social anxiety responds differently to health anxiety or GAD. Taking the What Type of Anxiety Do I Have quiz gives you a clearer target." },
+      { title: "Consider whether professional support makes sense", body: "At this level of impact, therapy has a strong evidence base. It is not about crisis. It is about not carrying a preventable cost across multiple areas of your life for longer than necessary." }
+    ],
+    high: [
+      { title: "Take the Anxiety Level Test", body: "It measures severity across worry, panic, sleep and physical symptoms. Combined with your impact profile, it gives you the most complete picture of where you are and a basis to measure improvement from." },
+      { title: "Focus your attention on " + top.icon + " " + top.label, body: "Your highest-impact domain at " + top.score + "% is the most acute entry point. But given the breadth of your impact profile, addressing root causes rather than individual domains is likely to produce the most change." },
+      { title: "Speak to a professional", body: "At this level of impact across multiple domains, self-help tools are useful but limited. The evidence for therapy at this level is strong, not as a last resort, but as the most effective intervention available." }
+    ]
+  };
+
+  var stepList = document.getElementById('step-list');
+  stepList.innerHTML = '';
+  steps[level].forEach(function(s, i) {
+    stepList.innerHTML += '<div class="step-item"><div class="step-num">' + (i + 1) + '</div><div class="step-content"><h4>' + s.title + '</h4><p>' + s.body + '</p></div></div>';
+  });
+
+  if (level === 'moderate' || level === 'high') {
+    var cta = document.getElementById('therapy-cta');
+    cta.style.display = 'block';
+    var ctaTitles = {
+      moderate: "When anxiety affects this many areas, support makes a real difference",
+      high: "At this level of impact, professional support is likely the highest-leverage step you can take"
+    };
+    var ctaBodies = {
+      moderate: "Your impact profile shows anxiety affecting " + sorted.filter(function(d) { return d.score >= 40; }).length + " or more areas of your life simultaneously. Therapy, particularly CBT for anxiety, has a strong evidence base at this level. It is not about being in crisis. It is about not continuing to pay a preventable cost across your work, relationships, sleep and daily enjoyment.",
+      high: "You are reporting significant anxiety impact across multiple areas of your life. The breadth of that impact, not just the severity in any one domain, is an important signal. A therapist who specialises in anxiety can help you address the underlying patterns driving across-the-board impact, rather than managing individual symptoms. The evidence for this is clear."
+    };
+    document.getElementById('cta-title').textContent = ctaTitles[level];
+    document.getElementById('cta-body').textContent = ctaBodies[level];
+  }
+
+  var related = [
+    { icon: '📊', name: 'Anxiety Level Test', desc: 'Full severity score across worry, panic, sleep and symptoms.', url: '/anxiety-level/' },
+    { icon: '🔍', name: 'Anxiety Triggers', desc: 'Identify the dominant trigger category driving your anxiety.', url: '/anxiety-triggers/' },
+    { icon: '📈', name: 'Is It Getting Worse?', desc: 'Track whether your anxiety is escalating, stable or improving.', url: '/is-my-anxiety-getting-worse/' },
+  ];
+  var relGrid = document.getElementById('related-grid');
+  relGrid.innerHTML = '';
+  related.forEach(function(r) {
+    relGrid.innerHTML += '<a href="https://myanxietytest.com' + r.url + '" class="related-card"><div class="rc-icon">' + r.icon + '</div><div class="rc-name">' + r.name + '</div><div class="rc-desc">' + r.desc + '</div><div class="rc-link">Take the test →</div></a>';
+  });
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function restartQuiz() {
+  current = 0;
+  answers = new Array(18).fill(null);
+  document.getElementById('quiz-section').style.display = 'block';
+  document.getElementById('domain-preview-section').style.display = 'block';
+  document.getElementById('results').style.display = 'none';
+  renderQuestion();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+var urlSource = new URLSearchParams(window.location.search).get('source');
+if (urlSource) {
+  document.querySelectorAll('a[href*="myanxietytest.com"]').forEach(function(link) {
+    try { var url = new URL(link.href); url.searchParams.set('source', urlSource); link.href = url.toString(); } catch(e) {}
+  });
+}
+
+renderQuestion();
+</script>
+</body>
+</html>
