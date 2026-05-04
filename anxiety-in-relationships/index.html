@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anxiety in Relationships Quiz: How Is Your Anxiety Affecting Your Partner?</title>
+  <meta name="description" content="16 questions across 4 patterns. Find out exactly how your anxiety is showing up in your relationship and what it costs you and your partner." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-in-relationships/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anxiety in Relationships Quiz: How Is Your Anxiety Affecting Your Partner?" />
+  <meta property="og:description" content="16 questions across 4 patterns. Find out exactly how your anxiety is affecting your relationship." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-in-relationships/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+  <meta name="twitter:card" content="summary" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Anxiety in Relationships Quiz",
+    "description": "A 16-question assessment identifying how anxiety shows up in romantic relationships across 4 specific patterns: reassurance seeking, emotional withdrawal, conflict generation and transferred irritability.",
+    "url": "https://myanxietytest.com/anxiety-in-relationships/",
+    "inLanguage": "en",
+    "isPartOf": { "@type": "WebSite", "name": "MyAnxietyTest", "url": "https://myanxietytest.com" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "MyAnxietyTest", "item": "https://myanxietytest.com" },
+        { "@type": "ListItem", "position": 2, "name": "Anxiety in Relationships Quiz", "item": "https://myanxietytest.com/anxiety-in-relationships/" }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:      #0064FA;
+      --blue-dark: #0050CC;
+      --blue-soft: #E8F1FF;
+      --blue-bdr:  #C0D8FF;
+      --bg:        #F2F5FA;
+      --surface:   #FFFFFF;
+      --border:    #DDE4EF;
+      --text:      #0D1B2A;
+      --muted:     #5C6F85;
+      --muted-lt:  #97A8BA;
+      --shadow-sm: 0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md: 0 4px 20px rgba(0,100,250,0.09);
+      --r:         12px;
+      --r-lg:      18px;
+      --r-xl:      24px;
+
+      --p-reassurance: #7C3AED;
+      --p-withdrawal:  #0369A1;
+      --p-conflict:    #BE123C;
+      --p-irritable:   #B45309;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { color: inherit; text-decoration: none; }
+
+    .topbar { background: var(--blue); box-shadow: 0 2px 12px rgba(0,100,250,0.25); position: sticky; top: 0; z-index: 100; }
+    .topbar-inner { max-width: 1080px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 9px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 0.95rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; }
+    .topbar-tag { font-size: 0.77rem; font-weight: 700; color: rgba(255,255,255,0.72); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    .hero { background: linear-gradient(160deg, #0050CC 0%, var(--blue) 60%, #1a74fb 100%); padding: clamp(44px,7vw,80px) clamp(16px,4vw,40px) clamp(36px,5vw,64px); text-align: center; position: relative; overflow: hidden; }
+    .hero-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); font-size: 0.73rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 18px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(1.8rem,4.5vw,3rem); font-weight: 900; color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 14px; }
+    .hero h1 span { color: #93c5fd; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.72); max-width: 540px; margin: 0 auto 22px; line-height: 1.7; }
+    .hero-meta { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+    .hm-item { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.65); }
+    .hm-dot { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.12); color: #86efac; display: grid; place-items: center; font-size: 0.6rem; flex-shrink: 0; }
+
+    .main { max-width: 760px; margin: 0 auto; padding: clamp(24px,4vw,48px) clamp(16px,4vw,24px) 60px; }
+
+    .pattern-preview { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-bottom: 28px; }
+    .pp-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 14px; display: flex; gap: 12px; align-items: flex-start; }
+    .pp-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+    .pp-label { font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 900; margin-bottom: 2px; }
+    .pp-sub { font-size: 0.74rem; color: var(--muted); line-height: 1.4; }
+
+    .progress-wrap { margin-bottom: 28px; }
+    .progress-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .progress-label { font-size: 0.8rem; font-weight: 700; color: var(--muted); }
+    .progress-pattern { font-size: 0.8rem; font-weight: 700; color: var(--blue); }
+    .progress-bar-bg { height: 6px; background: var(--border); border-radius: 999px; overflow: hidden; }
+    .progress-bar-fill { height: 100%; background: var(--blue); border-radius: 999px; transition: width 0.4s ease; }
+
+    .quiz-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-md); overflow: hidden; }
+    .qc-banner { padding: 10px 22px; display: flex; align-items: center; gap: 10px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; }
+    .qc-body { padding: clamp(20px,4vw,32px); }
+    .qc-q-num { font-size: 0.72rem; font-weight: 700; color: var(--muted-lt); letter-spacing: 0.05em; margin-bottom: 10px; }
+    .qc-question { font-family: 'Nunito', sans-serif; font-size: clamp(1.05rem,2.2vw,1.28rem); font-weight: 800; letter-spacing: -0.015em; line-height: 1.35; margin-bottom: 24px; }
+    .qc-options { display: flex; flex-direction: column; gap: 10px; }
+    .qc-option { display: flex; align-items: center; gap: 13px; padding: 13px 16px; border: 1.5px solid var(--border); border-radius: var(--r); cursor: pointer; transition: all 0.15s; background: var(--bg); user-select: none; }
+    .qc-option:hover { border-color: var(--blue-bdr); background: var(--blue-soft); }
+    .qc-option.selected { border-color: var(--blue); background: var(--blue-soft); }
+    .qc-opt-dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; transition: all 0.15s; display: grid; place-items: center; }
+    .qc-option.selected .qc-opt-dot { border-color: var(--blue); background: var(--blue); }
+    .qc-option.selected .qc-opt-dot::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: white; }
+    .qc-opt-text { font-size: 0.9rem; font-weight: 600; line-height: 1.4; }
+    .qc-nav { display: flex; padding: 0 clamp(20px,4vw,32px) 24px; }
+    .btn-back { height: 38px; padding: 0 16px; border: 1.5px solid var(--border); border-radius: var(--r); font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--muted); background: transparent; cursor: pointer; transition: all 0.15s; }
+    .btn-back:hover { border-color: var(--blue-bdr); color: var(--blue); }
+
+    #results { display: none; }
+
+    .result-header { border-radius: var(--r-xl); padding: clamp(24px,4vw,36px); margin-bottom: 24px; }
+    .rh-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px; opacity: 0.7; }
+    .rh-pattern { font-family: 'Nunito', sans-serif; font-size: clamp(1.3rem,3vw,1.9rem); font-weight: 900; letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 10px; }
+    .rh-desc { font-size: 0.92rem; line-height: 1.75; max-width: 560px; opacity: 0.85; }
+
+    .patterns-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xl); padding: clamp(20px,4vw,28px); margin-bottom: 24px; box-shadow: var(--shadow-sm); }
+    .ps-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+    .ps-title { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 18px; }
+    .pattern-bars { display: flex; flex-direction: column; gap: 16px; }
+    .pb-item { display: flex; flex-direction: column; gap: 6px; }
+    .pb-top { display: flex; justify-content: space-between; align-items: center; }
+    .pb-label { font-size: 0.84rem; font-weight: 700; }
+    .pb-pct { font-family: 'Nunito', sans-serif; font-size: 0.88rem; font-weight: 900; }
+    .pb-bar-bg { height: 8px; background: var(--bg); border-radius: 999px; overflow: hidden; }
+    .pb-bar { height: 100%; border-radius: 999px; }
+    .pb-insight { font-size: 0.79rem; color: var(--muted); line-height: 1.5; }
+
+    .what-this-means { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xl); padding: clamp(20px,4vw,28px); margin-bottom: 24px; box-shadow: var(--shadow-sm); }
+    .ms-title { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 12px; }
+    .ms-body { font-size: 0.88rem; color: var(--muted); line-height: 1.78; }
+    .ms-body p { margin-bottom: 10px; }
+    .ms-body p:last-child { margin-bottom: 0; }
+
+    .steps-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xl); padding: clamp(20px,4vw,28px); margin-bottom: 24px; box-shadow: var(--shadow-sm); }
+    .step-list { display: flex; flex-direction: column; gap: 16px; margin-top: 14px; }
+    .step-item { display: flex; gap: 14px; }
+    .step-num { width: 30px; height: 30px; border-radius: 50%; background: var(--blue-soft); color: var(--blue); display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.84rem; flex-shrink: 0; }
+    .step-content h4 { font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 3px; }
+    .step-content p { font-size: 0.83rem; color: var(--muted); line-height: 1.55; }
+
+    .partner-note { border-radius: var(--r-xl); padding: clamp(18px,3vw,24px); margin-bottom: 24px; display: flex; gap: 14px; align-items: flex-start; }
+    .pn-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .pn-title { font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; margin-bottom: 5px; }
+    .pn-body { font-size: 0.84rem; line-height: 1.65; }
+
+    .therapy-cta { background: linear-gradient(135deg, var(--blue-dark), var(--blue)); border-radius: var(--r-xl); padding: clamp(24px,4vw,32px); margin-bottom: 24px; }
+    .tc-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
+    .tc-title { font-family: 'Nunito', sans-serif; font-size: clamp(1.05rem,2.3vw,1.3rem); font-weight: 900; color: white; letter-spacing: -0.02em; margin-bottom: 10px; line-height: 1.2; }
+    .tc-body { font-size: 0.88rem; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 20px; }
+    .tc-features { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 22px; }
+    .tc-feat { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: rgba(255,255,255,0.75); font-weight: 600; }
+    .tc-feat::before { content: '✓'; color: #86efac; font-weight: 900; flex-shrink: 0; }
+    .tc-btn { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 24px; background: white; color: var(--blue-dark); font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; border-radius: var(--r-lg); transition: all 0.2s; }
+    .tc-btn:hover { background: #f0f6ff; transform: translateY(-1px); }
+
+    .related-section { margin-bottom: 48px; }
+    .related-title { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 14px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 14px; display: flex; flex-direction: column; gap: 6px; transition: all 0.18s; }
+    .related-card:hover { border-color: var(--blue-bdr); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+    .rc-icon { font-size: 1.2rem; }
+    .rc-name { font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; }
+    .rc-desc { font-size: 0.74rem; color: var(--muted); line-height: 1.4; flex: 1; }
+    .rc-link { font-size: 0.75rem; font-weight: 700; color: var(--blue); }
+
+    .info-section { background: var(--surface); border-top: 1px solid var(--border); padding: clamp(36px,5vw,56px) clamp(16px,4vw,40px); }
+    .info-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .info-block { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 20px; }
+    .info-block.full { grid-column: span 2; }
+    .info-block h2 { font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 8px; }
+    .info-block p { color: var(--muted); font-size: 0.86rem; line-height: 1.7; margin-bottom: 7px; }
+    .info-block p:last-child { margin-bottom: 0; }
+
+    .footer { background: var(--blue-dark); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.12); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.38); font-weight: 600; transition: color 0.15s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+    .footer-copy { max-width: 1080px; margin: 0 auto; padding-top: 16px; font-size: 0.75rem; color: rgba(255,255,255,0.22); text-align: center; }
+
+    @media (max-width: 600px) {
+      .pattern-preview { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: 1fr 1fr; }
+      .tc-features { grid-template-columns: 1fr; }
+      .info-inner { grid-template-columns: 1fr; }
+      .info-block.full { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-tag">Free · No sign-up</div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">💑 Relationship impact assessment</div>
+    <h1>How is your anxiety <span>affecting your relationship?</span></h1>
+    <p class="hero-desc">You probably know anxiety affects your relationship. This quiz identifies exactly how, across 4 specific patterns, and what your partner is actually experiencing on the other side.</p>
+    <div class="hero-meta">
+      <div class="hm-item"><div class="hm-dot">✓</div>16 questions</div>
+      <div class="hm-item"><div class="hm-dot">✓</div>4 patterns</div>
+      <div class="hm-item"><div class="hm-dot">✓</div>Partner perspective included</div>
+      <div class="hm-item"><div class="hm-dot">✓</div>100% anonymous</div>
+    </div>
+  </div>
+</section>
+
+<div class="main">
+
+  <div id="intro-section">
+    <div class="pattern-preview">
+      <div class="pp-item">
+        <div class="pp-dot" style="background:#7C3AED;margin-top:5px;"></div>
+        <div>
+          <div class="pp-label">Reassurance seeking</div>
+          <div class="pp-sub">Needing constant confirmation that everything is okay, that your partner still loves you, that nothing bad is coming</div>
+        </div>
+      </div>
+      <div class="pp-item">
+        <div class="pp-dot" style="background:#0369A1;margin-top:5px;"></div>
+        <div>
+          <div class="pp-label">Emotional withdrawal</div>
+          <div class="pp-sub">Pulling away when anxious, becoming unavailable, shutting down to protect yourself from overwhelm</div>
+        </div>
+      </div>
+      <div class="pp-item">
+        <div class="pp-dot" style="background:#BE123C;margin-top:5px;"></div>
+        <div>
+          <div class="pp-label">Conflict driven by anxiety</div>
+          <div class="pp-sub">Arguments that start because anxiety misread a situation, escalated a small thing or anticipated a threat that was not there</div>
+        </div>
+      </div>
+      <div class="pp-item">
+        <div class="pp-dot" style="background:#B45309;margin-top:5px;"></div>
+        <div>
+          <div class="pp-label">Transferred irritability</div>
+          <div class="pp-sub">Anxiety converting into snapping, impatience or emotional reactivity that lands on your partner, not the actual source</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="quiz-section">
+    <div class="progress-wrap">
+      <div class="progress-top">
+        <span class="progress-label" id="progress-text">Question 1 of 16</span>
+        <span class="progress-pattern" id="progress-pattern">💜 Reassurance</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-fill" style="width:6.25%"></div>
+      </div>
+    </div>
+
+    <div class="quiz-card">
+      <div class="qc-banner" id="q-banner" style="background:#F5F3FF;color:#7C3AED;">
+        <span id="banner-icon">💜</span>
+        <span id="banner-label">Reassurance Seeking</span>
+      </div>
+      <div class="qc-body">
+        <div class="qc-q-num" id="q-num">Question 1 of 16</div>
+        <div class="qc-question" id="q-text"></div>
+        <div class="qc-options" id="q-options"></div>
+      </div>
+      <div class="qc-nav">
+        <button class="btn-back" id="btn-back" onclick="goBack()">← Back</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="results">
+
+    <div class="result-header" id="result-header">
+      <div class="rh-eyebrow">Your dominant pattern</div>
+      <div class="rh-pattern" id="rh-pattern"></div>
+      <div class="rh-desc" id="rh-desc"></div>
+    </div>
+
+    <div class="patterns-section">
+      <div class="ps-eyebrow">All four patterns</div>
+      <div class="ps-title">How anxiety shows up across your relationship</div>
+      <div class="pattern-bars" id="pattern-bars"></div>
+    </div>
+
+    <div class="what-this-means">
+      <div class="ps-eyebrow">What this means for you</div>
+      <div class="ms-title" id="meaning-title"></div>
+      <div class="ms-body" id="meaning-body"></div>
+    </div>
+
+    <div class="partner-note" id="partner-note">
+      <div class="pn-icon">👥</div>
+      <div>
+        <div class="pn-title" id="pn-title"></div>
+        <div class="pn-body" id="pn-body"></div>
+      </div>
+    </div>
+
+    <div class="steps-section">
+      <div class="ps-eyebrow">What to do with this</div>
+      <div class="ms-title">3 concrete next steps</div>
+      <div class="step-list" id="step-list"></div>
+    </div>
+
+    <div class="therapy-cta" id="therapy-cta" style="display:none;">
+      <div class="tc-eyebrow">Professional support</div>
+      <div class="tc-title" id="cta-title"></div>
+      <div class="tc-body" id="cta-body"></div>
+      <div class="tc-features">
+        <div class="tc-feat">Licensed therapists online</div>
+        <div class="tc-feat">Start within days, not months</div>
+        <div class="tc-feat">Anxiety and relationship specialists</div>
+        <div class="tc-feat">20% off your first month</div>
+      </div>
+      <a href="https://www.onlinetherapy.com?aff_id=1116&offer_id=2&source=quizRelationships" class="tc-btn" target="_blank" rel="noopener">Find a Therapist, 20% Off →</a>
+    </div>
+
+    <div class="related-section">
+      <div class="related-title">Understand more about your anxiety</div>
+      <div class="related-grid">
+        <a href="https://myanxietytest.com/anxiety-level/" class="related-card">
+          <div class="rc-icon">📊</div>
+          <div class="rc-name">Anxiety Level Test</div>
+          <div class="rc-desc">Full severity score across worry, panic, sleep and physical symptoms.</div>
+          <div class="rc-link">Take the test →</div>
+        </a>
+        <a href="https://myanxietytest.com/anxiety-life-impact/" class="related-card">
+          <div class="rc-icon">🗺️</div>
+          <div class="rc-name">Life Impact Score</div>
+          <div class="rc-desc">See how anxiety is affecting all 6 areas of your life.</div>
+          <div class="rc-link">Check my impact →</div>
+        </a>
+        <a href="https://myanxietytest.com/relationship-anxiety/" class="related-card">
+          <div class="rc-icon">💗</div>
+          <div class="rc-name">Relationship Anxiety Test</div>
+          <div class="rc-desc">Anxiety about the relationship itself: fear of abandonment and attachment patterns.</div>
+          <div class="rc-link">Take the test →</div>
+        </a>
+      </div>
+    </div>
+
+    <button onclick="restartQuiz()" style="display:block;margin:0 auto 24px;height:40px;padding:0 20px;background:transparent;border:1.5px solid var(--border);border-radius:var(--r);font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:800;color:var(--muted);cursor:pointer;">← Retake the quiz</button>
+
+  </div>
+</div>
+
+<section class="info-section">
+  <div class="info-inner">
+    <div class="info-block">
+      <h2>How is this different from the Relationship Anxiety Test?</h2>
+      <p>The Relationship Anxiety Test measures anxiety about the relationship itself: fear of abandonment, need for reassurance about your partner's feelings, fear that the relationship will end.</p>
+      <p>This quiz measures something different: how your general anxiety shows up inside the relationship, regardless of whether you feel secure in the relationship. You can have no fear of abandonment and still have anxiety patterns that make your relationship harder than it needs to be.</p>
+    </div>
+    <div class="info-block">
+      <h2>Why does understanding the pattern matter?</h2>
+      <p>Anxiety affects relationships in several distinct ways, and each requires a different response. Reassurance seeking and withdrawal need completely different approaches. Conflict driven by anxiety misreads needs completely different management than conflict driven by real disagreement.</p>
+      <p>Knowing which pattern is dominant gives both you and a therapist a specific starting point rather than a general anxiety problem to work backwards from.</p>
+    </div>
+    <div class="info-block full">
+      <h2>What does your partner actually experience?</h2>
+      <p>Partners of anxious people often describe feeling responsible for managing the anxiety, unable to do anything right, exhausted from constant reassurance, or confused about why small things escalate. These are not character flaws in the partner — they are predictable responses to the specific patterns anxiety creates in relationships.</p>
+      <p>Understanding your dominant pattern makes it possible to explain to your partner what is happening, what they can expect and what is actually helpful versus what unintentionally makes the anxiety worse. This is often the most useful conversation anxious people and their partners can have.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-mark">🧠</div>
+      MyAnxietyTest.com
+    </div>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">All tools</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/relationship-anxiety/">Relationship Anxiety</a>
+      <a href="https://myanxietytest.com/anxiety-life-impact/">Life Impact Score</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy?</a>
+      <a href="https://myanxietytest.com/articles/">Articles</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+</footer>
+
+<script>
+var PATTERNS = [
+  { id: 'reassurance', label: 'Reassurance Seeking', icon: '💜', color: '#7C3AED', bg: '#F5F3FF', bannerBg: '#F5F3FF' },
+  { id: 'withdrawal',  label: 'Emotional Withdrawal', icon: '💙', color: '#0369A1', bg: '#E0F2FE', bannerBg: '#E0F2FE' },
+  { id: 'conflict',    label: 'Anxiety-Driven Conflict', icon: '❤️', color: '#BE123C', bg: '#FFF1F2', bannerBg: '#FFF1F2' },
+  { id: 'irritable',  label: 'Transferred Irritability', icon: '🧡', color: '#B45309', bg: '#FFFBEB', bannerBg: '#FFFBEB' },
+];
+
+var QUESTIONS = [
+  { pattern: 0, text: "How often do you ask your partner for reassurance that things are okay between you, even when nothing specific has happened?", opts: ["Rarely or never", "Occasionally", "Often, more than they probably expect", "Very often, it is a regular dynamic"] },
+  { pattern: 0, text: "When your partner does not text back quickly or seems distracted, how do you typically respond internally?", opts: ["I assume they are just busy and move on", "I notice it but can manage the thought", "I find myself going through scenarios of what it might mean", "I feel genuine distress and need to reach out to check"] },
+  { pattern: 0, text: "How often does your need for certainty about the relationship put pressure on your partner to respond or reassure you?", opts: ["Rarely, I handle uncertainty well", "Sometimes", "Often, I can see it creates some pressure", "Regularly, I know it is a strain on them"] },
+  { pattern: 0, text: "After you receive reassurance from your partner, how long does the relief typically last?", opts: ["I do not need much reassurance", "Usually a decent amount of time", "Not long, I find myself needing it again fairly soon", "Very briefly, the anxiety comes back quickly"] },
+
+  { pattern: 1, text: "When you are feeling very anxious, what do you tend to do with your partner?", opts: ["I usually stay present and connected", "I sometimes need a little space but come back", "I often pull away and become less emotionally available", "I withdraw significantly and find connection difficult when anxious"] },
+  { pattern: 1, text: "How often does anxiety cause you to cancel plans, avoid social situations or limit time together?", opts: ["Rarely", "Occasionally", "Often enough that my partner notices", "Regularly, it affects how we spend time together"] },
+  { pattern: 1, text: "How much does your partner feel they are competing with your anxiety for your attention and presence?", opts: ["Not at all, I am usually present", "Occasionally they might feel this", "Fairly often, I can see anxiety takes me away emotionally", "A lot, I know this is something they experience regularly"] },
+  { pattern: 1, text: "When you withdraw or go quiet during anxious periods, how clearly does your partner understand what is happening?", opts: ["They understand me well", "Mostly, with some confusion", "Partly, it causes some confusion or hurt", "They often feel shut out or do not understand what has changed"] },
+
+  { pattern: 2, text: "How often does a conversation with your partner escalate into an argument because anxiety made you misread the situation?", opts: ["Rarely or never", "Occasionally", "Fairly often", "Regularly, anxiety often creates conflict that did not need to happen"] },
+  { pattern: 2, text: "When you are anxious, how likely are you to interpret your partner's neutral behaviour as negative?", opts: ["Not very likely, I can usually read things accurately", "Sometimes I read too much into things", "Often, anxiety tends to make things seem worse than they are", "Very likely, I frequently interpret things more negatively when anxious"] },
+  { pattern: 2, text: "How often does your anxiety cause you to bring up problems or concerns that would not feel urgent if you were calmer?", opts: ["Rarely", "Sometimes", "Often", "Very often, anxiety drives a lot of the serious conversations"] },
+  { pattern: 2, text: "After an anxiety-driven argument, how does your partner typically react once things have calmed down?", opts: ["They are understanding and it resolves easily", "Some residual frustration but it passes", "They often feel confused about what the argument was really about", "There is often lingering hurt or frustration about the pattern"] },
+
+  { pattern: 3, text: "When you are running on high anxiety and something small goes wrong, how do you tend to react to your partner?", opts: ["Usually proportionately, anxiety does not change my reactions much", "Sometimes I am sharper than I should be", "Often, I snap or react more intensely than the situation calls for", "Very often, I take it out on my partner without meaning to"] },
+  { pattern: 3, text: "How often does your partner bear the brunt of anxiety-driven irritability that is actually about something else entirely?", opts: ["Rarely", "Occasionally", "Fairly often", "Regularly, they are often the nearest available outlet"] },
+  { pattern: 3, text: "After snapping or being short with your partner due to anxiety, how aware are you that it happened?", opts: ["Very aware in the moment, I can usually catch it", "Aware after the fact and I apologise", "Sometimes aware, sometimes not until they tell me", "Often not aware until much later or they bring it up"] },
+  { pattern: 3, text: "How much does your partner feel they have to walk on eggshells around you during high-anxiety periods?", opts: ["Not at all", "Occasionally", "More than I am comfortable with", "A lot, I know this is a real dynamic between us"] },
+];
+
+var current = 0;
+var answers = new Array(16).fill(null);
+
+function renderQuestion() {
+  var q = QUESTIONS[current];
+  var p = PATTERNS[q.pattern];
+
+  document.getElementById('progress-text').textContent = 'Question ' + (current + 1) + ' of 16';
+  document.getElementById('progress-pattern').textContent = p.icon + ' ' + p.label;
+  document.getElementById('progress-fill').style.width = (((current + 1) / 16) * 100) + '%';
+  document.getElementById('q-num').textContent = 'Question ' + (current + 1) + ' of 16';
+  document.getElementById('q-text').textContent = q.text;
+
+  var banner = document.getElementById('q-banner');
+  banner.style.background = p.bannerBg;
+  banner.style.color = p.color;
+  document.getElementById('banner-icon').textContent = p.icon;
+  document.getElementById('banner-label').textContent = p.label;
+
+  var opts = document.getElementById('q-options');
+  opts.innerHTML = '';
+  q.opts.forEach(function(opt, i) {
+    var div = document.createElement('div');
+    div.className = 'qc-option' + (answers[current] === i ? ' selected' : '');
+    div.innerHTML = '<div class="qc-opt-dot"></div><div class="qc-opt-text">' + opt + '</div>';
+    div.onclick = function() { selectOption(i); };
+    opts.appendChild(div);
+  });
+
+  document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
+}
+
+function selectOption(i) {
+  answers[current] = i;
+  document.querySelectorAll('.qc-option').forEach(function(el, idx) {
+    el.classList.toggle('selected', idx === i);
+  });
+  setTimeout(function() {
+    if (current === 15) { showResults(); }
+    else { current++; renderQuestion(); }
+  }, 320);
+}
+
+function goBack() {
+  if (current === 0) return;
+  current--;
+  renderQuestion();
+}
+
+function computeScores() {
+  return PATTERNS.map(function(p, pi) {
+    var raw = answers.slice(pi * 4, pi * 4 + 4).reduce(function(a, b) { return a + (b || 0); }, 0);
+    return Math.round((raw / 12) * 100);
+  });
+}
+
+function getDominant(scores) {
+  var max = Math.max.apply(null, scores);
+  return scores.indexOf(max);
+}
+
+var PATTERN_DATA = {
+  reassurance: {
+    headerBg: 'linear-gradient(135deg, #5B21B6, #7C3AED)',
+    title: "Reassurance Seeking: anxiety driving a need for constant confirmation",
+    desc: "Your dominant pattern is using your partner as a source of certainty. When anxiety spikes, you need to hear that everything is okay, that they still love you, that the relationship is stable. The reassurance works briefly, then anxiety returns and the cycle restarts.",
+    meaningTitle: "Why reassurance seeking maintains the anxiety it is trying to solve",
+    meaning: "<p>Reassurance seeking feels logical: if I am anxious that something is wrong, getting confirmation that nothing is wrong should fix it. The problem is that it trains your nervous system to outsource its own regulation. Each reassurance teaches the brain that anxiety signals require external resolution, which makes the need for reassurance stronger over time, not weaker.</p><p>Your partner is placed in an impossible position. Providing reassurance temporarily relieves your anxiety but increases the demand over time. Not providing it feels unkind. There is no version of this they can win without the underlying pattern changing.</p>",
+    partnerBg: '#F5F3FF',
+    partnerBorderColor: '#DDD6FE',
+    partnerTitle: "What your partner is likely experiencing",
+    partnerBody: "Partners in this dynamic often describe feeling like they can never do enough, that reassurance never really lands, and that they are constantly on call to manage the anxiety. They may feel responsible for your emotional state in a way that is exhausting. They care about you and want to help, which is exactly what makes the pattern persist.",
+    steps: [
+      { title: "Name the pattern, not the feeling, when it happens", body: "When you notice the urge to seek reassurance, say out loud (to yourself): 'This is the reassurance pattern, not a real signal.' That small act of labelling interrupts the automatic reach for external certainty and begins to rebuild internal regulation." },
+      { title: "Delay reassurance-seeking by 10 minutes", body: "When the urge hits, set a timer. Do not reach out for 10 minutes. Most of the time, the anxiety will reduce on its own. This teaches your nervous system that it can tolerate the uncertainty without external resolution." },
+      { title: "Have the conversation with your partner about the pattern", body: "Not in a moment of anxiety, but when you are both calm. Explain what you now understand about the dynamic. Ask them not to provide reassurance in the moment but to stay present. This requires them to change too, which is why the conversation needs to happen outside the pattern." }
+    ],
+    showCTA: true,
+    ctaTitle: "Reassurance seeking is one of the most treatable relationship-anxiety patterns",
+    ctaBody: "CBT specifically targets the reassurance cycle by building tolerance for uncertainty and restoring internal regulation. A therapist who understands anxiety in relationships can help you change the pattern without damaging the relationship in the process."
+  },
+  withdrawal: {
+    headerBg: 'linear-gradient(135deg, #075985, #0369A1)',
+    title: "Emotional Withdrawal: anxiety causing you to disappear from the relationship",
+    desc: "When anxiety peaks, you go inward. You become less available, less communicative, harder to reach. It is self-protective but it creates distance that your partner experiences as rejection or shutting out, even though that is not what you intend.",
+    meaningTitle: "Why withdrawal feels protective but costs the relationship",
+    meaning: "<p>Withdrawal is anxiety's way of reducing overwhelm. When everything is too much, pulling back feels like the only way to manage. The problem is that your partner cannot see inside your experience. What feels like necessary self-protection to you reads as distance, coldness or rejection to them.</p><p>Over time, withdrawal creates a dynamic where your partner learns not to expect you during difficult periods, which creates its own kind of disconnection. Intimacy requires consistent presence, and anxiety that regularly removes that presence chips away at closeness in ways that are hard to recover from without understanding the pattern.</p>",
+    partnerBg: '#E0F2FE',
+    partnerBorderColor: '#BAE6FD',
+    partnerTitle: "What your partner is likely experiencing",
+    partnerBody: "Partners of people who withdraw often describe feeling shut out without warning, not knowing what they have done, and not knowing how to help. They may have learned to give space, which can create a painful distance on both sides. They often want to connect but have learned that trying to reach you when you have withdrawn does not work.",
+    steps: [
+      { title: "Create a signal, not an explanation", body: "Agree with your partner on a word, phrase or signal that means 'I am overwhelmed and going inward, this is not about you, I will be back.' This one change removes most of the damage withdrawal causes, because it turns a confusing disappearance into a understood process." },
+      { title: "Set a re-connection time", body: "When you withdraw, give your partner a rough timeframe: 'I need an hour.' This prevents the indefinite waiting that partners of anxious people often describe and gives the withdrawal a clear shape rather than an open-ended absence." },
+      { title: "Practice small re-entries", body: "When anxious, look for small ways to stay connected even while you need space: a text, a brief touch, a few words. Full withdrawal is all-or-nothing. Finding the middle point keeps the relationship present even when you cannot be fully there." }
+    ],
+    showCTA: true,
+    ctaTitle: "Anxiety-driven withdrawal responds well to therapy",
+    ctaBody: "Therapy can help you build a broader range of responses to overwhelm beyond withdrawal, and can help you and your partner develop a shared language for navigating these periods. Online therapy allows you to start without disruption to your schedule."
+  },
+  conflict: {
+    headerBg: 'linear-gradient(135deg, #9F1239, #BE123C)',
+    title: "Anxiety-Driven Conflict: anxiety creating arguments that did not need to happen",
+    desc: "Your dominant pattern is anxiety generating conflict. When anxious, you are more likely to misread neutral situations as threatening, to raise concerns that feel urgent but would not if you were calmer, and to escalate situations that did not need to escalate.",
+    meaningTitle: "Why anxiety creates conflict even when the relationship is fine",
+    meaning: "<p>Anxiety operates on a threat-detection system that is calibrated to expect the worst. In relationships, this means that neutral behaviour gets read as potential problems: a quieter evening becomes 'something is wrong between us', a small disagreement becomes evidence of incompatibility, a delayed response becomes a sign of something ominous.</p><p>The conflicts that result are real in the sense that they happen, but they are generated by the anxiety rather than the relationship. Your partner often knows this, which creates a particular frustration: they can see that what triggered the conflict was not actually the problem, but do not know how to address the real driver.</p>",
+    partnerBg: '#FFF1F2',
+    partnerBorderColor: '#FECDD3',
+    partnerTitle: "What your partner is likely experiencing",
+    partnerBody: "Partners in this dynamic often describe exhaustion at not knowing which version of reality they are in: the one where everything is fine, or the one where something is catastrophically wrong. They may feel they have to manage their behaviour carefully to avoid triggering a misread. They usually know the conflict is anxiety-driven but do not have the language to address it without making things worse.",
+    steps: [
+      { title: "Identify the anxiety-conflict signature", body: "Anxiety-driven conflict usually has a signature: it escalates fast, the complaint feels very urgent, and when it resolves, you often cannot fully explain what you were so sure about. Learning to recognise this signature in the moment is the beginning of changing the pattern." },
+      { title: "Use a pause contract", body: "Agree with your partner that either of you can call a 20-minute pause when conflict is escalating. Use the time to ask yourself: 'Is this anxiety or is this a real concern?' Most of the time the answer becomes clearer when the initial charge has dropped." },
+      { title: "Address the anxiety, not just the argument", body: "After an anxiety-driven conflict, have a second conversation that addresses what was actually happening: 'I think I was anxious about X and it came out as the argument about Y.' This kind of honesty is uncomfortable but it rebuilds trust faster than pretending the conflict was about what it appeared to be about." }
+    ],
+    showCTA: true,
+    ctaTitle: "Anxiety-driven conflict is addressable with the right support",
+    ctaBody: "CBT specifically targets the cognitive patterns that cause anxious misreading of situations. A therapist can help you learn to distinguish between real relationship concerns and anxiety-generated ones, which changes the frequency and intensity of conflict significantly."
+  },
+  irritable: {
+    headerBg: 'linear-gradient(135deg, #92400E, #B45309)',
+    title: "Transferred Irritability: anxiety converting into snapping at your partner",
+    desc: "Your dominant pattern is anxiety converting into irritability that lands on your partner. When you are running on high anxiety, your threshold drops, small things become too much and your partner often bears the impact of an emotional state that has nothing to do with them.",
+    meaningTitle: "Why anxiety and irritability are so closely linked",
+    meaning: "<p>Anxiety creates physiological arousal: the nervous system is primed, threat detection is heightened, and tolerance for frustration drops significantly. This state is not far from irritability. When something small happens, the system that is already charged responds more intensely than it would otherwise.</p><p>Your partner is often nearest and most familiar, which makes them the most available target. This is not cruelty or a lack of love. It is a predictable consequence of sustained anxiety that has not found another outlet. But the impact on your partner is real regardless of the cause.</p>",
+    partnerBg: '#FFFBEB',
+    partnerBorderColor: '#FDE68A',
+    partnerTitle: "What your partner is likely experiencing",
+    partnerBody: "Partners who are regularly on the receiving end of transferred irritability often describe walking on eggshells, not knowing what will trigger a reaction, and feeling like they have to manage their own behaviour carefully to avoid a spike. They may not associate it with your anxiety, which makes it harder to understand and easier to take personally.",
+    steps: [
+      { title: "Create a high-anxiety signal before the irritability peaks", body: "When you notice your anxiety is elevated, tell your partner before you snap: 'I am running on fumes today and my threshold is low.' This one piece of information changes the context for everything that follows and makes it far less likely to land as a personal attack." },
+      { title: "Find the discharge that is not your partner", body: "Irritability needs an outlet. Exercise, walking, shouting in the car, writing, cold water. Finding a non-relational outlet for the physical charge of anxiety reduces the amount that converts into interpersonal reactivity." },
+      { title: "Repair quickly and name the cause", body: "When you have snapped, repair fast and name what was actually happening: 'I was anxious about work and that came out at you. It was not about you.' Speed and specificity in repair matter more than elaborate apologies. Partners need to know what happened, not just that you are sorry." }
+    ],
+    showCTA: true,
+    ctaTitle: "Anxiety-driven irritability changes when anxiety is addressed at its source",
+    ctaBody: "Treating the irritability without treating the anxiety tends to produce temporary improvement. A therapist who understands anxiety can help you reduce the underlying activation level that is converting into reactivity, which changes the pattern rather than just managing the symptoms."
+  }
+};
+
+function showResults() {
+  var scores = computeScores();
+  var dominantIdx = getDominant(scores);
+  var dominantKey = PATTERNS[dominantIdx].id;
+  var data = PATTERN_DATA[dominantKey];
+  var dominantP = PATTERNS[dominantIdx];
+
+  document.getElementById('quiz-section').style.display = 'none';
+  document.getElementById('intro-section').style.display = 'none';
+  document.getElementById('results').style.display = 'block';
+
+  var header = document.getElementById('result-header');
+  header.style.background = data.headerBg;
+  document.getElementById('rh-pattern').textContent = data.title;
+  document.getElementById('rh-desc').textContent = data.desc;
+  document.getElementById('rh-pattern').style.color = 'white';
+  document.getElementById('rh-desc').style.color = 'rgba(255,255,255,0.82)';
+  header.querySelector('.rh-eyebrow').style.color = 'rgba(255,255,255,0.65)';
+
+  var barsEl = document.getElementById('pattern-bars');
+  barsEl.innerHTML = '';
+  var insightsByLevel = {
+    reassurance: {
+      low: "Reassurance seeking is not a dominant pattern for you. You appear to manage uncertainty in the relationship without needing frequent external confirmation.",
+      mid: "Some reassurance seeking is present. You occasionally need confirmation that things are okay, particularly during more anxious periods.",
+      high: "Reassurance seeking is significantly present. The need for frequent confirmation is creating a cycle that places strain on your partner and does not resolve the underlying anxiety."
+    },
+    withdrawal: {
+      low: "Emotional withdrawal is not a dominant pattern. You tend to stay connected to your partner even when anxiety is elevated.",
+      mid: "Some withdrawal is present. You sometimes pull back when anxious, which can create occasional disconnection.",
+      high: "Emotional withdrawal is a significant pattern. Pulling away during anxious periods is creating meaningful distance in the relationship."
+    },
+    conflict: {
+      low: "Anxiety-driven conflict is not a dominant pattern. You are generally able to distinguish between anxiety-generated concerns and real relationship issues.",
+      mid: "Some anxiety-driven conflict is present. Anxiety occasionally causes you to escalate or misread situations in ways that generate unnecessary conflict.",
+      high: "Anxiety-driven conflict is significantly present. Anxiety is regularly generating conflict that the relationship would not otherwise have."
+    },
+    irritable: {
+      low: "Transferred irritability is not a dominant pattern. Anxiety does not frequently convert into reactivity that lands on your partner.",
+      mid: "Some transferred irritability is present. During high-anxiety periods you are sometimes sharper with your partner than the situation warrants.",
+      high: "Transferred irritability is a significant pattern. Anxiety is regularly converting into reactivity that your partner bears the impact of."
+    }
+  };
+
+  PATTERNS.forEach(function(p, i) {
+    var pct = scores[i];
+    var level = pct < 40 ? 'low' : pct < 65 ? 'mid' : 'high';
+    var insight = insightsByLevel[p.id][level];
+    barsEl.innerHTML +=
+      '<div class="pb-item">' +
+        '<div class="pb-top">' +
+          '<div class="pb-label" style="color:' + p.color + '">' + p.icon + ' ' + p.label + '</div>' +
+          '<div class="pb-pct" style="color:' + p.color + '">' + pct + '%</div>' +
+        '</div>' +
+        '<div class="pb-bar-bg"><div class="pb-bar" style="width:' + pct + '%;background:' + p.color + '"></div></div>' +
+        '<div class="pb-insight">' + insight + '</div>' +
+      '</div>';
+  });
+
+  document.getElementById('meaning-title').textContent = data.meaningTitle;
+  document.getElementById('meaning-body').innerHTML = data.meaning;
+
+  var noteEl = document.getElementById('partner-note');
+  noteEl.style.background = data.partnerBg;
+  noteEl.style.border = '1px solid ' + data.partnerBorderColor;
+  document.getElementById('pn-title').textContent = data.partnerTitle;
+  document.getElementById('pn-body').textContent = data.partnerBody;
+
+  var stepList = document.getElementById('step-list');
+  stepList.innerHTML = '';
+  data.steps.forEach(function(s, i) {
+    stepList.innerHTML +=
+      '<div class="step-item">' +
+        '<div class="step-num" style="background:' + dominantP.bg + ';color:' + dominantP.color + '">' + (i + 1) + '</div>' +
+        '<div class="step-content"><h4>' + s.title + '</h4><p>' + s.body + '</p></div>' +
+      '</div>';
+  });
+
+  var totalScore = Math.round(scores.reduce(function(a, b) { return a + b; }, 0) / 4);
+  if (data.showCTA && totalScore >= 35) {
+    var cta = document.getElementById('therapy-cta');
+    cta.style.display = 'block';
+    document.getElementById('cta-title').textContent = data.ctaTitle;
+    document.getElementById('cta-body').textContent = data.ctaBody;
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function restartQuiz() {
+  current = 0;
+  answers = new Array(16).fill(null);
+  document.getElementById('quiz-section').style.display = 'block';
+  document.getElementById('intro-section').style.display = 'block';
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('therapy-cta').style.display = 'none';
+  renderQuestion();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+renderQuestion();
+</script>
+</body>
+</html>
