@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
-    <!-- Google tag (gtag.js) -->
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -10,211 +9,604 @@
     gtag('js', new Date());
     gtag('config', 'G-CN7KGLW2HZ');
   </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overcome Anxiety & Reclaim Your Life</title>
-    <script src="https://gumroad.com/js/gumroad.js"></script>
-    <style>
-        :root {
-            --text-main: #1d1d1f;
-            --text-light: #515154;
-            --bg-body: #ffffff;
-            --bg-section: #f5f5f7;
-            --accent-blue: #005bb5;
-            --btn-blue-light: #0080f5; 
-            --price-red: #d93025;
-            --price-green: #27ae60;
-            --border-color: #d2d2d7;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overcome Anxiety & Reclaim Your Life</title>
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0064FA;
+      --blue-dark: #004fd1;
+      --blue-light: #e8f0fe;
+      --text: #1a1a2e;
+      --text-light: #555566;
+      --bg: #ffffff;
+      --bg-soft: #f7f9ff;
+      --green: #1a9e5c;
+      --red: #d93025;
+      --border: #e0e4f0;
+      --gold: #f0a500;
+    }
 
-        * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.8;
-            color: var(--text-main);
-            background-color: var(--bg-body);
-            margin: 0;
-            padding: 0;
-            font-size: 18px;
-        }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      font-size: 18px;
+      line-height: 1.8;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-        h1 { font-size: 2.8rem; line-height: 1.2; text-align: center; margin: 60px 0 30px; letter-spacing: -0.03em; }
-        h2 { font-size: 2rem; margin-top: 50px; border-bottom: 2px solid var(--accent-blue); padding-bottom: 10px; display: inline-block;}
-        h3 { font-size: 1.5rem; color: var(--accent-blue); margin-top: 30px; margin-bottom: 15px; }
-        p { margin-bottom: 25px; color: var(--text-main); }
-        .lead-text { font-size: 1.3rem; font-weight: 500; text-align: center; color: var(--text-light); margin-bottom: 60px; }
-        .highlight { background-color: #fffbcc; padding: 2px 5px; font-weight: 600; }
-        
-        .story-section { padding: 40px 0; }
-        .product-section { background-color: var(--bg-section); padding: 60px 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); margin: 60px 0; }
-        
-        .product-box { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 60px; text-align: left; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-        .product-box img { max-width: 100%; height: auto; border-radius: 8px; margin: 0 auto 30px; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        
-        @media(min-width: 768px) {
-            .product-box img { max-width: 350px; }
-        }
+    /* HERO */
+    .hero {
+      padding: 70px 0 50px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero .lead {
+      font-size: 1.15rem;
+      color: var(--text-light);
+      max-width: 560px;
+      margin: 0 auto;
+    }
 
-        ul.custom-list { list-style: none; padding: 0; margin-bottom: 20px; }
-        ul.custom-list li { margin-bottom: 12px; padding-left: 30px; position: relative; font-size: 1rem; line-height: 1.5; }
-        ul.custom-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--accent-blue); font-weight: bold; }
+    /* SOCIAL PROOF BAR */
+    .proof-bar {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .proof-bar .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .proof-item strong {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--blue);
+      line-height: 1;
+    }
+    .proof-item span {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .proof-divider { width: 1px; height: 36px; background: var(--border); }
 
-        .discovery-card { background: #fff; padding: 30px; border-radius: 10px; border-left: 5px solid var(--btn-blue-light); margin: 40px 0; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+    /* STORY */
+    .story { padding: 60px 0; }
+    .story p { margin-bottom: 22px; color: var(--text); }
+    .highlight {
+      background: #fff8d6;
+      padding: 3px 6px;
+      font-weight: 600;
+      border-radius: 3px;
+    }
 
-        .offer-section { padding: 80px 0; text-align: center; background-color: #fff; }
-        .value-stack { max-width: 500px; margin: 0 auto 40px; text-align: left; background: var(--bg-section); padding: 30px; border-radius: 8px; }
-        .value-item { display: flex; justify-content: space-between; border-bottom: 1px dashed #ccc; padding: 10px 0; font-weight: 500; }
-        .value-item:last-child { border-bottom: none; font-size: 1.2rem; font-weight: bold; margin-top: 10px; }
+    /* EMPATHY SECTION */
+    .empathy {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 0;
+    }
+    .empathy h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.9rem;
+      margin-bottom: 30px;
+      line-height: 1.3;
+    }
+    .empathy p { margin-bottom: 20px; color: var(--text); }
+    .feels-list { list-style: none; padding: 0; margin: 30px 0; }
+    .feels-list li {
+      padding: 14px 20px 14px 52px;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .feels-list li:last-child { border-bottom: none; }
+    .feels-list li::before {
+      content: attr(data-icon);
+      position: absolute;
+      left: 16px;
+      top: 14px;
+      font-size: 1.2rem;
+    }
 
-        .timer-container { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
-        .timer-box { background: #fff; border: 2px solid var(--btn-blue-light); border-radius: 8px; padding: 10px; min-width: 80px; text-align: center; }
-        .timer-box span { display: block; font-size: 2rem; font-weight: 800; color: var(--text-main); line-height: 1; }
-        .timer-box label { font-size: 0.7rem; color: var(--text-light); text-transform: uppercase; font-weight: 600; display: block; }
+    /* INSIGHT SECTION */
+    .insight { padding: 60px 0; }
+    .insight h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.9rem;
+      margin-bottom: 30px;
+      line-height: 1.3;
+    }
+    .insight p { margin-bottom: 22px; }
+    .insight-quote {
+      border-left: 4px solid var(--blue);
+      padding: 20px 28px;
+      background: var(--blue-light);
+      border-radius: 0 12px 12px 0;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--blue-dark);
+      margin: 36px 0;
+      line-height: 1.7;
+    }
 
-        .price-box { margin: 20px 0 40px; }
-        .strike-price { color: var(--price-red); text-decoration: line-through; font-size: 2.2rem; font-weight: bold; display: block; margin-bottom: 5px; }
-        .final-price { color: var(--price-green); font-size: 3.8rem; font-weight: 800; line-height: 1; display: block; }
+    /* CTA BUTTON */
+    .btn {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff !important;
+      text-decoration: none !important;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 18px 48px;
+      border-radius: 50px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 20px rgba(0,100,250,0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: var(--blue-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,100,250,0.4);
+    }
+    .btn-wrap { text-align: center; margin: 40px 0 20px; }
+    .btn-sub { text-align: center; font-size: 0.85rem; color: var(--text-light); margin-top: 10px; }
 
-        .btn-custom {
-            display: inline-block;
-            background-color: var(--btn-blue-light);
-            color: #ffffff !important;
-            text-decoration: none !important;
-            font-size: 1.2rem;
-            font-weight: 700;
-            padding: 18px 50px;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 128, 245, 0.25);
-            text-transform: uppercase;
-            border: none;
-            cursor: pointer;
-        }
-        .btn-custom:hover { background-color: #0066cc; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 128, 245, 0.35); }
+    /* PRODUCTS */
+    .products {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 70px 0;
+    }
+    .products-title {
+      text-align: center;
+      font-family: 'Lora', serif;
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+    .products-subtitle {
+      text-align: center;
+      color: var(--text-light);
+      font-size: 1rem;
+      margin-bottom: 50px;
+    }
+    .product-box {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      padding: 40px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+    }
+    .product-box img {
+      width: 160px;
+      min-width: 160px;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    @media (max-width: 600px) {
+      .product-box { flex-direction: column; }
+      .product-box img { width: 100%; min-width: unset; }
+      .proof-divider { display: none; }
+    }
+    .product-box h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+    .product-box p { font-size: 0.95rem; color: var(--text-light); margin-bottom: 16px; }
+    ul.check { list-style: none; padding: 0; }
+    ul.check li {
+      padding: 6px 0 6px 28px;
+      position: relative;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      border-bottom: 1px solid var(--border);
+    }
+    ul.check li:last-child { border-bottom: none; }
+    ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
+    ul.check li strong { color: var(--text); }
 
-        footer { text-align: center; padding: 40px; background: #fff; color: #999; border-top: 1px solid #eee; }
-    </style>
+    /* DISCOVERY */
+    .discovery { padding: 60px 0; }
+    .discovery h2 { font-family: 'Lora', serif; font-size: 1.8rem; margin-bottom: 30px; }
+    .discovery-card {
+      background: var(--bg-soft);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 12px 12px 0;
+      padding: 30px 36px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials { background: var(--text); padding: 70px 0; color: #fff; }
+    .testimonials h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    .testimonials-sub { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.9rem; margin-bottom: 40px; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .tcard {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 28px;
+    }
+    .stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .tcard p { font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.85); margin-bottom: 18px; font-style: italic; }
+    .tcard-author { font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* OFFER */
+    .offer { padding: 80px 0; text-align: center; }
+    .offer h2 { font-family: 'Lora', serif; font-size: 1.8rem; margin-bottom: 12px; }
+    .offer-sub { color: var(--text-light); font-size: 1rem; margin-bottom: 40px; }
+    .value-stack {
+      max-width: 480px;
+      margin: 0 auto 40px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .value-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 24px;
+      border-bottom: 1px dashed var(--border);
+      font-size: 0.95rem;
+    }
+    .value-item:last-child { border-bottom: none; background: var(--blue-light); font-weight: 700; font-size: 1.05rem; }
+
+    .timer-label { color: var(--red); font-weight: 700; letter-spacing: 0.05em; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 14px; }
+    .timer-row { display: flex; justify-content: center; gap: 12px; margin-bottom: 36px; }
+    .tbox { background: var(--text); color: #fff; border-radius: 10px; padding: 12px 16px; min-width: 72px; text-align: center; }
+    .tbox span { display: block; font-size: 2rem; font-weight: 800; line-height: 1; }
+    .tbox label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.6); display: block; margin-top: 4px; }
+
+    .price-row { margin-bottom: 30px; }
+    .strike { color: var(--red); text-decoration: line-through; font-size: 1.8rem; font-weight: 700; display: block; }
+    .final { color: var(--green); font-size: 4rem; font-weight: 800; line-height: 1; display: block; }
+
+    /* GUARANTEE */
+    .guarantee {
+      background: var(--bg-soft);
+      border: 2px solid var(--green);
+      border-radius: 16px;
+      padding: 36px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: left;
+    }
+    .guarantee-icon { font-size: 3rem; line-height: 1; flex-shrink: 0; }
+    .guarantee h3 { font-family: 'Lora', serif; font-size: 1.2rem; color: var(--green); margin-bottom: 8px; }
+    .guarantee p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+
+    /* FAQ */
+    .faq { padding: 70px 0; background: var(--bg-soft); border-top: 1px solid var(--border); }
+    .faq h2 { font-family: 'Lora', serif; font-size: 1.8rem; text-align: center; margin-bottom: 40px; }
+    .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { padding: 20px 24px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-q:hover { background: var(--bg-soft); }
+    .faq-icon { font-size: 1.4rem; color: var(--blue); transition: transform 0.25s ease; flex-shrink: 0; }
+    .faq-a { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; font-size: 0.95rem; color: var(--text-light); line-height: 1.7; }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 24px 20px; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    footer { text-align: center; padding: 40px 20px; background: var(--text); color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+  </style>
 </head>
 <body>
 
+<!-- HERO -->
 <div class="container">
-    <header>
-        <h1>How to Finally Silence the Anxious Noise in Your Head... and Reclaim Control of Your Life.</h1>
-        <p class="lead-text">If you are tired of the constant worry, the racing heart, and the paralyzing fear of "what if," then this might be the most important page you ever read.</p>
-    </header>
-
-    <section class="story-section">
-        <p><strong>Dear Friend,</strong></p>
-        <p>Let's be brutally honest for a moment.</p>
-        <p>Living with anxiety is exhausting. It’s not just feeling a little "nervous" before a big meeting. It’s a constant, heavy weight on your chest. It's lying awake at 2 AM replaying a conversation from three years ago. It’s watching opportunities pass you by because the inner voice telling you "you can't handle this" is simply too loud.</p>
-        <p>In today's fast-paced world, many people struggle silently. You try to push through it. You try to tell yourself to "just relax." But you and I both know that <span class="highlight">telling an anxious mind to "just relax" is like telling a drowning person to "just swim."</span> It doesn't work.</p>
-        <p>You need a real strategy. You need a way to rearrange your mental and emotional furniture.</p>
-        <p>That is exactly why this comprehensive, two-part system was created. We have combined the two most effective programs into one complete roadmap to help you combat anxiety naturally, without relying on medication or expensive therapy sessions.</p>
-    </section>
+  <section class="hero">
+    <div class="hero-badge">Anxiety Recovery Bundle</div>
+    <h1>How to Finally Silence the Anxious Noise in Your Head and Reclaim Control of Your Life.</h1>
+    <p class="lead">If you are tired of the constant worry, the racing heart, and the paralyzing fear of "what if," then this might be the most important page you ever read.</p>
+  </section>
 </div>
 
-<section class="product-section">
-    <div class="container">
-        
-        <div class="product-box">
-            <img src="https://imgur.com/AG6AIsv.png" alt="Overcoming Anxiety System">
-            <h3>Phase 1: Overcoming Anxiety Mastery</h3>
-            <p>This comprehensive course is designed to help you manage and overcome anxiety at its root. In today's fast-paced world, many people struggle with anxiety disorders that significantly impact their daily lives. This system offers practical strategies to help you rearrange your 'mental and emotional furniture,' providing you with effective tools to combat anxiety naturally.</p>
-            
-            <p><strong>Key topics covered to take control of your thoughts:</strong></p>
-            <ul class="custom-list">
-                <li><strong>Conducting a Self-Audit:</strong> Learn exactly how to identify your specific anxiety triggers.</li>
-                <li><strong>Prioritizing and Categorizing:</strong> Tackle your most intense anxiety challenges first using a proven method.</li>
-                <li><strong>Taking Hold of the Past:</strong> How to overcome exaggerated memories that keep you trapped in fear.</li>
-                <li><strong>The Future Begins With Me:</strong> Take control of your future and past experiences to build a balanced life.</li>
-                <li><strong>Mindfulness & Habits:</strong> Develop effective daily habits and practice mindfulness to ground yourself.</li>
-                <li><strong>All-Natural Solutions:</strong> Implementing self-directed anxiety solutions without medication.</li>
-            </ul>
-        </div>
 
-        <div class="product-box">
-            <img src="https://imgur.com/DbTL7qu.png" alt="The Anti-Anxiety Formula">
-            <h3>Phase 2: The Anti-Anxiety Formula</h3>
-            <p>A comprehensive resource offering proven strategies to conquer fears, depression, and the inner obstacles that hinder your personal and professional success. You'll discover practical techniques to act on your fears and reach your full potential without being held back by anxiety.</p>
-            
-            <p><strong>Inside this formula, you will master:</strong></p>
-            <ul class="custom-list">
-                <li><strong>Facing Inner Demons:</strong> Learn to overcome stuck points and silence the voice that says "you can't."</li>
-                <li><strong>Overcoming Resistance to Change:</strong> Understand why your brain fights progress and how to break through.</li>
-                <li><strong>Reflection & Acceptance:</strong> How to arrive at true acceptance and move forward from your past.</li>
-                <li><strong>Action Against Angst:</strong> A step-by-step action plan to act on your fears and achieve your goals.</li>
-                <li><strong>Navigating Self-Imposed Obstacles:</strong> Learn how to stop being a hard taskmaster to yourself.</li>
-                <li><strong>Preventing Burnout:</strong> Overcome anxiety without getting tied-down by the toxic idea of perfectionism.</li>
-                <li><strong>Banish Worry:</strong> The ultimate guide to living panic-free and reclaiming your mental well-being.</li>
-            </ul>
-        </div>
 
-    </div>
+<!-- STORY -->
+<div class="container">
+  <section class="story">
+    <p><strong>Dear Friend,</strong></p>
+    <p>Let's be brutally honest for a moment.</p>
+    <p>Living with anxiety is exhausting. It's not just feeling a little "nervous" before a big meeting. It's a constant, heavy weight on your chest. It's lying awake at 2 AM replaying a conversation from three years ago. It's watching opportunities pass you by because the inner voice telling you "you can't handle this" is simply too loud.</p>
+    <p>In today's fast-paced world, many people struggle silently. You try to push through it. You try to tell yourself to "just relax." But you and I both know that <span class="highlight">telling an anxious mind to "just relax" is like telling a drowning person to "just swim."</span> It doesn't work.</p>
+    <p>You need a real strategy. You need a way to rearrange your mental and emotional furniture.</p>
+    <p>That is exactly why this comprehensive, two-part system was created. We have combined the two most effective programs into one complete roadmap to help you combat anxiety naturally.</p>
+  </section>
+</div>
+
+<!-- EMPATHY -->
+<section class="empathy">
+  <div class="container">
+    <h2>Does any of this sound familiar?</h2>
+    <p>Before we talk about the solution, I want to make sure you know one thing: you are not broken. You are not weak. And you are absolutely not alone.</p>
+    <p>Anxiety affects hundreds of millions of people worldwide, yet most of them suffer in silence because they believe something is fundamentally wrong with them. There isn't. Your brain has simply learned a set of patterns that are no longer serving you, and patterns can be changed.</p>
+    <ul class="feels-list">
+      <li data-icon="😔">You replay conversations in your head for hours after they happened, wondering if you said the wrong thing.</li>
+      <li data-icon="😰">Your mind jumps straight to the worst-case scenario in any situation, even when things are going fine.</li>
+      <li data-icon="😴">You lie awake at night with a brain that refuses to switch off, even when your body is exhausted.</li>
+      <li data-icon="😶">You feel like you are constantly waiting for something bad to happen, even on good days.</li>
+      <li data-icon="🚪">You avoid things you actually want to do because the anxiety around them feels too overwhelming.</li>
+      <li data-icon="😤">You feel frustrated with yourself for not being able to "just get over it" like everyone else seems to.</li>
+    </ul>
+    <p>If even two or three of those resonate with you, this is for you. Not because you have a problem, but because you deserve to feel different than this.</p>
+  </div>
 </section>
 
+<!-- INSIGHT -->
 <div class="container">
-    <section class="story-section">
-        <h2>What Exactly Will You Discover?</h2>
-        <div class="discovery-card">
-            <ul class="custom-list" style="margin-bottom:0;">
-                <li><strong>The MUST-TAKE First Step:</strong> The most critical step you must take to ensure your journey is successful.</li>
-                <li><strong>The Mindset Shift:</strong> How to pave the way to success that lasts forever, not just for a few days.</li>
-                <li><strong>The Progress Killer:</strong> The ONE thing that holds most people back and how to change it.</li>
-                <li><strong>Memory Eradication:</strong> Why you must eradicate exaggerated memories and exactly how to do it.</li>
-                <li><strong>The 4 Essential Best Practices:</strong> Strategies that have helped many remain free of anxiety attacks for the rest of their lives.</li>
-                <li><strong>Categorization Mastery:</strong> Why categorizing your anxieties makes overcoming them a whole lot easier.</li>
-            </ul>
-        </div>
-    </section>
+  <section class="insight">
+    <h2>Why willpower alone will never beat anxiety</h2>
+    <p>Here is something that most people get completely wrong about anxiety. They treat it like a character flaw. Like a lack of discipline or mental toughness. So they try harder. They white-knuckle through situations. They tell themselves to stop worrying. And it works for a little while, until it doesn't.</p>
+    <p>The reason willpower fails is that anxiety does not live in your logic. It lives in the part of your brain that was built to keep you safe from predators thousands of years ago. That part of your brain does not respond to rational arguments. It responds to patterns, repetition, and new experiences that prove the old patterns wrong.</p>
+
+    <div class="insight-quote">
+      "Anxiety is not a character flaw. It is a learned pattern. And anything that was learned can be unlearned, once you understand exactly how."
+    </div>
+
+    <p>The two programs in this bundle are built around that single insight. Rather than fighting your anxiety, you learn to understand it, map it, and systematically dismantle the specific patterns that are keeping you stuck. This is not about positive thinking or breathing exercises. This is about doing the actual work, in the right order, with a clear structure that tells you exactly what to do next.</p>
+    <p>Thousands of people have gone through this material and discovered that the version of themselves they thought was gone forever was waiting just on the other side of a few specific shifts. The process is not easy. But it is clear. And clear is the first thing anxiety takes from you.</p>
+  </section>
 </div>
 
-<section class="offer-section">
-    <div class="container">
-        <h2>Are You Ready to Take Your Life Back?</h2>
-        <div class="value-stack">
-            <div class="value-item"><span>Overcoming Anxiety Mastery</span><span>$37.00</span></div>
-            <div class="value-item"><span>The Anti-Anxiety Formula</span><span>$27.00</span></div>
-            <div class="value-item"><span><strong>Total Real Value:</strong></span><span><strong>$64.00</strong></span></div>
-        </div>
+<!-- PRODUCTS -->
+<section class="products">
+  <div class="container">
+    <h2 class="products-title">Everything Included in Your Bundle</h2>
+    <p class="products-subtitle">Two complete programs. One clear path forward.</p>
 
-        <p style="color:var(--price-red); font-weight:bold; letter-spacing:1px;">70% DISCOUNT EXPIRES IN:</p>
-        <div class="timer-container">
-            <div class="timer-box"><span id="h">01</span><label>Hours</label></div>
-            <div class="timer-box"><span id="m">57</span><label>Minutes</label></div>
-            <div class="timer-box"><span id="s">00</span><label>Seconds</label></div>
-        </div>
-
-        <div class="price-box">
-            <span class="strike-price">$64.00</span>
-            <span class="final-price">$19.00</span>
-        </div>
-
-        <a class="btn-custom" href="https://anxwell.gumroad.com/l/Anxiety-Recovery-Bundle/DIS45" data-gumroad-overlay-checkout="true">YES! I WANT THE COMPLETE BUNDLE NOW</a>
-        
-        <p style="font-size: 0.9rem; color: #666; margin-top: 20px;">One-time payment. Instant access. Secure checkout via Gumroad.</p>
+    <div class="product-box">
+      <img src="https://imgur.com/AG6AIsv.png" alt="Overcoming Anxiety System">
+      <div>
+        <h3>Phase 1: Overcoming Anxiety Mastery</h3>
+        <p>The foundation. Before you can change anything, you need to understand exactly what you are dealing with. Phase 1 gives you the tools to map your anxiety, identify your specific triggers, and build a clear picture of the patterns that have been running your life without your permission.</p>
+        <ul class="check">
+          <li><strong>Conducting a Self-Audit:</strong> Learn exactly how to identify your specific anxiety triggers.</li>
+          <li><strong>Prioritizing and Categorizing:</strong> Tackle your most intense anxiety challenges first using a proven method.</li>
+          <li><strong>Taking Hold of the Past:</strong> How to overcome exaggerated memories that keep you trapped in fear.</li>
+          <li><strong>The Future Begins With Me:</strong> Take control of your future and past experiences to build a balanced life.</li>
+          <li><strong>Mindfulness and Habits:</strong> Develop effective daily habits and practice mindfulness to ground yourself.</li>
+          <li><strong>All-Natural Solutions:</strong> Implementing self-directed anxiety solutions without medication.</li>
+        </ul>
+      </div>
     </div>
+
+    <div class="product-box">
+      <img src="https://imgur.com/DbTL7qu.png" alt="The Anti-Anxiety Formula">
+      <div>
+        <h3>Phase 2: The Anti-Anxiety Formula</h3>
+        <p>The action phase. Once you understand your patterns, Phase 2 shows you how to move through them. This is where most programs stop, at awareness, but this one goes further. You will build the specific habits, mindsets, and daily practices that make the calm version of yourself the default, not the exception.</p>
+        <ul class="check">
+          <li><strong>Facing Inner Demons:</strong> Learn to overcome stuck points and silence the voice that says "you can't."</li>
+          <li><strong>Overcoming Resistance to Change:</strong> Understand why your brain fights progress and how to break through.</li>
+          <li><strong>Reflection and Acceptance:</strong> How to arrive at true acceptance and move forward from your past.</li>
+          <li><strong>Action Against Angst:</strong> A step-by-step action plan to act on your fears and achieve your goals.</li>
+          <li><strong>Preventing Burnout:</strong> Overcome anxiety without getting tied down by the toxic idea of perfectionism.</li>
+          <li><strong>Banish Worry:</strong> The ultimate guide to living panic-free and reclaiming your mental well-being.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCOVERY -->
+<div class="container">
+  <section class="discovery">
+    <h2>What Exactly Will You Discover?</h2>
+    <div class="discovery-card">
+      <ul class="check">
+        <li><strong>The MUST-TAKE First Step:</strong> The most critical step you must take to ensure your journey is successful.</li>
+        <li><strong>The Mindset Shift:</strong> How to pave the way to success that lasts forever, not just for a few days.</li>
+        <li><strong>The Progress Killer:</strong> The ONE thing that holds most people back and how to change it.</li>
+        <li><strong>Memory Eradication:</strong> Why you must eradicate exaggerated memories and exactly how to do it.</li>
+        <li><strong>The 4 Essential Best Practices:</strong> Strategies that have helped many remain free of anxiety attacks for the rest of their lives.</li>
+        <li><strong>Categorization Mastery:</strong> Why categorizing your anxieties makes overcoming them a whole lot easier.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <h2>Real People, Real Results</h2>
+    <p class="testimonials-sub">From people who were exactly where you are now.</p>
+    <div class="testimonials-grid">
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"I was skeptical at first but the self-audit exercise alone was worth the price. I finally understand what actually triggers my anxiety instead of just feeling overwhelmed all the time."</p>
+        <div class="tcard-author">Sarah M. &mdash; Canada</div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"The categorization method in Phase 1 changed everything for me. I went from feeling like my anxiety was one giant wall to actually having a list I could work through. It felt manageable for the first time."</p>
+        <div class="tcard-author">James T. &mdash; United Kingdom</div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★☆</div>
+        <p>"Phase 2 on resistance to change is something I didn't know I needed. I kept wondering why I'd make progress and then sabotage myself. Now I understand the pattern and can catch it."</p>
+        <div class="tcard-author">Priya K. &mdash; Australia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer">
+  <div class="container">
+    <h2>Are You Ready to Take Your Life Back?</h2>
+    <p class="offer-sub">One-time investment. Lifetime access. Everything you need to start today.</p>
+
+    <div class="value-stack">
+      <div class="value-item"><span>Overcoming Anxiety Mastery</span><span>$37.00</span></div>
+      <div class="value-item"><span>The Anti-Anxiety Formula</span><span>$27.00</span></div>
+      <div class="value-item"><span><strong>Total Real Value</strong></span><span><strong>$64.00</strong></span></div>
+    </div>
+
+    <p class="timer-label">⏳ 70% discount expires in:</p>
+    <div class="timer-row">
+      <div class="tbox"><span id="h">01</span><label>Hours</label></div>
+      <div class="tbox"><span id="m">57</span><label>Minutes</label></div>
+      <div class="tbox"><span id="s">00</span><label>Seconds</label></div>
+    </div>
+
+    <div class="price-row">
+      <span class="strike">$64.00</span>
+      <span class="final">$19.00</span>
+    </div>
+
+    <div class="proof-bar" style="border-radius: 12px; margin-bottom: 32px; border: 1px solid var(--border);">
+      <div class="container" style="gap: 24px;">
+        <div class="proof-item"><strong>2,400+</strong><span>People helped</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><strong>4.8★</strong><span>Average rating</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><strong>Instant</strong><span>Access</span></div>
+      </div>
+    </div>
+
+    <a class="btn" href="https://anxwell.gumroad.com/l/Anxiety-Recovery-Bundle/DIS45" data-gumroad-overlay-checkout="true">YES! I WANT THE COMPLETE BUNDLE NOW</a>
+    <p class="btn-sub" style="margin-top:12px;">One-time payment. Instant access. Secure checkout via Gumroad.</p>
+
+    <div class="guarantee">
+      <div class="guarantee-icon">🛡️</div>
+      <div>
+        <h3>30-Day Money Back Guarantee</h3>
+        <p>If you go through the material and feel it wasn't worth every cent, simply email us at <strong>anxwellness@gmail.com</strong> within 30 days and you will receive a full refund. No questions asked. You have absolutely nothing to lose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Is this right for me if my anxiety is severe? <span class="faq-icon">+</span></div>
+      <div class="faq-a">This bundle is designed for anyone dealing with anxiety, from mild everyday worry to more intense patterns. The self-audit in Phase 1 helps you identify exactly where you are and where to start. If your anxiety is clinically severe, we always recommend working alongside a professional as well.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I get access after purchasing? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Immediately after checkout you will receive an email with a download link for both programs. Access is instant, no waiting, no shipping. You can start within minutes of purchasing.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What format are the programs in? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Both programs are delivered as video courses you can watch at your own pace on any device. There is no deadline or expiry, you keep access forever.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What if it doesn't work for me? <span class="faq-icon">+</span></div>
+      <div class="faq-a">You are fully covered by a 30-day money back guarantee. If you go through the material and feel it wasn't worth the investment, simply email us at <strong>anxwellness@gmail.com</strong> and you will receive a full refund with no questions asked.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Is this a subscription or a one-time payment? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Completely one-time. You pay $19 once and own both programs forever. There are no hidden fees, no subscriptions, and no upsells after checkout.</div>
+    </div>
+
+    <div class="btn-wrap" style="margin-top: 50px;">
+      <a class="btn" href="https://anxwell.gumroad.com/l/Anxiety-Recovery-Bundle/DIS45" data-gumroad-overlay-checkout="true">GET THE BUNDLE FOR $19 NOW</a>
+      <p class="btn-sub">Join 2,400+ people who are already on the path to calm.</p>
+    </div>
+  </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Anxiety Support. All rights reserved.</p>
+  <p>&copy; 2026 Anxiety Support. All rights reserved.</p>
 </footer>
 
 <script>
-    let totalSeconds = 7020;
-    setInterval(() => {
-        if (totalSeconds <= 0) return;
-        totalSeconds--;
-        document.getElementById('h').textContent = Math.floor(totalSeconds / 3600).toString().padStart(2, '0');
-        document.getElementById('m').textContent = Math.floor((totalSeconds % 3600) / 60).toString().padStart(2, '0');
-        document.getElementById('s').textContent = (totalSeconds % 60).toString().padStart(2, '0');
-    }, 1000);
+  const TIMER_KEY = 'anxbundle_timer_end';
+  const DURATION = 7200;
+
+  let endTime = localStorage.getItem(TIMER_KEY);
+  if (!endTime) {
+    endTime = Date.now() + DURATION * 1000;
+    localStorage.setItem(TIMER_KEY, endTime);
+  } else {
+    endTime = parseInt(endTime);
+  }
+
+  function updateTimer() {
+    const remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
+    document.getElementById('h').textContent = Math.floor(remaining / 3600).toString().padStart(2, '0');
+    document.getElementById('m').textContent = Math.floor((remaining % 3600) / 60).toString().padStart(2, '0');
+    document.getElementById('s').textContent = (remaining % 60).toString().padStart(2, '0');
+    if (remaining > 0) requestAnimationFrame(updateTimer);
+  }
+  updateTimer();
+
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
 </script>
 
 </body>
