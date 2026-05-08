@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do I Have Anxiety? Free Self-Assessment Quiz</title>
+  <meta name="description" content="Not sure if what you are experiencing is anxiety? 18 questions covering all major anxiety symptoms. Get a clear, honest answer with a personalised symptom profile." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://myanxietytest.com/do-i-have-anxiety/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Do I Have Anxiety? Free Self-Assessment Quiz" />
+  <meta property="og:description" content="18 questions covering all major anxiety symptoms. A clear, honest answer with a personalised symptom profile." />
+  <meta property="og:url" content="https://myanxietytest.com/do-i-have-anxiety/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+  <meta name="twitter:card" content="summary" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Do I Have Anxiety?",
+    "description": "An 18-question self-assessment covering all major anxiety symptom categories. Provides a clear answer with a personalised symptom profile and next steps.",
+    "url": "https://myanxietytest.com/do-i-have-anxiety/",
+    "inLanguage": "en",
+    "about": { "@type": "MedicalCondition", "name": "Anxiety", "sameAs": "https://en.wikipedia.org/wiki/Anxiety" },
+    "isPartOf": { "@type": "WebSite", "name": "MyAnxietyTest", "url": "https://myanxietytest.com" },
+    "mainEntity": {
+      "@type": "SoftwareApplication",
+      "name": "Do I Have Anxiety Quiz",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "MyAnxietyTest", "item": "https://myanxietytest.com" },
+        { "@type": "ListItem", "position": 2, "name": "Do I Have Anxiety?", "item": "https://myanxietytest.com/do-i-have-anxiety/" }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:      #0064FA;
+      --ind:       #3730A3;
+      --ind-dark:  #1E1B4B;
+      --ind-mid:   #4F46E5;
+      --ind-soft:  #EEF2FF;
+      --ind-bdr:   #C7D2FE;
+      --bg:        #F5F6FF;
+      --surface:   #FFFFFF;
+      --border:    #E2E8F0;
+      --text:      #0F172A;
+      --muted:     #475569;
+      --muted-lt:  #94A3B8;
+      --green:     #16A34A;
+      --green-soft:#DCFCE7;
+      --amber:     #D97706;
+      --amber-soft:#FEF9C3;
+      --red:       #DC2626;
+      --red-soft:  #FEE2E2;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { color: inherit; text-decoration: none; }
+
+    .nav { background: var(--blue); position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 56px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 9px; }
+    .nav-logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .nav-logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; }
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+    .nav-link { font-size: 0.84rem; font-weight: 700; color: rgba(255,255,255,0.75); }
+    .nav-pill { font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.8); border: 1.5px solid rgba(255,255,255,0.3); padding: 5px 14px; border-radius: 999px; }
+
+    .hero { background: linear-gradient(155deg, #0f0e2e 0%, var(--ind-dark) 40%, var(--ind) 75%, var(--ind-mid) 100%); padding: clamp(48px,8vw,88px) clamp(16px,4vw,40px) clamp(40px,6vw,72px); text-align: center; }
+    .hero-inner { max-width: 700px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.88); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; padding: 5px 14px; border-radius: 999px; margin-bottom: 20px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(2.2rem,5.5vw,3.8rem); color: white; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 16px; }
+    .hero h1 span { color: #A5B4FC; }
+    .hero-sub { font-size: 1.02rem; color: rgba(255,255,255,0.7); max-width: 520px; margin: 0 auto 28px; line-height: 1.72; }
+    .hero-cta { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--ind-dark); font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.02rem; padding: 0 32px; height: 56px; border-radius: 999px; cursor: pointer; border: none; transition: all 0.18s; }
+    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+    .hero-checks { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 22px; }
+    .hero-check { display: flex; align-items: center; gap: 7px; font-size: 0.83rem; color: rgba(255,255,255,0.62); font-weight: 600; }
+    .hero-check::before { content: '✓'; color: #A5B4FC; font-weight: 900; font-size: 0.75rem; }
+
+    .quiz-wrap { max-width: 800px; margin: 0 auto; padding: 0 clamp(16px,3vw,24px) 80px; }
+
+    .progress-header { background: var(--ind); border-radius: 20px 20px 0 0; padding: 16px 24px 0; margin-top: 32px; }
+    .ph-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .ph-label { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.9); }
+    .ph-pct { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.6); }
+    .ph-bar { height: 4px; background: rgba(255,255,255,0.2); border-radius: 999px; overflow: hidden; }
+    .ph-bar-fill { height: 100%; background: white; border-radius: 999px; transition: width 0.4s ease; }
+
+    .q-card { background: var(--surface); border-radius: 0 0 20px 20px; border: 1px solid var(--border); border-top: none; box-shadow: 0 6px 28px rgba(55,48,163,0.08); padding: clamp(24px,4vw,36px); }
+    .q-badge { display: inline-flex; align-items: center; gap: 7px; background: var(--ind-soft); color: var(--ind-dark); border: 1px solid var(--ind-bdr); font-size: 0.73rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
+    .q-badge-num { background: var(--ind); color: white; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; font-weight: 900; }
+    .q-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1rem,2.2vw,1.25rem); letter-spacing: -0.015em; line-height: 1.35; color: var(--text); margin-bottom: 22px; }
+    .q-options { display: flex; flex-direction: column; gap: 10px; }
+    .q-opt { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border: 2px solid var(--border); border-radius: 14px; background: #FAFAFA; cursor: pointer; transition: all 0.14s; user-select: none; }
+    .q-opt:hover { border-color: var(--ind-bdr); background: var(--ind-soft); }
+    .q-opt.selected { border-color: var(--ind); background: var(--ind-soft); }
+    .q-opt-radio { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; transition: all 0.14s; display: grid; place-items: center; }
+    .q-opt.selected .q-opt-radio { border-color: var(--ind); background: var(--ind); }
+    .q-opt.selected .q-opt-radio::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: white; }
+    .q-opt-text { font-size: 0.9rem; font-weight: 600; line-height: 1.4; color: var(--text); }
+    .q-nav { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; }
+    .btn-back { height: 40px; padding: 0 16px; background: transparent; border: 2px solid var(--border); border-radius: 999px; font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; color: var(--muted); cursor: pointer; transition: all 0.14s; }
+    .btn-back:hover { border-color: var(--ind-bdr); color: var(--ind); }
+    .q-hint { font-size: 0.75rem; color: var(--muted-lt); font-weight: 600; }
+
+    /* RESULTS */
+    #results { display: none; padding-top: 32px; padding-bottom: 72px; }
+
+    /* VERDICT BANNER */
+    .verdict-banner { border-radius: 20px; padding: clamp(24px,4vw,36px); margin-bottom: 24px; display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+    .vb-icon { font-size: 2.8rem; flex-shrink: 0; }
+    .vb-right {}
+    .vb-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; margin-bottom: 6px; }
+    .vb-verdict { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.5rem,4vw,2.2rem); letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 10px; }
+    .vb-desc { font-size: 0.94rem; line-height: 1.75; opacity: 0.85; max-width: 540px; }
+
+    /* SYMPTOM CARD - the unique result element */
+    .symptom-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: clamp(20px,3vw,28px); margin-bottom: 20px; box-shadow: 0 2px 12px rgba(55,48,163,0.06); }
+    .sc-header { margin-bottom: 18px; }
+    .sc-eyebrow { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ind); margin-bottom: 4px; }
+    .sc-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; }
+    .sc-sub { font-size: 0.8rem; color: var(--muted); margin-top: 3px; }
+    .symptom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .sym-item { border-radius: 12px; padding: 12px 14px; border: 1.5px solid; display: flex; align-items: flex-start; gap: 10px; }
+    .sym-check { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 0.72rem; font-weight: 900; flex-shrink: 0; }
+    .sym-body {}
+    .sym-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.82rem; margin-bottom: 2px; }
+    .sym-desc { font-size: 0.74rem; line-height: 1.4; }
+
+    /* sym states */
+    .sym-high { background: #FEF2F2; border-color: #FECACA; }
+    .sym-high .sym-check { background: var(--red); color: white; }
+    .sym-high .sym-name { color: var(--red); }
+    .sym-high .sym-desc { color: #7F1D1D; }
+    .sym-mid { background: #FFFBEB; border-color: #FDE68A; }
+    .sym-mid .sym-check { background: var(--amber); color: white; }
+    .sym-mid .sym-name { color: var(--amber); }
+    .sym-mid .sym-desc { color: #78350F; }
+    .sym-low { background: #F8FAFC; border-color: var(--border); }
+    .sym-low .sym-check { background: var(--border); color: var(--muted); }
+    .sym-low .sym-name { color: var(--muted); }
+    .sym-low .sym-desc { color: var(--muted-lt); }
+
+    .section-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: clamp(20px,3vw,28px); margin-bottom: 20px; box-shadow: 0 2px 12px rgba(55,48,163,0.06); }
+    .scard-eyebrow { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ind); margin-bottom: 5px; }
+    .scard-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; margin-bottom: 12px; }
+    .scard-body { font-size: 0.88rem; color: var(--muted); line-height: 1.78; }
+    .scard-body p { margin-bottom: 10px; }
+    .scard-body p:last-child { margin-bottom: 0; }
+
+    .steps-list { display: flex; flex-direction: column; gap: 14px; margin-top: 12px; }
+    .step-item { display: flex; gap: 14px; align-items: flex-start; }
+    .step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--ind-soft); color: var(--ind-dark); border: 1.5px solid var(--ind-bdr); display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.8rem; flex-shrink: 0; }
+    .step-body h4 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; letter-spacing: -0.01em; margin-bottom: 3px; }
+    .step-body p { font-size: 0.82rem; color: var(--muted); line-height: 1.56; }
+
+    .cta-card { background: linear-gradient(135deg, var(--ind-dark), var(--ind)); border-radius: 20px; padding: clamp(24px,4vw,32px); margin-bottom: 20px; }
+    .cta-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 8px; }
+    .cta-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.05rem,2.3vw,1.35rem); color: white; letter-spacing: -0.02em; margin-bottom: 10px; line-height: 1.22; }
+    .cta-body { font-size: 0.88rem; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 20px; }
+    .cta-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 22px; }
+    .cta-feat { font-size: 0.81rem; color: rgba(255,255,255,0.75); font-weight: 600; display: flex; align-items: center; gap: 7px; }
+    .cta-feat::before { content: '✓'; color: #A5B4FC; font-weight: 900; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; height: 50px; padding: 0 26px; background: white; color: var(--ind-dark); font-family: 'Nunito', sans-serif; font-size: 0.96rem; font-weight: 900; border-radius: 14px; transition: all 0.2s; }
+    .cta-btn:hover { background: var(--ind-soft); transform: translateY(-1px); }
+
+    .faq-section { margin-bottom: 48px; }
+    .faq-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.3rem; letter-spacing: -0.02em; margin-bottom: 16px; }
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; }
+    .faq-q { display: flex; align-items: flex-start; gap: 12px; }
+    .faq-icon { width: 26px; height: 26px; background: var(--ind-soft); color: var(--ind-dark); border-radius: 7px; display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.78rem; flex-shrink: 0; border: 1px solid var(--ind-bdr); }
+    .faq-q-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.96rem; letter-spacing: -0.01em; line-height: 1.35; }
+    .faq-a { font-size: 0.86rem; color: var(--muted); line-height: 1.72; margin-top: 10px; padding-left: 38px; }
+    .faq-a a { color: var(--ind); font-weight: 700; }
+
+    .related-section { margin-bottom: 48px; }
+    .related-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; margin-bottom: 14px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 5px; transition: all 0.17s; }
+    .related-card:hover { border-color: var(--ind-bdr); transform: translateY(-2px); }
+    .rc-icon { font-size: 1.2rem; }
+    .rc-name { font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 900; }
+    .rc-desc { font-size: 0.73rem; color: var(--muted); line-height: 1.4; flex: 1; }
+    .rc-link { font-size: 0.74rem; font-weight: 700; color: var(--ind); }
+
+    .footer { background: #0f0e2e; padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.1); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.77rem; color: rgba(255,255,255,0.32); font-weight: 600; transition: color 0.14s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.7); }
+    .footer-copy { max-width: 1100px; margin: 14px auto 0; font-size: 0.73rem; color: rgba(255,255,255,0.18); text-align: center; }
+
+    @media (max-width: 600px) {
+      .symptom-grid { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: 1fr 1fr; }
+      .cta-feats { grid-template-columns: 1fr; }
+      .verdict-banner { flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="https://myanxietytest.com/" class="nav-logo">
+      <div class="nav-logo-mark">🧠</div>
+      <div class="nav-logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="nav-right">
+      <a href="https://myanxietytest.com/" class="nav-link">All tools</a>
+      <div class="nav-pill">Free · No sign-up</div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="hero-section">
+  <div class="hero-inner">
+    <div class="hero-badge">🔍 Anxiety self-assessment</div>
+    <h1>Do I have <span>anxiety?</span></h1>
+    <p class="hero-sub">Not sure whether what you are experiencing is anxiety or just stress, overthinking or a difficult period? This quiz checks all the major anxiety symptoms and gives you a clear, honest answer.</p>
+    <button class="hero-cta" onclick="startQuiz()">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><polygon points="8,6.5 14,10 8,13.5" fill="currentColor"/></svg>
+      Take the Free Quiz
+    </button>
+    <div class="hero-checks">
+      <div class="hero-check">18 questions</div>
+      <div class="hero-check">All major symptoms</div>
+      <div class="hero-check">Personalised symptom profile</div>
+      <div class="hero-check">100% anonymous</div>
+    </div>
+  </div>
+</section>
+
+<div class="quiz-wrap">
+
+  <div id="quiz-section" style="display:none;">
+    <div class="progress-header">
+      <div class="ph-top">
+        <span class="ph-label" id="ph-label">Question 1 of 18</span>
+        <span class="ph-pct" id="ph-pct">0% complete</span>
+      </div>
+      <div class="ph-bar"><div class="ph-bar-fill" id="ph-fill" style="width:5%"></div></div>
+    </div>
+    <div class="q-card">
+      <div class="q-badge">
+        <div class="q-badge-num" id="q-badge-num">1</div>
+        <span id="q-badge-cat">Worry</span>
+      </div>
+      <div class="q-text" id="q-text"></div>
+      <div class="q-options" id="q-options"></div>
+      <div class="q-nav">
+        <button class="btn-back" id="btn-back" onclick="goBack()">← Back</button>
+        <div class="q-hint" id="q-hint">Select an answer to continue</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="results" style="display:none;">
+
+    <div class="verdict-banner" id="verdict-banner">
+      <div class="vb-icon" id="vb-icon"></div>
+      <div class="vb-right">
+        <div class="vb-eyebrow">Your result</div>
+        <div class="vb-verdict" id="vb-verdict"></div>
+        <div class="vb-desc" id="vb-desc"></div>
+      </div>
+    </div>
+
+    <div class="symptom-card">
+      <div class="sc-header">
+        <div class="sc-eyebrow">Symptom profile</div>
+        <div class="sc-title">How your symptoms look across all categories</div>
+        <div class="sc-sub">Based on your answers. Red = strongly present, amber = partially present, grey = not significant.</div>
+      </div>
+      <div class="symptom-grid" id="symptom-grid"></div>
+    </div>
+
+    <div class="section-card">
+      <div class="scard-eyebrow">What this means</div>
+      <div class="scard-title" id="meaning-title"></div>
+      <div class="scard-body" id="meaning-body"></div>
+    </div>
+
+    <div class="section-card">
+      <div class="scard-eyebrow">Your next steps</div>
+      <div class="scard-title" id="steps-title">What to do with this result</div>
+      <div class="steps-list" id="steps-list"></div>
+    </div>
+
+    <div class="cta-card" id="cta-card" style="display:none;">
+      <div class="cta-eyebrow">Professional support</div>
+      <div class="cta-title" id="cta-title"></div>
+      <div class="cta-body" id="cta-body"></div>
+      <div class="cta-feats">
+        <div class="cta-feat">Licensed therapists online</div>
+        <div class="cta-feat">Start within days, not months</div>
+        <div class="cta-feat">Specialised in anxiety</div>
+        <div class="cta-feat">20% off your first month</div>
+      </div>
+      <a href="https://www.onlinetherapy.com?aff_id=1116&offer_id=2&source=quizDoIHaveAnxiety" class="cta-btn" target="_blank" rel="noopener">Find a Therapist, 20% Off →</a>
+    </div>
+
+    <div class="faq-section">
+      <div class="faq-title">Frequently asked questions</div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">What is the difference between anxiety and normal stress?</div></div>
+          <div class="faq-a">Normal stress is proportionate to a specific situation and resolves when the situation does. Anxiety tends to persist beyond the triggering situation, appears across multiple areas of life, and often feels difficult to control even when you know the worry is disproportionate. The key distinction is not the intensity but the pattern over time.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Can anxiety show up as physical symptoms rather than worry?</div></div>
+          <div class="faq-a">Yes. Anxiety is fundamentally a physiological response. Physical symptoms including chest tightness, racing heart, nausea, muscle tension, headaches and fatigue are all common anxiety presentations. Some people experience predominantly physical anxiety with very little of the classic worry pattern. This is called somatic anxiety and is just as real as the cognitive form.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Can I have anxiety without panic attacks?</div></div>
+          <div class="faq-a">Yes. Panic attacks are one possible feature of anxiety, but most people with anxiety never have them. Anxiety can present as persistent low-level worry, physical tension, avoidance behaviour, sleep problems, irritability or social difficulty, with no panic attacks at all.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Does this quiz diagnose anxiety?</div></div>
+          <div class="faq-a">No. This is a self-assessment tool that checks whether your experience matches the recognised symptom patterns of anxiety. Only a qualified mental health or medical professional can diagnose an anxiety disorder. This quiz gives you a clear picture of what is present and whether professional assessment makes sense.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">What should I do if the quiz says I likely have anxiety?</div></div>
+          <div class="faq-a">The most useful next step is to understand your anxiety more specifically. The <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a> gives a full severity score. The <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/">What Type of Anxiety Do I Have</a> quiz identifies the specific pattern. If the impact is significant, the <a href="https://myanxietytest.com/am-i-ready-for-therapy/">Am I Ready for Therapy</a> quiz helps you work out whether professional support is the right next step.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="related-section">
+      <div class="related-title">Understand your anxiety further</div>
+      <div class="related-grid">
+        <a href="https://myanxietytest.com/anxiety-level/" class="related-card">
+          <div class="rc-icon">📊</div>
+          <div class="rc-name">Anxiety Level Test</div>
+          <div class="rc-desc">Full severity score across worry, panic, sleep and physical symptoms.</div>
+          <div class="rc-link">Take the test →</div>
+        </a>
+        <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/" class="related-card">
+          <div class="rc-icon">🔎</div>
+          <div class="rc-name">What Type of Anxiety?</div>
+          <div class="rc-desc">Identifies your specific anxiety pattern across GAD, social, health and panic.</div>
+          <div class="rc-link">Find my type →</div>
+        </a>
+        <a href="https://myanxietytest.com/am-i-ready-for-therapy/" class="related-card">
+          <div class="rc-icon">🛋️</div>
+          <div class="rc-name">Am I Ready for Therapy?</div>
+          <div class="rc-desc">Find out where you are in the process and what is actually stopping you.</div>
+          <div class="rc-link">Check readiness →</div>
+        </a>
+      </div>
+    </div>
+
+    <button onclick="restartQuiz()" style="display:block;margin:0 auto 24px;height:40px;padding:0 20px;background:transparent;border:2px solid var(--border);border-radius:999px;font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:800;color:var(--muted);cursor:pointer;">← Retake the quiz</button>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="footer-mark">🧠</div>MyAnxietyTest.com</div>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">All tools</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/">What Type of Anxiety?</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy?</a>
+      <a href="https://myanxietytest.com/articles/">Articles</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+</footer>
+
+<script>
+var SYMPTOMS = [
+  { key: 'worry',    name: 'Persistent worry',    icon: '🌀', desc: 'Excessive worry across multiple areas' },
+  { key: 'control',  name: 'Loss of control',      icon: '🔒', desc: 'Difficulty stopping anxious thoughts' },
+  { key: 'physical', name: 'Physical symptoms',    icon: '🫀', desc: 'Racing heart, tension, nausea' },
+  { key: 'sleep',    name: 'Sleep disruption',     icon: '🌙', desc: 'Worry interfering with sleep' },
+  { key: 'avoidance',name: 'Avoidance',            icon: '🚪', desc: 'Avoiding situations due to anxiety' },
+  { key: 'social',   name: 'Social anxiety',       icon: '👥', desc: 'Fear of judgment or social situations' },
+  { key: 'irritable',name: 'Irritability',         icon: '⚡', desc: 'Anxiety converting to irritability' },
+  { key: 'focus',    name: 'Concentration',        icon: '🎯', desc: 'Difficulty focusing due to anxiety' }
+];
+
+var QUESTIONS = [
+  { cat: 'Worry', sym: 'worry', text: 'How often do you find yourself worrying about things even when there is no specific reason to?', opts: ['Rarely or never', 'Occasionally, but I move on fairly easily', 'Often, the worry persists even when I try to stop it', 'Almost constantly, it runs in the background'] },
+  { cat: 'Control', sym: 'control', text: 'When you start worrying, how easy is it to stop?', opts: ['Easy, I can usually let it go', 'Somewhat easy with effort', 'Difficult, it takes significant effort', 'Very difficult, I rarely feel in control of the worry'] },
+  { cat: 'Physical', sym: 'physical', text: 'How often do you experience physical sensations connected to anxiety such as a racing heart, tight chest, shallow breathing or nausea?', opts: ['Rarely or never', 'Occasionally', 'Often, several times a week', 'Very often, most days'] },
+  { cat: 'Physical', sym: 'physical', text: 'How often do you experience persistent muscle tension, headaches or unexplained physical fatigue that seems connected to stress or anxiety?', opts: ['Rarely', 'Sometimes', 'Often', 'Almost every day'] },
+  { cat: 'Sleep', sym: 'sleep', text: 'How often do anxious thoughts keep you from falling asleep or wake you during the night?', opts: ['Rarely or never', 'A few nights a month', 'Most nights', 'Almost every night'] },
+  { cat: 'Avoidance', sym: 'avoidance', text: 'How often do you avoid situations, decisions or conversations because of anxiety, even when part of you wants to engage?', opts: ['Rarely, I usually follow through', 'Occasionally', 'Fairly often', 'Regularly, avoidance shapes a lot of what I do'] },
+  { cat: 'Social', sym: 'social', text: 'How much does anxiety affect your ability to speak up, be visible or feel comfortable around others?', opts: ['Minimally, I am mostly comfortable', 'Somewhat in certain situations', 'Significantly, it holds me back regularly', 'A great deal, it shapes most of my social behaviour'] },
+  { cat: 'Irritability', sym: 'irritable', text: 'How often do you feel irritable or reactive in a way that seems connected to an underlying tension rather than a specific event?', opts: ['Rarely', 'Sometimes', 'Often', 'Very often, it is a consistent pattern'] },
+  { cat: 'Focus', sym: 'focus', text: 'How much does anxiety interfere with your ability to concentrate or complete tasks?', opts: ['Minimally', 'Somewhat', 'Significantly, it affects my output', 'A great deal, focus is a persistent problem'] },
+  { cat: 'Duration', sym: 'worry', text: 'How long has anxiety been a regular feature of your experience?', opts: ['A few weeks or less', 'A couple of months', 'Six months to a year', 'More than a year, it is a consistent pattern'] },
+  { cat: 'Impact', sym: 'avoidance', text: 'How much is anxiety limiting what you do, pursue or enjoy?', opts: ['Not much, anxiety is manageable', 'Somewhat, there are things I do with more difficulty', 'Noticeably, it is costing me real opportunities', 'Significantly, it is one of the main constraints on my life'] },
+  { cat: 'Worry', sym: 'worry', text: 'How often does worry feel disproportionate to the actual situation, even when you know that?', opts: ['Rarely, my worry is usually proportionate', 'Sometimes', 'Often, I can see the worry is out of proportion but cannot reduce it', 'Almost always, the gap between the worry and the situation is clear'] },
+  { cat: 'Control', sym: 'control', text: 'How often do you feel a need to control or prepare excessively in order to manage anxiety about what might happen?', opts: ['Rarely, I am mostly comfortable with uncertainty', 'Sometimes', 'Often, I over-prepare or over-plan to manage the anxiety', 'Very often, controlling what I can is how I cope with most things'] },
+  { cat: 'Physical', sym: 'physical', text: 'Have you ever experienced what felt like a panic attack, where anxiety came on suddenly and intensely with strong physical symptoms?', opts: ['No', 'Once or twice', 'Several times', 'Yes, regularly'] },
+  { cat: 'Sleep', sym: 'sleep', text: 'How often do you wake in the morning already feeling tense, anxious or dreading the day ahead?', opts: ['Rarely', 'Occasionally', 'Often', 'Most mornings'] },
+  { cat: 'Social', sym: 'social', text: 'How much do you replay conversations or social interactions afterwards, worrying about how you came across?', opts: ['Rarely, I usually let it go', 'Sometimes', 'Often', 'Very often, it can last hours or days'] },
+  { cat: 'Focus', sym: 'focus', text: 'How often does anxiety make small decisions feel bigger or harder than they need to be?', opts: ['Rarely', 'Sometimes', 'Often', 'Very often, even small choices cause significant anxiety'] },
+  { cat: 'Overall', sym: 'worry', text: 'Overall, how much would you say anxiety is reducing your quality of life right now?', opts: ['Not much, it is manageable', 'Somewhat, it creates real friction', 'Quite a bit, it is a meaningful daily cost', 'A lot, it is significantly limiting my life'] }
+];
+
+var current = 0;
+var answers = new Array(18).fill(null);
+var symScores = {};
+SYMPTOMS.forEach(function(s) { symScores[s.key] = 0; });
+
+function startQuiz() {
+  document.getElementById('hero-section').style.display = 'none';
+  document.getElementById('quiz-section').style.display = 'block';
+  renderQuestion();
+}
+
+function renderQuestion() {
+  var q = QUESTIONS[current];
+  var pct = Math.round(((current + 1) / 18) * 100);
+  document.getElementById('ph-label').textContent = 'Question ' + (current + 1) + ' of 18';
+  document.getElementById('ph-pct').textContent = pct + '% complete';
+  document.getElementById('ph-fill').style.width = pct + '%';
+  document.getElementById('q-badge-num').textContent = current + 1;
+  document.getElementById('q-badge-cat').textContent = q.cat;
+  document.getElementById('q-text').textContent = q.text;
+  document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
+  document.getElementById('q-hint').textContent = 'Select an answer to continue';
+
+  var optsEl = document.getElementById('q-options');
+  optsEl.innerHTML = '';
+  q.opts.forEach(function(opt, i) {
+    var div = document.createElement('div');
+    div.className = 'q-opt' + (answers[current] === i ? ' selected' : '');
+    div.innerHTML = '<div class="q-opt-radio"></div><div class="q-opt-text">' + opt + '</div>';
+    div.onclick = function() { selectAnswer(i); };
+    optsEl.appendChild(div);
+  });
+}
+
+function selectAnswer(i) {
+  answers[current] = i;
+  document.querySelectorAll('.q-opt').forEach(function(el, idx) {
+    el.classList.toggle('selected', idx === i);
+  });
+  document.getElementById('q-hint').textContent = '';
+  setTimeout(function() {
+    if (current === 17) { showResults(); }
+    else { current++; renderQuestion(); }
+  }, 320);
+}
+
+function goBack() {
+  if (current === 0) return;
+  current--;
+  renderQuestion();
+}
+
+function computeResults() {
+  var scores = {};
+  SYMPTOMS.forEach(function(s) { scores[s.key] = 0; });
+  var counts = {};
+  SYMPTOMS.forEach(function(s) { counts[s.key] = 0; });
+
+  answers.forEach(function(ans, qi) {
+    if (ans === null) return;
+    var q = QUESTIONS[qi];
+    scores[q.sym] += ans;
+    counts[q.sym]++;
+  });
+
+  var symLevels = {};
+  SYMPTOMS.forEach(function(s) {
+    var count = counts[s.key];
+    if (count === 0) { symLevels[s.key] = 'low'; return; }
+    var avg = scores[s.key] / count;
+    symLevels[s.key] = avg >= 2 ? 'high' : avg >= 1 ? 'mid' : 'low';
+  });
+
+  var totalRaw = answers.reduce(function(a, b) { return a + (b || 0); }, 0);
+  var totalPct = Math.round((totalRaw / (18 * 3)) * 100);
+  var highCount = Object.values(symLevels).filter(function(v) { return v === 'high'; }).length;
+  var midCount = Object.values(symLevels).filter(function(v) { return v === 'mid'; }).length;
+
+  var verdict;
+  if (highCount >= 4 || totalPct >= 55) verdict = 'likely';
+  else if (highCount >= 2 || midCount >= 4 || totalPct >= 35) verdict = 'possible';
+  else if (highCount >= 1 || midCount >= 2 || totalPct >= 20) verdict = 'mild';
+  else verdict = 'unlikely';
+
+  return { symLevels: symLevels, totalPct: totalPct, verdict: verdict, highCount: highCount, midCount: midCount };
+}
+
+var VERDICTS = {
+  likely: {
+    icon: '🔴',
+    bg: '#1E1B4B',
+    textColor: 'white',
+    descColor: 'rgba(255,255,255,0.82)',
+    eyebrowColor: 'rgba(255,255,255,0.5)',
+    verdict: 'Your symptoms are consistent with anxiety',
+    desc: 'Based on your answers, what you are experiencing matches the recognised symptom pattern of anxiety across multiple categories. This is not a diagnosis, but the pattern is clear enough to take seriously and address directly.',
+    meaningTitle: 'What your symptom profile means',
+    meaning: '<p>Anxiety at this level typically does not resolve on its own over time. Left unaddressed, the symptoms tend to entrench and the coping strategies built around them gradually narrow what feels manageable. The pattern you are describing is real and has a well-established set of effective treatments.</p><p>The most important next step is not confirming that you have anxiety, but understanding it specifically enough to address it. The quizzes below help with that.</p>',
+    stepsTitle: 'What to do now',
+    steps: [
+      { title: 'Take the Anxiety Level Test', body: 'It gives you a severity score across all four major domains: worry, panic, sleep and physical symptoms. Having that score gives you a baseline and something to measure improvement against. <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--ind);font-weight:700;">Take the Anxiety Level Test →</a>' },
+      { title: 'Understand your specific anxiety type', body: 'The What Type of Anxiety Do I Have quiz identifies whether your pattern is closer to GAD, social anxiety, health anxiety or panic. The type shapes which approach works best. <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/" style="color:var(--ind);font-weight:700;">Take the quiz →</a>' },
+      { title: 'Consider whether professional support makes sense', body: 'At this symptom level, CBT for anxiety has a strong evidence base. The Am I Ready for Therapy quiz helps you work out where you are in that decision. <a href="https://myanxietytest.com/am-i-ready-for-therapy/" style="color:var(--ind);font-weight:700;">Check your readiness →</a>' }
+    ],
+    showCTA: true,
+    ctaTitle: 'When symptoms match this clearly, professional support makes a real difference',
+    ctaBody: 'CBT for anxiety has consistent response rates above 60% and effects that last. Online therapy means you can start within days rather than waiting months. A therapist who specialises in anxiety can address the specific pattern your symptom profile shows.'
+  },
+  possible: {
+    icon: '🟡',
+    bg: '#78350F',
+    textColor: 'white',
+    descColor: 'rgba(255,255,255,0.82)',
+    eyebrowColor: 'rgba(255,255,255,0.5)',
+    verdict: 'Anxiety is likely present, possibly at a level you have normalised',
+    desc: 'Your answers show a meaningful pattern of anxiety symptoms across several categories. The picture is not complete in every direction, but the pattern is significant enough to take seriously rather than dismiss as normal stress.',
+    meaningTitle: 'Why partial patterns are easy to miss',
+    meaning: '<p>Anxiety at this level is often normalised. When symptoms have been present for a while and you have built coping strategies around them, the overall picture can feel like just how you are rather than something that could change.</p><p>The fact that not every symptom category is strongly present does not mean the anxiety is minor. It means it has a specific shape, and understanding that shape is the most useful next step.</p>',
+    stepsTitle: 'What to do from here',
+    steps: [
+      { title: 'Look at which symptom categories are highest for you', body: 'The symptom profile above shows which areas are most strongly present. Starting with the highest ones gives you the most specific picture of your anxiety pattern.' },
+      { title: 'Take the What Type of Anxiety quiz', body: 'Your symptom profile suggests a specific anxiety pattern rather than generalised anxiety across everything. Identifying the type is the most direct route to understanding what is driving it. <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/" style="color:var(--ind);font-weight:700;">Find my type →</a>' },
+      { title: 'Track whether it changes over time', body: 'Use the Anxiety Timeline Tracker to log daily levels over the next month. If the pattern is consistent or getting worse, that is useful information for deciding whether professional support makes sense. <a href="https://myanxietytest.com/anxiety-tracker/" style="color:var(--ind);font-weight:700;">Open the tracker →</a>' }
+    ],
+    showCTA: true,
+    ctaTitle: 'When anxiety is present at this level, addressing it earlier produces better outcomes',
+    ctaBody: 'Anxiety at a moderate level tends to compound over time rather than resolve. CBT works at this level and the effects are maintained. Online therapy makes starting accessible without disrupting your schedule.'
+  },
+  mild: {
+    icon: '🟢',
+    bg: '#14532D',
+    textColor: 'white',
+    descColor: 'rgba(255,255,255,0.82)',
+    eyebrowColor: 'rgba(255,255,255,0.5)',
+    verdict: 'Some anxiety features are present, but at a mild level',
+    desc: 'Your answers suggest anxiety is present in some areas but does not yet show the persistent, broad pattern that characterises clinically significant anxiety. Some symptoms are there, but the overall picture is relatively contained.',
+    meaningTitle: 'What a mild anxiety pattern means',
+    meaning: '<p>Mild anxiety features are extremely common and often do not require professional intervention. However, they are worth understanding and monitoring rather than ignoring, because mild patterns that go unaddressed tend to develop rather than resolve when circumstances change.</p><p>The symptom categories where you scored higher are the clearest places to direct attention. Understanding those specifically gives you more leverage than general stress management.</p>',
+    stepsTitle: 'What is most useful at this level',
+    steps: [
+      { title: 'Note which symptom categories were highest', body: 'Even at a mild overall level, there are likely one or two areas where anxiety shows up more strongly. Starting there is more useful than addressing anxiety generically.' },
+      { title: 'Use the Anxiety Triggers Identifier', body: 'Understanding what activates your anxiety in its specific form helps you address the cause rather than just managing symptoms.' },
+      { title: 'Revisit this quiz in 30 to 60 days', body: 'Anxiety patterns change over time. If symptoms increase, having a baseline makes that easier to see and act on.' }
+    ],
+    showCTA: false
+  },
+  unlikely: {
+    icon: '⚪',
+    bg: '#1E293B',
+    textColor: 'white',
+    descColor: 'rgba(255,255,255,0.82)',
+    eyebrowColor: 'rgba(255,255,255,0.5)',
+    verdict: 'Anxiety does not appear to be a significant issue right now',
+    desc: 'Based on your answers, the anxiety symptom pattern is not strongly present across the major categories. What you are experiencing may be normal stress responses rather than anxiety in the clinical sense.',
+    meaningTitle: 'What this result means',
+    meaning: '<p>This result does not mean you never experience anxiety or that nothing is difficult. It means the pattern of persistent, broad and difficult-to-control symptoms that characterises anxiety is not clearly present based on your answers.</p><p>If something about this result does not match your experience, it may be worth exploring whether a specific anxiety type rather than general anxiety is more relevant. Some anxiety presentations are domain-specific and do not show up strongly on a general screen.</p>',
+    stepsTitle: 'If something feels off about this result',
+    steps: [
+      { title: 'Try the What Type of Anxiety quiz', body: 'Some anxiety presentations are highly specific. Social anxiety, health anxiety or panic disorder can be significant without showing up strongly on a general screen.' },
+      { title: 'Take the Is My Anxiety Getting Worse quiz', body: 'If you are concerned about a pattern that has been building, that quiz is specifically designed to track change over time rather than current symptoms.' },
+      { title: 'Trust your experience', body: 'If your lived experience does not match this result, the result is probably incomplete rather than your experience being wrong. Use the more specific tools to look more carefully.' }
+    ],
+    showCTA: false
+  }
+};
+
+function showResults() {
+  document.getElementById('quiz-section').style.display = 'none';
+  document.getElementById('results').style.display = 'block';
+
+  var res = computeResults();
+  var V = VERDICTS[res.verdict];
+
+  var banner = document.getElementById('verdict-banner');
+  banner.style.background = V.bg;
+  banner.style.border = 'none';
+  document.getElementById('vb-icon').textContent = V.icon;
+  document.getElementById('vb-verdict').textContent = V.verdict;
+  document.getElementById('vb-verdict').style.color = V.textColor;
+  document.getElementById('vb-desc').textContent = V.desc;
+  document.getElementById('vb-desc').style.color = V.descColor;
+  banner.querySelector('.vb-eyebrow').style.color = V.eyebrowColor;
+
+  var grid = document.getElementById('symptom-grid');
+  grid.innerHTML = '';
+  SYMPTOMS.forEach(function(s) {
+    var level = res.symLevels[s.key];
+    var cls = level === 'high' ? 'sym-high' : level === 'mid' ? 'sym-mid' : 'sym-low';
+    var checkText = level === 'high' ? '!!' : level === 'mid' ? '!' : '--';
+    var levelLabel = level === 'high' ? 'Strongly present' : level === 'mid' ? 'Partially present' : 'Not significant';
+    grid.innerHTML +=
+      '<div class="sym-item ' + cls + '">' +
+        '<div class="sym-check">' + checkText + '</div>' +
+        '<div class="sym-body">' +
+          '<div class="sym-name">' + s.icon + ' ' + s.name + '</div>' +
+          '<div class="sym-desc">' + levelLabel + ': ' + s.desc + '</div>' +
+        '</div>' +
+      '</div>';
+  });
+
+  document.getElementById('meaning-title').textContent = V.meaningTitle;
+  document.getElementById('meaning-body').innerHTML = V.meaning;
+
+  var stepsList = document.getElementById('steps-list');
+  stepsList.innerHTML = '';
+  V.steps.forEach(function(s, i) {
+    stepsList.innerHTML +=
+      '<div class="step-item">' +
+        '<div class="step-num">' + (i + 1) + '</div>' +
+        '<div class="step-body"><h4>' + s.title + '</h4><p>' + s.body + '</p></div>' +
+      '</div>';
+  });
+
+  if (V.showCTA) {
+    document.getElementById('cta-card').style.display = 'block';
+    document.getElementById('cta-title').textContent = V.ctaTitle;
+    document.getElementById('cta-body').textContent = V.ctaBody;
+  }
+
+  window.scrollTo(0, 0);
+}
+
+function restartQuiz() {
+  current = 0;
+  answers = new Array(18).fill(null);
+  SYMPTOMS.forEach(function(s) { symScores[s.key] = 0; });
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('cta-card').style.display = 'none';
+  document.getElementById('quiz-section').style.display = 'block';
+  renderQuestion();
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
