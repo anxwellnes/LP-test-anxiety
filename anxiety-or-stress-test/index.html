@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anxiety or Stress Test: Which One Is It?</title>
+  <meta name="description" content="Anxiety and stress feel similar but work very differently. 14 questions that separate the two. Find out which is driving your experience and what that means." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-or-stress-test/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anxiety or Stress Test: Which One Is It?" />
+  <meta property="og:description" content="14 questions that separate anxiety from stress. Find out which is driving your experience." />
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-or-stress-test/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+  <meta name="twitter:card" content="summary" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Anxiety or Stress Test: Which One Is It?",
+    "description": "A 14-question assessment that distinguishes anxiety from stress based on controllability, persistence, proportionality and physical pattern. Provides a verdict with personalised explanation.",
+    "url": "https://myanxietytest.com/anxiety-or-stress-test/",
+    "inLanguage": "en",
+    "about": { "@type": "MedicalCondition", "name": "Anxiety", "sameAs": "https://en.wikipedia.org/wiki/Anxiety" },
+    "isPartOf": { "@type": "WebSite", "name": "MyAnxietyTest", "url": "https://myanxietytest.com" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "MyAnxietyTest", "item": "https://myanxietytest.com" },
+        { "@type": "ListItem", "position": 2, "name": "Anxiety or Stress Test", "item": "https://myanxietytest.com/anxiety-or-stress-test/" }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:     #0064FA;
+      --ax:       #7C3AED;
+      --ax-dark:  #4C1D95;
+      --ax-soft:  #F5F3FF;
+      --ax-bdr:   #DDD6FE;
+      --st:       #0F766E;
+      --st-dark:  #042f2e;
+      --st-soft:  #F0FDFA;
+      --st-bdr:   #99F6E4;
+      --bg:       #F8F7FF;
+      --surface:  #FFFFFF;
+      --border:   #E2E8F0;
+      --text:     #0F172A;
+      --muted:    #475569;
+      --muted-lt: #94A3B8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { color: inherit; text-decoration: none; }
+
+    .nav { background: var(--blue); position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 56px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 9px; }
+    .nav-logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .nav-logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; }
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+    .nav-link { font-size: 0.84rem; font-weight: 700; color: rgba(255,255,255,0.75); }
+    .nav-pill { font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.8); border: 1.5px solid rgba(255,255,255,0.3); padding: 5px 14px; border-radius: 999px; }
+
+    /* HERO split purple/teal */
+    .hero { position: relative; overflow: hidden; padding: clamp(48px,8vw,88px) clamp(16px,4vw,40px) clamp(40px,6vw,72px); text-align: center; }
+    .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--ax-dark) 0%, var(--ax) 45%, var(--st) 75%, var(--st-dark) 100%); }
+    .hero-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+    .hero-vs { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px; }
+    .hero-vs-pill { padding: 5px 16px; border-radius: 999px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; letter-spacing: 0.03em; }
+    .hero-vs-pill.ax { background: rgba(196,181,253,0.2); border: 1.5px solid rgba(196,181,253,0.4); color: #C4B5FD; }
+    .hero-vs-pill.st { background: rgba(153,246,228,0.2); border: 1.5px solid rgba(153,246,228,0.4); color: #99F6E4; }
+    .hero-vs-sep { color: rgba(255,255,255,0.4); font-weight: 700; font-size: 0.9rem; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(2rem,5vw,3.5rem); color: white; line-height: 1.08; letter-spacing: -0.03em; margin-bottom: 14px; }
+    .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 520px; margin: 0 auto 28px; line-height: 1.72; }
+    .hero-cta { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--ax-dark); font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.02rem; padding: 0 32px; height: 56px; border-radius: 999px; cursor: pointer; border: none; transition: all 0.18s; }
+    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+    .hero-checks { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 22px; }
+    .hero-check { display: flex; align-items: center; gap: 7px; font-size: 0.83rem; color: rgba(255,255,255,0.62); font-weight: 600; }
+    .hero-check::before { content: '✓'; color: #C4B5FD; font-weight: 900; font-size: 0.75rem; }
+
+    .quiz-wrap { max-width: 820px; margin: 0 auto; padding: 0 clamp(16px,3vw,24px) 80px; }
+
+    /* LIVE SPLIT TRACKER */
+    .live-tracker { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 18px 20px; margin-top: 28px; margin-bottom: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+    .lt-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-lt); text-align: center; margin-bottom: 10px; }
+    .lt-bar-wrap { height: 16px; border-radius: 999px; overflow: hidden; display: flex; background: var(--border); }
+    .lt-bar-ax { height: 100%; background: linear-gradient(90deg, var(--ax-dark), var(--ax)); transition: width 0.5s ease; border-radius: 999px 0 0 999px; }
+    .lt-bar-st { height: 100%; background: linear-gradient(90deg, var(--st), var(--st-dark)); transition: width 0.5s ease; border-radius: 0 999px 999px 0; }
+    .lt-labels { display: flex; justify-content: space-between; margin-top: 7px; }
+    .lt-lbl { font-size: 0.74rem; font-weight: 700; }
+    .lt-lbl.ax { color: var(--ax); }
+    .lt-lbl.st { color: var(--st); }
+
+    /* PROGRESS */
+    .progress-header { background: linear-gradient(90deg, var(--ax), var(--st)); border-radius: 20px 20px 0 0; padding: 16px 24px 0; }
+    .ph-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .ph-label { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.9); }
+    .ph-pct { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.6); }
+    .ph-bar { height: 4px; background: rgba(255,255,255,0.2); border-radius: 999px; overflow: hidden; }
+    .ph-bar-fill { height: 100%; background: white; border-radius: 999px; transition: width 0.4s ease; }
+
+    .q-card { background: var(--surface); border-radius: 0 0 20px 20px; border: 1px solid var(--border); border-top: none; box-shadow: 0 6px 28px rgba(124,58,237,0.07); padding: clamp(24px,4vw,36px); }
+    .q-badge { display: inline-flex; align-items: center; gap: 7px; background: var(--ax-soft); color: var(--ax-dark); border: 1px solid var(--ax-bdr); font-size: 0.73rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
+    .q-badge-num { background: var(--ax); color: white; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; font-weight: 900; }
+    .q-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1rem,2.2vw,1.25rem); letter-spacing: -0.015em; line-height: 1.35; color: var(--text); margin-bottom: 22px; }
+    .q-options { display: flex; flex-direction: column; gap: 10px; }
+    .q-opt { display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; border: 2px solid var(--border); border-radius: 14px; background: #FAFAFA; cursor: pointer; transition: all 0.14s; user-select: none; }
+    .q-opt:hover { border-color: var(--ax-bdr); background: var(--ax-soft); }
+    .q-opt.selected { border-color: var(--ax); background: var(--ax-soft); }
+    .q-opt-radio { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; transition: all 0.14s; display: grid; place-items: center; margin-top: 1px; }
+    .q-opt.selected .q-opt-radio { border-color: var(--ax); background: var(--ax); }
+    .q-opt.selected .q-opt-radio::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: white; }
+    .q-opt-text { font-size: 0.9rem; font-weight: 600; line-height: 1.45; color: var(--text); }
+    .q-opt-tag { font-size: 0.68rem; font-weight: 700; padding: 2px 7px; border-radius: 999px; margin-left: auto; flex-shrink: 0; align-self: center; }
+    .q-nav { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; }
+    .btn-back { height: 40px; padding: 0 16px; background: transparent; border: 2px solid var(--border); border-radius: 999px; font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; color: var(--muted); cursor: pointer; transition: all 0.14s; }
+    .btn-back:hover { border-color: var(--ax-bdr); color: var(--ax); }
+    .q-hint { font-size: 0.75rem; color: var(--muted-lt); font-weight: 600; }
+
+    /* RESULTS */
+    #results { display: none; padding-top: 32px; padding-bottom: 72px; }
+
+    /* RESULT SPLIT CARD - unique element */
+    .result-split { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); }
+    .rs-top { padding: clamp(20px,3vw,28px); border-bottom: 1px solid var(--border); }
+    .rs-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted-lt); margin-bottom: 6px; }
+    .rs-verdict { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.3rem,3.5vw,2rem); letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 8px; }
+    .rs-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.72; }
+
+    .rs-columns { display: grid; grid-template-columns: 1fr 1fr; }
+    .rs-col { padding: clamp(16px,3vw,24px); }
+    .rs-col.ax-col { background: var(--ax-soft); border-right: 1px solid var(--ax-bdr); }
+    .rs-col.st-col { background: var(--st-soft); }
+    .rs-col-header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+    .rs-col-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+    .rs-col-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; }
+    .rs-col-pct { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.8rem; letter-spacing: -0.04em; line-height: 1; margin-bottom: 4px; }
+    .rs-col-bar-bg { height: 8px; border-radius: 999px; overflow: hidden; margin-bottom: 10px; }
+    .rs-col-bar { height: 100%; border-radius: 999px; }
+    .rs-signal-list { display: flex; flex-direction: column; gap: 6px; }
+    .rs-signal { display: flex; align-items: flex-start; gap: 7px; font-size: 0.79rem; line-height: 1.45; font-weight: 600; }
+    .rs-signal-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+
+    .section-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: clamp(20px,3vw,28px); margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+    .sc-eyebrow { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ax); margin-bottom: 5px; }
+    .sc-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; margin-bottom: 12px; }
+    .sc-body { font-size: 0.88rem; color: var(--muted); line-height: 1.78; }
+    .sc-body p { margin-bottom: 10px; }
+    .sc-body p:last-child { margin-bottom: 0; }
+
+    .steps-list { display: flex; flex-direction: column; gap: 14px; margin-top: 12px; }
+    .step-item { display: flex; gap: 14px; align-items: flex-start; }
+    .step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--ax-soft); color: var(--ax-dark); border: 1.5px solid var(--ax-bdr); display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.8rem; flex-shrink: 0; }
+    .step-body h4 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; letter-spacing: -0.01em; margin-bottom: 3px; }
+    .step-body p { font-size: 0.82rem; color: var(--muted); line-height: 1.56; }
+
+    .cta-card { background: linear-gradient(135deg, var(--ax-dark), var(--ax)); border-radius: 20px; padding: clamp(24px,4vw,32px); margin-bottom: 20px; }
+    .cta-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 8px; }
+    .cta-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1rem,2.3vw,1.3rem); color: white; letter-spacing: -0.02em; margin-bottom: 8px; line-height: 1.22; }
+    .cta-body { font-size: 0.88rem; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 20px; }
+    .cta-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 22px; }
+    .cta-feat { font-size: 0.81rem; color: rgba(255,255,255,0.75); font-weight: 600; display: flex; align-items: center; gap: 7px; }
+    .cta-feat::before { content: '✓'; color: #C4B5FD; font-weight: 900; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; height: 50px; padding: 0 26px; background: white; color: var(--ax-dark); font-family: 'Nunito', sans-serif; font-size: 0.96rem; font-weight: 900; border-radius: 14px; transition: all 0.2s; }
+    .cta-btn:hover { background: var(--ax-soft); transform: translateY(-1px); }
+
+    .faq-section { margin-bottom: 48px; }
+    .faq-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.3rem; letter-spacing: -0.02em; margin-bottom: 16px; }
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; }
+    .faq-q { display: flex; align-items: flex-start; gap: 12px; }
+    .faq-icon { width: 26px; height: 26px; background: var(--ax-soft); color: var(--ax-dark); border-radius: 7px; display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.78rem; flex-shrink: 0; border: 1px solid var(--ax-bdr); }
+    .faq-q-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.96rem; letter-spacing: -0.01em; line-height: 1.35; }
+    .faq-a { font-size: 0.86rem; color: var(--muted); line-height: 1.72; margin-top: 10px; padding-left: 38px; }
+    .faq-a a { color: var(--ax); font-weight: 700; }
+
+    .related-section { margin-bottom: 48px; }
+    .related-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; margin-bottom: 14px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 5px; transition: all 0.17s; }
+    .related-card:hover { border-color: var(--ax-bdr); transform: translateY(-2px); }
+    .rc-icon { font-size: 1.2rem; }
+    .rc-name { font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 900; }
+    .rc-desc { font-size: 0.73rem; color: var(--muted); line-height: 1.4; flex: 1; }
+    .rc-link { font-size: 0.74rem; font-weight: 700; color: var(--ax); }
+
+    .footer { background: #1a0538; padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.1); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.77rem; color: rgba(255,255,255,0.32); font-weight: 600; transition: color 0.14s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.7); }
+    .footer-copy { max-width: 1100px; margin: 14px auto 0; font-size: 0.73rem; color: rgba(255,255,255,0.18); text-align: center; }
+
+    @media (max-width: 600px) {
+      .rs-columns { grid-template-columns: 1fr; }
+      .rs-col.ax-col { border-right: none; border-bottom: 1px solid var(--ax-bdr); }
+      .related-grid { grid-template-columns: 1fr 1fr; }
+      .cta-feats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="https://myanxietytest.com/" class="nav-logo">
+      <div class="nav-logo-mark">🧠</div>
+      <div class="nav-logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="nav-right">
+      <a href="https://myanxietytest.com/" class="nav-link">All tools</a>
+      <div class="nav-pill">Free · No sign-up</div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="hero-section">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-vs">
+      <div class="hero-vs-pill ax">Anxiety</div>
+      <div class="hero-vs-sep">vs</div>
+      <div class="hero-vs-pill st">Stress</div>
+    </div>
+    <h1>Which one is it?</h1>
+    <p class="hero-sub">They feel similar but work completely differently. Stress is a response to something external. Anxiety is internal and persists on its own. 14 questions that tell them apart.</p>
+    <button class="hero-cta" onclick="startQuiz()">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><polygon points="8,6.5 14,10 8,13.5" fill="currentColor"/></svg>
+      Take the Free Test
+    </button>
+    <div class="hero-checks">
+      <div class="hero-check">14 questions</div>
+      <div class="hero-check">Live split as you answer</div>
+      <div class="hero-check">Instant result</div>
+      <div class="hero-check">100% anonymous</div>
+    </div>
+  </div>
+</section>
+
+<div class="quiz-wrap">
+
+  <div id="quiz-section" style="display:none;">
+
+    <div class="live-tracker">
+      <div class="lt-label">Your profile as you answer</div>
+      <div class="lt-bar-wrap">
+        <div class="lt-bar-ax" id="lt-ax" style="width:50%"></div>
+        <div class="lt-bar-st" id="lt-st" style="width:50%"></div>
+      </div>
+      <div class="lt-labels">
+        <div class="lt-lbl ax" id="lt-ax-label">Anxiety 50%</div>
+        <div class="lt-lbl st" id="lt-st-label">Stress 50%</div>
+      </div>
+    </div>
+
+    <div class="progress-header">
+      <div class="ph-top">
+        <span class="ph-label" id="ph-label">Question 1 of 14</span>
+        <span class="ph-pct" id="ph-pct">0% complete</span>
+      </div>
+      <div class="ph-bar"><div class="ph-bar-fill" id="ph-fill" style="width:7%"></div></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-badge">
+        <div class="q-badge-num" id="q-badge-num">1</div>
+        <span id="q-badge-cat">Question</span>
+      </div>
+      <div class="q-text" id="q-text"></div>
+      <div class="q-options" id="q-options"></div>
+      <div class="q-nav">
+        <button class="btn-back" id="btn-back" onclick="goBack()">← Back</button>
+        <div class="q-hint" id="q-hint">Select an answer to continue</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="results" style="display:none;">
+
+    <div class="result-split">
+      <div class="rs-top">
+        <div class="rs-eyebrow">Your result</div>
+        <div class="rs-verdict" id="rs-verdict"></div>
+        <div class="rs-desc" id="rs-desc"></div>
+      </div>
+      <div class="rs-columns">
+        <div class="rs-col ax-col">
+          <div class="rs-col-header">
+            <div class="rs-col-dot" style="background:var(--ax)"></div>
+            <div class="rs-col-title" style="color:var(--ax)">Anxiety signals</div>
+          </div>
+          <div class="rs-col-pct" id="ax-pct" style="color:var(--ax)">0%</div>
+          <div class="rs-col-bar-bg" style="background:#DDD6FE">
+            <div class="rs-col-bar" id="ax-bar" style="background:var(--ax)"></div>
+          </div>
+          <div class="rs-signal-list" id="ax-signals"></div>
+        </div>
+        <div class="rs-col st-col">
+          <div class="rs-col-header">
+            <div class="rs-col-dot" style="background:var(--st)"></div>
+            <div class="rs-col-title" style="color:var(--st)">Stress signals</div>
+          </div>
+          <div class="rs-col-pct" id="st-pct" style="color:var(--st)">0%</div>
+          <div class="rs-col-bar-bg" style="background:#CCFBF1">
+            <div class="rs-col-bar" id="st-bar" style="background:var(--st)"></div>
+          </div>
+          <div class="rs-signal-list" id="st-signals"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="sc-eyebrow">What this means</div>
+      <div class="sc-title" id="meaning-title"></div>
+      <div class="sc-body" id="meaning-body"></div>
+    </div>
+
+    <div class="section-card">
+      <div class="sc-eyebrow">What actually helps</div>
+      <div class="sc-title" id="steps-title"></div>
+      <div class="steps-list" id="steps-list"></div>
+    </div>
+
+    <div class="cta-card" id="cta-card" style="display:none;">
+      <div class="cta-eyebrow">Professional support</div>
+      <div class="cta-title" id="cta-title"></div>
+      <div class="cta-body" id="cta-body"></div>
+      <div class="cta-feats">
+        <div class="cta-feat">Licensed therapists online</div>
+        <div class="cta-feat">Start within days, not months</div>
+        <div class="cta-feat">Specialised in anxiety</div>
+        <div class="cta-feat">20% off your first month</div>
+      </div>
+      <a href="https://www.onlinetherapy.com?aff_id=1116&offer_id=2&source=quizAnxietyStress" class="cta-btn" target="_blank" rel="noopener">Find a Therapist, 20% Off →</a>
+    </div>
+
+    <div class="faq-section">
+      <div class="faq-title">Frequently asked questions</div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">What is the core difference between anxiety and stress?</div></div>
+          <div class="faq-a">Stress is a response to an identifiable external pressure: a deadline, a conflict, a difficult situation. It usually resolves when the pressure does. Anxiety is internal and self-sustaining. It does not require an external cause, persists after causes resolve, and is driven by the nervous system's threat-detection system rather than by actual threats.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Can you have both anxiety and stress at the same time?</div></div>
+          <div class="faq-a">Yes, and they interact. Stress can trigger anxiety in people who are predisposed to it, and anxiety lowers the threshold at which stress becomes overwhelming. Most people with significant anxiety also experience disproportionate stress responses. The quiz identifies which is the dominant driver, not which is exclusively present.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Does stress become anxiety if it goes on long enough?</div></div>
+          <div class="faq-a">Chronic stress can contribute to the development of anxiety by keeping the nervous system in a sustained state of activation. However, anxiety is not simply prolonged stress. It involves specific cognitive patterns including persistent worry, difficulty tolerating uncertainty and threat misappraisal that stress alone does not produce.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Does the treatment for anxiety differ from managing stress?</div></div>
+          <div class="faq-a">Yes, significantly. Stress management focuses on reducing or responding better to external stressors: workload, relationships, environment. Anxiety treatment focuses on changing the internal patterns that generate distress independent of external circumstances. CBT for anxiety specifically targets these patterns and is very different from general stress management techniques.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">What should I do if my result shows anxiety?</div></div>
+          <div class="faq-a">The most useful next step is understanding your anxiety more specifically. The <a href="https://myanxietytest.com/do-i-have-anxiety/">Do I Have Anxiety quiz</a> checks all major symptom categories. The <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a> gives you a full severity score. If the impact is significant, the <a href="https://myanxietytest.com/am-i-ready-for-therapy/">Am I Ready for Therapy quiz</a> helps you work out the next step.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="related-section">
+      <div class="related-title">Related tools</div>
+      <div class="related-grid">
+        <a href="https://myanxietytest.com/do-i-have-anxiety/" class="related-card">
+          <div class="rc-icon">🔍</div>
+          <div class="rc-name">Do I Have Anxiety?</div>
+          <div class="rc-desc">18 questions checking all major anxiety symptoms with a personalised profile.</div>
+          <div class="rc-link">Take the quiz →</div>
+        </a>
+        <a href="https://myanxietytest.com/anxiety-level/" class="related-card">
+          <div class="rc-icon">📊</div>
+          <div class="rc-name">Anxiety Level Test</div>
+          <div class="rc-desc">Full severity score across worry, panic, sleep and physical symptoms.</div>
+          <div class="rc-link">Take the test →</div>
+        </a>
+        <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/" class="related-card">
+          <div class="rc-icon">🔥</div>
+          <div class="rc-name">Anxiety vs Burnout</div>
+          <div class="rc-desc">Similar overlap. Find out which is dominant and how they interact.</div>
+          <div class="rc-link">Take the quiz →</div>
+        </a>
+      </div>
+    </div>
+
+    <button onclick="restartQuiz()" style="display:block;margin:0 auto 24px;height:40px;padding:0 20px;background:transparent;border:2px solid var(--border);border-radius:999px;font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:800;color:var(--muted);cursor:pointer;">← Retake the test</button>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="footer-mark">🧠</div>MyAnxietyTest.com</div>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">All tools</a>
+      <a href="https://myanxietytest.com/do-i-have-anxiety/">Do I Have Anxiety?</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy?</a>
+      <a href="https://myanxietytest.com/articles/">Articles</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+</footer>
+
+<script>
+// Each question scores on two axes: A (anxiety) and S (stress)
+// Score 0 = neither, 1 = mild signal, 2 = moderate signal, 3 = strong signal
+var QUESTIONS = [
+  {
+    cat: 'Trigger',
+    text: 'When you feel worst, can you usually point to a specific external reason?',
+    opts: [
+      { text: 'Yes, always. There is always something specific causing it.', ax: 0, st: 3 },
+      { text: 'Usually yes, though the reaction sometimes feels bigger than the cause.', ax: 1, st: 2 },
+      { text: 'Sometimes. Often I feel bad without a clear reason.', ax: 2, st: 1 },
+      { text: 'Rarely. The feeling is often there regardless of what is happening externally.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Resolution',
+    text: 'When a stressful situation ends or resolves, how do you feel?',
+    opts: [
+      { text: 'Immediately better. The relief is instant and complete.', ax: 0, st: 3 },
+      { text: 'Better, but I often worry about what comes next.', ax: 2, st: 1 },
+      { text: 'Somewhat better, but there is usually still an underlying tension.', ax: 2, st: 1 },
+      { text: 'Not much better. The anxiety continues even after things resolve.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Control',
+    text: 'How much control do you feel you have over the difficult feelings?',
+    opts: [
+      { text: 'A lot. When the stressor is managed, so are the feelings.', ax: 0, st: 3 },
+      { text: 'Some. I can manage it with effort.', ax: 1, st: 2 },
+      { text: 'Limited. The feelings have a momentum of their own.', ax: 2, st: 1 },
+      { text: 'Very little. The feelings seem to operate independently of my circumstances.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Future thinking',
+    text: 'How much of your mental energy goes toward things that have not happened yet?',
+    opts: [
+      { text: 'Very little. I am mostly focused on what is currently in front of me.', ax: 0, st: 2 },
+      { text: 'Some. I plan ahead but it does not dominate my thinking.', ax: 1, st: 1 },
+      { text: 'Quite a bit. Future scenarios occupy a lot of mental space.', ax: 2, st: 0 },
+      { text: 'A lot. I frequently worry about things that have not happened and may never happen.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Physical',
+    text: 'When do you experience the physical sensations of tension or activation most strongly?',
+    opts: [
+      { text: 'During or just before specific demanding situations.', ax: 0, st: 3 },
+      { text: 'Around demanding situations, but also at unpredictable times.', ax: 1, st: 2 },
+      { text: 'Frequently, including times when nothing particular is happening.', ax: 2, st: 1 },
+      { text: 'Almost constantly, regardless of what I am doing or how much is on.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Worst case',
+    text: 'How often do your thoughts go to worst-case scenarios?',
+    opts: [
+      { text: 'Rarely. I worry about realistic outcomes, not catastrophic ones.', ax: 0, st: 2 },
+      { text: 'Sometimes, particularly under a lot of pressure.', ax: 1, st: 1 },
+      { text: 'Often. Worst-case thinking arrives even in low-stakes situations.', ax: 2, st: 0 },
+      { text: 'Very often. Catastrophic outcomes feel more realistic than neutral ones.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Duration',
+    text: 'How long have these feelings been affecting you?',
+    opts: [
+      { text: 'A few weeks. It started with a specific difficult period.', ax: 0, st: 3 },
+      { text: 'A few months. Things have been busy or hard for a while.', ax: 1, st: 2 },
+      { text: 'Around a year. It has settled into a pattern now.', ax: 2, st: 1 },
+      { text: 'Several years. It is a consistent feature of my experience.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Quiet time',
+    text: 'How do you feel during quiet, unstructured time with nothing particular to do?',
+    opts: [
+      { text: 'Mostly relaxed. I can rest when things are calm.', ax: 0, st: 3 },
+      { text: 'Okay, though I often fill the space with something productive.', ax: 1, st: 1 },
+      { text: 'Uncomfortable. Quiet time often makes things worse, not better.', ax: 2, st: 0 },
+      { text: 'Worse. The absence of distraction makes the anxiety more prominent.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Sleep',
+    text: 'On a calm evening with nothing particular happening tomorrow, how is your sleep?',
+    opts: [
+      { text: 'Good. When external pressure is low, I sleep well.', ax: 0, st: 3 },
+      { text: 'Usually okay, with occasional restless nights.', ax: 1, st: 1 },
+      { text: 'Variable. Sleep difficulty is not reliably connected to how much is on.', ax: 2, st: 0 },
+      { text: 'Difficult most nights, regardless of what the next day holds.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Origin',
+    text: 'If you imagine your life with all current external pressures removed, how do you think you would feel?',
+    opts: [
+      { text: 'Much better. The external stuff is clearly driving most of this.', ax: 0, st: 3 },
+      { text: 'Better, but I suspect some of the anxiety would remain.', ax: 2, st: 1 },
+      { text: 'Somewhat better. The pattern would probably persist in a milder form.', ax: 2, st: 1 },
+      { text: 'About the same. The feeling does not seem that connected to external circumstances.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Social',
+    text: 'How much do you worry about how others perceive you, independent of any specific social situation?',
+    opts: [
+      { text: 'Not much. Social concern arrives in specific high-stakes situations.', ax: 0, st: 1 },
+      { text: 'Some. I replay interactions occasionally.', ax: 1, st: 0 },
+      { text: 'Often. Concern about judgment shows up across many situations.', ax: 2, st: 0 },
+      { text: 'Very often. It is a persistent background concern.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Breadth',
+    text: 'How many different areas of your life does the worry or tension cover?',
+    opts: [
+      { text: 'One or two specific things that are genuinely demanding right now.', ax: 0, st: 3 },
+      { text: 'Two or three areas, some of which are genuinely stressful.', ax: 1, st: 2 },
+      { text: 'Several areas, including some where the worry seems disproportionate.', ax: 2, st: 1 },
+      { text: 'Many areas, often simultaneously. The worry moves between targets.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Self-assessment',
+    text: 'When you have a good day, what is usually responsible?',
+    opts: [
+      { text: 'External things going well. Less on, fewer demands, good news.', ax: 0, st: 3 },
+      { text: 'A mix of external circumstances and my own state of mind.', ax: 1, st: 2 },
+      { text: 'Mostly my own mental state. The external circumstances matter less than how I am internally.', ax: 2, st: 1 },
+      { text: 'Hard to say. Good days feel relatively random and not clearly connected to what is happening.', ax: 3, st: 0 }
+    ]
+  },
+  {
+    cat: 'Honest assessment',
+    text: 'Honestly, do you think what you are experiencing is primarily driven from outside or inside?',
+    opts: [
+      { text: 'Outside. My life genuinely has a lot in it right now.', ax: 0, st: 3 },
+      { text: 'Mostly outside, with some internal patterns adding to it.', ax: 1, st: 2 },
+      { text: 'Both about equally.', ax: 2, st: 1 },
+      { text: 'Mostly inside. The external circumstances are not enough to explain what I am experiencing.', ax: 3, st: 0 }
+    ]
+  }
+];
+
+var current = 0;
+var answers = new Array(14).fill(null);
+var runningAx = 0;
+var runningSt = 0;
+
+function startQuiz() {
+  document.getElementById('hero-section').style.display = 'none';
+  document.getElementById('quiz-section').style.display = 'block';
+  renderQuestion();
+}
+
+function updateLiveTracker() {
+  var total = runningAx + runningSt;
+  var axPct = total === 0 ? 50 : Math.round((runningAx / total) * 100);
+  var stPct = 100 - axPct;
+  document.getElementById('lt-ax').style.width = axPct + '%';
+  document.getElementById('lt-st').style.width = stPct + '%';
+  document.getElementById('lt-ax-label').textContent = 'Anxiety ' + axPct + '%';
+  document.getElementById('lt-st-label').textContent = 'Stress ' + stPct + '%';
+}
+
+function renderQuestion() {
+  var q = QUESTIONS[current];
+  var pct = Math.round(((current + 1) / 14) * 100);
+  document.getElementById('ph-label').textContent = 'Question ' + (current + 1) + ' of 14';
+  document.getElementById('ph-pct').textContent = pct + '% complete';
+  document.getElementById('ph-fill').style.width = pct + '%';
+  document.getElementById('q-badge-num').textContent = current + 1;
+  document.getElementById('q-badge-cat').textContent = q.cat;
+  document.getElementById('q-text').textContent = q.text;
+  document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
+  document.getElementById('q-hint').textContent = 'Select an answer to continue';
+
+  var optsEl = document.getElementById('q-options');
+  optsEl.innerHTML = '';
+  q.opts.forEach(function(opt, i) {
+    var div = document.createElement('div');
+    div.className = 'q-opt' + (answers[current] === i ? ' selected' : '');
+    div.innerHTML = '<div class="q-opt-radio"></div><div class="q-opt-text">' + opt.text + '</div>';
+    div.onclick = function() { selectAnswer(i); };
+    optsEl.appendChild(div);
+  });
+}
+
+function selectAnswer(i) {
+  var q = QUESTIONS[current];
+  var prev = answers[current];
+
+  if (prev !== null) {
+    runningAx -= q.opts[prev].ax;
+    runningSt -= q.opts[prev].st;
+  }
+
+  answers[current] = i;
+  runningAx += q.opts[i].ax;
+  runningSt += q.opts[i].st;
+
+  document.querySelectorAll('.q-opt').forEach(function(el, idx) {
+    el.classList.toggle('selected', idx === i);
+  });
+  document.getElementById('q-hint').textContent = '';
+  updateLiveTracker();
+
+  setTimeout(function() {
+    if (current === 13) { showResults(); }
+    else { current++; renderQuestion(); }
+  }, 320);
+}
+
+function goBack() {
+  if (current === 0) return;
+  var q = QUESTIONS[current];
+  var prev = answers[current];
+  if (prev !== null) {
+    runningAx -= q.opts[prev].ax;
+    runningSt -= q.opts[prev].st;
+  }
+  current--;
+  updateLiveTracker();
+  renderQuestion();
+}
+
+function computeFinal() {
+  var totalAx = 0, totalSt = 0;
+  answers.forEach(function(ans, qi) {
+    if (ans === null) return;
+    totalAx += QUESTIONS[qi].opts[ans].ax;
+    totalSt += QUESTIONS[qi].opts[ans].st;
+  });
+  var total = totalAx + totalSt;
+  if (total === 0) total = 1;
+  var axPct = Math.round((totalAx / total) * 100);
+  var stPct = 100 - axPct;
+  return { axPct: axPct, stPct: stPct, totalAx: totalAx, totalSt: totalSt };
+}
+
+function getVerdict(axPct) {
+  if (axPct >= 70) return 'anxiety';
+  if (axPct >= 55) return 'anxiety-lean';
+  if (axPct >= 45) return 'mixed';
+  if (axPct >= 30) return 'stress-lean';
+  return 'stress';
+}
+
+var VERDICTS = {
+  anxiety: {
+    verdict: 'This looks like anxiety, not stress',
+    desc: 'Your answers consistently point to anxiety rather than stress. The pattern is internal, self-sustaining and not clearly connected to external causes. Understanding this distinction is the most important first step.',
+    axSignals: ['Persists without external cause', 'Present even during calm periods', 'Worry spreads across multiple areas', 'Difficult to control or switch off'],
+    stSignals: ['Some situational stress present', 'External pressures contribute', 'Certain situations amplify the pattern'],
+    meaningTitle: 'Why anxiety is different from stress and why it matters',
+    meaning: '<p>Stress is a normal response to external demands that resolves when those demands do. Anxiety is a pattern that generates its own fuel. It does not require a real threat and does not resolve when circumstances improve. Your answers show this pattern clearly: the feelings are present in calm periods, not clearly connected to what is happening externally, and difficult to control.</p><p>This matters because the approach that works for stress, reducing external demands and improving circumstances, does not work for anxiety. Anxiety requires addressing the internal pattern directly, which is what CBT and similar approaches specifically do.</p>',
+    stepsTitle: 'What works for anxiety specifically',
+    steps: [
+      { title: 'Understand your anxiety pattern more specifically', body: 'Take the Do I Have Anxiety quiz to see which symptom categories are most strongly present. That gives you a more specific picture than the anxiety vs stress distinction alone. <a href="https://myanxietytest.com/do-i-have-anxiety/" style="color:var(--ax);font-weight:700;">Take the quiz →</a>' },
+      { title: 'Get a full severity score', body: 'The Anxiety Level Test measures severity across worry, panic, sleep and physical symptoms. Having a score gives you a baseline and helps you track whether things are improving. <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--ax);font-weight:700;">Take the test →</a>' },
+      { title: 'Consider whether professional support makes sense', body: 'Anxiety at this level responds well to therapy but rarely resolves fully through self-management alone. The Am I Ready for Therapy quiz helps you work out where you are in that decision. <a href="https://myanxietytest.com/am-i-ready-for-therapy/" style="color:var(--ax);font-weight:700;">Check readiness →</a>' }
+    ],
+    showCTA: true,
+    ctaTitle: 'Anxiety responds best when addressed directly',
+    ctaBody: 'CBT for anxiety specifically targets the internal patterns your results show. Online therapy means you can start within days with a specialist. The approach that works for stress will not work here.'
+  },
+  'anxiety-lean': {
+    verdict: 'Mostly anxiety with some stress on top',
+    desc: 'Your pattern is primarily anxiety-driven, but real external stressors are also present and adding to the load. The anxiety is the foundation; the stress is amplifying it.',
+    axSignals: ['Underlying anxiety pattern present', 'Feelings persist beyond stressors', 'Internal more than external driver'],
+    stSignals: ['Real external pressures present', 'Situational demands contributing', 'Stress amplifying the anxiety'],
+    meaningTitle: 'When anxiety and stress combine',
+    meaning: '<p>Having both anxiety and external stress is common. The external stress is real and worth addressing. But it is sitting on top of an anxiety pattern that would likely still be present even if the stress resolved. Improving circumstances will help, but the underlying anxiety pattern will remain.</p><p>The most effective approach addresses both: reducing unnecessary external stressors where possible, while also directly addressing the anxiety patterns that are making the stress harder to manage than it would otherwise be.</p>',
+    stepsTitle: 'Addressing both layers',
+    steps: [
+      { title: 'Address the external stress and the internal anxiety separately', body: 'For the stress: identify which external demands are actually necessary versus optional and reduce where you can. For the anxiety: use the Do I Have Anxiety quiz to understand the specific pattern. <a href="https://myanxietytest.com/do-i-have-anxiety/" style="color:var(--ax);font-weight:700;">Take the quiz →</a>' },
+      { title: 'Track whether things improve when circumstances ease', body: 'If external stress reduces and the overall level does not come down significantly, that confirms the anxiety is the primary driver. That information is useful for deciding on next steps.' },
+      { title: 'Consider professional support for the anxiety layer', body: 'Stress management alone will not address the anxiety underneath. The Am I Ready for Therapy quiz helps you work out whether now is the right moment. <a href="https://myanxietytest.com/am-i-ready-for-therapy/" style="color:var(--ax);font-weight:700;">Check readiness →</a>' }
+    ],
+    showCTA: true,
+    ctaTitle: 'Addressing the anxiety layer makes the stress more manageable too',
+    ctaBody: 'When anxiety is the foundation, stress management has limited effect. CBT for anxiety reduces the baseline activation level that makes stress harder to handle. Online therapy can begin within days.'
+  },
+  mixed: {
+    verdict: 'A roughly equal mix of anxiety and stress',
+    desc: 'Your pattern does not clearly favour one or the other. Both are genuinely present and each is contributing to what you are experiencing.',
+    axSignals: ['Some internal, self-sustaining patterns', 'Feelings not fully explained by circumstances', 'Present in lower-pressure periods'],
+    stSignals: ['Real external demands present', 'Situational factors clearly contribute', 'Some resolution when circumstances ease'],
+    meaningTitle: 'What a mixed pattern means',
+    meaning: '<p>A genuinely mixed pattern is common. External demands are real and contributing, and there are also anxiety patterns present that operate beyond what the circumstances alone would produce. Neither is the exclusive cause.</p><p>The most useful thing to know is which is doing more work. Tracking what happens when external circumstances ease is the most reliable way to find out. If things improve significantly, stress is the dominant driver. If the underlying tension persists, anxiety is the foundation.</p>',
+    stepsTitle: 'How to distinguish which to focus on',
+    steps: [
+      { title: 'Try a period of deliberate external stress reduction', body: 'Reduce what you can reduce for two to three weeks and observe what happens to your overall level. This is the most reliable way to find out how much of the pattern is externally vs internally driven.' },
+      { title: 'Take the Anxiety Level Test for a baseline', body: 'Having a score now means you can compare it after circumstances change. If the score does not move with circumstances, anxiety is the primary driver. <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--ax);font-weight:700;">Take the test →</a>' },
+      { title: 'Come back to this quiz after a significant change', body: 'The mixed verdict is best understood as a starting point. Retake after a major change in circumstances and the picture will be clearer.' }
+    ],
+    showCTA: false
+  },
+  'stress-lean': {
+    verdict: 'Mostly stress with some anxiety features',
+    desc: 'The picture is primarily stress-driven, but there are some anxiety patterns in the mix. The external demands are the main driver, but the response is sometimes bigger than the situation warrants.',
+    axSignals: ['Some internal amplification of stress', 'Occasional worry beyond the situation', 'Response sometimes exceeds the cause'],
+    stSignals: ['External demands clearly present', 'Situational and identifiable causes', 'Relief when stressors reduce'],
+    meaningTitle: 'When stress has anxiety features',
+    meaning: '<p>The primary driver is external: real demands, real pressures, real circumstances. But the response to those circumstances is amplified by some anxiety patterns that make the stress harder than it needs to be. Catastrophic thinking, difficulty tolerating uncertainty or over-preparation can all add to what would otherwise be manageable stress.</p><p>Addressing the external stress will help significantly. Working on the amplifying patterns will make it more sustainable going forward.</p>',
+    stepsTitle: 'What helps at this level',
+    steps: [
+      { title: 'Focus primarily on the external demands', body: 'This is genuinely stress-driven. Identify the main stressors and address them directly. Reducing workload, improving relationships or changing circumstances will have the most direct effect.' },
+      { title: 'Note the anxiety features and address them separately', body: 'The patterns of catastrophic thinking or worry-amplification are worth addressing even if they are not the primary issue. The Anxiety Triggers quiz helps identify what is activating them. <a href="https://myanxietytest.com/anxiety-triggers/" style="color:var(--ax);font-weight:700;">Find my triggers →</a>' },
+      { title: 'Monitor whether things improve when stress reduces', body: 'If they do, stress is confirmed as the primary driver. If the anxiety features persist after the stress has reduced, consider taking the Do I Have Anxiety quiz for a more complete picture.' }
+    ],
+    showCTA: false
+  },
+  stress: {
+    verdict: 'This looks like stress, not anxiety',
+    desc: 'Your answers consistently point to stress rather than anxiety. The pattern is externally driven, resolves when circumstances improve and is proportionate to what you are experiencing.',
+    axSignals: ['Some natural worry present', 'Protective concern about circumstances', 'Normal response to demands'],
+    stSignals: ['Clear external causes', 'Resolves when circumstances improve', 'Proportionate to the situation', 'Contained to specific stressors'],
+    meaningTitle: 'What stress-driven distress means and what helps',
+    meaning: '<p>Stress is a normal and sometimes useful response to external demands. What you are describing has the hallmarks of genuine stress: clear external causes, proportionate responses, and relief when circumstances ease. This is not a disorder. It is a signal that the current demands on you are high.</p><p>The most useful approaches are those that address the external circumstances directly, build practical coping capacity and protect recovery time. Therapy for anxiety would not be the most effective approach here. Stress management, life changes and practical problem-solving are more relevant.</p>',
+    stepsTitle: 'What actually helps stress',
+    steps: [
+      { title: 'Identify the primary stressors specifically', body: 'Name the two or three things creating the most demand. Vague stress is harder to address than named stressors. The Anxiety Triggers quiz can help identify which categories are most active. <a href="https://myanxietytest.com/anxiety-triggers/" style="color:var(--ax);font-weight:700;">Find my triggers →</a>' },
+      { title: 'Protect recovery time actively', body: 'Stress requires recovery to remain manageable. Identify what actually produces recovery for you and protect it as a non-negotiable rather than a reward. Unstructured time, physical movement and disconnection from demands are the most reliable recovery mechanisms.' },
+      { title: 'Retake this quiz if the pattern does not ease with circumstances', body: 'If stress reduces and the underlying tension does not, that is a signal that anxiety is also present. This quiz is designed to help you notice that shift if it happens.' }
+    ],
+    showCTA: false
+  }
+};
+
+function showResults() {
+  document.getElementById('quiz-section').style.display = 'none';
+  document.getElementById('results').style.display = 'block';
+
+  var final = computeFinal();
+  var vkey = getVerdict(final.axPct);
+  var V = VERDICTS[vkey];
+
+  document.getElementById('rs-verdict').textContent = V.verdict;
+  document.getElementById('rs-desc').textContent = V.desc;
+
+  document.getElementById('ax-pct').textContent = final.axPct + '%';
+  document.getElementById('ax-bar').style.width = final.axPct + '%';
+  document.getElementById('st-pct').textContent = final.stPct + '%';
+  document.getElementById('st-bar').style.width = final.stPct + '%';
+
+  var axSigs = document.getElementById('ax-signals');
+  axSigs.innerHTML = '';
+  V.axSignals.forEach(function(s) {
+    axSigs.innerHTML += '<div class="rs-signal"><div class="rs-signal-dot" style="background:var(--ax)"></div><span style="color:var(--ax-dark)">' + s + '</span></div>';
+  });
+
+  var stSigs = document.getElementById('st-signals');
+  stSigs.innerHTML = '';
+  V.stSignals.forEach(function(s) {
+    stSigs.innerHTML += '<div class="rs-signal"><div class="rs-signal-dot" style="background:var(--st)"></div><span style="color:var(--st-dark)">' + s + '</span></div>';
+  });
+
+  document.getElementById('meaning-title').textContent = V.meaningTitle;
+  document.getElementById('meaning-body').innerHTML = V.meaning;
+
+  document.getElementById('steps-title').textContent = V.stepsTitle;
+  var stepsList = document.getElementById('steps-list');
+  stepsList.innerHTML = '';
+  V.steps.forEach(function(s, i) {
+    stepsList.innerHTML +=
+      '<div class="step-item">' +
+        '<div class="step-num">' + (i + 1) + '</div>' +
+        '<div class="step-body"><h4>' + s.title + '</h4><p>' + s.body + '</p></div>' +
+      '</div>';
+  });
+
+  if (V.showCTA) {
+    document.getElementById('cta-card').style.display = 'block';
+    document.getElementById('cta-title').textContent = V.ctaTitle;
+    document.getElementById('cta-body').textContent = V.ctaBody;
+  }
+
+  window.scrollTo(0, 0);
+}
+
+function restartQuiz() {
+  current = 0;
+  answers = new Array(14).fill(null);
+  runningAx = 0;
+  runningSt = 0;
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('cta-card').style.display = 'none';
+  document.getElementById('quiz-section').style.display = 'block';
+  renderQuestion();
+  updateLiveTracker();
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
