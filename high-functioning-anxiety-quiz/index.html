@@ -82,321 +82,248 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --gold:         #A16207;
-      --gold-mid:     #D4A853;
-      --gold-soft:    #FEF9EE;
-      --gold-bdr:     #FDE68A;
-      --gold-grad:    #D4A853;
-      --dark:         #18181B;
-      --dark-mid:     #27272A;
-      --dark-soft:    #3F3F46;
-      --cream:        #FAFAF7;
-      --cream-mid:    #F4F4F1;
-      --surface:      #FFFFFF;
-      --border:       #E4E4E7;
-      --text:         #18181B;
-      --muted:        #71717A;
-      --muted-lt:     #A1A1AA;
-      --green:        #15803D;
-      --green-soft:   #F0FDF4;
-      --amber:        #B45309;
-      --amber-soft:   #FFFBEB;
-      --red:          #B91C1C;
-      --red-soft:     #FEF2F2;
-      --shadow-sm:    0 1px 3px rgba(0,0,0,0.06);
-      --shadow-md:    0 4px 20px rgba(0,0,0,0.08);
-      --shadow-lg:    0 16px 48px rgba(0,0,0,0.10);
-      --r:            10px;
-      --r-lg:         16px;
-      --r-xl:         22px;
+      --blue:      #0064FA;
+      --acc:       #1D4ED8;
+      --acc-dark:  #1E3A8A;
+      --acc-deep:  #172554;
+      --acc-soft:  #EFF6FF;
+      --acc-bdr:   #BFDBFE;
+      --bg:        #F0F4FF;
+      --surface:   #FFFFFF;
+      --border:    #E2E8F0;
+      --text:      #0F172A;
+      --muted:     #475569;
+      --muted-lt:  #94A3B8;
+      --green:     #16A34A;
+      --green-soft:#DCFCE7;
+      --green-bdr: #86EFAC;
+      --amber:     #D97706;
+      --amber-soft:#FEF9C3;
+      --red:       #DC2626;
+      --red-soft:  #FEE2E2;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Manrope', sans-serif; background: var(--cream); color: var(--text); line-height: 1.65; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
     a { text-decoration: none; color: inherit; }
 
-    /* TOPBAR */
-    .topbar { background: var(--dark); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
-    .topbar-inner { max-width: 860px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 56px; display: flex; align-items: center; justify-content: space-between; }
-    .logo { display: flex; align-items: center; gap: 9px; }
-    .logo-mark { width: 30px; height: 30px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 0.9rem; }
-    .logo-name { font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 0.95rem; color: white; }
-    .topbar-right { display: flex; align-items: center; gap: 14px; }
-    .topbar-link { font-size: 0.81rem; font-weight: 500; color: rgba(255,255,255,0.5); transition: color 0.15s; }
-    .topbar-link:hover { color: white; }
-    .topbar-tag { font-size: 0.74rem; font-weight: 600; color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 3px 11px; border-radius: 999px; }
+    /* NAV */
+    .nav { background: var(--blue); position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 56px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 9px; }
+    .nav-logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .nav-logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; }
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+    .nav-link { font-size: 0.84rem; font-weight: 700; color: rgba(255,255,255,0.75); }
+    .nav-pill { font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.8); border: 1.5px solid rgba(255,255,255,0.3); padding: 5px 14px; border-radius: 999px; }
 
-    /* HERO — dark editorial */
-    .hero {
-      background: var(--dark);
-      padding: clamp(52px,8vw,100px) clamp(16px,4vw,40px) clamp(40px,6vw,72px);
-      position: relative; overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute; bottom: -60px; right: -60px;
-      width: 360px; height: 360px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(202,138,4,0.12) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .hero-inner { max-width: 860px; margin: 0 auto; position: relative; z-index: 1; }
+    /* HERO */
+    .hero { background: linear-gradient(155deg, #172554 0%, #1E3A8A 40%, var(--acc) 72%, var(--blue) 100%); padding: clamp(48px,8vw,88px) clamp(16px,4vw,40px) clamp(40px,6vw,72px); text-align: center; }
+    .hero-inner { max-width: 680px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.88); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; padding: 5px 14px; border-radius: 999px; margin-bottom: 20px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(2rem,5.5vw,3.8rem); color: white; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 16px; }
+    .hero h1 span { color: #93C5FD; }
+    .hero-sub { font-size: 1.02rem; color: rgba(255,255,255,0.72); max-width: 520px; margin: 0 auto 28px; line-height: 1.72; }
+    .hero-cta { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--acc-dark); font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.02rem; padding: 0 32px; height: 56px; border-radius: 999px; cursor: pointer; border: none; transition: all 0.18s; text-decoration: none; }
+    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+    .hero-checks { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 22px; }
+    .hero-check { display: flex; align-items: center; gap: 7px; font-size: 0.83rem; color: rgba(255,255,255,0.62); font-weight: 600; }
+    .hero-check::before { content: '✓'; color: #93C5FD; font-weight: 900; font-size: 0.75rem; }
+    .hero-pills { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+    .hero-pill { padding: 5px 13px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); font-size: 0.76rem; font-weight: 600; color: rgba(255,255,255,0.55); }
 
-    .hero-kicker {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-family: 'Manrope', sans-serif;
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-      color: #D4A853; margin-bottom: 20px;
-    }
+    /* QUIZ WRAP */
+    .quiz-wrap { max-width: 800px; margin: 0 auto; padding: 0 clamp(16px,3vw,24px) 80px; }
 
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.2rem,5.5vw,4rem);
-      font-weight: 700; color: white;
-      line-height: 1.1; letter-spacing: -0.02em;
-      margin-bottom: 20px; max-width: 700px;
-    }
-    .hero h1 em { font-style: italic; font-weight: 400; color: #D4A853; }
+    /* PROGRESS HEADER */
+    .progress-header { background: var(--acc); border-radius: 20px 20px 0 0; padding: 16px 24px 0; margin-top: 32px; }
+    .ph-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .ph-label { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.9); }
+    .ph-pct { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.6); }
+    .ph-bar { height: 4px; background: rgba(255,255,255,0.2); border-radius: 999px; overflow: hidden; }
+    .ph-bar-fill { height: 100%; background: white; border-radius: 999px; transition: width 0.35s ease; }
 
-    .hero-sub {
-      font-size: 1rem; color: rgba(255,255,255,0.55);
-      max-width: 520px; margin-bottom: 32px; line-height: 1.7;
-    }
+    /* Q CARD */
+    .q-card { background: var(--surface); border-radius: 0 0 20px 20px; border: 1px solid var(--border); border-top: none; box-shadow: 0 6px 28px rgba(29,78,216,0.08); padding: clamp(24px,4vw,36px); }
+    .q-cat { display: inline-flex; align-items: center; gap: 7px; background: var(--acc-soft); color: var(--acc-dark); border: 1px solid var(--acc-bdr); font-size: 0.73rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
+    .q-num-dot { background: var(--acc); color: white; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; font-weight: 900; }
+    .q-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1rem,2.2vw,1.25rem); letter-spacing: -0.015em; line-height: 1.35; color: var(--text); margin-bottom: 22px; }
 
-    .hero-cta-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+    /* OPTIONS */
+    .q-options { display: flex; flex-direction: column; gap: 10px; }
+    .q-opt { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border: 2px solid var(--border); border-radius: 14px; background: #FAFAFA; cursor: pointer; transition: all 0.14s; user-select: none; width: 100%; text-align: left; font-family: 'Nunito Sans', sans-serif; }
+    .q-opt:hover { border-color: var(--acc-bdr); background: var(--acc-soft); }
+    .q-opt.selected { border-color: var(--acc); background: var(--acc-soft); }
+    .q-opt-radio { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; transition: all 0.14s; display: grid; place-items: center; }
+    .q-opt.selected .q-opt-radio { border-color: var(--acc); background: var(--acc); }
+    .q-opt.selected .q-opt-radio::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: white; display: block; }
+    .q-opt-label { font-size: 0.9rem; font-weight: 600; color: var(--text); flex: 1; }
+    .q-opt-score { font-size: 0.75rem; font-weight: 700; color: var(--muted-lt); flex-shrink: 0; }
 
-    .btn-hero {
-      display: inline-flex; align-items: center; gap: 9px;
-      height: 52px; padding: 0 28px;
-      background: #D4A853; color: var(--dark);
-      font-family: 'Manrope', sans-serif; font-size: 0.95rem; font-weight: 700;
-      border-radius: var(--r-lg); border: none; cursor: pointer;
-      box-shadow: 0 8px 28px rgba(212,168,83,0.3);
-      transition: all 0.2s; text-decoration: none;
-    }
-    .btn-hero:hover { background: #C89A3F; transform: translateY(-2px); box-shadow: 0 14px 36px rgba(212,168,83,0.4); }
-
-    .hero-note { font-size: 0.79rem; color: rgba(255,255,255,0.35); font-weight: 500; }
-
-    /* Signs strip */
-    .hero-signs {
-      display: flex; gap: 8px; flex-wrap: wrap; margin-top: 28px;
-    }
-    .sign-pill {
-      padding: 5px 13px; border-radius: 999px;
-      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-      font-size: 0.76rem; font-weight: 500; color: rgba(255,255,255,0.55);
-    }
-
-    /* PAGE */
-    .page { max-width: 860px; margin: 0 auto; padding: 28px clamp(16px,4vw,40px) 60px; }
-
-    /* QUIZ CARD */
-    .quiz-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
-    .quiz-strip { background: var(--dark); padding: 16px 24px; }
-    .qs-meta { display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.5); margin-bottom: 8px; }
-    .qs-meta strong { color: #D4A853; }
-    .qs-bar { height: 4px; background: rgba(255,255,255,0.12); border-radius: 999px; overflow: hidden; }
-    .qs-fill { height: 100%; background: #D4A853; border-radius: 999px; transition: width 0.3s ease; width: 0%; }
-
-    .quiz-body { padding: 32px 28px 0; }
-    .q-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 0.78rem; font-weight: 400; font-style: italic;
-      color: var(--muted-lt); margin-bottom: 14px; letter-spacing: 0.02em;
-    }
-    .q-text {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.15rem,2.8vw,1.7rem);
-      font-weight: 500; line-height: 1.35; color: var(--text);
-      margin-bottom: 26px;
-    }
-
-    .answers-list { display: flex; flex-direction: column; gap: 9px; }
-    .ans-btn {
-      display: flex; align-items: center; gap: 14px;
-      width: 100%; padding: 13px 18px;
-      border-radius: var(--r); border: 1.5px solid var(--border);
-      background: var(--cream); cursor: pointer;
-      font-family: 'Manrope', sans-serif; text-align: left; transition: all 0.16s;
-    }
-    .ans-square {
-      width: 20px; height: 20px; border-radius: 5px;
-      border: 2px solid var(--border); background: white;
-      flex-shrink: 0; display: grid; place-items: center; transition: all 0.16s;
-    }
-    .ans-square-dot { width: 9px; height: 9px; border-radius: 2px; background: transparent; transition: all 0.16s; }
-    .ans-text { font-size: 0.91rem; font-weight: 500; color: var(--muted); flex: 1; transition: color 0.16s; }
-    .ans-btn:hover { border-color: var(--dark-soft); background: var(--cream-mid); transform: translateX(4px); }
-    .ans-btn:hover .ans-square { border-color: var(--dark); }
-    .ans-btn:hover .ans-text { color: var(--dark); }
-    .ans-btn.selected { border-color: var(--dark); background: var(--cream-mid); box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
-    .ans-btn.selected .ans-square { border-color: var(--dark); background: var(--dark); }
-    .ans-btn.selected .ans-square-dot { background: #D4A853; }
-    .ans-btn.selected .ans-text { color: var(--dark); font-weight: 600; }
-
-    .quiz-footer { display: flex; justify-content: space-between; align-items: center; padding: 16px 28px 24px; margin-top: 8px; }
-    .q-hint { font-size: 0.77rem; color: var(--muted-lt); font-weight: 500; }
-    .ctrl-row { display: flex; gap: 8px; }
-    .btn-ctrl { height: 36px; padding: 0 14px; border-radius: var(--r); border: 1.5px solid var(--border); background: white; font-family: 'Manrope', sans-serif; font-size: 0.8rem; font-weight: 600; color: var(--muted); cursor: pointer; transition: all 0.15s; }
-    .btn-ctrl:hover:not(:disabled) { border-color: var(--dark); color: var(--dark); }
-    .btn-ctrl:disabled { opacity: 0.28; cursor: not-allowed; }
+    /* Q FOOTER */
+    .q-nav { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; }
+    .q-hint { font-size: 0.75rem; color: var(--muted-lt); font-weight: 600; }
+    .btn-ctrl { height: 40px; padding: 0 16px; background: transparent; border: 2px solid var(--border); border-radius: 999px; font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; color: var(--muted); cursor: pointer; transition: all 0.14s; }
+    .btn-ctrl:hover:not(:disabled) { border-color: var(--acc-bdr); color: var(--acc); }
+    .btn-ctrl:disabled { opacity: 0.3; cursor: not-allowed; }
 
     /* RESULT CARD */
-    .result-card { display: none; background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .result-card { display: none; margin-top: 32px; }
 
-    /* Dark result header */
-    .result-header { background: var(--dark); padding: 28px 28px 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-    .r-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 13px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 16px; }
-    .r-badge.low      { background: rgba(21,128,61,0.2);  color: #86EFAC; border: 1px solid rgba(21,128,61,0.3); }
-    .r-badge.moderate { background: rgba(180,83,9,0.2);   color: #FCD34D; border: 1px solid rgba(180,83,9,0.3); }
-    .r-badge.high     { background: rgba(185,28,28,0.2);  color: #FCA5A5; border: 1px solid rgba(185,28,28,0.3); }
+    /* RESULT HEADER */
+    .result-header { border-radius: 20px; padding: clamp(24px,4vw,36px); margin-bottom: 16px; position: relative; overflow: hidden; }
+    .rh-glow { position: absolute; top: -80px; right: -80px; width: 280px; height: 280px; border-radius: 50%; background: rgba(255,255,255,0.05); pointer-events: none; }
+    .r-badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+    .r-badge.low      { background: rgba(22,163,74,0.15); color: #86EFAC; border: 1px solid rgba(22,163,74,0.25); }
+    .r-badge.moderate { background: rgba(217,119,6,0.15); color: #FCD34D; border: 1px solid rgba(217,119,6,0.25); }
+    .r-badge.high     { background: rgba(220,38,38,0.15); color: #FCA5A5; border: 1px solid rgba(220,38,38,0.25); }
     .r-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+    .result-h1 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.4rem,3.5vw,2.2rem); color: white; letter-spacing: -0.025em; line-height: 1.12; margin-bottom: 12px; }
+    .result-h1 em { font-style: italic; color: #93C5FD; }
+    .result-desc { font-size: 0.94rem; color: rgba(255,255,255,0.8); line-height: 1.72; max-width: 560px; }
 
-    .result-h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.3rem,2.8vw,2rem);
-      font-weight: 500; color: white;
-      line-height: 1.2; margin-bottom: 10px;
-    }
-    .result-h1 em { font-style: italic; color: #D4A853; }
-    .result-desc { color: rgba(255,255,255,0.55); font-size: 0.89rem; max-width: 560px; line-height: 1.65; }
+    /* RESULT BODY CARDS */
+    .rb-section { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: clamp(18px,3vw,26px); margin-bottom: 14px; box-shadow: 0 2px 10px rgba(29,78,216,0.05); }
+    .rb-eyebrow { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acc); margin-bottom: 5px; }
+    .rb-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; margin-bottom: 10px; }
+    .rb-text { font-size: 0.88rem; color: var(--muted); line-height: 1.75; }
+    .rb-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+    .rb-list li { display: flex; align-items: flex-start; gap: 9px; font-size: 0.86rem; color: var(--muted); line-height: 1.55; }
+    .li-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--acc); flex-shrink: 0; margin-top: 5px; }
 
-    /* Result body */
-    .result-body { padding: 20px; display: grid; gap: 12px; }
-
-    .rb-card { background: var(--cream); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 18px 18px 18px 22px; border-left: 4px solid var(--border); }
-    .rb-card.accent { border-left-color: var(--gold-mid); }
-    .rb-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
-    .rb-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 500; margin-bottom: 7px; color: var(--text); }
-    .rb-text  { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
-    .rb-list  { list-style: none; display: grid; gap: 8px; margin-top: 10px; }
-    .rb-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
-    .li-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold-mid); flex-shrink: 0; margin-top: 6px; }
-
-    .steps-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 12px; }
-    .step { background: white; border-radius: var(--r); border: 1px solid var(--border); padding: 14px; }
-    .step-n { width: 28px; height: 28px; border-radius: 8px; background: var(--dark); color: #D4A853; display: grid; place-items: center; font-size: 0.82rem; font-weight: 700; margin-bottom: 9px; }
-    .step strong { display: block; font-size: 0.86rem; margin-bottom: 4px; font-weight: 700; }
+    /* STEPS */
+    .steps-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 14px; }
+    .step { background: var(--bg); border-radius: 14px; border: 1px solid var(--border); padding: 14px; }
+    .step-n { width: 28px; height: 28px; border-radius: 8px; background: var(--acc); color: white; display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 900; margin-bottom: 9px; }
+    .step strong { display: block; font-family: 'Nunito', sans-serif; font-size: 0.86rem; font-weight: 900; margin-bottom: 4px; }
     .step p { font-size: 0.79rem; color: var(--muted); line-height: 1.5; }
 
-    /* Therapy CTA */
-    .therapy-card { background: var(--dark); border-radius: var(--r-lg); padding: 24px; position: relative; overflow: hidden; }
-    .therapy-card::before { content: ''; position: absolute; right: -40px; bottom: -40px; width: 200px; height: 200px; border-radius: 50%; background: rgba(202,138,4,0.1); pointer-events: none; }
+    /* THERAPY CTA */
+    .therapy-card { background: linear-gradient(135deg, var(--acc-dark), var(--acc)); border-radius: 20px; padding: clamp(24px,4vw,32px); margin-bottom: 14px; position: relative; overflow: hidden; }
     .therapy-card.hidden { display: none; }
-    .tc-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 9px; }
-    .therapy-card h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 500; color: white; line-height: 1.3; margin-bottom: 9px; position: relative; z-index: 1; }
-    .therapy-card h3 em { font-style: italic; color: #FDE68A; }
-    .therapy-card p { font-size: 0.87rem; color: rgba(255,255,255,0.6); max-width: 500px; margin-bottom: 18px; line-height: 1.65; position: relative; z-index: 1; }
-    .therapy-benefits { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; margin-bottom: 20px; position: relative; z-index: 1; }
-    .th-ben { padding: 12px; border-radius: var(--r); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); }
-    .th-ben strong { display: block; font-size: 0.8rem; color: white; font-weight: 700; margin-bottom: 3px; }
-    .th-ben span { font-size: 0.75rem; color: rgba(255,255,255,0.5); line-height: 1.4; }
+    .tc-glow { position: absolute; right: -60px; bottom: -60px; width: 200px; height: 200px; border-radius: 50%; background: rgba(255,255,255,0.06); pointer-events: none; }
+    .tc-tag { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 10px; }
+    .therapy-card h3 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.05rem,2.3vw,1.4rem); color: white; letter-spacing: -0.02em; line-height: 1.22; margin-bottom: 10px; position: relative; z-index: 1; }
+    .therapy-card h3 em { font-style: italic; color: #93C5FD; }
+    .therapy-card p { font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.72; margin-bottom: 20px; position: relative; z-index: 1; max-width: 520px; }
+    .therapy-benefits { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; margin-bottom: 22px; position: relative; z-index: 1; }
+    .th-ben { padding: 12px 14px; border-radius: 12px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); }
+    .th-ben strong { display: block; font-family: 'Nunito', sans-serif; font-size: 0.82rem; color: white; font-weight: 900; margin-bottom: 4px; }
+    .th-ben span { font-size: 0.75rem; color: rgba(255,255,255,0.55); line-height: 1.4; }
     .therapy-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; z-index: 1; }
-    .btn-therapy-main { display: inline-flex; align-items: center; gap: 7px; height: 46px; padding: 0 22px; background: #D4A853; color: var(--dark); font-family: 'Manrope', sans-serif; font-size: 0.9rem; font-weight: 700; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 6px 18px rgba(212,168,83,0.25); transition: all 0.2s; text-decoration: none; }
-    .btn-therapy-main:hover { opacity: 0.92; transform: translateY(-1px); }
-    .btn-retake-ghost { height: 46px; padding: 0 18px; border: 1.5px solid rgba(255,255,255,0.15); background: transparent; color: rgba(255,255,255,0.6); font-family: 'Manrope', sans-serif; font-size: 0.85rem; font-weight: 600; border-radius: var(--r-lg); cursor: pointer; transition: all 0.2s; }
-    .btn-retake-ghost:hover { border-color: rgba(255,255,255,0.4); color: white; }
-    .therapy-note { margin-top: 12px; font-size: 0.74rem; color: rgba(255,255,255,0.28); position: relative; z-index: 1; }
+    .btn-therapy-main { display: inline-flex; align-items: center; gap: 8px; height: 50px; padding: 0 24px; background: white; color: var(--acc-dark); font-family: 'Nunito', sans-serif; font-size: 0.96rem; font-weight: 900; border-radius: 14px; border: none; cursor: pointer; transition: all 0.2s; text-decoration: none; }
+    .btn-therapy-main:hover { background: var(--acc-soft); transform: translateY(-1px); }
+    .btn-retake-ghost { height: 50px; padding: 0 18px; border: 1.5px solid rgba(255,255,255,0.2); background: transparent; color: rgba(255,255,255,0.7); font-family: 'Nunito', sans-serif; font-size: 0.88rem; font-weight: 700; border-radius: 14px; cursor: pointer; transition: all 0.18s; }
+    .btn-retake-ghost:hover { border-color: rgba(255,255,255,0.5); color: white; }
+    .therapy-note { margin-top: 12px; font-size: 0.74rem; color: rgba(255,255,255,0.35); position: relative; z-index: 1; }
 
-    .footer-retake { display: none; justify-content: center; }
-    .btn-retake-lo { height: 40px; padding: 0 18px; border: 1.5px solid var(--border); background: white; color: var(--muted); font-family: 'Manrope', sans-serif; font-size: 0.84rem; font-weight: 600; border-radius: var(--r); cursor: pointer; transition: all 0.2s; }
-    .btn-retake-lo:hover { border-color: var(--dark); color: var(--dark); }
-    .r-disclaimer { padding: 14px 22px 18px; border-top: 1px solid var(--border); font-size: 0.76rem; color: var(--muted-lt); text-align: center; }
+    /* FOOTER RETAKE (low result) */
+    .footer-retake { display: none; justify-content: center; padding: 8px 0; }
+    .btn-retake-lo { height: 40px; padding: 0 20px; border: 2px solid var(--border); background: white; color: var(--muted); font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: 999px; cursor: pointer; transition: all 0.15s; }
+    .btn-retake-lo:hover { border-color: var(--acc-bdr); color: var(--acc); }
 
-    /* LOWER */
-    .lower { max-width: 860px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px) 60px; }
-    .content-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-sm); padding: 26px; margin-bottom: 12px; }
-    .content-card h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.2rem,2.2vw,1.6rem); font-weight: 500; margin-bottom: 12px; }
-    .content-card h3 { font-size: 0.95rem; font-weight: 700; margin: 14px 0 5px; display: flex; align-items: center; gap: 7px; }
-    .content-card h3::before { content: ''; display: inline-block; width: 3px; height: 13px; background: var(--gold-mid); border-radius: 2px; }
-    .content-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 9px; line-height: 1.7; }
-    .content-card ul { list-style: none; color: var(--muted); font-size: 0.9rem; display: grid; gap: 7px; }
-    .content-card li { display: flex; gap: 8px; align-items: flex-start; }
-    .content-card li::before { content: '›'; color: var(--gold-mid); font-weight: 700; flex-shrink: 0; }
-    .faq-list { display: grid; gap: 10px; }
-    .faq-it { background: var(--cream); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 16px 18px; }
-    .faq-it h3 { font-size: 0.92rem; margin: 0 0 6px; display: flex; align-items: center; gap: 8px; }
-    .faq-it h3::before { content: 'Q'; width: 20px; height: 20px; background: var(--dark); color: #D4A853; border-radius: 6px; display: grid; place-items: center; font-size: 0.64rem; font-weight: 700; flex-shrink: 0; }
-    .faq-it p { margin: 0; font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+    .r-disclaimer { padding: 14px 20px 18px; font-size: 0.76rem; color: var(--muted-lt); text-align: center; }
+
+    /* LOWER CONTENT */
+    .lower { max-width: 800px; margin: 0 auto; padding: 0 clamp(16px,3vw,24px) 60px; }
+    .content-card { background: var(--surface); border-radius: 20px; border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(29,78,216,0.04); padding: 26px; margin-bottom: 14px; }
+    .content-card h2 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.1rem,2.2vw,1.5rem); letter-spacing: -0.02em; margin-bottom: 12px; }
+    .content-card h3 { font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; margin: 16px 0 5px; display: flex; align-items: center; gap: 8px; }
+    .content-card h3::before { content: ''; display: inline-block; width: 3px; height: 14px; background: var(--acc); border-radius: 2px; }
+    .content-card p { color: var(--muted); font-size: 0.88rem; margin-bottom: 9px; line-height: 1.72; }
+    .content-card p a { color: var(--acc); font-weight: 700; }
+    .content-card ul { list-style: none; color: var(--muted); font-size: 0.88rem; display: flex; flex-direction: column; gap: 7px; }
+    .content-card li { display: flex; gap: 9px; align-items: flex-start; }
+    .content-card li::before { content: '✓'; color: var(--acc); font-weight: 900; flex-shrink: 0; font-size: 0.8rem; margin-top: 1px; }
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    .faq-it { background: var(--bg); border-radius: 16px; border: 1px solid var(--border); padding: 16px 18px; }
+    .faq-it h3 { font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 900; margin: 0 0 7px; display: flex; align-items: center; gap: 9px; }
+    .faq-it h3::before { content: 'Q'; width: 22px; height: 22px; background: var(--acc); color: white; border-radius: 7px; display: grid; place-items: center; font-size: 0.65rem; font-weight: 900; flex-shrink: 0; }
+    .faq-it p { margin: 0; font-size: 0.85rem; color: var(--muted); line-height: 1.68; }
+    .faq-it p a { color: var(--acc); font-weight: 700; }
 
     /* FOOTER */
-    .footer { background: var(--dark); padding: 26px clamp(16px,4vw,40px) 32px; }
-    .footer-inner { max-width: 860px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.07); }
-    .footer-brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.92rem; color: white; }
-    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.08); display: grid; place-items: center; font-size: 0.85rem; }
-    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
-    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.32); font-weight: 500; transition: color 0.15s; }
+    .footer { background: var(--acc-deep); padding: 26px clamp(16px,4vw,40px) 32px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
+    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.1); display: grid; place-items: center; font-size: 0.85rem; }
+    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.77rem; color: rgba(255,255,255,0.32); font-weight: 600; transition: color 0.14s; }
     .footer-links a:hover { color: rgba(255,255,255,0.7); }
-    .footer-copy { max-width: 860px; margin: 0 auto; padding-top: 16px; font-size: 0.76rem; color: rgba(255,255,255,0.18); text-align: center; }
+    .footer-copy { max-width: 1100px; margin: 14px auto 0; font-size: 0.73rem; color: rgba(255,255,255,0.18); text-align: center; }
 
-    @media (max-width: 640px) {
-      .steps-row, .therapy-benefits { grid-template-columns: 1fr; }
-      .quiz-body { padding: 22px 18px 0; }
-      .quiz-footer { padding: 14px 18px 20px; }
-      .hero-signs { display: none; }
+    @media (max-width: 600px) {
+      .steps-row { grid-template-columns: 1fr; }
+      .therapy-benefits { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a href="https://myanxietytest.com/" class="logo">
-      <div class="logo-mark">🧠</div>
-      <div class="logo-name">MyAnxietyTest</div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="https://myanxietytest.com/" class="nav-logo">
+      <div class="nav-logo-mark">🧠</div>
+      <div class="nav-logo-name">MyAnxietyTest</div>
     </a>
-    <div class="topbar-right">
-      <a href="https://myanxietytest.com/" class="topbar-link">All tools</a>
-      <div class="topbar-tag">Free · No sign-up</div>
+    <div class="nav-right">
+      <a href="https://myanxietytest.com/" class="nav-link">All tools</a>
+      <div class="nav-pill">Free · No sign-up</div>
     </div>
   </div>
-</header>
+</nav>
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-kicker">✦ High-functioning anxiety quiz</div>
-    <h1>You look fine.<br>But inside,<br>the anxiety <em>never stops.</em></h1>
+    <div class="hero-badge">✦ High-functioning anxiety quiz</div>
+    <h1>You look fine.<br>But inside, the anxiety <span>never stops.</span></h1>
     <p class="hero-sub">High-functioning anxiety is invisible from the outside. You keep up, you deliver, you manage. But the worry, the overthinking, and the exhaustion of keeping it all together never really goes away. This quiz helps you understand whether that is what is happening.</p>
-    <div class="hero-cta-row">
-      <a href="#quiz" class="btn-hero">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 4.5l4 2.5-4 2.5V4.5z" fill="currentColor"/></svg>
-        Take the Free Quiz
-      </a>
-      <span class="hero-note">16 questions · About 3 minutes · 100% anonymous</span>
+    <a href="#quiz" class="hero-cta">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><polygon points="8,6.5 14,10 8,13.5" fill="currentColor"/></svg>
+      Take the Free Quiz
+    </a>
+    <div class="hero-checks">
+      <div class="hero-check">16 questions</div>
+      <div class="hero-check">About 3 minutes</div>
+      <div class="hero-check">100% anonymous</div>
     </div>
-    <div class="hero-signs">
-      <div class="sign-pill">Perfectionism</div>
-      <div class="sign-pill">Overthinking</div>
-      <div class="sign-pill">Can't switch off</div>
-      <div class="sign-pill">Always busy</div>
-      <div class="sign-pill">Never enough</div>
-      <div class="sign-pill">Difficulty saying no</div>
-      <div class="sign-pill">Hard to relax</div>
+    <div class="hero-pills">
+      <div class="hero-pill">Perfectionism</div>
+      <div class="hero-pill">Overthinking</div>
+      <div class="hero-pill">Can't switch off</div>
+      <div class="hero-pill">Always busy</div>
+      <div class="hero-pill">Never enough</div>
+      <div class="hero-pill">Difficulty saying no</div>
+      <div class="hero-pill">Hard to relax</div>
     </div>
   </div>
 </section>
 
-<div class="page" id="quiz">
-  <div class="quiz-card" id="quizCard">
-    <div class="quiz-strip">
-      <div class="qs-meta">
-        <span>Question <strong id="curQ">1</strong> of 16</span>
-        <span><strong id="curPct">0</strong>% complete</span>
+<div class="quiz-wrap" id="quiz">
+
+  <div id="quizBlock">
+    <div class="progress-header">
+      <div class="ph-top">
+        <span class="ph-label">Question <span id="curQ">1</span> of 16</span>
+        <span class="ph-pct"><span id="curPct">0</span>% complete</span>
       </div>
-      <div class="qs-bar"><div class="qs-fill" id="progressFill"></div></div>
+      <div class="ph-bar"><div class="ph-bar-fill" id="progressFill" style="width:0%"></div></div>
     </div>
-    <div class="quiz-body">
-      <div class="q-num" id="qNum">Question 1 of 16</div>
+    <div class="q-card">
+      <div class="q-cat">
+        <div class="q-num-dot" id="qNumDot">1</div>
+        <span id="qNumLabel">Question 1 of 16</span>
+      </div>
       <p class="q-text" id="qText"></p>
-      <div class="answers-list" id="answersList"></div>
-      <div class="quiz-footer">
+      <div class="q-options" id="answersList"></div>
+      <div class="q-nav">
         <span class="q-hint" id="qHint">Select an answer to continue automatically.</span>
-        <div class="ctrl-row">
+        <div style="display:flex;gap:8px">
           <button class="btn-ctrl" id="backBtn" disabled>← Back</button>
           <button class="btn-ctrl" id="restartBtn">Restart</button>
         </div>
@@ -405,58 +332,63 @@
   </div>
 
   <div class="result-card" id="resultCard">
-    <div class="result-header">
-      <div class="r-badge" id="rBadge"><span class="r-badge-dot"></span>Result</div>
-      <h2 class="result-h1" id="rTitle">Your result</h2>
+    <div class="result-header" id="resultHeader">
+      <div class="rh-glow"></div>
+      <div class="r-badge" id="rBadge"><span class="r-badge-dot"></span> Result</div>
+      <h2 class="result-h1" id="rTitle"></h2>
       <p class="result-desc" id="rDesc"></p>
     </div>
 
-    <div class="result-body">
-      <div class="rb-card accent">
-        <div class="rb-label">What this means for you</div>
-        <div class="rb-title" id="insightTitle"></div>
-        <div class="rb-text" id="insightText"></div>
-      </div>
-      <div class="rb-card accent">
-        <div class="rb-label">What would help most right now</div>
-        <div class="rb-text" id="actionIntro"></div>
-        <ul class="rb-list" id="actionList"></ul>
-      </div>
-      <div class="rb-card">
-        <div class="rb-label">Your 3-step path forward</div>
-        <div class="rb-text" id="planIntro"></div>
-        <div class="steps-row" id="stepsRow"></div>
-      </div>
-      <div class="rb-card accent">
-        <div class="rb-label">Why this pattern keeps going</div>
-        <div class="rb-text" id="patternText"></div>
-      </div>
-
-      <div class="therapy-card" id="therapyCard">
-        <div class="tc-tag">Recommended next step</div>
-        <h3 id="tcTitle"></h3>
-        <p id="tcText"></p>
-        <div class="therapy-benefits" id="tcBenefits"></div>
-        <div class="therapy-actions">
-          <a class="btn-therapy-main" id="therapyLink" href="#">Speak with a therapist — 20% Off</a>
-          <button class="btn-retake-ghost" id="retakeBtn">Retake quiz</button>
-        </div>
-        <div class="therapy-note" id="tcNote"></div>
-      </div>
-
-      <div class="footer-retake" id="footerRetake">
-        <button class="btn-retake-lo" id="retakeBtnLow">← Take the quiz again</button>
-      </div>
+    <div class="rb-section">
+      <div class="rb-eyebrow">What this means for you</div>
+      <div class="rb-title" id="insightTitle"></div>
+      <div class="rb-text" id="insightText"></div>
     </div>
+
+    <div class="rb-section">
+      <div class="rb-eyebrow">What would help most right now</div>
+      <div class="rb-text" id="actionIntro"></div>
+      <ul class="rb-list" id="actionList"></ul>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-eyebrow">Your 3-step path forward</div>
+      <div class="rb-text" id="planIntro"></div>
+      <div class="steps-row" id="stepsRow"></div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-eyebrow">Why this pattern keeps going</div>
+      <div class="rb-text" id="patternText"></div>
+    </div>
+
+    <div class="therapy-card" id="therapyCard">
+      <div class="tc-glow"></div>
+      <div class="tc-tag">Recommended next step</div>
+      <h3 id="tcTitle"></h3>
+      <p id="tcText"></p>
+      <div class="therapy-benefits" id="tcBenefits"></div>
+      <div class="therapy-actions">
+        <a class="btn-therapy-main" id="therapyLink" href="#">Speak with a therapist — 20% Off →</a>
+        <button class="btn-retake-ghost" id="retakeBtn">Retake quiz</button>
+      </div>
+      <div class="therapy-note" id="tcNote"></div>
+    </div>
+
+    <div class="footer-retake" id="footerRetake">
+      <button class="btn-retake-lo" id="retakeBtnLow">← Take the quiz again</button>
+    </div>
+
     <div class="r-disclaimer">This quiz is an informational self-assessment, not a medical diagnosis. If anxiety is significantly affecting your life, speaking with a qualified professional may help.</div>
   </div>
+
 </div>
 
 <div class="lower">
   <div class="content-card">
     <h2>What is high-functioning anxiety?</h2>
     <p>High-functioning anxiety is not an official clinical diagnosis, but it is one of the most widely recognised and relatable patterns in anxiety. It describes someone who appears to be functioning well, often impressively well, while carrying a significant internal burden of anxiety that others rarely see.</p>
-    <p>People with high-functioning anxiety are often described as driven, organised and reliable. They rarely miss deadlines. They prepare excessively. They worry constantly about what others think. And they almost never feel like they are doing enough, even when by any external measure they clearly are. If you suspect your anxiety runs deeper than the high-functioning pattern, the <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--gold);font-weight:600;">free anxiety level test</a> gives you a full severity score across all anxiety patterns.</p>
+    <p>People with high-functioning anxiety are often described as driven, organised and reliable. They rarely miss deadlines. They prepare excessively. They worry constantly about what others think. And they almost never feel like they are doing enough, even when by any external measure they clearly are. If you suspect your anxiety runs deeper than the high-functioning pattern, the <a href="https://myanxietytest.com/anxiety-level/">free anxiety level test</a> gives you a full severity score across all anxiety patterns.</p>
     <h3>Common signs of high-functioning anxiety</h3>
     <ul>
       <li>Achieving a lot but rarely feeling satisfied or at ease</li>
@@ -488,7 +420,7 @@
       </div>
       <div class="faq-it">
         <h3>How is it different from regular anxiety?</h3>
-        <p>With regular anxiety, symptoms often visibly interfere with functioning. With high-functioning anxiety, the anxiety actually fuels output. Productivity, perfectionism and over-preparation become the coping mechanisms. The <a href="https://myanxietytest.com/anxiety-level/" style="color:var(--gold);font-weight:600;">anxiety level test</a> can help you understand overall anxiety severity if you want a broader picture.</p>
+        <p>With regular anxiety, symptoms often visibly interfere with functioning. With high-functioning anxiety, the anxiety actually fuels output. Productivity, perfectionism and over-preparation become the coping mechanisms. The <a href="https://myanxietytest.com/anxiety-level/">anxiety level test</a> can help you understand overall anxiety severity if you want a broader picture.</p>
       </div>
       <div class="faq-it">
         <h3>Can you have this without realising it?</h3>
@@ -500,7 +432,7 @@
       </div>
       <div class="faq-it">
         <h3>What other tools might help me understand my anxiety?</h3>
-        <p>If social situations are a significant source of worry, the <a href="https://myanxietytest.com/social-anxiety-test/" style="color:var(--gold);font-weight:600;">social anxiety test</a> may give you more specific insight. If you also feel depleted and burned out, the <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/" style="color:var(--gold);font-weight:600;">anxiety vs burnout quiz</a> can help you understand which pattern is dominant right now.</p>
+        <p>If social situations are a significant source of worry, the <a href="https://myanxietytest.com/social-anxiety-test/">social anxiety test</a> may give you more specific insight. If you also feel depleted and burned out, the <a href="https://myanxietytest.com/anxiety-vs-burnout-quiz/">anxiety vs burnout quiz</a> can help you understand which pattern is dominant right now.</p>
       </div>
     </div>
   </div>
@@ -528,93 +460,102 @@
 const questions = [
   "Do you often feel like no matter how much you accomplish, it is never quite enough?",
   "Do you find it difficult to relax or do nothing without feeling guilty or restless?",
-  "Do you overthink decisions long after they have been made?",
-  "Do you say yes to commitments even when you are already overwhelmed, out of fear of disappointing people?",
-  "Do you prepare excessively for situations that others approach without much thought?",
-  "Do you carry a persistent low-level sense of dread or unease even when nothing specific is wrong?",
-  "Do you tend to appear calm and capable on the outside while feeling anxious on the inside?",
-  "Do you replay conversations or situations in your mind looking for what you should have done differently?",
-  "Is your productivity driven more by fear of failure or judgment than by genuine enthusiasm?",
-  "Do you find it hard to delegate because you worry others will not do things to the right standard?",
-  "Do you struggle to enjoy achievements before moving on to the next thing you need to do?",
-  "Do you feel a sense of underlying exhaustion that your level of activity does not fully explain?",
-  "Do you worry significantly about what other people think of you, even people you do not know well?",
-  "Do you avoid situations or conversations where you might make a mistake or be judged?",
-  "Do you find that busyness or productivity is one of the main ways you manage anxiety?",
-  "Does the idea of slowing down, doing less or letting something slide feel genuinely threatening?"
+  "Do you worry about what others think of you, even in situations where the stakes are low?",
+  "Do you tend to over-prepare or over-plan for things that most people would approach more casually?",
+  "Do you often say yes to things you do not want to do because you are afraid of disappointing or upsetting someone?",
+  "Do you frequently replay conversations or situations afterwards, wondering if you said or did the wrong thing?",
+  "Would you describe yourself as a perfectionist, even in areas where perfection is not really necessary?",
+  "Do you often feel like you are running on a kind of low-level tension or background hum of worry even when nothing specific is wrong?",
+  "Is it difficult for you to truly switch off from work, responsibilities or mental to-do lists?",
+  "Do you tend to catastrophise, jumping to worst-case scenarios even when the actual risk is relatively small?",
+  "Do you feel like you are usually braced for something to go wrong, even in periods when things are actually okay?",
+  "Do you struggle to delegate because it is hard to trust that others will do things to the standard you need?",
+  "Do you find it difficult to accept praise or feel genuinely proud of what you have done, even when you have done it well?",
+  "Do you often feel like everyone around you is coping better than you are, even when you appear to be managing fine?",
+  "Have you ever been told you seem calm or together in a way that surprised you, because it does not match how you actually feel?",
+  "If your anxiety were to disappear entirely, do you worry that you would become less productive, less driven or less you?"
 ];
 
 const OPTIONS = [
-  { label: "Never",         value: 0 },
-  { label: "Rarely",        value: 1 },
-  { label: "Sometimes",     value: 2 },
-  { label: "Often",         value: 3 },
+  { label: "Never", value: 0 },
+  { label: "Rarely", value: 1 },
+  { label: "Sometimes", value: 2 },
+  { label: "Often", value: 3 },
   { label: "Almost always", value: 4 }
 ];
 
 const RESULTS = {
   low: {
-    badgeClass: "low", badge: "Mild Tendencies",
-    title: "Some high-functioning anxiety tendencies appear, but they do not seem dominant.",
-    desc: "The patterns are present occasionally but do not appear to be consistently driving your behaviour or creating a significant internal cost.",
-    insightTitle: "This looks more like healthy drive than anxiety-fuelled performance.",
-    insightText: "Striving, preparing well and caring about quality are not inherently anxious. At this level the patterns appear manageable and proportionate. The most useful focus is staying aware of when drive starts to feel compulsive rather than chosen, and when busyness starts to feel like something you cannot stop rather than something you enjoy.",
-    actionIntro: "A few things worth staying aware of.",
+    badge: "Mild tendencies",
+    badgeClass: "low",
+    headerBg: "linear-gradient(135deg, #14532D, #16A34A)",
+    title: "Some patterns present, but not dominant",
+    desc: "Your responses suggest that some high-functioning anxiety tendencies show up occasionally, but they do not appear to be the dominant force shaping how you move through the world.",
+    insightTitle: "What this pattern looks like at this level",
+    insightText: "Some perfectionism, some background worry, some difficulty fully relaxing. These are recognisable experiences, and while they are present for you, the responses suggest they are not currently running everything. The patterns that are there are worth being aware of, particularly if they have been increasing recently or during higher-pressure periods.",
+    actionIntro: "What tends to help at this level:",
     actions: [
-      "Notice the difference between choosing to work hard and feeling like you cannot stop. That distinction is one of the earliest signals of the pattern shifting.",
-      "Practise occasional deliberate rest without filling it. If doing nothing feels genuinely threatening, that is worth paying attention to.",
-      "Check in occasionally with whether your productivity feels driven by interest or by fear. The output looks the same but the internal experience is very different."
+      "Noticing when the patterns spike and what seems to trigger them",
+      "Practising finishing things that are good enough rather than perfect",
+      "Building small pockets of genuinely unstructured time into your week",
+      "Checking whether the low-level hum of tension is present more often than you realise"
     ],
-    planIntro: "Staying aware is the main priority at this level.",
+    planIntro: "A few useful starting points:",
     plan: [
-      { title: "Know the early signals", text: "Guilt about resting, difficulty enjoying achievements, and saying yes when you mean no are early patterns worth catching before they become harder to interrupt." },
-      { title: "Practise chosen rest", text: "Deliberately scheduling time with no productivity agenda, and staying with the discomfort if it arises, builds a useful counterweight to anxiety-driven busyness." },
-      { title: "Check the driver", text: "Occasionally ask yourself whether what you are doing is chosen or compelled. Over time, building more chosen activity and less fear-driven output changes the internal experience significantly." }
+      { title: "Increase awareness", text: "Start noticing when you feel the need to over-prepare, over-explain or over-deliver, and whether the situation actually calls for it." },
+      { title: "Protect genuine rest", text: "Experiment with short periods of truly unproductive time where you are not recovering in order to produce more. Just rest." },
+      { title: "Monitor the pattern", text: "High-functioning anxiety often intensifies quietly over time. The fact that you are looking into it now is a good sign. Keep paying attention." }
     ],
-    patternText: "High-functioning anxiety at a mild level is worth staying aware of because the patterns tend to escalate gradually. The same drive and capability that makes someone effective can quietly become a prison if the underlying anxiety grows. Catching the pattern early, before it becomes the main organising principle of your life, is the most effective form of prevention.",
+    patternText: "High-functioning anxiety at a mild level tends to be overlooked precisely because it produces results. The patterns are there, but they have not yet accumulated into something that feels clearly problematic. Catching and understanding it now, before it deepens, is a meaningful advantage.",
     therapy: null
   },
   moderate: {
-    badgeClass: "moderate", badge: "Moderate Pattern",
-    title: "High-functioning anxiety appears to be a real and consistent pattern in your life.",
-    desc: "You are managing well from the outside. But the internal cost, the constant effort, the inability to rest, the sense that you are never quite doing enough, is significant.",
-    insightTitle: "The performance looks good. The internal experience is much more exhausting than it looks.",
-    insightText: "People with moderate high-functioning anxiety often describe a specific quality of exhaustion that is hard to explain to others. They are not failing. They are often succeeding. But everything takes more effort than it should, because underneath the productivity there is always a current of anxiety keeping the engine running. Rest feels earned, not natural. Achievements feel like temporary relief rather than genuine satisfaction. And the list of things that need to be done before it is acceptable to stop never quite empties.",
-    actionIntro: "The most useful shift is starting to separate performance from worth.",
+    badge: "Moderate pattern",
+    badgeClass: "moderate",
+    headerBg: "linear-gradient(135deg, #1E3A8A, #1D4ED8)",
+    title: "High-functioning anxiety is <em>present and consistent</em>",
+    desc: "Your responses point to a moderately strong high-functioning anxiety pattern. The traits are showing up regularly, not just occasionally, and they are likely costing you more than you realise.",
+    insightTitle: "What this means for your daily life",
+    insightText: "You are probably managing well by most external measures. But the internal experience is more tiring than it looks. The background hum of worry, the difficulty switching off, the sense that you are always slightly behind or not quite enough even when you are clearly delivering. These are not personality quirks. They are anxiety patterns, and they tend to compound over time if not addressed.",
+    actionIntro: "What tends to help at this level:",
     actions: [
-      "High-functioning anxiety often runs on the implicit belief that your value depends on what you produce. Identifying this belief, even just noticing it, is the beginning of loosening it.",
-      "Start building small experiences of rest that do not need to be deserved. The goal is not relaxation in the traditional sense. It is rebuilding the capacity to exist without productivity as your main source of safety.",
-      "Consider speaking with a therapist. High-functioning anxiety is very well understood and the internal cost, even when external functioning looks fine, is a legitimate reason to seek support."
+      "Learning to distinguish between what anxiety says you must do and what you actually need to do",
+      "Practising deliberate, chosen rest without using it as recovery for more output",
+      "Exploring whether perfectionism is protecting you from something specific or just running as a default",
+      "Talking to someone who understands this pattern, whether a therapist, a coach or a trusted person"
     ],
-    planIntro: "Moderate high-functioning anxiety responds well to targeted changes in the beliefs and behaviours maintaining it.",
+    planIntro: "Three concrete directions from here:",
     plan: [
-      { title: "Identify the core belief", text: "High-functioning anxiety is usually driven by a belief that your value is conditional on your output. Naming this belief, and finding evidence against it, begins to reduce its power." },
-      { title: "Rest without justification", text: "Practise rest that is not a reward for effort. This feels uncomfortable at first because the anxiety interprets it as dangerous. That discomfort is exactly the pattern to work with." },
-      { title: "Get support for the pattern", text: "A therapist can help you understand what the anxiety is protecting and what it would mean to start living without the constant internal pressure." }
+      { title: "Name the pattern", text: "Calling this anxiety rather than ambition or just how you are is the first and often most significant shift. It changes what you look for and what you try to address." },
+      { title: "Start with the cost, not the cure", text: "Before trying to fix anything, spend some time honestly accounting for what this pattern is actually costing you. Relationships, rest, enjoyment, the quiet sense that life is passing in a particular kind of strain." },
+      { title: "Consider professional support", text: "Moderate high-functioning anxiety responds well to therapy. A therapist who understands this pattern can help you make progress without dismantling the parts of yourself you actually value." }
     ],
-    patternText: "High-functioning anxiety at this level maintains itself because the performance it drives is genuinely rewarded. You are praised for your reliability, your output, your capability. This makes the anxiety feel like an asset rather than a problem. But the internal cost keeps accumulating. And because the behaviour is reinforced externally, the anxiety never gets the signal that it can stop. Breaking this cycle usually requires understanding the belief structure beneath the performance, not just managing the symptoms.",
+    patternText: "High-functioning anxiety at this level persists partly because it works. The productivity is real, the reliability is real, the capability is real. Anxiety does not get challenged because the outcomes it produces are valued, both by you and by others. The problem is the internal cost, which is consistently higher than it looks from the outside.",
     therapy: {
-      title: "You deserve to feel as good on the <em>inside</em> as you look on the outside.",
-      text: "A therapist can help you understand what is driving the constant internal pressure, work through the beliefs that make rest feel dangerous, and build a life that does not depend on anxiety to keep functioning. Most people are surprised by how different things can feel once the pattern is understood and addressed.",
+      title: "You are carrying more than you need to. <em>Support can help.</em>",
+      text: "A therapist who understands high-functioning anxiety can help you see the pattern clearly, understand what it is protecting, and start building a life where you are capable and productive without the constant internal pressure underneath it.",
       note: "Get 20% off your first month. No commitment required.",
       benefits: [
-        { title: "Understand the driver", text: "Identify the specific beliefs and fears that are keeping the high-functioning anxiety pattern running." },
-        { title: "Rest without guilt", text: "Rebuild the capacity to slow down, stop and rest without the anxiety treating it as a threat." },
-        { title: "Perform from choice", text: "Start doing things because you want to rather than because the anxiety says you have to." }
+        { title: "Understand the pattern", text: "See clearly how high-functioning anxiety has been shaping your choices, your rest and your relationship with yourself." },
+        { title: "Keep the drive, lose the cost", text: "Your capability is genuinely yours. Therapy helps you access it from choice rather than from fear." },
+        { title: "Build genuine ease", text: "Move toward a life that feels good on the inside, not just one that looks fine from the outside." }
       ]
     }
   },
   high: {
-    badgeClass: "high", badge: "Strong Pattern",
-    title: "High-functioning anxiety appears to be significantly shaping your life.",
-    desc: "The productivity, the capability, the reliability — it is all real. But so is the exhaustion, the inability to switch off, and the sense that you are running on something that feels less like motivation and more like fear.",
-    insightTitle: "You have probably been carrying this for so long that it just feels like who you are. It is not.",
-    insightText: "High-functioning anxiety at this level tends to become identity. The person who always delivers. The one who never lets anyone down. The one who keeps going when others stop. From the outside it looks like strength. From the inside it feels like a trap. The productivity is not really a choice anymore. It is what happens when the anxiety is in charge. Rest feels genuinely dangerous. Achieving feels temporarily reassuring but never actually satisfying. And somewhere underneath all the capability there is a profound tiredness that has probably been there for a long time.",
-    actionIntro: "The most important thing right now is recognising that this is not just who you are.",
+    badge: "Strong pattern",
+    badgeClass: "high",
+    headerBg: "linear-gradient(135deg, #172554, #1E3A8A)",
+    title: "High-functioning anxiety is <em>significantly present</em>",
+    desc: "Your responses suggest a strong high-functioning anxiety pattern. The traits are not occasional, they are consistent, and they are likely shaping major parts of how you work, rest, relate to others and experience your own life.",
+    insightTitle: "What is really happening here",
+    insightText: "From the outside, your life probably looks impressively put together. From the inside, there is rarely a moment of genuine ease. The worry is almost constant, the rest is never really restful, the sense that you are enough is perpetually just out of reach. You have built sophisticated systems to manage this, and they work, externally. But the internal cost has been accumulating for a long time.",
+    actionIntro: "What actually helps at this level:",
     actions: [
-      "High-functioning anxiety at this level has usually been present long enough to feel like a personality trait. It is not. It is a learned pattern that developed for understandable reasons and that can be unlearned with the right support.",
-      "The productivity and capability you have built are genuinely yours. They do not disappear when the anxiety driving them is addressed. What changes is that you get to keep the capability and let go of the constant internal cost.",
-      "Get professional support. Not because you cannot function, but because you deserve to function without the internal weight you are carrying. A therapist who understands this pattern can make a significant difference in a relatively short time."
+      "Recognising that the anxiety is not what makes you capable, even though it has convinced you otherwise",
+      "Beginning to distinguish between the version of you that anxiety produces and the version that could exist without it",
+      "Finding even one person to be fully honest with about what the internal experience is actually like",
+      "Get professional support. Not because you cannot function, but because you deserve to function without the internal weight you are carrying."
     ],
     planIntro: "Recovery from high-level high-functioning anxiety starts with recognising the pattern, not with doing more.",
     plan: [
@@ -651,7 +592,8 @@ function buildTherapyUrl() {
 
 function updateProgress() {
   $('curQ').textContent = idx + 1;
-  $('qNum').textContent = `Question ${idx + 1} of 16`;
+  $('qNumDot').textContent = idx + 1;
+  $('qNumLabel').textContent = 'Question ' + (idx + 1) + ' of 16';
   const pct = Math.round((idx / questions.length) * 100);
   $('curPct').textContent = pct;
   $('progressFill').style.width = pct + '%';
@@ -666,16 +608,16 @@ function renderQuestion() {
   const wrap = $('answersList');
   wrap.innerHTML = OPTIONS.map(opt => {
     const sel = answers[idx] === opt.value;
-    return `<button class="ans-btn${sel ? ' selected' : ''}" data-value="${opt.value}">
-      <div class="ans-square"><div class="ans-square-dot"></div></div>
-      <div class="ans-text">${opt.label}</div>
-    </button>`;
+    return '<button class="q-opt' + (sel ? ' selected' : '') + '" data-value="' + opt.value + '">' +
+      '<div class="q-opt-radio"></div>' +
+      '<div class="q-opt-label">' + opt.label + '</div>' +
+    '</button>';
   }).join('');
-  wrap.querySelectorAll('.ans-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      answers[idx] = Number(btn.dataset.value);
+  wrap.querySelectorAll('.q-opt').forEach(btn => {
+    btn.addEventListener('click', function() {
+      answers[idx] = Number(this.dataset.value);
       renderQuestion();
-      setTimeout(() => {
+      setTimeout(function() {
         if (idx < questions.length - 1) { idx++; renderQuestion(); updateProgress(); }
         else showResult();
       }, 200);
@@ -683,21 +625,25 @@ function renderQuestion() {
   });
 }
 
-function getScore() { return answers.reduce((s, v) => s + (v ?? 0), 0); }
+function getScore() { return answers.reduce(function(s, v) { return s + (v || 0); }, 0); }
 function getLevel(s) { return s <= 19 ? 'low' : s <= 38 ? 'moderate' : 'high'; }
 
 function renderList(id, items) {
-  $(id).innerHTML = items.map(t =>
-    `<li><span class="li-dot"></span><span>${t}</span></li>`).join('');
+  $(id).innerHTML = items.map(function(t) {
+    return '<li><span class="li-dot"></span><span>' + t + '</span></li>';
+  }).join('');
 }
 
 function showResult() {
-  const score = getScore();
-  const level = getLevel(score);
-  const d = RESULTS[level];
+  var score = getScore();
+  var level = getLevel(score);
+  var d = RESULTS[level];
 
-  $('rBadge').className = `r-badge ${d.badgeClass}`;
-  $('rBadge').innerHTML = `<span class="r-badge-dot"></span>${d.badge}`;
+  var header = $('resultHeader');
+  header.style.background = d.headerBg;
+
+  $('rBadge').className = 'r-badge ' + d.badgeClass;
+  $('rBadge').innerHTML = '<span class="r-badge-dot"></span> ' + d.badge;
   $('rTitle').innerHTML = d.title;
   $('rDesc').textContent = d.desc;
   $('insightTitle').textContent = d.insightTitle;
@@ -708,12 +654,9 @@ function showResult() {
 
   renderList('actionList', d.actions);
 
-  $('stepsRow').innerHTML = d.plan.map((p, i) => `
-    <div class="step">
-      <div class="step-n">${i + 1}</div>
-      <strong>${p.title}</strong>
-      <p>${p.text}</p>
-    </div>`).join('');
+  $('stepsRow').innerHTML = d.plan.map(function(p, i) {
+    return '<div class="step"><div class="step-n">' + (i + 1) + '</div><strong>' + p.title + '</strong><p>' + p.text + '</p></div>';
+  }).join('');
 
   if (!d.therapy) {
     $('therapyCard').classList.add('hidden');
@@ -725,15 +668,16 @@ function showResult() {
     $('tcText').textContent = d.therapy.text;
     $('tcNote').textContent = d.therapy.note;
     $('therapyLink').href = buildTherapyUrl();
-    $('tcBenefits').innerHTML = d.therapy.benefits.map(b =>
-      `<div class="th-ben"><strong>${b.title}</strong><span>${b.text}</span></div>`).join('');
+    $('tcBenefits').innerHTML = d.therapy.benefits.map(function(b) {
+      return '<div class="th-ben"><strong>' + b.title + '</strong><span>' + b.text + '</span></div>';
+    }).join('');
   }
 
   $('progressFill').style.width = '100%';
   $('curPct').textContent = '100';
   $('curQ').textContent = '16';
 
-  $('quizCard').style.display = 'none';
+  $('quizBlock').style.display = 'none';
   $('resultCard').style.display = 'block';
   $('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -742,14 +686,14 @@ function resetQuiz() {
   answers = new Array(questions.length).fill(null);
   idx = 0;
   $('resultCard').style.display = 'none';
-  $('quizCard').style.display = 'block';
+  $('quizBlock').style.display = 'block';
   $('footerRetake').style.display = 'none';
   renderQuestion();
   updateProgress();
   document.getElementById('quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-$('backBtn').addEventListener('click', () => { if (idx > 0) { idx--; renderQuestion(); updateProgress(); } });
+$('backBtn').addEventListener('click', function() { if (idx > 0) { idx--; renderQuestion(); updateProgress(); } });
 $('restartBtn').addEventListener('click', resetQuiz);
 $('retakeBtn').addEventListener('click', resetQuiz);
 $('retakeBtnLow').addEventListener('click', resetQuiz);
