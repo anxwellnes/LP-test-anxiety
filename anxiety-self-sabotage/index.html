@@ -12,13 +12,13 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Is Anxiety Making You Self-Sabotage? Free Quiz</title>
-  <meta name="description" content="Procrastination, avoiding opportunities, staying small, pushing people away. These are not personality flaws. 16 questions that reveal exactly how anxiety is sabotaging your life." />
+  <title>Is Anxiety Making You Self-Sabotage? Free Quiz, 16 Questions</title>
+  <meta name="description" content="Procrastination, avoidance, missed opportunities: anxiety is often behind behaviours people mistake for laziness or weakness. 16 questions. Find out how anxiety is working against you." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://myanxietytest.com/anxiety-self-sabotage/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Is Anxiety Making You Self-Sabotage? Free Quiz" />
-  <meta property="og:description" content="16 questions that reveal exactly how anxiety is sabotaging your life and what to do about it." />
+  <meta property="og:description" content="16 questions across 5 sabotage patterns. Find out exactly how anxiety is working against you." />
   <meta property="og:url" content="https://myanxietytest.com/anxiety-self-sabotage/" />
   <meta property="og:site_name" content="MyAnxietyTest" />
   <meta name="twitter:card" content="summary" />
@@ -26,20 +26,28 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is anxiety-driven self-sabotage?", "acceptedAnswer": { "@type": "Answer", "text": "Anxiety-driven self-sabotage happens when the nervous system's threat-detection system creates behaviours that protect against failure, rejection or loss at the cost of the things you actually want. Procrastination, avoidance, perfectionism and opportunity rejection are all forms of self-protection that anxiety produces. They are not character flaws." } },
+      { "@type": "Question", "name": "Is self-sabotage the same as laziness?", "acceptedAnswer": { "@type": "Answer", "text": "No. Laziness is a preference for rest over effort when both are genuinely available. Anxiety-driven self-sabotage is the nervous system actively blocking action to prevent the experience of failure or rejection. The person usually wants to take action and cannot. That gap is anxiety, not laziness." } },
+      { "@type": "Question", "name": "Why does anxiety cause procrastination?", "acceptedAnswer": { "@type": "Answer", "text": "Starting something makes the outcome real, which means failure becomes possible. Not starting keeps failure safely in the future. The relief of not starting is immediate and powerful, which is why procrastination is so resistant to motivation techniques alone." } },
+      { "@type": "Question", "name": "Can therapy help with anxiety-driven self-sabotage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. CBT for anxiety specifically targets the threat-perception patterns that produce sabotaging behaviours. Most people with anxiety-driven self-sabotage see meaningful changes within 8 to 16 sessions." } },
+      { "@type": "Question", "name": "What are the main patterns of anxiety self-sabotage?", "acceptedAnswer": { "@type": "Answer", "text": "The five most common patterns are: avoidance, perfectionism, procrastination, relationship sabotage and opportunity rejection. Each has a different trigger and a different way of limiting life." } }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Is Anxiety Making You Self-Sabotage?",
-    "description": "A 16-question assessment identifying the specific ways anxiety produces self-sabotaging behaviour across 5 patterns: avoidance, perfectionism, procrastination, relationship sabotage and opportunity rejection.",
+    "description": "A 16-question assessment identifying the specific ways anxiety produces self-sabotaging behaviour across 5 patterns.",
     "url": "https://myanxietytest.com/anxiety-self-sabotage/",
     "inLanguage": "en",
     "about": { "@type": "MedicalCondition", "name": "Anxiety", "sameAs": "https://en.wikipedia.org/wiki/Anxiety" },
     "isPartOf": { "@type": "WebSite", "name": "MyAnxietyTest", "url": "https://myanxietytest.com" },
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "MyAnxietyTest", "item": "https://myanxietytest.com" },
-        { "@type": "ListItem", "position": 2, "name": "Is Anxiety Making You Self-Sabotage?", "item": "https://myanxietytest.com/anxiety-self-sabotage/" }
-      ]
-    }
+    "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "MyAnxietyTest", "item": "https://myanxietytest.com" }, { "@type": "ListItem", "position": 2, "name": "Anxiety Self-Sabotage Quiz", "item": "https://myanxietytest.com/anxiety-self-sabotage/" } ] }
   }
   </script>
 
@@ -49,651 +57,627 @@
 
   <style>
     :root {
-      --blue:     #0064FA;
-      --acc:      #9D174D;
-      --acc-dark: #831843;
-      --acc-deep: #4a0520;
-      --acc-soft: #FDF2F8;
-      --acc-bdr:  #FBCFE8;
-      --bg:       #FDF4F8;
-      --surface:  #FFFFFF;
-      --border:   #E2E8F0;
-      --text:     #0F172A;
-      --muted:    #475569;
-      --muted-lt: #94A3B8;
-
-      --p1: #DC2626;
-      --p2: #7C3AED;
-      --p3: #0F766E;
-      --p4: #BE185D;
-      --p5: #1D4ED8;
-
-      --p1s: #FEF2F2;
-      --p2s: #F5F3FF;
-      --p3s: #F0FDFA;
-      --p4s: #FDF2F8;
-      --p5s: #EFF6FF;
+      --blue:  #0064FA;
+      --bg:    #F0F4FF;
+      --white: #FFFFFF;
+      --border:#E2E8F0;
+      --text:  #0F172A;
+      --muted: #475569;
+      --lt:    #94A3B8;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); }
     a { color: inherit; text-decoration: none; }
 
+    /* NAV */
     .nav { background: var(--blue); position: sticky; top: 0; z-index: 100; }
-    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 56px; display: flex; align-items: center; justify-content: space-between; }
-    .nav-logo { display: flex; align-items: center; gap: 9px; }
-    .nav-logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
-    .nav-logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; }
-    .nav-right { display: flex; align-items: center; gap: 16px; }
-    .nav-link { font-size: 0.84rem; font-weight: 700; color: rgba(255,255,255,0.75); }
-    .nav-pill { font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.8); border: 1.5px solid rgba(255,255,255,0.3); padding: 5px 14px; border-radius: 999px; }
+    .nav-in { max-width: 1100px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 56px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 8px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; }
+    .nav-pill { font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.8); border: 1.5px solid rgba(255,255,255,0.28); padding: 5px 14px; border-radius: 999px; }
 
-    .hero { background: linear-gradient(155deg, #2d0a1e 0%, var(--acc-deep) 35%, var(--acc-dark) 65%, var(--acc) 100%); padding: clamp(48px,8vw,88px) clamp(16px,4vw,40px) clamp(40px,6vw,72px); text-align: center; }
-    .hero-inner { max-width: 700px; margin: 0 auto; }
-    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.88); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; padding: 5px 14px; border-radius: 999px; margin-bottom: 20px; }
-    .hero h1 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(2rem,5.5vw,3.8rem); color: white; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 16px; }
-    .hero h1 span { color: #FBCFE8; }
-    .hero-sub { font-size: 1.02rem; color: rgba(255,255,255,0.72); max-width: 540px; margin: 0 auto 28px; line-height: 1.72; }
-    .hero-cta { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--acc-deep); font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.02rem; padding: 0 32px; height: 56px; border-radius: 999px; cursor: pointer; border: none; transition: all 0.18s; }
-    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.22); }
-    .hero-checks { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 22px; }
-    .hero-check { display: flex; align-items: center; gap: 7px; font-size: 0.83rem; color: rgba(255,255,255,0.62); font-weight: 600; }
-    .hero-check::before { content: '✓'; color: #FBCFE8; font-weight: 900; font-size: 0.75rem; }
+    /* HERO */
+    .hero { background: var(--blue); padding: clamp(48px,8vw,88px) clamp(16px,4vw,40px) clamp(40px,6vw,72px); }
+    .hero-in { max-width: 860px; margin: 0 auto; }
+    .hero-kicker { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 14px; display: flex; align-items: center; gap: 7px; }
+    .hero-kicker::before { content: '✦'; color: rgba(255,255,255,0.5); }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(2rem,5vw,3.4rem); color: white; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 16px; max-width: 680px; }
+    .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 560px; margin-bottom: 28px; line-height: 1.7; }
+    .hero-cta-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+    .btn-start { display: inline-flex; align-items: center; gap: 8px; height: 52px; padding: 0 28px; background: white; color: #1E3A8A; font-family: 'Nunito', sans-serif; font-size: 0.96rem; font-weight: 900; border-radius: 999px; border: none; cursor: pointer; transition: transform 0.18s, box-shadow 0.18s; text-decoration: none; }
+    .btn-start:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+    .hero-note { font-size: 0.79rem; color: rgba(255,255,255,0.4); font-weight: 600; }
+    .hero-trust { display: flex; gap: 20px; flex-wrap: wrap; }
+    .hero-trust span { font-size: 0.8rem; color: rgba(255,255,255,0.5); font-weight: 600; display: flex; align-items: center; gap: 6px; }
+    .hero-trust span::before { content: '✓'; color: rgba(255,255,255,0.5); }
 
-    .quiz-wrap { max-width: 800px; margin: 0 auto; padding: 0 clamp(16px,3vw,24px) 80px; }
+    /* TRUST CHIPS below hero */
+    .chips { background: white; border-bottom: 1px solid var(--border); }
+    .chips-in { max-width: 860px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); display: flex; gap: 0; overflow-x: auto; }
+    .chip { flex-shrink: 0; display: flex; align-items: center; gap: 7px; padding: 14px 18px; font-size: 0.82rem; font-weight: 700; color: var(--muted); border-right: 1px solid var(--border); }
+    .chip:last-child { border-right: none; }
+    .chip-mark { font-size: 0.9rem; }
 
-    .progress-header { background: var(--acc-dark); border-radius: 20px 20px 0 0; padding: 16px 24px 0; margin-top: 32px; }
-    .ph-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-    .ph-label { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.9); }
-    .ph-pct { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.6); }
-    .ph-bar { height: 4px; background: rgba(255,255,255,0.2); border-radius: 999px; overflow: hidden; }
-    .ph-bar-fill { height: 100%; background: white; border-radius: 999px; transition: width 0.4s ease; }
+    /* MAIN */
+    .main { max-width: 860px; margin: 0 auto; padding: 32px clamp(16px,4vw,40px) 60px; }
 
-    .q-card { background: var(--surface); border-radius: 0 0 20px 20px; border: 1px solid var(--border); border-top: none; box-shadow: 0 6px 28px rgba(217,119,6,0.08); padding: clamp(24px,4vw,36px); }
-    .q-badge { display: inline-flex; align-items: center; gap: 7px; background: var(--acc-soft); color: var(--acc-dark); border: 1px solid var(--acc-bdr); font-size: 0.73rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
-    .q-badge-num { background: var(--acc); color: white; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; font-weight: 900; }
-    .q-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1rem,2.2vw,1.25rem); letter-spacing: -0.015em; line-height: 1.35; color: var(--text); margin-bottom: 22px; }
-    .q-options { display: flex; flex-direction: column; gap: 10px; }
-    .q-opt { display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; border: 2px solid var(--border); border-radius: 14px; background: #FAFAFA; cursor: pointer; transition: all 0.14s; user-select: none; }
-    .q-opt:hover { border-color: var(--acc-bdr); background: var(--acc-soft); }
-    .q-opt.selected { border-color: var(--acc); background: var(--acc-soft); }
-    .q-opt-radio { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; transition: all 0.14s; display: grid; place-items: center; margin-top: 1px; }
-    .q-opt.selected .q-opt-radio { border-color: var(--acc); background: var(--acc); }
-    .q-opt.selected .q-opt-radio::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: white; }
-    .q-opt-text { font-size: 0.9rem; font-weight: 600; line-height: 1.45; color: var(--text); }
-    .q-nav { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; }
-    .btn-back { height: 40px; padding: 0 16px; background: transparent; border: 2px solid var(--border); border-radius: 999px; font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; color: var(--muted); cursor: pointer; transition: all 0.14s; }
-    .btn-back:hover { border-color: var(--acc-bdr); color: var(--acc); }
-    .q-hint { font-size: 0.75rem; color: var(--muted-lt); font-weight: 600; }
+    /* QUIZ CARD */
+    .quiz-card { background: white; border-radius: 20px; border: 1px solid var(--border); box-shadow: 0 4px 32px rgba(0,100,250,0.07); overflow: hidden; margin-bottom: 28px; }
+
+    .q-strip { background: var(--blue); padding: 16px 24px; }
+    .q-strip-top { display: flex; justify-content: space-between; font-size: 0.79rem; font-weight: 700; color: rgba(255,255,255,0.85); margin-bottom: 9px; }
+    .q-strip-top strong { color: white; }
+    .q-bar { height: 4px; background: rgba(255,255,255,0.2); border-radius: 999px; overflow: hidden; }
+    .q-bar-fill { height: 100%; background: white; border-radius: 999px; transition: width 0.35s ease; }
+
+    .q-body { padding: clamp(24px,4vw,36px); }
+    .q-meta { font-size: 0.76rem; font-weight: 600; color: var(--lt); margin-bottom: 12px; }
+    .q-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.05rem,2.3vw,1.3rem); line-height: 1.38; color: var(--text); margin-bottom: 24px; letter-spacing: -0.01em; }
+
+    .ans-list { display: flex; flex-direction: column; gap: 10px; }
+    .ans-btn { display: flex; align-items: center; gap: 14px; width: 100%; padding: 14px 18px; border-radius: 14px; border: 1.5px solid var(--border); background: #FAFBFF; cursor: pointer; font-family: 'Nunito Sans', sans-serif; text-align: left; transition: all 0.14s; }
+    .ans-btn:hover { border-color: #93C5FD; background: #EFF6FF; }
+    .ans-btn.selected { border-color: var(--blue); background: #EFF6FF; }
+    .ans-radio { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; display: grid; place-items: center; transition: all 0.14s; }
+    .ans-btn.selected .ans-radio { border-color: var(--blue); background: var(--blue); }
+    .ans-btn.selected .ans-radio::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: white; display: block; }
+    .ans-label { font-size: 0.91rem; font-weight: 600; color: var(--text); line-height: 1.4; }
+
+    .q-foot { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px 22px; }
+    .q-hint { font-size: 0.76rem; color: var(--lt); font-weight: 600; }
+    .ctrl-row { display: flex; gap: 8px; }
+    .btn-ctrl { height: 38px; padding: 0 14px; border-radius: 999px; border: 1.5px solid var(--border); background: white; font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--muted); cursor: pointer; transition: all 0.14s; }
+    .btn-ctrl:hover:not(:disabled) { border-color: #93C5FD; color: var(--blue); }
+    .btn-ctrl:disabled { opacity: 0.3; cursor: not-allowed; }
+
+    /* HOW IT WORKS */
+    .info-card { background: white; border-radius: 20px; border: 1px solid var(--border); padding: clamp(20px,3vw,28px); margin-bottom: 28px; }
+    .info-h { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.1rem; letter-spacing: -0.01em; margin-bottom: 12px; color: var(--text); }
+    .info-p { font-size: 0.9rem; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
+    .info-p:last-child { margin-bottom: 0; }
+    .info-p a { color: var(--blue); font-weight: 700; }
 
     /* RESULTS */
-    #results { display: none; padding-top: 32px; padding-bottom: 72px; }
+    .result-wrap { display: none; }
 
-    /* VERDICT HEADER */
-    .verdict-header { border-radius: 20px; padding: clamp(24px,4vw,36px); margin-bottom: 20px; position: relative; overflow: hidden; }
-    .vh-glow { position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,0.05); pointer-events: none; }
-    .vh-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 10px; }
-    .vh-tag { display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; color: white; margin-bottom: 14px; }
-    .vh-headline { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.4rem,3.5vw,2.1rem); color: white; letter-spacing: -0.025em; line-height: 1.12; margin-bottom: 12px; }
-    .vh-desc { font-size: 0.94rem; color: rgba(255,255,255,0.82); line-height: 1.75; }
+    .result-header { border-radius: 20px; padding: clamp(24px,4vw,36px); margin-bottom: 20px; }
+    .r-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 13px; border-radius: 999px; font-size: 0.69rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 14px; }
+    .r-badge.low      { background: rgba(22,163,74,0.15);  color: #86EFAC; border: 1px solid rgba(22,163,74,0.25); }
+    .r-badge.moderate { background: rgba(217,119,6,0.15);  color: #FCD34D; border: 1px solid rgba(217,119,6,0.25); }
+    .r-badge.high     { background: rgba(220,38,38,0.15);  color: #FCA5A5; border: 1px solid rgba(220,38,38,0.25); }
+    .r-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+    .r-h1 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.3rem,3vw,2rem); color: white; letter-spacing: -0.025em; line-height: 1.12; margin-bottom: 12px; }
+    .r-desc { font-size: 0.93rem; color: rgba(255,255,255,0.78); line-height: 1.72; max-width: 560px; }
 
-    /* SABOTAGE PATTERN MAP - unique visual */
-    .pattern-map { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(217,119,6,0.07); }
-    .pm-header { padding: 20px 24px 14px; border-bottom: 1px solid var(--border); }
-    .pm-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acc); margin-bottom: 4px; }
-    .pm-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; letter-spacing: -0.01em; }
-    .pm-sub { font-size: 0.8rem; color: var(--muted); margin-top: 3px; }
+    /* Pattern bars */
+    .result-card { background: white; border-radius: 20px; border: 1px solid var(--border); margin-bottom: 20px; overflow: hidden; }
+    .rc-head { padding: 20px 24px 14px; border-bottom: 1px solid var(--border); }
+    .rc-eyebrow { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+    .rc-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.96rem; }
+    .rc-sub { font-size: 0.79rem; color: var(--lt); margin-top: 2px; }
 
-    .pattern-row { border-bottom: 1px solid var(--border); padding: 0; }
-    .pattern-row:last-child { border-bottom: none; }
-    .pr-top { display: flex; align-items: center; gap: 0; cursor: pointer; padding: 16px 20px; }
-    .pr-icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; font-size: 1.1rem; flex-shrink: 0; margin-right: 12px; }
-    .pr-info { flex: 1; min-width: 0; }
-    .pr-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.9rem; margin-bottom: 2px; }
-    .pr-bar-wrap { display: flex; align-items: center; gap: 10px; }
-    .pr-bar-bg { flex: 1; height: 7px; background: #F1F5F9; border-radius: 999px; overflow: hidden; }
-    .pr-bar { height: 100%; border-radius: 999px; transition: width 0.7s ease; }
-    .pr-pct { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; width: 36px; text-align: right; flex-shrink: 0; }
-    .pr-detail { padding: 0 20px 16px 72px; display: block; }
-    .pr-expand { display: none; }
-    .pr-detail-body { font-size: 0.84rem; color: var(--muted); line-height: 1.7; margin-bottom: 10px; }
-    .pr-example { background: var(--bg); border-left: 3px solid; border-radius: 0 10px 10px 0; padding: 10px 14px; font-size: 0.82rem; font-style: italic; line-height: 1.6; }
+    .pat-row { padding: 16px 24px; border-bottom: 1px solid var(--border); }
+    .pat-row:last-child { border-bottom: none; }
+    .pat-top { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .pat-icon { font-size: 1.1rem; }
+    .pat-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; flex: 1; }
+    .pat-pct { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.96rem; }
+    .pat-bar-bg { height: 7px; background: #F1F5F9; border-radius: 999px; overflow: hidden; margin-bottom: 6px; }
+    .pat-bar { height: 100%; border-radius: 999px; transition: width 0.7s ease; }
+    .pat-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.55; }
 
-    /* EMOTIONAL MIRROR */
-    .honest-card { border-radius: 20px; padding: clamp(22px,3vw,30px); margin-bottom: 20px; }
-    .hc-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.55; margin-bottom: 10px; }
-    .hc-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.1rem,2.5vw,1.5rem); letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 14px; }
-    .hc-body { font-size: 0.92rem; line-height: 1.78; opacity: 0.88; }
-    .hc-body p { margin-bottom: 12px; }
-    .hc-body p:last-child { margin-bottom: 0; }
+    /* Insight sections */
+    .insight { background: white; border-radius: 20px; border: 1px solid var(--border); padding: clamp(20px,3vw,26px); margin-bottom: 20px; }
+    .ins-eye { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 5px; }
+    .ins-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.98rem; letter-spacing: -0.01em; margin-bottom: 12px; }
+    .ins-body { font-size: 0.89rem; color: var(--muted); line-height: 1.75; }
+    .ins-body p { margin-bottom: 10px; }
+    .ins-body p:last-child { margin-bottom: 0; }
+    .ins-list { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-top: 12px; }
+    .ins-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.87rem; color: var(--muted); line-height: 1.55; }
+    .ins-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--blue); flex-shrink: 0; margin-top: 5px; }
 
-    /* VERSION WITHOUT */
-    .version-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: clamp(20px,3vw,28px); margin-bottom: 20px; box-shadow: 0 2px 12px rgba(217,119,6,0.05); }
-    .vc-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acc); margin-bottom: 5px; }
-    .vc-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; margin-bottom: 16px; }
-    .version-items { display: flex; flex-direction: column; gap: 10px; }
-    .vi-item { display: flex; gap: 12px; align-items: flex-start; padding: 14px; background: var(--bg); border-radius: 12px; border-left: 3px solid var(--acc-bdr); }
-    .vi-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
-    .vi-text { font-size: 0.86rem; line-height: 1.6; color: var(--text); font-weight: 600; }
-
-    /* STEPS */
-    .steps-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: clamp(20px,3vw,28px); margin-bottom: 20px; box-shadow: 0 2px 12px rgba(217,119,6,0.05); }
-    .sc-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acc); margin-bottom: 5px; }
-    .sc-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; margin-bottom: 14px; }
-    .steps-list { display: flex; flex-direction: column; gap: 14px; }
-    .step-item { display: flex; gap: 14px; align-items: flex-start; }
-    .step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--acc-soft); color: var(--acc-dark); border: 1.5px solid var(--acc-bdr); display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.8rem; flex-shrink: 0; }
-    .step-body h4 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; letter-spacing: -0.01em; margin-bottom: 3px; }
-    .step-body p { font-size: 0.82rem; color: var(--muted); line-height: 1.56; }
+    /* Steps row */
+    .steps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 14px; }
+    .step { background: #F0F4FF; border-radius: 14px; padding: 14px; }
+    .step-n { width: 26px; height: 26px; border-radius: 7px; background: var(--blue); color: white; display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 900; margin-bottom: 8px; }
+    .step strong { display: block; font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 900; margin-bottom: 4px; color: #1E3A8A; }
+    .step p { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
 
     /* CTA */
-    .cta-card { background: linear-gradient(135deg, var(--acc-deep), var(--acc-dark)); border-radius: 20px; padding: clamp(24px,4vw,36px); margin-bottom: 20px; }
-    .cta-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 10px; }
-    .cta-headline { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.2rem,3vw,1.8rem); color: white; letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 14px; }
-    .cta-body { font-size: 0.92rem; color: rgba(255,255,255,0.78); line-height: 1.75; margin-bottom: 16px; }
-    .cta-separator { height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 16px; }
-    .cta-reality { font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.65; margin-bottom: 20px; font-style: italic; }
-    .cta-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 24px; }
-    .cta-feat { font-size: 0.81rem; color: rgba(255,255,255,0.75); font-weight: 600; display: flex; align-items: center; gap: 7px; }
-    .cta-feat::before { content: '✓'; color: #FBCFE8; font-weight: 900; }
-    .cta-btn { display: inline-flex; align-items: center; gap: 8px; height: 52px; padding: 0 28px; background: white; color: var(--acc-deep); font-family: 'Nunito', sans-serif; font-size: 0.98rem; font-weight: 900; border-radius: 14px; transition: all 0.2s; }
-    .cta-btn:hover { background: var(--acc-soft); transform: translateY(-1px); }
-    .cta-note { font-size: 0.74rem; color: rgba(255,255,255,0.35); margin-top: 12px; }
+    .cta { background: var(--blue); border-radius: 20px; padding: clamp(22px,3.5vw,30px); margin-bottom: 20px; }
+    .cta-eye { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 9px; }
+    .cta-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1rem,2.5vw,1.3rem); color: white; letter-spacing: -0.02em; line-height: 1.22; margin-bottom: 10px; }
+    .cta-body { font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.72; margin-bottom: 20px; max-width: 520px; }
+    .cta-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-bottom: 22px; }
+    .cta-feat { font-size: 0.8rem; color: rgba(255,255,255,0.7); font-weight: 600; display: flex; align-items: center; gap: 7px; }
+    .cta-feat::before { content: '✓'; color: #93C5FD; font-weight: 900; }
+    .cta-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .btn-cta { display: inline-flex; align-items: center; gap: 8px; height: 50px; padding: 0 24px; background: white; color: #1E3A8A; font-family: 'Nunito', sans-serif; font-size: 0.96rem; font-weight: 900; border-radius: 999px; border: none; cursor: pointer; transition: all 0.18s; text-decoration: none; }
+    .btn-cta:hover { background: #EFF6FF; transform: translateY(-1px); }
+    .btn-ghost { height: 50px; padding: 0 18px; border: 1.5px solid rgba(255,255,255,0.22); background: transparent; color: rgba(255,255,255,0.7); font-family: 'Nunito', sans-serif; font-size: 0.88rem; font-weight: 700; border-radius: 999px; cursor: pointer; transition: all 0.18s; }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.5); color: white; }
+    .cta-note { margin-top: 10px; font-size: 0.72rem; color: rgba(255,255,255,0.28); }
 
-    .faq-section { margin-bottom: 48px; }
-    .faq-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.3rem; letter-spacing: -0.02em; margin-bottom: 16px; }
+    .retake-lo { display: none; justify-content: center; padding: 4px 0 16px; }
+    .btn-retake { height: 40px; padding: 0 20px; border: 1.5px solid var(--border); background: white; color: var(--muted); font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: 999px; cursor: pointer; transition: all 0.14s; }
+    .btn-retake:hover { border-color: #93C5FD; color: var(--blue); }
+
+    .disclaimer { padding: 12px 0 20px; font-size: 0.75rem; color: var(--lt); text-align: center; }
+
+    /* LOWER */
+    .lower { max-width: 860px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px) 60px; }
+    .lower-card { background: white; border-radius: 20px; border: 1px solid var(--border); padding: clamp(20px,3vw,28px); margin-bottom: 14px; }
+    .lc-h2 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.05rem,2vw,1.35rem); letter-spacing: -0.02em; margin-bottom: 14px; }
+    .lc-h3 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.9rem; color: #1E3A8A; margin: 16px 0 5px; }
+    .lc-p { font-size: 0.88rem; color: var(--muted); line-height: 1.75; margin-bottom: 9px; }
+    .lc-p:last-child { margin-bottom: 0; }
+    .lc-p a { color: var(--blue); font-weight: 700; }
+    .lc-ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .lc-ul li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.87rem; color: var(--muted); line-height: 1.55; }
+    .lc-ul li::before { content: '›'; color: var(--blue); font-weight: 900; font-size: 1rem; line-height: 1.35; flex-shrink: 0; }
+
     .faq-list { display: flex; flex-direction: column; gap: 10px; }
-    .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; }
-    .faq-q { display: flex; align-items: flex-start; gap: 12px; }
-    .faq-icon { width: 26px; height: 26px; background: var(--acc-soft); color: var(--acc-dark); border-radius: 7px; display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.78rem; flex-shrink: 0; border: 1px solid var(--acc-bdr); }
-    .faq-q-text { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.96rem; letter-spacing: -0.01em; line-height: 1.35; }
-    .faq-a { font-size: 0.86rem; color: var(--muted); line-height: 1.72; margin-top: 10px; padding-left: 38px; }
-    .faq-a a { color: var(--acc-dark); font-weight: 700; }
+    .faq-item { background: #F8FAFF; border-radius: 14px; border: 1px solid var(--border); padding: 16px 18px; }
+    .faq-q { display: flex; align-items: flex-start; gap: 10px; }
+    .faq-qmark { width: 22px; height: 22px; background: var(--blue); color: white; border-radius: 7px; display: grid; place-items: center; font-family: 'Nunito', sans-serif; font-size: 0.66rem; font-weight: 900; flex-shrink: 0; margin-top: 1px; }
+    .faq-qtext { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.9rem; line-height: 1.35; }
+    .faq-a { font-size: 0.85rem; color: var(--muted); line-height: 1.7; margin-top: 9px; padding-left: 32px; }
+    .faq-a a { color: var(--blue); font-weight: 700; }
 
-    .related-section { margin-bottom: 48px; }
-    .related-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; letter-spacing: -0.01em; margin-bottom: 14px; }
-    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
-    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 5px; transition: all 0.17s; }
-    .related-card:hover { border-color: var(--acc-bdr); transform: translateY(-2px); }
-    .rc-icon { font-size: 1.2rem; }
-    .rc-name { font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 900; }
-    .rc-desc { font-size: 0.73rem; color: var(--muted); line-height: 1.4; flex: 1; }
-    .rc-link { font-size: 0.74rem; font-weight: 700; color: var(--acc-dark); }
-
-    .footer { background: #2d0a1e; padding: 26px clamp(16px,4vw,40px) 32px; }
-    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.92rem; color: white; }
-    .footer-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.1); display: grid; place-items: center; font-size: 0.85rem; }
-    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
-    .footer-links a { font-size: 0.77rem; color: rgba(255,255,255,0.32); font-weight: 600; transition: color 0.14s; }
-    .footer-links a:hover { color: rgba(255,255,255,0.7); }
-    .footer-copy { max-width: 1100px; margin: 14px auto 0; font-size: 0.73rem; color: rgba(255,255,255,0.18); text-align: center; }
+    /* FOOTER */
+    .footer { background: #0F172A; padding: 26px clamp(16px,4vw,40px) 32px; }
+    .foot-in { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .foot-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.9rem; color: white; }
+    .foot-mark { width: 28px; height: 28px; border-radius: 7px; background: rgba(255,255,255,0.09); display: grid; place-items: center; font-size: 0.85rem; }
+    .foot-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .foot-links a { font-size: 0.77rem; color: rgba(255,255,255,0.3); font-weight: 600; transition: color 0.14s; }
+    .foot-links a:hover { color: rgba(255,255,255,0.7); }
+    .foot-copy { max-width: 1100px; margin: 14px auto 0; font-size: 0.72rem; color: rgba(255,255,255,0.17); text-align: center; }
 
     @media (max-width: 600px) {
-      .related-grid { grid-template-columns: 1fr 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
       .cta-feats { grid-template-columns: 1fr; }
-      .pr-detail { padding-left: 20px; }
+      .chips-in { gap: 0; }
     }
   </style>
 </head>
 <body>
 
 <nav class="nav">
-  <div class="nav-inner">
-    <a href="https://myanxietytest.com/" class="nav-logo">
-      <div class="nav-logo-mark">🧠</div>
-      <div class="nav-logo-name">MyAnxietyTest</div>
+  <div class="nav-in">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
     </a>
-    <div class="nav-right">
-      <a href="https://myanxietytest.com/" class="nav-link">All tools</a>
-      <div class="nav-pill">Free · No sign-up</div>
-    </div>
+    <div class="nav-pill">Free · No sign-up</div>
   </div>
 </nav>
 
-<section class="hero" id="hero-section">
-  <div class="hero-inner">
-    <div class="hero-badge">🔍 Self-sabotage assessment</div>
-    <h1>Is anxiety making you <span>sabotage yourself?</span></h1>
-    <p class="hero-sub">Procrastination, avoiding opportunities, staying small, keeping people at a distance, quitting before you fail. These are not character flaws. They are anxiety finding ways to keep you safe. This quiz shows you exactly how.</p>
-    <button class="hero-cta" onclick="startQuiz()">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><polygon points="8,6.5 14,10 8,13.5" fill="currentColor"/></svg>
-      Take the Free Quiz
-    </button>
-    <div class="hero-checks">
-      <div class="hero-check">16 questions</div>
-      <div class="hero-check">5 sabotage patterns</div>
-      <div class="hero-check">Personalised pattern map</div>
-      <div class="hero-check">100% anonymous</div>
+<section class="hero">
+  <div class="hero-in">
+    <div class="hero-kicker">Anxiety self-sabotage quiz</div>
+    <h1>Is Anxiety Making You Self-Sabotage? Find Out in 3 Minutes</h1>
+    <p class="hero-sub">Procrastination, perfectionism, missed opportunities and relationships kept at a distance. These are not character flaws. They are anxiety finding ways to keep you safe. This quiz identifies exactly which patterns are active in your life and what they are costing you.</p>
+    <div class="hero-cta-row">
+      <a href="#quiz" class="btn-start">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><polygon points="8,6.5 14,10 8,13.5" fill="currentColor"/></svg>
+        Start the Free Quiz
+      </a>
+      <span class="hero-note">16 questions · 5 patterns · Instant results</span>
+    </div>
+    <div class="hero-trust">
+      <span>No account needed</span>
+      <span>No data stored</span>
+      <span>100% anonymous</span>
+      <span>Not a diagnosis</span>
     </div>
   </div>
 </section>
 
-<div class="quiz-wrap">
-
-  <div id="quiz-section" style="display:none;">
-    <div class="progress-header">
-      <div class="ph-top">
-        <span class="ph-label" id="ph-label">Question 1 of 16</span>
-        <span class="ph-pct" id="ph-pct">0% complete</span>
-      </div>
-      <div class="ph-bar"><div class="ph-bar-fill" id="ph-fill" style="width:6%"></div></div>
-    </div>
-    <div class="q-card">
-      <div class="q-badge">
-        <div class="q-badge-num" id="q-num">1</div>
-        <span id="q-cat">Pattern</span>
-      </div>
-      <div class="q-text" id="q-text"></div>
-      <div class="q-options" id="q-options"></div>
-      <div class="q-nav">
-        <button class="btn-back" id="btn-back" onclick="goBack()">← Back</button>
-        <div class="q-hint" id="q-hint">Select an answer to continue</div>
-      </div>
-    </div>
-  </div>
-
-  <div id="results" style="display:none;">
-
-    <div class="verdict-header" id="verdict-header">
-      <div class="vh-glow"></div>
-      <div class="vh-eyebrow">Your result</div>
-      <div class="vh-tag" id="vh-tag"></div>
-      <div class="vh-headline" id="vh-headline"></div>
-      <div class="vh-desc" id="vh-desc"></div>
-    </div>
-
-    <div class="pattern-map">
-      <div class="pm-header">
-        <div class="pm-eyebrow">Your sabotage pattern map</div>
-        <div class="pm-title">The 5 ways anxiety is working against you</div>
-        <div class="pm-sub">Tap each pattern to see exactly how it shows up and what it sounds like in real life.</div>
-      </div>
-      <div id="pattern-rows"></div>
-    </div>
-
-    <div class="honest-card" id="honest-card">
-      <div class="hc-eyebrow">What this actually is</div>
-      <div class="hc-title" id="hc-title"></div>
-      <div class="hc-body" id="hc-body"></div>
-    </div>
-
-    <div class="version-card">
-      <div class="vc-eyebrow">The version of you without this</div>
-      <div class="vc-title" id="vc-title">What your life looks like when anxiety stops making your decisions</div>
-      <div class="version-items" id="version-items"></div>
-    </div>
-
-    <div class="steps-card">
-      <div class="sc-eyebrow">What to do with this</div>
-      <div class="sc-title">Your next steps</div>
-      <div class="steps-list" id="steps-list"></div>
-    </div>
-
-    <div class="cta-card" id="cta-card" style="display:none;">
-      <div class="cta-eyebrow">The most direct path to stopping this</div>
-      <div class="cta-headline" id="cta-headline"></div>
-      <div class="cta-body" id="cta-body"></div>
-      <div class="cta-separator"></div>
-      <div class="cta-reality" id="cta-reality"></div>
-      <div class="cta-feats">
-        <div class="cta-feat">Licensed therapists online</div>
-        <div class="cta-feat">Start within days, not months</div>
-        <div class="cta-feat">Anxiety specialists</div>
-        <div class="cta-feat">20% off your first month</div>
-      </div>
-      <a href="https://www.onlinetherapy.com?aff_id=1116&offer_id=2&source=quizSelfSabotage" class="cta-btn" target="_blank" rel="noopener">Find a Therapist, 20% Off →</a>
-      <div class="cta-note">Online. No waiting list. Start this week.</div>
-    </div>
-
-    <div class="faq-section">
-      <div class="faq-title">Frequently asked questions</div>
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Is anxiety-driven self-sabotage the same as just being lazy or unmotivated?</div></div>
-          <div class="faq-a">No, and this distinction is one of the most important. Laziness is a preference for rest over effort when both are available. Anxiety-driven self-sabotage is the nervous system actively blocking action to protect you from a perceived threat. The procrastination, avoidance and staying small are not failures of character. They are successful anxiety management strategies that happen to prevent you from having the life you want.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Why does anxiety make you sabotage good things specifically?</div></div>
-          <div class="faq-a">Anxiety is particularly active around good things because good things raise the stakes. A good opportunity means there is more to lose if it goes wrong. A close relationship means there is more pain available if it ends. Anxiety responds to the increase in stakes by increasing the drive to protect against failure, rejection or loss. Sabotaging the good thing removes the threat of losing it.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">Can you stop anxiety-driven self-sabotage without addressing the anxiety?</div></div>
-          <div class="faq-a">Not reliably. Willpower and self-awareness help temporarily but the underlying anxiety pattern continues producing sabotaging impulses. People who try to override self-sabotage through motivation alone often describe a pattern of two steps forward and one step back. CBT for anxiety specifically targets the threat-perception patterns that produce the sabotaging behaviour, which changes the frequency of the impulse rather than just the response to it.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">How long does it take to change these patterns with therapy?</div></div>
-          <div class="faq-a">It depends on how entrenched the patterns are, but most people with anxiety-driven self-sabotage see meaningful changes within 8 to 16 sessions of CBT. The behavioural patterns respond faster than the underlying beliefs, which is why the first changes are often visible in what you do before you feel fundamentally different. <a href="https://myanxietytest.com/am-i-ready-for-therapy/">The Am I Ready for Therapy quiz</a> helps you work out whether now is the right time to start.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><div class="faq-icon">Q</div><div class="faq-q-text">What other tools help understand this pattern?</div></div>
-          <div class="faq-a">The <a href="https://myanxietytest.com/anxiety-avoidance-profile/">Anxiety Avoidance Profile</a> specifically maps your avoidance patterns. The <a href="https://myanxietytest.com/anxiety-life-cost/">How Much Has Anxiety Cost You quiz</a> shows the cumulative impact of these patterns across your career, relationships and experiences. Together they give the most complete picture of how anxiety has been running your life.</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="related-section">
-      <div class="related-title">Related tools</div>
-      <div class="related-grid">
-        <a href="https://myanxietytest.com/anxiety-avoidance-profile/" class="related-card">
-          <div class="rc-icon">🚪</div>
-          <div class="rc-name">Anxiety Avoidance Profile</div>
-          <div class="rc-desc">Maps your specific avoidance patterns and what they are costing you.</div>
-          <div class="rc-link">Take the quiz →</div>
-        </a>
-        <a href="https://myanxietytest.com/anxiety-life-cost/" class="related-card">
-          <div class="rc-icon">📊</div>
-          <div class="rc-name">How Much Has Anxiety Cost You?</div>
-          <div class="rc-desc">The cumulative impact of self-sabotage across 6 life domains.</div>
-          <div class="rc-link">See my report →</div>
-        </a>
-        <a href="https://myanxietytest.com/am-i-ready-for-therapy/" class="related-card">
-          <div class="rc-icon">🛋️</div>
-          <div class="rc-name">Am I Ready for Therapy?</div>
-          <div class="rc-desc">Find out where you are in the decision and what is stopping you.</div>
-          <div class="rc-link">Check readiness →</div>
-        </a>
-      </div>
-    </div>
-
-    <button onclick="restartQuiz()" style="display:block;margin:0 auto 24px;height:40px;padding:0 20px;background:transparent;border:2px solid var(--border);border-radius:999px;font-family:'Nunito',sans-serif;font-size:0.84rem;font-weight:800;color:var(--muted);cursor:pointer;">← Retake the quiz</button>
-
+<div class="chips">
+  <div class="chips-in">
+    <div class="chip"><span class="chip-mark">📋</span> 16 questions</div>
+    <div class="chip"><span class="chip-mark">🔍</span> 5 patterns scored</div>
+    <div class="chip"><span class="chip-mark">⚡</span> About 3 minutes</div>
+    <div class="chip"><span class="chip-mark">🎯</span> Instant pattern map</div>
   </div>
 </div>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand"><div class="footer-mark">🧠</div>MyAnxietyTest.com</div>
-    <div class="footer-links">
-      <a href="https://myanxietytest.com/">All tools</a>
-      <a href="https://myanxietytest.com/anxiety-life-cost/">Anxiety Life Cost</a>
-      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
-      <a href="https://myanxietytest.com/am-i-ready-for-therapy/">Ready for Therapy?</a>
-      <a href="https://myanxietytest.com/articles/">Articles</a>
+<div class="main" id="quiz">
+
+  <div class="quiz-card" id="quizCard">
+    <div class="q-strip">
+      <div class="q-strip-top">
+        <span>Question <strong id="curQ">1</strong> of 16</span>
+        <span><strong id="curPct">0</strong>% complete</span>
+      </div>
+      <div class="q-bar"><div class="q-bar-fill" id="qFill"></div></div>
+    </div>
+    <div class="q-body">
+      <div class="q-meta" id="qMeta">Avoidance</div>
+      <p class="q-text" id="qText"></p>
+      <div class="ans-list" id="ansList"></div>
+    </div>
+    <div class="q-foot">
+      <span class="q-hint" id="qHint">Select an answer to continue automatically.</span>
+      <div class="ctrl-row">
+        <button class="btn-ctrl" id="backBtn" disabled>← Back</button>
+        <button class="btn-ctrl" id="restartBtn">Restart</button>
+      </div>
     </div>
   </div>
-  <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+
+  <div class="info-card">
+    <div class="info-h">How this quiz works</div>
+    <p class="info-p">Each of the 16 questions targets a behaviour that anxiety commonly produces. The question is not whether you do the behaviour, but how often and whether the motivation fits an anxiety-driven pattern. Your answers are scored across five domains: avoidance, perfectionism, procrastination, relationship sabotage and opportunity rejection.</p>
+    <p class="info-p">The result is a pattern map showing how strongly each domain is present in your experience. The explanation covers exactly how your primary pattern works and why willpower alone is not sufficient to overcome it. For a broader assessment of anxiety severity, the <a href="https://myanxietytest.com/anxiety-level/">free anxiety level test</a> gives you a full score across all major anxiety symptom categories.</p>
+  </div>
+
+  <div class="result-wrap" id="resultWrap">
+
+    <div class="result-header" id="resultHeader">
+      <div class="r-badge" id="rBadge"><span class="r-dot"></span> Result</div>
+      <h2 class="r-h1" id="rTitle"></h2>
+      <p class="r-desc" id="rDesc"></p>
+    </div>
+
+    <div class="result-card">
+      <div class="rc-head">
+        <div class="rc-eyebrow">Your sabotage pattern map</div>
+        <div class="rc-title">The 5 patterns scored from your answers</div>
+        <div class="rc-sub">Higher percentage means more active sabotage in that area.</div>
+      </div>
+      <div id="patRows"></div>
+    </div>
+
+    <div class="insight">
+      <div class="ins-eye">What this means</div>
+      <div class="ins-title" id="insTitle"></div>
+      <div class="ins-body" id="insBody"></div>
+    </div>
+
+    <div class="insight">
+      <div class="ins-eye">Why the patterns persist</div>
+      <div class="ins-title" id="whyTitle"></div>
+      <div class="ins-body" id="whyBody"></div>
+    </div>
+
+    <div class="insight">
+      <div class="ins-eye">Your next steps</div>
+      <div class="ins-title" id="stepsTitle">What actually helps</div>
+      <div class="steps-grid" id="stepsGrid"></div>
+    </div>
+
+    <div class="cta" id="ctaCard" style="display:none;">
+      <div class="cta-eye">Recommended next step</div>
+      <div class="cta-title" id="ctaTitle"></div>
+      <div class="cta-body" id="ctaBody"></div>
+      <div class="cta-feats">
+        <div class="cta-feat">Licensed therapists online</div>
+        <div class="cta-feat">Start within days</div>
+        <div class="cta-feat">Anxiety specialists</div>
+        <div class="cta-feat">20% off first month</div>
+      </div>
+      <div class="cta-row">
+        <a class="btn-cta" id="ctaLink" href="#">Find a Therapist, 20% Off →</a>
+        <button class="btn-ghost" id="retakeBtn">Retake quiz</button>
+      </div>
+      <div class="cta-note">No waiting list. Online. Start this week.</div>
+    </div>
+
+    <div class="retake-lo" id="retakeLo">
+      <button class="btn-retake" id="retakeBtnLo">← Take the quiz again</button>
+    </div>
+
+    <div class="disclaimer">This quiz is an informational self-assessment, not a clinical diagnosis. If anxiety is significantly affecting your life, speaking with a qualified professional is recommended.</div>
+  </div>
+
+</div>
+
+<div class="lower">
+
+  <div class="lower-card">
+    <div class="lc-h2">What is anxiety-driven self-sabotage?</div>
+    <p class="lc-p">Anxiety-driven self-sabotage is a set of behaviours the nervous system produces to protect against failure, rejection or loss. Unlike deliberate self-sabotage, it happens below the level of conscious decision-making. The person usually wants to pursue the thing they are avoiding but finds themselves unable to. The gap between wanting and doing is driven by anxiety, not laziness or weakness.</p>
+    <p class="lc-p">The mechanism is straightforward: anxiety identifies a situation as a potential threat. It generates an avoidance impulse. The person follows the impulse. The anxiety reduces immediately. This immediate relief is what makes the behaviour so persistent and so resistant to simple motivation-based solutions.</p>
+
+    <div class="lc-h3">The five patterns this quiz assesses</div>
+    <ul class="lc-ul">
+      <li><strong>Avoidance:</strong> Structuring life around not entering anxiety-producing situations. The range of what feels manageable gradually shrinks.</li>
+      <li><strong>Perfectionism:</strong> Using impossibly high standards as a way to never finish or release things that could be evaluated and found inadequate.</li>
+      <li><strong>Procrastination:</strong> Blocking the start of important tasks by keeping failure safely in the future rather than making it real by beginning.</li>
+      <li><strong>Relationship sabotage:</strong> Undermining closeness before it matters enough to lose, to protect against the pain of eventually losing it.</li>
+      <li><strong>Opportunity rejection:</strong> Talking yourself out of opportunities that genuinely matter, because anxiety is most active when the stakes are highest.</li>
+    </ul>
+  </div>
+
+  <div class="lower-card">
+    <div class="lc-h2">What your result may mean</div>
+    <div class="lc-h3">Limited self-sabotage pattern</div>
+    <p class="lc-p">Some anxiety-driven behaviours are present but they are not the dominant force in your decisions. You are mostly pursuing what you want even when anxiety is present. The patterns worth monitoring are the ones where you scored highest, particularly during higher-pressure periods when they tend to become more active.</p>
+    <div class="lc-h3">Moderate self-sabotage pattern</div>
+    <p class="lc-p">Anxiety-driven self-sabotage is actively shaping your decisions in several areas. There are things you are not pursuing, relationships you are limiting and opportunities you are declining that have more to do with anxiety than with genuine preference. The cost accumulates quietly rather than dramatically. At this level, addressing the underlying anxiety produces meaningful improvement.</p>
+    <div class="lc-h3">Significant self-sabotage pattern</div>
+    <p class="lc-p">Anxiety has been making a substantial portion of your decisions for some time. The patterns are present across multiple domains and are likely shaping your career, relationships and how you experience your own life. The behaviours feel like personality or preference but are better understood as the nervous system protecting you from threats that are not as real as they feel. This pattern is very treatable, but it requires addressing the anxiety itself.</p>
+  </div>
+
+  <div class="lower-card">
+    <div class="lc-h2">Frequently asked questions</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><div class="faq-qmark">Q</div><div class="faq-qtext">Is self-sabotage always caused by anxiety?</div></div>
+        <div class="faq-a">No. Self-sabotage can also be driven by depression, low self-worth or genuine misalignment between a goal and what someone actually values. Anxiety-driven self-sabotage has a specific signature: the person usually wants to pursue the thing they are avoiding and feels frustration rather than relief when they do not. That frustration is the clearest signal that anxiety is the driver.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><div class="faq-qmark">Q</div><div class="faq-qtext">Can willpower overcome anxiety-driven self-sabotage?</div></div>
+        <div class="faq-a">Temporarily, yes. Willpower can override the avoidance impulse in specific moments. But because the underlying anxiety pattern remains unchanged, the impulse keeps returning at the same strength. This is why people often describe a pattern of two steps forward and one step back. CBT for anxiety addresses the threat-perception patterns generating the impulse, not just the response to it.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><div class="faq-qmark">Q</div><div class="faq-qtext">Does this quiz test for an anxiety disorder?</div></div>
+        <div class="faq-a">No. This quiz specifically assesses whether anxiety-driven self-sabotage patterns are present and which ones are most active. It does not diagnose anxiety severity. For a full severity assessment, the <a href="https://myanxietytest.com/anxiety-level/">anxiety level test</a> provides a scored result across all major anxiety symptom categories. For identifying the specific type of anxiety present, the <a href="https://myanxietytest.com/what-type-of-anxiety-do-i-have/">what type of anxiety do I have quiz</a> is more targeted.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><div class="faq-qmark">Q</div><div class="faq-qtext">Why does anxiety make good opportunities feel most threatening?</div></div>
+        <div class="faq-a">Because the stakes are higher. Anxiety is a threat-detection system calibrated to the importance of the outcome. A job you do not care about produces less anxiety than the one you actually want, because the cost of failure is lower. The more an opportunity matters, the more anxiety activates. This is why the most important things are often the hardest to pursue.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><div class="faq-qmark">Q</div><div class="faq-qtext">How long does it take to change these patterns with therapy?</div></div>
+        <div class="faq-a">Most people with anxiety-driven self-sabotage see meaningful changes within 8 to 16 sessions of CBT. The behavioural patterns often shift first, before the underlying feelings change significantly. Avoidance reduces before anxiety fully resolves. The <a href="https://myanxietytest.com/am-i-ready-for-therapy/">am I ready for therapy quiz</a> can help you work out whether now is the right time to start.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><div class="faq-qmark">Q</div><div class="faq-qtext">What other tools help understand anxiety and avoidance?</div></div>
+        <div class="faq-a">The <a href="https://myanxietytest.com/anxiety-avoidance-profile/">anxiety avoidance profile</a> maps avoidance across five life domains. The <a href="https://myanxietytest.com/anxiety-life-cost/">how much has anxiety cost you quiz</a> shows the cumulative impact across career, relationships, health and experiences. Together they give the most complete picture of how anxiety has been shaping your life.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="foot-in">
+    <a href="https://myanxietytest.com/" class="foot-brand">
+      <div class="foot-mark">🧠</div>
+      MyAnxietyTest.com
+    </a>
+    <div class="foot-links">
+      <a href="https://myanxietytest.com/">All tools</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/anxiety-avoidance-profile/">Avoidance Profile</a>
+      <a href="https://myanxietytest.com/anxiety-life-cost/">Anxiety Life Cost</a>
+      <a href="https://myanxietytest.com/am-i-ready-for-therapy/">Ready for Therapy?</a>
+    </div>
+  </div>
+  <div class="foot-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
 </footer>
 
 <script>
-// 5 patterns scored per question: AV=avoidance, PF=perfectionism, PR=procrastination, RS=relationship sabotage, OP=opportunity rejection
 var PATTERNS = [
-  { key: 'AV', name: 'Avoidance',             icon: '🚪', color: '#DC2626', soft: '#FEF2F2', bdr: '#FECACA', ex: 'The conversation you have been meaning to have for months. The appointment you keep rescheduling. The situation you restructure your entire life to not enter.' },
-  { key: 'PF', name: 'Perfectionism',          icon: '🎯', color: '#7C3AED', soft: '#F5F3FF', bdr: '#DDD6FE', ex: 'The project that is almost ready but never quite ready. The email rewritten four times. The thing you will do when you are more prepared, more capable, more certain it will go well.' },
-  { key: 'PR', name: 'Procrastination',         icon: '⏳', color: '#0F766E', soft: '#F0FDFA', bdr: '#99F6E4', ex: 'The thing you think about constantly but cannot start. The gap between knowing you need to do something and being able to make yourself do it. The relief of the deadline that forces action.' },
-  { key: 'RS', name: 'Relationship sabotage',   icon: '💔', color: '#BE185D', soft: '#FDF2F8', bdr: '#FBCFE8', ex: 'Pulling away when things get close. Finding flaws in people who are genuinely good for you. Pushing people away before they can leave. Staying in bad situations because leaving is scarier than staying.' },
-  { key: 'OP', name: 'Opportunity rejection',   icon: '🚫', color: '#1D4ED8', soft: '#EFF6FF', bdr: '#BFDBFE', ex: 'The job you did not apply for. The thing you wanted but talked yourself out of wanting. The version of your life that was available but felt too exposed, too risky, too much like something could go wrong.' }
+  { key: 'AV', name: 'Avoidance',            icon: '🚪', color: '#DC2626', soft: '#FEF2F2', desc: 'Structuring life around not entering anxiety-producing situations. The world becomes gradually smaller.' },
+  { key: 'PF', name: 'Perfectionism',         icon: '🎯', color: '#7C3AED', soft: '#F5F3FF', desc: 'Using impossible standards as protection against being evaluated and found inadequate.' },
+  { key: 'PR', name: 'Procrastination',       icon: '⏳', color: '#0F766E', soft: '#F0FDFA', desc: 'Blocking starts by keeping failure safely in the future rather than making it real.' },
+  { key: 'RS', name: 'Relationship sabotage', icon: '💔', color: '#BE185D', soft: '#FDF2F8', desc: 'Undermining closeness before it matters enough to lose. Protecting against loss by preventing depth.' },
+  { key: 'OP', name: 'Opportunity rejection', icon: '🚫', color: '#1D4ED8', soft: '#EFF6FF', desc: 'Talking yourself out of what genuinely matters. Anxiety is most active when stakes are highest.' }
 ];
-
-var PATTERN_DETAILS = {
-  AV: { body: 'Avoidance is anxiety\'s most direct tool. When something produces anxiety, the nervous system generates an avoidance impulse. Avoiding works in the short term because the anxiety drops immediately. This immediate relief is what makes avoidance so persistent. Each successful avoidance teaches the brain that the thing was genuinely threatening and that avoidance was the right response. The anxiety about the avoided thing grows over time as a result.' },
-  PF: { body: 'Perfectionism is anxiety\'s way of making action feel safe only when failure is impossible. If the work is perfect, it cannot be criticized. If the preparation is complete enough, nothing can go wrong. The problem is that perfect is never reachable, so the work never goes out, the action never happens, and the protection from failure becomes the failure itself.' },
-  PR: { body: 'Procrastination is almost never laziness. It is anxiety about starting. Starting makes the outcome real and therefore possible to fail. Not starting keeps failure safely in the future. The relief of not starting is immediate and powerful, which is why procrastination is so resistant to willpower. You are not lacking motivation. You are managing a threat.' },
-  RS: { body: 'Relationship sabotage is anxiety\'s response to the stakes of intimacy. The closer someone gets, the more there is to lose if it ends. The anxiety responds to this by generating behaviours that manage the risk: finding reasons to leave before being left, maintaining emotional distance to limit exposure, or staying in situations that are bad but predictable rather than risking something better that could be lost.' },
-  OP: { body: 'Opportunity rejection is anxiety preventing you from reaching for things that matter. The more something matters, the more it activates anxiety. So the jobs that excite you most feel most impossible to apply for. The experiences that would mean most feel most out of reach. Anxiety manages this by generating reasons why the opportunity is not right, you are not ready, or it would probably not work out anyway.' }
-};
 
 var QUESTIONS = [
-  { cat: 'Avoidance', text: 'How often do you avoid situations, conversations or tasks that produce anxiety, even when you know avoiding them makes things worse?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Occasionally', AV:1,PF:0,PR:0,RS:0,OP:0 }, { t: 'Often', AV:2,PF:0,PR:1,RS:0,OP:0 }, { t: 'Very often, avoidance shapes a lot of what I do', AV:3,PF:0,PR:1,RS:0,OP:1 }] },
-  { cat: 'Perfectionism', text: 'How often does the need for something to be perfect prevent you from finishing or sending it?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Sometimes', AV:0,PF:1,PR:0,RS:0,OP:0 }, { t: 'Often, things are rarely good enough to release', AV:0,PF:2,PR:1,RS:0,OP:0 }, { t: 'Very often, perfectionism stops more than it improves', AV:1,PF:3,PR:1,RS:0,OP:1 }] },
-  { cat: 'Procrastination', text: 'How often do you avoid starting something important by doing lower-stakes things instead?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Sometimes', AV:0,PF:0,PR:1,RS:0,OP:0 }, { t: 'Often', AV:1,PF:0,PR:2,RS:0,OP:0 }, { t: 'Very often, the gap between knowing and doing is huge for me', AV:1,PF:0,PR:3,RS:0,OP:1 }] },
-  { cat: 'Relationships', text: 'Have you ever pushed away or distanced yourself from someone who was good for you because closeness felt too risky?', opts: [{ t: 'No', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Once or twice', AV:0,PF:0,PR:0,RS:1,OP:0 }, { t: 'Yes, several times', AV:0,PF:0,PR:0,RS:2,OP:0 }, { t: 'Yes, this is a recurring pattern in my relationships', AV:0,PF:0,PR:0,RS:3,OP:1 }] },
-  { cat: 'Opportunities', text: 'How often do you talk yourself out of opportunities by finding reasons they would not work out?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Sometimes', AV:0,PF:0,PR:0,RS:0,OP:1 }, { t: 'Often', AV:1,PF:0,PR:0,RS:0,OP:2 }, { t: 'Very often, I have missed meaningful opportunities this way', AV:1,PF:0,PR:0,RS:0,OP:3 }] },
-  { cat: 'Avoidance', text: 'How much of your life is structured around not entering situations that produce anxiety?', opts: [{ t: 'Not much', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Some', AV:1,PF:0,PR:0,RS:0,OP:0 }, { t: 'Noticeably, my world is somewhat shaped around what I can manage', AV:2,PF:0,PR:0,RS:0,OP:1 }, { t: 'Significantly, avoidance defines a lot of what my life looks like', AV:3,PF:0,PR:0,RS:0,OP:2 }] },
-  { cat: 'Perfectionism', text: 'How often do you delay action because you feel you need to be more prepared, more capable or more certain before starting?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Sometimes', AV:0,PF:1,PR:1,RS:0,OP:0 }, { t: 'Often', AV:0,PF:2,PR:1,RS:0,OP:1 }, { t: 'Very often, readiness feels permanently just out of reach', AV:0,PF:3,PR:1,RS:0,OP:1 }] },
-  { cat: 'Procrastination', text: 'How often do you only manage to do important things when the deadline or consequence forces your hand?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Sometimes', AV:0,PF:0,PR:1,RS:0,OP:0 }, { t: 'Often', AV:0,PF:0,PR:2,RS:0,OP:0 }, { t: 'Very often, external pressure is what makes things happen', AV:0,PF:0,PR:3,RS:0,OP:0 }] },
-  { cat: 'Relationships', text: 'How often do you find flaws in or reasons to doubt relationships that seem genuinely good?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Sometimes', AV:0,PF:0,PR:0,RS:1,OP:0 }, { t: 'Often', AV:0,PF:0,PR:0,RS:2,OP:0 }, { t: 'Very often, I question or undermine good relationships more than bad ones', AV:0,PF:0,PR:0,RS:3,OP:0 }] },
-  { cat: 'Opportunities', text: 'Have you ever not applied for something, not asked for something or not pursued something specifically because the possibility of failure felt worse than not trying?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'A few times', AV:0,PF:0,PR:0,RS:0,OP:1 }, { t: 'Several times', AV:0,PF:0,PR:0,RS:0,OP:2 }, { t: 'Yes, this is a consistent pattern', AV:0,PF:1,PR:0,RS:0,OP:3 }] },
-  { cat: 'Avoidance', text: 'When anxiety about something builds, what do you most often do?', opts: [{ t: 'Address it directly, even if uncomfortable', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Delay but eventually face it', AV:1,PF:0,PR:1,RS:0,OP:0 }, { t: 'Find ways to reduce the anxiety without addressing the thing itself', AV:2,PF:0,PR:1,RS:0,OP:0 }, { t: 'Avoid it for as long as possible', AV:3,PF:0,PR:1,RS:0,OP:0 }] },
-  { cat: 'Relationships', text: 'How comfortable are you with people genuinely depending on you or you genuinely depending on them?', opts: [{ t: 'Comfortable, I can be interdependent without much anxiety', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Somewhat comfortable', AV:0,PF:0,PR:0,RS:1,OP:0 }, { t: 'Uncomfortable, real dependency creates anxiety', AV:0,PF:0,PR:0,RS:2,OP:0 }, { t: 'Very uncomfortable, I protect against real mutual dependency', AV:0,PF:0,PR:0,RS:3,OP:0 }] },
-  { cat: 'Opportunities', text: 'When something you want becomes available, what is your most common first response?', opts: [{ t: 'Excitement and movement toward it', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Excitement followed by hesitation', AV:0,PF:0,PR:0,RS:0,OP:1 }, { t: 'Hesitation followed by reasons it might not be right', AV:0,PF:1,PR:0,RS:0,OP:2 }, { t: 'Anxiety that makes the good thing feel threatening', AV:0,PF:0,PR:0,RS:0,OP:3 }] },
-  { cat: 'Procrastination', text: 'How much guilt, shame or self-criticism do you carry about things you have not done that you feel you should have?', opts: [{ t: 'Not much', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Some', AV:0,PF:0,PR:1,RS:0,OP:0 }, { t: 'Quite a bit, it is a consistent background feeling', AV:0,PF:1,PR:2,RS:0,OP:0 }, { t: 'A lot, the gap between who I am and who I should be by now is painful', AV:0,PF:1,PR:3,RS:0,OP:1 }] },
-  { cat: 'Perfectionism', text: 'How often does the fear of doing something badly stop you from doing it at all?', opts: [{ t: 'Rarely', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Sometimes', AV:0,PF:1,PR:0,RS:0,OP:1 }, { t: 'Often', AV:1,PF:2,PR:1,RS:0,OP:1 }, { t: 'Very often, not starting is safer than starting and failing', AV:1,PF:3,PR:1,RS:0,OP:2 }] },
-  { cat: 'Overall', text: 'Honestly, how much of your life has been shaped by avoiding failure, rejection and loss rather than pursuing what you actually want?', opts: [{ t: 'Not much, I mostly pursue what I want', AV:0,PF:0,PR:0,RS:0,OP:0 }, { t: 'Somewhat, it has influenced some choices', AV:1,PF:1,PR:1,RS:1,OP:1 }, { t: 'Significantly, avoidance of bad outcomes shapes more than I would like to admit', AV:2,PF:1,PR:2,RS:1,OP:2 }, { t: 'A great deal, my life is partly defined by what I have not done or gone for', AV:2,PF:2,PR:2,RS:2,OP:3 }] }
+  { pat:'AV', cat:'Avoidance',     text:'How often do you avoid situations, conversations or tasks that produce anxiety, even when you know avoiding makes things worse in the long run?' },
+  { pat:'PF', cat:'Perfectionism', text:'How often does needing something to be perfect prevent you from finishing or sending it at all?' },
+  { pat:'PR', cat:'Procrastination', text:'How often do you avoid starting something important by filling the time with lower-stakes activities instead?' },
+  { pat:'RS', cat:'Relationships',  text:'Have you ever distanced yourself from or undermined a relationship that was good for you because closeness felt too risky?' },
+  { pat:'OP', cat:'Opportunities',  text:'How often do you talk yourself out of opportunities you genuinely want by finding reasons they probably would not work out?' },
+  { pat:'AV', cat:'Avoidance',     text:'How much of your life is organised around not entering situations that produce significant anxiety?' },
+  { pat:'PF', cat:'Perfectionism', text:'How often do you delay action because you feel you need to be more prepared or more certain before beginning?' },
+  { pat:'PR', cat:'Procrastination', text:'How often do you only manage to complete important things when external pressure, such as a deadline, forces action?' },
+  { pat:'RS', cat:'Relationships',  text:'How often do you find reasons to doubt or pull back from relationships that seem genuinely good for you?' },
+  { pat:'OP', cat:'Opportunities',  text:'Have you avoided applying for something or going for something specifically because the possibility of failure felt worse than not trying?' },
+  { pat:'AV', cat:'Avoidance',     text:'When anxiety about something builds up, do you most often address it directly or find ways to reduce it without tackling the source?' },
+  { pat:'RS', cat:'Relationships',  text:'How comfortable are you with someone genuinely depending on you, or with genuinely depending on them?' },
+  { pat:'OP', cat:'Opportunities',  text:'When something you want becomes available, what is your most common first response: excitement and movement toward it, or anxiety and reasons it might not work?' },
+  { pat:'PR', cat:'Procrastination', text:'How much guilt or self-criticism do you carry about things you have not done that you feel you should have started by now?' },
+  { pat:'PF', cat:'Perfectionism', text:'How often does fear of doing something badly stop you from doing it at all?' },
+  { pat:'AV', cat:'Overall',       text:'Honestly, how much of your life has been shaped by avoiding failure, rejection and loss rather than moving toward what you actually want?' }
 ];
+
+var OPTIONS = [
+  { label: 'Rarely or never', val: 0 },
+  { label: 'Sometimes',       val: 1 },
+  { label: 'Often',           val: 2 },
+  { label: 'Almost always',   val: 3 }
+];
+
+var MAX_SCORES = { AV: 18, PF: 15, PR: 12, RS: 9, OP: 12 };
 
 var current = 0;
 var answers = new Array(16).fill(null);
 
-function startQuiz() {
-  document.getElementById('hero-section').style.display = 'none';
-  document.getElementById('quiz-section').style.display = 'block';
-  renderQuestion();
+function el(id) { return document.getElementById(id); }
+
+function updateProgress() {
+  el('curQ').textContent = current + 1;
+  el('qMeta').textContent = QUESTIONS[current].cat;
+  var pct = Math.round((current / 16) * 100);
+  el('curPct').textContent = pct;
+  el('qFill').style.width = pct + '%';
+  el('backBtn').disabled = current === 0;
+  el('qHint').textContent = current === 15 ? 'Select an answer to see your result.' : 'Select an answer to continue automatically.';
 }
 
-function renderQuestion() {
-  var q = QUESTIONS[current];
-  var pct = Math.round(((current + 1) / 16) * 100);
-  document.getElementById('ph-label').textContent = 'Question ' + (current + 1) + ' of 16';
-  document.getElementById('ph-pct').textContent = pct + '% complete';
-  document.getElementById('ph-fill').style.width = pct + '%';
-  document.getElementById('q-num').textContent = current + 1;
-  document.getElementById('q-cat').textContent = q.cat;
-  document.getElementById('q-text').textContent = q.text;
-  document.getElementById('btn-back').style.visibility = current === 0 ? 'hidden' : 'visible';
-  document.getElementById('q-hint').textContent = 'Select an answer to continue';
-
-  var optsEl = document.getElementById('q-options');
-  optsEl.innerHTML = '';
-  q.opts.forEach(function(opt, i) {
-    var div = document.createElement('div');
-    div.className = 'q-opt' + (answers[current] === i ? ' selected' : '');
-    div.innerHTML = '<div class="q-opt-radio"></div><div class="q-opt-text">' + opt.t + '</div>';
-    div.onclick = function() { selectAnswer(i); };
-    optsEl.appendChild(div);
+function renderQ() {
+  el('qText').textContent = QUESTIONS[current].text;
+  var list = el('ansList');
+  list.innerHTML = '';
+  OPTIONS.forEach(function(opt, i) {
+    var btn = document.createElement('button');
+    btn.className = 'ans-btn' + (answers[current] === i ? ' selected' : '');
+    btn.innerHTML = '<div class="ans-radio"></div><div class="ans-label">' + opt.label + '</div>';
+    btn.onclick = function() { pick(i); };
+    list.appendChild(btn);
   });
 }
 
-function selectAnswer(i) {
+function pick(i) {
   answers[current] = i;
-  document.querySelectorAll('.q-opt').forEach(function(el, idx) {
-    el.classList.toggle('selected', idx === i);
-  });
-  document.getElementById('q-hint').textContent = '';
+  renderQ();
   setTimeout(function() {
-    if (current === 15) { showResults(); }
-    else { current++; renderQuestion(); }
-  }, 320);
-}
-
-function goBack() {
-  if (current === 0) return;
-  current--;
-  renderQuestion();
+    if (current < 15) { current++; renderQ(); updateProgress(); }
+    else showResults();
+  }, 200);
 }
 
 function computeScores() {
-  var totals = { AV: 0, PF: 0, PR: 0, RS: 0, OP: 0 };
+  var raw = { AV:0, PF:0, PR:0, RS:0, OP:0 };
   answers.forEach(function(ans, qi) {
     if (ans === null) return;
-    var opt = QUESTIONS[qi].opts[ans];
-    totals.AV += opt.AV;
-    totals.PF += opt.PF;
-    totals.PR += opt.PR;
-    totals.RS += opt.RS;
-    totals.OP += opt.OP;
+    raw[QUESTIONS[qi].pat] += OPTIONS[ans].val;
   });
-  var maxPossible = { AV: 18, PF: 15, PR: 15, RS: 12, OP: 15 };
   var pcts = {};
-  Object.keys(totals).forEach(function(k) {
-    pcts[k] = Math.min(100, Math.round((totals[k] / maxPossible[k]) * 100));
+  Object.keys(raw).forEach(function(k) {
+    pcts[k] = Math.min(100, Math.round((raw[k] / MAX_SCORES[k]) * 100));
   });
-  var overall = Math.round(Object.values(pcts).reduce(function(a, b) { return a + b; }, 0) / 5);
-  var primary = Object.keys(pcts).reduce(function(a, b) { return pcts[a] > pcts[b] ? a : b; });
-  return { pcts: pcts, overall: overall, primary: primary };
+  var overall = Math.round(Object.values(pcts).reduce(function(a,b){return a+b;},0) / 5);
+  return { pcts: pcts, overall: overall };
 }
 
 function getLevel(overall) {
-  if (overall >= 55) return 'high';
-  if (overall >= 30) return 'moderate';
-  return 'low';
+  return overall >= 50 ? 'high' : overall >= 28 ? 'moderate' : 'low';
 }
 
-var VERDICTS = {
+var RESULTS = {
   high: {
-    bg: 'linear-gradient(155deg, #2d0a1e, #831843)',
-    tag: '🔶 Significant self-sabotage',
-    headline: 'Anxiety has been making your decisions for a long time. You have been calling it something else.',
-    desc: 'Your answers show a high level of anxiety-driven self-sabotage across multiple patterns. The procrastination, the perfectionism, the missed opportunities, the relationships kept at a distance: these are not character flaws. They are the result of a nervous system that has learned to protect you from failure, rejection and loss by preventing you from fully going for things.',
-    hcTitle: 'This is what has actually been happening',
-    hc: '<p>You have probably spent time wondering why you do not do the things you know you should. Why you talk yourself out of things you want. Why you get close to something good and then find reasons it will not work. Why the effort required just to function normally seems so much greater than it is for other people.</p><p>The answer is not that there is something wrong with you. The answer is that anxiety has been running a very efficient protection system. Every time you avoided something, the anxiety reduced. Every time you did not go for something, the risk of failure disappeared. Every time you stayed at a distance in a relationship, the risk of loss felt more manageable. The protection worked. The cost was your life.</p><p>What CBT does is not magic. It targets the specific threat-perception patterns that have been generating these behaviours and changes the cost-benefit calculation the nervous system is running. When the threat feels smaller, the protection is not needed. When the protection is not needed, the behaviour stops being the path of least resistance.</p>',
-    vcTitle: 'What your life looks like when anxiety stops making your decisions',
-    versionItems: [
-      { icon: '💼', text: 'Pursuing the things that actually excite you rather than the things that feel safe enough to attempt.' },
-      { icon: '🤝', text: 'Being genuinely close to people without engineering the distance that keeps the relationship from mattering too much.' },
-      { icon: '✅', text: 'Starting things without waiting until the conditions are perfect or the fear has passed, because the fear does not have to pass first.' },
-      { icon: '🚀', text: 'Applying for the job, saying the thing, going for the opportunity, not because you have conquered fear but because the fear is no longer the deciding factor.' },
-      { icon: '😮', text: 'Discovering that the gap between who you are and who you could be is narrower than years of self-protection made it feel.' }
-    ],
+    badge: 'Significant self-sabotage', badgeClass: 'high',
+    bg: 'linear-gradient(135deg, #1E1B4B, #4338CA)',
+    title: 'Anxiety has been making a significant number of your decisions.',
+    desc: 'Your results show a high level of anxiety-driven self-sabotage across multiple patterns. The procrastination, perfectionism, missed opportunities and relationships kept at a distance are not character flaws. They are what a nervous system under prolonged pressure produces.',
+    insTitle: 'What this pattern is actually costing you',
+    insBody: '<p>The most important thing to understand is that self-sabotage at this level is not about motivation, discipline or character. It is about a threat-detection system that has learned to treat ordinary challenges as genuine dangers. Every time the avoidance impulse has been followed, it has been reinforced. Every opportunity rejected has narrowed the range of what feels possible.</p><p>The cost is not just in specific missed outcomes. It is in the cumulative narrowing of what your life contains relative to what it could contain. That gap is real, and it is maintained by anxiety, not by who you are.</p>',
+    whyTitle: 'Why the patterns persist even when you can see them',
+    whyBody: '<p>Insight alone does not change anxiety-driven self-sabotage because the impulse is generated below the level of conscious decision-making. Knowing that you procrastinate or avoid does not stop the impulse from arriving. And the relief that comes from following the impulse is immediate and powerful enough to override deliberate choice most of the time.</p><p>This is why willpower-based approaches are unreliable. They address the decision, not the impulse. CBT for anxiety works differently: it targets the threat-perception patterns that generate the impulse in the first place.</p>',
     steps: [
-      { title: 'Name the pattern, not the behaviour', body: 'The next time you notice yourself avoiding, procrastinating or talking yourself out of something, try labelling it: this is the protection system, not a decision about what is actually possible. That labelling creates a gap between the impulse and the action.' },
-      { title: 'Start with your highest-scoring pattern', body: 'Look at the pattern map above and focus on the one with the highest percentage first. That is where the sabotage is most active and where addressing it will have the most impact. <a href="https://myanxietytest.com/anxiety-avoidance-profile/" style="color:var(--acc-dark);font-weight:700;">Take the Avoidance Profile quiz →</a>' },
-      { title: 'Take the step toward professional support', body: 'Self-sabotage at this level is resistant to willpower and self-awareness alone. CBT specifically addresses the underlying threat patterns. Online therapy can start within days. <a href="https://myanxietytest.com/am-i-ready-for-therapy/" style="color:var(--acc-dark);font-weight:700;">Check your readiness →</a>' }
+      { title: 'Name the driver', text: 'The next time you notice avoidance or procrastination, label it: this is anxiety, not a decision about what is actually possible. That gap changes things.' },
+      { title: 'Start with your primary pattern', text: 'Look at the pattern map above. Your highest-scoring pattern is where addressing it will produce the most visible change.' },
+      { title: 'Consider professional support', text: 'Self-sabotage at this level is resistant to self-directed approaches alone. CBT specifically addresses the underlying patterns and can start within days online.' }
     ],
     showCTA: true,
-    ctaHeadline: 'You did not choose this. But you can stop it.',
-    ctaBody: 'The patterns in your report are not personality. They are the outcome of a nervous system that has been protecting you from threats that are not as real as they feel. CBT for anxiety directly addresses the threat-perception patterns producing each of the behaviours in your report. It changes the impulse, not just your response to it.',
-    ctaReality: 'People who complete treatment for anxiety-driven self-sabotage often describe the experience as getting back a version of themselves they had lost access to. Not a different person. The person who was always there, minus the protection system that had been running their life.'
+    ctaTitle: 'You did not choose this pattern. And you can stop it.',
+    ctaBody: 'CBT for anxiety targets the threat-perception patterns producing the behaviours in your result. It changes the impulse, not just your response to it. A therapist who understands this pattern can make a significant difference in a relatively short time.'
   },
   moderate: {
-    bg: 'linear-gradient(155deg, #3d0a26, #9D174D)',
-    tag: '🟡 Moderate self-sabotage',
-    headline: 'Anxiety is making some of your decisions. The patterns are real and worth addressing.',
-    desc: 'Your answers show a meaningful level of anxiety-driven self-sabotage. Some patterns are stronger than others. The impact is real, even if it has not felt like a crisis, because self-sabotage at this level tends to compound quietly rather than dramatically.',
-    hcTitle: 'What moderate self-sabotage actually costs',
-    hc: '<p>Moderate self-sabotage is the most insidious kind. It is bad enough to limit you in real ways: things not pursued, relationships kept slightly at a distance, work that is almost as good as it could be. But it is not bad enough to feel like a crisis. So it continues.</p><p>The cost accumulates in the gap between the life you are living and the life you would be living if anxiety were not making some of the calls. Over years, that gap is significant. The opportunities not taken, the closeness not allowed, the work not put out: these are real subtractions from what your life could contain.</p><p>The good news about moderate self-sabotage is that the patterns are not yet fully entrenched. Addressing them now, before they deepen, produces faster change and more durable improvement than addressing the same patterns after another five years.</p>',
-    vcTitle: 'What becomes available when the patterns are addressed',
-    versionItems: [
-      { icon: '📈', text: 'Your work and output operating at closer to your actual capability rather than what anxiety considers safe to show.' },
-      { icon: '🤝', text: 'Relationships that are a little more present, a little more real, a little less managed.' },
-      { icon: '🎯', text: 'Going for things before you have talked yourself out of them.' },
-      { icon: '🧘', text: 'Less of the background guilt about things not done, not started, not pursued.' }
-    ],
+    badge: 'Moderate self-sabotage', badgeClass: 'moderate',
+    bg: 'linear-gradient(135deg, #1E3A8A, #2563EB)',
+    title: 'Anxiety is making some of your decisions. The patterns are real.',
+    desc: 'Your results show a meaningful level of anxiety-driven self-sabotage. Some patterns are more active than others. The impact is real even if it has not felt like a crisis, because this cost tends to accumulate quietly over time.',
+    insTitle: 'What moderate self-sabotage actually means',
+    insBody: '<p>Moderate anxiety self-sabotage is often the most overlooked form because it does not feel catastrophic. Things are being limited but not completely blocked. Opportunities are being declined but not all of them. Relationships are being kept slightly at a distance but not completely avoided. The life is workable but consistently smaller than it could be.</p><p>Look at the patterns where you scored highest. Those are the areas where anxiety is doing the most active work against your goals.</p>',
+    whyTitle: 'Why catching this now matters',
+    whyBody: '<p>Anxiety-driven self-sabotage tends to deepen over time, not resolve. Each successful avoidance reinforces the avoidance pattern. Each opportunity rejected makes the next one feel slightly more threatening. The trajectory without addressing it is gradual narrowing, not stabilisation.</p><p>Addressing these patterns now, before they have had another year to entrench, is significantly more efficient than addressing them later.</p>',
     steps: [
-      { title: 'Identify which pattern is most active for you', body: 'Look at the pattern map above. The highest-scoring pattern is where the self-sabotage is doing the most work. Starting there gives you the most leverage.' },
-      { title: 'Understand how your anxiety connects to avoidance specifically', body: 'The Anxiety Avoidance Profile maps your avoidance patterns in detail. Understanding the specific triggers is more useful than general anxiety awareness. <a href="https://myanxietytest.com/anxiety-avoidance-profile/" style="color:var(--acc-dark);font-weight:700;">Take the quiz →</a>' },
-      { title: 'Consider whether professional support makes sense', body: 'Moderate self-sabotage responds well to structured support. The Am I Ready for Therapy quiz helps you work out where you are in that decision. <a href="https://myanxietytest.com/am-i-ready-for-therapy/" style="color:var(--acc-dark);font-weight:700;">Check your readiness →</a>' }
+      { title: 'Map your primary pattern', text: 'The pattern with the highest score is the most useful starting point. Understanding specifically how it shows up for you is more useful than addressing anxiety generally.' },
+      { title: 'Notice the relief', text: 'Start paying attention to the relief you feel when you follow an avoidance impulse. That relief is the signal that anxiety was driving the decision, not genuine preference.' },
+      { title: 'Assess your readiness', text: 'The Am I Ready for Therapy quiz can help you work out whether now is the right moment for professional support.' }
     ],
     showCTA: true,
-    ctaHeadline: 'Addressing this now, before it deepens, is the right move.',
-    ctaBody: 'The patterns at this level are real enough to be limiting but recent enough to shift relatively quickly with the right support. CBT for anxiety directly targets the threat-perception patterns producing these behaviours.',
-    ctaReality: 'The most common regret among people who address anxiety-driven self-sabotage is not that they did it. It is that they waited so long before doing it.'
+    ctaTitle: 'Addressing this now, before it deepens, is the right move.',
+    ctaBody: 'The patterns at this level are real enough to be limiting but recent enough to shift relatively quickly with the right support. Online therapy with an anxiety specialist can start within days.'
   },
   low: {
-    bg: 'linear-gradient(155deg, #1e293b, #334155)',
-    tag: '🟢 Limited self-sabotage',
-    headline: 'Anxiety-driven self-sabotage is present but not yet significantly shaping your life.',
-    desc: 'Your answers show limited anxiety-driven self-sabotage. Some patterns are present in mild form, but they are not yet significantly limiting what you do or go for. This is useful to know because these patterns, if they deepen, tend to do so gradually and invisibly.',
-    hcTitle: 'What limited self-sabotage still means',
-    hc: '<p>A low overall score does not mean anxiety is not affecting you. It means the sabotaging patterns are not yet the dominant force in your decisions. Look at the pattern map to see where the highest scores are. Even at lower levels, these patterns are worth understanding before they develop further.</p><p>The best time to address anxiety-driven self-sabotage is when it is still limited. The patterns are less entrenched, the nervous system recalibrates more readily, and the life that gets opened up is larger relative to the effort required.</p>',
-    vcTitle: 'What staying ahead of these patterns allows',
-    versionItems: [
-      { icon: '✅', text: 'Keeping the gap between what you want and what you go for small rather than letting it widen.' },
-      { icon: '🔍', text: 'Understanding the patterns while they are still clearly visible.' }
-    ],
+    badge: 'Limited self-sabotage', badgeClass: 'low',
+    bg: 'linear-gradient(135deg, #14532D, #16A34A)',
+    title: 'Anxiety-driven self-sabotage is not yet significantly shaping your life.',
+    desc: 'Your results show limited anxiety self-sabotage. Some patterns appear in mild form but they are not the dominant force in your decisions. This is useful to know because these patterns tend to deepen gradually if left unexamined.',
+    insTitle: 'What a low score actually means',
+    insBody: '<p>A low overall score does not mean anxiety is absent. It means the sabotaging patterns are not yet significantly limiting what you pursue. Look at the individual pattern scores: even at lower overall levels, specific patterns may be more active. Those are worth understanding and monitoring.</p>',
+    whyTitle: 'Why awareness at this stage is valuable',
+    whyBody: '<p>Anxiety-driven self-sabotage almost always develops gradually rather than appearing all at once. Understanding the patterns before they have become entrenched means you have significantly more options. The nervous system is most responsive to change when patterns are least established.</p>',
     steps: [
-      { title: 'Note the patterns where you scored highest', body: 'Even at low overall levels, specific patterns may be more active. Those are worth monitoring and addressing directly.' },
-      { title: 'Take the Anxiety Avoidance Profile', body: 'It maps avoidance patterns specifically and gives you a more detailed picture of how anxiety is currently influencing your behaviour. <a href="https://myanxietytest.com/anxiety-avoidance-profile/" style="color:var(--acc-dark);font-weight:700;">Take the quiz →</a>' },
-      { title: 'Retake this quiz in 60 days', body: 'Self-sabotage patterns tend to deepen during periods of higher stakes or sustained anxiety. Tracking whether the score changes over time is useful information.' }
+      { title: 'Note your highest pattern', text: 'Even at low overall levels, one or two patterns will score higher. Track those during higher-pressure periods when they tend to become more active.' },
+      { title: 'Use the broader tools', text: 'The anxiety avoidance profile and anxiety level test give a more complete picture of what is present in your specific experience.' },
+      { title: 'Revisit in 60 days', text: 'Self-sabotage patterns become more visible during periods of change or higher stakes. Coming back helps you see whether the pattern is stable or growing.' }
     ],
     showCTA: false
   }
 };
 
 function showResults() {
-  document.getElementById('quiz-section').style.display = 'none';
-  document.getElementById('results').style.display = 'block';
+  el('quizCard').style.display = 'none';
+  el('resultWrap').style.display = 'block';
 
-  var res = computeScores();
-  var level = getLevel(res.overall);
-  var V = VERDICTS[level];
+  var s = computeScores();
+  var level = getLevel(s.overall);
+  var R = RESULTS[level];
 
-  var header = document.getElementById('verdict-header');
-  header.style.background = V.bg;
-  document.getElementById('vh-tag').textContent = V.tag;
-  document.getElementById('vh-headline').textContent = V.headline;
-  document.getElementById('vh-desc').textContent = V.desc;
+  var header = el('resultHeader');
+  header.style.background = R.bg;
 
-  // Pattern map
-  var rowsEl = document.getElementById('pattern-rows');
-  rowsEl.innerHTML = '';
-  var sorted = PATTERNS.slice().sort(function(a, b) { return res.pcts[b.key] - res.pcts[a.key]; });
+  el('rBadge').className = 'r-badge ' + R.badgeClass;
+  el('rBadge').innerHTML = '<span class="r-dot"></span> ' + R.badge;
+  el('rTitle').textContent = R.title;
+  el('rDesc').textContent = R.desc;
+
+  var sorted = PATTERNS.slice().sort(function(a,b){ return s.pcts[b.key]-s.pcts[a.key]; });
+  var rows = el('patRows');
+  rows.innerHTML = '';
   sorted.forEach(function(p) {
-    var pct = res.pcts[p.key];
-    var det = PATTERN_DETAILS[p.key];
-    var rowId = 'detail-' + p.key;
-    rowsEl.innerHTML +=
-      '<div class="pattern-row">' +
-        '<div class="pr-top">' +
-          '<div class="pr-icon" style="background:' + p.soft + '">' + p.icon + '</div>' +
-          '<div class="pr-info">' +
-            '<div class="pr-name" style="color:' + p.color + '">' + p.name + '</div>' +
-            '<div class="pr-bar-wrap">' +
-              '<div class="pr-bar-bg"><div class="pr-bar" style="width:' + pct + '%;background:' + p.color + '"></div></div>' +
-              '<div class="pr-pct" style="color:' + p.color + '">' + pct + '%</div>' +
-            '</div>' +
-          '</div>' +
-          '<div class="pr-expand">▾</div>' +
+    var pct = s.pcts[p.key];
+    rows.innerHTML +=
+      '<div class="pat-row">' +
+        '<div class="pat-top">' +
+          '<span class="pat-icon">' + p.icon + '</span>' +
+          '<span class="pat-name" style="color:' + p.color + '">' + p.name + '</span>' +
+          '<span class="pat-pct" style="color:' + p.color + '">' + pct + '%</span>' +
         '</div>' +
-        '<div class="pr-detail" id="' + rowId + '">' +
-          '<div class="pr-detail-body">' + det.body + '</div>' +
-          '<div class="pr-example" style="border-color:' + p.color + ';color:' + p.color + ';background:' + p.soft + '">' + p.ex + '</div>' +
-        '</div>' +
+        '<div class="pat-bar-bg"><div class="pat-bar" style="width:' + pct + '%;background:' + p.color + '"></div></div>' +
+        '<div class="pat-desc">' + p.desc + '</div>' +
       '</div>';
   });
 
-  document.getElementById('hc-title').textContent = V.hcTitle;
-  document.getElementById('hc-body').innerHTML = V.hc;
-  document.getElementById('honest-card').style.background = V.bg;
-  document.getElementById('honest-card').querySelector('.hc-eyebrow').style.color = 'rgba(255,255,255,0.5)';
-  document.getElementById('honest-card').querySelector('.hc-title').style.color = 'white';
-  document.getElementById('honest-card').querySelector('.hc-body').style.color = 'rgba(255,255,255,0.82)';
+  el('insTitle').textContent = R.insTitle;
+  el('insBody').innerHTML = R.insBody;
+  el('whyTitle').textContent = R.whyTitle;
+  el('whyBody').innerHTML = R.whyBody;
 
-  document.getElementById('vc-title').textContent = V.vcTitle;
-  var vItems = document.getElementById('version-items');
-  vItems.innerHTML = '';
-  V.versionItems.forEach(function(vi) {
-    vItems.innerHTML += '<div class="vi-item"><div class="vi-icon">' + vi.icon + '</div><div class="vi-text">' + vi.text + '</div></div>';
+  var sg = el('stepsGrid');
+  sg.innerHTML = '';
+  R.steps.forEach(function(s, i) {
+    sg.innerHTML += '<div class="step"><div class="step-n">' + (i+1) + '</div><strong>' + s.title + '</strong><p>' + s.text + '</p></div>';
   });
 
-  var stepsList = document.getElementById('steps-list');
-  stepsList.innerHTML = '';
-  V.steps.forEach(function(s, i) {
-    stepsList.innerHTML +=
-      '<div class="step-item">' +
-        '<div class="step-num">' + (i + 1) + '</div>' +
-        '<div class="step-body"><h4>' + s.title + '</h4><p>' + s.body + '</p></div>' +
-      '</div>';
-  });
-
-  if (V.showCTA) {
-    document.getElementById('cta-card').style.display = 'block';
-    document.getElementById('cta-headline').textContent = V.ctaHeadline;
-    document.getElementById('cta-body').textContent = V.ctaBody;
-    document.getElementById('cta-reality').textContent = V.ctaReality;
+  if (R.showCTA) {
+    el('ctaCard').style.display = 'block';
+    el('ctaTitle').textContent = R.ctaTitle;
+    el('ctaBody').textContent = R.ctaBody;
+    el('ctaLink').href = 'https://www.onlinetherapy.com?aff_id=1116&offer_id=2&source=quizSelfSabotage';
+    el('retakeLo').style.display = 'none';
+  } else {
+    el('ctaCard').style.display = 'none';
+    el('retakeLo').style.display = 'flex';
   }
 
-  window.scrollTo(0, 0);
+  el('qFill').style.width = '100%';
+  el('curPct').textContent = '100';
+  el('resultWrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-function toggleDetail(id, headerEl) {
-  var det = document.getElementById(id);
-  var arrow = headerEl.querySelector('.pr-expand');
-  var isOpen = det.classList.contains('open');
-  det.classList.toggle('open', !isOpen);
-  arrow.style.transform = isOpen ? '' : 'rotate(180deg)';
-}
-
-function restartQuiz() {
-  current = 0;
+function reset() {
   answers = new Array(16).fill(null);
-  document.getElementById('results').style.display = 'none';
-  document.getElementById('cta-card').style.display = 'none';
-  document.getElementById('quiz-section').style.display = 'block';
-  renderQuestion();
-  window.scrollTo(0, 0);
+  current = 0;
+  el('resultWrap').style.display = 'none';
+  el('quizCard').style.display = 'block';
+  renderQ();
+  updateProgress();
+  document.getElementById('quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+el('backBtn').addEventListener('click', function() { if (current > 0) { current--; renderQ(); updateProgress(); } });
+el('restartBtn').addEventListener('click', reset);
+el('retakeBtn').addEventListener('click', reset);
+el('retakeBtnLo').addEventListener('click', reset);
+
+renderQ();
+updateProgress();
 </script>
 </body>
 </html>
