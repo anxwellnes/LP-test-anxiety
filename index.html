@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,15 +14,15 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free Anxiety Tools — Tests, Trackers & Crisis Support | MyAnxietyTest.com</title>
-  <meta name="description" content="18 free anxiety tools — anxiety level test, body scan, sleep quiz, OCD test, journal, tracker, panic SOS card and more. Instant results, no sign-up, completely private." />
+  <title>Free Anxiety Tests, Quizzes & Tools | MyAnxietyTest.com</title>
+  <meta name="description" content="Free anxiety tools — anxiety level test, do I have anxiety quiz, body scan, OCD vs anxiety, social anxiety, GAD test, journal, tracker, panic SOS card and more. Instant results, no sign-up, 100% private." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="keywords" content="free anxiety test, anxiety level test, panic attack SOS card, anxiety body scan, OCD test, relationship anxiety, anxiety journal, anxiety tracker" />
+  <meta name="keywords" content="free anxiety test, do I have anxiety quiz, anxiety level test, panic attack SOS card, anxiety body scan, OCD test, relationship anxiety, anxiety journal, anxiety tracker, GAD test, social anxiety test, health anxiety test" />
   <link rel="canonical" href="https://myanxietytest.com/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Free Anxiety Tools | MyAnxietyTest.com" />
-  <meta property="og:description" content="18 free anxiety tools. Tests, trackers, body scan, crisis support and more. Instant, free, no sign-up." />
+  <meta property="og:title" content="Free Anxiety Tests & Tools | MyAnxietyTest.com" />
+  <meta property="og:description" content="Free anxiety tools. Tests, trackers, body scan, crisis support and more. Instant, free, no sign-up." />
   <meta property="og:url" content="https://myanxietytest.com/" />
   <meta property="og:site_name" content="MyAnxietyTest" />
 
@@ -31,12 +32,36 @@
     "@type": "WebSite",
     "name": "MyAnxietyTest",
     "url": "https://myanxietytest.com/",
-    "description": "Free anxiety tools including tests, trackers, body scan and crisis support. Instant results, no sign-up.",
+    "description": "Free anxiety tests, quizzes and tools including anxiety level test, GAD assessment, social anxiety test, OCD vs anxiety quiz, body scan, panic SOS card, journal and tracker. Instant results and no sign-up required.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://myanxietytest.com/?q={search_term_string}",
       "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MyAnxietyTest",
+      "url": "https://myanxietytest.com/"
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Free Anxiety Tests and Quizzes",
+    "description": "A collection of free, clinically-informed anxiety self-assessment tools covering anxiety level, social anxiety, GAD, OCD, health anxiety, panic disorder, and more.",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Anxiety Level Test", "url": "https://myanxietytest.com/anxiety-level/"},
+      {"@type": "ListItem", "position": 2, "name": "Do I Have Anxiety? Quiz", "url": "https://myanxietytest.com/do-i-have-anxiety/"},
+      {"@type": "ListItem", "position": 3, "name": "Social Anxiety Test", "url": "https://myanxietytest.com/social-anxiety-test/"},
+      {"@type": "ListItem", "position": 4, "name": "GAD Anxiety Test", "url": "https://myanxietytest.com/gad-anxiety-test/"},
+      {"@type": "ListItem", "position": 5, "name": "OCD vs Anxiety Test", "url": "https://myanxietytest.com/ocd-vs-anxiety-test/"},
+      {"@type": "ListItem", "position": 6, "name": "Health Anxiety Test", "url": "https://myanxietytest.com/health-anxiety-test/"},
+      {"@type": "ListItem", "position": 7, "name": "Panic Attack SOS Card", "url": "https://myanxietytest.com/panic-sos-card/"},
+      {"@type": "ListItem", "position": 8, "name": "Relationship Anxiety Test", "url": "https://myanxietytest.com/relationship-anxiety/"}
+    ]
   }
   </script>
 
@@ -189,12 +214,13 @@
     .footer-copy { max-width: 1080px; margin: 0 auto; padding-top: 16px; font-size: 0.75rem; color: rgba(255,255,255,0.22); text-align: center; }
 
     /* ARTICLES STRIP */
-    .articles-strip { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); padding: 24px 26px 20px; margin-bottom: 48px; }
-    .as-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 18px; }
+    .articles-strip { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); padding: 24px 26px 20px; margin-bottom: 0; }
+    .as-header { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .as-eyebrow { font-size: 0.67rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
     .as-title { font-family: 'Nunito', sans-serif; font-size: 1.25rem; font-weight: 900; letter-spacing: -0.02em; }
     .as-link { font-size: 0.8rem; font-weight: 700; color: var(--blue); white-space: nowrap; }
     .as-link:hover { text-decoration: underline; }
+    .as-link-row { display: flex; align-items: center; }
     .articles-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
     .ac { background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; transition: all 0.18s; text-decoration: none; }
     .ac:hover { border-color: var(--blue); background: var(--blue-soft); transform: translateY(-2px); }
@@ -373,16 +399,40 @@
         <a href="https://myanxietytest.com/is-therapy-right-for-me/" class="btn-tool">Get My Answer <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
+
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🌱</div><div class="tc-tag">Therapy readiness</div></div>
+        <div class="tc-name">Am I Ready to Start Therapy?</div>
+        <div class="tc-desc">Not sure if you are ready to start therapy for anxiety? 16 honest questions that reveal exactly where you are and what is actually stopping you from beginning.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Barriers identified</div><div class="tc-pill">Honest readiness score</div></div>
+        <a href="https://myanxietytest.com/am-i-ready-for-therapy/" class="btn-tool">Check My Readiness <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
   </div>
 
   <!-- ── 2. IS IT ANXIETY OR SOMETHING ELSE? ── -->
   <div style="margin-bottom:14px;">
     <div class="section-eyebrow">Understand your specific pattern</div>
     <h2 class="section-h2">Is it anxiety or <span>something else?</span></h2>
-    <p class="section-sub">These tests help you understand which specific pattern is present and whether something else might be at play alongside anxiety.</p>
+    <p class="section-sub">Find out exactly what you are dealing with before trying to fix it.</p>
   </div>
+  <div class="tools-grid" style="margin-bottom:36px;">
 
-  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🔎</div><div class="tc-tag">Self-assessment</div></div>
+        <div class="tc-name">Do I Have Anxiety?</div>
+        <div class="tc-desc">Not sure if what you are experiencing is anxiety? 18 questions covering all major anxiety symptoms. Get a clear, honest answer with a personalised symptom profile.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">Symptom profile</div><div class="tc-pill">Clear answer</div></div>
+        <a href="https://myanxietytest.com/do-i-have-anxiety/" class="btn-tool">Find Out <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
     <div class="tool-card">
       <div class="tc-top">
         <div class="tc-top-row"><div class="tc-icon">😔</div><div class="tc-tag">Assessment</div></div>
@@ -514,6 +564,42 @@
         <a href="https://myanxietytest.com/is-my-anxiety-getting-worse/" class="btn-tool">Check My Trajectory <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
+
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">⚡</div><div class="tc-tag">Anxiety vs stress</div></div>
+        <div class="tc-name">Anxiety or Stress Test</div>
+        <div class="tc-desc">Anxiety and stress feel similar but work very differently. 14 questions that separate the two clearly. Find out which is driving your experience and what that means for next steps.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">14 questions</div><div class="tc-pill">Clear distinction</div><div class="tc-pill">Next steps</div></div>
+        <a href="https://myanxietytest.com/anxiety-or-stress-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">😶</div><div class="tc-tag">Hidden anxiety</div></div>
+        <div class="tc-name">Have I Normalized My Anxiety?</div>
+        <div class="tc-desc">Most people with chronic anxiety stop recognising it as anxiety. They just think this is how they are. 16 questions that reveal whether you have normalised anxiety and for how long.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Normalisation score</div><div class="tc-pill">Eye-opening</div></div>
+        <a href="https://myanxietytest.com/have-i-normalized-anxiety/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🗺️</div><div class="tc-tag">Root cause</div></div>
+        <div class="tc-name">Why Am I Anxious?</div>
+        <div class="tc-desc">Anxious but not sure why? 16 questions that identify exactly where your anxiety is coming from across 4 root sources. A personalised source map of your anxiety triggers.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">4 root sources</div><div class="tc-pill">Source map</div></div>
+        <a href="https://myanxietytest.com/why-am-i-anxious/" class="btn-tool">Find My Root Cause <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
   </div>
 
   <!-- ── 3. SPECIFIC TYPES ── -->
@@ -630,6 +716,18 @@
         <a href="https://myanxietytest.com/anxiety-in-the-body-quiz/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
+
+    <div class="tool-card tc-rose">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">😤</div><div class="tc-tag">Anxiety and anger</div></div>
+        <div class="tc-name">Anxiety and Anger Test</div>
+        <div class="tc-desc">Is your anger actually anxiety in disguise? 16 questions that reveal how much of your frustration is driven by anxiety, what is fuelling it, and what to do about it.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Anger-anxiety link</div><div class="tc-pill">Action plan</div></div>
+        <a href="https://myanxietytest.com/anxiety-and-anger-test/" class="btn-tool">Take the Test <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
   </div>
 
   <!-- ── 4.5. PATTERNS & TENDENCIES ── -->
@@ -721,6 +819,18 @@
       </div>
     </div>
 
+    <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">💸</div><div class="tc-tag">Life cost</div></div>
+        <div class="tc-name">How Much Has Anxiety Cost You?</div>
+        <div class="tc-desc">Anxiety does not just make you feel bad. It takes concrete things from you. 18 questions across 6 life domains reveal exactly what anxiety has cost you and what you could get back.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">6 domains</div><div class="tc-pill">Eye-opening result</div></div>
+        <a href="https://myanxietytest.com/anxiety-life-cost/" class="btn-tool">See My Life Cost <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
     <div class="tool-card" style="grid-column: span 1;">
       <div class="tc-top">
         <div class="tc-top-row"><div class="tc-icon">🌙</div><div class="tc-tag">Sleep Profile</div></div>
@@ -778,6 +888,78 @@
     </div>
   </div>
 
+  <!-- ── 5. ARTICLES ── -->
+  <div style="margin-bottom:14px;">
+    <div class="section-eyebrow">Evidence-based guides</div>
+    <h2 class="section-h2">Read before you <span>decide</span></h2>
+    <p class="section-sub">Guides that answer the real questions around anxiety, therapy and treatment options. Written for people, not search engines.</p>
+  </div>
+
+  <div class="articles-strip">
+    <div class="as-header">
+      <div class="as-link-row">
+        <a href="https://myanxietytest.com/articles/" class="as-link">All articles →</a>
+      </div>
+    </div>
+    <div class="articles-grid">
+
+      <a href="https://myanxietytest.com/articles/best-online-therapy-for-anxiety-2026/" class="ac therapy">
+        <div class="ac-tag">Online therapy</div>
+        <div class="ac-title">Best Online Therapy for Anxiety in 2026: Honest Comparison</div>
+        <div class="ac-meta">12 min read · Updated 2026</div>
+      </a>
+
+      <a href="https://myanxietytest.com/articles/online-therapy-vs-in-person-therapy-for-anxiety/" class="ac therapy">
+        <div class="ac-tag">Online therapy</div>
+        <div class="ac-title">Online Therapy vs In-Person Therapy for Anxiety: Which Works Better?</div>
+        <div class="ac-meta">10 min read</div>
+      </a>
+
+      <a href="https://myanxietytest.com/articles/online-therapy-com-anxiety-review-2026/" class="ac therapy">
+        <div class="ac-tag">Online therapy</div>
+        <div class="ac-title">Online-Therapy.com Review for Anxiety (2026): Is It Worth It?</div>
+        <div class="ac-meta">10 min read · Updated 2026</div>
+      </a>
+
+      <a href="https://myanxietytest.com/articles/high-functioning-anxiety-hidden-signs/" class="ac">
+        <div class="ac-tag">Understanding anxiety</div>
+        <div class="ac-title">High-Functioning Anxiety: The Hidden Signs Most People Miss</div>
+        <div class="ac-meta">9 min read</div>
+      </a>
+
+      <a href="https://myanxietytest.com/articles/why-do-i-feel-anxious-for-no-reason/" class="ac">
+        <div class="ac-tag">Root causes</div>
+        <div class="ac-title">Why Do I Feel Anxious for No Reason?</div>
+        <div class="ac-meta">8 min read</div>
+      </a>
+
+      <a href="https://myanxietytest.com/articles/how-to-stop-anxiety-spirals/" class="ac">
+        <div class="ac-tag">Managing anxiety</div>
+        <div class="ac-title">How to Stop Anxiety Spirals Before They Take Over</div>
+        <div class="ac-meta">8 min read</div>
+      </a>
+
+      <a href="https://myanxietytest.com/articles/anxiety-and-sleep-how-to-break-the-cycle/" class="ac">
+        <div class="ac-tag">Sleep and anxiety</div>
+        <div class="ac-title">Anxiety and Sleep: How to Break the Cycle Tonight</div>
+        <div class="ac-meta">9 min read</div>
+      </a>
+
+      <a href="https://myanxietytest.com/articles/anxiety-and-depression-together-what-to-do/" class="ac">
+        <div class="ac-tag">Anxiety and depression</div>
+        <div class="ac-title">Anxiety and Depression Together: What to Do When Both Hit at Once</div>
+        <div class="ac-meta">9 min read</div>
+      </a>
+
+      <a href="https://myanxietytest.com/articles/how-bad-is-my-anxiety-really/" class="ac">
+        <div class="ac-tag">Self-assessment</div>
+        <div class="ac-title">How Bad Is My Anxiety, Really? An Honest Guide</div>
+        <div class="ac-meta">7 min read</div>
+      </a>
+
+    </div>
+  </div>
+
 </div>
 
 <!-- SEO CONTENT -->
@@ -799,80 +981,26 @@
       <h2>All tools are free, private and instant</h2>
       <p>Every tool on this site is completely free with no account required. Journal and tracker data is saved only in your browser and never sent to any server. Quiz results are instant and anonymous. There is no email collection, no sign-up and no advertising. The only monetisation is an honest recommendation for online therapy at the end of results where it is genuinely relevant, based on your result, not shown to everyone.</p>
     </div>
-  </div>
-</section>
 
-<!-- ARTICLES STRIP -->
-<section class="seo-section" style="padding-top:0;">
-  <div class="seo-inner">
-
-    <div class="articles-strip">
-      <div class="as-header">
-        <div>
-          <div class="as-eyebrow">Anxiety guides</div>
-          <div class="as-title">Read the evidence</div>
-        </div>
-        <a href="https://myanxietytest.com/articles/" class="as-link">All articles →</a>
+    <div class="seo-grid" style="margin-top:20px;">
+      <div class="seo-card">
+        <h2>What is the best free anxiety test online?</h2>
+        <p>The Anxiety Level Test on this site is the most comprehensive free anxiety self-assessment available online. It covers worry, panic, sleep disruption, physical symptoms and daily functioning across 21 questions. The result includes a precise percentage score, a severity level (low, moderate or high) and a personalised action plan. It takes about 3 minutes and requires no sign-up.</p>
+        <p>For a more specific assessment, the GAD-7 style test and the Do I Have Anxiety quiz are also highly useful starting points.</p>
       </div>
-      <div class="articles-grid">
-
-        <a href="https://myanxietytest.com/articles/betterhelp-vs-online-therapy-for-anxiety/" class="ac therapy">
-          <div class="ac-tag">Online therapy</div>
-          <div class="ac-title">BetterHelp vs Online-Therapy for Anxiety: Which Is Better?</div>
-          <div class="ac-meta">10 min read</div>
-        </a>
-
-        <a href="https://myanxietytest.com/articles/online-therapy-com-review-for-anxiety/" class="ac therapy">
-          <div class="ac-tag">Online therapy</div>
-          <div class="ac-title">Online-Therapy.com Review: Is It Worth It for Anxiety?</div>
-          <div class="ac-meta">10 min read</div>
-        </a>
-
-        <a href="https://myanxietytest.com/articles/online-therapy-for-anxiety-does-it-work/" class="ac therapy">
-          <div class="ac-tag">Online therapy</div>
-          <div class="ac-title">Online Therapy for Anxiety: Does It Actually Work?</div>
-          <div class="ac-meta">10 min read</div>
-        </a>
-
-        <a href="https://myanxietytest.com/articles/high-functioning-anxiety-hidden-signs/" class="ac">
-          <div class="ac-tag">High-functioning anxiety</div>
-          <div class="ac-title">High-Functioning Anxiety: The Hidden Signs Most People Miss</div>
-          <div class="ac-meta">9 min read</div>
-        </a>
-
-        <a href="https://myanxietytest.com/articles/why-do-i-feel-anxious-for-no-reason/" class="ac">
-          <div class="ac-tag">Understanding anxiety</div>
-          <div class="ac-title">Why Do I Feel Anxious for No Reason?</div>
-          <div class="ac-meta">8 min read</div>
-        </a>
-
-        <a href="https://myanxietytest.com/articles/how-to-stop-anxiety-spirals/" class="ac">
-          <div class="ac-tag">Managing anxiety</div>
-          <div class="ac-title">How to Stop Anxiety Spirals Before They Take Over</div>
-          <div class="ac-meta">8 min read</div>
-        </a>
-
-        <a href="https://myanxietytest.com/articles/anxiety-and-sleep-how-to-break-the-cycle/" class="ac">
-          <div class="ac-tag">Sleep and anxiety</div>
-          <div class="ac-title">Anxiety and Sleep: How to Break the Cycle</div>
-          <div class="ac-meta">9 min read</div>
-        </a>
-
-        <a href="https://myanxietytest.com/articles/how-bad-is-my-anxiety-really/" class="ac">
-          <div class="ac-tag">Self-assessment</div>
-          <div class="ac-title">How Bad Is My Anxiety, Really?</div>
-          <div class="ac-meta">7 min read</div>
-        </a>
-
-        <a href="https://myanxietytest.com/articles/anxiety-and-depression-together-what-to-do/" class="ac">
-          <div class="ac-tag">Anxiety and depression</div>
-          <div class="ac-title">Anxiety and Depression Together: What to Do When Both Hit at Once</div>
-          <div class="ac-meta">9 min read</div>
-        </a>
-
+      <div class="seo-card">
+        <h2>How is online therapy different from in-person therapy for anxiety?</h2>
+        <p>Online therapy for anxiety is as effective as in-person therapy for most people, according to clinical research. It removes barriers like travel, scheduling, and cost. Platforms such as Online-Therapy.com use structured CBT programmes specifically designed for anxiety. In-person therapy may still be preferable for severe disorders or when a strong in-person therapeutic relationship is important. The right choice depends on your specific pattern, severity level, and practical constraints.</p>
       </div>
     </div>
 
+    <div class="seo-card-full" style="margin-top:20px;">
+      <h2>Common questions about anxiety: answered simply</h2>
+      <p><strong>What are the main types of anxiety?</strong> Generalised anxiety disorder (GAD), social anxiety disorder, panic disorder, health anxiety (illness anxiety), OCD-related anxiety, relationship anxiety, and high-functioning anxiety are the most common types. Each has distinct symptoms and responds to different approaches.</p>
+      <p style="margin-top:8px;"><strong>What does anxiety feel like physically?</strong> Anxiety commonly causes heart pounding, chest tightness, shortness of breath, muscle tension (especially shoulders, jaw and stomach), dizziness, fatigue, nausea, and tingling in hands or feet. The Anxiety Body Scan on this site maps your specific physical pattern.</p>
+      <p style="margin-top:8px;"><strong>Can anxiety cause anger?</strong> Yes. Irritability and anger are very common anxiety symptoms, particularly in people with high-functioning anxiety or chronic stress. The Anxiety and Anger Test on this site identifies how much of your anger may be driven by underlying anxiety.</p>
+      <p style="margin-top:8px;"><strong>How do I know if I need therapy for anxiety?</strong> If anxiety is significantly affecting your work, relationships, sleep or daily quality of life, professional support is worth considering. The Do I Need Therapy quiz and Am I Ready for Therapy quiz on this site give you a personalised, honest answer based on your actual situation.</p>
+    </div>
   </div>
 </section>
 
@@ -893,20 +1021,82 @@
     </div>
     <div class="footer-links">
       <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/do-i-have-anxiety/">Do I Have Anxiety?</a>
       <a href="https://myanxietytest.com/articles/">Articles</a>
       <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
       <a href="https://myanxietytest.com/anxiety-triggers/">Triggers</a>
       <a href="https://myanxietytest.com/anxiety-body-scan/">Body Scan</a>
       <a href="https://myanxietytest.com/ocd-vs-anxiety-test/">OCD vs Anxiety</a>
       <a href="https://myanxietytest.com/anxiety-or-adhd/">Anxiety or ADHD</a>
+      <a href="https://myanxietytest.com/social-anxiety-test/">Social Anxiety</a>
       <a href="https://myanxietytest.com/relationship-anxiety/">Relationship Anxiety</a>
       <a href="https://myanxietytest.com/anxiety-sleep-quiz/">Sleep Quiz</a>
       <a href="https://myanxietytest.com/anxiety-journal/">Journal</a>
       <a href="https://myanxietytest.com/anxiety-tracker/">Tracker</a>
+      <a href="https://myanxietytest.com/gad-anxiety-test/">GAD Test</a>
+      <a href="https://myanxietytest.com/health-anxiety-test/">Health Anxiety</a>
+      <a href="https://myanxietytest.com/why-am-i-anxious/">Why Am I Anxious?</a>
     </div>
   </div>
   <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
 </footer>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best free anxiety test online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Anxiety Level Test on MyAnxietyTest.com is a comprehensive free anxiety self-assessment covering worry, panic, sleep, physical symptoms and daily functioning across 21 questions. It provides a precise percentage score, severity level and personalised action plan in about 3 minutes with no sign-up required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I have anxiety or am I just stressed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anxiety and stress feel similar but are functionally different. Stress is typically tied to an identifiable external cause and resolves when the situation changes. Anxiety persists even without a clear trigger and often involves physical symptoms, avoidance, and excessive worry. The Anxiety or Stress Test on MyAnxietyTest.com helps distinguish between the two in 14 questions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the main types of anxiety disorder?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The main types of anxiety are generalised anxiety disorder (GAD), social anxiety disorder, panic disorder, health anxiety (illness anxiety disorder), OCD-related anxiety, relationship anxiety, high-functioning anxiety, and anticipatory anxiety. Each type has distinct symptoms and responds to different therapeutic approaches."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is online therapy effective for anxiety?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Clinical research shows online therapy is as effective as in-person therapy for most anxiety disorders, particularly for GAD, social anxiety and panic disorder. CBT-based online platforms remove practical barriers like cost, travel and scheduling. The Best Online Therapy for Anxiety guide on MyAnxietyTest.com compares the leading platforms for 2026."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if I need therapy for anxiety?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consider therapy if anxiety is significantly affecting your work, relationships, sleep or daily quality of life, or if self-help strategies have not been enough. The Do I Need Therapy quiz and Am I Ready for Therapy quiz on MyAnxietyTest.com provide personalised, honest answers based on your specific situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What physical symptoms does anxiety cause?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anxiety commonly causes heart pounding or racing, chest tightness, shortness of breath, muscle tension in the shoulders, jaw and stomach, dizziness, fatigue, nausea, headaches, and tingling in the hands or feet. The Anxiety Body Scan on MyAnxietyTest.com maps your specific physical anxiety pattern across 11 body zones."
+        }
+      }
+    ]
+  }
+  </script>
 
 <script>
   const urlSource = new URLSearchParams(window.location.search).get('source');
