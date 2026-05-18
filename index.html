@@ -186,6 +186,23 @@
     .btn-ic { display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 14px; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 800; border-radius: var(--r); transition: all 0.18s; }
     .btn-ic:hover { background: var(--blue-dark); }
 
+    /* THERAPY NEXT STEP BLOCK */
+    .therapy-block { background: linear-gradient(135deg, #FFF7ED 0%, #FFF1E6 100%); border: 1.5px solid #FED7AA; border-radius: var(--r-xl); padding: 28px 32px; margin-bottom: 36px; }
+    .tb-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; }
+    .tb-label { display: inline-flex; align-items: center; gap: 7px; padding: 4px 12px; border-radius: 999px; background: rgba(234,88,12,0.1); border: 1px solid rgba(234,88,12,0.2); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; color: #C2410C; margin-bottom: 8px; }
+    .tb-heading { font-family: "Nunito", sans-serif; font-size: clamp(1.05rem,1.8vw,1.3rem); font-weight: 900; letter-spacing: -0.02em; color: #0D1B2A; margin-bottom: 6px; }
+    .tb-sub { font-size: 0.88rem; color: #5C6F85; line-height: 1.6; max-width: 540px; }
+    .tb-article-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 700; color: #C2410C; white-space: nowrap; margin-top: 4px; flex-shrink: 0; }
+    .tb-article-link:hover { text-decoration: underline; }
+    .tb-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .tbc { background: white; border-radius: var(--r-lg); border: 1px solid #FED7AA; padding: 16px; display: flex; flex-direction: column; gap: 8px; transition: all 0.18s; text-decoration: none; }
+    .tbc:hover { border-color: #EA580C; box-shadow: 0 4px 16px rgba(234,88,12,0.12); transform: translateY(-2px); }
+    .tbc-icon { font-size: 1.3rem; line-height: 1; }
+    .tbc-name { font-family: "Nunito", sans-serif; font-size: 0.92rem; font-weight: 900; letter-spacing: -0.01em; color: #0D1B2A; line-height: 1.25; }
+    .tbc-desc { font-size: 0.8rem; color: #5C6F85; line-height: 1.5; flex: 1; }
+    .tbc-cta { display: inline-flex; align-items: center; gap: 5px; font-size: 0.78rem; font-weight: 800; color: #EA580C; margin-top: 4px; }
+    @media (max-width: 680px) { .tb-cards { grid-template-columns: 1fr; } .therapy-block { padding: 20px 16px; } }
+
     /* SEO */
     .seo-section { background: var(--surface); border-top: 1px solid var(--border); padding: clamp(36px,5vw,60px) clamp(16px,4vw,40px); }
     .seo-inner { max-width: 1080px; margin: 0 auto; }
@@ -338,8 +355,8 @@
     </div>
   </div>
 
-  <!-- TOP 3 -->
-  <div class="tools-grid" style="margin-bottom:36px;">
+  <!-- IMMEDIATE TOOLS -->
+  <div class="tools-grid" style="margin-bottom:20px;">
     <div class="tool-card tc-rose">
       <div class="tc-top">
         <div class="tc-top-row"><div class="tc-icon">🆘</div><div class="tc-tag">Crisis tool</div></div>
@@ -375,41 +392,37 @@
         <a href="https://myanxietytest.com/anxiety-body-scan/" class="btn-tool">Start Body Scan <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
+  </div>
 
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🛋️</div><div class="tc-tag">Assessment</div></div>
-        <div class="tc-name">Do I Need Therapy?</div>
-        <div class="tc-desc">Answers the question honestly. 14 questions across 4 key domains to assess whether professional support would make a real difference for you right now.</div>
+  <!-- THERAPY NEXT STEP BLOCK -->
+  <div class="therapy-block">
+    <div class="tb-top">
+      <div>
+        <div class="tb-label">💬 Ready for professional support?</div>
+        <div class="tb-heading">Find out if therapy is the right next step for you</div>
+        <div class="tb-sub">If your anxiety level result was moderate or high, these three quizzes help you figure out whether therapy makes sense, whether now is the right moment, and what might be stopping you. Then read the guide to find the best option.</div>
       </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">14 questions</div><div class="tc-pill">4 domains</div><div class="tc-pill">Honest answer</div></div>
-        <a href="https://myanxietytest.com/do-i-need-therapy/" class="btn-tool">Find Out <span class="btn-tool-arrow">→</span></a>
-      </div>
+      <a href="https://myanxietytest.com/articles/best-online-therapy-for-anxiety-2026/" class="tb-article-link">Best online therapy for anxiety →</a>
     </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🎯</div><div class="tc-tag">Therapy readiness</div></div>
-        <div class="tc-name">Is Therapy Right for Me Right Now?</div>
-        <div class="tc-desc">Not just whether you need therapy, but whether now is the right moment. 12 honest questions across real impact, your resources, life context and barriers. A direct personalised answer.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">12 questions</div><div class="tc-pill">4 areas</div><div class="tc-pill">Direct answer</div></div>
-        <a href="https://myanxietytest.com/is-therapy-right-for-me/" class="btn-tool">Get My Answer <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🌱</div><div class="tc-tag">Therapy readiness</div></div>
-        <div class="tc-name">Am I Ready to Start Therapy?</div>
-        <div class="tc-desc">Not sure if you are ready to start therapy for anxiety? 16 honest questions that reveal exactly where you are and what is actually stopping you from beginning.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">16 questions</div><div class="tc-pill">Barriers identified</div><div class="tc-pill">Honest readiness score</div></div>
-        <a href="https://myanxietytest.com/am-i-ready-for-therapy/" class="btn-tool">Check My Readiness <span class="btn-tool-arrow">→</span></a>
-      </div>
+    <div class="tb-cards">
+      <a href="https://myanxietytest.com/do-i-need-therapy/" class="tbc">
+        <div class="tbc-icon">🛋️</div>
+        <div class="tbc-name">Do I Need Therapy?</div>
+        <div class="tbc-desc">14 questions across 4 domains. Honest answer on whether professional support would make a real difference right now.</div>
+        <div class="tbc-cta">Take the quiz →</div>
+      </a>
+      <a href="https://myanxietytest.com/is-therapy-right-for-me/" class="tbc">
+        <div class="tbc-icon">🎯</div>
+        <div class="tbc-name">Is Therapy Right for Me Right Now?</div>
+        <div class="tbc-desc">Not just whether you need it, but whether this is the right moment. 12 questions across impact, resources, life context and barriers.</div>
+        <div class="tbc-cta">Get my answer →</div>
+      </a>
+      <a href="https://myanxietytest.com/am-i-ready-for-therapy/" class="tbc">
+        <div class="tbc-icon">🌱</div>
+        <div class="tbc-name">Am I Ready to Start Therapy?</div>
+        <div class="tbc-desc">16 honest questions that reveal where you are and what is actually stopping you from beginning, if anything.</div>
+        <div class="tbc-cta">Check my readiness →</div>
+      </a>
     </div>
   </div>
 
@@ -565,6 +578,9 @@
       </div>
     </div>
 
+  </div>
+
+  <div class="tools-grid" style="margin-bottom:36px;">
     <div class="tool-card">
       <div class="tc-top">
         <div class="tc-top-row"><div class="tc-icon">⚡</div><div class="tc-tag">Anxiety vs stress</div></div>
@@ -1112,3 +1128,6 @@
 </script>
 </body>
 </html>
+
+
+
