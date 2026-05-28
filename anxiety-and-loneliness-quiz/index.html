@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anxiety and Loneliness Quiz: Is Anxiety Making You Feel Alone? | MyAnxietyTest.com</title>
+  <meta name="description" content="Free anxiety and loneliness quiz. Find out if your loneliness, isolation, and disconnection are driven by anxiety. 15 deep questions, instant results, personalized action plan."/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+  <meta name="keywords" content="anxiety and loneliness quiz, does anxiety cause loneliness, anxiety isolation test, social anxiety loneliness, anxiety makes me feel alone, anxiety disconnection quiz, loneliness from anxiety"/>
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-and-loneliness-quiz/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Anxiety and Loneliness Quiz | MyAnxietyTest.com"/>
+  <meta property="og:description" content="Is anxiety making you feel profoundly alone? 15 deep questions, instant results. Free and private."/>
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-and-loneliness-quiz/"/>
+  <meta property="og:site_name" content="MyAnxietyTest"/>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Quiz","name":"Anxiety and Loneliness Quiz","description":"A 15-question emotionally-informed self-assessment exploring how anxiety creates feelings of loneliness, isolation, and disconnection from others. Provides a personalized profile and action plan with therapy guidance.","url":"https://myanxietytest.com/anxiety-and-loneliness-quiz/","publisher":{"@type":"Organization","name":"MyAnxietyTest","url":"https://myanxietytest.com/"},"educationalUse":"Self-assessment","about":[{"@type":"MedicalCondition","name":"Anxiety Disorder"},{"@type":"Thing","name":"Loneliness","description":"Anxiety-driven social isolation and emotional disconnection"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can anxiety cause loneliness?","acceptedAnswer":{"@type":"Answer","text":"Yes. Anxiety is one of the most powerful drivers of loneliness. It creates loneliness through avoidance, making social situations feel threatening, exhausting, or unsafe. It creates loneliness through masking, performing a version of yourself that nobody actually knows, so connections feel hollow. And it creates loneliness through disconnection, even when surrounded by people, anxiety keeps you behind a barrier, unable to fully be present or be known."}},{"@type":"Question","name":"Why does anxiety make you feel alone even around people?","acceptedAnswer":{"@type":"Answer","text":"Anxiety creates a persistent sense of being fundamentally different from others, as if everyone else is managing life effortlessly while you are struggling behind a mask. This creates loneliness even in crowded rooms, even in close relationships. Anxiety also consumes so much cognitive and emotional bandwidth that genuine connection becomes difficult. You are physically present but emotionally unreachable, to yourself as much as to others."}},{"@type":"Question","name":"Is anxiety-driven loneliness a sign that something is wrong with me?","acceptedAnswer":{"@type":"Answer","text":"No. Anxiety-driven loneliness is not a personality defect or a sign that you are fundamentally unlovable or unsociable. It is a predictable consequence of a nervous system under chronic threat. When anxiety treats social connection as a risk, avoidance and isolation are the natural result. The loneliness is a symptom, not a character trait. It is also highly responsive to treatment."}},{"@type":"Question","name":"Can therapy help with anxiety-driven loneliness?","acceptedAnswer":{"@type":"Answer","text":"Therapy is arguably the single most effective intervention for anxiety-driven loneliness, more so than for almost any other anxiety presentation. This is partly because the therapeutic relationship itself is often the first safe experience of genuine connection the person has had in years. CBT addresses the cognitive distortions that make social connection feel dangerous. Compassion-focused approaches address the shame and self-criticism that drive the mask. And the safety of a therapeutic space allows people to begin practising authentic connection."}},{"@type":"Question","name":"How do I know if my loneliness is caused by anxiety or just personality?","acceptedAnswer":{"@type":"Answer","text":"The clearest indicator is whether the loneliness feels involuntary. Introverts who genuinely prefer solitude rarely feel distressed by it. Anxiety-driven loneliness feels like being trapped, a painful gap between the connection you want and the connection anxiety allows you to have. If you feel lonely and simultaneously afraid of or exhausted by the very connections that would resolve the loneliness, anxiety is almost certainly the driver."}}]}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:       #0064FA;
+      --blue-dark:  #0050CC;
+      --blue-mid:   #1a74fb;
+      --blue-soft:  #E8F1FF;
+      --blue-bdr:   #C0D8FF;
+      --night:      #090E1A;
+      --bg:         #F2F5FA;
+      --surface:    #FFFFFF;
+      --border:     #DDE4EF;
+      --text:       #0D1B2A;
+      --muted:      #5C6F85;
+      --muted-lt:   #97A8BA;
+      --shadow-sm:  0 1px 4px rgba(0,100,250,0.07);
+      --shadow-md:  0 4px 20px rgba(0,100,250,0.09);
+      --r:          12px;
+      --r-lg:       18px;
+      --r-xl:       24px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    a { color: inherit; text-decoration: none; }
+
+    /* TOPBAR */
+    .topbar { background: var(--blue); box-shadow: 0 2px 12px rgba(0,100,250,0.25); position: sticky; top: 0; z-index: 100; }
+    .topbar-inner { max-width: 1080px; margin: 0 auto; padding: 0 clamp(16px,4vw,40px); height: 58px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 9px; }
+    .logo-mark { width: 32px; height: 32px; background: white; border-radius: 8px; display: grid; place-items: center; font-size: 0.95rem; }
+    .logo-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1rem; color: white; letter-spacing: -0.01em; }
+    .topbar-tag { font-size: 0.77rem; font-weight: 700; color: rgba(255,255,255,0.72); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 999px; }
+
+    /* HERO */
+    .hero { background: var(--bg); border-bottom: 1px solid var(--border); padding: clamp(52px,8vw,96px) clamp(16px,4vw,40px) clamp(44px,6vw,72px); text-align: center; }
+    .hero-inner { max-width: 680px; margin: 0 auto; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 7px; padding: 6px 16px; border-radius: 999px; background: var(--blue-soft); border: 1px solid var(--blue-bdr); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 22px; }
+    .hero h1 { font-family: 'Nunito', sans-serif; font-size: clamp(1.9rem,4.5vw,3.2rem); font-weight: 900; color: var(--text); line-height: 1.08; letter-spacing: -0.025em; margin-bottom: 16px; }
+    .hero h1 em { color: var(--blue); font-style: normal; }
+    .hero-desc { font-size: 1.04rem; color: var(--muted); line-height: 1.75; margin-bottom: 14px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .hero-sub { font-size: 0.9rem; color: var(--muted-lt); line-height: 1.65; margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .btn-start { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--blue); color: white; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; padding: 16px 40px; border-radius: var(--r-lg); border: none; cursor: pointer; box-shadow: 0 4px 20px rgba(0,100,250,0.35); transition: all 0.16s; }
+    .btn-start:hover { background: var(--blue-dark); transform: translateY(-2px); box-shadow: 0 6px 26px rgba(0,100,250,0.45); }
+    .hero-trust { display: flex; gap: 16px; justify-content: center; margin-top: 18px; flex-wrap: wrap; }
+    .ht-item { font-size: 0.82rem; font-weight: 700; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .ht-dot { width: 18px; height: 18px; border-radius: 50%; background: var(--blue-soft); color: var(--blue); display: grid; place-items: center; font-size: 0.58rem; font-weight: 900; flex-shrink: 0; }
+
+    /* QUIZ */
+    .quiz-section { max-width: 860px; margin: 0 auto; padding: clamp(32px,5vw,56px) clamp(16px,4vw,32px); }
+    .progress-wrap { margin-bottom: 24px; }
+    .progress-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px; }
+    .progress-label { font-size: 0.8rem; font-weight: 700; color: var(--muted); }
+    .progress-pct { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.88rem; color: var(--blue); }
+    .progress-track { height: 5px; background: var(--border); border-radius: 999px; overflow: hidden; }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, var(--blue-dark), var(--blue-mid)); border-radius: 999px; transition: width 0.4s cubic-bezier(0.4,0,0.2,1); }
+
+    /* Question card */
+    .q-card { background: var(--surface); border-radius: var(--r-xl); box-shadow: var(--shadow-md); border: 1px solid var(--border); padding: clamp(28px,4vw,44px); animation: fadeUp 0.28s cubic-bezier(0.4,0,0.2,1); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .q-num { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted-lt); margin-bottom: 12px; }
+    .q-text { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: clamp(1.1rem,2.3vw,1.3rem); color: var(--text); line-height: 1.35; margin-bottom: 10px; }
+    .q-context { font-size: 0.9rem; color: var(--muted); line-height: 1.65; margin-bottom: 22px; font-style: italic; border-left: 3px solid var(--blue-bdr); padding-left: 14px; }
+    .options { display: flex; flex-direction: column; gap: 10px; }
+    .opt { display: flex; align-items: flex-start; gap: 14px; padding: 15px 19px; border-radius: var(--r-lg); border: 2px solid var(--border); cursor: pointer; transition: border-color 0.14s, background 0.14s; background: var(--surface); }
+    .opt:hover { border-color: var(--blue); background: var(--blue-soft); }
+    .opt.selected { border-color: var(--blue); background: var(--blue-soft); }
+    .opt-radio { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; margin-top: 2px; transition: all 0.13s; display: grid; place-items: center; }
+    .opt.selected .opt-radio { border-color: var(--blue); background: var(--blue); }
+    .opt.selected .opt-radio::after { content: ''; width: 7px; height: 7px; background: white; border-radius: 50%; display: block; }
+    .opt-label { font-size: 0.97rem; font-weight: 600; color: var(--text); line-height: 1.5; }
+    .opt-sub { font-size: 0.8rem; color: var(--muted); margin-top: 2px; font-weight: 400; }
+    .q-nav { display: flex; justify-content: flex-start; margin-top: 20px; }
+    .btn-back { background: none; border: 2px solid var(--border); border-radius: var(--r); padding: 8px 18px; font-family: 'Nunito Sans', sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--muted); cursor: pointer; transition: all 0.14s; }
+    .btn-back:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* RESULT */
+    .result-wrap { display: none; }
+
+    /* LP-style result, no cards, editorial flow */
+    .lp-header { text-align: center; padding: clamp(44px,6vw,72px) 0 clamp(32px,4vw,48px); border-bottom: 1px solid var(--border); margin-bottom: clamp(36px,5vw,56px); }
+    .lp-badge { display: inline-flex; align-items: center; gap: 8px; padding: 7px 18px; border-radius: 999px; font-size: 0.73rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 20px; }
+    .badge-low  { background: #F0FDF4; color: #15803D; border: 1px solid #BBF7D0; }
+    .badge-mod  { background: #FFFBEB; color: #B45309; border: 1px solid #FDE68A; }
+    .badge-high { background: #FFF7ED; color: #C2410C; border: 1px solid #FED7AA; }
+    .badge-very { background: #FEF2F2; color: #B91C1C; border: 1px solid #FECACA; }
+    .lp-score { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(3.5rem,8vw,6rem); line-height: 1; margin-bottom: 6px; }
+    .lp-score-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted-lt); margin-bottom: 24px; }
+    .lp-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.6rem,4vw,2.6rem); color: var(--text); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 16px; }
+    .lp-sub { font-size: 1.05rem; color: var(--muted); line-height: 1.75; max-width: 640px; margin: 0 auto; }
+
+    /* Dims as inline tags */
+    .lp-dims { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 28px; }
+    .lp-dim { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: 0.76rem; font-weight: 700; color: var(--muted); }
+    .lp-dim-bar { width: 40px; height: 3px; background: var(--border); border-radius: 999px; overflow: hidden; }
+    .lp-dim-fill { height: 100%; border-radius: 999px; transition: width 1s cubic-bezier(0.4,0,0.2,1); width: 0%; }
+
+    /* LP content, editorial, no card containers */
+    .lp-body { max-width: 740px; margin: 0 auto; }
+    .lp-section { margin-bottom: clamp(36px,5vw,56px); }
+    .lp-eyebrow { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+    .lp-h2 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.2rem,2.8vw,1.75rem); color: var(--text); line-height: 1.18; margin-bottom: 18px; letter-spacing: -0.015em; }
+    .lp-p { font-size: 1rem; color: var(--muted); line-height: 1.85; margin-bottom: 16px; }
+    .lp-p:last-child { margin-bottom: 0; }
+    .lp-p strong { color: var(--text); }
+    .lp-p em { color: var(--text); font-style: normal; font-weight: 700; }
+
+    /* Pull quote */
+    .lp-pullquote { border-left: 4px solid var(--blue); padding: 6px 0 6px 24px; margin: 28px 0; }
+    .lp-pullquote p { font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 1.12rem; color: var(--text); line-height: 1.58; }
+
+    /* Numbered insight list */
+    .lp-numlist { margin: 20px 0; display: flex; flex-direction: column; gap: 16px; }
+    .lp-numitem { display: flex; gap: 16px; align-items: flex-start; }
+    .lp-numitem-n { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.5rem; color: var(--blue-bdr); line-height: 1; flex-shrink: 0; min-width: 28px; margin-top: 2px; }
+    .lp-numitem-body {}
+    .lp-numitem-h { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.98rem; color: var(--text); margin-bottom: 3px; }
+    .lp-numitem-p { font-size: 0.92rem; color: var(--muted); line-height: 1.68; }
+
+    /* Stat strip */
+    .lp-stats { display: flex; flex-direction: column; gap: 0; margin: 24px 0; border-top: 1px solid var(--border); }
+    .lp-stat { display: flex; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .lp-stat-num { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 2rem; color: var(--blue); line-height: 1; flex-shrink: 0; min-width: 72px; }
+    .lp-stat-text { font-size: 0.93rem; color: var(--muted); line-height: 1.55; }
+
+    /* Testimony */
+    .lp-testimony { background: var(--blue-soft); border: 1px solid var(--blue-bdr); border-radius: var(--r-xl); padding: clamp(22px,3.5vw,36px); margin: 32px 0; }
+    .lp-testimony-text { font-size: 0.97rem; color: var(--text); line-height: 1.8; font-style: italic; margin-bottom: 10px; }
+    .lp-testimony-attr { font-size: 0.76rem; font-weight: 700; color: var(--muted-lt); }
+
+    /* Divider */
+    .lp-divider { height: 1px; background: var(--border); margin: clamp(32px,4vw,48px) 0; }
+
+    /* CTA block, LP style, wide */
+    .lp-cta { background: var(--blue); border-radius: var(--r-xl); padding: clamp(36px,5vw,56px); text-align: center; margin: clamp(32px,4vw,48px) 0; position: relative; overflow: hidden; }
+    .lp-cta::before { content: ''; position: absolute; top: -80px; left: -80px; width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05); pointer-events: none; }
+    .lp-cta::after { content: ''; position: absolute; bottom: -60px; right: -60px; width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,0.04); pointer-events: none; }
+    .lp-cta-inner { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
+    .lp-cta-eye { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 10px; }
+    .lp-cta-h { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.3rem,3vw,2rem); color: white; line-height: 1.15; margin-bottom: 14px; letter-spacing: -0.015em; }
+    .lp-cta-p { font-size: 0.97rem; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 28px; }
+    .lp-cta-discount { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18); border-radius: 999px; padding: 5px 14px; font-size: 0.77rem; font-weight: 700; color: rgba(255,255,255,0.8); margin-bottom: 18px; }
+    .lp-cta-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: white; color: var(--blue); font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; padding: 15px 40px; border-radius: var(--r-lg); border: none; cursor: pointer; text-decoration: none; transition: all 0.16s; box-shadow: 0 4px 16px rgba(0,0,0,0.14); }
+    .lp-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,0.2); }
+    .lp-cta-trust { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; margin-top: 16px; }
+    .lp-cta-trust-item { font-size: 0.76rem; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; align-items: center; gap: 4px; }
+
+    /* Result footer */
+    .res-footer { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--border); }
+    .btn-retake { background: none; border: 2px solid var(--border); border-radius: var(--r); padding: 9px 20px; font-family: 'Nunito Sans', sans-serif; font-size: 0.87rem; font-weight: 700; color: var(--muted); cursor: pointer; transition: all 0.14s; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+    .btn-retake:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* FAQ */
+    .seo-section { background: var(--surface); border-top: 1px solid var(--border); padding: clamp(40px,6vw,64px) clamp(16px,4vw,40px); }
+    .seo-inner { max-width: 800px; margin: 0 auto; }
+    .seo-h2 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.2rem,2.2vw,1.6rem); color: var(--text); margin-bottom: 8px; }
+    .seo-intro { font-size: 0.96rem; color: var(--muted); line-height: 1.75; margin-bottom: 28px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.97rem; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .faq-q::after { content: '+'; font-size: 1.25rem; color: var(--blue); flex-shrink: 0; line-height: 1; transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { font-size: 0.92rem; color: var(--muted); line-height: 1.78; max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding-top 0.2s; }
+    .faq-item.open .faq-a { max-height: 500px; padding-top: 12px; }
+    .faq-a a { color: var(--blue); font-weight: 700; text-decoration: none; }
+    .faq-a a:hover { text-decoration: underline; }
+
+    /* Footer */
+    .footer { background: var(--night); padding: clamp(32px,4vw,52px) clamp(16px,4vw,40px) 24px; }
+    .footer-inner { max-width: 1080px; margin: 0 auto; }
+    .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Nunito', sans-serif; font-weight: 900; color: white; font-size: 1rem; margin-bottom: 20px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 22px; }
+    .footer-links a { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.38); transition: color 0.14s; }
+    .footer-links a:hover { color: white; }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.22); border-top: 1px solid rgba(255,255,255,0.07); padding-top: 16px; }
+
+    @media (max-width: 560px) {
+      .lp-cta-trust { gap: 6px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <span class="logo-name">MyAnxietyTest</span>
+    </a>
+    <span class="topbar-tag">Free · Private · Instant</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">🤍 Anxiety and Connection</div>
+    <h1>Is Anxiety Making You<br><em>Feel Profoundly Alone?</em></h1>
+    <p class="hero-desc">You can be surrounded by people and still feel completely invisible. You can have relationships and still feel like nobody truly knows you. If that resonates, this quiz is for you.</p>
+    <p class="hero-sub">15 deep, honest questions about the gap between the connection you want and the connection anxiety allows you to have.</p>
+    <button class="btn-start" id="btnStart" onclick="startQuiz()">Start the Quiz →</button>
+    <div class="hero-trust">
+      <div class="ht-item"><div class="ht-dot">✓</div> 15 questions</div>
+      <div class="ht-item"><div class="ht-dot">✓</div> 4 minutes</div>
+      <div class="ht-item"><div class="ht-dot">✓</div> Instant result</div>
+      <div class="ht-item"><div class="ht-dot">✓</div> No sign-up</div>
+    </div>
+  </div>
+</section>
+
+<section class="quiz-section" id="quizSection">
+  <div id="quizShell" style="display:none;">
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <span class="progress-label" id="progressLabel">Question 1 of 15</span>
+        <span class="progress-pct" id="progressPct">0%</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    </div>
+    <div class="q-card" id="qCard"></div>
+  </div>
+  <div class="result-wrap" id="resultWrap"></div>
+</section>
+
+<section class="seo-section">
+  <div class="seo-inner">
+    <h2 class="seo-h2">Anxiety and Loneliness: Why Anxiety Makes Connection Feel Impossible</h2>
+    <p class="seo-intro">Loneliness and anxiety are so tightly intertwined that it is often impossible to tell which came first. For many people, they arrive together and feed each other for years before anyone names what is happening.</p>
+    <div>
+      <div class="faq-item">
+        <div class="faq-q">Can anxiety cause loneliness?</div>
+        <div class="faq-a">Yes, and it does so in several distinct ways. Anxiety creates loneliness through avoidance, making social situations feel threatening or exhausting. It creates loneliness through masking, performing a version of yourself that nobody actually knows, so connections feel hollow. And it creates loneliness through disconnection, keeping you behind a barrier even when others are physically close. The <a href="https://myanxietytest.com/social-anxiety-test/">Social Anxiety Test</a> explores one of the most common forms of this pattern.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why does anxiety make you feel alone even around people?</div>
+        <div class="faq-a">Anxiety creates a persistent sense of being fundamentally different from everyone else, as if you are the only one who is struggling while everyone around you manages life effortlessly. This belief, however false, creates profound loneliness even in full rooms and close relationships. Anxiety also consumes so much cognitive and emotional energy that genuine presence becomes difficult. You are there but not fully there, to yourself as much as to anyone else. The <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/">High Functioning Anxiety quiz</a> explores how this plays out when you appear fine on the outside.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is feeling lonely because of anxiety a sign something is wrong with me?</div>
+        <div class="faq-a">No. Anxiety-driven loneliness is not a personality defect or a sign that you are fundamentally unlovable or unsociable. It is a predictable consequence of a nervous system under chronic threat. When anxiety treats connection as a risk, avoidance and isolation are the natural result. The loneliness is a symptom of the anxiety, not a character trait. And like the anxiety itself, it is responsive to treatment. The <a href="https://myanxietytest.com/anxiety-in-relationships/">Anxiety in Relationships quiz</a> can help if this pattern is most visible in your close relationships.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why is it hard to talk about feeling lonely when you have anxiety?</div>
+        <div class="faq-a">Because admitting loneliness feels like admitting failure. Anxiety is already running a constant narrative that you are not good enough, not interesting enough, too much, or fundamentally broken. Saying out loud "I am lonely" feels like confirming that narrative. It also requires vulnerability, and vulnerability with anxiety feels like handing someone a weapon. This is one of the reasons therapy is so specifically effective for anxiety-driven loneliness: it creates a safe space to speak these things without fear of confirmation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can online therapy help with anxiety-driven loneliness?</div>
+        <div class="faq-a">Therapy is arguably the single most effective intervention for this specific experience, more so than for almost any other anxiety presentation. This is partly because the therapeutic relationship itself is often the first experience of genuine, safe connection the person has had in years. CBT addresses the distorted beliefs that make connection feel dangerous. Compassion-focused approaches address the shame and self-criticism that drive the mask. And the therapeutic space allows people to begin practising authentic connection without the usual social stakes. Most people describe it as one of the most important things they have ever done.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span style="font-size:1.2rem;">🧠</span> MyAnxietyTest.com</div>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/social-anxiety-test/">Social Anxiety Test</a>
+      <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/">High Functioning Anxiety</a>
+      <a href="https://myanxietytest.com/anxiety-in-relationships/">Anxiety in Relationships</a>
+      <a href="https://myanxietytest.com/have-i-normalized-anxiety/">Have I Normalized Anxiety</a>
+      <a href="https://myanxietytest.com/anxiety-self-sabotage/">Anxiety Self-Sabotage</a>
+      <a href="https://myanxietytest.com/anxiety-or-depression/">Anxiety or Depression</a>
+      <a href="https://myanxietytest.com/emotional-exhaustion-anxiety-test/">Emotional Exhaustion</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+      <a href="https://myanxietytest.com/anxiety-journal/">Journal</a>
+    </div>
+    <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+  </div>
+</footer>
+
+<script>
+const urlSource = new URLSearchParams(window.location.search).get('source');
+function propagateSource(){
+  if(!urlSource) return;
+  document.querySelectorAll('a[href*="myanxietytest.com"]').forEach(link=>{
+    try{ const u=new URL(link.href); u.searchParams.set('source',urlSource); link.href=u.toString(); }catch(e){}
+  });
+}
+propagateSource();
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>q.closest('.faq-item').classList.toggle('open'));
+});
+function affLink(pos){
+  const s = urlSource || 'quizAnxietyLoneliness';
+  return 'https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=' + encodeURIComponent(s+pos);
+}
+function startQuiz(){
+  var b=document.getElementById('btnStart'); if(b) b.style.display='none';
+  document.getElementById('quizShell').style.display='block';
+  renderQuestion();
+  document.getElementById('qCard').scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+const QUESTIONS = [
+  {
+    text: "Think about the last time you were in a social situation, a gathering, a conversation, a group. What was going on inside you that nobody could see?",
+    context: "There are no wrong answers here. This question is about your inner experience, not how you appeared to others.",
+    options: [
+      {label:"I was running on autopilot, saying the right things while feeling completely absent", sub:"Performing without being present", score:3},
+      {label:"I was anxious but managing, constantly monitoring how I was coming across", sub:"Watching myself from the outside", score:2},
+      {label:"I was mostly fine but drained by the effort of being 'on'", sub:"Present but it cost something", score:1},
+      {label:"I was genuinely there, not much gap between inside and outside", sub:"Relatively authentic experience", score:0}
+    ]
+  },
+  {
+    text: "When someone asks how you are really doing, what do you actually say?",
+    context: "Think about your honest, typical response, not what you wish you did, but what you actually do.",
+    options: [
+      {label:"'Fine' or 'good', I almost never tell anyone the real answer", sub:"The real answer stays locked inside", score:3},
+      {label:"I tell a curated version, some truth but with the difficult parts removed", sub:"True enough to feel honest, safe enough to share", score:2},
+      {label:"It depends on the person, I have one or two people I can be honest with", sub:"Selective openness", score:1},
+      {label:"I usually say something fairly accurate, I have people I can be real with", sub:"Genuine connection available", score:0}
+    ]
+  },
+  {
+    text: "After spending time with people you care about, how do you typically feel?",
+    context: "We are looking at the pattern, not the exception.",
+    options: [
+      {label:"More alone than before I arrived, like I performed the whole time", sub:"Connection made it feel worse", score:3},
+      {label:"Relieved it is over, regardless of how it went", sub:"Social time as something to endure", score:2},
+      {label:"Drained but okay, I needed time to decompress but it was worth it", sub:"Positive but costly", score:1},
+      {label:"Genuinely better, social connection tends to energise or settle me", sub:"Connection as restoration", score:0}
+    ]
+  },
+  {
+    text: "Is there a version of yourself that almost nobody sees, thoughts, feelings, fears, or parts of your personality that you keep hidden?",
+    context: "Most people have private inner lives, but this question is about the gap between your inner world and what others know about you.",
+    options: [
+      {label:"Yes, most of my real inner life is completely hidden from everyone", sub:"A vast private world that stays private", score:3},
+      {label:"Yes, there are significant parts of me that almost no one knows", sub:"Substantial parts held back", score:2},
+      {label:"Some things, but one or two people know the parts that matter most", sub:"Limited but real intimacy", score:1},
+      {label:"Not really, the people close to me know me fairly well", sub:"Reasonably known and accepted", score:0}
+    ]
+  },
+  {
+    text: "Have you ever been in a room full of people, laughing, talking, connected on the surface, and felt a wave of acute loneliness so sharp it almost hurt?",
+    context: "That specific kind of loneliness. The kind that is worse than being physically alone.",
+    options: [
+      {label:"Yes, this is one of the most familiar feelings I know", sub:"The loneliness in the crowd", score:3},
+      {label:"Yes, fairly often, especially in situations where connection should feel easy", sub:"Frequent and confusing", score:2},
+      {label:"Occasionally, it happens but it is not a constant experience", sub:"Present but not dominant", score:1},
+      {label:"Not really, that particular experience does not resonate for me", sub:"Not a recognisable pattern", score:0}
+    ]
+  },
+  {
+    text: "When you imagine being fully known by another person, all the anxiety, all the fear, all the parts you keep hidden, what is your immediate gut reaction?",
+    context: "Be honest about the visceral response before the rational one.",
+    options: [
+      {label:"Dread or terror, being fully known feels like the most dangerous thing imaginable", sub:"Vulnerability as threat", score:3},
+      {label:"A complicated mix, desperately wanted and deeply frightening at the same time", sub:"The longing and the fear together", score:3},
+      {label:"Uncomfortable but not unbearable, I could tolerate it with the right person", sub:"Possible but not easy", score:1},
+      {label:"Okay, maybe even relieving, I think I could handle that", sub:"Openness as possible", score:0}
+    ]
+  },
+  {
+    text: "Do you find yourself mentally replaying conversations, worrying you said something wrong, or second-guessing how you came across to someone?",
+    context: "This is one of the ways anxiety consumes the space that connection needs.",
+    options: [
+      {label:"Constantly, I replay conversations for hours or days after they happen", sub:"The conversation continues long after it ends", score:3},
+      {label:"Fairly often, it happens regularly and affects how I feel about relationships", sub:"Frequent and disruptive", score:2},
+      {label:"Sometimes, occasional replay but it does not dominate", sub:"Present but manageable", score:1},
+      {label:"Rarely, I do not tend to ruminate on conversations after the fact", sub:"Generally moves on", score:0}
+    ]
+  },
+  {
+    text: "Think about the relationships in your life right now. Is there at least one person who you feel genuinely understands you?",
+    context: "Not someone who likes you, not someone you spend time with, someone who actually knows you.",
+    options: [
+      {label:"No, I do not think anyone truly knows or understands me", sub:"The core loneliness", score:3},
+      {label:"I am not sure, people seem to know a version of me, but not the real one", sub:"Known but not truly known", score:2},
+      {label:"Maybe one person, but even that connection has limits I maintain", sub:"Partial intimacy", score:1},
+      {label:"Yes, there are people who genuinely know and understand me", sub:"Real intimacy present", score:0}
+    ]
+  },
+  {
+    text: "How does anxiety affect your ability to make or maintain new friendships or connections?",
+    options: [
+      {label:"It makes it feel almost impossible, the anxiety is too overwhelming to get past", sub:"Anxiety as a wall", score:3},
+      {label:"Very difficult, I want connection but the anxiety consistently gets in the way", sub:"Anxiety winning the conflict", score:2},
+      {label:"It makes things harder but I manage to build some connections despite it", sub:"Effortful but possible", score:1},
+      {label:"Not significantly, anxiety affects me but not my ability to connect with others", sub:"Connection largely intact", score:0}
+    ]
+  },
+  {
+    text: "When something difficult is happening in your life, stress, fear, grief, what do you typically do?",
+    options: [
+      {label:"I handle it alone and tell nobody, reaching out for support does not feel like a real option", sub:"Isolation as default", score:3},
+      {label:"I mention it to people but in a minimised way, I do not share the real weight of it", sub:"Visible but protected", score:2},
+      {label:"I have one person I might tell, but it takes a lot before I reach out", sub:"Support available but rarely used", score:1},
+      {label:"I reach out to people, I have support I actually use when things are hard", sub:"Connection as resource", score:0}
+    ]
+  },
+  {
+    text: "Do you ever feel like other people have an easier time connecting, belonging, or feeling at home in social situations, as if they received instructions that you somehow missed?",
+    context: "This is one of the most specific and painful aspects of anxiety-driven loneliness.",
+    options: [
+      {label:"All the time, I feel like I am on the outside of something everyone else understands instinctively", sub:"The sense of fundamental difference", score:3},
+      {label:"Often, there is a persistent sense that connection comes naturally to others but not to me", sub:"Frequent and demoralising", score:2},
+      {label:"Sometimes, but I know intellectually it is not really true", sub:"Present but partially questioned", score:1},
+      {label:"Not really, I feel like I belong reasonably well in most situations", sub:"Belonging available", score:0}
+    ]
+  },
+  {
+    text: "How long have you been carrying this particular kind of loneliness?",
+    options: [
+      {label:"Most of my life, it has been a consistent part of my experience for as long as I can remember", sub:"A long, familiar companion", score:3},
+      {label:"Several years, it has built gradually over time", sub:"Developed over years", score:2},
+      {label:"More recently, in the last year or two, connection has felt harder", sub:"A newer experience", score:1},
+      {label:"Not long, this is a recent or occasional experience for me", sub:"Relatively new or infrequent", score:0}
+    ]
+  },
+  {
+    text: "Has the anxiety-driven loneliness ever made you wonder whether something is fundamentally wrong with you, whether you are simply not built for close connection?",
+    context: "This thought. Have you had it?",
+    options: [
+      {label:"Yes, regularly, it feels like a conclusion I keep arriving at about myself", sub:"A settled belief about the self", score:3},
+      {label:"Yes, it is a fear that comes up, especially when connection attempts fail", sub:"A recurring fear", score:2},
+      {label:"Occasionally, but I can usually talk myself out of it", sub:"A passing thought, not a conviction", score:1},
+      {label:"No, I do not really think that about myself", sub:"Not a significant belief", score:0}
+    ]
+  },
+  {
+    text: "How does it feel right now, answering these questions honestly?",
+    context: "This one is about the act of doing this quiz, not about a separate experience.",
+    options: [
+      {label:"Strange and a little exposing, like I am acknowledging things I usually avoid", sub:"Vulnerability in the act of answering", score:2},
+      {label:"Relieving, in a complicated way, like being seen for a moment", sub:"Recognition as relief", score:2},
+      {label:"Uncomfortable, I am not sure I wanted to look at this directly", sub:"Protective avoidance lowering", score:1},
+      {label:"Fine, I engage with these questions fairly regularly", sub:"Reflection as comfortable", score:0}
+    ]
+  },
+  {
+    text: "If there were a space where you could be completely honest, where the version of you that everyone sees could rest, and the real one could speak, how much would you use it?",
+    context: "This is a question about want, not about whether you believe it exists.",
+    options: [
+      {label:"I would use it every week, I am exhausted from the performance and desperate for somewhere real", sub:"The depth of the need", score:3},
+      {label:"I would want to, but part of me would still find ways to hold back", sub:"Desire plus resistance", score:2},
+      {label:"I think so, I would try, even if it took time to trust it", sub:"Willing and cautious", score:1},
+      {label:"Maybe sometimes, I have other outlets and do not feel desperate for this", sub:"Need less acute", score:0}
+    ]
+  }
+];
+
+const LEVELS = [
+  {min:0,  max:11, key:'low',  label:'Mild Anxiety-Loneliness Link', badgeClass:'badge-low',  scoreColor:'#15803D'},
+  {min:12, max:22, key:'mod',  label:'Moderate Isolation Pattern',   badgeClass:'badge-mod',  scoreColor:'#B45309'},
+  {min:23, max:32, key:'high', label:'Strong Disconnection Pattern',  badgeClass:'badge-high', scoreColor:'#C2410C'},
+  {min:33, max:45, key:'very', label:'Deep Anxiety-Driven Isolation', badgeClass:'badge-very', scoreColor:'#B91C1C'}
+];
+
+const RESULTS = {
+  low:{
+    title:"Your Loneliness Has Some Anxiety Roots",
+    sub:"Your responses suggest a mild-to-moderate connection between anxiety and how isolated you feel. The pattern is there, but it has not yet taken over your ability to connect.",
+    body_intro:`<p class="lp-p">Your answers point to an anxiety influence on your relationships and sense of connection, but one that has not yet become the dominant experience. You likely have at least some genuine connections, some capacity to be known, some moments of real presence with others.</p>
+<p class="lp-p">But there is something worth paying attention to in your responses. A tendency to perform rather than be. A habit of holding back the real version. A quiet undercurrent of not quite feeling like you belong in the way others seem to. These are early-stage patterns, and early-stage patterns are the easiest ones to address before they deepen.</p>`,
+    body_what:`<p class="lp-p">Anxiety does not need to be severe to affect your ability to connect. Even moderate anxiety can create a consistent gap between who you actually are and who you allow others to see. Over time, that gap becomes invisible to you, just how things are. But it costs more than you probably realise.</p>
+<p class="lp-p">The energy required to manage how you come across, to edit what you say, to monitor the reaction of the person in front of you, that is energy that could be going into genuine connection instead. And the connections you do build carry a kind of unspoken limitation: they are connections with the version of you that you allow to be seen, not with you.</p>`,
+    showTherapy:false,
+    body_steps:[
+      {h:"Notice when you are performing versus being", p:"Start paying attention to the moments when you shift into performance mode, the voice changes slightly, the editing begins. You cannot change what you cannot see, and simply noticing is the first and most important step."},
+      {h:"Risk one small disclosure", p:"Pick one person you trust. Tell them one true thing you would not normally say. Not a confession, something real but manageable. Notice what happens. Authentic connection starts from these small moments."},
+      {h:"Examine the belief that you are fundamentally different", p:"The sense that everyone else belongs and you are the exception is one of anxiety's most convincing lies. It is almost universally shared by people who experience it, which is itself evidence of how false it is."},
+      {h:"Track your emotional energy around connection", p:"Notice which relationships leave you more depleted versus which feel sustaining. This data tells you where the anxiety is most active and where genuine connection is actually available."}
+    ]
+  },
+  mod:{
+    title:"Your Loneliness Is Significantly Shaped by Anxiety",
+    sub:"Your responses reveal a meaningful pattern: anxiety is actively creating distance between you and the connection you need. This is not about personality, it is about a nervous system that has learned to treat closeness as a threat.",
+    body_intro:`<p class="lp-p">There is something you probably already know, even if you have not put words to it: you are lonely in a particular way. Not just socially. Not just situationally. Lonely in the specific, aching way that comes from being around people, friends, family, colleagues, sometimes even a partner, and still feeling unseen. Still feeling like the real you is somewhere behind glass, watching the performance.</p>
+<p class="lp-p">Your answers describe this pattern clearly. The curated self-disclosure. The exhaustion after social interaction despite wanting connection. The uncomfortable gap between what you show and what you actually feel. The replay and second-guessing after conversations. These are not random personal quirks. They are the predictable effects of anxiety on a person who wants to be known.</p>`,
+    body_what:`<p class="lp-p">Here is what anxiety does to loneliness that most people do not fully understand. <em>It does not just make you feel lonely. It makes connection feel like the solution that you cannot access.</em> You feel the loneliness sharply enough to motivate reaching for connection. Then anxiety makes connection itself feel threatening enough to prevent you from reaching. And so you stay in the middle, wanting, not having, blaming yourself for the gap.</p>
+<p class="lp-p">The mask you wear, the version of you that manages and performs and presents, was not a choice you made consciously. It developed as protection. Anxiety taught your nervous system that being fully known was dangerous, that showing the real you carried unacceptable risks. The mask kept you safe. But safety and connection are not the same thing, and the mask that protected you from rejection is also keeping you from being known.</p>
+<div class="lp-pullquote"><p>The loneliness is not caused by who you are. It is caused by anxiety convincing you that who you are is not safe to show.</p></div>
+<p class="lp-p">This distinction matters enormously. Because if the problem is who you are, nothing can be done. But if the problem is a learned protective pattern driven by anxiety, then the problem has a solution, and the solution is well-understood and available.</p>`,
+    showTherapy:true,
+    body_steps:[
+      {h:"Name what is actually happening", p:"You are not bad at connection. You are not fundamentally unlovable. You are a person with anxiety whose nervous system has learned to treat vulnerability as dangerous. These are very different things, and the distinction is the beginning of everything."},
+      {h:"Understand that the mask is a symptom, not a feature", p:"The parts of yourself you hide, the editing you do, the performance you maintain, these are responses to anxiety, not expressions of who you are. You can stop performing. Not all at once, not without help, but gradually and deliberately."},
+      {h:"Recognise that this kind of loneliness responds to therapy in a specific way", p:"Because the therapeutic relationship itself provides something that anxiety has blocked: the experience of being genuinely known by another person and not being rejected for it. Many people describe this single experience as transformative."},
+      {h:"Start before the loneliness gets more entrenched", p:"Anxiety-driven isolation tends to deepen over time. The pattern becomes more comfortable, the mask more ingrained, the real self more inaccessible. The moment of motivation, like the one you might be feeling right now, is worth acting on."}
+    ]
+  },
+  high:{
+    title:"Anxiety Has Built Deep Walls Around Your Ability to Connect",
+    sub:"Your responses describe something specific and serious: a pattern in which anxiety has made genuine connection feel not just difficult but fundamentally unsafe. You are living with a loneliness that is as exhausting as it is invisible to everyone around you.",
+    body_intro:`<p class="lp-p">You have probably been carrying this for a long time. Long enough that it has started to feel like simply who you are. Long enough that you may have stopped expecting it to be different. Long enough that the loneliness, sharp and familiar and always there, has become part of the texture of your daily life.</p>
+<p class="lp-p">Your answers describe a person who moves through the world behind a performance. Who says "fine" when the real answer is something much more complicated. Who sits in rooms full of people and feels the specific loneliness that is worse than being alone. Who has wondered, probably more than once, whether they are simply not built for the kind of connection other people seem to have so easily.</p>
+<p class="lp-p">That thought, the one about being fundamentally different, is one of anxiety's most devastating achievements. Because it is not true, and yet it feels more true than almost anything else. It explains the pattern in a way that feels settled and complete. It gives the loneliness a cause that has nothing to do with anxiety and everything to do with a flaw in who you are. And once that explanation takes hold, it actively prevents you from doing the one thing that would change it.</p>`,
+    body_what:`<p class="lp-p"><em>Anxiety-driven loneliness at this level is not just feeling isolated.</em> It is a whole architecture. The mask that you have worn so long it feels like your face. The automatic editing of everything you say before it leaves your mouth. The exhaustion of performing connection without experiencing it. The hope that springs up before every social situation and the familiar deflation afterwards. The private inner world that has become vast and rich precisely because it has nowhere else to go.</p>
+<p class="lp-p">And underneath all of it, a question you may have spent years not asking too directly: <em>what would happen if someone saw all of this?</em> Not the managed version. Not the curated disclosure. All of it, the fear, the anxiety, the loneliness, the private world, the version of you that only ever appears when you are completely alone. Would they stay? Could they?</p>
+<div class="lp-pullquote"><p>Anxiety says no. That is why it built the walls. But anxiety is wrong, and every person who has dismantled those walls, with the right kind of support, has discovered that the answer is different than they expected.</p></div>
+<p class="lp-p">The loneliness you feel is real. The exhaustion of it is real. The years you have spent behind the mask are real. But none of that is fixed. Anxiety-driven isolation, even when it has been present for years, even when it feels structural, responds to treatment in ways that people consistently describe as life-altering.</p>`,
+    showTherapy:true,
+    body_steps:[
+      {h:"Understand the difference between isolation and introversion", p:"This is not about being introverted or needing solitude. This is about anxiety making connection feel unsafe. The difference is the involuntary quality, the pain of wanting connection and being blocked from it, rather than genuinely choosing solitude."},
+      {h:"Recognise that the mask can come off", p:"Not suddenly. Not with everyone. But the protective performance that anxiety created is not permanent. It was learned. What is learned can be unlearned, and the process of doing so is exactly what CBT-based therapy addresses."},
+      {h:"Consider that the therapeutic relationship itself is part of the treatment", p:"For anxiety-driven loneliness specifically, therapy is not just a place to talk about connection. The therapeutic relationship, the experience of being genuinely known by another person in a safe context, is itself one of the most healing things available."},
+      {h:"Take the loneliness seriously enough to seek help for it", p:"People minimise anxiety-driven loneliness because it does not have obvious external symptoms. Nobody can see it. But the effect on wellbeing, on health, on the quality of a life, is profound. You have been managing this alone for a long time. You do not have to keep doing that."}
+    ]
+  },
+  very:{
+    title:"Anxiety Has Made You Deeply, Persistently Alone",
+    sub:"Your responses describe one of the most painful experiences anxiety creates: a profound, long-standing isolation that coexists with the desperate wish for it to be different, and a nervous system that has learned to prevent exactly the connection that would ease it.",
+    body_intro:`<p class="lp-p">You know this feeling in a way that only people who have lived inside it can. The room full of people. The conversation that is going fine on every external measure. And underneath it, like a physical weight, the loneliness. Not the loneliness of being alone, that would almost be a relief. The particular loneliness of being invisible in plain sight. Of performing, again, the version of yourself that other people can handle. Of the real you watching from somewhere back behind your eyes, waiting for a moment that never comes.</p>
+<p class="lp-p">You have probably wondered whether you are simply not capable of the kind of connection that other people have. Whether there is something missing in you, some wiring that was absent at birth or got damaged somewhere along the way. Anxiety has almost certainly given you this thought more than once, laid it out as evidence, as explanation, as settled fact.</p>
+<p class="lp-p">It is not a fact. It is anxiety's most effective lie, and the reason it is so effective is that it feels like relief. An explanation. A reason to stop trying, stop hoping, stop risking the particular pain of reaching for connection and finding the wall instead. If you are simply not built for it, at least you can stop trying. At least the longing stops mattering.</p>`,
+    body_what:`<p class="lp-p">Here is what is actually happening. Anxiety, somewhere along the way, it does not matter exactly when, decided that being known was dangerous. That showing the real version of you carried a risk that was not worth taking. And so it built a system. A mask. An editing function. A performance. A set of rules about what you are allowed to show, to say, to be in front of other people.</p>
+<p class="lp-p">That system is exquisitely effective. <em>It has kept you safe from exactly the rejection it feared.</em> Nobody has seen the real you and found it wanting, because nobody has seen the real you. The protection is comprehensive. The isolation is complete. And the loneliness, the specific, devastating loneliness of being alive inside yourself with nobody who really knows you, is total.</p>
+<p class="lp-p">The cruelest part is that the same anxiety that created the isolation also prevents the one thing that would end it. You are lonely enough to want connection desperately. Anxious enough to make every genuine attempt at it feel dangerous. The loneliness intensifies the need. The anxiety intensifies the fear. The two feed each other until the idea that anything could be different starts to feel like someone else's story.</p>
+<div class="lp-pullquote"><p>It is not someone else's story. The people who describe getting to the other side of this, genuinely known, genuinely connected, the mask finally at rest, were, almost without exception, exactly where you are now before they started.</p></div>
+<p class="lp-p">Anxiety-driven isolation at this depth is not a life sentence. It is the predictable result of a nervous system that learned the wrong thing about connection, and nervous systems, even after years, can learn differently. The brain is plastic. The patterns anxiety created can be changed. Not quickly, not easily, not without support, but genuinely, durably, completely. People do this all the time. With help.</p>
+<p class="lp-p">The help that works best for this specific experience is not medication. It is not self-help books. It is not pushing yourself to socialise more. It is the one thing that directly addresses both the anxiety that built the walls and the loneliness that lives behind them. It is a therapeutic relationship, a space where the performance can pause, where the real you can begin to surface, where being known feels, for perhaps the first time, genuinely safe. And where the nervous system can learn, through direct experience, that what it feared was not what it thought it was.</p>`,
+    showTherapy:true,
+    body_steps:[
+      {h:"Stop blaming yourself for the pattern", p:"The isolation, the mask, the inability to reach for connection even when you want it, these are not character flaws. They are the outputs of an anxious nervous system doing exactly what anxiety tells it to do. Blame is not only inaccurate here, it actively maintains the pattern."},
+      {h:"Understand that the therapy relationship is itself the medicine", p:"For anxiety-driven loneliness specifically, the therapeutic relationship is not a means to an end. It is the intervention. Being known by another person, genuinely, fully known, in a context that is safe enough to tolerate it, is the direct antidote to what anxiety has created."},
+      {h:"Treat the loneliness as the serious clinical issue it is", p:"Anxiety-driven isolation of this depth has measurable, significant effects on physical and mental health, on life quality, on how long people live. It is not a soft problem. It deserves serious, professional attention, not continued solitary management."},
+      {h:"Let the motivation of this moment count for something", p:"You answered these questions honestly. You read these results. Something in you recognised its own experience. That recognition, however small, however uncomfortable, is motivation, and motivation is the one thing that gets people from this page to the help that changes things. Do not wait until it gets worse. It tends to."}
+    ]
+  }
+};
+
+let current=0;
+let answers=new Array(QUESTIONS.length).fill(null);
+function getLevel(s){ return LEVELS.find(l=>s>=l.min&&s<=l.max)||LEVELS[LEVELS.length-1]; }
+
+function renderQuestion(){
+  const q=QUESTIONS[current];
+  const pct=Math.round((current/QUESTIONS.length)*100);
+  document.getElementById('progressLabel').textContent=`Question ${current+1} of ${QUESTIONS.length}`;
+  document.getElementById('progressPct').textContent=pct+'%';
+  document.getElementById('progressFill').style.width=pct+'%';
+  const card=document.getElementById('qCard');
+  card.innerHTML=`
+    <div class="q-num">Question ${current+1} of ${QUESTIONS.length}</div>
+    <div class="q-text">${q.text}</div>
+    ${q.context?`<div class="q-context">${q.context}</div>`:''}
+    <div class="options">
+      ${q.options.map((o,i)=>`
+        <div class="opt${answers[current]===i?' selected':''}" data-i="${i}">
+          <div class="opt-radio"></div>
+          <div>
+            <div class="opt-label">${o.label}</div>
+            ${o.sub?`<div class="opt-sub">${o.sub}</div>`:''}
+          </div>
+        </div>`).join('')}
+    </div>
+    ${current>0?`<div class="q-nav"><button class="btn-back" onclick="goBack()">← Back</button></div>`:''}
+  `;
+  card.style.animation='none'; card.offsetHeight; card.style.animation='';
+  card.querySelectorAll('.opt').forEach(opt=>{
+    opt.addEventListener('click',()=>{
+      answers[current]=parseInt(opt.dataset.i);
+      card.querySelectorAll('.opt').forEach(o=>o.classList.remove('selected'));
+      opt.classList.add('selected');
+      setTimeout(()=>{
+        if(current<QUESTIONS.length-1){ current++; renderQuestion(); }
+        else{ showResult(); }
+      },400);
+    });
+  });
+}
+function goBack(){ if(current>0){ current--; renderQuestion(); } }
+
+function buildDims(){
+  const dims=[
+    {label:'Authenticity Gap', qs:[0,1,3], color:'#6366F1'},
+    {label:'Social Exhaustion', qs:[2,8], color:'#0064FA'},
+    {label:'Being Known', qs:[4,7,11], color:'#DC2626'},
+    {label:'Self-Belief', qs:[5,12], color:'#D97706'},
+    {label:'Duration', qs:[11], color:'#059669'}
+  ];
+  return dims.map(d=>{
+    const total=d.qs.reduce((s,qi)=>s+(answers[qi]!==null?QUESTIONS[qi].options[answers[qi]].score:0),0);
+    const max=d.qs.length*3;
+    const pct=max>0?Math.round((total/max)*100):0;
+    return `<div class="lp-dim">
+      <span class="lp-dim-label">${d.label}</span>
+      <div class="lp-dim-bar"><div class="lp-dim-fill" style="background:${d.color}" data-w="${pct}"></div></div>
+      <span style="font-size:0.7rem;font-weight:800;color:${d.color};">${pct}%</span>
+    </div>`;
+  }).join('');
+}
+
+function showResult(){
+  const score=answers.reduce((s,a,i)=>s+(a!==null?QUESTIONS[i].options[a].score:0),0);
+  const maxScore=QUESTIONS.length*3;
+  const level=getLevel(score);
+  const rData=RESULTS[level.key];
+
+  document.getElementById('quizShell').style.display='none';
+  if(typeof gtag!=='undefined') gtag('event','quiz_complete',{event_category:'anxiety_loneliness_quiz',event_label:level.key,value:score});
+
+  const midCta=rData.showTherapy?`
+    <div class="lp-cta">
+      <div class="lp-cta-inner">
+        <div class="lp-cta-eye">The thing that actually helps</div>
+        <div class="lp-cta-discount">✦ First month 20% off for new members</div>
+        <h3 class="lp-cta-h">There is a space where the performance can stop.</h3>
+        <p class="lp-cta-p">Online therapy, with a therapist who specialises in anxiety and the isolation it creates, is the direct answer to exactly what your results describe. Not because it teaches you social skills. Because it gives you the one thing anxiety has prevented: the experience of being genuinely known and not rejected for it. That experience changes something in the nervous system that nothing else does. Most people start within 48 hours. The first month is discounted for new members.</p>
+        <a href="${affLink('mid')}" class="lp-cta-btn" target="_blank" rel="noopener">Find a Therapist Online →</a>
+        <div class="lp-cta-trust">
+          <div class="lp-cta-trust-item">✓ Anxiety and isolation specialists</div>
+          <div class="lp-cta-trust-item">✓ Start within 48 hours</div>
+          <div class="lp-cta-trust-item">✓ Video, messaging, or both</div>
+          <div class="lp-cta-trust-item">✓ Cancel anytime</div>
+        </div>
+      </div>
+    </div>` : '';
+
+  const finalCta=rData.showTherapy?`
+    <div class="lp-cta">
+      <div class="lp-cta-inner">
+        <div class="lp-cta-eye">One last thing</div>
+        <div class="lp-cta-discount">✦ 20% off your first month</div>
+        <h3 class="lp-cta-h">You have been managing this alone for long enough.</h3>
+        <p class="lp-cta-p">The loneliness you described in these answers is real. So is the anxiety beneath it. And so is the fact that both of them respond to the right kind of help in ways that most people describe as genuinely transformative. Not fixing you, because you are not broken. Giving your nervous system a different experience to learn from. A space where the real version of you can finally exist without the performance. That is what therapy does for this. And it is available, right now, in a format that requires no waiting list and fits around your life. The first month is meaningfully discounted for new members.</p>
+        <a href="${affLink('final')}" class="lp-cta-btn" target="_blank" rel="noopener">Connect With an Online Therapist →</a>
+        <div class="lp-cta-trust">
+          <div class="lp-cta-trust-item">✓ Evidence-based CBT</div>
+          <div class="lp-cta-trust-item">✓ Compassion-focused options</div>
+          <div class="lp-cta-trust-item">✓ Flexible scheduling</div>
+          <div class="lp-cta-trust-item">✓ Cancel anytime</div>
+        </div>
+      </div>
+    </div>` : '';
+
+  const wrap=document.getElementById('resultWrap');
+  wrap.style.display='block';
+  wrap.innerHTML=`
+    <div class="lp-header">
+      <div class="lp-badge ${level.badgeClass}">${level.label}</div>
+      <div class="lp-score" id="scoreNum" style="color:${level.scoreColor};">0</div>
+      <div class="lp-score-label">out of ${maxScore}</div>
+      <div class="lp-title">${rData.title}</div>
+      <div class="lp-sub">${rData.sub}</div>
+      <div class="lp-dims">${buildDims()}</div>
+    </div>
+
+    <div class="lp-body">
+
+      <div class="lp-section">
+        <div class="lp-eyebrow">What Your Results Mean</div>
+        <h2 class="lp-h2">What We Can See in Your Answers</h2>
+        ${rData.body_intro}
+      </div>
+
+      <div class="lp-divider"></div>
+
+      <div class="lp-section">
+        <div class="lp-eyebrow">Understanding the Pattern</div>
+        <h2 class="lp-h2">What Anxiety Does to Connection, and Why It Happens to You</h2>
+        ${rData.body_what}
+      </div>
+
+      <div class="lp-section">
+        <div class="lp-eyebrow">You Are Not Alone in This</div>
+        <h2 class="lp-h2">The Numbers Behind the Experience</h2>
+        <p class="lp-p">Anxiety-driven loneliness is one of the most common and least talked about experiences in anxiety. The silence around it is itself part of the pattern.</p>
+        <div class="lp-stats">
+          <div class="lp-stat"><div class="lp-stat-num">1 in 3</div><div class="lp-stat-text">people with anxiety disorder report significant loneliness as a primary quality-of-life concern, more than those who report dizziness, sleep problems, or chest symptoms</div></div>
+          <div class="lp-stat"><div class="lp-stat-num">80%</div><div class="lp-stat-text">of people in therapy for anxiety report that feeling genuinely known by their therapist was among the most significant therapeutic experiences they had, the relationship itself as medicine</div></div>
+          <div class="lp-stat"><div class="lp-stat-num">Years</div><div class="lp-stat-text">is how long most people carry anxiety-driven loneliness before naming it or seeking help, not because it is not serious, but because it is invisible to everyone else</div></div>
+        </div>
+        <div class="lp-testimony">
+          <div class="lp-testimony-text">I had a partner, a full social life, a job with colleagues I liked. And I was one of the loneliest people I knew. I could not explain it. Nobody would have believed me. It was only in therapy, when my therapist said "it sounds like nobody really knows you," that I cried for the first time in years. That was the beginning of something actually changing.</div>
+          <div class="lp-testimony-attr">Person in recovery from anxiety-driven isolation, via online therapy</div>
+        </div>
+      </div>
+
+      ${midCta}
+
+      <div class="lp-section">
+        <div class="lp-eyebrow">What Helps, and Why</div>
+        <h2 class="lp-h2">Your Action Plan, Based on What Your Answers Show</h2>
+        <p class="lp-p">Based on where your score sits and the pattern your specific answers reveal, here is what the evidence suggests will actually make a difference.</p>
+        <div class="lp-numlist">
+          ${rData.body_steps.map((s,i)=>`<div class="lp-numitem"><div class="lp-numitem-n">0${i+1}</div><div class="lp-numitem-body"><div class="lp-numitem-h">${s.h}</div><div class="lp-numitem-p">${s.p}</div></div></div>`).join('')}
+        </div>
+      </div>
+
+      ${finalCta}
+
+      <div class="res-footer">
+        <button class="btn-retake" onclick="retakeQuiz()">↺ Retake Quiz</button>
+        <a href="https://myanxietytest.com/social-anxiety-test/" class="btn-retake">🙈 Social Anxiety Test</a>
+        <a href="https://myanxietytest.com/high-functioning-anxiety-quiz/" class="btn-retake">🎭 High Functioning Anxiety</a>
+        <a href="https://myanxietytest.com/anxiety-in-relationships/" class="btn-retake">💙 Anxiety in Relationships</a>
+      </div>
+
+      <p style="text-align:center;font-size:0.74rem;color:var(--muted-lt);margin-top:20px;line-height:1.6;">
+        This quiz is a self-assessment tool and does not constitute a clinical diagnosis. If you are experiencing significant distress, please consult a qualified mental health professional.
+      </p>
+
+    </div>
+  `;
+
+  setTimeout(()=>{
+    let start=0;
+    const step=ts=>{
+      if(!start) start=ts;
+      const p=Math.min((ts-start)/1000,1);
+      const e=1-Math.pow(1-p,3);
+      const el=document.getElementById('scoreNum');
+      if(el) el.textContent=Math.round(e*score);
+      if(p<1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+    document.querySelectorAll('.lp-dim-fill').forEach(bar=>{
+      setTimeout(()=>{ bar.style.width=bar.dataset.w+'%'; },200);
+    });
+    propagateSource();
+  },100);
+}
+
+function retakeQuiz(){
+  answers=new Array(QUESTIONS.length).fill(null);
+  current=0;
+  document.getElementById('resultWrap').style.display='none';
+  document.getElementById('quizShell').style.display='block';
+  renderQuestion();
+  document.getElementById('qCard').scrollIntoView({behavior:'smooth',block:'center'});
+}
+</script>
+</body>
+</html>
