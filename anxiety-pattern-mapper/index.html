@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CN7KGLW2HZ');</script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anxiety Pattern Mapper: Visualise Your Anxiety Cycle | MyAnxietyTest.com</title>
+  <meta name="description" content="Map your personal anxiety cycle. Tell us when anxiety strikes, where it happens, who triggers it, and what you do next. Get a personalised visual map of your exact loop and a plan to break it."/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+  <link rel="canonical" href="https://myanxietytest.com/anxiety-pattern-mapper/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Anxiety Pattern Mapper | MyAnxietyTest.com"/>
+  <meta property="og:description" content="Visualise your personal anxiety cycle. Interactive tool that maps when, where, who, and what keeps your anxiety going."/>
+  <meta property="og:url" content="https://myanxietytest.com/anxiety-pattern-mapper/"/>
+  <meta property="og:site_name" content="MyAnxietyTest"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue:#0064FA; --blue-dark:#0050CC; --blue-mid:#1a74fb;
+      --blue-soft:#E8F1FF; --blue-bdr:#C0D8FF;
+      --night:#090E1A; --bg:#F2F5FA; --surface:#FFFFFF;
+      --border:#DDE4EF; --text:#0D1B2A; --muted:#5C6F85; --muted-lt:#97A8BA;
+      --r:12px; --r-lg:18px; --r-xl:24px;
+      --shadow-md:0 4px 20px rgba(0,100,250,0.09);
+      --shadow-lg:0 12px 40px rgba(0,100,250,0.10);
+
+      --c-trigger:#6366F1; --c-trigger-soft:#EEF2FF; --c-trigger-bdr:#C7D2FE;
+      --c-anxiety:#EF4444; --c-anxiety-soft:#FEF2F2; --c-anxiety-bdr:#FECACA;
+      --c-cope:#F59E0B; --c-cope-soft:#FFFBEB; --c-cope-bdr:#FDE68A;
+      --c-relief:#22C55E; --c-relief-soft:#F0FDF4; --c-relief-bdr:#BBF7D0;
+      --c-long:#8B5CF6; --c-long-soft:#F5F3FF; --c-long-bdr:#DDD6FE;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;}
+    a{text-decoration:none;color:inherit;}
+
+    /* TOPBAR */
+    .topbar{background:var(--blue);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,100,250,0.25);}
+    .topbar-inner{max-width:1080px;margin:0 auto;padding:0 clamp(16px,4vw,40px);height:58px;display:flex;align-items:center;justify-content:space-between;}
+    .logo{display:flex;align-items:center;gap:9px;}
+    .logo-mark{width:32px;height:32px;background:white;border-radius:8px;display:grid;place-items:center;font-size:0.95rem;}
+    .logo-name{font-family:'Nunito',sans-serif;font-weight:900;font-size:1rem;color:white;letter-spacing:-0.01em;}
+    .topbar-tag{font-size:0.74rem;font-weight:700;color:rgba(255,255,255,0.72);background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);padding:4px 12px;border-radius:999px;}
+
+    /* HERO */
+    .hero{background:var(--surface);border-bottom:1px solid var(--border);padding:clamp(44px,6vw,76px) clamp(16px,4vw,40px) clamp(36px,5vw,56px);text-align:center;}
+    .hero-inner{max-width:640px;margin:0 auto;}
+    .hero-kicker{display:inline-flex;align-items:center;gap:7px;padding:6px 16px;border-radius:999px;background:var(--blue-soft);border:1px solid var(--blue-bdr);font-size:0.71rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--blue);margin-bottom:20px;}
+    .hero h1{font-family:'Nunito',sans-serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:900;color:var(--text);line-height:1.1;letter-spacing:-0.025em;margin-bottom:14px;}
+    .hero h1 em{font-style:normal;color:var(--blue);}
+    .hero-desc{font-size:1rem;color:var(--muted);max-width:520px;margin:0 auto 24px;line-height:1.74;}
+    .hero-cycle{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;margin-bottom:28px;}
+    .hc-node{padding:6px 14px;border-radius:999px;font-size:0.77rem;font-weight:700;}
+    .hc-arrow{color:var(--muted-lt);font-size:0.9rem;}
+    .btn-start{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--blue);color:white;font-family:'Nunito',sans-serif;font-weight:900;font-size:1.02rem;padding:15px 38px;border-radius:var(--r-lg);border:none;cursor:pointer;box-shadow:0 4px 20px rgba(0,100,250,0.35);transition:all 0.16s;}
+    .btn-start:hover{background:var(--blue-dark);transform:translateY(-2px);}
+
+    /* TOOL WRAPPER */
+    .tool-wrap{max-width:900px;margin:0 auto;padding:clamp(24px,4vw,44px) clamp(16px,4vw,32px) 60px;}
+
+    /* STEP CARD */
+    .step-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);box-shadow:var(--shadow-md);overflow:hidden;display:none;}
+    .step-card.active{display:block;animation:fadeUp 0.3s cubic-bezier(0.4,0,0.2,1);}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+    /* Step header */
+    .step-header{padding:22px 28px 0;}
+    .step-breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:16px;}
+    .step-dot{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:'Nunito',sans-serif;font-weight:900;font-size:0.75rem;flex-shrink:0;}
+    .step-dot.done{background:var(--blue);color:white;}
+    .step-dot.active{background:var(--blue);color:white;box-shadow:0 0 0 4px var(--blue-soft);}
+    .step-dot.upcoming{background:var(--border);color:var(--muted-lt);}
+    .step-line{height:2px;flex:1;background:var(--border);}
+    .step-line.done{background:var(--blue);}
+    .step-icon{font-size:2rem;margin-bottom:8px;}
+    .step-label{font-size:0.69rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted-lt);margin-bottom:6px;}
+    .step-question{font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(1.15rem,2.5vw,1.5rem);color:var(--text);line-height:1.3;margin-bottom:6px;}
+    .step-hint{font-size:0.88rem;color:var(--muted);margin-bottom:22px;line-height:1.6;font-style:italic;}
+
+    /* Options grid */
+    .opts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;padding:0 28px 8px;}
+    .opt-chip{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:var(--r-lg);border:2px solid var(--border);cursor:pointer;transition:all 0.14s;background:var(--bg);}
+    .opt-chip:hover{border-color:var(--blue);background:var(--blue-soft);}
+    .opt-chip.selected{border-color:var(--blue);background:var(--blue-soft);}
+    .opt-chip-icon{font-size:1.3rem;flex-shrink:0;}
+    .opt-chip-label{font-size:0.9rem;font-weight:700;color:var(--text);line-height:1.3;}
+    .opt-chip-sub{font-size:0.74rem;color:var(--muted);margin-top:1px;}
+
+    /* Single select */
+    .opts-list{display:flex;flex-direction:column;gap:9px;padding:0 28px 8px;}
+    .opt-row{display:flex;align-items:flex-start;gap:14px;padding:13px 17px;border-radius:var(--r-lg);border:2px solid var(--border);cursor:pointer;transition:all 0.14s;background:var(--bg);}
+    .opt-row:hover{border-color:var(--blue);background:var(--blue-soft);}
+    .opt-row.selected{border-color:var(--blue);background:var(--blue-soft);}
+    .opt-row-radio{width:20px;height:20px;border-radius:50%;border:2px solid var(--border);flex-shrink:0;margin-top:2px;display:grid;place-items:center;transition:all 0.13s;}
+    .opt-row.selected .opt-row-radio{border-color:var(--blue);background:var(--blue);}
+    .opt-row.selected .opt-row-radio::after{content:'';width:7px;height:7px;background:white;border-radius:50%;display:block;}
+    .opt-row-label{font-size:0.95rem;font-weight:600;color:var(--text);}
+    .opt-row-sub{font-size:0.78rem;color:var(--muted);margin-top:2px;}
+
+    /* Custom input */
+    .custom-input-wrap{padding:0 28px 8px;}
+    .custom-input{width:100%;padding:13px 17px;border-radius:var(--r-lg);border:2px solid var(--border);font-family:'Nunito Sans',sans-serif;font-size:0.95rem;color:var(--text);background:var(--bg);transition:border-color 0.14s;outline:none;}
+    .custom-input:focus{border-color:var(--blue);background:var(--blue-soft);}
+
+    /* Step footer */
+    .step-footer{display:flex;justify-content:space-between;align-items:center;padding:18px 28px 24px;margin-top:8px;border-top:1px solid var(--border);}
+    .step-counter{font-size:0.8rem;font-weight:700;color:var(--muted-lt);}
+    .step-btns{display:flex;gap:8px;}
+    .btn-prev{background:none;border:2px solid var(--border);border-radius:var(--r);padding:9px 18px;font-family:'Nunito Sans',sans-serif;font-size:0.85rem;font-weight:700;color:var(--muted);cursor:pointer;transition:all 0.14s;}
+    .btn-prev:hover{border-color:var(--blue);color:var(--blue);}
+    .btn-next{background:var(--blue);border:none;border-radius:var(--r);padding:9px 22px;font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:800;color:white;cursor:pointer;transition:all 0.14s;box-shadow:0 3px 12px rgba(0,100,250,0.3);}
+    .btn-next:hover{background:var(--blue-dark);}
+    .btn-next:disabled{opacity:0.35;cursor:not-allowed;box-shadow:none;}
+
+    /* Selected summary chips */
+    .selected-preview{padding:0 28px 18px;display:flex;flex-wrap:wrap;gap:7px;}
+    .preview-chip{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:999px;background:var(--blue-soft);border:1px solid var(--blue-bdr);font-size:0.78rem;font-weight:700;color:var(--blue);}
+
+    /* RESULT */
+    .result-section{display:none;}
+
+    /* Result header */
+    .result-header{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);padding:clamp(28px,4vw,44px);margin-bottom:16px;text-align:center;}
+    .result-header h2{font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(1.2rem,2.5vw,1.7rem);color:var(--text);line-height:1.15;margin-bottom:10px;letter-spacing:-0.02em;}
+    .result-header p{font-size:0.96rem;color:var(--muted);max-width:560px;margin:0 auto;line-height:1.72;}
+
+    /* THE CYCLE MAP */
+    .map-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);padding:clamp(24px,3vw,40px);margin-bottom:16px;overflow:hidden;}
+    .map-title{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.1rem;color:var(--text);margin-bottom:6px;}
+    .map-sub{font-size:0.85rem;color:var(--muted);margin-bottom:24px;}
+    #cycleMap{width:100%;display:block;}
+
+    /* Insight cards */
+    .insight-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;}
+    .insight-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);padding:22px;}
+    .insight-card.full{grid-column:1/-1;}
+    .ic-eye{font-size:0.66rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
+    .ic-h{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.05rem;color:var(--text);margin-bottom:10px;line-height:1.25;}
+    .ic-p{font-size:0.9rem;color:var(--muted);line-height:1.75;}
+    .ic-p strong{color:var(--text);}
+    .ic-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+    .ic-tag{padding:5px 12px;border-radius:999px;font-size:0.75rem;font-weight:700;}
+
+    /* Pattern breakdown */
+    .pattern-row{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--border);}
+    .pattern-row:last-child{border-bottom:none;}
+    .pattern-icon{width:36px;height:36px;border-radius:var(--r);display:grid;place-items:center;font-size:1.1rem;flex-shrink:0;}
+    .pattern-label{font-family:'Nunito',sans-serif;font-weight:800;font-size:0.88rem;color:var(--text);margin-bottom:2px;}
+    .pattern-value{font-size:0.84rem;color:var(--muted);line-height:1.45;}
+
+    /* CTA */
+    .cta-block{background:var(--blue);border-radius:var(--r-xl);padding:clamp(32px,5vw,52px) clamp(24px,4vw,44px);text-align:center;margin-bottom:16px;position:relative;overflow:hidden;}
+    .cta-block::before{content:'';position:absolute;top:-80px;left:-80px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,0.05);pointer-events:none;}
+    .cta-block::after{content:'';position:absolute;bottom:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.04);pointer-events:none;}
+    .cta-inner{position:relative;z-index:1;max-width:560px;margin:0 auto;}
+    .cta-eye{font-size:0.67rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:10px;}
+    .cta-discount{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:999px;padding:5px 14px;font-size:0.77rem;font-weight:700;color:rgba(255,255,255,0.8);margin-bottom:16px;}
+    .cta-h{font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(1.2rem,2.8vw,1.85rem);color:white;line-height:1.15;margin-bottom:12px;letter-spacing:-0.015em;}
+    .cta-p{font-size:0.96rem;color:rgba(255,255,255,0.62);line-height:1.78;margin-bottom:26px;}
+    .cta-btn{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--blue);font-family:'Nunito',sans-serif;font-weight:900;font-size:1.02rem;padding:14px 36px;border-radius:var(--r-lg);border:none;cursor:pointer;text-decoration:none;transition:all 0.16s;box-shadow:0 4px 16px rgba(0,0,0,0.14);margin-bottom:14px;}
+    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,0.2);}
+    .cta-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;}
+    .cta-ti{font-size:0.74rem;font-weight:600;color:rgba(255,255,255,0.38);display:flex;align-items:center;gap:4px;}
+
+    /* Restart */
+    .restart-row{display:flex;justify-content:center;gap:10px;padding:8px 0 20px;}
+    .btn-restart{background:none;border:2px solid var(--border);border-radius:var(--r);padding:9px 22px;font-family:'Nunito Sans',sans-serif;font-size:0.87rem;font-weight:700;color:var(--muted);cursor:pointer;transition:all 0.14s;}
+    .btn-restart:hover{border-color:var(--blue);color:var(--blue);}
+
+    .footer{background:var(--night);padding:clamp(28px,4vw,48px) clamp(16px,4vw,40px) 22px;}
+    .footer-inner{max-width:1080px;margin:0 auto;}
+    .footer-brand{display:flex;align-items:center;gap:8px;font-family:'Nunito',sans-serif;font-weight:900;color:white;font-size:0.97rem;margin-bottom:18px;}
+    .footer-links{display:flex;flex-wrap:wrap;gap:7px 18px;margin-bottom:20px;}
+    .footer-links a{font-size:0.81rem;font-weight:600;color:rgba(255,255,255,0.36);transition:color 0.14s;}
+    .footer-links a:hover{color:white;}
+    .footer-copy{font-size:0.74rem;color:rgba(255,255,255,0.2);border-top:1px solid rgba(255,255,255,0.06);padding-top:14px;}
+
+    @media(max-width:600px){
+      .opts-grid{grid-template-columns:1fr 1fr;}
+      .insight-grid{grid-template-columns:1fr;}
+    }
+    @media(max-width:420px){
+      .opts-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <span class="logo-name">MyAnxietyTest</span>
+    </a>
+    <span class="topbar-tag">Free · Interactive · Visual</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">🗺️ Anxiety Pattern Mapper</div>
+    <h1>Map Your <em>Anxiety Cycle</em><br>in 5 Minutes</h1>
+    <p class="hero-desc">Most anxiety advice is generic. This is not. Tell us exactly when, where, who, and what happens, and we will map your specific loop and show you precisely where it can be broken.</p>
+    <div class="hero-cycle">
+      <span class="hc-node" style="background:#EEF2FF;color:#6366F1;border:1px solid #C7D2FE;">Trigger</span>
+      <span class="hc-arrow">→</span>
+      <span class="hc-node" style="background:#FEF2F2;color:#EF4444;border:1px solid #FECACA;">Anxiety</span>
+      <span class="hc-arrow">→</span>
+      <span class="hc-node" style="background:#FFFBEB;color:#D97706;border:1px solid #FDE68A;">Coping</span>
+      <span class="hc-arrow">→</span>
+      <span class="hc-node" style="background:#F0FDF4;color:#16A34A;border:1px solid #BBF7D0;">Relief</span>
+      <span class="hc-arrow">→</span>
+      <span class="hc-node" style="background:#F5F3FF;color:#7C3AED;border:1px solid #DDD6FE;">Returns</span>
+    </div>
+    <button class="btn-start" onclick="initTool()">Start Mapping My Anxiety →</button>
+  </div>
+</section>
+
+<div class="tool-wrap" id="toolWrap">
+
+  <!-- STEP 1: WHEN -->
+  <div class="step-card" id="step1">
+    <div class="step-header">
+      <div class="step-breadcrumb">
+        <div class="step-dot active">1</div>
+        <div class="step-line"></div>
+        <div class="step-dot upcoming">2</div>
+        <div class="step-line"></div>
+        <div class="step-dot upcoming">3</div>
+        <div class="step-line"></div>
+        <div class="step-dot upcoming">4</div>
+        <div class="step-line"></div>
+        <div class="step-dot upcoming">5</div>
+      </div>
+      <div class="step-icon">⏰</div>
+      <div class="step-label">Step 1 of 5 · Trigger Timing</div>
+      <div class="step-question">When does anxiety typically hit you hardest?</div>
+      <div class="step-hint">Select all that feel true. The more honest you are, the more accurate your map will be.</div>
+    </div>
+    <div class="opts-grid" id="step1opts">
+      <div class="opt-chip" data-val="morning" onclick="toggleChip(this,'step1')"><div class="opt-chip-icon">🌅</div><div><div class="opt-chip-label">Morning</div><div class="opt-chip-sub">Waking up already anxious</div></div></div>
+      <div class="opt-chip" data-val="before_events" onclick="toggleChip(this,'step1')"><div class="opt-chip-icon">📅</div><div><div class="opt-chip-label">Before events</div><div class="opt-chip-sub">Anticipating what is coming</div></div></div>
+      <div class="opt-chip" data-val="during_social" onclick="toggleChip(this,'step1')"><div class="opt-chip-icon">👥</div><div><div class="opt-chip-label">In social situations</div><div class="opt-chip-sub">While it is happening</div></div></div>
+      <div class="opt-chip" data-val="evenings" onclick="toggleChip(this,'step1')"><div class="opt-chip-icon">🌆</div><div><div class="opt-chip-label">Evenings</div><div class="opt-chip-sub">After the day ends</div></div></div>
+      <div class="opt-chip" data-val="night" onclick="toggleChip(this,'step1')"><div class="opt-chip-icon">🌙</div><div><div class="opt-chip-label">Night / trying to sleep</div><div class="opt-chip-sub">Lying awake with thoughts</div></div></div>
+      <div class="opt-chip" data-val="random" onclick="toggleChip(this,'step1')"><div class="opt-chip-icon">❓</div><div><div class="opt-chip-label">Random</div><div class="opt-chip-sub">No clear pattern</div></div></div>
+      <div class="opt-chip" data-val="quiet" onclick="toggleChip(this,'step1')"><div class="opt-chip-icon">🤫</div><div><div class="opt-chip-label">When things go quiet</div><div class="opt-chip-sub">No distraction to hide in</div></div></div>
+      <div class="opt-chip" data-val="after_conflict" onclick="toggleChip(this,'step1')"><div class="opt-chip-icon">⚡</div><div><div class="opt-chip-label">After conflict</div><div class="opt-chip-sub">Replaying what happened</div></div></div>
+    </div>
+    <div class="selected-preview" id="step1preview"></div>
+    <div class="step-footer">
+      <span class="step-counter" id="step1counter">0 selected</span>
+      <div class="step-btns">
+        <button class="btn-next" id="step1next" onclick="goNext(1)" disabled>Continue →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2: WHERE -->
+  <div class="step-card" id="step2">
+    <div class="step-header">
+      <div class="step-breadcrumb">
+        <div class="step-dot done">✓</div>
+        <div class="step-line done"></div>
+        <div class="step-dot active">2</div>
+        <div class="step-line"></div>
+        <div class="step-dot upcoming">3</div>
+        <div class="step-line"></div>
+        <div class="step-dot upcoming">4</div>
+        <div class="step-line"></div>
+        <div class="step-dot upcoming">5</div>
+      </div>
+      <div class="step-icon">📍</div>
+      <div class="step-label">Step 2 of 5 · Location and Context</div>
+      <div class="step-question">Where does anxiety tend to hit you most often?</div>
+      <div class="step-hint">Think about the physical and social contexts where it is worst. Select all that apply.</div>
+    </div>
+    <div class="opts-grid" id="step2opts">
+      <div class="opt-chip" data-val="work" onclick="toggleChip(this,'step2')"><div class="opt-chip-icon">💼</div><div><div class="opt-chip-label">At work</div><div class="opt-chip-sub">Meetings, emails, deadlines</div></div></div>
+      <div class="opt-chip" data-val="home" onclick="toggleChip(this,'step2')"><div class="opt-chip-icon">🏠</div><div><div class="opt-chip-label">At home</div><div class="opt-chip-sub">Where I should feel safe</div></div></div>
+      <div class="opt-chip" data-val="public" onclick="toggleChip(this,'step2')"><div class="opt-chip-icon">🏙️</div><div><div class="opt-chip-label">In public</div><div class="opt-chip-sub">Shops, transport, crowds</div></div></div>
+      <div class="opt-chip" data-val="social_events" onclick="toggleChip(this,'step2')"><div class="opt-chip-icon">🎉</div><div><div class="opt-chip-label">Social events</div><div class="opt-chip-sub">Parties, gatherings, bars</div></div></div>
+      <div class="opt-chip" data-val="medical" onclick="toggleChip(this,'step2')"><div class="opt-chip-icon">🏥</div><div><div class="opt-chip-label">Medical settings</div><div class="opt-chip-sub">Doctors, hospitals</div></div></div>
+      <div class="opt-chip" data-val="driving" onclick="toggleChip(this,'step2')"><div class="opt-chip-icon">🚗</div><div><div class="opt-chip-label">Driving</div><div class="opt-chip-sub">Motorways, traffic, parking</div></div></div>
+      <div class="opt-chip" data-val="alone" onclick="toggleChip(this,'step2')"><div class="opt-chip-icon">🪞</div><div><div class="opt-chip-label">When alone</div><div class="opt-chip-sub">No one to distract me</div></div></div>
+      <div class="opt-chip" data-val="everywhere" onclick="toggleChip(this,'step2')"><div class="opt-chip-icon">🌍</div><div><div class="opt-chip-label">Everywhere</div><div class="opt-chip-sub">It follows me regardless</div></div></div>
+    </div>
+    <div class="selected-preview" id="step2preview"></div>
+    <div class="step-footer">
+      <span class="step-counter" id="step2counter">0 selected</span>
+      <div class="step-btns">
+        <button class="btn-prev" onclick="goPrev(2)">← Back</button>
+        <button class="btn-next" id="step2next" onclick="goNext(2)" disabled>Continue →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3: WITH WHOM -->
+  <div class="step-card" id="step3">
+    <div class="step-header">
+      <div class="step-breadcrumb">
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot active">3</div><div class="step-line"></div>
+        <div class="step-dot upcoming">4</div><div class="step-line"></div>
+        <div class="step-dot upcoming">5</div>
+      </div>
+      <div class="step-icon">👤</div>
+      <div class="step-label">Step 3 of 5 · Social Triggers</div>
+      <div class="step-question">Who or what type of people tend to trigger your anxiety most?</div>
+      <div class="step-hint">This tells us a lot about the type of anxiety pattern you are dealing with.</div>
+    </div>
+    <div class="opts-grid" id="step3opts">
+      <div class="opt-chip" data-val="strangers" onclick="toggleChip(this,'step3')"><div class="opt-chip-icon">🙈</div><div><div class="opt-chip-label">Strangers</div><div class="opt-chip-sub">Unknown people, being judged</div></div></div>
+      <div class="opt-chip" data-val="authority" onclick="toggleChip(this,'step3')"><div class="opt-chip-icon">👔</div><div><div class="opt-chip-label">Authority figures</div><div class="opt-chip-sub">Boss, doctor, officials</div></div></div>
+      <div class="opt-chip" data-val="partner" onclick="toggleChip(this,'step3')"><div class="opt-chip-icon">💑</div><div><div class="opt-chip-label">Partner or close person</div><div class="opt-chip-sub">Fear of conflict or rejection</div></div></div>
+      <div class="opt-chip" data-val="family" onclick="toggleChip(this,'step3')"><div class="opt-chip-icon">👨‍👩‍👧</div><div><div class="opt-chip-label">Family</div><div class="opt-chip-sub">Complex dynamics</div></div></div>
+      <div class="opt-chip" data-val="groups" onclick="toggleChip(this,'step3')"><div class="opt-chip-icon">🎭</div><div><div class="opt-chip-label">Groups of people</div><div class="opt-chip-sub">Even with people I know</div></div></div>
+      <div class="opt-chip" data-val="alone_no_one" onclick="toggleChip(this,'step3')"><div class="opt-chip-icon">🏝️</div><div><div class="opt-chip-label">When I am alone</div><div class="opt-chip-sub">No one around is a trigger too</div></div></div>
+      <div class="opt-chip" data-val="everyone" onclick="toggleChip(this,'step3')"><div class="opt-chip-icon">🌐</div><div><div class="opt-chip-label">Almost everyone</div><div class="opt-chip-sub">Social contact generally</div></div></div>
+      <div class="opt-chip" data-val="no_one" onclick="toggleChip(this,'step3')"><div class="opt-chip-icon">💭</div><div><div class="opt-chip-label">No one specific</div><div class="opt-chip-sub">My thoughts are the trigger</div></div></div>
+    </div>
+    <div class="selected-preview" id="step3preview"></div>
+    <div class="step-footer">
+      <span class="step-counter" id="step3counter">0 selected</span>
+      <div class="step-btns">
+        <button class="btn-prev" onclick="goPrev(3)">← Back</button>
+        <button class="btn-next" id="step3next" onclick="goNext(3)" disabled>Continue →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 4: WHAT YOU DO -->
+  <div class="step-card" id="step4">
+    <div class="step-header">
+      <div class="step-breadcrumb">
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot active">4</div><div class="step-line"></div>
+        <div class="step-dot upcoming">5</div>
+      </div>
+      <div class="step-icon">🔄</div>
+      <div class="step-label">Step 4 of 5 · Coping Behaviours</div>
+      <div class="step-question">When anxiety hits, what do you typically do to cope or get through it?</div>
+      <div class="step-hint">Be honest. These are the behaviours that keep the anxiety cycle going, even when they feel like they help. Select all that apply.</div>
+    </div>
+    <div class="opts-grid" id="step4opts">
+      <div class="opt-chip" data-val="avoid" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">🚫</div><div><div class="opt-chip-label">Avoid the situation</div><div class="opt-chip-sub">Cancel, delay, escape</div></div></div>
+      <div class="opt-chip" data-val="reassurance" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">💬</div><div><div class="opt-chip-label">Seek reassurance</div><div class="opt-chip-sub">Ask others if you are okay</div></div></div>
+      <div class="opt-chip" data-val="overthink" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">🌀</div><div><div class="opt-chip-label">Overthink and plan</div><div class="opt-chip-sub">Try to think your way out</div></div></div>
+      <div class="opt-chip" data-val="phone" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">📱</div><div><div class="opt-chip-label">Scroll your phone</div><div class="opt-chip-sub">Distract with social media</div></div></div>
+      <div class="opt-chip" data-val="control" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">🗂️</div><div><div class="opt-chip-label">Over-prepare or control</div><div class="opt-chip-sub">Lists, research, checking</div></div></div>
+      <div class="opt-chip" data-val="withdraw" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">🐢</div><div><div class="opt-chip-label">Withdraw and isolate</div><div class="opt-chip-sub">Go quiet or disappear</div></div></div>
+      <div class="opt-chip" data-val="symptoms" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">❤️</div><div><div class="opt-chip-label">Check body symptoms</div><div class="opt-chip-sub">Pulse, breathing, googling</div></div></div>
+      <div class="opt-chip" data-val="food_drink" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">🍷</div><div><div class="opt-chip-label">Eat, drink, or use substances</div><div class="opt-chip-sub">To take the edge off</div></div></div>
+      <div class="opt-chip" data-val="exercise" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">🏃</div><div><div class="opt-chip-label">Exercise or physical release</div><div class="opt-chip-sub">Move to discharge the feeling</div></div></div>
+      <div class="opt-chip" data-val="breathe" onclick="toggleChip(this,'step4')"><div class="opt-chip-icon">😮‍💨</div><div><div class="opt-chip-label">Breathing or grounding</div><div class="opt-chip-sub">Deliberate calming techniques</div></div></div>
+    </div>
+    <div class="selected-preview" id="step4preview"></div>
+    <div class="step-footer">
+      <span class="step-counter" id="step4counter">0 selected</span>
+      <div class="step-btns">
+        <button class="btn-prev" onclick="goPrev(4)">← Back</button>
+        <button class="btn-next" id="step4next" onclick="goNext(4)" disabled>Continue →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 5: WHAT HAPPENS AFTER -->
+  <div class="step-card" id="step5">
+    <div class="step-header">
+      <div class="step-breadcrumb">
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot done">✓</div><div class="step-line done"></div>
+        <div class="step-dot active">5</div>
+      </div>
+      <div class="step-icon">🔮</div>
+      <div class="step-label">Step 5 of 5 · After the Episode</div>
+      <div class="step-question">After the anxiety passes or you have coped with it, what usually happens next?</div>
+      <div class="step-hint">This is the part that tells us whether the cycle is reinforcing itself. Select what feels most accurate.</div>
+    </div>
+    <div class="opts-list" id="step5opts">
+      <div class="opt-row" data-val="relief_returns" onclick="selectSingle(this,'step5')">
+        <div class="opt-row-radio"></div>
+        <div><div class="opt-row-label">Brief relief, then it returns, often about something else</div><div class="opt-row-sub">The loop closes and opens again immediately</div></div>
+      </div>
+      <div class="opt-row" data-val="relief_same" onclick="selectSingle(this,'step5')">
+        <div class="opt-row-radio"></div>
+        <div><div class="opt-row-label">Relief for a while, then the same anxiety returns</div><div class="opt-row-sub">The same loop, recurring</div></div>
+      </div>
+      <div class="opt-row" data-val="exhaustion" onclick="selectSingle(this,'step5')">
+        <div class="opt-row-radio"></div>
+        <div><div class="opt-row-label">Exhaustion. I feel drained rather than relieved</div><div class="opt-row-sub">Coping is costing me</div></div>
+      </div>
+      <div class="opt-row" data-val="shame" onclick="selectSingle(this,'step5')">
+        <div class="opt-row-radio"></div>
+        <div><div class="opt-row-label">Shame or frustration with myself for being anxious again</div><div class="opt-row-sub">The anxiety about anxiety</div></div>
+      </div>
+      <div class="opt-row" data-val="good_sometimes" onclick="selectSingle(this,'step5')">
+        <div class="opt-row-radio"></div>
+        <div><div class="opt-row-label">Sometimes genuinely okay for a while</div><div class="opt-row-sub">The loop does close properly sometimes</div></div>
+      </div>
+    </div>
+    <div class="step-footer">
+      <span class="step-counter">Almost done</span>
+      <div class="step-btns">
+        <button class="btn-prev" onclick="goPrev(5)">← Back</button>
+        <button class="btn-next" id="step5next" onclick="buildResult()" disabled>Generate My Map →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="result-section" id="resultSection">
+
+    <div class="result-header">
+      <h2 id="mapTitle">Your Personal Anxiety Cycle</h2>
+      <p id="mapSub">Based on your inputs, here is a visual map of your anxiety pattern and the specific loop that is keeping it going.</p>
+    </div>
+
+    <div class="map-card">
+      <div class="map-title">Your Anxiety Cycle Map</div>
+      <div class="map-sub" id="mapCardSub">The five stages of your personal loop, with your specific triggers and behaviours.</div>
+      <svg id="cycleMap" viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+
+    <div class="insight-grid" id="insightGrid"></div>
+
+    <div class="cta-block">
+      <div class="cta-inner">
+        <div class="cta-eye">Break the cycle, not just manage it</div>
+        <div class="cta-discount">✦ First month 20% off for new members</div>
+        <div class="cta-h" id="ctaH">You can see your cycle clearly now. A therapist can help you break it.</div>
+        <p class="cta-p" id="ctaP">The pattern you have just mapped is not random and it is not permanent. Every loop has break points, specific moments where a different response changes everything that follows. A CBT therapist who understands anxiety cycles can guide you to those break points, systematically, in a structured way that self-awareness alone cannot achieve. Most people start within 48 hours of signing up. Your first month is discounted for new members.</p>
+        <a class="cta-btn" id="ctaBtn" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=anxietyPatternMapper" target="_blank" rel="noopener">Find an Online Therapist →</a>
+        <div class="cta-trust">
+          <div class="cta-ti">✓ CBT anxiety specialists</div>
+          <div class="cta-ti">✓ Start within 48 hours</div>
+          <div class="cta-ti">✓ Personalised to your pattern</div>
+          <div class="cta-ti">✓ Cancel anytime</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="restart-row">
+      <button class="btn-restart" onclick="restartTool()">↺ Map Again</button>
+      <a class="btn-restart" href="https://myanxietytest.com/anxiety-loop-identifier/">🔄 Anxiety Loop Identifier</a>
+      <a class="btn-restart" href="https://myanxietytest.com/anxiety-overthinking-quiz/">💭 Overthinking Quiz</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span style="font-size:1.2rem;">🧠</span> MyAnxietyTest.com</div>
+    <div class="footer-links">
+      <a href="https://myanxietytest.com/">All Tools</a>
+      <a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a>
+      <a href="https://myanxietytest.com/anxiety-loop-identifier/">Anxiety Loop Identifier</a>
+      <a href="https://myanxietytest.com/anxiety-triggers/">Anxiety Triggers</a>
+      <a href="https://myanxietytest.com/anxiety-avoidance-profile/">Avoidance Profile</a>
+      <a href="https://myanxietytest.com/anxiety-self-sabotage/">Self-Sabotage</a>
+      <a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a>
+    </div>
+    <div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+  </div>
+</footer>
+
+<script>
+const SELECTIONS = {step1:[],step2:[],step3:[],step4:[],step5:[]};
+
+function initTool(){
+  document.getElementById('step1').classList.add('active');
+  document.getElementById('step1').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function toggleChip(el,step){
+  el.classList.toggle('selected');
+  const val=el.dataset.val;
+  const arr=SELECTIONS[step];
+  const idx=arr.indexOf(val);
+  if(idx>-1) arr.splice(idx,1); else arr.push(val);
+  updateCounter(step,arr.length);
+  document.getElementById(step+'next').disabled=arr.length===0;
+  updatePreview(step,arr,el.closest('.step-card'));
+}
+
+function selectSingle(el,step){
+  el.closest('.opts-list').querySelectorAll('.opt-row').forEach(r=>r.classList.remove('selected'));
+  el.classList.add('selected');
+  SELECTIONS[step]=[el.dataset.val];
+  document.getElementById(step+'next').disabled=false;
+}
+
+function updateCounter(step,count){
+  const el=document.getElementById(step+'counter');
+  if(el) el.textContent=count+' selected';
+}
+
+function updatePreview(step,arr,card){
+  const prev=card.querySelector('.selected-preview');
+  if(!prev) return;
+  const LABELS={
+    morning:'Morning',before_events:'Before events',during_social:'In social situations',
+    evenings:'Evenings',night:'Night',random:'Random',quiet:'Quiet moments',after_conflict:'After conflict',
+    work:'At work',home:'At home',public:'In public',social_events:'Social events',
+    medical:'Medical settings',driving:'Driving',alone:'When alone',everywhere:'Everywhere',
+    strangers:'Strangers',authority:'Authority figures',partner:'Partner',family:'Family',
+    groups:'Groups',alone_no_one:'When alone',everyone:'Everyone',no_one:'My thoughts',
+    avoid:'Avoidance',reassurance:'Seeking reassurance',overthink:'Overthinking',
+    phone:'Scrolling phone',control:'Over-controlling',withdraw:'Withdrawing',
+    symptoms:'Checking symptoms',food_drink:'Food / drink',exercise:'Exercise',breathe:'Breathing techniques'
+  };
+  prev.innerHTML=arr.map(v=>`<span class="preview-chip">✓ ${LABELS[v]||v}</span>`).join('');
+}
+
+function goNext(step){
+  document.getElementById('step'+step).classList.remove('active');
+  document.getElementById('step'+(step+1)).classList.add('active');
+  document.getElementById('step'+(step+1)).scrollIntoView({behavior:'smooth',block:'start'});
+}
+function goPrev(step){
+  document.getElementById('step'+step).classList.remove('active');
+  document.getElementById('step'+(step-1)).classList.add('active');
+  document.getElementById('step'+(step-1)).scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function getPattern(){
+  const hasSocial=SELECTIONS.step3.some(v=>['strangers','authority','groups','everyone'].includes(v));
+  const hasHealth=SELECTIONS.step4.includes('symptoms');
+  const hasAvoid=SELECTIONS.step4.includes('avoid');
+  const hasReassurance=SELECTIONS.step4.includes('reassurance');
+  const hasOverthink=SELECTIONS.step4.includes('overthink');
+  const hasControl=SELECTIONS.step4.includes('control');
+  const afterShame=SELECTIONS.step5.includes('shame');
+  const afterExhausted=SELECTIONS.step5.includes('exhaustion');
+  const loopReturns=['relief_returns','relief_same'].includes(SELECTIONS.step5[0]);
+
+  if(hasHealth) return 'health';
+  if(hasSocial && hasAvoid) return 'social';
+  if(hasOverthink || hasControl) return 'overthink';
+  if(hasReassurance) return 'reassurance';
+  return 'general';
+}
+
+function buildResult(){
+  // Hide all steps
+  for(let i=1;i<=5;i++) document.getElementById('step'+i).classList.remove('active');
+
+  const pattern=getPattern();
+  const s1=SELECTIONS.step1;
+  const s2=SELECTIONS.step2;
+  const s3=SELECTIONS.step3;
+  const s4=SELECTIONS.step4;
+  const s5=SELECTIONS.step5[0]||'relief_returns';
+
+  // Build SVG cycle map
+  buildSVG(s1,s2,s3,s4,s5,pattern);
+
+  // Build insights
+  buildInsights(pattern,s4,s5,s1,s2,s3);
+
+  // Personalise CTA
+  personaliseCTA(pattern,s4);
+
+  document.getElementById('resultSection').style.display='block';
+  document.getElementById('resultSection').scrollIntoView({behavior:'smooth',block:'start'});
+
+  if(typeof gtag!=='undefined') gtag('event','mapper_complete',{event_category:'anxiety_pattern_mapper',event_label:pattern});
+}
+
+function buildSVG(s1,s2,s3,s4,s5,pattern){
+  const LABELS={
+    morning:'Morning',before_events:'Before events',during_social:'Social situations',
+    evenings:'Evenings',night:'Lying awake at night',random:'Unpredictable timing',
+    quiet:'Quiet moments',after_conflict:'After conflict',
+    work:'At work',home:'At home',public:'In public',social_events:'Social events',
+    medical:'Medical settings',driving:'While driving',alone:'When alone',everywhere:'Everywhere',
+    strangers:'With strangers',authority:'With authority',partner:'Close relationships',
+    family:'With family',groups:'In groups',alone_no_one:'When alone',
+    everyone:'Most social contact',no_one:'Internal thoughts',
+    avoid:'Avoidance',reassurance:'Seeking reassurance',overthink:'Overthinking and analysis',
+    phone:'Scrolling phone',control:'Over-planning and control',withdraw:'Withdrawing',
+    symptoms:'Checking body symptoms',food_drink:'Food or drink',exercise:'Exercise',breathe:'Breathing techniques',
+    relief_returns:'Brief relief, different worry returns',relief_same:'Brief relief, same worry returns',
+    exhaustion:'Exhaustion rather than relief',shame:'Shame and self-criticism',good_sometimes:'Genuine relief sometimes'
+  };
+
+  const triggerWhen=s1.slice(0,2).map(v=>LABELS[v]||v).join(', ')||'various times';
+  const triggerWhere=s2.slice(0,2).map(v=>LABELS[v]||v).join(', ')||'various contexts';
+  const triggerWho=s3.slice(0,2).map(v=>LABELS[v]||v).join(', ')||'various situations';
+  const cope=s4.slice(0,2).map(v=>LABELS[v]||v).join(', ')||'various coping';
+  const after=LABELS[s5]||'brief relief, cycle continues';
+
+  const w=800; const h=460;
+  const cx=w/2; const cy=h/2+10;
+  const rx=220; const ry=170;
+
+  // 5 nodes around an ellipse
+  const angles=[-80, -10, 62, 134, 206].map(a=>a*(Math.PI/180));
+  const nodes=angles.map((a,i)=>({
+    x:cx+rx*Math.cos(a),
+    y:cy+ry*Math.sin(a),
+    i
+  }));
+
+  const nodeData=[
+    {label:'TRIGGER',detail:triggerWhen+'\n'+triggerWhere,color:'#6366F1',soft:'#EEF2FF',bdr:'#C7D2FE',icon:'⚡'},
+    {label:'ANXIETY FIRES',detail:'Physical symptoms\nThoughts accelerate',color:'#EF4444',soft:'#FEF2F2',bdr:'#FECACA',icon:'🔴'},
+    {label:'COPING',detail:cope,color:'#F59E0B',soft:'#FFFBEB',bdr:'#FDE68A',icon:'🔄'},
+    {label:'SHORT RELIEF',detail:'Anxiety eases briefly\nFalse sense of safety',color:'#22C55E',soft:'#F0FDF4',bdr:'#BBF7D0',icon:'😮‍💨'},
+    {label:'CYCLE CONTINUES',detail:after,color:'#8B5CF6',soft:'#F5F3FF',bdr:'#DDD6FE',icon:'♾️'}
+  ];
+
+  let svg=`<svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" style="font-family:'Nunito Sans',sans-serif;">`;
+
+  // Background
+  svg+=`<rect width="${w}" height="${h}" fill="#F8F9FE" rx="16"/>`;
+
+  // Central label
+  svg+=`<text x="${cx}" y="${cy-6}" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="13" fill="#0D1B2A" opacity="0.12">YOUR ANXIETY CYCLE</text>`;
+  svg+=`<text x="${cx}" y="${cy+12}" text-anchor="middle" font-family="Nunito Sans,sans-serif" font-size="10" fill="#5C6F85" opacity="0.35">Mapped to your inputs</text>`;
+
+  // Draw arrows between nodes
+  for(let i=0;i<nodes.length;i++){
+    const from=nodes[i]; const to=nodes[(i+1)%nodes.length];
+    const dx=to.x-from.x; const dy=to.y-from.y;
+    const len=Math.sqrt(dx*dx+dy*dy);
+    const ux=dx/len; const uy=dy/len;
+    const nr=52;
+    const x1=from.x+ux*nr; const y1=from.y+uy*nr;
+    const x2=to.x-ux*nr; const y2=to.y-uy*nr;
+    const mx=(x1+x2)/2-(uy*28); const my=(y1+y2)/2+(ux*28);
+    svg+=`<path d="M${x1.toFixed(1)},${y1.toFixed(1)} Q${mx.toFixed(1)},${my.toFixed(1)} ${x2.toFixed(1)},${y2.toFixed(1)}" fill="none" stroke="${nodeData[i].color}" stroke-width="2.5" stroke-dasharray="5,4" opacity="0.55" marker-end="url(#arr${i})"/>`;
+    svg+=`<defs><marker id="arr${i}" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="${nodeData[i].color}" opacity="0.7"/></marker></defs>`;
+  }
+
+  // Draw nodes
+  nodes.forEach((n,i)=>{
+    const d=nodeData[i];
+    const nr=50;
+    // Card background
+    svg+=`<rect x="${(n.x-nr).toFixed(1)}" y="${(n.y-nr).toFixed(1)}" width="${nr*2}" height="${nr*2}" rx="16" fill="${d.soft}" stroke="${d.bdr}" stroke-width="2"/>`;
+    // Icon
+    svg+=`<text x="${n.x.toFixed(1)}" y="${(n.y-18).toFixed(1)}" text-anchor="middle" font-size="22">${d.icon}</text>`;
+    // Label
+    svg+=`<text x="${n.x.toFixed(1)}" y="${(n.y+4).toFixed(1)}" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="11.5" fill="${d.color}">${d.label}</text>`;
+    // Detail (first line only)
+    const detail=d.detail.split('\n')[0];
+    const short=detail.length>22?detail.substring(0,20)+'...':detail;
+    svg+=`<text x="${n.x.toFixed(1)}" y="${(n.y+20).toFixed(1)}" text-anchor="middle" font-size="10" fill="${d.color}" opacity="0.75">${short}</text>`;
+  });
+
+  // Who triggers
+  svg+=`<text x="${cx}" y="${h-14}" text-anchor="middle" font-size="10.5" fill="#5C6F85" font-weight="600">Triggered by: ${triggerWho}</text>`;
+
+  svg+='</svg>';
+  document.getElementById('cycleMap').outerHTML=svg.replace('<svg ','<svg id="cycleMap" width="100%" ');
+}
+
+function buildInsights(pattern,s4,s5,s1,s2,s3){
+  const hasAvoid=s4.includes('avoid');
+  const hasReassurance=s4.includes('reassurance');
+  const hasOverthink=s4.includes('overthink');
+  const hasControl=s4.includes('control');
+  const hasSymptoms=s4.includes('symptoms');
+  const hasNight=s1.includes('night');
+  const shame=s5==='shame';
+  const exhausted=s5==='exhaustion';
+  const loopCloses=['relief_returns','relief_same'].includes(s5);
+
+  const PATTERN_NAMES={
+    health:'Health Anxiety Loop',
+    social:'Social Anxiety Avoidance Cycle',
+    overthink:'Cognitive Overload Loop',
+    reassurance:'Reassurance-Seeking Cycle',
+    general:'Generalised Anxiety Cycle'
+  };
+
+  const PATTERN_DESC={
+    health:'Your anxiety is heavily focused on physical symptoms and health fears. The checking and monitoring that feel like responsible self-care are actually the main behaviours keeping the loop running.',
+    social:'Social situations act as your primary trigger, and avoidance is the main coping mechanism. Each time you avoid, your brain registers the avoided situation as genuinely dangerous, making it worse next time.',
+    overthink:'Your anxiety manifests primarily as a cognitive loop: thinking, analysing, planning, replaying. The exhaustion you feel is the cost of a brain running at full capacity on a problem that cannot be solved by thinking.',
+    reassurance:'Seeking reassurance is your primary coping strategy. Each time it works briefly, your brain reinforces the belief that reassurance was necessary, raising the threshold for how much is enough next time.',
+    general:'Your anxiety pattern spans multiple contexts and uses a mix of coping strategies. The breadth of the pattern suggests generalised anxiety, where the worry moves between topics rather than staying fixed.'
+  };
+
+  const BREAK_POINTS={
+    health:'The break point is between the symptom check and the interpretation. Not checking provides the brain with evidence that the threat was not real. Each unchecked sensation that passes harmlessly rewires the pattern.',
+    social:'The break point is the avoidance decision. Gradual, planned re-exposure to avoided situations, with support, interrupts the reinforcement loop and starts to reduce the threat signal around social contact.',
+    overthink:'The break point is recognising the loop as it starts, not after. Interrupting the overthinking with a deliberate, pre-planned behavioural response rather than more thinking changes the input the brain receives.',
+    reassurance:'The break point is delaying or declining the reassurance. Even brief delays teach the brain that certainty was not actually necessary, which gradually reduces the compulsion.',
+    general:'The break point varies by situation, but building a personalised response protocol with a therapist creates consistent, targeted interruptions across the whole pattern.'
+  };
+
+  const insights=[
+    `<div class="insight-card">
+      <div class="ic-eye">Your Pattern Type</div>
+      <h3 class="ic-h">${PATTERN_NAMES[pattern]}</h3>
+      <p class="ic-p">${PATTERN_DESC[pattern]}</p>
+    </div>`,
+    `<div class="insight-card">
+      <div class="ic-eye">Where to Break It</div>
+      <h3 class="ic-h">Your Cycle's Most Vulnerable Point</h3>
+      <p class="ic-p">${BREAK_POINTS[pattern]}</p>
+    </div>`,
+    `<div class="insight-card full">
+      <div class="ic-eye">What Your Coping Behaviours Are Doing</div>
+      <h3 class="ic-h">Why the Things That Help in the Moment Make It Worse Over Time</h3>
+      <p class="ic-p">Every coping behaviour you selected provides genuine, real short-term relief. That is the problem. <strong>The relief is real, but the lesson the brain learns is wrong.</strong> When you avoid and the anxiety reduces, the brain files that under: avoidance works, the threat was real. When you seek reassurance and feel better, same lesson. When you overthink until a thought soothes you, same lesson. Over time, the brain requires more avoidance, more reassurance, more analysis to get the same relief. The threshold keeps rising. The pattern deepens. ${exhausted?'The exhaustion you described after episodes is a direct result of this escalation.' : ''} ${shame?' The shame you feel after episodes is common and adds an additional layer to the anxiety, anxiety about the anxiety itself.':''} Breaking the pattern requires changing the response, not improving the quality of the coping. That change is much easier with a therapist who understands the specific mechanism at work in your pattern.</p>
+      <div class="ic-tags">
+        ${s4.map(v=>{
+          const LABELS={avoid:'Avoidance',reassurance:'Reassurance seeking',overthink:'Overthinking',phone:'Distraction via scrolling',control:'Over-controlling',withdraw:'Withdrawal',symptoms:'Body checking',food_drink:'Substance use',exercise:'Physical discharge',breathe:'Calming techniques'};
+          const IMPACT={avoid:'reinforces threat signal',reassurance:'raises certainty threshold',overthink:'deepens the cognitive loop',phone:'delays processing without resolving',control:'increases hyper-vigilance',withdraw:'narrows safe territory',symptoms:'amplifies health anxiety',food_drink:'disrupts regulation without addressing cause',exercise:'healthy release but does not address trigger',breathe:'helpful short-term interruption'};
+          return `<span class="ic-tag" style="background:#FEF2F2;color:#991B1B;border:1px solid #FECACA;">${LABELS[v]||v}: ${IMPACT[v]||'maintains the cycle'}</span>`;
+        }).join('')}
+      </div>
+    </div>`
+  ];
+
+  if(hasNight){
+    insights.push(`<div class="insight-card full">
+      <div class="ic-eye">Night Pattern</div>
+      <h3 class="ic-h">Why Anxiety Peaks at Night for You</h3>
+      <p class="ic-p">You indicated that night-time is one of your primary anxiety windows. This is one of the most common and most disruptive anxiety patterns. During the day, activity and external stimulation compete with anxious thoughts. At night, those competitors disappear. <strong>The anxious brain treats stillness as a vulnerability</strong>, a state in which threats might go unnoticed. The result is heightened threat-monitoring precisely when you need rest. This pattern tends to worsen over time as the bed itself becomes associated with anxiety, creating a conditioned response to lying down. A therapist can help you break this association directly. The <a href="https://myanxietytest.com/anxiety-at-night-quiz/" style="color:var(--blue);font-weight:700;">Anxiety at Night Quiz</a> offers more specific insights into your nocturnal pattern.</p>
+    </div>`);
+  }
+
+  document.getElementById('insightGrid').innerHTML=insights.join('');
+}
+
+function personaliseCTA(pattern,s4){
+  const hasAvoid=s4.includes('avoid');
+  const CTAs={
+    health:{h:'Your health anxiety loop is running a script. Therapy rewrites it.',p:'The cycle you mapped, trigger, checking, brief relief, return of the fear, is one of the clearest anxiety patterns in clinical practice and one of the best understood to treat. A CBT therapist who specialises in health anxiety and somatic symptoms will work directly on the specific nodes in your map. The first month is 20% off for new members.'},
+    social:{h:'Avoidance is shrinking your world. A therapist expands it back.',p:'Every situation you have avoided has taught your brain that the threat was real. Gradual, structured re-exposure with professional support is the most effective way to reverse this. Your map shows exactly which situations to start with. Online therapy connects you with a specialist within 48 hours.'},
+    overthink:{h:'You can not think your way out of overthinking. Therapy provides a different tool entirely.',p:'Your pattern is primarily cognitive: the loop lives in your thoughts. CBT for anxiety addresses the specific thought distortions that fuel the cycle and builds the capacity to tolerate uncertainty without analysis. That shift, from needing to resolve uncertainty to tolerating it, is transformative. First month 20% off.'},
+    reassurance:{h:'The reassurance is maintaining the cycle. Therapy teaches you not to need it.',p:'Every piece of reassurance that helped temporarily has raised the threshold for how much you need. Your map shows this clearly. Therapy works by changing the response to the anxiety signal rather than providing better reassurance. That is a fundamentally different project and a much more effective one.'},
+    general:{h:'Your cycle is mapped. Now it can be broken.',p:'The pattern you have identified spans multiple contexts and triggers, which suggests generalised anxiety driving the loop across many areas of your life. A therapist who understands this specific pattern can build a personalised interruption protocol for your exact cycle, not generic anxiety management advice.'}
+  };
+  const cta=CTAs[pattern];
+  document.getElementById('ctaH').textContent=cta.h;
+  document.getElementById('ctaP').textContent=cta.p;
+}
+
+function restartTool(){
+  Object.keys(SELECTIONS).forEach(k=>SELECTIONS[k]=[]);
+  document.querySelectorAll('.opt-chip.selected,.opt-row.selected').forEach(el=>el.classList.remove('selected'));
+  document.querySelectorAll('.selected-preview').forEach(el=>el.innerHTML='');
+  document.querySelectorAll('.step-counter').forEach(el=>el.textContent='0 selected');
+  document.querySelectorAll('.btn-next[id]').forEach(el=>el.disabled=true);
+  document.getElementById('resultSection').style.display='none';
+  document.getElementById('step1').classList.add('active');
+  document.getElementById('step1').scrollIntoView({behavior:'smooth',block:'start'});
+}
+</script>
+</body>
+</html>

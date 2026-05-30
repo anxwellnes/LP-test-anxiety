@@ -169,6 +169,20 @@
     .tc-teal   .btn-tool { background:#15803D; } .tc-teal .btn-tool:hover { background:#166534; }
 
     /* INTERACTIVE 2-col */
+
+    /* TOOLS SECTION */
+    .tools-section { background: linear-gradient(160deg, var(--blue-soft) 0%, var(--bg) 100%); border-radius: var(--r-xl); border: 1px solid var(--blue-bdr); padding: clamp(24px,3.5vw,36px); margin-bottom: 32px; }
+    .tools-section-header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+    .tools-section-left {}
+    .tools-section-eyebrow { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 5px; display: flex; align-items: center; gap: 6px; }
+    .ts-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); display: inline-block; }
+    .tools-section-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.1rem,2vw,1.4rem); color: var(--text); letter-spacing: -0.02em; }
+    .tools-section-sub { font-size: 0.86rem; color: var(--muted); margin-top: 4px; max-width: 500px; }
+    .tools-section .tools-grid { margin-bottom: 14px; }
+    .tool-card.tc-tool { border-color: var(--blue-bdr); }
+    .tool-card.tc-tool .tc-top { background: var(--surface); }
+    .tool-card.tc-tool .tc-tag { background: var(--blue-soft); color: var(--blue); border-color: var(--blue-bdr); }
+    .tools-section .interactive-grid { margin-bottom: 0; }
     .interactive-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 32px; }
     .interactive-card { background: var(--surface); border-radius: var(--r-xl); border: 1px solid var(--border); box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column; transition: all 0.2s; }
     .interactive-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--blue-bdr); }
@@ -254,7 +268,21 @@
     }
     @media (max-width: 600px) {
       .tools-grid { grid-template-columns: 1fr 1fr; }
-      .interactive-grid { grid-template-columns: 1fr; }
+  
+    /* TOOLS SECTION */
+    .tools-section { background: linear-gradient(160deg, var(--blue-soft) 0%, var(--bg) 100%); border-radius: var(--r-xl); border: 1px solid var(--blue-bdr); padding: clamp(24px,3.5vw,36px); margin-bottom: 32px; }
+    .tools-section-header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+    .tools-section-left {}
+    .tools-section-eyebrow { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 5px; display: flex; align-items: center; gap: 6px; }
+    .ts-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); display: inline-block; }
+    .tools-section-title { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(1.1rem,2vw,1.4rem); color: var(--text); letter-spacing: -0.02em; }
+    .tools-section-sub { font-size: 0.86rem; color: var(--muted); margin-top: 4px; max-width: 500px; }
+    .tools-section .tools-grid { margin-bottom: 14px; }
+    .tool-card.tc-tool { border-color: var(--blue-bdr); }
+    .tool-card.tc-tool .tc-top { background: var(--surface); }
+    .tool-card.tc-tool .tc-tag { background: var(--blue-soft); color: var(--blue); border-color: var(--blue-bdr); }
+    .tools-section .interactive-grid { margin-bottom: 0; }
+    .interactive-grid { grid-template-columns: 1fr; }
       .seo-grid { grid-template-columns: 1fr; }
       .articles-grid { grid-template-columns: 1fr; }
       .topbar-tag { display: none; }
@@ -280,21 +308,6 @@
     <div class="topbar-tag">Free anxiety tools · No sign-up</div>
   </div>
 </header>
-
-<!-- Reddit small CTA top -->
-<div style="background:#FFF4F0;border-bottom:1px solid #FFD5C2;padding:14px clamp(16px,4vw,40px);">
-  <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="28" height="28" style="flex-shrink:0;">
-      <circle cx="10" cy="10" r="10" fill="#FF4500"/>
-      <path fill="#fff" d="M16.67 10a1.46 1.46 0 0 0-2.47-1 7.12 7.12 0 0 0-3.85-1.23l.65-3.08 2.13.45a1 1 0 1 0 1-1 1 1 0 0 0-.96.68l-2.38-.5a.16.16 0 0 0-.19.12l-.73 3.44a7.14 7.14 0 0 0-3.89 1.23 1.46 1.46 0 1 0-1.61 2.39 2.87 2.87 0 0 0 0 .44c0 2.24 2.61 4.06 5.83 4.06s5.83-1.82 5.83-4.06a2.87 2.87 0 0 0 0-.44 1.46 1.46 0 0 0 .64-1.5zM7.27 11a1 1 0 1 1 1 1 1 1 0 0 1-1-1zm5.58 2.71a3.58 3.58 0 0 1-2.85.71 3.58 3.58 0 0 1-2.85-.71.19.19 0 0 1 .27-.27 3.21 3.21 0 0 0 2.58.58 3.21 3.21 0 0 0 2.58-.58.19.19 0 0 1 .27.27zm-.17-1.71a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"/>
-    </svg>
-    <div style="flex:1;min-width:180px;">
-      <span style="font-family:'Nunito',sans-serif;font-weight:800;font-size:0.88rem;color:#1A1410;">Feeling overwhelmed right now?</span>
-      <span style="font-size:0.86rem;color:#6B5048;margin-left:6px;">16,000+ members and our moderators are in r/anxiety_support, ready to listen.</span>
-    </div>
-    <a href="https://www.reddit.com/r/anxiety_support/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#FF4500;color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;padding:8px 18px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0;">Get Support →</a>
-  </div>
-</div>
 
 <section class="hero">
   <div class="hero-inner">
@@ -369,44 +382,7 @@
     </div>
   </div>
 
-  <!-- IMMEDIATE TOOLS -->
-  <div class="tools-grid" style="margin-bottom:20px;">
-    <div class="tool-card tc-rose">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🆘</div><div class="tc-tag">Crisis tool</div></div>
-        <div class="tc-name">Panic Attack SOS Card</div>
-        <div class="tc-desc">A personalised crisis card for your next panic attack, built around exactly how it feels for you. Download and save on your phone.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">8 questions</div><div class="tc-pill">Your name on it</div><div class="tc-pill">Download as image</div></div>
-        <a href="https://myanxietytest.com/panic-sos-card/" class="btn-tool">Build My SOS Card <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
 
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🔍</div><div class="tc-tag">Triggers</div></div>
-        <div class="tc-name">Anxiety Triggers Identifier</div>
-        <div class="tc-desc">Identifies your dominant anxiety trigger across 6 categories. Most people are surprised by which one comes out on top.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">6 categories</div><div class="tc-pill">Bar chart result</div></div>
-        <a href="https://myanxietytest.com/anxiety-triggers/" class="btn-tool">Find My Triggers <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-card">
-      <div class="tc-top">
-        <div class="tc-top-row"><div class="tc-icon">🫀</div><div class="tc-tag">Interactive</div></div>
-        <div class="tc-name">Anxiety Body Scan</div>
-        <div class="tc-desc">Click on where you feel anxiety in your body. Get a personalised explanation of your physical anxiety pattern.</div>
-      </div>
-      <div class="tc-body">
-        <div class="tc-pills"><div class="tc-pill">Interactive map</div><div class="tc-pill">11 body zones</div><div class="tc-pill">Pattern detection</div></div>
-        <a href="https://myanxietytest.com/anxiety-body-scan/" class="btn-tool">Start Body Scan <span class="btn-tool-arrow">→</span></a>
-      </div>
-    </div>
-  </div>
 
   <!-- THERAPY NEXT STEP BLOCK -->
   <div class="therapy-block">
@@ -440,11 +416,102 @@
     </div>
   </div>
 
+  <!-- ── INTERACTIVE TOOLS ── -->
+  <div class="tools-section">
+    <div class="tools-section-header">
+      <div class="tools-section-left">
+        <div class="tools-section-eyebrow"><span class="ts-dot"></span> Interactive Tools</div>
+        <div class="tools-section-title">Tools you use, not just tests you take</div>
+        <div class="tools-section-sub">These are interactive tools designed to be used actively. Map your cycle, scan your body, build your crisis card, journal daily and track your progress over time.</div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card tc-tool">
+        <div class="tc-top">
+          <div class="tc-top-row"><div class="tc-icon">🗺️</div><div class="tc-tag">Pattern Mapping</div></div>
+          <div class="tc-name">Anxiety Pattern Mapper</div>
+          <div class="tc-desc">Map your personal anxiety cycle. Tell us when, where, who and what. Get a personalised visual map of your exact loop and how to break it.</div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-pills"><div class="tc-pill">Interactive</div><div class="tc-pill">Visual map</div><div class="tc-pill">5-step input</div></div>
+          <a href="https://myanxietytest.com/anxiety-pattern-mapper/" class="btn-tool">Map My Anxiety <span class="btn-tool-arrow">→</span></a>
+        </div>
+      </div>
+      <div class="tool-card tc-rose tc-tool">
+        <div class="tc-top">
+          <div class="tc-top-row"><div class="tc-icon">🆘</div><div class="tc-tag">Crisis tool</div></div>
+          <div class="tc-name">Panic Attack SOS Card</div>
+          <div class="tc-desc">A personalised crisis card for your next panic attack, built around exactly how it feels for you. Download and save on your phone.</div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-pills"><div class="tc-pill">8 questions</div><div class="tc-pill">Your name on it</div><div class="tc-pill">Download as image</div></div>
+          <a href="https://myanxietytest.com/panic-sos-card/" class="btn-tool">Build My SOS Card <span class="btn-tool-arrow">→</span></a>
+        </div>
+      </div>
+      <div class="tool-card tc-tool">
+        <div class="tc-top">
+          <div class="tc-top-row"><div class="tc-icon">🫀</div><div class="tc-tag">Body mapping</div></div>
+          <div class="tc-name">Anxiety Body Scan</div>
+          <div class="tc-desc">Click on where you feel anxiety in your body. Get a personalised explanation of your physical anxiety pattern and what each area means.</div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-pills"><div class="tc-pill">Interactive map</div><div class="tc-pill">11 body zones</div><div class="tc-pill">Pattern detection</div></div>
+          <a href="https://myanxietytest.com/anxiety-body-scan/" class="btn-tool">Start Body Scan <span class="btn-tool-arrow">→</span></a>
+        </div>
+      </div>
+      <div class="tool-card tc-tool">
+        <div class="tc-top">
+          <div class="tc-top-row"><div class="tc-icon">🔍</div><div class="tc-tag">Trigger analysis</div></div>
+          <div class="tc-name">Anxiety Triggers Identifier</div>
+          <div class="tc-desc">Identifies your dominant anxiety trigger across 6 categories. Most people are surprised by which one comes out on top.</div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-pills"><div class="tc-pill">18 questions</div><div class="tc-pill">6 categories</div><div class="tc-pill">Bar chart result</div></div>
+          <a href="https://myanxietytest.com/anxiety-triggers/" class="btn-tool">Find My Triggers <span class="btn-tool-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="interactive-grid">
+      <div class="interactive-card">
+        <div class="ic-header">
+          <div class="ic-header-row"><div class="ic-icon">📓</div><div class="ic-tag">Daily journaling</div></div>
+          <div class="ic-name">Anxiety Journal</div>
+          <div class="ic-desc">A guided daily check-in with prompts, mood tags, free writing and a calendar showing your history.</div>
+        </div>
+        <div class="ic-body">
+          <ul class="ic-features">
+            <li>5 anxiety levels + 12 mood tags per entry</li>
+            <li>4 guided prompts + unlimited free writing</li>
+            <li>Calendar with colour-coded history</li>
+            <li>Export as .txt, saved in your browser only</li>
+          </ul>
+          <a href="https://myanxietytest.com/anxiety-journal/" class="btn-ic">Open Journal <span>→</span></a>
+        </div>
+      </div>
+      <div class="interactive-card">
+        <div class="ic-header">
+          <div class="ic-header-row"><div class="ic-icon">📈</div><div class="ic-tag">Progress tracking</div></div>
+          <div class="ic-name">Anxiety Timeline Tracker</div>
+          <div class="ic-desc">Log your daily anxiety level and watch it change over time with a visual timeline chart.</div>
+        </div>
+        <div class="ic-body">
+          <ul class="ic-features">
+            <li>5 emoji level buttons per day</li>
+            <li>Visual chart: 7, 30, 90 days or all time</li>
+            <li>Streak counter, trend indicator, averages</li>
+            <li>Export as .csv, saved in your browser only</li>
+          </ul>
+          <a href="https://myanxietytest.com/anxiety-tracker/" class="btn-ic">Open Tracker <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ── 2. IS IT ANXIETY OR SOMETHING ELSE? ── -->
   <div style="margin-bottom:14px;">
-    <div class="section-eyebrow">Understand your specific pattern</div>
-    <h2 class="section-h2">Is it anxiety or <span>something else?</span></h2>
-    <p class="section-sub">Find out exactly what you are dealing with before trying to fix it.</p>
+    <div class="section-eyebrow">Understand your anxiety</div>
+    <h2 class="section-h2">What are you <span>actually dealing with?</span></h2>
+    <p class="section-sub">Core diagnostic quizzes to identify what kind of anxiety you have, how severe it is, and whether something else may be involved.</p>
   </div>
   <div class="tools-grid" style="margin-bottom:36px;">
 
@@ -493,6 +560,18 @@
       <div class="tc-body">
         <div class="tc-pills"><div class="tc-pill">12 questions</div><div class="tc-pill">4 severity levels</div><div class="tc-pill">Night panic anatomy</div></div>
         <a href="https://myanxietytest.com/nocturnal-panic-attack-quiz/" class="btn-tool">Take the Quiz <span class="btn-tool-arrow">→</span></a>
+      </div>
+    </div>
+
+        <div class="tool-card">
+      <div class="tc-top">
+        <div class="tc-top-row"><div class="tc-icon">🗺️</div><div class="tc-tag">Pattern Tool</div></div>
+        <div class="tc-name">Anxiety Pattern Mapper</div>
+        <div class="tc-desc">Map your personal anxiety cycle. Tell us when it hits, where, who triggers it, and what you do after. Get a visual map of your exact loop and how to break it.</div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-pills"><div class="tc-pill">Interactive</div><div class="tc-pill">Visual map</div><div class="tc-pill">Your cycle</div></div>
+        <a href="https://myanxietytest.com/anxiety-pattern-mapper/" class="btn-tool">Map My Anxiety →  <span class="btn-tool-arrow">→</span></a>
       </div>
     </div>
 
@@ -755,8 +834,8 @@
   <!-- ── 3. SPECIFIC TYPES ── -->
   <div style="margin-bottom:14px;">
     <div class="section-eyebrow">Specific anxiety types</div>
-    <h2 class="section-h2">Go <span>deeper</span> into your pattern</h2>
-    <p class="section-sub">Each of these tests focuses on a specific type of anxiety with targeted questions and detailed results.</p>
+    <h2 class="section-h2"><span>Specific</span> types and presentations</h2>
+    <p class="section-sub">Targeted tests for social anxiety, health anxiety, panic disorder, GAD and other specific presentations. Detailed results tuned to your type.</p>
   </div>
 
   <div class="tools-grid">
@@ -894,9 +973,9 @@
 
   <!-- ── 4.5. PATTERNS & TENDENCIES ── -->
   <div style="margin-bottom:14px;">
-    <div class="section-eyebrow">Patterns and tendencies</div>
-    <h2 class="section-h2">The behaviours anxiety <span>works through</span></h2>
-    <p class="section-sub">Tests that reveal the specific cognitive and behavioural patterns that anxiety often hides inside.</p>
+    <div class="section-eyebrow">Patterns and behaviour</div>
+    <h2 class="section-h2">The patterns anxiety <span>works through</span></h2>
+    <p class="section-sub">Tests that reveal the specific cognitive and behavioural habits anxiety creates: overthinking, people-pleasing, avoidance, self-sabotage and more.</p>
   </div>
 
   <div class="tools-grid" style="margin-bottom:48px;">
@@ -1019,48 +1098,7 @@
 
   </div>
 
-<!-- ── 4. DAILY TOOLS ── -->
-  <div style="margin-bottom:14px;">
-    <div class="section-eyebrow">Daily tools</div>
-    <h2 class="section-h2">Track, <span>journal</span> and reflect</h2>
-    <p class="section-sub">These tools are designed to be used regularly. They save privately in your browser and help you see patterns over time.</p>
-  </div>
 
-  <div class="interactive-grid">
-    <div class="interactive-card">
-      <div class="ic-header">
-        <div class="ic-header-row"><div class="ic-icon">📓</div><div class="ic-tag">Daily journaling</div></div>
-        <div class="ic-name">Anxiety Journal</div>
-        <div class="ic-desc">A guided daily check-in with prompts, mood tags, free writing and a calendar showing your history.</div>
-      </div>
-      <div class="ic-body">
-        <ul class="ic-features">
-          <li>5 anxiety levels + 12 mood tags per entry</li>
-          <li>4 guided prompts + unlimited free writing</li>
-          <li>Calendar with colour-coded history</li>
-          <li>Export as .txt, saved in your browser only</li>
-        </ul>
-        <a href="https://myanxietytest.com/anxiety-journal/" class="btn-ic">Open Journal <span>→</span></a>
-      </div>
-    </div>
-
-    <div class="interactive-card">
-      <div class="ic-header">
-        <div class="ic-header-row"><div class="ic-icon">📈</div><div class="ic-tag">Progress tracking</div></div>
-        <div class="ic-name">Anxiety Timeline Tracker</div>
-        <div class="ic-desc">Log your daily anxiety level and watch it change over time with a visual timeline chart.</div>
-      </div>
-      <div class="ic-body">
-        <ul class="ic-features">
-          <li>5 emoji level buttons per day</li>
-          <li>Visual chart: 7, 30, 90 days or all time</li>
-          <li>Streak counter, trend indicator, averages</li>
-          <li>Export as .csv, saved in your browser only</li>
-        </ul>
-        <a href="https://myanxietytest.com/anxiety-tracker/" class="btn-ic">Open Tracker <span>→</span></a>
-      </div>
-    </div>
-  </div>
 
   <!-- ── 5. ARTICLES ── -->
   <div style="margin-bottom:14px;">
