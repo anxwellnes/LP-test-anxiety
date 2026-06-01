@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon-test.svg">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN7KGLW2HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CN7KGLW2HZ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worry Tree: Turn a Worry Into a Decision | MyAnxietyTest.com</title>
+  <meta name="description" content="A free interactive worry tree. Tap through the exact decision a CBT therapist uses to turn a spiralling worry into either a concrete action or permission to let it go. No essays. Instant, private." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="keywords" content="worry tree, cbt worry tree, how to stop worrying, worry decision tool, deal with worry, let go of worry, actionable worry" />
+  <link rel="canonical" href="https://myanxietytest.com/resources/worry-tree/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Worry Tree: Turn a Worry Into a Decision" />
+  <meta property="og:description" content="Tap through the decision a therapist uses to turn a worry into an action or a release. Free, private, instant." />
+  <meta property="og:url" content="https://myanxietytest.com/resources/worry-tree/" />
+  <meta property="og:site_name" content="MyAnxietyTest" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HowTo","name":"Use a worry tree to handle a worry","description":"Decide whether a worry is actionable, then either take action or let it go.","step":[{"@type":"HowToStep","name":"Name the worry"},{"@type":"HowToStep","name":"Decide if you can do something about it"},{"@type":"HowToStep","name":"If yes, choose an action and a time"},{"@type":"HowToStep","name":"If no, redirect attention and let it pass"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"What is a worry tree?","acceptedAnswer":{"@type":"Answer","text":"A worry tree is a CBT decision tool that sorts a worry into one of two outcomes: a worry you can act on, which becomes a concrete action, or a worry you cannot act on, which you practise letting go. It is widely used to manage chronic worry and generalised anxiety."}},
+  {"@type":"Question","name":"Does the worry tree actually help with anxiety?","acceptedAnswer":{"@type":"Answer","text":"Yes. By forcing a single clear decision, the worry tree interrupts rumination, the endless circular worrying that keeps anxiety alive. It works because it converts a vague what if into either a what now action or a deliberate release."}},
+  {"@type":"Question","name":"What if I cannot do anything about the worry?","acceptedAnswer":{"@type":"Answer","text":"That is the most important branch. If there is no action to take, the worry is a hypothetical, not a problem to solve. The skill then is redirecting attention, not solving, since there is nothing to solve."}},
+  {"@type":"Question","name":"Is this a substitute for therapy?","acceptedAnswer":{"@type":"Answer","text":"No. The worry tree is a self help skill for everyday worries. If worry is constant or overwhelming, a therapist trained in CBT can help you use it consistently and address the deeper pattern."}}]}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --blue:#0064FA; --blue-dark:#0050CC; --blue-mid:#1a74fb; --blue-soft:#E8F1FF; --blue-bdr:#C0D8FF;
+      --bg:#F2F5FA; --surface:#FFFFFF; --border:#DDE4EF; --text:#0D1B2A; --muted:#5C6F85; --muted-lt:#97A8BA;
+      /* outcome semantics, pulled from the site variant palette */
+      --green:#15803D; --green-soft:#F0FDF4; --green-bdr:#BBF7D0;
+      --teal:#0D9488; --teal-soft:#F0FDFA; --teal-bdr:#99F6E4;
+      --orange:#EA580C; --orange-soft:#FFF7ED; --orange-bdr:#FED7AA; --orange-text:#C2410C;
+      --shadow-sm:0 1px 4px rgba(0,100,250,.07); --shadow-md:0 4px 20px rgba(0,100,250,.09); --shadow-lg:0 12px 48px rgba(0,100,250,.12);
+      --r:12px; --r-lg:18px; --r-xl:24px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .faq-a a,.seo p a,.closer a{color:var(--blue);font-weight:800}
+    .faq-a a:hover,.seo p a:hover{color:var(--blue-dark)}
+
+    /* TOPBAR (exact site label) */
+    .topbar{background:var(--blue);box-shadow:0 2px 12px rgba(0,100,250,.25);position:sticky;top:0;z-index:100}
+    .topbar-inner{max-width:1080px;margin:0 auto;padding:0 clamp(16px,4vw,40px);height:58px;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:9px}
+    .logo-mark{width:32px;height:32px;background:white;border-radius:8px;display:grid;place-items:center;font-size:.95rem}
+    .logo-name{font-family:'Nunito',sans-serif;font-weight:900;font-size:1rem;color:white;letter-spacing:-.01em}
+    .topbar-tag{font-size:.77rem;font-weight:700;color:rgba(255,255,255,.72);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:4px 12px;border-radius:999px}
+
+    .wrap{max-width:760px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+    .crumb{padding:18px 0 0;font-size:.82rem;color:var(--muted)}
+    .crumb a{color:var(--muted);font-weight:700}
+
+    /* HERO (light tool header) */
+    .hero{padding:22px 0 4px}
+    .kicker{display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;background:var(--green-soft);
+      border:1px solid var(--green-bdr);font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+    h1{font-family:'Nunito',sans-serif;font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;line-height:1.08;letter-spacing:-.025em}
+    h1 span{color:var(--blue)}
+    .hero-desc{font-size:1.05rem;color:var(--muted);max-width:56ch;margin-top:14px;line-height:1.7}
+    .trust{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+    .ht{display:flex;align-items:center;gap:7px;font-size:.84rem;font-weight:700;color:var(--muted)}
+    .ht .dot{width:20px;height:20px;border-radius:50%;background:var(--green-soft);color:var(--green);display:grid;place-items:center;font-size:.62rem;font-weight:900}
+
+    /* PANEL */
+    .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);box-shadow:var(--shadow-md);padding:30px 28px;margin-top:26px}
+
+    /* live tree map */
+    .treemap{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .node{font-size:.78rem;font-weight:800;padding:7px 13px;border-radius:999px;background:var(--bg);color:var(--muted-lt);border:1px solid var(--border);transition:.25s}
+    .node.on{background:var(--blue-soft);color:var(--blue);border-color:var(--blue-bdr)}
+    .node.act{background:var(--green-soft);color:var(--green);border-color:var(--green-bdr)}
+    .node.let{background:var(--teal-soft);color:var(--teal);border-color:var(--teal-bdr)}
+    .arrow{color:var(--muted-lt);font-weight:900}
+
+    .step{display:none;animation:fade .35s ease}
+    .step.show{display:block}
+    @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+    .q-emoji{font-size:2rem}
+    .q-title{font-family:'Nunito',sans-serif;font-size:1.45rem;font-weight:900;letter-spacing:-.02em;margin:10px 0 6px;line-height:1.18}
+    .q-help{color:var(--muted);font-size:.96rem;margin-bottom:20px;max-width:50ch}
+
+    .opt-note{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);background:var(--blue-soft);border:1px solid var(--blue-bdr);padding:3px 10px;border-radius:999px;display:inline-block;margin-bottom:10px}
+    textarea{width:100%;font-family:inherit;font-size:1.04rem;color:var(--text);border:2px solid var(--border);border-radius:var(--r-lg);padding:15px;background:var(--bg);resize:vertical;min-height:70px;transition:.15s}
+    textarea:focus{outline:none;border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(0,100,250,.12)}
+
+    /* big choice buttons */
+    .choices{display:grid;gap:12px;margin-top:6px}
+    .choices.two{grid-template-columns:1fr 1fr}
+    .choice{border:2px solid var(--border);border-radius:var(--r-lg);padding:20px 18px;cursor:pointer;background:var(--surface);transition:.16s;text-align:left;display:flex;align-items:center;gap:14px}
+    .choice:hover{border-color:var(--blue-bdr);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+    .choice .ci{font-size:1.7rem;flex:none}
+    .choice .ct{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.05rem}
+    .choice .cd{font-size:.84rem;color:var(--muted);font-weight:600;margin-top:2px}
+    .choice.green:hover{border-color:var(--green-bdr)}
+    .choice.teal:hover{border-color:var(--teal-bdr)}
+
+    /* chips */
+    .chips{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .chip{border:2px solid var(--border);border-radius:var(--r-lg);padding:13px 15px;cursor:pointer;background:var(--bg);font-weight:800;font-size:.92rem;transition:.15s;display:flex;align-items:center;gap:10px}
+    .chip:hover{border-color:var(--blue-bdr)}
+    .chip.on{border-color:var(--blue);background:var(--blue-soft);color:var(--blue-dark)}
+    .chip .che{font-size:1.2rem}
+
+    .nav{display:flex;justify-content:space-between;gap:12px;margin-top:28px}
+    .btn{font-family:'Nunito',sans-serif;font-weight:900;font-size:.95rem;border:none;cursor:pointer;border-radius:var(--r-lg);padding:14px 24px;transition:.16s}
+    .btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px rgba(0,100,250,.22)}
+    .btn-primary:hover{background:var(--blue-dark);transform:translateY(-1px)}
+    .btn-ghost{background:var(--blue-soft);color:var(--blue-dark)}
+    .btn-ghost:hover{background:#dceafe}
+    .btn-ghost[disabled]{opacity:.4;cursor:default}
+
+    /* RESULT */
+    .result{display:none}
+    .result.show{display:block;animation:fade .4s ease}
+    .rcard{border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow-lg)}
+    .rc-head{padding:26px;color:#fff;position:relative;overflow:hidden}
+    .rc-head.action{background:linear-gradient(135deg,var(--green),#0E6B33)}
+    .rc-head.letgo{background:linear-gradient(135deg,var(--teal),#0B736B)}
+    .rc-head::after{content:"";position:absolute;right:-50px;top:-50px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.1)}
+    .rc-head .tagline{font-size:.74rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.82)}
+    .rc-head h2{font-family:'Nunito',sans-serif;font-size:1.5rem;font-weight:900;margin-top:6px;line-height:1.15}
+    .rc-body{background:#fff;padding:24px 26px}
+
+    /* path diagram on card */
+    .path{display:flex;flex-direction:column;gap:0;margin-bottom:20px}
+    .pstep{display:flex;align-items:flex-start;gap:13px;position:relative;padding-bottom:16px}
+    .pstep:last-child{padding-bottom:0}
+    .pstep:not(:last-child)::before{content:"";position:absolute;left:13px;top:28px;bottom:0;width:2px;background:var(--border)}
+    .pdot{width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:.85rem;font-weight:900;color:#fff;background:var(--blue);z-index:1}
+    .pdot.g{background:var(--green)} .pdot.t{background:var(--teal)}
+    .ptxt .pl{font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted-lt)}
+    .ptxt .pv{font-weight:800;color:var(--text);margin-top:1px}
+
+    .bigaction{background:var(--green-soft);border:1px solid var(--green-bdr);border-radius:var(--r-lg);padding:18px 20px;margin-top:4px}
+    .bigaction.letgo{background:var(--teal-soft);border-color:var(--teal-bdr)}
+    .bigaction .lbl{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+    .bigaction .val{font-family:'Nunito',sans-serif;font-size:1.15rem;font-weight:900;color:var(--text);margin-top:4px}
+    .closer{margin-top:16px;font-size:.98rem;font-weight:700;color:var(--text);display:flex;gap:10px}
+    .closer .em{font-size:1.2rem;flex:none}
+
+    /* breathing redirect for let-go */
+    .breath{display:none;text-align:center;margin-top:18px;padding:18px;background:var(--teal-soft);border:1px solid var(--teal-bdr);border-radius:var(--r-lg)}
+    .breath.show{display:block}
+    .ring{width:96px;height:96px;border-radius:50%;margin:6px auto 8px;border:5px solid var(--teal);display:grid;place-items:center;font-weight:900;color:var(--teal);font-size:.9rem;animation:breathe 8s ease-in-out infinite}
+    @keyframes breathe{0%,100%{transform:scale(.82)}50%{transform:scale(1.08)}}
+    .breath .bt{font-weight:800;color:var(--text)}
+
+    .rc-foot{background:#fff;padding:4px 26px 18px;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--text);font-family:'Nunito',sans-serif;font-size:.92rem;font-weight:900;letter-spacing:-.01em}
+    .rc-foot .rc-logo{width:26px;height:26px;background:var(--blue);border-radius:7px;display:grid;place-items:center;font-size:.85rem}
+    .result-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:18px}
+    .result-actions .btn{flex:1;min-width:130px;text-align:center}
+
+    /* THERAPY BLOCK (blue, conversion focused, exact site style) */
+    .therapy{background:linear-gradient(160deg,var(--blue-dark) 0%,var(--blue) 60%,var(--blue-mid) 100%);border-radius:var(--r-xl);padding:32px clamp(22px,4vw,40px);margin-top:30px;display:none;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
+    .therapy.show{display:block;animation:fade .4s ease}
+    .therapy::after{content:"";position:absolute;right:-70px;bottom:-70px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);pointer-events:none}
+    .tb-label{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:14px}
+    .therapy h3{font-family:'Nunito',sans-serif;font-size:clamp(1.35rem,2.6vw,1.75rem);font-weight:900;letter-spacing:-.025em;line-height:1.14;color:#fff;margin-bottom:12px;max-width:24ch}
+    .therapy .lede{font-size:.96rem;color:rgba(255,255,255,.78);line-height:1.7;max-width:60ch;margin-bottom:22px}
+    .tb-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+    .tbc{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-lg);padding:16px}
+    .tbc .h{font-family:'Nunito',sans-serif;font-weight:900;font-size:.92rem;color:#fff;margin-bottom:5px}
+    .tbc .d{font-size:.8rem;color:rgba(255,255,255,.68);line-height:1.5}
+    .tb-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .therapy a.cta{display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--blue-dark);font-family:'Nunito',sans-serif;font-weight:900;font-size:.98rem;padding:15px 26px;border-radius:var(--r-lg);transition:.16s}
+    .therapy a.cta:hover{background:#eef5ff;transform:translateY(-2px)}
+    .tb-fine{font-size:.8rem;color:rgba(255,255,255,.6);font-weight:600}
+    @media(max-width:620px){.tb-cards{grid-template-columns:1fr}}
+
+    /* RELATED tool cards (site pattern) */
+    .related{margin-top:42px}
+    .rel-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+    .rel-h2{font-family:'Nunito',sans-serif;font-size:1.4rem;font-weight:900;letter-spacing:-.02em;margin-bottom:18px}
+    .rgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .tool-card{background:var(--surface);border-radius:var(--r-xl);border:1px solid var(--border);box-shadow:var(--shadow-sm);overflow:hidden;display:flex;flex-direction:column;transition:.2s}
+    .tool-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);border-color:var(--blue-bdr)}
+    .tc-top{padding:14px 16px 11px;border-bottom:1px solid var(--border)}
+    .tc-top-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+    .tc-icon{font-size:1.25rem}
+    .tc-tag{font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);background:var(--blue-soft);border:1px solid var(--blue-bdr);padding:3px 9px;border-radius:999px}
+    .tc-name{font-family:'Nunito',sans-serif;font-size:.95rem;font-weight:900;letter-spacing:-.01em;margin-bottom:4px}
+    .tc-desc{font-size:.82rem;color:var(--muted);line-height:1.5}
+    .tc-body{padding:11px 16px 14px;flex:1;display:flex;flex-direction:column;justify-content:flex-end}
+    .btn-tool{display:flex;align-items:center;justify-content:space-between;height:40px;padding:0 14px;background:var(--blue);color:#fff;font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:800;border-radius:var(--r);transition:.18s}
+    .btn-tool:hover{background:var(--blue-dark)}
+    .tc-purple .tc-tag{background:#F5F3FF;color:#6D28D9;border-color:#DDD6FE}.tc-purple .btn-tool{background:#6D28D9}.tc-purple .btn-tool:hover{background:#5B21B6}
+    .tc-orange .tc-tag{background:#FFF7ED;color:#C2410C;border-color:#FED7AA}.tc-orange .btn-tool{background:#EA580C}.tc-orange .btn-tool:hover{background:#C2410C}
+    .tc-teal .tc-tag{background:#F0FDF4;color:#15803D;border-color:#BBF7D0}.tc-teal .btn-tool{background:#15803D}.tc-teal .btn-tool:hover{background:#166534}
+
+    /* SEO + FAQ */
+    .seo{margin-top:46px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);padding:clamp(24px,4vw,38px)}
+    .seo h2{font-family:'Nunito',sans-serif;font-size:1.4rem;font-weight:900;letter-spacing:-.02em;margin-bottom:12px;line-height:1.2}
+    .seo p{color:var(--muted);font-size:.92rem;line-height:1.75;margin-bottom:16px}
+    .faq-list{display:grid;gap:8px;margin-top:6px}
+    .faq-item{background:var(--bg);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden}
+    .faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;padding:15px 18px;background:none;border:none;cursor:pointer;font-family:'Nunito',sans-serif;font-size:.95rem;font-weight:900;color:var(--text);text-align:left;gap:12px}
+    .faq-q:hover{background:var(--blue-soft)}
+    .faq-q.open{color:var(--blue);background:var(--blue-soft)}
+    .faq-chev{font-size:.85rem;color:var(--muted);transition:transform .25s;flex-shrink:0}
+    .faq-q.open .faq-chev{transform:rotate(180deg);color:var(--blue)}
+    .faq-a{padding:0 18px;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;color:var(--muted);font-size:.88rem;line-height:1.7}
+    .faq-a.open{padding:0 18px 16px;max-height:320px}
+
+    .care{margin:24px 0 0;background:var(--blue-soft);border:1px solid var(--blue-bdr);border-radius:var(--r-lg);padding:18px 20px;color:var(--muted);font-size:.88rem}
+    .care b{color:var(--text)}
+
+    .footer{margin-top:46px;background:var(--blue-dark);padding:26px clamp(16px,4vw,40px) 32px}
+    .fi{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.1)}
+    .fb{display:flex;align-items:center;gap:8px;font-family:'Nunito',sans-serif;font-weight:900;font-size:.92rem;color:#fff}
+    .fl{display:flex;flex-wrap:wrap;gap:18px}
+    .fl a{font-size:.8rem;font-weight:600;color:rgba(255,255,255,.55)}
+    .fl a:hover{color:#fff}
+    .fc{max-width:760px;margin:16px auto 0;font-size:.75rem;color:rgba(255,255,255,.3)}
+
+    @media(max-width:560px){.choices.two{grid-template-columns:1fr}.chips{grid-template-columns:1fr}.rgrid{grid-template-columns:1fr}.panel{padding:24px 20px}}
+    @media print{.topbar,.crumb,.nav,.treemap,.therapy,.related,.seo,.care,footer,.result-actions,.trust,.kicker,.hero-desc{display:none!important}.step{display:none!important}.result{display:block!important}body{background:#fff}.rcard{box-shadow:none}}
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="https://myanxietytest.com/" class="logo">
+      <div class="logo-mark">🧠</div>
+      <div class="logo-name">MyAnxietyTest</div>
+    </a>
+    <div class="topbar-tag">Free anxiety tools · No sign up</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="https://myanxietytest.com/">Home</a> › <a href="https://myanxietytest.com/resources/">Resources</a> › Worry Tree</nav>
+
+  <section class="hero">
+    <span class="kicker">🌳 Worry Decision Tool</span>
+    <h1>Turn a worry into <span>a decision</span></h1>
+    <p class="hero-desc">Worry feels endless because it never reaches a conclusion. This is the exact decision a CBT therapist walks you through: a few taps that turn a spiralling worry into either one clear action or permission to let it go.</p>
+    <div class="trust">
+      <span class="ht"><span class="dot">✓</span> All tapping, no essays</span>
+      <span class="ht"><span class="dot">✓</span> Ends in a clear next step</span>
+      <span class="ht"><span class="dot">✓</span> Private and instant</span>
+    </div>
+  </section>
+
+  <div class="panel" id="panel">
+    <div class="treemap" id="treemap">
+      <span class="node on" id="n0">The worry</span>
+      <span class="arrow">→</span>
+      <span class="node" id="n1">Can you act?</span>
+      <span class="arrow">→</span>
+      <span class="node" id="n2">Outcome</span>
+    </div>
+
+    <!-- Step 0: optional name the worry -->
+    <div class="step show" data-s="0">
+      <div class="q-emoji">🌱</div>
+      <div class="q-title">What is the worry, in a few words?</div>
+      <span class="opt-note">Optional</span>
+      <p class="q-help" style="margin-bottom:12px">You can name it or skip straight to the question. Naming it just makes the result yours.</p>
+      <textarea id="worry" placeholder="For example: What if I said the wrong thing in that meeting?"></textarea>
+    </div>
+
+    <!-- Step 1: can you act -->
+    <div class="step" data-s="1">
+      <div class="q-emoji">🌳</div>
+      <div class="q-title">Can you do something about this worry?</div>
+      <p class="q-help">Be honest. Is there a real action that would change the outcome, or is this out of your hands?</p>
+      <div class="choices two">
+        <button class="choice green" data-act="yes"><span class="ci">✅</span><span><span class="ct">Yes, there is an action</span><span class="cd">Something I could actually do</span></span></button>
+        <button class="choice teal" data-act="no"><span class="ci">🍃</span><span><span class="ct">No, it is out of my hands</span><span class="cd">Nothing I do would change it</span></span></button>
+      </div>
+    </div>
+
+    <!-- Step 2a: can you act now -->
+    <div class="step" data-s="2">
+      <div class="q-emoji">⏱️</div>
+      <div class="q-title">Can you take that action now, or very soon?</div>
+      <p class="q-help">If it can happen in the next hour or so, that is now. If it has to wait, we will park it.</p>
+      <div class="choices two">
+        <button class="choice green" data-when="now"><span class="ci">⚡</span><span><span class="ct">Yes, now or soon</span><span class="cd">I can start in the next hour</span></span></button>
+        <button class="choice" data-when="later"><span class="ci">📅</span><span><span class="ct">No, it has to wait</span><span class="cd">It needs a specific time</span></span></button>
+      </div>
+    </div>
+
+    <!-- Step 3a: pick the action -->
+    <div class="step" data-s="3">
+      <div class="q-emoji">🎯</div>
+      <div class="q-title">What is the one action?</div>
+      <p class="q-help">Pick the closest one, or write your own. Keep it to a single first step.</p>
+      <div class="chips" id="actionChips"></div>
+      <textarea id="actionCustom" style="margin-top:12px;min-height:54px" placeholder="Or write your own first step"></textarea>
+    </div>
+
+    <!-- Step 3b: pick when (for later) -->
+    <div class="step" data-s="4">
+      <div class="q-emoji">📅</div>
+      <div class="q-title">When will you do it?</div>
+      <p class="q-help">Giving it a time is what lets your brain stop holding it.</p>
+      <div class="chips" id="whenChips"></div>
+    </div>
+
+    <div class="nav">
+      <button class="btn btn-ghost" id="backBtn" disabled>← Back</button>
+      <button class="btn btn-primary" id="nextBtn">Next →</button>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="result" id="result">
+    <div class="rcard" id="card">
+      <div class="rc-head" id="rcHead">
+        <div class="tagline">Your worry tree result</div>
+        <h2 id="rcTitle"></h2>
+      </div>
+      <div class="rc-body">
+        <div class="path" id="pathDiagram"></div>
+        <div class="bigaction" id="bigAction">
+          <div class="lbl" id="baLbl">Your next step</div>
+          <div class="val" id="baVal"></div>
+        </div>
+        <div class="closer" id="closer"></div>
+        <div class="breath" id="breath">
+          <div class="ring" id="ring">Breathe in</div>
+          <div class="bt">Three slow breaths. Let the thought float by like a cloud.</div>
+        </div>
+      </div>
+      <div class="rc-foot"><span class="rc-logo">🧠</span> MyAnxietyTest.com</div>
+    </div>
+
+    <div class="result-actions">
+      <button class="btn btn-primary" id="dlBtn">⬇️ Download as image</button>
+      <button class="btn btn-ghost" id="copyBtn">📋 Copy</button>
+      <button class="btn btn-ghost" onclick="window.print()">🖨️ Print</button>
+      <button class="btn btn-ghost" id="againBtn">↺ New worry</button>
+    </div>
+  </div>
+
+  <!-- THERAPY (blue, conversion focused) -->
+  <div class="therapy" id="therapy">
+    <span class="tb-label">Recommended next step</span>
+    <h3 id="therapyHead">You have been carrying this worry alone long enough.</h3>
+    <p class="lede" id="therapyLede">Sorting one worry is a real skill. Stopping worry from running your day is what therapy is built for. A licensed CBT therapist gets to what self help cannot reach: the baseline anxiety driving the loop and the patterns that keep it alive. Most people feel meaningfully better within the first few sessions. Matched within 24 hours, first month 20% off, cancel anytime.</p>
+    <div class="tb-cards">
+      <div class="tbc"><div class="h">Address the cause</div><div class="d">Work through what keeps the worry going with someone trained in exactly this.</div></div>
+      <div class="tbc"><div class="h">Evidence based CBT</div><div class="d">The approach with the strongest clinical results for anxiety and chronic worry.</div></div>
+      <div class="tbc"><div class="h">Start feeling better</div><div class="d">Most people notice meaningful change within the first four to six sessions.</div></div>
+    </div>
+    <div class="tb-actions">
+      <a class="cta" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=worryTreeMain" target="_blank" rel="nofollow noopener">Speak with a therapist, 20% off →</a>
+      <span class="tb-fine">Matched within 24 hours · No commitment required</span>
+    </div>
+  </div>
+
+  <!-- RELATED -->
+  <div class="related">
+    <div class="rel-eyebrow">Keep going</div>
+    <div class="rel-h2">Tools that pair with this</div>
+    <div class="rgrid">
+      <a class="tool-card tc-purple" href="https://myanxietytest.com/anxiety-overthinking-quiz/?source=worryTreeOverthinkingQuiz">
+        <div class="tc-top"><div class="tc-top-row"><div class="tc-icon">🔄</div><div class="tc-tag">Overthinking</div></div><div class="tc-name">Anxiety Overthinking Quiz</div><div class="tc-desc">Find out why your brain will not stop and what drives the loop.</div></div>
+        <div class="tc-body"><span class="btn-tool">Take the quiz <span>→</span></span></div>
+      </a>
+      <a class="tool-card tc-teal" href="https://myanxietytest.com/anxiety-relief-toolkit/?source=worryTreeReliefToolkit">
+        <div class="tc-top"><div class="tc-top-row"><div class="tc-icon">🫁</div><div class="tc-tag">Use it now</div></div><div class="tc-name">Anxiety Relief Toolkit</div><div class="tc-desc">Four guided calming techniques for when the worry will not let go.</div></div>
+        <div class="tc-body"><span class="btn-tool">Open toolkit <span>→</span></span></div>
+      </a>
+      <a class="tool-card" href="https://myanxietytest.com/anxiety-loop-identifier/?source=worryTreeLoopIdentifier">
+        <div class="tc-top"><div class="tc-top-row"><div class="tc-icon">🔁</div><div class="tc-tag">Pattern</div></div><div class="tc-name">Anxiety Loop Identifier</div><div class="tc-desc">Map the trigger, thought, behaviour cycle keeping worry alive.</div></div>
+        <div class="tc-body"><span class="btn-tool">Identify my loop <span>→</span></span></div>
+      </a>
+      <a class="tool-card tc-orange" href="https://myanxietytest.com/articles/how-to-stop-anxiety-spirals/?source=worryTreeSpiralsArticle">
+        <div class="tc-top"><div class="tc-top-row"><div class="tc-icon">📖</div><div class="tc-tag">Guide</div></div><div class="tc-name">How to Stop Anxiety Spirals</div><div class="tc-desc">Six evidence based ways to interrupt a spiral before it takes over.</div></div>
+        <div class="tc-body"><span class="btn-tool">Read the guide <span>→</span></span></div>
+      </a>
+    </div>
+  </div>
+
+  <!-- SEO + FAQ -->
+  <div class="seo">
+    <h2>Why a worry tree works when reassurance does not</h2>
+    <p>Worry feels productive but rarely is. The mind treats a worry as a problem to solve, so it keeps circling, looking for an answer that thinking alone cannot provide. The worry tree breaks that loop with a single question that reassurance never asks: is there actually something to do here?</p>
+    <p>If there is, the worry becomes an action with a time attached, and action is the natural off switch for worry. If there is not, the worry is revealed as a hypothetical, a what if rather than a what now, and the honest response is not more analysis but redirecting your attention. Either way the loop closes, which is exactly what chronic worry never lets happen on its own.</p>
+    <div class="faq-list" id="faq">
+      <div class="faq-item"><button class="faq-q">What is a worry tree?<span class="faq-chev">﹀</span></button><div class="faq-a">A worry tree is a CBT decision tool that sorts a worry into one of two outcomes: a worry you can act on, which becomes a concrete action, or one you cannot, which you practise letting go. It is a staple in treating generalised anxiety. If this loop runs constantly, see how deep it goes with the <a href="https://myanxietytest.com/anxiety-overthinking-quiz/?source=worryTreeFaqOverthinking">overthinking quiz</a> or the <a href="https://myanxietytest.com/gad-anxiety-test/?source=worryTreeFaqGad">GAD anxiety test</a>, and if it has been going on for years, <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=worryTreeFaqWhat" target="_blank" rel="nofollow noopener">a licensed CBT therapist</a> can reset the pattern, 20% off your first month.</div></div>
+      <div class="faq-item"><button class="faq-q">Does it actually help with anxiety?<span class="faq-chev">﹀</span></button><div class="faq-a">Yes. By forcing one clear decision it interrupts rumination, the circular worrying that keeps anxiety alive. To map the cycle, try the <a href="https://myanxietytest.com/anxiety-loop-identifier/?source=worryTreeFaqLoop">Anxiety Loop Identifier</a>; to measure where you stand, the <a href="https://myanxietytest.com/anxiety-level/?source=worryTreeFaqLevel">anxiety level test</a>; and for more ways to break a spiral, read <a href="https://myanxietytest.com/articles/how-to-stop-anxiety-spirals/?source=worryTreeFaqSpirals">how to stop anxiety spirals</a>. When self help is not enough, <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=worryTreeFaqHelp" target="_blank" rel="nofollow noopener">CBT with a licensed therapist</a> is the most reliable next step.</div></div>
+      <div class="faq-item"><button class="faq-q">What if I cannot do anything about the worry?<span class="faq-chev">﹀</span></button><div class="faq-a">That is the most important branch. If there is no action, the worry is a hypothetical, not a problem to solve, so the skill is redirecting attention rather than analysing. The <a href="https://myanxietytest.com/anxiety-relief-toolkit/?source=worryTreeFaqToolkit">Relief Toolkit</a> gives you a fast reset, and the guide <a href="https://myanxietytest.com/articles/why-do-i-feel-anxious-for-no-reason/?source=worryTreeFaqNoReason">why you feel anxious for no reason</a> explains why these what ifs appear. If you can neither act nor let go, that stuck feeling is exactly what <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=worryTreeFaqLetGo" target="_blank" rel="nofollow noopener">CBT with a licensed therapist</a> resolves, matched within 24 hours.</div></div>
+      <div class="faq-item"><button class="faq-q">Why does worrying feel impossible to stop?<span class="faq-chev">﹀</span></button><div class="faq-a">Because the brain treats worry as problem solving, so it keeps circling for an answer thinking alone cannot give. The off switch is a decision, not more thinking. If worry has quietly become your default, the <a href="https://myanxietytest.com/have-i-normalized-anxiety/?source=worryTreeFaqNormalised">have I normalised my anxiety test</a> is worth three minutes, and <a href="https://myanxietytest.com/articles/high-functioning-anxiety-hidden-signs/?source=worryTreeFaqHfa">high functioning anxiety</a> covers how it hides. Constant worry responds well to <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=worryTreeFaqStop" target="_blank" rel="nofollow noopener">structured CBT with a therapist</a>.</div></div>
+      <div class="faq-item"><button class="faq-q">Is constant worry a sign of an anxiety disorder?<span class="faq-chev">﹀</span></button><div class="faq-a">Persistent, hard to control worry across many areas is the core feature of generalised anxiety disorder. It is worth checking rather than guessing: the <a href="https://myanxietytest.com/gad-anxiety-test/?source=worryTreeFaqGad2">GAD anxiety test</a> screens for it and the <a href="https://myanxietytest.com/do-i-need-therapy/?source=worryTreeFaqNeedTherapy">do I need therapy quiz</a> helps you decide on support. If it fits, <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=worryTreeFaqDisorder" target="_blank" rel="nofollow noopener">a licensed therapist matched within 24 hours</a> can treat it directly, 20% off your first month.</div></div>
+      <div class="faq-item"><button class="faq-q">Can therapy actually stop chronic worry?<span class="faq-chev">﹀</span></button><div class="faq-a">Yes, and it is the most reliable route. A licensed CBT therapist lowers the baseline anxiety that keeps the worry engine running and retrains the avoidance and reassurance habits self help cannot fully reach. <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=worryTreeFaqTherapy" target="_blank" rel="nofollow noopener">Online CBT therapists who specialise in anxiety</a> can start within 48 hours, and you can compare options in <a href="https://myanxietytest.com/articles/best-online-therapy-for-anxiety-2026/?source=worryTreeFaqBestTherapy">the best online therapy guide</a>.</div></div>
+      <div class="faq-item"><button class="faq-q">Is this a substitute for therapy?<span class="faq-chev">﹀</span></button><div class="faq-a">No. It is a self help skill for everyday worries. If worry is constant or overwhelming, a therapist trained in CBT can help you use it consistently and ease the deeper pattern. You can <a href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=worryTreeFaqSubstitute" target="_blank" rel="nofollow noopener">speak with a licensed therapist</a> within 24 hours at 20% off, or take the <a href="https://myanxietytest.com/do-i-need-therapy/?source=worryTreeFaqNeed2">do I need therapy quiz</a> first.</div></div>
+    </div>
+  </div>
+
+  <div class="care"><b>A gentle note.</b> This tool is for everyday self help and education. It is not a diagnosis or a substitute for professional care. If worry or anxiety feels overwhelming, talking to a qualified professional can make a real difference.</div>
+</div>
+
+<footer class="footer">
+  <div class="fi">
+    <a href="https://myanxietytest.com/" class="fb">🧠 MyAnxietyTest.com</a>
+    <div class="fl">
+      <a href="https://myanxietytest.com/">Home</a>
+      <a href="https://myanxietytest.com/resources/">Resources</a>
+      <a href="https://myanxietytest.com/anxiety-relief-toolkit/">Relief Toolkit</a>
+      <a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy</a>
+      <a href="https://myanxietytest.com/articles/">Articles</a>
+    </div>
+  </div>
+  <div class="fc">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+  var actionOptions=[
+    ["✉️","Send a message"],["📞","Make a call"],["📝","Write it down"],
+    ["🙋","Ask someone"],["🗂️","Make a small plan"],["🔎","Look it up once"]
+  ];
+  var whenOptions=[["🌞","Later today"],["🌅","Tomorrow"],["🗓️","This week"],["⏰","A set time I choose"]];
+
+  var state={worry:"",actable:null,timing:null,action:"",when:""};
+  function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+
+  // build chips
+  (function(){
+    var a=document.getElementById('actionChips');
+    actionOptions.forEach(function(o){
+      var el=document.createElement('div');el.className='chip';el.innerHTML='<span class="che">'+o[0]+'</span>'+o[1];
+      el.onclick=function(){a.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');});el.classList.add('on');state.action=o[1];};
+      a.appendChild(el);
+    });
+    var w=document.getElementById('whenChips');
+    whenOptions.forEach(function(o){
+      var el=document.createElement('div');el.className='chip';el.innerHTML='<span class="che">'+o[0]+'</span>'+o[1];
+      el.onclick=function(){w.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');});el.classList.add('on');state.when=o[1];};
+      w.appendChild(el);
+    });
+  })();
+
+  // choice buttons (branch)
+  document.querySelectorAll('.choice').forEach(function(b){
+    b.onclick=function(){
+      if(b.dataset.act){state.actable=b.dataset.act; if(b.dataset.act==='yes'){go(2);} else {finish();} }
+      else if(b.dataset.when){state.timing=b.dataset.when; if(b.dataset.when==='now'){go(3);} else {go(4);} }
+    };
+  });
+
+  var seq=[0,1]; // dynamic forward stack of step indices
+  var steps=document.querySelectorAll('.step');
+  var cur=0;
+  function showStep(idx){
+    steps.forEach(function(s){s.classList.toggle('show',+s.dataset.s===idx);});
+    cur=idx;
+    document.getElementById('backBtn').disabled=(seq.length<=1);
+    var nb=document.getElementById('nextBtn');
+    // hide Next on pure branch steps (1 and 2) since choices advance
+    if(idx===1||idx===2){nb.style.display='none';}else{nb.style.display='inline-block';}
+    nb.textContent=(idx===3||idx===4)?'See my result →':'Next →';
+    // treemap
+    setNode('n1', idx>=1);
+  }
+  function setNode(id,on){var n=document.getElementById(id);if(on)n.classList.add('on');}
+
+  function go(idx){seq.push(idx);showStep(idx);}
+  document.getElementById('backBtn').onclick=function(){
+    if(seq.length>1){seq.pop();showStep(seq[seq.length-1]);}
+  };
+  document.getElementById('nextBtn').onclick=function(){
+    if(cur===0){state.worry=document.getElementById('worry').value.trim();go(1);return;}
+    if(cur===3){var c=document.getElementById('actionCustom').value.trim();if(c)state.action=c;finish();return;}
+    if(cur===4){finish();return;}
+  };
+
+  function finish(){
+    var n2=document.getElementById('n2');
+    var head=document.getElementById('rcHead'), title=document.getElementById('rcTitle');
+    var baLbl=document.getElementById('baLbl'), baVal=document.getElementById('baVal');
+    var big=document.getElementById('bigAction'), closer=document.getElementById('closer'), breath=document.getElementById('breath');
+    var pathEl=document.getElementById('pathDiagram');
+    var worryLine=state.worry?state.worry:'This worry';
+
+    var path=[['🌱','The worry',state.worry||'(unnamed)','']];
+    breath.classList.remove('show');
+
+    if(state.actable==='no'){
+      // LET GO
+      head.className='rc-head letgo';n2.className='node let';n2.textContent='Let it go';
+      title.textContent='There is nothing to do here.';
+      path.push(['🍃','Can you act on it?','No, it is out of my hands','t']);
+      big.className='bigaction letgo';baLbl.textContent='What this means';
+      baVal.textContent='This is a what if, not a what now.';
+      closer.innerHTML='<span class="em">🍃</span><span>There is no action attached, so analysing it more will not resolve it. The kind move is to let the thought pass and bring your attention back to now.</span>';
+      breath.classList.add('show');
+    } else if(state.timing==='now'){
+      // ACTION NOW
+      head.className='rc-head action';n2.className='node act';n2.textContent='Take action';
+      title.textContent='You have a clear next step.';
+      path.push(['✅','Can you act on it?','Yes, there is an action','g']);
+      path.push(['⚡','When?','Now or very soon','g']);
+      big.className='bigaction';baLbl.textContent='Your next step';
+      baVal.textContent=state.action||'Take the first small action';
+      closer.innerHTML='<span class="em">💪</span><span>Do this one step. Once it is in motion, give yourself permission to stop turning the worry over. You have done the useful part.</span>';
+    } else {
+      // SCHEDULED
+      head.className='rc-head action';n2.className='node act';n2.textContent='Scheduled';
+      title.textContent='It is handled, just not yet.';
+      path.push(['✅','Can you act on it?','Yes, there is an action','g']);
+      path.push(['📅','When?',state.when||'At a set time','g']);
+      big.className='bigaction';baLbl.textContent='Parked until';
+      baVal.textContent=(state.when||'A set time')+(state.action?(' · '+state.action):'');
+      closer.innerHTML='<span class="em">🅿️</span><span>You have given it a time, which means it does not need your attention until then. When the worry comes back early, remind yourself: already scheduled.</span>';
+    }
+
+    // render path diagram
+    pathEl.innerHTML='';
+    path.forEach(function(p){
+      var dotc=p[3]==='g'?'g':(p[3]==='t'?'t':'');
+      var row=document.createElement('div');row.className='pstep';
+      row.innerHTML='<div class="pdot '+dotc+'">'+p[0]+'</div><div class="ptxt"><div class="pl">'+p[1]+'</div><div class="pv">'+esc(p[2])+'</div></div>';
+      pathEl.appendChild(row);
+    });
+
+    document.getElementById('panel').style.display='none';
+    document.getElementById('result').classList.add('show');
+    // therapy next step shown on every result, framing tailored to the outcome
+    var th=document.getElementById('therapy'), thHead=document.getElementById('therapyHead');
+    if(state.actable==='no'){
+      thHead.textContent='If a worry has no answer, no amount of worrying will find one.';
+    } else if(state.timing==='now'){
+      thHead.textContent='You handled this one. Therapy stops the next one taking over.';
+    } else {
+      thHead.textContent='You have been carrying worries like this alone long enough.';
+    }
+    th.classList.add('show');
+    document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  // download / copy / restart
+  document.getElementById('dlBtn').onclick=function(){
+    var card=document.getElementById('card');
+    if(typeof html2canvas==='undefined'){window.print();return;}
+    html2canvas(card,{scale:2,backgroundColor:'#ffffff'}).then(function(c){var a=document.createElement('a');a.download='my-worry-tree.png';a.href=c.toDataURL('image/png');a.click();});
+  };
+  document.getElementById('copyBtn').onclick=function(){
+    var t='My worry tree\n\n'+(state.worry?('Worry: '+state.worry+'\n'):'')+document.getElementById('rcTitle').textContent+'\n'+document.getElementById('baLbl').textContent+': '+document.getElementById('baVal').textContent+'\n\nvia myanxietytest.com';
+    navigator.clipboard.writeText(t).then(function(){var b=document.getElementById('copyBtn'),o=b.textContent;b.textContent='✓ Copied';setTimeout(function(){b.textContent=o;},1500);});
+  };
+  document.getElementById('againBtn').onclick=function(){
+    state={worry:"",actable:null,timing:null,action:"",when:""};
+    document.getElementById('worry').value='';document.getElementById('actionCustom').value='';
+    document.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');});
+    document.getElementById('n1').className='node';document.getElementById('n2').className='node';document.getElementById('n2').textContent='Outcome';
+    document.getElementById('result').classList.remove('show');
+    document.getElementById('therapy').classList.remove('show');
+    document.getElementById('panel').style.display='block';
+    seq=[0,1].slice(0,1);seq=[0];showStep(0);
+    window.scrollTo({top:0,behavior:'smooth'});
+  };
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.onclick=function(){var a=q.nextElementSibling;q.classList.toggle('open');a.classList.toggle('open');};
+  });
+
+  // breathing ring label
+  var ring=document.getElementById('ring');
+  setInterval(function(){ring.textContent=ring.textContent==='Breathe in'?'Breathe out':'Breathe in';},4000);
+
+  showStep(0);
+</script>
+
+<!-- source relay: carries an incoming ?source= onto every affiliate link so conversion paths are tracked -->
+<script>
+(function(){
+  var s = new URLSearchParams(window.location.search).get("source");
+  if (!s) return;
+  document.querySelectorAll('a[href*="go.online-therapy.com"]').forEach(function(a){
+    a.href = a.href.replace(/([?&]source=)[^&]*/,"$1"+encodeURIComponent(s));
+  });
+})();
+</script>
+</body>
+</html>
