@@ -217,5 +217,14 @@
     });
   });
 </script>
+<script>
+(function(){
+  var s = new URLSearchParams(window.location.search).get("source");
+  if (!s) return;
+  document.querySelectorAll('a[href*="go.online-therapy.com"]').forEach(function(a){
+    a.href = a.href.replace(/([?&]source=)[^&]*/,"$1"+encodeURIComponent(s));
+  });
+})();
+</script>
 </body>
 </html>

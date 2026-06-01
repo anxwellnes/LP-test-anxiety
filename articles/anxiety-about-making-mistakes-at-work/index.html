@@ -262,5 +262,14 @@
   <div class="footer-copy">&#169; 2026 MyAnxietyTest.com &#183; Free anxiety tools and guides &#183; Not a substitute for professional mental health care</div>
 </footer>
 <script>function toggleFaq(btn){btn.closest('.faq-item').classList.toggle('open');}</script>
+<script>
+(function(){
+  var s = new URLSearchParams(window.location.search).get("source");
+  if (!s) return;
+  document.querySelectorAll('a[href*="go.online-therapy.com"]').forEach(function(a){
+    a.href = a.href.replace(/([?&]source=)[^&]*/,"$1"+encodeURIComponent(s));
+  });
+})();
+</script>
 </body>
 </html>

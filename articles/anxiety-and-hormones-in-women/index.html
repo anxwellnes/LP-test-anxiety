@@ -134,4 +134,13 @@
   <div style="margin-top:40px;"><div class="section-label">Related free tools</div><div class="tools-grid"><a href="https://myanxietytest.com/anxiety-level/" class="tool-chip"><div class="tool-chip-icon">📊</div><div class="tool-chip-name">Anxiety Level</div></a><a href="https://myanxietytest.com/do-i-need-therapy/" class="tool-chip"><div class="tool-chip-icon">🛋️</div><div class="tool-chip-name">Do I Need Therapy?</div></a><a href="https://myanxietytest.com/anxiety-body-scan/" class="tool-chip"><div class="tool-chip-icon">🫀</div><div class="tool-chip-name">Body Scan</div></a><a href="https://myanxietytest.com/anxiety-journal/" class="tool-chip"><div class="tool-chip-icon">📓</div><div class="tool-chip-name">Anxiety Journal</div></a></div></div>
 </div>
 <footer class="footer"><div class="footer-inner"><a href="https://myanxietytest.com/" class="footer-brand">🧠 MyAnxietyTest.com</a><div class="footer-links"><a href="https://myanxietytest.com/">Home</a><a href="https://myanxietytest.com/articles/">Articles</a><a href="https://myanxietytest.com/anxiety-level/">Anxiety Level Test</a><a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy</a><a href="https://myanxietytest.com/panic-sos-card/">Panic SOS Card</a></div></div><div class="footer-copy">© 2026 MyAnxietyTest.com · Free anxiety tools and guides · Not a substitute for professional mental health care</div></footer><script>function toggleFaq(b){b.closest('.faq-item').classList.toggle('open');}</script>
+<script>
+(function(){
+  var s = new URLSearchParams(window.location.search).get("source");
+  if (!s) return;
+  document.querySelectorAll('a[href*="go.online-therapy.com"]').forEach(function(a){
+    a.href = a.href.replace(/([?&]source=)[^&]*/,"$1"+encodeURIComponent(s));
+  });
+})();
+</script>
 </body></html>

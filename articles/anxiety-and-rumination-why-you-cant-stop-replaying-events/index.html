@@ -223,4 +223,13 @@
 
 <footer class="footer"><div class="fi"><a href="https://myanxietytest.com/" class="fb">🧠 MyAnxietyTest.com</a><div class="fl"><a href="https://myanxietytest.com/">Home</a><a href="https://myanxietytest.com/articles/">Articles</a><a href="https://myanxietytest.com/have-i-normalized-anxiety/">Normalised Anxiety</a><a href="https://myanxietytest.com/do-i-need-therapy/">Do I Need Therapy</a></div></div><div class="fc">© 2026 MyAnxietyTest.com · Free anxiety tools · Not a substitute for professional mental health care</div></footer>
 <script>function tF(b){b.closest('.fqi').classList.toggle('open');}</script>
+<script>
+(function(){
+  var s = new URLSearchParams(window.location.search).get("source");
+  if (!s) return;
+  document.querySelectorAll('a[href*="go.online-therapy.com"]').forEach(function(a){
+    a.href = a.href.replace(/([?&]source=)[^&]*/,"$1"+encodeURIComponent(s));
+  });
+})();
+</script>
 </body></html>

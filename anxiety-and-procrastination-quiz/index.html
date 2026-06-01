@@ -614,5 +614,14 @@ document.getElementById('faqList').innerHTML = FAQS.map(f=>`
   </div>`).join('');
 document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.closest('.faq-item').classList.toggle('open')));
 </script>
+<script>
+(function(){
+  var s = new URLSearchParams(window.location.search).get("source");
+  if (!s) return;
+  document.querySelectorAll('a[href*="go.online-therapy.com"]').forEach(function(a){
+    a.href = a.href.replace(/([?&]source=)[^&]*/,"$1"+encodeURIComponent(s));
+  });
+})();
+</script>
 </body>
 </html>
